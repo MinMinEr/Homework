@@ -1,0 +1,231 @@
+AT_SETUP([Variable in Makefile.am and configure.ac])
+
+
+
+AS_MKDIR_P([variable_ac1])
+AT_DATA([variable_ac1/configure.ac],
+[[
+TARGETS=target1
+AC_SUBST(TARGETS)
+AC_CONFIG_FILES(Makefile)
+]])
+AT_DATA([variable_ac1/Makefile.am],
+[[
+bin_PROGRAMS = $(TARGETS)
+]])
+AT_DATA([expect],
+[[ROOT (): variable_ac1
+    TARGET (): target1
+        PROPERTY (Installation directory): bindir
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load variable_ac1 \
+		 list])
+AT_CHECK([diff -b output expect])
+
+
+
+AS_MKDIR_P([variable_ac2])
+AT_DATA([variable_ac2/configure.ac],
+[[TARGETS=target1
+AC_SUBST(TARGETS)
+AC_CONFIG_FILES(Makefile)
+]])
+AT_DATA([variable_ac2/Makefile.am],
+[[
+bin_PROGRAMS = @TARGETS@
+]])
+AT_DATA([expect],
+[[ROOT (): variable_ac2
+    TARGET (): target1
+        PROPERTY (Installation directory): bindir
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load variable_ac2 \
+		 list])
+AT_CHECK([diff -b output expect])
+
+
+
+AS_MKDIR_P([variable_ac3])
+AT_DATA([variable_ac3/configure.ac],
+[[
+TARGET_LDFLAGS="$plugin-$plugin"
+AC_SUBST(TARGET_LDFLAGS)
+TARGET_CFLAGS="-O0"
+AC_SUBST(TARGET_CFLAGS)
+NO_VALUE=
+AC_CONFIG_FILES(Makefile)
+]])
+AT_DATA([variable_ac3/Makefile.am],
+[[
+bin_PROGRAMS = target1
+target1_LDFLAGS = $(TARGET_LDFLAGS)
+target1_CFLAGS = $(TARGET_CFLAGS)
+]])
+AT_DATA([expect],
+[[ROOT (): variable_ac3
+    TARGET (): target1
+        PROPERTY (Installation directory): bindir
+        PROPERTY (Linker flags): $(TARGET_LDFLAGS)
+        PROPERTY (C compiler flags): $(TARGET_CFLAGS)
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load variable_ac3 \
+		 list])
+AT_CHECK([diff -b output expect])
+
+
+
+AS_MKDIR_P([variable])
+AT_DATA([variable/configure.ac],
+[[AC_CONFIG_FILES(Makefile)
+]])
+AT_DATA([variable/Makefile.am],
+[[
+TARGETS = target1
+bin_PROGRAMS = $(TARGETS)
+]])
+AT_DATA([expect],
+[[ROOT (): variable
+    TARGET (): target1
+        PROPERTY (Installation directory): bindir
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load variable \
+		 list])
+AT_CHECK([diff -b output expect])
+
+
+
+AS_MKDIR_P([variable2])
+AT_DATA([variable2/configure.ac],
+[[AC_CONFIG_FILES(Makefile)
+]])
+AT_DATA([variable2/Makefile.am],
+[[
+bin_PROGRAMS = $(TARGETS)
+TARGETS = target1
+]])
+AT_DATA([expect],
+[[ROOT (): variable2
+    TARGET (): target1
+        PROPERTY (Installation directory): bindir
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load variable2 \
+		 list])
+AT_CHECK([diff -b output expect])
+
+
+
+AS_MKDIR_P([variable3])
+AT_DATA([variable3/configure.ac],
+[[AC_CONFIG_FILES(Makefile)
+]])
+AT_DATA([variable3/Makefile.am],
+[[
+bin_PROGRAMS = $(TARGETS)
+TARGETS1 = target1
+TARGETS = $(TARGETS1)
+]])
+AT_DATA([expect],
+[[ROOT (): variable3
+    TARGET (): target1
+        PROPERTY (Installation directory): bindir
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load variable3 \
+		 list])
+AT_CHECK([diff -b output expect])
+
+
+
+AS_MKDIR_P([variable4])
+AT_DATA([variable4/configure.ac],
+[[AC_CONFIG_FILES(Makefile)
+]])
+AT_DATA([variable4/Makefile.am],
+[[
+bin_PROGRAMS = $(TARGETS)
+TARGETS = $(TARGETS1)
+TARGETS1 = target1
+]])
+AT_DATA([expect],
+[[ROOT (): variable4
+    TARGET (): target1
+        PROPERTY (Installation directory): bindir
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load variable4 \
+		 list])
+AT_CHECK([diff -b output expect])
+
+
+
+AS_MKDIR_P([variable5])
+AT_DATA([variable5/configure.ac],
+[[AC_CONFIG_FILES(Makefile)
+]])
+AT_DATA([variable5/Makefile.am],
+[[
+bin_PROGRAMS = target1
+
+BUILT_SOURCES = \
+	source1.c
+TARGETS = target1
+target1_SOURCES = \
+	$(BUILT_SOURCES) \
+	source2.c
+]])
+AT_DATA([expect],
+[[ROOT (): variable5
+    TARGET (): target1
+        PROPERTY (Installation directory): bindir
+        SOURCE (): source1.c
+        SOURCE (): source2.c
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load variable5 \
+		 list])
+AT_CHECK([diff -b output expect])
+
+
+
+AS_MKDIR_P([variable6])
+AT_DATA([variable6/configure.ac],
+[[API=0
+AC_SUBST(API)
+AC_CONFIG_FILES(Makefile)
+]])
+AT_DATA([variable6/Makefile.am],
+[[
+bin_PROGRAMS = target@API@
+target@API@_SOURCES = \
+	source1.c
+target@API@_LDFLAGS = -l
+]])
+AT_DATA([expect],
+[[ROOT (): variable6
+    TARGET (): target0
+        PROPERTY (Installation directory): bindir
+        PROPERTY (Linker flags): -l
+        SOURCE (): source1.c
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load variable6 \
+		 list])
+AT_CHECK([diff -b output expect])
+
+
+
+AT_CLEANUP

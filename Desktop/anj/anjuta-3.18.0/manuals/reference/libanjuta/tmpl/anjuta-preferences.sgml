@@ -1,0 +1,136 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaPreferences
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION anjuta_property_get_widget ##### -->
+<para>
+
+</para>
+
+@prop: 
+@Returns: 
+
+
+<!-- ##### USER_FUNCTION AnjutaPreferencesCallback ##### -->
+<para>
+
+</para>
+
+@pr: 
+@key: 
+@data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_preferences_new ##### -->
+<para>
+
+</para>
+
+@plugin_manager: 
+@common_schema_id: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_preferences_default ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_preferences_add_from_builder ##### -->
+<para>
+
+</para>
+
+@pr: 
+@builder: 
+@settings: 
+@glade_widget_name: 
+@stitle: 
+@icon_filename: 
+
+
+<!-- ##### FUNCTION anjuta_preferences_remove_page ##### -->
+<para>
+
+</para>
+
+@pr: 
+@page_name: 
+
+
+<!-- ##### FUNCTION anjuta_preferences_register_all_properties_from_builder_xml ##### -->
+<para>
+
+</para>
+
+@pr: 
+@builder: 
+@settings: 
+@parent: 
+
+
+<!-- ##### FUNCTION anjuta_preferences_register_property ##### -->
+<para>
+
+</para>
+
+@pr: 
+@settings: 
+@object: 
+@key: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_preferences_get_dialog ##### -->
+<para>
+
+</para>
+
+@pr: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_preferences_is_dialog_created ##### -->
+<para>
+
+</para>
+
+@pr: 
+@Returns: 
+
+
+<!-- ##### STRUCT AnjutaProperty ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaPreferencesPriv ##### -->
+<para>
+
+</para>
+
+

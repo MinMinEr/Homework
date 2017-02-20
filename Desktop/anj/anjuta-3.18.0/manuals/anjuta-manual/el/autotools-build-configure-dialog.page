@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-configure-dialog" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="autotools-project-backend"/>
+    <link type="seealso" xref="autotools-build-configure"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Διάλογος ρύθμισης autotools</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Διάλογος ρύθμισης autotools</title>
+
+  <p>Ο διάλογος <gui>Ρύθμιση</gui> επιτρέπει τον ορισμό των επόμενων επιλογών και ρυθμίσεων του έργου.</p>
+
+  <terms>
+    <item>
+      <title><gui>Αναδημιουργία έργου</gui></title>
+      <p>Εάν σημειωθεί, το έργο θα αναγεννηθεί πλήρως, αλλιώς μόνο το βήμα ρύθμισης γίνεται. Το <app>Anjuta</app> ελέγχει αυτόματα αυτό το πλαίσιο ελέγχου, όταν απαιτείται έτσι μπορείτε να το αφήσετε στην τρέχουσα κατάστασή του.</p>
+    </item>
+    <item>
+      <title><gui>Ρυθμίσεις</gui></title>
+      <p>Μπορείτε να έχετε πολλές ρυθμίσεις που έχουν τις δικές τους επιλογές και κατάλογο δόμησης, αυτό το πλαίσιο κειμένου επιτρέπει την ονομασία τους. Τυπικά έχετε ήδη καθιρίσει μια προεπιλεγμένη ρύθμιση, μια ρύθμιση αποσφαλμάτωσης κάνει ευκολότερη την αποσφαλμάτωση προγραμμάτων (διατηρώντας ενδιάμεσες μεταβλητές και σειρά κώδικα) και μια βελτιστοποιημένη ρύθμιση δημιουργίας γρηγορότερων προγραμμάτων, αλλά αυξάνοντας τον χρόνο δόμησης. Μπορείτε να ορίσετε πρόσθετες προσαρμοσμένες ρυθμίσεις.</p>
+    </item>
+    <item>
+      <title><gui>Κατάλογος δόμησης</gui></title>
+      <p>Επιλέξτε εδώ τον κατάλογο δόμησης. Μπορεί να είναι ο κατάλογος έργου ή ένας υποκατάλογος. Αυτό είναι ιδιαίτερα χρήσιμο όταν εναλλάσσετε μεταξύ διαφορετικών ρυθμίσεων για την αποφυγή αναδόμησης ολόκληρου του έργου.</p>
+      <note style="advanced">
+        <p>Με autotools, δεν μπορείτε να έχετε μια ρύθμιση χρησιμοποιώντας έναν διαφορετικό κατάλογο, εάν έχετε ήδη μια ρύθμιση χρησιμοποιώντας τον κατάλογο έργου. Πρέπει να το αφαιρέσετε πρώτα.</p>
+      </note>
+      <note style="bug">
+        <p>Μερικά έργα autotools δεν μπορούν να δομηθούν έξω από τον κατάλογο έργου. Μπορείτε ακόμα να χρησιμοποιήσετε διαφορετικές ρυθμίσεις, αλλά όλες πρέπει να χρησιμοποιούν τον κατάλογο έργου και ο,τιδήποτε θα επαναμεταγλωττιστεί σε κάθε αλλαγή της ρύθμισης.</p>
+      </note>
+    </item>
+    <item>
+      <title><gui>Επιλογές ρύθμισης</gui></title>
+      <p>Αυτή το πλαίσιο κειμένου εμφανίζει όλα τα ορίσματα γραμμής εντολών που χρησιμοποιούνται από το βήμα ρύθμισης. Όλα τα ορίσματα χωρίζονται με κενά και πρέπει να έχουν παρενθέσεις εάν περιέχουν κενά. Κάθε ρύθμιση γεμίζει αυτό το πλαίσιο κειμένου με προεπιλεγμένες τιμές που μπορείτε να τροποποιήσετε.</p>
+      <note style="advanced">
+        <p>Κάθε έργο autotools υποστηρίζει μια κοινή λίστα ορισμάτων, αλλά μπορεί να πρέπει να ορίσει ορίσματα. Μπορείτε να έχετε μια λίστα όλων των αποδεκτών ορισμάτων εκτελώντας <cmd>configure --help</cmd> στη γραμμή εντολών. Πρέπει να έχετε ρυθμίσει το έργο σας τουλάχιστον μια φορά για να έχετε το δέσμη ενεργειών <cmd>configure</cmd>.</p>
+      </note>
+    </item>
+  </terms>
+
+</page>

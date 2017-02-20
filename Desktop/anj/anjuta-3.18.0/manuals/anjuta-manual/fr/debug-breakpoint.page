@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-breakpoint" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-execute" group="second"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Gérer les points d'arrêt.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Points d'arrêt</title>
+
+  <p>Les points d'arrêt sont utilisés pour interrompre l'exécution du programme en un point particulier de façon à pouvoir examiner l'état du programme à cet endroit.</p>
+
+  <section>
+    <title>Affichage de la liste des points d'arrêt</title>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Affichage</gui> <gui>Points d'arrêt</gui></guiseq> pour ouvrir la fenêtre <gui>Point d'arrêt</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Cette fenêtre comporte les colonnes suivantes :</p>
+  
+    <terms>
+      <item>
+        <title>Emplacement</title>
+        <p>C'est la position du point d'arrêt dans le fichier source. Lorsqu'il a été défini à l'aide du débogueur, vous obtenez des informations supplémentaires comme le nom de la fonction contenant le point d'arrêt.</p>
+      </item>
+      <item>
+        <title>Adresse</title>
+        <p>Ce champ indique l'adresse mémoire du point d'arrêt lorsqu'il a été défini à l'aide du débogueur.</p>
+      </item>
+      <item>
+        <title>Type</title>
+        <p>Cette zone affiche toujours <gui>point d'arrêt</gui>. Elle sera utilisée dans une version future pour la prise en charge de différentes sortes de points d'arrêt.</p>
+      </item>
+      <item>
+        <title>Condition</title>
+        <p>C'est la condition du point d'arrêt. Ce champ reste vide si aucune condition n'a été définie.</p>
+      </item>
+      <item>
+        <title>Nombre de passages</title>
+        <p>Lorsque le débogueur n'est pas en fonctionnement, cette colonne indique le nombre de passages sur le point d'arrêt ou zéro si ce nombre n'est pas défini.</p>
+        <p>Lorsque le débogueur est en fonctionnement, si le nombre de passages est égal à zéro, cette colonne affiche le nombre de fois où ce point d'arrêt a été actif. Si le nombre de passages n'est pas égal à zéro, deux nombres sont affichés. Le nombre de passages est le deuxième nombre.</p>
+      </item>
+      <item>
+        <title>État</title>
+        <p>C'est l'état du point d'arrêt. Il peut être :</p>
+        <terms>
+          <item><title>Suspendu :</title><p>le point d'arrêt n'est pas actif dans le programme.</p></item>
+          <item><title>Permanent :</title><p>le point d'arrêt est activé (son numéro d'identification est fourni entre parenthèses).</p></item>
+          <item><title>Temporaire :</title><p>le point d'arrêt est activé mais il sera supprimé s'il est atteint.</p></item>
+        </terms>
+      </item>
+    </terms>
+
+    <note style="tip">
+     <p>Au cours d'une session Anjuta, tous les points d'arrêt sont conservés même s'ils correspondent à un emplacement non-existant, par exemple dans le code source d'une bibliothèque partagée non encore chargée. Dans ce cas, leur état est défini à suspendu.</p>
+    </note>
+  </section>
+
+  <section>
+    <title>Paramétrage des points d'arrêt</title>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Déboguer</gui> <gui>Ajouter un point d'arrêt...</gui></guiseq>, ou faites un clic droit dans la fenêtre <gui>Points d'arrêt</gui>, et sélectionnez <gui>Ajouter un point d'arrêt...</gui>.</p>
+      </item>
+      <item>
+        <p>Remplissez le champ <gui>Emplacement</gui>, qui est la position du point d'arrêt, ainsi que les autres champs si vous le souhaitez. Si un fichier est actuellement ouvert dans l'éditeur, le champ <gui>Emplacement</gui> contient la ligne en cours par défaut. Reportez-vous à <link xref="debug-breakpoint-dialog"/> pour plus d'informations.</p>
+      </item>
+    </steps>
+
+    <p>Une autre solution est d'utiliser la fonction Basculer le point d'arrêt. S'il n'y pas de point d'arrêt à la ligne en cours, cette fonction en ajoute un. Sinon, elle l'enlève.</p>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Déboguer</gui> <gui>Basculer le point d'arrêt</gui></guiseq>, ou faites un clic droit dans la fenêtre de l'<gui>éditeur</gui> et sélectionnez <gui>Basculer le point d'arrêt</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+
+  <section>
+    <title>Modification des points d'arrêt</title>
+
+    <p>Il n'est pas possible de modifier l'emplacement d'un point d'arrêt ; vous devez en créer un nouveau. Néanmoins, vous pouvez modifier la condition d'arrêt ou le nombre de passages. Pour modifier un point d'arrêt :</p>
+
+    <steps>
+      <item>
+        <p>Sélectionnez un point d'arrêt dans la fenêtre <gui>Points d'arrêt</gui>.</p>
+      </item>
+      <item>
+        <p>Faites un clic droit dans la fenêtre <gui>Points d'arrêt</gui> et sélectionnez <gui>Modifier le point d'arrêt</gui>.</p>
+      </item>
+      <item>
+        <p>Modifiez les champs <gui>Condition</gui> ou <gui>Nombre de passages</gui> et cliquez sur <gui>Valider</gui> quand c'est fait. Référez-vous à <link xref="debug-breakpoint-dialog"/> pour plus d'informations.</p>
+      </item>
+    </steps>
+
+  </section>
+
+
+  <section>
+    <title>Suppression de points d'arrêt</title>
+
+	<p>Vous pouvez retirer un point d'arrêt en utilisant la fonction de bascule du point d'arrêt décrite plus haut. Mais si voulez retirer plusieurs points d'arrêt ou un point d'arrêt dans un fichier autre que celui que vous êtes en train de modifier, utilisez la fenêtre Point d'arrêt :</p>
+
+    <steps>
+      <item>
+        <p>Sélectionnez un point d'arrêt dans la fenêtre <gui>Points d'arrêt</gui>.</p>
+      </item>
+      <item>
+        <p>Faites un clic droit dans la fenêtre <gui>Points d'arrêt</gui> et sélectionnez <gui>Enlever le point d'arrêt</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Pour enlever tous les points d'arrêt :</p>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Déboguer</gui><gui>Enlever tous les points d'arrêt</gui></guiseq>, ou faites un clic droit dans la fenêtre <gui>Points d'arrêt</gui> et sélectionnez <gui>Enlever tous les points d'arrêt</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+
+  <section>
+    <title>Activation ou désactivation de points d'arrêt</title>
+
+    <p>Il se peut que vous ayez besoin de désactiver temporairement un point d'arrêt au lieu de le retirer. Pour désactiver ou ré-activer un point d'arrêt :</p>
+
+    <steps>
+      <item>
+        <p>Cochez l'option <gui>Activé</gui> dans la fenêtre <gui>Points d'arrêt</gui> ou faites un clic droit dans la fenêtre <gui>Points d'arrêt</gui> et sélectionnez <gui>Activer le point d'arrêt</gui> ou <gui>Désactiver le point d'arrêt</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Vous avez la possibilité de désactiver tous les points d'arrêt en utilisant :</p>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Déboguer</gui><gui>Désactiver tous les points d'arrêt</gui></guiseq>, ou faites un clic droit dans la fenêtre <gui>Points d'arrêt</gui> et sélectionnez <gui>Désactiver tous les points d'arrêt</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+  
+
+</page>

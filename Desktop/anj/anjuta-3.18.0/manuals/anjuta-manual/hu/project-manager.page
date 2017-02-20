@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="project-manager" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="project-manager-root"/>
+    <desc>Projektkezelő.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Projektkezelő bővítmény</title>
+
+  <p>Az <app>Anjuta</app> bővítmény-háttérprogramokon keresztül számos meglévő projekt formátumát támogatja. A legfontosabb a Linuxon elterjed autotools formátum.</p>
+
+  <p>A használandó projekt háttérprogram egy új projekt létrehozásakor vagy <app>Anjutaba</app> importálásakor kerül kiválasztásra. Ez a projekt gyökér csomópontjának tulajdonságai között jelenik meg, és bármikor módosítható.</p>
+
+  <p>A háttérprogramtól függetlenül a grafikus felület ugyanaz, de néhány funkció ki lehet kapcsolva.</p>
+
+  <section id="backend">
+    <title>Projektháttér-bővítmény</title>
+  </section>
+
+</page>

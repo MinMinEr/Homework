@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-install" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="fifth"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <link type="seealso" xref="autotools-build-preferences-dialog"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Installer des cibles ou un projet.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Installation de cibles</title>
+
+  <p>À moins que le projet ne soit très simple, il a besoin de certains fichiers de données tels que les fichiers de description de l'interface utilisateur. Ces fichiers sont habituellement copiés dans des répertoires standards où ils sont lus. Cela signifie que vous ne pouvez pas exécuter le programme dans le répertoire de construction. Vous devez installer le programme de façon à copier tous ces fichiers dans l'emplacement définitif, par exemple dans un sous-répertoire de <file>/usr/local</file>.</p>
+
+  <p>Il existe plusieurs façons d'installer des cibles ou un projet.</p>
+
+  <steps>
+    <item>
+      <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Construire</gui><gui>Installer (src)</gui></guiseq> pour installer tous les fichiers dans le même répertoire que le fichier en cours d'édition.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Construire</gui><gui>Installer le projet</gui></guiseq> pour installer tous les fichiers du projet.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>Dans le <gui>volet du gestionnaire de fichiers</gui>, sélectionnez un fichier ou un répertoire.</p>
+    </item>
+    <item>
+      <p>Cliquez sur le bouton droit de la souris pour faire apparaître le <gui>menu contextuel du gestionnaire de fichiers</gui> et sélectionnez <guiseq><gui>Construire</gui><gui>Installer</gui></guiseq> pour installer tous les fichiers dans le répertoire actuellement sélectionné ou le répertoire parent du fichier actuellement sélectionné.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>Dans le <gui>volet du gestionnaire de projets</gui>, sélectionnez un fichier source ou une cible.</p>
+    </item>
+    <item>
+      <p>Cliquez sur le bouton droit de la souris pour faire apparaître le <gui>menu contextuel du gestionnaire de projet</gui> et sélectionnez <guiseq><gui>Construire</gui><gui>Installer</gui></guiseq> pour installer tous les fichiers dans le répertoire contenant la cible ou le fichier actuellement sélectionné.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Si vous installez le programme dans un répertoire système, il vous faut certainement recourir au commande <cmd>su</cmd> ou <cmd>sudo</cmd> pour en avoir les droits. Référez-vous à <link xref="autotools-build-preferences-dialog"/> pour plus d'informations.</p>
+  </note>
+
+</page>

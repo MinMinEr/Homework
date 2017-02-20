@@ -1,0 +1,1491 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="Anjuta Developers Reference Manual" link="index.html" author="Naba Kumar" name="libanjuta" version="2" language="c">
+  <chapters>
+    <sub name="Anjuta Architecture" link="anjuta-architecture.html">
+      <sub name="Plugins" link="anjuta-architecture.html#id-1.2.5"/>
+    </sub>
+    <sub name="Writing plugins" link="writing-plugins.html">
+      <sub name="Hello world plugin description, icon and UI files" link="writing-plugins.html#writing-plugins-description"/>
+      <sub name="Hello world plugin" link="writing-plugins-simple.html"/>
+      <sub name="Hello world advanced plugin" link="writing-plugins-sources.html"/>
+      <sub name="Build setup" link="writing-plugins-build-setup.html"/>
+    </sub>
+    <sub name="Plugin description file" link="plugin-description-file.html"/>
+    <sub name="New Project Wizard format" link="project-wizard-format.html">
+      <sub name="Overview" link="project-wizard-format.html#overview"/>
+      <sub name="Wizard header" link="header-block.html"/>
+      <sub name="Wizard pages" link="page-block.html"/>
+      <sub name="Wizard content" link="content-block.html"/>
+      <sub name="Wizard actions" link="action-block.html"/>
+      <sub name="Internationalization" link="internationalization.html"/>
+      <sub name="Distribution" link="distribution.html"/>
+    </sub>
+    <sub name="libanjuta API" link="libanjuta-api.html">
+      <sub name="AnjutaShell" link="AnjutaShell.html"/>
+      <sub name="AnjutaPreferences" link="AnjutaPreferences.html"/>
+      <sub name="AnjutaPreferencesDialog" link="AnjutaPreferencesDialog.html"/>
+      <sub name="AnjutaUI" link="AnjutaUI.html"/>
+      <sub name="AnjutaStatus" link="AnjutaStatus.html"/>
+      <sub name="AnjutaPlugin" link="AnjutaPlugin.html"/>
+      <sub name="AnjutaPluginDescription" link="AnjutaPluginDescription.html"/>
+      <sub name="AnjutaPluginHandle" link="AnjutaPluginHandle.html"/>
+      <sub name="AnjutaPluginManager" link="AnjutaPluginManager.html"/>
+      <sub name="AnjutaProfile" link="AnjutaProfile.html"/>
+      <sub name="AnjutaProfileManager" link="AnjutaProfileManager.html"/>
+      <sub name="AnjutaLauncher" link="AnjutaLauncher.html"/>
+      <sub name="AnjutaSavePrompt" link="AnjutaSavePrompt.html"/>
+      <sub name="AnjutaSerializer" link="AnjutaSerializer.html"/>
+      <sub name="AnjutaSession" link="AnjutaSession.html"/>
+      <sub name="Utilities" link="libanjuta-Utilities.html"/>
+      <sub name="Program resources" link="libanjuta-Program-resources.html"/>
+      <sub name="anjuta-encodings" link="libanjuta-anjuta-encodings.html"/>
+      <sub name="Debugging" link="libanjuta-Debugging.html"/>
+      <sub name="AnjutaCommand" link="AnjutaCommand.html"/>
+      <sub name="AnjutaSyncCommand" link="AnjutaSyncCommand.html"/>
+      <sub name="AnjutaAsyncCommand" link="AnjutaAsyncCommand.html"/>
+      <sub name="AnjutaAsyncNotify" link="AnjutaAsyncNotify.html"/>
+      <sub name="AnjutaVcsStatusTreeView" link="AnjutaVcsStatusTreeView.html"/>
+      <sub name="anjuta-convert" link="libanjuta-anjuta-convert.html"/>
+      <sub name="AnjutaAutogen" link="AnjutaAutogen.html"/>
+      <sub name="AnjutaCloseButton" link="AnjutaCloseButton.html"/>
+      <sub name="AnjutaColumnTextView" link="AnjutaColumnTextView.html"/>
+      <sub name="AnjutaCommandBar" link="AnjutaCommandBar.html"/>
+      <sub name="AnjutaCommandQueue" link="AnjutaCommandQueue.html"/>
+      <sub name="AnjutaCompletion" link="AnjutaCompletion.html"/>
+      <sub name="AnjutaDock" link="AnjutaDock.html"/>
+      <sub name="AnjutaDockPane" link="AnjutaDockPane.html"/>
+      <sub name="AnjutaDropEntry" link="AnjutaDropEntry.html"/>
+      <sub name="AnjutaEntry" link="AnjutaEntry.html"/>
+      <sub name="AnjutaEnvironmentEditor" link="AnjutaEnvironmentEditor.html"/>
+      <sub name="AnjutaFileDropEntry" link="AnjutaFileDropEntry.html"/>
+      <sub name="AnjutaFileList" link="AnjutaFileList.html"/>
+      <sub name="AnjutaLanguageProvider" link="AnjutaLanguageProvider.html"/>
+      <sub name="AnjutaPkgConfigChooser" link="AnjutaPkgConfigChooser.html"/>
+      <sub name="anjuta-pkg-config" link="libanjuta-anjuta-pkg-config.html"/>
+      <sub name="AnjutaPkgScanner" link="AnjutaPkgScanner.html"/>
+      <sub name="Anjuta project" link="AnjutaProjectNode.html"/>
+      <sub name="AnjutaTabber" link="AnjutaTabber.html"/>
+      <sub name="Anjuta token" link="libanjuta-Anjuta-token.html"/>
+      <sub name="anjuta-token-file" link="libanjuta-anjuta-token-file.html"/>
+      <sub name="anjuta-token-list" link="libanjuta-anjuta-token-list.html"/>
+      <sub name="Anjuta token stream" link="libanjuta-Anjuta-token-stream.html"/>
+      <sub name="AnjutaTreeComboBox" link="AnjutaTreeComboBox.html"/>
+      <sub name="anjuta-vcs-status" link="libanjuta-anjuta-vcs-status.html"/>
+    </sub>
+    <sub name="libanjuta internal API" link="libanjuta-internal-api.html">
+      <sub name="AnjutaCPluginFactory" link="AnjutaCPluginFactory.html"/>
+      <sub name="AnjutaCModule" link="AnjutaCModule.html"/>
+      <sub name="ESplash" link="ESplash.html"/>
+      <sub name="AnjutaCellRendererCaptionedImage" link="AnjutaCellRendererCaptionedImage.html"/>
+    </sub>
+    <sub name="Plugin interfaces" link="plugin-interfaces.html">
+      <sub name="IAnjutaBuildable" link="IAnjutaBuildable.html"/>
+      <sub name="IAnjutaBuilder" link="IAnjutaBuilder.html"/>
+      <sub name="IAnjutaDebugger" link="IAnjutaDebugger.html"/>
+      <sub name="IAnjutaDebuggerBreakpoint" link="IAnjutaDebuggerBreakpoint.html"/>
+      <sub name="IAnjutaDebuggerInstruction" link="IAnjutaDebuggerInstruction.html"/>
+      <sub name="IAnjutaDebuggerMemory" link="IAnjutaDebuggerMemory.html"/>
+      <sub name="IAnjutaDebuggerRegister" link="IAnjutaDebuggerRegister.html"/>
+      <sub name="IAnjutaDebuggerVariable" link="IAnjutaDebuggerVariable.html"/>
+      <sub name="IAnjutaDebugManager" link="IAnjutaDebugManager.html"/>
+      <sub name="IAnjutaDocument" link="IAnjutaDocument.html"/>
+      <sub name="IAnjutaDocumentManager" link="IAnjutaDocumentManager.html"/>
+      <sub name="IAnjutaEditor" link="IAnjutaEditor.html"/>
+      <sub name="IAnjutaEditorAssist" link="IAnjutaEditorAssist.html"/>
+      <sub name="IAnjutaEditorCell" link="IAnjutaEditorCell.html"/>
+      <sub name="IAnjutaEditorCellStyle" link="IAnjutaEditorCellStyle.html"/>
+      <sub name="IAnjutaEditorComment" link="IAnjutaEditorComment.html"/>
+      <sub name="IAnjutaEditorConvert" link="IAnjutaEditorConvert.html"/>
+      <sub name="IAnjutaEditorFactory" link="IAnjutaEditorFactory.html"/>
+      <sub name="IAnjutaEditorFolds" link="IAnjutaEditorFolds.html"/>
+      <sub name="IAnjutaEditorGladeSignal" link="IAnjutaEditorGladeSignal.html"/>
+      <sub name="IAnjutaEditorGoto" link="IAnjutaEditorGoto.html"/>
+      <sub name="IAnjutaEditorHover" link="IAnjutaEditorHover.html"/>
+      <sub name="IAnjutaEditorLanguage" link="IAnjutaEditorLanguage.html"/>
+      <sub name="IAnjutaEditorLineMode" link="IAnjutaEditorLineMode.html"/>
+      <sub name="IAnjutaEditorSearch" link="IAnjutaEditorSearch.html"/>
+      <sub name="IAnjutaEditorSelection" link="IAnjutaEditorSelection.html"/>
+      <sub name="IAnjutaEditorTip" link="IAnjutaEditorTip.html"/>
+      <sub name="IAnjutaEditorView" link="IAnjutaEditorView.html"/>
+      <sub name="IAnjutaEditorZoom" link="IAnjutaEditorZoom.html"/>
+      <sub name="IAnjutaEnvironment" link="IAnjutaEnvironment.html"/>
+      <sub name="IAnjutaFile" link="IAnjutaFile.html"/>
+      <sub name="IAnjutaFileLoader" link="IAnjutaFileLoader.html"/>
+      <sub name="IAnjutaFileManager" link="IAnjutaFileManager.html"/>
+      <sub name="IAnjutaFileSavable" link="IAnjutaFileSavable.html"/>
+      <sub name="IAnjutaHelp" link="IAnjutaHelp.html"/>
+      <sub name="IAnjutaIndenter" link="IAnjutaIndenter.html"/>
+      <sub name="IAnjutaIndicable" link="IAnjutaIndicable.html"/>
+      <sub name="IAnjutaIterable" link="IAnjutaIterable.html"/>
+      <sub name="IAnjutaIterableTree" link="IAnjutaIterableTree.html"/>
+      <sub name="IAnjutaLanguage" link="IAnjutaLanguage.html"/>
+      <sub name="IAnjutaLanguageProvider" link="IAnjutaLanguageProvider.html"/>
+      <sub name="IAnjutaLoader" link="IAnjutaLoader.html"/>
+      <sub name="IAnjutaMarkable" link="IAnjutaMarkable.html"/>
+      <sub name="IAnjutaMessageManager" link="IAnjutaMessageManager.html"/>
+      <sub name="IAnjutaMessageView" link="IAnjutaMessageView.html"/>
+      <sub name="IAnjutaPluginFactory" link="IAnjutaPluginFactory.html"/>
+      <sub name="IAnjutaPreferences" link="IAnjutaPreferences.html"/>
+      <sub name="IAnjutaPrint" link="IAnjutaPrint.html"/>
+      <sub name="IAnjutaProject" link="IAnjutaProject.html"/>
+      <sub name="IAnjutaProjectManager" link="IAnjutaProjectManager.html"/>
+      <sub name="IAnjutaProjectChooser" link="IAnjutaProjectChooser.html"/>
+      <sub name="IAnjutaProjectBackend" link="IAnjutaProjectBackend.html"/>
+      <sub name="IAnjutaProvider" link="IAnjutaProvider.html"/>
+      <sub name="IAnjutaSnippetsManager" link="IAnjutaSnippetsManager.html"/>
+      <sub name="IAnjutaStream" link="IAnjutaStream.html"/>
+      <sub name="IAnjutaStreamLoader" link="IAnjutaStreamLoader.html"/>
+      <sub name="IAnjutaStreamSavable" link="IAnjutaStreamSavable.html"/>
+      <sub name="IAnjutaSymbol" link="IAnjutaSymbol.html"/>
+      <sub name="IAnjutaSymbolQuery" link="IAnjutaSymbolQuery.html"/>
+      <sub name="IAnjutaSymbolManager" link="IAnjutaSymbolManager.html"/>
+      <sub name="IAnjutaTerminal" link="IAnjutaTerminal.html"/>
+      <sub name="IAnjutaTodo" link="IAnjutaTodo.html"/>
+      <sub name="IAnjutaVcs" link="IAnjutaVcs.html"/>
+      <sub name="IAnjutaWizard" link="IAnjutaWizard.html"/>
+      <sub name="libanjuta-iface-marshallers" link="libanjuta-libanjuta-iface-marshallers.html"/>
+    </sub>
+    <sub name="Object Hierarchy" link="object-hierarchy.html"/>
+  </chapters>
+  <functions>
+    <keyword type="function" name="anjuta_shell_error_quark ()" link="AnjutaShell.html#anjuta-shell-error-quark"/>
+    <keyword type="function" name="anjuta_shell_get_status ()" link="AnjutaShell.html#anjuta-shell-get-status"/>
+    <keyword type="function" name="anjuta_shell_get_ui ()" link="AnjutaShell.html#anjuta-shell-get-ui"/>
+    <keyword type="function" name="anjuta_shell_get_preferences ()" link="AnjutaShell.html#anjuta-shell-get-preferences"/>
+    <keyword type="function" name="anjuta_shell_get_plugin_manager ()" link="AnjutaShell.html#anjuta-shell-get-plugin-manager"/>
+    <keyword type="function" name="anjuta_shell_get_profile_manager ()" link="AnjutaShell.html#anjuta-shell-get-profile-manager"/>
+    <keyword type="function" name="anjuta_shell_freeze ()" link="AnjutaShell.html#anjuta-shell-freeze"/>
+    <keyword type="function" name="anjuta_shell_thaw ()" link="AnjutaShell.html#anjuta-shell-thaw"/>
+    <keyword type="function" name="anjuta_shell_add_widget ()" link="AnjutaShell.html#anjuta-shell-add-widget"/>
+    <keyword type="function" name="anjuta_shell_add_widget_custom ()" link="AnjutaShell.html#anjuta-shell-add-widget-custom"/>
+    <keyword type="function" name="anjuta_shell_add_widget_full ()" link="AnjutaShell.html#anjuta-shell-add-widget-full"/>
+    <keyword type="function" name="anjuta_shell_remove_widget ()" link="AnjutaShell.html#anjuta-shell-remove-widget"/>
+    <keyword type="function" name="anjuta_shell_present_widget ()" link="AnjutaShell.html#anjuta-shell-present-widget"/>
+    <keyword type="function" name="anjuta_shell_iconify_dockable_widget ()" link="AnjutaShell.html#anjuta-shell-iconify-dockable-widget"/>
+    <keyword type="function" name="anjuta_shell_hide_dockable_widget ()" link="AnjutaShell.html#anjuta-shell-hide-dockable-widget"/>
+    <keyword type="function" name="anjuta_shell_show_dockable_widget ()" link="AnjutaShell.html#anjuta-shell-show-dockable-widget"/>
+    <keyword type="function" name="anjuta_shell_maximize_widget ()" link="AnjutaShell.html#anjuta-shell-maximize-widget"/>
+    <keyword type="function" name="anjuta_shell_unmaximize ()" link="AnjutaShell.html#anjuta-shell-unmaximize"/>
+    <keyword type="function" name="anjuta_shell_create_window ()" link="AnjutaShell.html#anjuta-shell-create-window"/>
+    <keyword type="function" name="anjuta_shell_add_value ()" link="AnjutaShell.html#anjuta-shell-add-value"/>
+    <keyword type="function" name="anjuta_shell_add_valist ()" link="AnjutaShell.html#anjuta-shell-add-valist"/>
+    <keyword type="function" name="anjuta_shell_add ()" link="AnjutaShell.html#anjuta-shell-add"/>
+    <keyword type="function" name="anjuta_shell_get_value ()" link="AnjutaShell.html#anjuta-shell-get-value"/>
+    <keyword type="function" name="anjuta_shell_get_valist ()" link="AnjutaShell.html#anjuta-shell-get-valist"/>
+    <keyword type="function" name="anjuta_shell_get ()" link="AnjutaShell.html#anjuta-shell-get"/>
+    <keyword type="function" name="anjuta_shell_remove_value ()" link="AnjutaShell.html#anjuta-shell-remove-value"/>
+    <keyword type="function" name="anjuta_shell_get_object ()" link="AnjutaShell.html#anjuta-shell-get-object"/>
+    <keyword type="function" name="anjuta_shell_session_save ()" link="AnjutaShell.html#anjuta-shell-session-save"/>
+    <keyword type="function" name="anjuta_shell_session_load ()" link="AnjutaShell.html#anjuta-shell-session-load"/>
+    <keyword type="function" name="anjuta_shell_save_prompt ()" link="AnjutaShell.html#anjuta-shell-save-prompt"/>
+    <keyword type="function" name="anjuta_shell_saving_push ()" link="AnjutaShell.html#anjuta-shell-saving-push"/>
+    <keyword type="function" name="anjuta_shell_saving_pop ()" link="AnjutaShell.html#anjuta-shell-saving-pop"/>
+    <keyword type="macro" name="anjuta_shell_get_interface()" link="AnjutaShell.html#anjuta-shell-get-interface"/>
+    <keyword type="macro" name="ANJUTA_SHELL_ERROR" link="AnjutaShell.html#ANJUTA-SHELL-ERROR:CAPS"/>
+    <keyword type="enum" name="enum AnjutaShellError" link="AnjutaShell.html#AnjutaShellError"/>
+    <keyword type="enum" name="enum AnjutaShellPlacement" link="AnjutaShell.html#AnjutaShellPlacement"/>
+    <keyword type="signal" name="The “load-session” signal" link="AnjutaShell.html#AnjutaShell-load-session"/>
+    <keyword type="signal" name="The “save-prompt” signal" link="AnjutaShell.html#AnjutaShell-save-prompt"/>
+    <keyword type="signal" name="The “save-session” signal" link="AnjutaShell.html#AnjutaShell-save-session"/>
+    <keyword type="signal" name="The “value-added” signal" link="AnjutaShell.html#AnjutaShell-value-added"/>
+    <keyword type="signal" name="The “value-removed” signal" link="AnjutaShell.html#AnjutaShell-value-removed"/>
+    <keyword type="function" name="anjuta_property_get_widget ()" link="AnjutaPreferences.html#anjuta-property-get-widget"/>
+    <keyword type="function" name="AnjutaPreferencesCallback ()" link="AnjutaPreferences.html#AnjutaPreferencesCallback"/>
+    <keyword type="function" name="anjuta_preferences_new ()" link="AnjutaPreferences.html#anjuta-preferences-new"/>
+    <keyword type="function" name="anjuta_preferences_default ()" link="AnjutaPreferences.html#anjuta-preferences-default"/>
+    <keyword type="function" name="anjuta_preferences_add_from_builder ()" link="AnjutaPreferences.html#anjuta-preferences-add-from-builder"/>
+    <keyword type="function" name="anjuta_preferences_remove_page ()" link="AnjutaPreferences.html#anjuta-preferences-remove-page"/>
+    <keyword type="function" name="anjuta_preferences_register_all_properties_from_builder_xml ()" link="AnjutaPreferences.html#anjuta-preferences-register-all-properties-from-builder-xml"/>
+    <keyword type="function" name="anjuta_preferences_register_property ()" link="AnjutaPreferences.html#anjuta-preferences-register-property"/>
+    <keyword type="function" name="anjuta_preferences_get_dialog ()" link="AnjutaPreferences.html#anjuta-preferences-get-dialog"/>
+    <keyword type="function" name="anjuta_preferences_is_dialog_created ()" link="AnjutaPreferences.html#anjuta-preferences-is-dialog-created"/>
+    <keyword type="struct" name="AnjutaProperty" link="AnjutaPreferences.html#AnjutaProperty"/>
+    <keyword type="struct" name="AnjutaPreferencesPriv" link="AnjutaPreferences.html#AnjutaPreferencesPriv"/>
+    <keyword type="function" name="anjuta_preferences_dialog_new ()" link="AnjutaPreferencesDialog.html#anjuta-preferences-dialog-new"/>
+    <keyword type="function" name="anjuta_preferences_dialog_add_page ()" link="AnjutaPreferencesDialog.html#anjuta-preferences-dialog-add-page"/>
+    <keyword type="function" name="anjuta_preferences_dialog_remove_page ()" link="AnjutaPreferencesDialog.html#anjuta-preferences-dialog-remove-page"/>
+    <keyword type="function" name="anjuta_ui_new ()" link="AnjutaUI.html#anjuta-ui-new"/>
+    <keyword type="function" name="anjuta_ui_add_action_group_entries ()" link="AnjutaUI.html#anjuta-ui-add-action-group-entries"/>
+    <keyword type="function" name="anjuta_ui_add_toggle_action_group_entries ()" link="AnjutaUI.html#anjuta-ui-add-toggle-action-group-entries"/>
+    <keyword type="function" name="anjuta_ui_add_action_group ()" link="AnjutaUI.html#anjuta-ui-add-action-group"/>
+    <keyword type="function" name="anjuta_ui_remove_action_group ()" link="AnjutaUI.html#anjuta-ui-remove-action-group"/>
+    <keyword type="function" name="anjuta_ui_get_action ()" link="AnjutaUI.html#anjuta-ui-get-action"/>
+    <keyword type="function" name="anjuta_ui_activate_action_by_path ()" link="AnjutaUI.html#anjuta-ui-activate-action-by-path"/>
+    <keyword type="function" name="anjuta_ui_activate_action_by_group ()" link="AnjutaUI.html#anjuta-ui-activate-action-by-group"/>
+    <keyword type="function" name="anjuta_ui_merge ()" link="AnjutaUI.html#anjuta-ui-merge"/>
+    <keyword type="function" name="anjuta_ui_unmerge ()" link="AnjutaUI.html#anjuta-ui-unmerge"/>
+    <keyword type="function" name="anjuta_ui_get_icon_factory ()" link="AnjutaUI.html#anjuta-ui-get-icon-factory"/>
+    <keyword type="function" name="anjuta_ui_get_accel_group ()" link="AnjutaUI.html#anjuta-ui-get-accel-group"/>
+    <keyword type="function" name="anjuta_ui_get_accel_editor ()" link="AnjutaUI.html#anjuta-ui-get-accel-editor"/>
+    <keyword type="function" name="anjuta_ui_dump_tree ()" link="AnjutaUI.html#anjuta-ui-dump-tree"/>
+    <keyword type="function" name="anjuta_ui_load_accels ()" link="AnjutaUI.html#anjuta-ui-load-accels"/>
+    <keyword type="function" name="anjuta_ui_save_accels ()" link="AnjutaUI.html#anjuta-ui-save-accels"/>
+    <keyword type="function" name="anjuta_ui_unload_accels ()" link="AnjutaUI.html#anjuta-ui-unload-accels"/>
+    <keyword type="macro" name="BEGIN_REGISTER_ICON()" link="AnjutaUI.html#BEGIN-REGISTER-ICON:CAPS"/>
+    <keyword type="macro" name="REGISTER_ICON_FULL()" link="AnjutaUI.html#REGISTER-ICON-FULL:CAPS"/>
+    <keyword type="macro" name="REGISTER_ICON()" link="AnjutaUI.html#REGISTER-ICON:CAPS"/>
+    <keyword type="macro" name="END_REGISTER_ICON" link="AnjutaUI.html#END-REGISTER-ICON:CAPS"/>
+    <keyword type="function" name="anjuta_status_new ()" link="AnjutaStatus.html#anjuta-status-new"/>
+    <keyword type="function" name="anjuta_status_set ()" link="AnjutaStatus.html#anjuta-status-set"/>
+    <keyword type="function" name="anjuta_status_push ()" link="AnjutaStatus.html#anjuta-status-push"/>
+    <keyword type="function" name="anjuta_status_pop ()" link="AnjutaStatus.html#anjuta-status-pop"/>
+    <keyword type="function" name="anjuta_status_clear_stack ()" link="AnjutaStatus.html#anjuta-status-clear-stack"/>
+    <keyword type="function" name="anjuta_status_busy_push ()" link="AnjutaStatus.html#anjuta-status-busy-push"/>
+    <keyword type="function" name="anjuta_status_busy_pop ()" link="AnjutaStatus.html#anjuta-status-busy-pop"/>
+    <keyword type="function" name="anjuta_status_set_default ()" link="AnjutaStatus.html#anjuta-status-set-default"/>
+    <keyword type="function" name="anjuta_status_add_widget ()" link="AnjutaStatus.html#anjuta-status-add-widget"/>
+    <keyword type="function" name="anjuta_status ()" link="AnjutaStatus.html#anjuta-status"/>
+    <keyword type="function" name="anjuta_status_set_title_window ()" link="AnjutaStatus.html#anjuta-status-set-title-window"/>
+    <keyword type="function" name="anjuta_status_set_title ()" link="AnjutaStatus.html#anjuta-status-set-title"/>
+    <keyword type="function" name="anjuta_status_set_splash ()" link="AnjutaStatus.html#anjuta-status-set-splash"/>
+    <keyword type="function" name="anjuta_status_disable_splash ()" link="AnjutaStatus.html#anjuta-status-disable-splash"/>
+    <keyword type="function" name="anjuta_status_progress_add_ticks ()" link="AnjutaStatus.html#anjuta-status-progress-add-ticks"/>
+    <keyword type="function" name="anjuta_status_progress_tick ()" link="AnjutaStatus.html#anjuta-status-progress-tick"/>
+    <keyword type="function" name="anjuta_status_progress_increment_ticks ()" link="AnjutaStatus.html#anjuta-status-progress-increment-ticks"/>
+    <keyword type="function" name="anjuta_status_progress_pulse ()" link="AnjutaStatus.html#anjuta-status-progress-pulse"/>
+    <keyword type="function" name="anjuta_status_progress_reset ()" link="AnjutaStatus.html#anjuta-status-progress-reset"/>
+    <keyword type="struct" name="AnjutaStatusPriv" link="AnjutaStatus.html#AnjutaStatusPriv"/>
+    <keyword type="signal" name="The “busy” signal" link="AnjutaStatus.html#AnjutaStatus-busy"/>
+    <keyword type="function" name="AnjutaPluginValueAdded ()" link="AnjutaPlugin.html#AnjutaPluginValueAdded"/>
+    <keyword type="function" name="AnjutaPluginValueRemoved ()" link="AnjutaPlugin.html#AnjutaPluginValueRemoved"/>
+    <keyword type="function" name="anjuta_plugin_activate ()" link="AnjutaPlugin.html#anjuta-plugin-activate"/>
+    <keyword type="function" name="anjuta_plugin_deactivate ()" link="AnjutaPlugin.html#anjuta-plugin-deactivate"/>
+    <keyword type="function" name="anjuta_plugin_is_active ()" link="AnjutaPlugin.html#anjuta-plugin-is-active"/>
+    <keyword type="function" name="anjuta_plugin_add_watch ()" link="AnjutaPlugin.html#anjuta-plugin-add-watch"/>
+    <keyword type="function" name="anjuta_plugin_remove_watch ()" link="AnjutaPlugin.html#anjuta-plugin-remove-watch"/>
+    <keyword type="function" name="anjuta_plugin_get_shell ()" link="AnjutaPlugin.html#anjuta-plugin-get-shell"/>
+    <keyword type="macro" name="ANJUTA_PLUGIN_BEGIN()" link="AnjutaPlugin.html#ANJUTA-PLUGIN-BEGIN:CAPS"/>
+    <keyword type="macro" name="ANJUTA_PLUGIN_ADD_INTERFACE()" link="AnjutaPlugin.html#ANJUTA-PLUGIN-ADD-INTERFACE:CAPS"/>
+    <keyword type="macro" name="ANJUTA_PLUGIN_BOILERPLATE()" link="AnjutaPlugin.html#ANJUTA-PLUGIN-BOILERPLATE:CAPS"/>
+    <keyword type="typedef" name="AnjutaGluePlugin" link="AnjutaPlugin.html#AnjutaGluePlugin"/>
+    <keyword type="macro" name="ANJUTA_PLUGIN_END" link="AnjutaPlugin.html#ANJUTA-PLUGIN-END:CAPS"/>
+    <keyword type="property" name="The “shell” property" link="AnjutaPlugin.html#AnjutaPlugin--shell"/>
+    <keyword type="signal" name="The “activated” signal" link="AnjutaPlugin.html#AnjutaPlugin-activated"/>
+    <keyword type="signal" name="The “deactivated” signal" link="AnjutaPlugin.html#AnjutaPlugin-deactivated"/>
+    <keyword type="function" name="AnjutaPluginDescriptionSectionFunc ()" link="AnjutaPluginDescription.html#AnjutaPluginDescriptionSectionFunc"/>
+    <keyword type="function" name="AnjutaPluginDescriptionLineFunc ()" link="AnjutaPluginDescription.html#AnjutaPluginDescriptionLineFunc"/>
+    <keyword type="function" name="anjuta_plugin_description_parse_error_quark ()" link="AnjutaPluginDescription.html#anjuta-plugin-description-parse-error-quark"/>
+    <keyword type="function" name="anjuta_plugin_description_new ()" link="AnjutaPluginDescription.html#anjuta-plugin-description-new"/>
+    <keyword type="function" name="anjuta_plugin_description_new_from_string ()" link="AnjutaPluginDescription.html#anjuta-plugin-description-new-from-string"/>
+    <keyword type="function" name="anjuta_plugin_description_to_string ()" link="AnjutaPluginDescription.html#anjuta-plugin-description-to-string"/>
+    <keyword type="function" name="anjuta_plugin_description_free ()" link="AnjutaPluginDescription.html#anjuta-plugin-description-free"/>
+    <keyword type="function" name="anjuta_plugin_description_copy ()" link="AnjutaPluginDescription.html#anjuta-plugin-description-copy"/>
+    <keyword type="function" name="anjuta_plugin_description_foreach_section ()" link="AnjutaPluginDescription.html#anjuta-plugin-description-foreach-section"/>
+    <keyword type="function" name="anjuta_plugin_description_foreach_key ()" link="AnjutaPluginDescription.html#anjuta-plugin-description-foreach-key"/>
+    <keyword type="function" name="anjuta_plugin_description_get_raw ()" link="AnjutaPluginDescription.html#anjuta-plugin-description-get-raw"/>
+    <keyword type="function" name="anjuta_plugin_description_get_integer ()" link="AnjutaPluginDescription.html#anjuta-plugin-description-get-integer"/>
+    <keyword type="function" name="anjuta_plugin_description_get_boolean ()" link="AnjutaPluginDescription.html#anjuta-plugin-description-get-boolean"/>
+    <keyword type="function" name="anjuta_plugin_description_get_string ()" link="AnjutaPluginDescription.html#anjuta-plugin-description-get-string"/>
+    <keyword type="function" name="anjuta_plugin_description_get_locale_string ()" link="AnjutaPluginDescription.html#anjuta-plugin-description-get-locale-string"/>
+    <keyword type="function" name="anjuta_plugin_description_override ()" link="AnjutaPluginDescription.html#anjuta-plugin-description-override"/>
+    <keyword type="function" name="anjuta_plugin_description_remove ()" link="AnjutaPluginDescription.html#anjuta-plugin-description-remove"/>
+    <keyword type="enum" name="enum AnjutaPluginDescriptionParseError" link="AnjutaPluginDescription.html#AnjutaPluginDescriptionParseError"/>
+    <keyword type="macro" name="ANJUTA_PLUGIN_DESCRIPTION_PARSE_ERROR" link="AnjutaPluginDescription.html#ANJUTA-PLUGIN-DESCRIPTION-PARSE-ERROR:CAPS"/>
+    <keyword type="function" name="anjuta_plugin_handle_new ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-new"/>
+    <keyword type="function" name="anjuta_plugin_handle_get_id ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-get-id"/>
+    <keyword type="function" name="anjuta_plugin_handle_get_name ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-get-name"/>
+    <keyword type="function" name="anjuta_plugin_handle_get_about ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-get-about"/>
+    <keyword type="function" name="anjuta_plugin_handle_get_icon_path ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-get-icon-path"/>
+    <keyword type="function" name="anjuta_plugin_handle_get_path ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-get-path"/>
+    <keyword type="function" name="anjuta_plugin_handle_get_user_activatable ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-get-user-activatable"/>
+    <keyword type="function" name="anjuta_plugin_handle_get_resident ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-get-resident"/>
+    <keyword type="function" name="anjuta_plugin_handle_get_language ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-get-language"/>
+    <keyword type="function" name="anjuta_plugin_handle_get_description ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-get-description"/>
+    <keyword type="function" name="anjuta_plugin_handle_get_dependency_names ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-get-dependency-names"/>
+    <keyword type="function" name="anjuta_plugin_handle_get_dependencies ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-get-dependencies"/>
+    <keyword type="function" name="anjuta_plugin_handle_get_dependents ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-get-dependents"/>
+    <keyword type="function" name="anjuta_plugin_handle_get_interfaces ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-get-interfaces"/>
+    <keyword type="function" name="anjuta_plugin_handle_get_can_load ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-get-can-load"/>
+    <keyword type="function" name="anjuta_plugin_handle_get_can_unload ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-get-can-unload"/>
+    <keyword type="function" name="anjuta_plugin_handle_get_checked ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-get-checked"/>
+    <keyword type="function" name="anjuta_plugin_handle_get_resolve_pass ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-get-resolve-pass"/>
+    <keyword type="function" name="anjuta_plugin_handle_set_can_load ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-set-can-load"/>
+    <keyword type="function" name="anjuta_plugin_handle_set_can_unload ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-set-can-unload"/>
+    <keyword type="function" name="anjuta_plugin_handle_set_checked ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-set-checked"/>
+    <keyword type="function" name="anjuta_plugin_handle_set_resolve_pass ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-set-resolve-pass"/>
+    <keyword type="function" name="anjuta_plugin_handle_unresolve_dependencies ()" link="AnjutaPluginHandle.html#anjuta-plugin-handle-unresolve-dependencies"/>
+    <keyword type="struct" name="AnjutaPluginHandlePriv" link="AnjutaPluginHandle.html#AnjutaPluginHandlePriv"/>
+    <keyword type="property" name="The “about” property" link="AnjutaPluginHandle.html#AnjutaPluginHandle--about"/>
+    <keyword type="property" name="The “can-load” property" link="AnjutaPluginHandle.html#AnjutaPluginHandle--can-load"/>
+    <keyword type="property" name="The “can-unload” property" link="AnjutaPluginHandle.html#AnjutaPluginHandle--can-unload"/>
+    <keyword type="property" name="The “checked” property" link="AnjutaPluginHandle.html#AnjutaPluginHandle--checked"/>
+    <keyword type="property" name="The “dependencies” property" link="AnjutaPluginHandle.html#AnjutaPluginHandle--dependencies"/>
+    <keyword type="property" name="The “dependency-names” property" link="AnjutaPluginHandle.html#AnjutaPluginHandle--dependency-names"/>
+    <keyword type="property" name="The “dependents” property" link="AnjutaPluginHandle.html#AnjutaPluginHandle--dependents"/>
+    <keyword type="property" name="The “description” property" link="AnjutaPluginHandle.html#AnjutaPluginHandle--description"/>
+    <keyword type="property" name="The “icon-path” property" link="AnjutaPluginHandle.html#AnjutaPluginHandle--icon-path"/>
+    <keyword type="property" name="The “id” property" link="AnjutaPluginHandle.html#AnjutaPluginHandle--id"/>
+    <keyword type="property" name="The “interfaces” property" link="AnjutaPluginHandle.html#AnjutaPluginHandle--interfaces"/>
+    <keyword type="property" name="The “language” property" link="AnjutaPluginHandle.html#AnjutaPluginHandle--language"/>
+    <keyword type="property" name="The “name” property" link="AnjutaPluginHandle.html#AnjutaPluginHandle--name"/>
+    <keyword type="property" name="The “path” property" link="AnjutaPluginHandle.html#AnjutaPluginHandle--path"/>
+    <keyword type="property" name="The “resident” property" link="AnjutaPluginHandle.html#AnjutaPluginHandle--resident"/>
+    <keyword type="property" name="The “resolve-pass” property" link="AnjutaPluginHandle.html#AnjutaPluginHandle--resolve-pass"/>
+    <keyword type="property" name="The “user-activatable” property" link="AnjutaPluginHandle.html#AnjutaPluginHandle--user-activatable"/>
+    <keyword type="macro" name="ANJUTA_PLUGIN_MANAGER_ERROR" link="AnjutaPluginManager.html#ANJUTA-PLUGIN-MANAGER-ERROR:CAPS"/>
+    <keyword type="function" name="anjuta_plugin_manager_error_quark ()" link="AnjutaPluginManager.html#anjuta-plugin-manager-error-quark"/>
+    <keyword type="function" name="anjuta_plugin_manager_new ()" link="AnjutaPluginManager.html#anjuta-plugin-manager-new"/>
+    <keyword type="function" name="anjuta_plugin_manager_is_active_plugin ()" link="AnjutaPluginManager.html#anjuta-plugin-manager-is-active-plugin"/>
+    <keyword type="function" name="anjuta_plugin_manager_get_plugin ()" link="AnjutaPluginManager.html#anjuta-plugin-manager-get-plugin"/>
+    <keyword type="function" name="anjuta_plugin_manager_get_plugin_by_handle ()" link="AnjutaPluginManager.html#anjuta-plugin-manager-get-plugin-by-handle"/>
+    <keyword type="function" name="anjuta_plugin_manager_unload_plugin ()" link="AnjutaPluginManager.html#anjuta-plugin-manager-unload-plugin"/>
+    <keyword type="function" name="anjuta_plugin_manager_unload_plugin_by_handle ()" link="AnjutaPluginManager.html#anjuta-plugin-manager-unload-plugin-by-handle"/>
+    <keyword type="function" name="anjuta_plugin_manager_get_active_plugins ()" link="AnjutaPluginManager.html#anjuta-plugin-manager-get-active-plugins"/>
+    <keyword type="function" name="anjuta_plugin_manager_get_active_plugin_objects ()" link="AnjutaPluginManager.html#anjuta-plugin-manager-get-active-plugin-objects"/>
+    <keyword type="function" name="anjuta_plugin_manager_get_plugins_page ()" link="AnjutaPluginManager.html#anjuta-plugin-manager-get-plugins-page"/>
+    <keyword type="function" name="anjuta_plugin_manager_get_remembered_plugins_page ()" link="AnjutaPluginManager.html#anjuta-plugin-manager-get-remembered-plugins-page"/>
+    <keyword type="function" name="anjuta_plugin_manager_query ()" link="AnjutaPluginManager.html#anjuta-plugin-manager-query"/>
+    <keyword type="function" name="anjuta_plugin_manager_list_query ()" link="AnjutaPluginManager.html#anjuta-plugin-manager-list-query"/>
+    <keyword type="function" name="anjuta_plugin_manager_select ()" link="AnjutaPluginManager.html#anjuta-plugin-manager-select"/>
+    <keyword type="function" name="anjuta_plugin_manager_select_and_activate ()" link="AnjutaPluginManager.html#anjuta-plugin-manager-select-and-activate"/>
+    <keyword type="function" name="anjuta_plugin_manager_get_plugin_handle ()" link="AnjutaPluginManager.html#anjuta-plugin-manager-get-plugin-handle"/>
+    <keyword type="function" name="anjuta_plugin_manager_activate_plugins ()" link="AnjutaPluginManager.html#anjuta-plugin-manager-activate-plugins"/>
+    <keyword type="function" name="anjuta_plugin_manager_unload_all_plugins ()" link="AnjutaPluginManager.html#anjuta-plugin-manager-unload-all-plugins"/>
+    <keyword type="function" name="anjuta_plugin_manager_get_remembered_plugins ()" link="AnjutaPluginManager.html#anjuta-plugin-manager-get-remembered-plugins"/>
+    <keyword type="function" name="anjuta_plugin_manager_set_remembered_plugins ()" link="AnjutaPluginManager.html#anjuta-plugin-manager-set-remembered-plugins"/>
+    <keyword type="function" name="anjuta_plugin_manager_set_disable_plugins ()" link="AnjutaPluginManager.html#anjuta-plugin-manager-set-disable-plugins"/>
+    <keyword type="macro" name="anjuta_plugin_manager_get_interface()" link="AnjutaPluginManager.html#anjuta-plugin-manager-get-interface"/>
+    <keyword type="enum" name="enum AnjutaPluginManagerError" link="AnjutaPluginManager.html#AnjutaPluginManagerError"/>
+    <keyword type="struct" name="AnjutaPluginManagerPriv" link="AnjutaPluginManager.html#AnjutaPluginManagerPriv"/>
+    <keyword type="property" name="The “activated-plugins” property" link="AnjutaPluginManager.html#AnjutaPluginManager--activated-plugins"/>
+    <keyword type="property" name="The “available-plugins” property" link="AnjutaPluginManager.html#AnjutaPluginManager--available-plugins"/>
+    <keyword type="property" name="The “profiles” property" link="AnjutaPluginManager.html#AnjutaPluginManager--profiles"/>
+    <keyword type="property" name="The “shell” property" link="AnjutaPluginManager.html#AnjutaPluginManager--shell"/>
+    <keyword type="property" name="The “status” property" link="AnjutaPluginManager.html#AnjutaPluginManager--status"/>
+    <keyword type="signal" name="The “plugin-activated” signal" link="AnjutaPluginManager.html#AnjutaPluginManager-plugin-activated"/>
+    <keyword type="signal" name="The “plugin-deactivated” signal" link="AnjutaPluginManager.html#AnjutaPluginManager-plugin-deactivated"/>
+    <keyword type="macro" name="ANJUTA_PROFILE_ERROR" link="AnjutaProfile.html#ANJUTA-PROFILE-ERROR:CAPS"/>
+    <keyword type="function" name="anjuta_profile_error_quark ()" link="AnjutaProfile.html#anjuta-profile-error-quark"/>
+    <keyword type="function" name="anjuta_profile_new ()" link="AnjutaProfile.html#anjuta-profile-new"/>
+    <keyword type="function" name="anjuta_profile_get_name ()" link="AnjutaProfile.html#anjuta-profile-get-name"/>
+    <keyword type="function" name="anjuta_profile_add_plugin ()" link="AnjutaProfile.html#anjuta-profile-add-plugin"/>
+    <keyword type="function" name="anjuta_profile_remove_plugin ()" link="AnjutaProfile.html#anjuta-profile-remove-plugin"/>
+    <keyword type="function" name="anjuta_profile_add_plugins_from_xml ()" link="AnjutaProfile.html#anjuta-profile-add-plugins-from-xml"/>
+    <keyword type="function" name="anjuta_profile_has_plugin ()" link="AnjutaProfile.html#anjuta-profile-has-plugin"/>
+    <keyword type="function" name="anjuta_profile_get_plugins ()" link="AnjutaProfile.html#anjuta-profile-get-plugins"/>
+    <keyword type="function" name="anjuta_profile_set_sync_file ()" link="AnjutaProfile.html#anjuta-profile-set-sync-file"/>
+    <keyword type="function" name="anjuta_profile_sync ()" link="AnjutaProfile.html#anjuta-profile-sync"/>
+    <keyword type="function" name="anjuta_profile_load ()" link="AnjutaProfile.html#anjuta-profile-load"/>
+    <keyword type="function" name="anjuta_profile_unload ()" link="AnjutaProfile.html#anjuta-profile-unload"/>
+    <keyword type="macro" name="ANJUTA_SYSTEM_PROFILE_NAME" link="AnjutaProfile.html#ANJUTA-SYSTEM-PROFILE-NAME:CAPS"/>
+    <keyword type="enum" name="enum AnjutaProfileError" link="AnjutaProfile.html#AnjutaProfileError"/>
+    <keyword type="struct" name="struct AnjutaProfile" link="AnjutaProfile.html#AnjutaProfile-struct"/>
+    <keyword type="struct" name="AnjutaProfilePriv" link="AnjutaProfile.html#AnjutaProfilePriv"/>
+    <keyword type="property" name="The “plugin-manager” property" link="AnjutaProfile.html#AnjutaProfile--plugin-manager"/>
+    <keyword type="property" name="The “profile-name” property" link="AnjutaProfile.html#AnjutaProfile--profile-name"/>
+    <keyword type="property" name="The “sync-file” property" link="AnjutaProfile.html#AnjutaProfile--sync-file"/>
+    <keyword type="signal" name="The “changed” signal" link="AnjutaProfile.html#AnjutaProfile-changed"/>
+    <keyword type="signal" name="The “descoped” signal" link="AnjutaProfile.html#AnjutaProfile-descoped"/>
+    <keyword type="signal" name="The “plugin-added” signal" link="AnjutaProfile.html#AnjutaProfile-plugin-added"/>
+    <keyword type="signal" name="The “plugin-removed” signal" link="AnjutaProfile.html#AnjutaProfile-plugin-removed"/>
+    <keyword type="signal" name="The “scoped” signal" link="AnjutaProfile.html#AnjutaProfile-scoped"/>
+    <keyword type="function" name="anjuta_profile_manager_new ()" link="AnjutaProfileManager.html#anjuta-profile-manager-new"/>
+    <keyword type="function" name="anjuta_profile_manager_push ()" link="AnjutaProfileManager.html#anjuta-profile-manager-push"/>
+    <keyword type="function" name="anjuta_profile_manager_pop ()" link="AnjutaProfileManager.html#anjuta-profile-manager-pop"/>
+    <keyword type="function" name="anjuta_profile_manager_freeze ()" link="AnjutaProfileManager.html#anjuta-profile-manager-freeze"/>
+    <keyword type="function" name="anjuta_profile_manager_thaw ()" link="AnjutaProfileManager.html#anjuta-profile-manager-thaw"/>
+    <keyword type="function" name="anjuta_profile_manager_get_current ()" link="AnjutaProfileManager.html#anjuta-profile-manager-get-current"/>
+    <keyword type="function" name="anjuta_profile_manager_close ()" link="AnjutaProfileManager.html#anjuta-profile-manager-close"/>
+    <keyword type="struct" name="struct AnjutaProfileManager" link="AnjutaProfileManager.html#AnjutaProfileManager-struct"/>
+    <keyword type="struct" name="AnjutaProfileManagerPriv" link="AnjutaProfileManager.html#AnjutaProfileManagerPriv"/>
+    <keyword type="property" name="The “plugin-manager” property" link="AnjutaProfileManager.html#AnjutaProfileManager--plugin-manager"/>
+    <keyword type="signal" name="The “profile-popped” signal" link="AnjutaProfileManager.html#AnjutaProfileManager-profile-popped"/>
+    <keyword type="signal" name="The “profile-pushed” signal" link="AnjutaProfileManager.html#AnjutaProfileManager-profile-pushed"/>
+    <keyword type="function" name="AnjutaLauncherOutputCallback ()" link="AnjutaLauncher.html#AnjutaLauncherOutputCallback"/>
+    <keyword type="function" name="anjuta_launcher_new ()" link="AnjutaLauncher.html#anjuta-launcher-new"/>
+    <keyword type="function" name="anjuta_launcher_is_busy ()" link="AnjutaLauncher.html#anjuta-launcher-is-busy"/>
+    <keyword type="function" name="anjuta_launcher_execute ()" link="AnjutaLauncher.html#anjuta-launcher-execute"/>
+    <keyword type="function" name="anjuta_launcher_execute_v ()" link="AnjutaLauncher.html#anjuta-launcher-execute-v"/>
+    <keyword type="function" name="anjuta_launcher_set_encoding ()" link="AnjutaLauncher.html#anjuta-launcher-set-encoding"/>
+    <keyword type="function" name="anjuta_launcher_send_stdin ()" link="AnjutaLauncher.html#anjuta-launcher-send-stdin"/>
+    <keyword type="function" name="anjuta_launcher_send_stdin_eof ()" link="AnjutaLauncher.html#anjuta-launcher-send-stdin-eof"/>
+    <keyword type="function" name="anjuta_launcher_send_ptyin ()" link="AnjutaLauncher.html#anjuta-launcher-send-ptyin"/>
+    <keyword type="function" name="anjuta_launcher_get_child_pid ()" link="AnjutaLauncher.html#anjuta-launcher-get-child-pid"/>
+    <keyword type="function" name="anjuta_launcher_reset ()" link="AnjutaLauncher.html#anjuta-launcher-reset"/>
+    <keyword type="function" name="anjuta_launcher_signal ()" link="AnjutaLauncher.html#anjuta-launcher-signal"/>
+    <keyword type="function" name="anjuta_launcher_set_buffered_output ()" link="AnjutaLauncher.html#anjuta-launcher-set-buffered-output"/>
+    <keyword type="function" name="anjuta_launcher_set_check_passwd_prompt ()" link="AnjutaLauncher.html#anjuta-launcher-set-check-passwd-prompt"/>
+    <keyword type="function" name="anjuta_launcher_set_terminal_echo ()" link="AnjutaLauncher.html#anjuta-launcher-set-terminal-echo"/>
+    <keyword type="function" name="anjuta_launcher_set_terminate_on_exit ()" link="AnjutaLauncher.html#anjuta-launcher-set-terminate-on-exit"/>
+    <keyword type="enum" name="enum AnjutaLauncherOutputType" link="AnjutaLauncher.html#AnjutaLauncherOutputType"/>
+    <keyword type="struct" name="AnjutaLauncherPriv" link="AnjutaLauncher.html#AnjutaLauncherPriv"/>
+    <keyword type="signal" name="The “busy” signal" link="AnjutaLauncher.html#AnjutaLauncher-busy"/>
+    <keyword type="signal" name="The “child-exited” signal" link="AnjutaLauncher.html#AnjutaLauncher-child-exited"/>
+    <keyword type="function" name="AnjutaSavePromptSaveFunc ()" link="AnjutaSavePrompt.html#AnjutaSavePromptSaveFunc"/>
+    <keyword type="function" name="anjuta_save_prompt_new ()" link="AnjutaSavePrompt.html#anjuta-save-prompt-new"/>
+    <keyword type="function" name="anjuta_save_prompt_get_items_count ()" link="AnjutaSavePrompt.html#anjuta-save-prompt-get-items-count"/>
+    <keyword type="function" name="anjuta_save_prompt_add_item ()" link="AnjutaSavePrompt.html#anjuta-save-prompt-add-item"/>
+    <keyword type="function" name="anjuta_serializer_new ()" link="AnjutaSerializer.html#anjuta-serializer-new"/>
+    <keyword type="function" name="anjuta_serializer_write_int ()" link="AnjutaSerializer.html#anjuta-serializer-write-int"/>
+    <keyword type="function" name="anjuta_serializer_write_float ()" link="AnjutaSerializer.html#anjuta-serializer-write-float"/>
+    <keyword type="function" name="anjuta_serializer_write_string ()" link="AnjutaSerializer.html#anjuta-serializer-write-string"/>
+    <keyword type="function" name="anjuta_serializer_read_int ()" link="AnjutaSerializer.html#anjuta-serializer-read-int"/>
+    <keyword type="function" name="anjuta_serializer_read_float ()" link="AnjutaSerializer.html#anjuta-serializer-read-float"/>
+    <keyword type="function" name="anjuta_serializer_read_string ()" link="AnjutaSerializer.html#anjuta-serializer-read-string"/>
+    <keyword type="enum" name="enum AnjutaSerializerMode" link="AnjutaSerializer.html#AnjutaSerializerMode"/>
+    <keyword type="property" name="The “filepath” property" link="AnjutaSerializer.html#AnjutaSerializer--filepath"/>
+    <keyword type="property" name="The “mode” property" link="AnjutaSerializer.html#AnjutaSerializer--mode"/>
+    <keyword type="function" name="anjuta_session_new ()" link="AnjutaSession.html#anjuta-session-new"/>
+    <keyword type="function" name="anjuta_session_get_session_filename ()" link="AnjutaSession.html#anjuta-session-get-session-filename"/>
+    <keyword type="function" name="anjuta_session_get_session_directory ()" link="AnjutaSession.html#anjuta-session-get-session-directory"/>
+    <keyword type="function" name="anjuta_session_sync ()" link="AnjutaSession.html#anjuta-session-sync"/>
+    <keyword type="function" name="anjuta_session_clear ()" link="AnjutaSession.html#anjuta-session-clear"/>
+    <keyword type="function" name="anjuta_session_clear_section ()" link="AnjutaSession.html#anjuta-session-clear-section"/>
+    <keyword type="function" name="anjuta_session_set_int ()" link="AnjutaSession.html#anjuta-session-set-int"/>
+    <keyword type="function" name="anjuta_session_set_float ()" link="AnjutaSession.html#anjuta-session-set-float"/>
+    <keyword type="function" name="anjuta_session_set_string ()" link="AnjutaSession.html#anjuta-session-set-string"/>
+    <keyword type="function" name="anjuta_session_set_string_list ()" link="AnjutaSession.html#anjuta-session-set-string-list"/>
+    <keyword type="function" name="anjuta_session_get_int ()" link="AnjutaSession.html#anjuta-session-get-int"/>
+    <keyword type="function" name="anjuta_session_get_float ()" link="AnjutaSession.html#anjuta-session-get-float"/>
+    <keyword type="function" name="anjuta_session_get_string ()" link="AnjutaSession.html#anjuta-session-get-string"/>
+    <keyword type="function" name="anjuta_session_get_string_list ()" link="AnjutaSession.html#anjuta-session-get-string-list"/>
+    <keyword type="function" name="anjuta_session_get_relative_uri_from_file ()" link="AnjutaSession.html#anjuta-session-get-relative-uri-from-file"/>
+    <keyword type="function" name="anjuta_session_get_file_from_relative_uri ()" link="AnjutaSession.html#anjuta-session-get-file-from-relative-uri"/>
+    <keyword type="enum" name="enum AnjutaSessionPhase" link="AnjutaSession.html#AnjutaSessionPhase"/>
+    <keyword type="struct" name="AnjutaSessionPriv" link="AnjutaSession.html#AnjutaSessionPriv"/>
+    <keyword type="function" name="anjuta_util_copy_file ()" link="libanjuta-Utilities.html#anjuta-util-copy-file"/>
+    <keyword type="function" name="anjuta_util_diff ()" link="libanjuta-Utilities.html#anjuta-util-diff"/>
+    <keyword type="function" name="anjuta_util_color_from_string ()" link="libanjuta-Utilities.html#anjuta-util-color-from-string"/>
+    <keyword type="function" name="anjuta_util_string_from_color ()" link="libanjuta-Utilities.html#anjuta-util-string-from-color"/>
+    <keyword type="function" name="anjuta_util_button_new_with_stock_image ()" link="libanjuta-Utilities.html#anjuta-util-button-new-with-stock-image"/>
+    <keyword type="function" name="anjuta_util_dialog_add_button ()" link="libanjuta-Utilities.html#anjuta-util-dialog-add-button"/>
+    <keyword type="function" name="anjuta_util_dialog_error ()" link="libanjuta-Utilities.html#anjuta-util-dialog-error"/>
+    <keyword type="function" name="anjuta_util_dialog_warning ()" link="libanjuta-Utilities.html#anjuta-util-dialog-warning"/>
+    <keyword type="function" name="anjuta_util_dialog_info ()" link="libanjuta-Utilities.html#anjuta-util-dialog-info"/>
+    <keyword type="function" name="anjuta_util_dialog_error_system ()" link="libanjuta-Utilities.html#anjuta-util-dialog-error-system"/>
+    <keyword type="function" name="anjuta_util_dialog_boolean_question ()" link="libanjuta-Utilities.html#anjuta-util-dialog-boolean-question"/>
+    <keyword type="function" name="anjuta_util_dialog_input ()" link="libanjuta-Utilities.html#anjuta-util-dialog-input"/>
+    <keyword type="function" name="anjuta_util_install_files ()" link="libanjuta-Utilities.html#anjuta-util-install-files"/>
+    <keyword type="function" name="anjuta_util_package_is_installed ()" link="libanjuta-Utilities.html#anjuta-util-package-is-installed"/>
+    <keyword type="function" name="anjuta_util_prog_is_installed ()" link="libanjuta-Utilities.html#anjuta-util-prog-is-installed"/>
+    <keyword type="function" name="anjuta_util_get_a_tmp_file ()" link="libanjuta-Utilities.html#anjuta-util-get-a-tmp-file"/>
+    <keyword type="function" name="anjuta_util_convert_to_utf8 ()" link="libanjuta-Utilities.html#anjuta-util-convert-to-utf8"/>
+    <keyword type="function" name="anjuta_util_jump_to_matching_brace ()" link="libanjuta-Utilities.html#anjuta-util-jump-to-matching-brace"/>
+    <keyword type="function" name="anjuta_util_parse_args_from_string ()" link="libanjuta-Utilities.html#anjuta-util-parse-args-from-string"/>
+    <keyword type="function" name="anjuta_util_type_from_string ()" link="libanjuta-Utilities.html#anjuta-util-type-from-string"/>
+    <keyword type="function" name="anjuta_util_string_from_type ()" link="libanjuta-Utilities.html#anjuta-util-string-from-type"/>
+    <keyword type="function" name="anjuta_util_glist_from_map ()" link="libanjuta-Utilities.html#anjuta-util-glist-from-map"/>
+    <keyword type="function" name="anjuta_util_glist_strings_free ()" link="libanjuta-Utilities.html#anjuta-util-glist-strings-free"/>
+    <keyword type="function" name="anjuta_util_glist_strings_prefix ()" link="libanjuta-Utilities.html#anjuta-util-glist-strings-prefix"/>
+    <keyword type="function" name="anjuta_util_glist_strings_sufix ()" link="libanjuta-Utilities.html#anjuta-util-glist-strings-sufix"/>
+    <keyword type="function" name="anjuta_util_glist_strings_sort ()" link="libanjuta-Utilities.html#anjuta-util-glist-strings-sort"/>
+    <keyword type="function" name="anjuta_util_glist_strings_join ()" link="libanjuta-Utilities.html#anjuta-util-glist-strings-join"/>
+    <keyword type="function" name="anjuta_util_glist_from_string ()" link="libanjuta-Utilities.html#anjuta-util-glist-from-string"/>
+    <keyword type="function" name="anjuta_util_glist_strings_dup ()" link="libanjuta-Utilities.html#anjuta-util-glist-strings-dup"/>
+    <keyword type="function" name="anjuta_util_glist_path_dedup ()" link="libanjuta-Utilities.html#anjuta-util-glist-path-dedup"/>
+    <keyword type="function" name="anjuta_util_update_string_list ()" link="libanjuta-Utilities.html#anjuta-util-update-string-list"/>
+    <keyword type="function" name="anjuta_util_create_dir ()" link="libanjuta-Utilities.html#anjuta-util-create-dir"/>
+    <keyword type="function" name="anjuta_util_user_shell ()" link="libanjuta-Utilities.html#anjuta-util-user-shell"/>
+    <keyword type="function" name="anjuta_util_user_terminal ()" link="libanjuta-Utilities.html#anjuta-util-user-terminal"/>
+    <keyword type="function" name="anjuta_util_execute_shell ()" link="libanjuta-Utilities.html#anjuta-util-execute-shell"/>
+    <keyword type="function" name="anjuta_util_execute_terminal_shell ()" link="libanjuta-Utilities.html#anjuta-util-execute-terminal-shell"/>
+    <keyword type="function" name="anjuta_util_escape_quotes ()" link="libanjuta-Utilities.html#anjuta-util-escape-quotes"/>
+    <keyword type="function" name="anjuta_util_get_real_path ()" link="libanjuta-Utilities.html#anjuta-util-get-real-path"/>
+    <keyword type="function" name="anjuta_util_get_current_dir ()" link="libanjuta-Utilities.html#anjuta-util-get-current-dir"/>
+    <keyword type="function" name="anjuta_util_file_new_for_commandline_arg ()" link="libanjuta-Utilities.html#anjuta-util-file-new-for-commandline-arg"/>
+    <keyword type="function" name="anjuta_util_uri_get_dirname ()" link="libanjuta-Utilities.html#anjuta-util-uri-get-dirname"/>
+    <keyword type="function" name="anjuta_util_replace_home_dir_with_tilde ()" link="libanjuta-Utilities.html#anjuta-util-replace-home-dir-with-tilde"/>
+    <keyword type="function" name="anjuta_util_shell_expand ()" link="libanjuta-Utilities.html#anjuta-util-shell-expand"/>
+    <keyword type="function" name="anjuta_util_str_middle_truncate ()" link="libanjuta-Utilities.html#anjuta-util-str-middle-truncate"/>
+    <keyword type="function" name="anjuta_util_is_project_file ()" link="libanjuta-Utilities.html#anjuta-util-is-project-file"/>
+    <keyword type="function" name="anjuta_util_is_template_file ()" link="libanjuta-Utilities.html#anjuta-util-is-template-file"/>
+    <keyword type="function" name="anjuta_util_get_file_mime_type ()" link="libanjuta-Utilities.html#anjuta-util-get-file-mime-type"/>
+    <keyword type="function" name="anjuta_util_get_file_info_mime_type ()" link="libanjuta-Utilities.html#anjuta-util-get-file-info-mime-type"/>
+    <keyword type="function" name="anjuta_util_get_local_path_from_uri ()" link="libanjuta-Utilities.html#anjuta-util-get-local-path-from-uri"/>
+    <keyword type="function" name="anjuta_util_help_display ()" link="libanjuta-Utilities.html#anjuta-util-help-display"/>
+    <keyword type="function" name="anjuta_util_set_anjuta_prefix ()" link="libanjuta-Utilities.html#anjuta-util-set-anjuta-prefix"/>
+    <keyword type="function" name="anjuta_util_get_user_data_file ()" link="libanjuta-Utilities.html#anjuta-util-get-user-data-file"/>
+    <keyword type="function" name="anjuta_util_get_user_cache_file ()" link="libanjuta-Utilities.html#anjuta-util-get-user-cache-file"/>
+    <keyword type="function" name="anjuta_util_get_user_config_file ()" link="libanjuta-Utilities.html#anjuta-util-get-user-config-file"/>
+    <keyword type="function" name="anjuta_util_get_user_data_file_path ()" link="libanjuta-Utilities.html#anjuta-util-get-user-data-file-path"/>
+    <keyword type="function" name="anjuta_util_get_user_cache_file_path ()" link="libanjuta-Utilities.html#anjuta-util-get-user-cache-file-path"/>
+    <keyword type="function" name="anjuta_util_get_user_config_file_path ()" link="libanjuta-Utilities.html#anjuta-util-get-user-config-file-path"/>
+    <keyword type="function" name="anjuta_util_get_user_mail ()" link="libanjuta-Utilities.html#anjuta-util-get-user-mail"/>
+    <keyword type="function" name="anjuta_util_set_user_mail ()" link="libanjuta-Utilities.html#anjuta-util-set-user-mail"/>
+    <keyword type="function" name="anjuta_util_convert_gfile_list_to_path_list ()" link="libanjuta-Utilities.html#anjuta-util-convert-gfile-list-to-path-list"/>
+    <keyword type="function" name="anjuta_util_convert_gfile_list_to_relative_path_list ()" link="libanjuta-Utilities.html#anjuta-util-convert-gfile-list-to-relative-path-list"/>
+    <keyword type="function" name="anjuta_util_convert_string_list_to_array ()" link="libanjuta-Utilities.html#anjuta-util-convert-string-list-to-array"/>
+    <keyword type="function" name="anjuta_util_list_all_dir_children ()" link="libanjuta-Utilities.html#anjuta-util-list-all-dir-children"/>
+    <keyword type="function" name="anjuta_util_builder_new ()" link="libanjuta-Utilities.html#anjuta-util-builder-new"/>
+    <keyword type="function" name="anjuta_util_builder_get_objects ()" link="libanjuta-Utilities.html#anjuta-util-builder-get-objects"/>
+    <keyword type="function" name="anjuta_utils_drop_get_files ()" link="libanjuta-Utilities.html#anjuta-utils-drop-get-files"/>
+    <keyword type="function" name="anjuta_util_clone_string_gptrarray ()" link="libanjuta-Utilities.html#anjuta-util-clone-string-gptrarray"/>
+    <keyword type="macro" name="ANJUTA_TYPE_BEGIN()" link="libanjuta-Utilities.html#ANJUTA-TYPE-BEGIN:CAPS"/>
+    <keyword type="macro" name="ANJUTA_TYPE_ADD_INTERFACE()" link="libanjuta-Utilities.html#ANJUTA-TYPE-ADD-INTERFACE:CAPS"/>
+    <keyword type="macro" name="ANJUTA_TYPE_BOILERPLATE()" link="libanjuta-Utilities.html#ANJUTA-TYPE-BOILERPLATE:CAPS"/>
+    <keyword type="macro" name="ANJUTA_TYPE_END" link="libanjuta-Utilities.html#ANJUTA-TYPE-END:CAPS"/>
+    <keyword type="function" name="anjuta_res_lookup_widget ()" link="libanjuta-Program-resources.html#anjuta-res-lookup-widget"/>
+    <keyword type="function" name="anjuta_res_get_image ()" link="libanjuta-Program-resources.html#anjuta-res-get-image"/>
+    <keyword type="function" name="anjuta_res_get_image_sized ()" link="libanjuta-Program-resources.html#anjuta-res-get-image-sized"/>
+    <keyword type="function" name="anjuta_res_get_pixmap_dir ()" link="libanjuta-Program-resources.html#anjuta-res-get-pixmap-dir"/>
+    <keyword type="function" name="anjuta_res_get_data_dir ()" link="libanjuta-Program-resources.html#anjuta-res-get-data-dir"/>
+    <keyword type="function" name="anjuta_res_get_help_dir ()" link="libanjuta-Program-resources.html#anjuta-res-get-help-dir"/>
+    <keyword type="function" name="anjuta_res_get_help_dir_locale ()" link="libanjuta-Program-resources.html#anjuta-res-get-help-dir-locale"/>
+    <keyword type="function" name="anjuta_res_get_doc_dir ()" link="libanjuta-Program-resources.html#anjuta-res-get-doc-dir"/>
+    <keyword type="function" name="anjuta_res_get_pixmap_file ()" link="libanjuta-Program-resources.html#anjuta-res-get-pixmap-file"/>
+    <keyword type="function" name="anjuta_res_get_data_file ()" link="libanjuta-Program-resources.html#anjuta-res-get-data-file"/>
+    <keyword type="function" name="anjuta_res_get_help_file ()" link="libanjuta-Program-resources.html#anjuta-res-get-help-file"/>
+    <keyword type="function" name="anjuta_res_get_help_file_locale ()" link="libanjuta-Program-resources.html#anjuta-res-get-help-file-locale"/>
+    <keyword type="function" name="anjuta_res_get_doc_file ()" link="libanjuta-Program-resources.html#anjuta-res-get-doc-file"/>
+    <keyword type="function" name="anjuta_res_help_search ()" link="libanjuta-Program-resources.html#anjuta-res-help-search"/>
+    <keyword type="function" name="anjuta_res_url_show ()" link="libanjuta-Program-resources.html#anjuta-res-url-show"/>
+    <keyword type="function" name="anjuta_encoding_copy ()" link="libanjuta-anjuta-encodings.html#anjuta-encoding-copy"/>
+    <keyword type="function" name="anjuta_encoding_free ()" link="libanjuta-anjuta-encodings.html#anjuta-encoding-free"/>
+    <keyword type="function" name="anjuta_encoding_get_from_charset ()" link="libanjuta-anjuta-encodings.html#anjuta-encoding-get-from-charset"/>
+    <keyword type="function" name="anjuta_encoding_get_from_index ()" link="libanjuta-anjuta-encodings.html#anjuta-encoding-get-from-index"/>
+    <keyword type="function" name="anjuta_encoding_to_string ()" link="libanjuta-anjuta-encodings.html#anjuta-encoding-to-string"/>
+    <keyword type="function" name="anjuta_encoding_get_name ()" link="libanjuta-anjuta-encodings.html#anjuta-encoding-get-name"/>
+    <keyword type="function" name="anjuta_encoding_get_charset ()" link="libanjuta-anjuta-encodings.html#anjuta-encoding-get-charset"/>
+    <keyword type="function" name="anjuta_encoding_get_utf8 ()" link="libanjuta-anjuta-encodings.html#anjuta-encoding-get-utf8"/>
+    <keyword type="function" name="anjuta_encoding_get_current ()" link="libanjuta-anjuta-encodings.html#anjuta-encoding-get-current"/>
+    <keyword type="macro" name="DEBUG_PRINT()" link="libanjuta-Debugging.html#DEBUG-PRINT:CAPS"/>
+    <keyword type="function" name="anjuta_command_start ()" link="AnjutaCommand.html#anjuta-command-start"/>
+    <keyword type="function" name="anjuta_command_cancel ()" link="AnjutaCommand.html#anjuta-command-cancel"/>
+    <keyword type="function" name="anjuta_command_notify_data_arrived ()" link="AnjutaCommand.html#anjuta-command-notify-data-arrived"/>
+    <keyword type="function" name="anjuta_command_notify_complete ()" link="AnjutaCommand.html#anjuta-command-notify-complete"/>
+    <keyword type="function" name="anjuta_command_notify_progress ()" link="AnjutaCommand.html#anjuta-command-notify-progress"/>
+    <keyword type="function" name="anjuta_command_is_running ()" link="AnjutaCommand.html#anjuta-command-is-running"/>
+    <keyword type="function" name="anjuta_command_set_error_message ()" link="AnjutaCommand.html#anjuta-command-set-error-message"/>
+    <keyword type="function" name="anjuta_command_get_error_message ()" link="AnjutaCommand.html#anjuta-command-get-error-message"/>
+    <keyword type="function" name="anjuta_command_start_automatic_monitor ()" link="AnjutaCommand.html#anjuta-command-start-automatic-monitor"/>
+    <keyword type="function" name="anjuta_command_stop_automatic_monitor ()" link="AnjutaCommand.html#anjuta-command-stop-automatic-monitor"/>
+    <keyword type="struct" name="AnjutaCommandPriv" link="AnjutaCommand.html#AnjutaCommandPriv"/>
+    <keyword type="signal" name="The “command-finished” signal" link="AnjutaCommand.html#AnjutaCommand-command-finished"/>
+    <keyword type="signal" name="The “command-started” signal" link="AnjutaCommand.html#AnjutaCommand-command-started"/>
+    <keyword type="signal" name="The “data-arrived” signal" link="AnjutaCommand.html#AnjutaCommand-data-arrived"/>
+    <keyword type="signal" name="The “progress” signal" link="AnjutaCommand.html#AnjutaCommand-progress"/>
+    <keyword type="function" name="anjuta_async_command_set_error_message ()" link="AnjutaAsyncCommand.html#anjuta-async-command-set-error-message"/>
+    <keyword type="function" name="anjuta_async_command_get_error_message ()" link="AnjutaAsyncCommand.html#anjuta-async-command-get-error-message"/>
+    <keyword type="function" name="anjuta_async_command_lock ()" link="AnjutaAsyncCommand.html#anjuta-async-command-lock"/>
+    <keyword type="function" name="anjuta_async_command_unlock ()" link="AnjutaAsyncCommand.html#anjuta-async-command-unlock"/>
+    <keyword type="struct" name="AnjutaAsyncCommandPriv" link="AnjutaAsyncCommand.html#AnjutaAsyncCommandPriv"/>
+    <keyword type="function" name="anjuta_async_notify_new ()" link="AnjutaAsyncNotify.html#anjuta-async-notify-new"/>
+    <keyword type="function" name="anjuta_async_notify_get_error ()" link="AnjutaAsyncNotify.html#anjuta-async-notify-get-error"/>
+    <keyword type="function" name="anjuta_async_notify_notify_finished ()" link="AnjutaAsyncNotify.html#anjuta-async-notify-notify-finished"/>
+    <keyword type="function" name="anjuta_async_notify_set_error ()" link="AnjutaAsyncNotify.html#anjuta-async-notify-set-error"/>
+    <keyword type="struct" name="AnjutaAsyncNotifyPriv" link="AnjutaAsyncNotify.html#AnjutaAsyncNotifyPriv"/>
+    <keyword type="signal" name="The “finished” signal" link="AnjutaAsyncNotify.html#AnjutaAsyncNotify-finished"/>
+    <keyword type="macro" name="ANJUTA_VCS_DEFAULT_STATUS_CODES" link="AnjutaVcsStatusTreeView.html#ANJUTA-VCS-DEFAULT-STATUS-CODES:CAPS"/>
+    <keyword type="function" name="anjuta_vcs_status_tree_view_new ()" link="AnjutaVcsStatusTreeView.html#anjuta-vcs-status-tree-view-new"/>
+    <keyword type="function" name="anjuta_vcs_status_tree_view_destroy ()" link="AnjutaVcsStatusTreeView.html#anjuta-vcs-status-tree-view-destroy"/>
+    <keyword type="function" name="anjuta_vcs_status_tree_view_add ()" link="AnjutaVcsStatusTreeView.html#anjuta-vcs-status-tree-view-add"/>
+    <keyword type="function" name="anjuta_vcs_status_tree_view_select_all ()" link="AnjutaVcsStatusTreeView.html#anjuta-vcs-status-tree-view-select-all"/>
+    <keyword type="function" name="anjuta_vcs_status_tree_view_unselect_all ()" link="AnjutaVcsStatusTreeView.html#anjuta-vcs-status-tree-view-unselect-all"/>
+    <keyword type="function" name="anjuta_vcs_status_tree_view_get_selected ()" link="AnjutaVcsStatusTreeView.html#anjuta-vcs-status-tree-view-get-selected"/>
+    <keyword type="struct" name="struct AnjutaVcsStatusTreeViewClass" link="AnjutaVcsStatusTreeView.html#AnjutaVcsStatusTreeViewClass"/>
+    <keyword type="struct" name="struct AnjutaVcsStatusTreeView" link="AnjutaVcsStatusTreeView.html#AnjutaVcsStatusTreeView-struct"/>
+    <keyword type="struct" name="AnjutaVcsStatusTreeViewPriv" link="AnjutaVcsStatusTreeView.html#AnjutaVcsStatusTreeViewPriv"/>
+    <keyword type="property" name="The “conflicted-selectable” property" link="AnjutaVcsStatusTreeView.html#AnjutaVcsStatusTreeView--conflicted-selectable"/>
+    <keyword type="property" name="The “show-status” property" link="AnjutaVcsStatusTreeView.html#AnjutaVcsStatusTreeView--show-status"/>
+    <keyword type="property" name="The “status-codes” property" link="AnjutaVcsStatusTreeView.html#AnjutaVcsStatusTreeView--status-codes"/>
+    <keyword type="function" name="anjuta_convert_error_quark ()" link="libanjuta-anjuta-convert.html#anjuta-convert-error-quark"/>
+    <keyword type="function" name="anjuta_convert_to_utf8 ()" link="libanjuta-anjuta-convert.html#anjuta-convert-to-utf8"/>
+    <keyword type="function" name="anjuta_convert_from_utf8 ()" link="libanjuta-anjuta-convert.html#anjuta-convert-from-utf8"/>
+    <keyword type="enum" name="enum AnjutaConvertError" link="libanjuta-anjuta-convert.html#AnjutaConvertError"/>
+    <keyword type="macro" name="ANJUTA_CONVERT_ERROR" link="libanjuta-anjuta-convert.html#ANJUTA-CONVERT-ERROR:CAPS"/>
+    <keyword type="function" name="AnjutaAutogenFunc ()" link="AnjutaAutogen.html#AnjutaAutogenFunc"/>
+    <keyword type="function" name="AnjutaAutogenOutputFunc ()" link="AnjutaAutogen.html#AnjutaAutogenOutputFunc"/>
+    <keyword type="function" name="anjuta_autogen_new ()" link="AnjutaAutogen.html#anjuta-autogen-new"/>
+    <keyword type="function" name="anjuta_autogen_write_definition_file ()" link="AnjutaAutogen.html#anjuta-autogen-write-definition-file"/>
+    <keyword type="function" name="anjuta_autogen_set_library_path ()" link="AnjutaAutogen.html#anjuta-autogen-set-library-path"/>
+    <keyword type="function" name="anjuta_autogen_clear_library_path ()" link="AnjutaAutogen.html#anjuta-autogen-clear-library-path"/>
+    <keyword type="function" name="anjuta_autogen_get_library_paths ()" link="AnjutaAutogen.html#anjuta-autogen-get-library-paths"/>
+    <keyword type="function" name="anjuta_autogen_set_input_file ()" link="AnjutaAutogen.html#anjuta-autogen-set-input-file"/>
+    <keyword type="function" name="anjuta_autogen_set_output_file ()" link="AnjutaAutogen.html#anjuta-autogen-set-output-file"/>
+    <keyword type="function" name="anjuta_autogen_set_output_callback ()" link="AnjutaAutogen.html#anjuta-autogen-set-output-callback"/>
+    <keyword type="function" name="anjuta_autogen_execute ()" link="AnjutaAutogen.html#anjuta-autogen-execute"/>
+    <keyword type="function" name="anjuta_check_autogen ()" link="AnjutaAutogen.html#anjuta-check-autogen"/>
+    <keyword type="struct" name="AnjutaAutogen" link="AnjutaAutogen.html#AnjutaAutogen-struct"/>
+    <keyword type="macro" name="ANJUTA_CLOSE_BUTTON_CONST()" link="AnjutaCloseButton.html#ANJUTA-CLOSE-BUTTON-CONST:CAPS"/>
+    <keyword type="function" name="anjuta_close_button_new ()" link="AnjutaCloseButton.html#anjuta-close-button-new"/>
+    <keyword type="struct" name="AnjutaCloseButtonClassPrivate" link="AnjutaCloseButton.html#AnjutaCloseButtonClassPrivate"/>
+    <keyword type="function" name="anjuta_column_text_view_new ()" link="AnjutaColumnTextView.html#anjuta-column-text-view-new"/>
+    <keyword type="function" name="anjuta_column_text_view_get_text ()" link="AnjutaColumnTextView.html#anjuta-column-text-view-get-text"/>
+    <keyword type="function" name="anjuta_column_text_view_get_buffer ()" link="AnjutaColumnTextView.html#anjuta-column-text-view-get-buffer"/>
+    <keyword type="struct" name="AnjutaColumnTextViewPriv" link="AnjutaColumnTextView.html#AnjutaColumnTextViewPriv"/>
+    <keyword type="function" name="anjuta_command_bar_new ()" link="AnjutaCommandBar.html#anjuta-command-bar-new"/>
+    <keyword type="function" name="anjuta_command_bar_add_action_group ()" link="AnjutaCommandBar.html#anjuta-command-bar-add-action-group"/>
+    <keyword type="function" name="anjuta_command_bar_remove_action_group ()" link="AnjutaCommandBar.html#anjuta-command-bar-remove-action-group"/>
+    <keyword type="function" name="anjuta_command_bar_show_action_group ()" link="AnjutaCommandBar.html#anjuta-command-bar-show-action-group"/>
+    <keyword type="function" name="anjuta_command_bar_get_action_group ()" link="AnjutaCommandBar.html#anjuta-command-bar-get-action-group"/>
+    <keyword type="function" name="anjuta_command_bar_get_action ()" link="AnjutaCommandBar.html#anjuta-command-bar-get-action"/>
+    <keyword type="enum" name="enum AnjutaCommandBarEntryType" link="AnjutaCommandBar.html#AnjutaCommandBarEntryType"/>
+    <keyword type="struct" name="AnjutaCommandBarPriv" link="AnjutaCommandBar.html#AnjutaCommandBarPriv"/>
+    <keyword type="property" name="The “max-text-width” property" link="AnjutaCommandBar.html#AnjutaCommandBar--max-text-width"/>
+    <keyword type="function" name="anjuta_command_queue_new ()" link="AnjutaCommandQueue.html#anjuta-command-queue-new"/>
+    <keyword type="function" name="anjuta_command_queue_push ()" link="AnjutaCommandQueue.html#anjuta-command-queue-push"/>
+    <keyword type="function" name="anjuta_command_queue_start ()" link="AnjutaCommandQueue.html#anjuta-command-queue-start"/>
+    <keyword type="enum" name="enum AnjutaCommandQueueExecuteMode" link="AnjutaCommandQueue.html#AnjutaCommandQueueExecuteMode"/>
+    <keyword type="struct" name="AnjutaCommandQueuePriv" link="AnjutaCommandQueue.html#AnjutaCommandQueuePriv"/>
+    <keyword type="signal" name="The “finished” signal" link="AnjutaCommandQueue.html#AnjutaCommandQueue-finished"/>
+    <keyword type="function" name="AnjutaCompletionNameFunc ()" link="AnjutaCompletion.html#AnjutaCompletionNameFunc"/>
+    <keyword type="function" name="AnjutaCompletionFilterFunc ()" link="AnjutaCompletion.html#AnjutaCompletionFilterFunc"/>
+    <keyword type="function" name="anjuta_completion_new ()" link="AnjutaCompletion.html#anjuta-completion-new"/>
+    <keyword type="function" name="anjuta_completion_get_case_sensitive ()" link="AnjutaCompletion.html#anjuta-completion-get-case-sensitive"/>
+    <keyword type="function" name="anjuta_completion_set_case_sensitive ()" link="AnjutaCompletion.html#anjuta-completion-set-case-sensitive"/>
+    <keyword type="function" name="anjuta_completion_set_item_destroy_func ()" link="AnjutaCompletion.html#anjuta-completion-set-item-destroy-func"/>
+    <keyword type="function" name="anjuta_completion_set_filter_func ()" link="AnjutaCompletion.html#anjuta-completion-set-filter-func"/>
+    <keyword type="function" name="anjuta_completion_add_item ()" link="AnjutaCompletion.html#anjuta-completion-add-item"/>
+    <keyword type="function" name="anjuta_completion_clear ()" link="AnjutaCompletion.html#anjuta-completion-clear"/>
+    <keyword type="function" name="anjuta_completion_complete ()" link="AnjutaCompletion.html#anjuta-completion-complete"/>
+    <keyword type="property" name="The “case-sensitive” property" link="AnjutaCompletion.html#AnjutaCompletion--case-sensitive"/>
+    <keyword type="function" name="anjuta_dock_new ()" link="AnjutaDock.html#anjuta-dock-new"/>
+    <keyword type="function" name="anjuta_dock_add_pane ()" link="AnjutaDock.html#anjuta-dock-add-pane"/>
+    <keyword type="function" name="anjuta_dock_add_pane_full ()" link="AnjutaDock.html#anjuta-dock-add-pane-full"/>
+    <keyword type="function" name="anjuta_dock_replace_command_pane ()" link="AnjutaDock.html#anjuta-dock-replace-command-pane"/>
+    <keyword type="function" name="anjuta_dock_remove_pane ()" link="AnjutaDock.html#anjuta-dock-remove-pane"/>
+    <keyword type="function" name="anjuta_dock_show_pane ()" link="AnjutaDock.html#anjuta-dock-show-pane"/>
+    <keyword type="function" name="anjuta_dock_hide_pane ()" link="AnjutaDock.html#anjuta-dock-hide-pane"/>
+    <keyword type="function" name="anjuta_dock_present_pane ()" link="AnjutaDock.html#anjuta-dock-present-pane"/>
+    <keyword type="function" name="anjuta_dock_set_command_bar ()" link="AnjutaDock.html#anjuta-dock-set-command-bar"/>
+    <keyword type="function" name="anjuta_dock_get_command_bar ()" link="AnjutaDock.html#anjuta-dock-get-command-bar"/>
+    <keyword type="struct" name="AnjutaDockPriv" link="AnjutaDock.html#AnjutaDockPriv"/>
+    <keyword type="function" name="anjuta_dock_pane_refresh ()" link="AnjutaDockPane.html#anjuta-dock-pane-refresh"/>
+    <keyword type="function" name="anjuta_dock_pane_get_widget ()" link="AnjutaDockPane.html#anjuta-dock-pane-get-widget"/>
+    <keyword type="function" name="anjuta_dock_pane_get_plugin ()" link="AnjutaDockPane.html#anjuta-dock-pane-get-plugin"/>
+    <keyword type="function" name="anjuta_dock_pane_notify_single_selection_changed ()" link="AnjutaDockPane.html#anjuta-dock-pane-notify-single-selection-changed"/>
+    <keyword type="function" name="anjuta_dock_pane_notify_multiple_selection_changed ()" link="AnjutaDockPane.html#anjuta-dock-pane-notify-multiple-selection-changed"/>
+    <keyword type="struct" name="AnjutaDockPanePriv" link="AnjutaDockPane.html#AnjutaDockPanePriv"/>
+    <keyword type="property" name="The “plugin” property" link="AnjutaDockPane.html#AnjutaDockPane--plugin"/>
+    <keyword type="signal" name="The “multiple-selection-changed” signal" link="AnjutaDockPane.html#AnjutaDockPane-multiple-selection-changed"/>
+    <keyword type="signal" name="The “single-selection-changed” signal" link="AnjutaDockPane.html#AnjutaDockPane-single-selection-changed"/>
+    <keyword type="function" name="anjuta_drop_entry_new ()" link="AnjutaDropEntry.html#anjuta-drop-entry-new"/>
+    <keyword type="function" name="anjuta_entry_new ()" link="AnjutaEntry.html#anjuta-entry-new"/>
+    <keyword type="function" name="anjuta_entry_get_text ()" link="AnjutaEntry.html#anjuta-entry-get-text"/>
+    <keyword type="function" name="anjuta_entry_dup_text ()" link="AnjutaEntry.html#anjuta-entry-dup-text"/>
+    <keyword type="function" name="anjuta_entry_set_text ()" link="AnjutaEntry.html#anjuta-entry-set-text"/>
+    <keyword type="function" name="anjuta_entry_is_showing_help_text ()" link="AnjutaEntry.html#anjuta-entry-is-showing-help-text"/>
+    <keyword type="struct" name="AnjutaEntryPriv" link="AnjutaEntry.html#AnjutaEntryPriv"/>
+    <keyword type="property" name="The “help-text” property" link="AnjutaEntry.html#AnjutaEntry--help-text"/>
+    <keyword type="function" name="anjuta_environment_editor_new ()" link="AnjutaEnvironmentEditor.html#anjuta-environment-editor-new"/>
+    <keyword type="function" name="anjuta_environment_editor_set_variable ()" link="AnjutaEnvironmentEditor.html#anjuta-environment-editor-set-variable"/>
+    <keyword type="function" name="anjuta_environment_editor_get_all_variables ()" link="AnjutaEnvironmentEditor.html#anjuta-environment-editor-get-all-variables"/>
+    <keyword type="function" name="anjuta_environment_editor_get_modified_variables ()" link="AnjutaEnvironmentEditor.html#anjuta-environment-editor-get-modified-variables"/>
+    <keyword type="function" name="anjuta_environment_editor_reset ()" link="AnjutaEnvironmentEditor.html#anjuta-environment-editor-reset"/>
+    <keyword type="signal" name="The “changed” signal" link="AnjutaEnvironmentEditor.html#AnjutaEnvironmentEditor-changed"/>
+    <keyword type="function" name="anjuta_file_drop_entry_new ()" link="AnjutaFileDropEntry.html#anjuta-file-drop-entry-new"/>
+    <keyword type="function" name="anjuta_file_drop_entry_set_relative_path ()" link="AnjutaFileDropEntry.html#anjuta-file-drop-entry-set-relative-path"/>
+    <keyword type="struct" name="AnjutaFileDropEntryPriv" link="AnjutaFileDropEntry.html#AnjutaFileDropEntryPriv"/>
+    <keyword type="property" name="The “relative-path” property" link="AnjutaFileDropEntry.html#AnjutaFileDropEntry--relative-path"/>
+    <keyword type="function" name="anjuta_file_list_new ()" link="AnjutaFileList.html#anjuta-file-list-new"/>
+    <keyword type="function" name="anjuta_file_list_get_paths ()" link="AnjutaFileList.html#anjuta-file-list-get-paths"/>
+    <keyword type="function" name="anjuta_file_list_set_relative_path ()" link="AnjutaFileList.html#anjuta-file-list-set-relative-path"/>
+    <keyword type="function" name="anjuta_file_list_clear ()" link="AnjutaFileList.html#anjuta-file-list-clear"/>
+    <keyword type="struct" name="AnjutaFileListPriv" link="AnjutaFileList.html#AnjutaFileListPriv"/>
+    <keyword type="property" name="The “relative-path” property" link="AnjutaFileList.html#AnjutaFileList--relative-path"/>
+    <keyword type="property" name="The “show-add-button” property" link="AnjutaFileList.html#AnjutaFileList--show-add-button"/>
+    <keyword type="function" name="anjuta_language_proposal_data_new ()" link="AnjutaLanguageProvider.html#anjuta-language-proposal-data-new"/>
+    <keyword type="function" name="anjuta_language_proposal_data_free ()" link="AnjutaLanguageProvider.html#anjuta-language-proposal-data-free"/>
+    <keyword type="function" name="anjuta_language_provider_install ()" link="AnjutaLanguageProvider.html#anjuta-language-provider-install"/>
+    <keyword type="function" name="anjuta_language_provider_get_pre_word ()" link="AnjutaLanguageProvider.html#anjuta-language-provider-get-pre-word"/>
+    <keyword type="function" name="anjuta_language_provider_get_calltip_context ()" link="AnjutaLanguageProvider.html#anjuta-language-provider-get-calltip-context"/>
+    <keyword type="function" name="anjuta_language_provider_activate ()" link="AnjutaLanguageProvider.html#anjuta-language-provider-activate"/>
+    <keyword type="function" name="anjuta_language_provider_populate ()" link="AnjutaLanguageProvider.html#anjuta-language-provider-populate"/>
+    <keyword type="function" name="anjuta_language_provider_proposals ()" link="AnjutaLanguageProvider.html#anjuta-language-provider-proposals"/>
+    <keyword type="function" name="anjuta_language_provider_get_start_iter ()" link="AnjutaLanguageProvider.html#anjuta-language-provider-get-start-iter"/>
+    <keyword type="struct" name="struct AnjutaLanguageProposalData" link="AnjutaLanguageProvider.html#AnjutaLanguageProposalData-struct"/>
+    <keyword type="struct" name="AnjutaLanguageProviderPriv" link="AnjutaLanguageProvider.html#AnjutaLanguageProviderPriv"/>
+    <keyword type="function" name="anjuta_pkg_config_chooser_new ()" link="AnjutaPkgConfigChooser.html#anjuta-pkg-config-chooser-new"/>
+    <keyword type="function" name="anjuta_pkg_config_chooser_get_active_packages ()" link="AnjutaPkgConfigChooser.html#anjuta-pkg-config-chooser-get-active-packages"/>
+    <keyword type="function" name="anjuta_pkg_config_chooser_set_active_packages ()" link="AnjutaPkgConfigChooser.html#anjuta-pkg-config-chooser-set-active-packages"/>
+    <keyword type="function" name="anjuta_pkg_config_chooser_show_active_only ()" link="AnjutaPkgConfigChooser.html#anjuta-pkg-config-chooser-show-active-only"/>
+    <keyword type="function" name="anjuta_pkg_config_chooser_show_active_column ()" link="AnjutaPkgConfigChooser.html#anjuta-pkg-config-chooser-show-active-column"/>
+    <keyword type="function" name="anjuta_pkg_config_chooser_get_selected_package ()" link="AnjutaPkgConfigChooser.html#anjuta-pkg-config-chooser-get-selected-package"/>
+    <keyword type="signal" name="The “package-activated” signal" link="AnjutaPkgConfigChooser.html#AnjutaPkgConfigChooser-package-activated"/>
+    <keyword type="signal" name="The “package-deactivated” signal" link="AnjutaPkgConfigChooser.html#AnjutaPkgConfigChooser-package-deactivated"/>
+    <keyword type="function" name="anjuta_pkg_config_list_dependencies ()" link="libanjuta-anjuta-pkg-config.html#anjuta-pkg-config-list-dependencies"/>
+    <keyword type="function" name="anjuta_pkg_config_get_directories ()" link="libanjuta-anjuta-pkg-config.html#anjuta-pkg-config-get-directories"/>
+    <keyword type="function" name="anjuta_pkg_config_ignore_package ()" link="libanjuta-anjuta-pkg-config.html#anjuta-pkg-config-ignore-package"/>
+    <keyword type="function" name="anjuta_pkg_config_get_version ()" link="libanjuta-anjuta-pkg-config.html#anjuta-pkg-config-get-version"/>
+    <keyword type="function" name="anjuta_pkg_scanner_new ()" link="AnjutaPkgScanner.html#anjuta-pkg-scanner-new"/>
+    <keyword type="function" name="anjuta_pkg_scanner_get_package ()" link="AnjutaPkgScanner.html#anjuta-pkg-scanner-get-package"/>
+    <keyword type="function" name="anjuta_pkg_scanner_get_version ()" link="AnjutaPkgScanner.html#anjuta-pkg-scanner-get-version"/>
+    <keyword type="function" name="anjuta_pkg_scanner_get_files ()" link="AnjutaPkgScanner.html#anjuta-pkg-scanner-get-files"/>
+    <keyword type="property" name="The “package” property" link="AnjutaPkgScanner.html#AnjutaPkgScanner--package"/>
+    <keyword type="property" name="The “version” property" link="AnjutaPkgScanner.html#AnjutaPkgScanner--version"/>
+    <keyword type="function" name="anjuta_project_property_new ()" link="AnjutaProjectNode.html#anjuta-project-property-new"/>
+    <keyword type="function" name="anjuta_project_property_copy ()" link="AnjutaProjectNode.html#anjuta-project-property-copy"/>
+    <keyword type="function" name="anjuta_project_property_free ()" link="AnjutaProjectNode.html#anjuta-project-property-free"/>
+    <keyword type="function" name="anjuta_project_property_info_new ()" link="AnjutaProjectNode.html#anjuta-project-property-info-new"/>
+    <keyword type="function" name="anjuta_project_property_info_copy ()" link="AnjutaProjectNode.html#anjuta-project-property-info-copy"/>
+    <keyword type="function" name="anjuta_project_property_info_free ()" link="AnjutaProjectNode.html#anjuta-project-property-info-free"/>
+    <keyword type="function" name="AnjutaProjectNodeTraverseFunc ()" link="AnjutaProjectNode.html#AnjutaProjectNodeTraverseFunc"/>
+    <keyword type="function" name="AnjutaProjectNodeForeachFunc ()" link="AnjutaProjectNode.html#AnjutaProjectNodeForeachFunc"/>
+    <keyword type="function" name="anjuta_project_node_root ()" link="AnjutaProjectNode.html#anjuta-project-node-root"/>
+    <keyword type="function" name="anjuta_project_node_parent ()" link="AnjutaProjectNode.html#anjuta-project-node-parent"/>
+    <keyword type="function" name="anjuta_project_node_first_child ()" link="AnjutaProjectNode.html#anjuta-project-node-first-child"/>
+    <keyword type="function" name="anjuta_project_node_last_child ()" link="AnjutaProjectNode.html#anjuta-project-node-last-child"/>
+    <keyword type="function" name="anjuta_project_node_next_sibling ()" link="AnjutaProjectNode.html#anjuta-project-node-next-sibling"/>
+    <keyword type="function" name="anjuta_project_node_prev_sibling ()" link="AnjutaProjectNode.html#anjuta-project-node-prev-sibling"/>
+    <keyword type="function" name="anjuta_project_node_nth_child ()" link="AnjutaProjectNode.html#anjuta-project-node-nth-child"/>
+    <keyword type="function" name="anjuta_project_node_parent_type ()" link="AnjutaProjectNode.html#anjuta-project-node-parent-type"/>
+    <keyword type="function" name="anjuta_project_node_foreach ()" link="AnjutaProjectNode.html#anjuta-project-node-foreach"/>
+    <keyword type="function" name="anjuta_project_node_children_foreach ()" link="AnjutaProjectNode.html#anjuta-project-node-children-foreach"/>
+    <keyword type="function" name="anjuta_project_node_traverse ()" link="AnjutaProjectNode.html#anjuta-project-node-traverse"/>
+    <keyword type="function" name="anjuta_project_node_children_traverse ()" link="AnjutaProjectNode.html#anjuta-project-node-children-traverse"/>
+    <keyword type="function" name="anjuta_project_node_check ()" link="AnjutaProjectNode.html#anjuta-project-node-check"/>
+    <keyword type="function" name="anjuta_project_node_dump ()" link="AnjutaProjectNode.html#anjuta-project-node-dump"/>
+    <keyword type="function" name="anjuta_project_node_insert_before ()" link="AnjutaProjectNode.html#anjuta-project-node-insert-before"/>
+    <keyword type="function" name="anjuta_project_node_insert_after ()" link="AnjutaProjectNode.html#anjuta-project-node-insert-after"/>
+    <keyword type="function" name="anjuta_project_node_remove ()" link="AnjutaProjectNode.html#anjuta-project-node-remove"/>
+    <keyword type="function" name="anjuta_project_node_append ()" link="AnjutaProjectNode.html#anjuta-project-node-append"/>
+    <keyword type="function" name="anjuta_project_node_prepend ()" link="AnjutaProjectNode.html#anjuta-project-node-prepend"/>
+    <keyword type="function" name="anjuta_project_node_get_node_type ()" link="AnjutaProjectNode.html#anjuta-project-node-get-node-type"/>
+    <keyword type="function" name="anjuta_project_node_get_full_type ()" link="AnjutaProjectNode.html#anjuta-project-node-get-full-type"/>
+    <keyword type="function" name="anjuta_project_node_get_state ()" link="AnjutaProjectNode.html#anjuta-project-node-get-state"/>
+    <keyword type="function" name="anjuta_project_node_get_name ()" link="AnjutaProjectNode.html#anjuta-project-node-get-name"/>
+    <keyword type="function" name="anjuta_project_node_get_file ()" link="AnjutaProjectNode.html#anjuta-project-node-get-file"/>
+    <keyword type="function" name="anjuta_project_node_get_properties_info ()" link="AnjutaProjectNode.html#anjuta-project-node-get-properties-info"/>
+    <keyword type="function" name="anjuta_project_node_get_properties ()" link="AnjutaProjectNode.html#anjuta-project-node-get-properties"/>
+    <keyword type="function" name="anjuta_project_node_get_property_info ()" link="AnjutaProjectNode.html#anjuta-project-node-get-property-info"/>
+    <keyword type="function" name="anjuta_project_node_get_property ()" link="AnjutaProjectNode.html#anjuta-project-node-get-property"/>
+    <keyword type="function" name="anjuta_project_node_get_map_property ()" link="AnjutaProjectNode.html#anjuta-project-node-get-map-property"/>
+    <keyword type="function" name="anjuta_project_node_insert_property_info ()" link="AnjutaProjectNode.html#anjuta-project-node-insert-property-info"/>
+    <keyword type="function" name="anjuta_project_node_insert_property ()" link="AnjutaProjectNode.html#anjuta-project-node-insert-property"/>
+    <keyword type="function" name="anjuta_project_node_remove_property ()" link="AnjutaProjectNode.html#anjuta-project-node-remove-property"/>
+    <keyword type="function" name="anjuta_project_node_set_state ()" link="AnjutaProjectNode.html#anjuta-project-node-set-state"/>
+    <keyword type="function" name="anjuta_project_node_clear_state ()" link="AnjutaProjectNode.html#anjuta-project-node-clear-state"/>
+    <keyword type="function" name="anjuta_project_node_get_group_from_file ()" link="AnjutaProjectNode.html#anjuta-project-node-get-group-from-file"/>
+    <keyword type="function" name="anjuta_project_target_get_node_from_name ()" link="AnjutaProjectNode.html#anjuta-project-target-get-node-from-name"/>
+    <keyword type="function" name="anjuta_project_node_get_source_from_file ()" link="AnjutaProjectNode.html#anjuta-project-node-get-source-from-file"/>
+    <keyword type="function" name="anjuta_project_node_info_new ()" link="AnjutaProjectNode.html#anjuta-project-node-info-new"/>
+    <keyword type="function" name="anjuta_project_node_info_copy ()" link="AnjutaProjectNode.html#anjuta-project-node-info-copy"/>
+    <keyword type="function" name="anjuta_project_node_info_free ()" link="AnjutaProjectNode.html#anjuta-project-node-info-free"/>
+    <keyword type="function" name="anjuta_project_node_info_name ()" link="AnjutaProjectNode.html#anjuta-project-node-info-name"/>
+    <keyword type="function" name="anjuta_project_node_info_mime ()" link="AnjutaProjectNode.html#anjuta-project-node-info-mime"/>
+    <keyword type="function" name="anjuta_project_node_info_type ()" link="AnjutaProjectNode.html#anjuta-project-node-info-type"/>
+    <keyword type="function" name="anjuta_project_node_info_property_help_id ()" link="AnjutaProjectNode.html#anjuta-project-node-info-property-help-id"/>
+    <keyword type="enum" name="enum AnjutaProjectValueType" link="AnjutaProjectNode.html#AnjutaProjectValueType"/>
+    <keyword type="enum" name="enum AnjutaProjectPropertyFlags" link="AnjutaProjectNode.html#AnjutaProjectPropertyFlags"/>
+    <keyword type="enum" name="enum AnjutaProjectNodeType" link="AnjutaProjectNode.html#AnjutaProjectNodeType"/>
+    <keyword type="enum" name="enum AnjutaProjectNodeState" link="AnjutaProjectNode.html#AnjutaProjectNodeState"/>
+    <keyword type="struct" name="struct AnjutaProjectNode" link="AnjutaProjectNode.html#AnjutaProjectNode-struct"/>
+    <keyword type="property" name="The “file” property" link="AnjutaProjectNode.html#AnjutaProjectNode--file"/>
+    <keyword type="property" name="The “name” property" link="AnjutaProjectNode.html#AnjutaProjectNode--name"/>
+    <keyword type="property" name="The “state” property" link="AnjutaProjectNode.html#AnjutaProjectNode--state"/>
+    <keyword type="property" name="The “type” property" link="AnjutaProjectNode.html#AnjutaProjectNode--type"/>
+    <keyword type="signal" name="The “loaded” signal" link="AnjutaProjectNode.html#AnjutaProjectNode-loaded"/>
+    <keyword type="signal" name="The “updated” signal" link="AnjutaProjectNode.html#AnjutaProjectNode-updated"/>
+    <keyword type="function" name="anjuta_tabber_new ()" link="AnjutaTabber.html#anjuta-tabber-new"/>
+    <keyword type="function" name="anjuta_tabber_add_tab ()" link="AnjutaTabber.html#anjuta-tabber-add-tab"/>
+    <keyword type="function" name="anjuta_tabber_prepend_tab ()" link="AnjutaTabber.html#anjuta-tabber-prepend-tab"/>
+    <keyword type="struct" name="AnjutaTabberPriv" link="AnjutaTabber.html#AnjutaTabberPriv"/>
+    <keyword type="property" name="The “notebook” property" link="AnjutaTabber.html#AnjutaTabber--notebook"/>
+    <keyword type="function" name="AnjutaTokenForeachFunc ()" link="libanjuta-Anjuta-token.html#AnjutaTokenForeachFunc"/>
+    <keyword type="function" name="anjuta_token_new_string ()" link="libanjuta-Anjuta-token.html#anjuta-token-new-string"/>
+    <keyword type="function" name="anjuta_token_new_string_len ()" link="libanjuta-Anjuta-token.html#anjuta-token-new-string-len"/>
+    <keyword type="function" name="anjuta_token_new_static ()" link="libanjuta-Anjuta-token.html#anjuta-token-new-static"/>
+    <keyword type="function" name="anjuta_token_new_static_len ()" link="libanjuta-Anjuta-token.html#anjuta-token-new-static-len"/>
+    <keyword type="function" name="anjuta_token_free_children ()" link="libanjuta-Anjuta-token.html#anjuta-token-free-children"/>
+    <keyword type="function" name="anjuta_token_free ()" link="libanjuta-Anjuta-token.html#anjuta-token-free"/>
+    <keyword type="function" name="anjuta_token_set_type ()" link="libanjuta-Anjuta-token.html#anjuta-token-set-type"/>
+    <keyword type="function" name="anjuta_token_set_flags ()" link="libanjuta-Anjuta-token.html#anjuta-token-set-flags"/>
+    <keyword type="function" name="anjuta_token_clear_flags ()" link="libanjuta-Anjuta-token.html#anjuta-token-clear-flags"/>
+    <keyword type="function" name="anjuta_token_get_flags ()" link="libanjuta-Anjuta-token.html#anjuta-token-get-flags"/>
+    <keyword type="function" name="anjuta_token_set_string ()" link="libanjuta-Anjuta-token.html#anjuta-token-set-string"/>
+    <keyword type="function" name="anjuta_token_get_string ()" link="libanjuta-Anjuta-token.html#anjuta-token-get-string"/>
+    <keyword type="function" name="anjuta_token_set_length ()" link="libanjuta-Anjuta-token.html#anjuta-token-set-length"/>
+    <keyword type="function" name="anjuta_token_get_length ()" link="libanjuta-Anjuta-token.html#anjuta-token-get-length"/>
+    <keyword type="function" name="anjuta_token_next ()" link="libanjuta-Anjuta-token.html#anjuta-token-next"/>
+    <keyword type="function" name="anjuta_token_previous ()" link="libanjuta-Anjuta-token.html#anjuta-token-previous"/>
+    <keyword type="function" name="anjuta_token_last ()" link="libanjuta-Anjuta-token.html#anjuta-token-last"/>
+    <keyword type="function" name="anjuta_token_parent ()" link="libanjuta-Anjuta-token.html#anjuta-token-parent"/>
+    <keyword type="function" name="anjuta_token_list ()" link="libanjuta-Anjuta-token.html#anjuta-token-list"/>
+    <keyword type="function" name="anjuta_token_next_after_children ()" link="libanjuta-Anjuta-token.html#anjuta-token-next-after-children"/>
+    <keyword type="function" name="anjuta_token_foreach_content ()" link="libanjuta-Anjuta-token.html#anjuta-token-foreach-content"/>
+    <keyword type="function" name="anjuta_token_foreach_token ()" link="libanjuta-Anjuta-token.html#anjuta-token-foreach-token"/>
+    <keyword type="function" name="anjuta_token_foreach_post_order ()" link="libanjuta-Anjuta-token.html#anjuta-token-foreach-post-order"/>
+    <keyword type="function" name="anjuta_token_first_item ()" link="libanjuta-Anjuta-token.html#anjuta-token-first-item"/>
+    <keyword type="function" name="anjuta_token_next_item ()" link="libanjuta-Anjuta-token.html#anjuta-token-next-item"/>
+    <keyword type="function" name="anjuta_token_previous_item ()" link="libanjuta-Anjuta-token.html#anjuta-token-previous-item"/>
+    <keyword type="function" name="anjuta_token_last_item ()" link="libanjuta-Anjuta-token.html#anjuta-token-last-item"/>
+    <keyword type="function" name="anjuta_token_append_child ()" link="libanjuta-Anjuta-token.html#anjuta-token-append-child"/>
+    <keyword type="function" name="anjuta_token_prepend_child ()" link="libanjuta-Anjuta-token.html#anjuta-token-prepend-child"/>
+    <keyword type="function" name="anjuta_token_prepend_items ()" link="libanjuta-Anjuta-token.html#anjuta-token-prepend-items"/>
+    <keyword type="function" name="anjuta_token_insert_after ()" link="libanjuta-Anjuta-token.html#anjuta-token-insert-after"/>
+    <keyword type="function" name="anjuta_token_insert_before ()" link="libanjuta-Anjuta-token.html#anjuta-token-insert-before"/>
+    <keyword type="function" name="anjuta_token_delete_parent ()" link="libanjuta-Anjuta-token.html#anjuta-token-delete-parent"/>
+    <keyword type="function" name="anjuta_token_remove_item ()" link="libanjuta-Anjuta-token.html#anjuta-token-remove-item"/>
+    <keyword type="function" name="anjuta_token_merge ()" link="libanjuta-Anjuta-token.html#anjuta-token-merge"/>
+    <keyword type="function" name="anjuta_token_merge_own_children ()" link="libanjuta-Anjuta-token.html#anjuta-token-merge-own-children"/>
+    <keyword type="function" name="anjuta_token_merge_children ()" link="libanjuta-Anjuta-token.html#anjuta-token-merge-children"/>
+    <keyword type="function" name="anjuta_token_merge_previous ()" link="libanjuta-Anjuta-token.html#anjuta-token-merge-previous"/>
+    <keyword type="function" name="anjuta_token_split ()" link="libanjuta-Anjuta-token.html#anjuta-token-split"/>
+    <keyword type="function" name="anjuta_token_cut ()" link="libanjuta-Anjuta-token.html#anjuta-token-cut"/>
+    <keyword type="function" name="anjuta_token_concat ()" link="libanjuta-Anjuta-token.html#anjuta-token-concat"/>
+    <keyword type="function" name="anjuta_token_evaluate ()" link="libanjuta-Anjuta-token.html#anjuta-token-evaluate"/>
+    <keyword type="function" name="anjuta_token_evaluate_name ()" link="libanjuta-Anjuta-token.html#anjuta-token-evaluate-name"/>
+    <keyword type="function" name="anjuta_token_is_empty ()" link="libanjuta-Anjuta-token.html#anjuta-token-is-empty"/>
+    <keyword type="function" name="anjuta_token_dump ()" link="libanjuta-Anjuta-token.html#anjuta-token-dump"/>
+    <keyword type="function" name="anjuta_token_check ()" link="libanjuta-Anjuta-token.html#anjuta-token-check"/>
+    <keyword type="function" name="anjuta_token_dump_link ()" link="libanjuta-Anjuta-token.html#anjuta-token-dump-link"/>
+    <keyword type="function" name="anjuta_token_compare ()" link="libanjuta-Anjuta-token.html#anjuta-token-compare"/>
+    <keyword type="enum" name="enum AnjutaTokenType" link="libanjuta-Anjuta-token.html#AnjutaTokenType"/>
+    <keyword type="macro" name="ANJUTA_TOKEN_FILE_TYPE" link="libanjuta-anjuta-token-file.html#ANJUTA-TOKEN-FILE-TYPE:CAPS"/>
+    <keyword type="function" name="anjuta_token_file_new ()" link="libanjuta-anjuta-token-file.html#anjuta-token-file-new"/>
+    <keyword type="function" name="anjuta_token_file_free ()" link="libanjuta-anjuta-token-file.html#anjuta-token-file-free"/>
+    <keyword type="function" name="anjuta_token_file_load ()" link="libanjuta-anjuta-token-file.html#anjuta-token-file-load"/>
+    <keyword type="function" name="anjuta_token_file_unload ()" link="libanjuta-anjuta-token-file.html#anjuta-token-file-unload"/>
+    <keyword type="function" name="anjuta_token_file_save ()" link="libanjuta-anjuta-token-file.html#anjuta-token-file-save"/>
+    <keyword type="function" name="anjuta_token_file_move ()" link="libanjuta-anjuta-token-file.html#anjuta-token-file-move"/>
+    <keyword type="function" name="anjuta_token_file_update ()" link="libanjuta-anjuta-token-file.html#anjuta-token-file-update"/>
+    <keyword type="function" name="anjuta_token_file_get_token_location ()" link="libanjuta-anjuta-token-file.html#anjuta-token-file-get-token-location"/>
+    <keyword type="function" name="anjuta_token_file_get_token_position ()" link="libanjuta-anjuta-token-file.html#anjuta-token-file-get-token-position"/>
+    <keyword type="function" name="anjuta_token_file_get_file ()" link="libanjuta-anjuta-token-file.html#anjuta-token-file-get-file"/>
+    <keyword type="function" name="anjuta_token_file_get_content ()" link="libanjuta-anjuta-token-file.html#anjuta-token-file-get-content"/>
+    <keyword type="function" name="anjuta_token_file_is_dirty ()" link="libanjuta-anjuta-token-file.html#anjuta-token-file-is-dirty"/>
+    <keyword type="function" name="anjuta_token_style_new ()" link="libanjuta-anjuta-token-list.html#anjuta-token-style-new"/>
+    <keyword type="function" name="anjuta_token_style_new_from_base ()" link="libanjuta-anjuta-token-list.html#anjuta-token-style-new-from-base"/>
+    <keyword type="function" name="anjuta_token_style_free ()" link="libanjuta-anjuta-token-list.html#anjuta-token-style-free"/>
+    <keyword type="function" name="anjuta_token_style_update ()" link="libanjuta-anjuta-token-list.html#anjuta-token-style-update"/>
+    <keyword type="function" name="anjuta_token_style_format ()" link="libanjuta-anjuta-token-list.html#anjuta-token-style-format"/>
+    <keyword type="function" name="anjuta_token_first_word ()" link="libanjuta-anjuta-token-list.html#anjuta-token-first-word"/>
+    <keyword type="function" name="anjuta_token_nth_word ()" link="libanjuta-anjuta-token-list.html#anjuta-token-nth-word"/>
+    <keyword type="function" name="anjuta_token_next_word ()" link="libanjuta-anjuta-token-list.html#anjuta-token-next-word"/>
+    <keyword type="function" name="anjuta_token_replace_nth_word ()" link="libanjuta-anjuta-token-list.html#anjuta-token-replace-nth-word"/>
+    <keyword type="function" name="anjuta_token_insert_word_before ()" link="libanjuta-anjuta-token-list.html#anjuta-token-insert-word-before"/>
+    <keyword type="function" name="anjuta_token_insert_word_after ()" link="libanjuta-anjuta-token-list.html#anjuta-token-insert-word-after"/>
+    <keyword type="function" name="anjuta_token_remove_word ()" link="libanjuta-anjuta-token-list.html#anjuta-token-remove-word"/>
+    <keyword type="function" name="anjuta_token_remove_list ()" link="libanjuta-anjuta-token-list.html#anjuta-token-remove-list"/>
+    <keyword type="function" name="anjuta_token_insert_token_list ()" link="libanjuta-anjuta-token-list.html#anjuta-token-insert-token-list"/>
+    <keyword type="function" name="anjuta_token_find_type ()" link="libanjuta-anjuta-token-list.html#anjuta-token-find-type"/>
+    <keyword type="function" name="anjuta_token_skip_comment ()" link="libanjuta-anjuta-token-list.html#anjuta-token-skip-comment"/>
+    <keyword type="struct" name="AnjutaTokenStyle" link="libanjuta-anjuta-token-list.html#AnjutaTokenStyle"/>
+    <keyword type="function" name="anjuta_token_stream_push ()" link="libanjuta-Anjuta-token-stream.html#anjuta-token-stream-push"/>
+    <keyword type="function" name="anjuta_token_stream_pop ()" link="libanjuta-Anjuta-token-stream.html#anjuta-token-stream-pop"/>
+    <keyword type="function" name="anjuta_token_stream_get_parent ()" link="libanjuta-Anjuta-token-stream.html#anjuta-token-stream-get-parent"/>
+    <keyword type="function" name="anjuta_token_stream_get_root ()" link="libanjuta-Anjuta-token-stream.html#anjuta-token-stream-get-root"/>
+    <keyword type="function" name="anjuta_token_stream_get_current_directory ()" link="libanjuta-Anjuta-token-stream.html#anjuta-token-stream-get-current-directory"/>
+    <keyword type="function" name="anjuta_token_stream_get_current_file ()" link="libanjuta-Anjuta-token-stream.html#anjuta-token-stream-get-current-file"/>
+    <keyword type="function" name="anjuta_token_stream_tokenize ()" link="libanjuta-Anjuta-token-stream.html#anjuta-token-stream-tokenize"/>
+    <keyword type="function" name="anjuta_token_stream_read ()" link="libanjuta-Anjuta-token-stream.html#anjuta-token-stream-read"/>
+    <keyword type="function" name="anjuta_token_stream_append_token ()" link="libanjuta-Anjuta-token-stream.html#anjuta-token-stream-append-token"/>
+    <keyword type="struct" name="AnjutaTokenStream" link="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream"/>
+    <keyword type="function" name="anjuta_tree_combo_box_new ()" link="AnjutaTreeComboBox.html#anjuta-tree-combo-box-new"/>
+    <keyword type="function" name="anjuta_tree_combo_box_set_model ()" link="AnjutaTreeComboBox.html#anjuta-tree-combo-box-set-model"/>
+    <keyword type="function" name="anjuta_tree_combo_box_get_model ()" link="AnjutaTreeComboBox.html#anjuta-tree-combo-box-get-model"/>
+    <keyword type="function" name="anjuta_tree_combo_box_set_active ()" link="AnjutaTreeComboBox.html#anjuta-tree-combo-box-set-active"/>
+    <keyword type="function" name="anjuta_tree_combo_box_set_active_iter ()" link="AnjutaTreeComboBox.html#anjuta-tree-combo-box-set-active-iter"/>
+    <keyword type="function" name="anjuta_tree_combo_box_get_active_iter ()" link="AnjutaTreeComboBox.html#anjuta-tree-combo-box-get-active-iter"/>
+    <keyword type="function" name="anjuta_tree_combo_box_set_valid_function ()" link="AnjutaTreeComboBox.html#anjuta-tree-combo-box-set-valid-function"/>
+    <keyword type="function" name="anjuta_tree_combo_box_set_invalid_text ()" link="AnjutaTreeComboBox.html#anjuta-tree-combo-box-set-invalid-text"/>
+    <keyword type="property" name="The “model” property" link="AnjutaTreeComboBox.html#AnjutaTreeComboBox--model"/>
+    <keyword type="signal" name="The “changed” signal" link="AnjutaTreeComboBox.html#AnjutaTreeComboBox-changed"/>
+    <keyword type="signal" name="The “popdown” signal" link="AnjutaTreeComboBox.html#AnjutaTreeComboBox-popdown"/>
+    <keyword type="signal" name="The “popup” signal" link="AnjutaTreeComboBox.html#AnjutaTreeComboBox-popup"/>
+    <keyword type="enum" name="enum AnjutaVcsStatus" link="libanjuta-anjuta-vcs-status.html#AnjutaVcsStatus"/>
+    <keyword type="function" name="anjuta_c_plugin_factory_new ()" link="AnjutaCPluginFactory.html#anjuta-c-plugin-factory-new"/>
+    <keyword type="function" name="anjuta_c_plugin_factory_free ()" link="AnjutaCPluginFactory.html#anjuta-c-plugin-factory-free"/>
+    <keyword type="function" name="anjuta_c_module_new ()" link="AnjutaCModule.html#anjuta-c-module-new"/>
+    <keyword type="function" name="anjuta_c_module_get_last_error ()" link="AnjutaCModule.html#anjuta-c-module-get-last-error"/>
+    <keyword type="function" name="e_splash_construct ()" link="ESplash.html#e-splash-construct"/>
+    <keyword type="function" name="e_splash_new ()" link="ESplash.html#e-splash-new"/>
+    <keyword type="function" name="e_splash_set ()" link="ESplash.html#e-splash-set"/>
+    <keyword type="function" name="anjuta_cell_renderer_captioned_image_new ()" link="AnjutaCellRendererCaptionedImage.html#anjuta-cell-renderer-captioned-image-new"/>
+    <keyword type="property" name="The “pixbuf” property" link="AnjutaCellRendererCaptionedImage.html#AnjutaCellRendererCaptionedImage--pixbuf"/>
+    <keyword type="property" name="The “text” property" link="AnjutaCellRendererCaptionedImage.html#AnjutaCellRendererCaptionedImage--text"/>
+    <keyword type="function" name="ianjuta_buildable_error_quark ()" link="IAnjutaBuildable.html#ianjuta-buildable-error-quark"/>
+    <keyword type="function" name="ianjuta_buildable_build ()" link="IAnjutaBuildable.html#ianjuta-buildable-build"/>
+    <keyword type="function" name="ianjuta_buildable_clean ()" link="IAnjutaBuildable.html#ianjuta-buildable-clean"/>
+    <keyword type="function" name="ianjuta_buildable_configure ()" link="IAnjutaBuildable.html#ianjuta-buildable-configure"/>
+    <keyword type="function" name="ianjuta_buildable_execute ()" link="IAnjutaBuildable.html#ianjuta-buildable-execute"/>
+    <keyword type="function" name="ianjuta_buildable_generate ()" link="IAnjutaBuildable.html#ianjuta-buildable-generate"/>
+    <keyword type="function" name="ianjuta_buildable_get_command ()" link="IAnjutaBuildable.html#ianjuta-buildable-get-command"/>
+    <keyword type="function" name="ianjuta_buildable_install ()" link="IAnjutaBuildable.html#ianjuta-buildable-install"/>
+    <keyword type="function" name="ianjuta_buildable_reset_commands ()" link="IAnjutaBuildable.html#ianjuta-buildable-reset-commands"/>
+    <keyword type="function" name="ianjuta_buildable_set_command ()" link="IAnjutaBuildable.html#ianjuta-buildable-set-command"/>
+    <keyword type="macro" name="IANJUTA_BUILDABLE_ERROR" link="IAnjutaBuildable.html#IANJUTA-BUILDABLE-ERROR:CAPS"/>
+    <keyword type="enum" name="enum IAnjutaBuildableCommand" link="IAnjutaBuildable.html#IAnjutaBuildableCommand"/>
+    <keyword type="function" name="IAnjutaBuilderCallback ()" link="IAnjutaBuilder.html#IAnjutaBuilderCallback"/>
+    <keyword type="function" name="ianjuta_builder_error_quark ()" link="IAnjutaBuilder.html#ianjuta-builder-error-quark"/>
+    <keyword type="function" name="ianjuta_builder_build ()" link="IAnjutaBuilder.html#ianjuta-builder-build"/>
+    <keyword type="function" name="ianjuta_builder_cancel ()" link="IAnjutaBuilder.html#ianjuta-builder-cancel"/>
+    <keyword type="function" name="ianjuta_builder_get_uri_configuration ()" link="IAnjutaBuilder.html#ianjuta-builder-get-uri-configuration"/>
+    <keyword type="function" name="ianjuta_builder_is_built ()" link="IAnjutaBuilder.html#ianjuta-builder-is-built"/>
+    <keyword type="function" name="ianjuta_builder_list_configuration ()" link="IAnjutaBuilder.html#ianjuta-builder-list-configuration"/>
+    <keyword type="macro" name="IANJUTA_BUILDER_ROOT_URI" link="IAnjutaBuilder.html#IANJUTA-BUILDER-ROOT-URI:CAPS"/>
+    <keyword type="macro" name="IANJUTA_BUILDER_CONFIGURATION_DEBUG" link="IAnjutaBuilder.html#IANJUTA-BUILDER-CONFIGURATION-DEBUG:CAPS"/>
+    <keyword type="macro" name="IANJUTA_BUILDER_CONFIGURATION_OPTIMIZED" link="IAnjutaBuilder.html#IANJUTA-BUILDER-CONFIGURATION-OPTIMIZED:CAPS"/>
+    <keyword type="macro" name="IANJUTA_BUILDER_CONFIGURATION_PROFILING" link="IAnjutaBuilder.html#IANJUTA-BUILDER-CONFIGURATION-PROFILING:CAPS"/>
+    <keyword type="enum" name="enum IAnjutaBuilderError" link="IAnjutaBuilder.html#IAnjutaBuilderError"/>
+    <keyword type="typedef" name="IAnjutaBuilderHandle" link="IAnjutaBuilder.html#IAnjutaBuilderHandle"/>
+    <keyword type="function" name="IAnjutaDebuggerCallback ()" link="IAnjutaDebugger.html#IAnjutaDebuggerCallback"/>
+    <keyword type="function" name="IAnjutaDebuggerGListCallback ()" link="IAnjutaDebugger.html#IAnjutaDebuggerGListCallback"/>
+    <keyword type="function" name="IAnjutaDebuggerGCharCallback ()" link="IAnjutaDebugger.html#IAnjutaDebuggerGCharCallback"/>
+    <keyword type="function" name="IAnjutaDebuggerOutputCallback ()" link="IAnjutaDebugger.html#IAnjutaDebuggerOutputCallback"/>
+    <keyword type="function" name="ianjuta_debugger_error_quark ()" link="IAnjutaDebugger.html#ianjuta-debugger-error-quark"/>
+    <keyword type="function" name="ianjuta_debugger_abort ()" link="IAnjutaDebugger.html#ianjuta-debugger-abort"/>
+    <keyword type="function" name="ianjuta_debugger_attach ()" link="IAnjutaDebugger.html#ianjuta-debugger-attach"/>
+    <keyword type="function" name="ianjuta_debugger_callback ()" link="IAnjutaDebugger.html#ianjuta-debugger-callback"/>
+    <keyword type="function" name="ianjuta_debugger_connect ()" link="IAnjutaDebugger.html#ianjuta-debugger-connect"/>
+    <keyword type="function" name="ianjuta_debugger_disable_log ()" link="IAnjutaDebugger.html#ianjuta-debugger-disable-log"/>
+    <keyword type="function" name="ianjuta_debugger_dump_stack_trace ()" link="IAnjutaDebugger.html#ianjuta-debugger-dump-stack-trace"/>
+    <keyword type="function" name="ianjuta_debugger_enable_log ()" link="IAnjutaDebugger.html#ianjuta-debugger-enable-log"/>
+    <keyword type="function" name="ianjuta_debugger_evaluate ()" link="IAnjutaDebugger.html#ianjuta-debugger-evaluate"/>
+    <keyword type="function" name="ianjuta_debugger_exit ()" link="IAnjutaDebugger.html#ianjuta-debugger-exit"/>
+    <keyword type="function" name="ianjuta_debugger_get_state ()" link="IAnjutaDebugger.html#ianjuta-debugger-get-state"/>
+    <keyword type="function" name="ianjuta_debugger_handle_signal ()" link="IAnjutaDebugger.html#ianjuta-debugger-handle-signal"/>
+    <keyword type="function" name="ianjuta_debugger_info_args ()" link="IAnjutaDebugger.html#ianjuta-debugger-info-args"/>
+    <keyword type="function" name="ianjuta_debugger_info_frame ()" link="IAnjutaDebugger.html#ianjuta-debugger-info-frame"/>
+    <keyword type="function" name="ianjuta_debugger_info_program ()" link="IAnjutaDebugger.html#ianjuta-debugger-info-program"/>
+    <keyword type="function" name="ianjuta_debugger_info_sharedlib ()" link="IAnjutaDebugger.html#ianjuta-debugger-info-sharedlib"/>
+    <keyword type="function" name="ianjuta_debugger_info_signal ()" link="IAnjutaDebugger.html#ianjuta-debugger-info-signal"/>
+    <keyword type="function" name="ianjuta_debugger_info_target ()" link="IAnjutaDebugger.html#ianjuta-debugger-info-target"/>
+    <keyword type="function" name="ianjuta_debugger_info_thread ()" link="IAnjutaDebugger.html#ianjuta-debugger-info-thread"/>
+    <keyword type="function" name="ianjuta_debugger_info_udot ()" link="IAnjutaDebugger.html#ianjuta-debugger-info-udot"/>
+    <keyword type="function" name="ianjuta_debugger_info_variables ()" link="IAnjutaDebugger.html#ianjuta-debugger-info-variables"/>
+    <keyword type="function" name="ianjuta_debugger_inspect ()" link="IAnjutaDebugger.html#ianjuta-debugger-inspect"/>
+    <keyword type="function" name="ianjuta_debugger_interrupt ()" link="IAnjutaDebugger.html#ianjuta-debugger-interrupt"/>
+    <keyword type="function" name="ianjuta_debugger_list_argument ()" link="IAnjutaDebugger.html#ianjuta-debugger-list-argument"/>
+    <keyword type="function" name="ianjuta_debugger_list_frame ()" link="IAnjutaDebugger.html#ianjuta-debugger-list-frame"/>
+    <keyword type="function" name="ianjuta_debugger_list_local ()" link="IAnjutaDebugger.html#ianjuta-debugger-list-local"/>
+    <keyword type="function" name="ianjuta_debugger_list_thread ()" link="IAnjutaDebugger.html#ianjuta-debugger-list-thread"/>
+    <keyword type="function" name="ianjuta_debugger_load ()" link="IAnjutaDebugger.html#ianjuta-debugger-load"/>
+    <keyword type="function" name="ianjuta_debugger_print ()" link="IAnjutaDebugger.html#ianjuta-debugger-print"/>
+    <keyword type="function" name="ianjuta_debugger_quit ()" link="IAnjutaDebugger.html#ianjuta-debugger-quit"/>
+    <keyword type="function" name="ianjuta_debugger_run ()" link="IAnjutaDebugger.html#ianjuta-debugger-run"/>
+    <keyword type="function" name="ianjuta_debugger_run_from ()" link="IAnjutaDebugger.html#ianjuta-debugger-run-from"/>
+    <keyword type="function" name="ianjuta_debugger_run_to ()" link="IAnjutaDebugger.html#ianjuta-debugger-run-to"/>
+    <keyword type="function" name="ianjuta_debugger_send_command ()" link="IAnjutaDebugger.html#ianjuta-debugger-send-command"/>
+    <keyword type="function" name="ianjuta_debugger_set_environment ()" link="IAnjutaDebugger.html#ianjuta-debugger-set-environment"/>
+    <keyword type="function" name="ianjuta_debugger_set_frame ()" link="IAnjutaDebugger.html#ianjuta-debugger-set-frame"/>
+    <keyword type="function" name="ianjuta_debugger_set_thread ()" link="IAnjutaDebugger.html#ianjuta-debugger-set-thread"/>
+    <keyword type="function" name="ianjuta_debugger_set_working_directory ()" link="IAnjutaDebugger.html#ianjuta-debugger-set-working-directory"/>
+    <keyword type="function" name="ianjuta_debugger_start ()" link="IAnjutaDebugger.html#ianjuta-debugger-start"/>
+    <keyword type="function" name="ianjuta_debugger_step_in ()" link="IAnjutaDebugger.html#ianjuta-debugger-step-in"/>
+    <keyword type="function" name="ianjuta_debugger_step_out ()" link="IAnjutaDebugger.html#ianjuta-debugger-step-out"/>
+    <keyword type="function" name="ianjuta_debugger_step_over ()" link="IAnjutaDebugger.html#ianjuta-debugger-step-over"/>
+    <keyword type="function" name="ianjuta_debugger_unload ()" link="IAnjutaDebugger.html#ianjuta-debugger-unload"/>
+    <keyword type="enum" name="enum IAnjutaDebuggerError" link="IAnjutaDebugger.html#IAnjutaDebuggerError"/>
+    <keyword type="enum" name="enum IAnjutaDebuggerOutputType" link="IAnjutaDebugger.html#IAnjutaDebuggerOutputType"/>
+    <keyword type="enum" name="enum IAnjutaDebuggerState" link="IAnjutaDebugger.html#IAnjutaDebuggerState"/>
+    <keyword type="struct" name="struct IAnjutaDebuggerFrame" link="IAnjutaDebugger.html#IAnjutaDebuggerFrame"/>
+    <keyword type="signal" name="The “debugger-ready” signal" link="IAnjutaDebugger.html#IAnjutaDebugger-debugger-ready"/>
+    <keyword type="signal" name="The “debugger-started” signal" link="IAnjutaDebugger.html#IAnjutaDebugger-debugger-started"/>
+    <keyword type="signal" name="The “debugger-stopped” signal" link="IAnjutaDebugger.html#IAnjutaDebugger-debugger-stopped"/>
+    <keyword type="signal" name="The “frame-changed” signal" link="IAnjutaDebugger.html#IAnjutaDebugger-frame-changed"/>
+    <keyword type="signal" name="The “program-exited” signal" link="IAnjutaDebugger.html#IAnjutaDebugger-program-exited"/>
+    <keyword type="signal" name="The “program-loaded” signal" link="IAnjutaDebugger.html#IAnjutaDebugger-program-loaded"/>
+    <keyword type="signal" name="The “program-moved” signal" link="IAnjutaDebugger.html#IAnjutaDebugger-program-moved"/>
+    <keyword type="signal" name="The “program-running” signal" link="IAnjutaDebugger.html#IAnjutaDebugger-program-running"/>
+    <keyword type="signal" name="The “program-stopped” signal" link="IAnjutaDebugger.html#IAnjutaDebugger-program-stopped"/>
+    <keyword type="signal" name="The “sharedlib-event” signal" link="IAnjutaDebugger.html#IAnjutaDebugger-sharedlib-event"/>
+    <keyword type="signal" name="The “signal-received” signal" link="IAnjutaDebugger.html#IAnjutaDebugger-signal-received"/>
+    <keyword type="function" name="IAnjutaDebuggerBreakpointCallback ()" link="IAnjutaDebuggerBreakpoint.html#IAnjutaDebuggerBreakpointCallback"/>
+    <keyword type="function" name="ianjuta_debugger_breakpoint_error_quark ()" link="IAnjutaDebuggerBreakpoint.html#ianjuta-debugger-breakpoint-error-quark"/>
+    <keyword type="function" name="ianjuta_debugger_breakpoint_clear_breakpoint ()" link="IAnjutaDebuggerBreakpoint.html#ianjuta-debugger-breakpoint-clear-breakpoint"/>
+    <keyword type="function" name="ianjuta_debugger_breakpoint_condition_breakpoint ()" link="IAnjutaDebuggerBreakpoint.html#ianjuta-debugger-breakpoint-condition-breakpoint"/>
+    <keyword type="function" name="ianjuta_debugger_breakpoint_enable_breakpoint ()" link="IAnjutaDebuggerBreakpoint.html#ianjuta-debugger-breakpoint-enable-breakpoint"/>
+    <keyword type="function" name="ianjuta_debugger_breakpoint_ignore_breakpoint ()" link="IAnjutaDebuggerBreakpoint.html#ianjuta-debugger-breakpoint-ignore-breakpoint"/>
+    <keyword type="function" name="ianjuta_debugger_breakpoint_implement_breakpoint ()" link="IAnjutaDebuggerBreakpoint.html#ianjuta-debugger-breakpoint-implement-breakpoint"/>
+    <keyword type="function" name="ianjuta_debugger_breakpoint_list_breakpoint ()" link="IAnjutaDebuggerBreakpoint.html#ianjuta-debugger-breakpoint-list-breakpoint"/>
+    <keyword type="function" name="ianjuta_debugger_breakpoint_set_breakpoint_at_address ()" link="IAnjutaDebuggerBreakpoint.html#ianjuta-debugger-breakpoint-set-breakpoint-at-address"/>
+    <keyword type="function" name="ianjuta_debugger_breakpoint_set_breakpoint_at_function ()" link="IAnjutaDebuggerBreakpoint.html#ianjuta-debugger-breakpoint-set-breakpoint-at-function"/>
+    <keyword type="function" name="ianjuta_debugger_breakpoint_set_breakpoint_at_line ()" link="IAnjutaDebuggerBreakpoint.html#ianjuta-debugger-breakpoint-set-breakpoint-at-line"/>
+    <keyword type="macro" name="IANJUTA_DEBUGGER_BREAKPOINT_ERROR" link="IAnjutaDebuggerBreakpoint.html#IANJUTA-DEBUGGER-BREAKPOINT-ERROR:CAPS"/>
+    <keyword type="enum" name="enum IAnjutaDebuggerBreakpointMethod" link="IAnjutaDebuggerBreakpoint.html#IAnjutaDebuggerBreakpointMethod"/>
+    <keyword type="enum" name="enum IAnjutaDebuggerBreakpointType" link="IAnjutaDebuggerBreakpoint.html#IAnjutaDebuggerBreakpointType"/>
+    <keyword type="struct" name="struct IAnjutaDebuggerBreakpointItem" link="IAnjutaDebuggerBreakpoint.html#IAnjutaDebuggerBreakpointItem"/>
+    <keyword type="function" name="IAnjutaDebuggerInstructionCallback ()" link="IAnjutaDebuggerInstruction.html#IAnjutaDebuggerInstructionCallback"/>
+    <keyword type="function" name="ianjuta_debugger_instruction_error_quark ()" link="IAnjutaDebuggerInstruction.html#ianjuta-debugger-instruction-error-quark"/>
+    <keyword type="function" name="ianjuta_debugger_instruction_disassemble ()" link="IAnjutaDebuggerInstruction.html#ianjuta-debugger-instruction-disassemble"/>
+    <keyword type="function" name="ianjuta_debugger_instruction_run_from_address ()" link="IAnjutaDebuggerInstruction.html#ianjuta-debugger-instruction-run-from-address"/>
+    <keyword type="function" name="ianjuta_debugger_instruction_run_to_address ()" link="IAnjutaDebuggerInstruction.html#ianjuta-debugger-instruction-run-to-address"/>
+    <keyword type="function" name="ianjuta_debugger_instruction_step_in_instruction ()" link="IAnjutaDebuggerInstruction.html#ianjuta-debugger-instruction-step-in-instruction"/>
+    <keyword type="function" name="ianjuta_debugger_instruction_step_over_instruction ()" link="IAnjutaDebuggerInstruction.html#ianjuta-debugger-instruction-step-over-instruction"/>
+    <keyword type="macro" name="IANJUTA_DEBUGGER_INSTRUCTION_ERROR" link="IAnjutaDebuggerInstruction.html#IANJUTA-DEBUGGER-INSTRUCTION-ERROR:CAPS"/>
+    <keyword type="struct" name="struct IAnjutaDebuggerInstructionALine" link="IAnjutaDebuggerInstruction.html#IAnjutaDebuggerInstructionALine"/>
+    <keyword type="struct" name="struct IAnjutaDebuggerInstructionDisassembly" link="IAnjutaDebuggerInstruction.html#IAnjutaDebuggerInstructionDisassembly"/>
+    <keyword type="function" name="IAnjutaDebuggerMemoryCallback ()" link="IAnjutaDebuggerMemory.html#IAnjutaDebuggerMemoryCallback"/>
+    <keyword type="function" name="ianjuta_debugger_memory_error_quark ()" link="IAnjutaDebuggerMemory.html#ianjuta-debugger-memory-error-quark"/>
+    <keyword type="function" name="ianjuta_debugger_memory_inspect ()" link="IAnjutaDebuggerMemory.html#ianjuta-debugger-memory-inspect"/>
+    <keyword type="macro" name="IANJUTA_DEBUGGER_MEMORY_ERROR" link="IAnjutaDebuggerMemory.html#IANJUTA-DEBUGGER-MEMORY-ERROR:CAPS"/>
+    <keyword type="struct" name="struct IAnjutaDebuggerMemoryBlock" link="IAnjutaDebuggerMemory.html#IAnjutaDebuggerMemoryBlock"/>
+    <keyword type="function" name="ianjuta_debugger_register_error_quark ()" link="IAnjutaDebuggerRegister.html#ianjuta-debugger-register-error-quark"/>
+    <keyword type="function" name="ianjuta_debugger_register_list_register ()" link="IAnjutaDebuggerRegister.html#ianjuta-debugger-register-list-register"/>
+    <keyword type="function" name="ianjuta_debugger_register_update_register ()" link="IAnjutaDebuggerRegister.html#ianjuta-debugger-register-update-register"/>
+    <keyword type="function" name="ianjuta_debugger_register_write_register ()" link="IAnjutaDebuggerRegister.html#ianjuta-debugger-register-write-register"/>
+    <keyword type="macro" name="IANJUTA_DEBUGGER_REGISTER_ERROR" link="IAnjutaDebuggerRegister.html#IANJUTA-DEBUGGER-REGISTER-ERROR:CAPS"/>
+    <keyword type="struct" name="struct IAnjutaDebuggerRegisterData" link="IAnjutaDebuggerRegister.html#IAnjutaDebuggerRegisterData"/>
+    <keyword type="function" name="IAnjutaDebuggerVariableCallback ()" link="IAnjutaDebuggerVariable.html#IAnjutaDebuggerVariableCallback"/>
+    <keyword type="function" name="ianjuta_debugger_variable_error_quark ()" link="IAnjutaDebuggerVariable.html#ianjuta-debugger-variable-error-quark"/>
+    <keyword type="function" name="ianjuta_debugger_variable_assign ()" link="IAnjutaDebuggerVariable.html#ianjuta-debugger-variable-assign"/>
+    <keyword type="function" name="ianjuta_debugger_variable_create ()" link="IAnjutaDebuggerVariable.html#ianjuta-debugger-variable-create"/>
+    <keyword type="function" name="ianjuta_debugger_variable_destroy ()" link="IAnjutaDebuggerVariable.html#ianjuta-debugger-variable-destroy"/>
+    <keyword type="function" name="ianjuta_debugger_variable_evaluate ()" link="IAnjutaDebuggerVariable.html#ianjuta-debugger-variable-evaluate"/>
+    <keyword type="function" name="ianjuta_debugger_variable_list_children ()" link="IAnjutaDebuggerVariable.html#ianjuta-debugger-variable-list-children"/>
+    <keyword type="function" name="ianjuta_debugger_variable_update ()" link="IAnjutaDebuggerVariable.html#ianjuta-debugger-variable-update"/>
+    <keyword type="macro" name="IANJUTA_DEBUGGER_VARIABLE_ERROR" link="IAnjutaDebuggerVariable.html#IANJUTA-DEBUGGER-VARIABLE-ERROR:CAPS"/>
+    <keyword type="struct" name="struct IAnjutaDebuggerVariableObject" link="IAnjutaDebuggerVariable.html#IAnjutaDebuggerVariableObject"/>
+    <keyword type="function" name="ianjuta_debug_manager_error_quark ()" link="IAnjutaDebugManager.html#ianjuta-debug-manager-error-quark"/>
+    <keyword type="function" name="ianjuta_debug_manager_quit ()" link="IAnjutaDebugManager.html#ianjuta-debug-manager-quit"/>
+    <keyword type="function" name="ianjuta_debug_manager_start ()" link="IAnjutaDebugManager.html#ianjuta-debug-manager-start"/>
+    <keyword type="function" name="ianjuta_debug_manager_start_remote ()" link="IAnjutaDebugManager.html#ianjuta-debug-manager-start-remote"/>
+    <keyword type="macro" name="IANJUTA_DEBUG_MANAGER_ERROR" link="IAnjutaDebugManager.html#IANJUTA-DEBUG-MANAGER-ERROR:CAPS"/>
+    <keyword type="signal" name="The “breakpoint-changed” signal" link="IAnjutaDebugManager.html#IAnjutaDebugManager-breakpoint-changed"/>
+    <keyword type="signal" name="The “debugger-started” signal" link="IAnjutaDebugManager.html#IAnjutaDebugManager-debugger-started"/>
+    <keyword type="signal" name="The “debugger-stopped” signal" link="IAnjutaDebugManager.html#IAnjutaDebugManager-debugger-stopped"/>
+    <keyword type="signal" name="The “frame-changed” signal" link="IAnjutaDebugManager.html#IAnjutaDebugManager-frame-changed"/>
+    <keyword type="signal" name="The “location-changed” signal" link="IAnjutaDebugManager.html#IAnjutaDebugManager-location-changed"/>
+    <keyword type="signal" name="The “program-exited” signal" link="IAnjutaDebugManager.html#IAnjutaDebugManager-program-exited"/>
+    <keyword type="signal" name="The “program-loaded” signal" link="IAnjutaDebugManager.html#IAnjutaDebugManager-program-loaded"/>
+    <keyword type="signal" name="The “program-moved” signal" link="IAnjutaDebugManager.html#IAnjutaDebugManager-program-moved"/>
+    <keyword type="signal" name="The “program-running” signal" link="IAnjutaDebugManager.html#IAnjutaDebugManager-program-running"/>
+    <keyword type="signal" name="The “program-started” signal" link="IAnjutaDebugManager.html#IAnjutaDebugManager-program-started"/>
+    <keyword type="signal" name="The “program-stopped” signal" link="IAnjutaDebugManager.html#IAnjutaDebugManager-program-stopped"/>
+    <keyword type="signal" name="The “program-unloaded” signal" link="IAnjutaDebugManager.html#IAnjutaDebugManager-program-unloaded"/>
+    <keyword type="signal" name="The “sharedlib-event” signal" link="IAnjutaDebugManager.html#IAnjutaDebugManager-sharedlib-event"/>
+    <keyword type="signal" name="The “signal-received” signal" link="IAnjutaDebugManager.html#IAnjutaDebugManager-signal-received"/>
+    <keyword type="function" name="ianjuta_document_error_quark ()" link="IAnjutaDocument.html#ianjuta-document-error-quark"/>
+    <keyword type="function" name="ianjuta_document_begin_undo_action ()" link="IAnjutaDocument.html#ianjuta-document-begin-undo-action"/>
+    <keyword type="function" name="ianjuta_document_can_redo ()" link="IAnjutaDocument.html#ianjuta-document-can-redo"/>
+    <keyword type="function" name="ianjuta_document_can_undo ()" link="IAnjutaDocument.html#ianjuta-document-can-undo"/>
+    <keyword type="function" name="ianjuta_document_clear ()" link="IAnjutaDocument.html#ianjuta-document-clear"/>
+    <keyword type="function" name="ianjuta_document_copy ()" link="IAnjutaDocument.html#ianjuta-document-copy"/>
+    <keyword type="function" name="ianjuta_document_cut ()" link="IAnjutaDocument.html#ianjuta-document-cut"/>
+    <keyword type="function" name="ianjuta_document_end_undo_action ()" link="IAnjutaDocument.html#ianjuta-document-end-undo-action"/>
+    <keyword type="function" name="ianjuta_document_get_filename ()" link="IAnjutaDocument.html#ianjuta-document-get-filename"/>
+    <keyword type="function" name="ianjuta_document_grab_focus ()" link="IAnjutaDocument.html#ianjuta-document-grab-focus"/>
+    <keyword type="function" name="ianjuta_document_paste ()" link="IAnjutaDocument.html#ianjuta-document-paste"/>
+    <keyword type="function" name="ianjuta_document_redo ()" link="IAnjutaDocument.html#ianjuta-document-redo"/>
+    <keyword type="function" name="ianjuta_document_undo ()" link="IAnjutaDocument.html#ianjuta-document-undo"/>
+    <keyword type="macro" name="IANJUTA_DOCUMENT_ERROR" link="IAnjutaDocument.html#IANJUTA-DOCUMENT-ERROR:CAPS"/>
+    <keyword type="signal" name="The “update-ui” signal" link="IAnjutaDocument.html#IAnjutaDocument-update-ui"/>
+    <keyword type="function" name="ianjuta_document_manager_error_quark ()" link="IAnjutaDocumentManager.html#ianjuta-document-manager-error-quark"/>
+    <keyword type="function" name="ianjuta_document_manager_add_bookmark ()" link="IAnjutaDocumentManager.html#ianjuta-document-manager-add-bookmark"/>
+    <keyword type="function" name="ianjuta_document_manager_add_buffer ()" link="IAnjutaDocumentManager.html#ianjuta-document-manager-add-buffer"/>
+    <keyword type="function" name="ianjuta_document_manager_add_document ()" link="IAnjutaDocumentManager.html#ianjuta-document-manager-add-document"/>
+    <keyword type="function" name="ianjuta_document_manager_find_document_with_file ()" link="IAnjutaDocumentManager.html#ianjuta-document-manager-find-document-with-file"/>
+    <keyword type="function" name="ianjuta_document_manager_get_current_document ()" link="IAnjutaDocumentManager.html#ianjuta-document-manager-get-current-document"/>
+    <keyword type="function" name="ianjuta_document_manager_get_doc_widgets ()" link="IAnjutaDocumentManager.html#ianjuta-document-manager-get-doc-widgets"/>
+    <keyword type="function" name="ianjuta_document_manager_get_file ()" link="IAnjutaDocumentManager.html#ianjuta-document-manager-get-file"/>
+    <keyword type="function" name="ianjuta_document_manager_goto_file_line ()" link="IAnjutaDocumentManager.html#ianjuta-document-manager-goto-file-line"/>
+    <keyword type="function" name="ianjuta_document_manager_goto_file_line_mark ()" link="IAnjutaDocumentManager.html#ianjuta-document-manager-goto-file-line-mark"/>
+    <keyword type="function" name="ianjuta_document_manager_remove_document ()" link="IAnjutaDocumentManager.html#ianjuta-document-manager-remove-document"/>
+    <keyword type="function" name="ianjuta_document_manager_set_current_document ()" link="IAnjutaDocumentManager.html#ianjuta-document-manager-set-current-document"/>
+    <keyword type="macro" name="IANJUTA_DOCUMENT_MANAGER_CURRENT_DOCUMENT" link="IAnjutaDocumentManager.html#IANJUTA-DOCUMENT-MANAGER-CURRENT-DOCUMENT:CAPS"/>
+    <keyword type="signal" name="The “document-added” signal" link="IAnjutaDocumentManager.html#IAnjutaDocumentManager-document-added"/>
+    <keyword type="signal" name="The “document-removed” signal" link="IAnjutaDocumentManager.html#IAnjutaDocumentManager-document-removed"/>
+    <keyword type="function" name="ianjuta_editor_error_quark ()" link="IAnjutaEditor.html#ianjuta-editor-error-quark"/>
+    <keyword type="function" name="ianjuta_editor_append ()" link="IAnjutaEditor.html#ianjuta-editor-append"/>
+    <keyword type="function" name="ianjuta_editor_erase ()" link="IAnjutaEditor.html#ianjuta-editor-erase"/>
+    <keyword type="function" name="ianjuta_editor_erase_all ()" link="IAnjutaEditor.html#ianjuta-editor-erase-all"/>
+    <keyword type="function" name="ianjuta_editor_get_column ()" link="IAnjutaEditor.html#ianjuta-editor-get-column"/>
+    <keyword type="function" name="ianjuta_editor_get_current_word ()" link="IAnjutaEditor.html#ianjuta-editor-get-current-word"/>
+    <keyword type="function" name="ianjuta_editor_get_end_position ()" link="IAnjutaEditor.html#ianjuta-editor-get-end-position"/>
+    <keyword type="function" name="ianjuta_editor_get_indentsize ()" link="IAnjutaEditor.html#ianjuta-editor-get-indentsize"/>
+    <keyword type="function" name="ianjuta_editor_get_length ()" link="IAnjutaEditor.html#ianjuta-editor-get-length"/>
+    <keyword type="function" name="ianjuta_editor_get_line_begin_position ()" link="IAnjutaEditor.html#ianjuta-editor-get-line-begin-position"/>
+    <keyword type="function" name="ianjuta_editor_get_line_end_position ()" link="IAnjutaEditor.html#ianjuta-editor-get-line-end-position"/>
+    <keyword type="function" name="ianjuta_editor_get_line_from_position ()" link="IAnjutaEditor.html#ianjuta-editor-get-line-from-position"/>
+    <keyword type="function" name="ianjuta_editor_get_lineno ()" link="IAnjutaEditor.html#ianjuta-editor-get-lineno"/>
+    <keyword type="function" name="ianjuta_editor_get_offset ()" link="IAnjutaEditor.html#ianjuta-editor-get-offset"/>
+    <keyword type="function" name="ianjuta_editor_get_overwrite ()" link="IAnjutaEditor.html#ianjuta-editor-get-overwrite"/>
+    <keyword type="function" name="ianjuta_editor_get_position ()" link="IAnjutaEditor.html#ianjuta-editor-get-position"/>
+    <keyword type="function" name="ianjuta_editor_get_position_from_offset ()" link="IAnjutaEditor.html#ianjuta-editor-get-position-from-offset"/>
+    <keyword type="function" name="ianjuta_editor_get_start_position ()" link="IAnjutaEditor.html#ianjuta-editor-get-start-position"/>
+    <keyword type="function" name="ianjuta_editor_get_tabsize ()" link="IAnjutaEditor.html#ianjuta-editor-get-tabsize"/>
+    <keyword type="function" name="ianjuta_editor_get_text ()" link="IAnjutaEditor.html#ianjuta-editor-get-text"/>
+    <keyword type="function" name="ianjuta_editor_get_text_all ()" link="IAnjutaEditor.html#ianjuta-editor-get-text-all"/>
+    <keyword type="function" name="ianjuta_editor_get_use_spaces ()" link="IAnjutaEditor.html#ianjuta-editor-get-use-spaces"/>
+    <keyword type="function" name="ianjuta_editor_goto_end ()" link="IAnjutaEditor.html#ianjuta-editor-goto-end"/>
+    <keyword type="function" name="ianjuta_editor_goto_line ()" link="IAnjutaEditor.html#ianjuta-editor-goto-line"/>
+    <keyword type="function" name="ianjuta_editor_goto_position ()" link="IAnjutaEditor.html#ianjuta-editor-goto-position"/>
+    <keyword type="function" name="ianjuta_editor_goto_start ()" link="IAnjutaEditor.html#ianjuta-editor-goto-start"/>
+    <keyword type="function" name="ianjuta_editor_insert ()" link="IAnjutaEditor.html#ianjuta-editor-insert"/>
+    <keyword type="function" name="ianjuta_editor_set_auto_indent ()" link="IAnjutaEditor.html#ianjuta-editor-set-auto-indent"/>
+    <keyword type="function" name="ianjuta_editor_set_indentsize ()" link="IAnjutaEditor.html#ianjuta-editor-set-indentsize"/>
+    <keyword type="function" name="ianjuta_editor_set_popup_menu ()" link="IAnjutaEditor.html#ianjuta-editor-set-popup-menu"/>
+    <keyword type="function" name="ianjuta_editor_set_tabsize ()" link="IAnjutaEditor.html#ianjuta-editor-set-tabsize"/>
+    <keyword type="function" name="ianjuta_editor_set_use_spaces ()" link="IAnjutaEditor.html#ianjuta-editor-set-use-spaces"/>
+    <keyword type="macro" name="IANJUTA_EDITOR_PREF_SCHEMA" link="IAnjutaEditor.html#IANJUTA-EDITOR-PREF-SCHEMA:CAPS"/>
+    <keyword type="macro" name="IANJUTA_EDITOR_USE_TABS_KEY" link="IAnjutaEditor.html#IANJUTA-EDITOR-USE-TABS-KEY:CAPS"/>
+    <keyword type="macro" name="IANJUTA_EDITOR_TAB_WIDTH_KEY" link="IAnjutaEditor.html#IANJUTA-EDITOR-TAB-WIDTH-KEY:CAPS"/>
+    <keyword type="macro" name="IANJUTA_EDITOR_INDENT_WIDTH_KEY" link="IAnjutaEditor.html#IANJUTA-EDITOR-INDENT-WIDTH-KEY:CAPS"/>
+    <keyword type="enum" name="enum IAnjutaEditorAttribute" link="IAnjutaEditor.html#IAnjutaEditorAttribute"/>
+    <keyword type="signal" name="The “backspace” signal" link="IAnjutaEditor.html#IAnjutaEditor-backspace"/>
+    <keyword type="signal" name="The “changed” signal" link="IAnjutaEditor.html#IAnjutaEditor-changed"/>
+    <keyword type="signal" name="The “char-added” signal" link="IAnjutaEditor.html#IAnjutaEditor-char-added"/>
+    <keyword type="signal" name="The “code-changed” signal" link="IAnjutaEditor.html#IAnjutaEditor-code-changed"/>
+    <keyword type="signal" name="The “cursor-moved” signal" link="IAnjutaEditor.html#IAnjutaEditor-cursor-moved"/>
+    <keyword type="signal" name="The “glade-callback-add” signal" link="IAnjutaEditor.html#IAnjutaEditor-glade-callback-add"/>
+    <keyword type="signal" name="The “glade-member-add” signal" link="IAnjutaEditor.html#IAnjutaEditor-glade-member-add"/>
+    <keyword type="signal" name="The “line-marks-gutter-clicked” signal" link="IAnjutaEditor.html#IAnjutaEditor-line-marks-gutter-clicked"/>
+    <keyword type="function" name="ianjuta_editor_assist_error_quark ()" link="IAnjutaEditorAssist.html#ianjuta-editor-assist-error-quark"/>
+    <keyword type="function" name="ianjuta_editor_assist_add ()" link="IAnjutaEditorAssist.html#ianjuta-editor-assist-add"/>
+    <keyword type="function" name="ianjuta_editor_assist_invoke ()" link="IAnjutaEditorAssist.html#ianjuta-editor-assist-invoke"/>
+    <keyword type="function" name="ianjuta_editor_assist_proposals ()" link="IAnjutaEditorAssist.html#ianjuta-editor-assist-proposals"/>
+    <keyword type="function" name="ianjuta_editor_assist_remove ()" link="IAnjutaEditorAssist.html#ianjuta-editor-assist-remove"/>
+    <keyword type="macro" name="IANJUTA_EDITOR_ASSIST_ERROR" link="IAnjutaEditorAssist.html#IANJUTA-EDITOR-ASSIST-ERROR:CAPS"/>
+    <keyword type="struct" name="struct IAnjutaEditorAssistProposal" link="IAnjutaEditorAssist.html#IAnjutaEditorAssistProposal"/>
+    <keyword type="signal" name="The “cancelled” signal" link="IAnjutaEditorAssist.html#IAnjutaEditorAssist-cancelled"/>
+    <keyword type="function" name="ianjuta_editor_cell_error_quark ()" link="IAnjutaEditorCell.html#ianjuta-editor-cell-error-quark"/>
+    <keyword type="function" name="ianjuta_editor_cell_get_attribute ()" link="IAnjutaEditorCell.html#ianjuta-editor-cell-get-attribute"/>
+    <keyword type="function" name="ianjuta_editor_cell_get_char ()" link="IAnjutaEditorCell.html#ianjuta-editor-cell-get-char"/>
+    <keyword type="function" name="ianjuta_editor_cell_get_character ()" link="IAnjutaEditorCell.html#ianjuta-editor-cell-get-character"/>
+    <keyword type="function" name="ianjuta_editor_cell_get_length ()" link="IAnjutaEditorCell.html#ianjuta-editor-cell-get-length"/>
+    <keyword type="macro" name="IANJUTA_EDITOR_CELL_ERROR" link="IAnjutaEditorCell.html#IANJUTA-EDITOR-CELL-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_editor_cell_style_error_quark ()" link="IAnjutaEditorCellStyle.html#ianjuta-editor-cell-style-error-quark"/>
+    <keyword type="function" name="ianjuta_editor_cell_style_get_background_color ()" link="IAnjutaEditorCellStyle.html#ianjuta-editor-cell-style-get-background-color"/>
+    <keyword type="function" name="ianjuta_editor_cell_style_get_color ()" link="IAnjutaEditorCellStyle.html#ianjuta-editor-cell-style-get-color"/>
+    <keyword type="function" name="ianjuta_editor_cell_style_get_font_description ()" link="IAnjutaEditorCellStyle.html#ianjuta-editor-cell-style-get-font-description"/>
+    <keyword type="macro" name="IANJUTA_EDITOR_CELL_STYLE_ERROR" link="IAnjutaEditorCellStyle.html#IANJUTA-EDITOR-CELL-STYLE-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_editor_comment_error_quark ()" link="IAnjutaEditorComment.html#ianjuta-editor-comment-error-quark"/>
+    <keyword type="function" name="ianjuta_editor_comment_block ()" link="IAnjutaEditorComment.html#ianjuta-editor-comment-block"/>
+    <keyword type="function" name="ianjuta_editor_comment_box ()" link="IAnjutaEditorComment.html#ianjuta-editor-comment-box"/>
+    <keyword type="function" name="ianjuta_editor_comment_stream ()" link="IAnjutaEditorComment.html#ianjuta-editor-comment-stream"/>
+    <keyword type="macro" name="IANJUTA_EDITOR_COMMENT_ERROR" link="IAnjutaEditorComment.html#IANJUTA-EDITOR-COMMENT-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_editor_convert_error_quark ()" link="IAnjutaEditorConvert.html#ianjuta-editor-convert-error-quark"/>
+    <keyword type="function" name="ianjuta_editor_convert_to_lower ()" link="IAnjutaEditorConvert.html#ianjuta-editor-convert-to-lower"/>
+    <keyword type="function" name="ianjuta_editor_convert_to_upper ()" link="IAnjutaEditorConvert.html#ianjuta-editor-convert-to-upper"/>
+    <keyword type="macro" name="IANJUTA_EDITOR_CONVERT_ERROR" link="IAnjutaEditorConvert.html#IANJUTA-EDITOR-CONVERT-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_editor_factory_error_quark ()" link="IAnjutaEditorFactory.html#ianjuta-editor-factory-error-quark"/>
+    <keyword type="function" name="ianjuta_editor_factory_new_editor ()" link="IAnjutaEditorFactory.html#ianjuta-editor-factory-new-editor"/>
+    <keyword type="macro" name="IANJUTA_EDITOR_FACTORY_ERROR" link="IAnjutaEditorFactory.html#IANJUTA-EDITOR-FACTORY-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_editor_folds_error_quark ()" link="IAnjutaEditorFolds.html#ianjuta-editor-folds-error-quark"/>
+    <keyword type="function" name="ianjuta_editor_folds_close_all ()" link="IAnjutaEditorFolds.html#ianjuta-editor-folds-close-all"/>
+    <keyword type="function" name="ianjuta_editor_folds_open_all ()" link="IAnjutaEditorFolds.html#ianjuta-editor-folds-open-all"/>
+    <keyword type="function" name="ianjuta_editor_folds_toggle_current ()" link="IAnjutaEditorFolds.html#ianjuta-editor-folds-toggle-current"/>
+    <keyword type="macro" name="IANJUTA_EDITOR_FOLDS_ERROR" link="IAnjutaEditorFolds.html#IANJUTA-EDITOR-FOLDS-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_editor_glade_signal_error_quark ()" link="IAnjutaEditorGladeSignal.html#ianjuta-editor-glade-signal-error-quark"/>
+    <keyword type="macro" name="IANJUTA_EDITOR_GLADE_SIGNAL_ERROR" link="IAnjutaEditorGladeSignal.html#IANJUTA-EDITOR-GLADE-SIGNAL-ERROR:CAPS"/>
+    <keyword type="signal" name="The “drop” signal" link="IAnjutaEditorGladeSignal.html#IAnjutaEditorGladeSignal-drop"/>
+    <keyword type="signal" name="The “drop-possible” signal" link="IAnjutaEditorGladeSignal.html#IAnjutaEditorGladeSignal-drop-possible"/>
+    <keyword type="function" name="ianjuta_editor_goto_error_quark ()" link="IAnjutaEditorGoto.html#ianjuta-editor-goto-error-quark"/>
+    <keyword type="function" name="ianjuta_editor_goto_end_block ()" link="IAnjutaEditorGoto.html#ianjuta-editor-goto-end-block"/>
+    <keyword type="function" name="ianjuta_editor_goto_matching_brace ()" link="IAnjutaEditorGoto.html#ianjuta-editor-goto-matching-brace"/>
+    <keyword type="function" name="ianjuta_editor_goto_start_block ()" link="IAnjutaEditorGoto.html#ianjuta-editor-goto-start-block"/>
+    <keyword type="macro" name="IANJUTA_EDITOR_GOTO_ERROR" link="IAnjutaEditorGoto.html#IANJUTA-EDITOR-GOTO-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_editor_hover_error_quark ()" link="IAnjutaEditorHover.html#ianjuta-editor-hover-error-quark"/>
+    <keyword type="function" name="ianjuta_editor_hover_display ()" link="IAnjutaEditorHover.html#ianjuta-editor-hover-display"/>
+    <keyword type="macro" name="IANJUTA_EDITOR_HOVER_ERROR" link="IAnjutaEditorHover.html#IANJUTA-EDITOR-HOVER-ERROR:CAPS"/>
+    <keyword type="signal" name="The “hover-leave” signal" link="IAnjutaEditorHover.html#IAnjutaEditorHover-hover-leave"/>
+    <keyword type="signal" name="The “hover-over” signal" link="IAnjutaEditorHover.html#IAnjutaEditorHover-hover-over"/>
+    <keyword type="function" name="ianjuta_editor_language_error_quark ()" link="IAnjutaEditorLanguage.html#ianjuta-editor-language-error-quark"/>
+    <keyword type="function" name="ianjuta_editor_language_get_language ()" link="IAnjutaEditorLanguage.html#ianjuta-editor-language-get-language"/>
+    <keyword type="function" name="ianjuta_editor_language_get_language_name ()" link="IAnjutaEditorLanguage.html#ianjuta-editor-language-get-language-name"/>
+    <keyword type="function" name="ianjuta_editor_language_get_supported_languages ()" link="IAnjutaEditorLanguage.html#ianjuta-editor-language-get-supported-languages"/>
+    <keyword type="function" name="ianjuta_editor_language_set_language ()" link="IAnjutaEditorLanguage.html#ianjuta-editor-language-set-language"/>
+    <keyword type="macro" name="IANJUTA_EDITOR_LANGUAGE_ERROR" link="IAnjutaEditorLanguage.html#IANJUTA-EDITOR-LANGUAGE-ERROR:CAPS"/>
+    <keyword type="signal" name="The “language-changed” signal" link="IAnjutaEditorLanguage.html#IAnjutaEditorLanguage-language-changed"/>
+    <keyword type="function" name="ianjuta_editor_line_mode_error_quark ()" link="IAnjutaEditorLineMode.html#ianjuta-editor-line-mode-error-quark"/>
+    <keyword type="function" name="ianjuta_editor_line_mode_convert ()" link="IAnjutaEditorLineMode.html#ianjuta-editor-line-mode-convert"/>
+    <keyword type="function" name="ianjuta_editor_line_mode_fix ()" link="IAnjutaEditorLineMode.html#ianjuta-editor-line-mode-fix"/>
+    <keyword type="function" name="ianjuta_editor_line_mode_get ()" link="IAnjutaEditorLineMode.html#ianjuta-editor-line-mode-get"/>
+    <keyword type="function" name="ianjuta_editor_line_mode_set ()" link="IAnjutaEditorLineMode.html#ianjuta-editor-line-mode-set"/>
+    <keyword type="macro" name="IANJUTA_EDITOR_LINE_MODE_ERROR" link="IAnjutaEditorLineMode.html#IANJUTA-EDITOR-LINE-MODE-ERROR:CAPS"/>
+    <keyword type="enum" name="enum IAnjutaEditorLineModeType" link="IAnjutaEditorLineMode.html#IAnjutaEditorLineModeType"/>
+    <keyword type="function" name="ianjuta_editor_search_error_quark ()" link="IAnjutaEditorSearch.html#ianjuta-editor-search-error-quark"/>
+    <keyword type="function" name="ianjuta_editor_search_backward ()" link="IAnjutaEditorSearch.html#ianjuta-editor-search-backward"/>
+    <keyword type="function" name="ianjuta_editor_search_forward ()" link="IAnjutaEditorSearch.html#ianjuta-editor-search-forward"/>
+    <keyword type="macro" name="IANJUTA_EDITOR_SEARCH_ERROR" link="IAnjutaEditorSearch.html#IANJUTA-EDITOR-SEARCH-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_editor_selection_error_quark ()" link="IAnjutaEditorSelection.html#ianjuta-editor-selection-error-quark"/>
+    <keyword type="function" name="ianjuta_editor_selection_get ()" link="IAnjutaEditorSelection.html#ianjuta-editor-selection-get"/>
+    <keyword type="function" name="ianjuta_editor_selection_get_end ()" link="IAnjutaEditorSelection.html#ianjuta-editor-selection-get-end"/>
+    <keyword type="function" name="ianjuta_editor_selection_get_start ()" link="IAnjutaEditorSelection.html#ianjuta-editor-selection-get-start"/>
+    <keyword type="function" name="ianjuta_editor_selection_has_selection ()" link="IAnjutaEditorSelection.html#ianjuta-editor-selection-has-selection"/>
+    <keyword type="function" name="ianjuta_editor_selection_replace ()" link="IAnjutaEditorSelection.html#ianjuta-editor-selection-replace"/>
+    <keyword type="function" name="ianjuta_editor_selection_select_all ()" link="IAnjutaEditorSelection.html#ianjuta-editor-selection-select-all"/>
+    <keyword type="function" name="ianjuta_editor_selection_select_block ()" link="IAnjutaEditorSelection.html#ianjuta-editor-selection-select-block"/>
+    <keyword type="function" name="ianjuta_editor_selection_select_function ()" link="IAnjutaEditorSelection.html#ianjuta-editor-selection-select-function"/>
+    <keyword type="function" name="ianjuta_editor_selection_set ()" link="IAnjutaEditorSelection.html#ianjuta-editor-selection-set"/>
+    <keyword type="macro" name="IANJUTA_EDITOR_SELECTION_ERROR" link="IAnjutaEditorSelection.html#IANJUTA-EDITOR-SELECTION-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_editor_tip_error_quark ()" link="IAnjutaEditorTip.html#ianjuta-editor-tip-error-quark"/>
+    <keyword type="function" name="ianjuta_editor_tip_cancel ()" link="IAnjutaEditorTip.html#ianjuta-editor-tip-cancel"/>
+    <keyword type="function" name="ianjuta_editor_tip_show ()" link="IAnjutaEditorTip.html#ianjuta-editor-tip-show"/>
+    <keyword type="function" name="ianjuta_editor_tip_visible ()" link="IAnjutaEditorTip.html#ianjuta-editor-tip-visible"/>
+    <keyword type="macro" name="IANJUTA_EDITOR_TIP_ERROR" link="IAnjutaEditorTip.html#IANJUTA-EDITOR-TIP-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_editor_view_error_quark ()" link="IAnjutaEditorView.html#ianjuta-editor-view-error-quark"/>
+    <keyword type="function" name="ianjuta_editor_view_create ()" link="IAnjutaEditorView.html#ianjuta-editor-view-create"/>
+    <keyword type="function" name="ianjuta_editor_view_get_count ()" link="IAnjutaEditorView.html#ianjuta-editor-view-get-count"/>
+    <keyword type="function" name="ianjuta_editor_view_remove_current ()" link="IAnjutaEditorView.html#ianjuta-editor-view-remove-current"/>
+    <keyword type="macro" name="IANJUTA_EDITOR_VIEW_ERROR" link="IAnjutaEditorView.html#IANJUTA-EDITOR-VIEW-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_editor_zoom_error_quark ()" link="IAnjutaEditorZoom.html#ianjuta-editor-zoom-error-quark"/>
+    <keyword type="function" name="ianjuta_editor_zoom_in ()" link="IAnjutaEditorZoom.html#ianjuta-editor-zoom-in"/>
+    <keyword type="function" name="ianjuta_editor_zoom_out ()" link="IAnjutaEditorZoom.html#ianjuta-editor-zoom-out"/>
+    <keyword type="macro" name="IANJUTA_EDITOR_ZOOM_ERROR" link="IAnjutaEditorZoom.html#IANJUTA-EDITOR-ZOOM-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_environment_error_quark ()" link="IAnjutaEnvironment.html#ianjuta-environment-error-quark"/>
+    <keyword type="function" name="ianjuta_environment_get_real_directory ()" link="IAnjutaEnvironment.html#ianjuta-environment-get-real-directory"/>
+    <keyword type="function" name="ianjuta_environment_override ()" link="IAnjutaEnvironment.html#ianjuta-environment-override"/>
+    <keyword type="enum" name="enum IAnjutaEnvironmentError" link="IAnjutaEnvironment.html#IAnjutaEnvironmentError"/>
+    <keyword type="function" name="ianjuta_file_error_quark ()" link="IAnjutaFile.html#ianjuta-file-error-quark"/>
+    <keyword type="function" name="ianjuta_file_get_file ()" link="IAnjutaFile.html#ianjuta-file-get-file"/>
+    <keyword type="function" name="ianjuta_file_open ()" link="IAnjutaFile.html#ianjuta-file-open"/>
+    <keyword type="macro" name="IANJUTA_FILE_ERROR" link="IAnjutaFile.html#IANJUTA-FILE-ERROR:CAPS"/>
+    <keyword type="signal" name="The “opened” signal" link="IAnjutaFile.html#IAnjutaFile-opened"/>
+    <keyword type="function" name="ianjuta_file_loader_error_quark ()" link="IAnjutaFileLoader.html#ianjuta-file-loader-error-quark"/>
+    <keyword type="function" name="ianjuta_file_loader_load ()" link="IAnjutaFileLoader.html#ianjuta-file-loader-load"/>
+    <keyword type="function" name="ianjuta_file_loader_peek_interface ()" link="IAnjutaFileLoader.html#ianjuta-file-loader-peek-interface"/>
+    <keyword type="macro" name="IANJUTA_FILE_LOADER_ERROR" link="IAnjutaFileLoader.html#IANJUTA-FILE-LOADER-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_file_manager_error_quark ()" link="IAnjutaFileManager.html#ianjuta-file-manager-error-quark"/>
+    <keyword type="function" name="ianjuta_file_manager_get_selected ()" link="IAnjutaFileManager.html#ianjuta-file-manager-get-selected"/>
+    <keyword type="function" name="ianjuta_file_manager_set_root ()" link="IAnjutaFileManager.html#ianjuta-file-manager-set-root"/>
+    <keyword type="function" name="ianjuta_file_manager_set_selected ()" link="IAnjutaFileManager.html#ianjuta-file-manager-set-selected"/>
+    <keyword type="macro" name="IANJUTA_FILE_MANAGER_ERROR" link="IAnjutaFileManager.html#IANJUTA-FILE-MANAGER-ERROR:CAPS"/>
+    <keyword type="macro" name="IANJUTA_FILE_MANAGER_SELECTED_FILE" link="IAnjutaFileManager.html#IANJUTA-FILE-MANAGER-SELECTED-FILE:CAPS"/>
+    <keyword type="signal" name="The “section-changed” signal" link="IAnjutaFileManager.html#IAnjutaFileManager-section-changed"/>
+    <keyword type="function" name="ianjuta_file_savable_error_quark ()" link="IAnjutaFileSavable.html#ianjuta-file-savable-error-quark"/>
+    <keyword type="function" name="ianjuta_file_savable_is_conflict ()" link="IAnjutaFileSavable.html#ianjuta-file-savable-is-conflict"/>
+    <keyword type="function" name="ianjuta_file_savable_is_dirty ()" link="IAnjutaFileSavable.html#ianjuta-file-savable-is-dirty"/>
+    <keyword type="function" name="ianjuta_file_savable_is_read_only ()" link="IAnjutaFileSavable.html#ianjuta-file-savable-is-read-only"/>
+    <keyword type="function" name="ianjuta_file_savable_save ()" link="IAnjutaFileSavable.html#ianjuta-file-savable-save"/>
+    <keyword type="function" name="ianjuta_file_savable_save_as ()" link="IAnjutaFileSavable.html#ianjuta-file-savable-save-as"/>
+    <keyword type="function" name="ianjuta_file_savable_set_dirty ()" link="IAnjutaFileSavable.html#ianjuta-file-savable-set-dirty"/>
+    <keyword type="macro" name="IANJUTA_FILE_SAVABLE_ERROR" link="IAnjutaFileSavable.html#IANJUTA-FILE-SAVABLE-ERROR:CAPS"/>
+    <keyword type="signal" name="The “saved” signal" link="IAnjutaFileSavable.html#IAnjutaFileSavable-saved"/>
+    <keyword type="signal" name="The “update-save-ui” signal" link="IAnjutaFileSavable.html#IAnjutaFileSavable-update-save-ui"/>
+    <keyword type="function" name="ianjuta_help_error_quark ()" link="IAnjutaHelp.html#ianjuta-help-error-quark"/>
+    <keyword type="function" name="ianjuta_help_search ()" link="IAnjutaHelp.html#ianjuta-help-search"/>
+    <keyword type="macro" name="IANJUTA_HELP_ERROR" link="IAnjutaHelp.html#IANJUTA-HELP-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_indenter_error_quark ()" link="IAnjutaIndenter.html#ianjuta-indenter-error-quark"/>
+    <keyword type="function" name="ianjuta_indenter_indent ()" link="IAnjutaIndenter.html#ianjuta-indenter-indent"/>
+    <keyword type="macro" name="IANJUTA_INDENTER_ERROR" link="IAnjutaIndenter.html#IANJUTA-INDENTER-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_indicable_error_quark ()" link="IAnjutaIndicable.html#ianjuta-indicable-error-quark"/>
+    <keyword type="function" name="ianjuta_indicable_clear ()" link="IAnjutaIndicable.html#ianjuta-indicable-clear"/>
+    <keyword type="function" name="ianjuta_indicable_set ()" link="IAnjutaIndicable.html#ianjuta-indicable-set"/>
+    <keyword type="macro" name="IANJUTA_INDICABLE_ERROR" link="IAnjutaIndicable.html#IANJUTA-INDICABLE-ERROR:CAPS"/>
+    <keyword type="enum" name="enum IAnjutaIndicableIndicator" link="IAnjutaIndicable.html#IAnjutaIndicableIndicator"/>
+    <keyword type="function" name="ianjuta_iterable_error_quark ()" link="IAnjutaIterable.html#ianjuta-iterable-error-quark"/>
+    <keyword type="function" name="ianjuta_iterable_assign ()" link="IAnjutaIterable.html#ianjuta-iterable-assign"/>
+    <keyword type="function" name="ianjuta_iterable_clone ()" link="IAnjutaIterable.html#ianjuta-iterable-clone"/>
+    <keyword type="function" name="ianjuta_iterable_compare ()" link="IAnjutaIterable.html#ianjuta-iterable-compare"/>
+    <keyword type="function" name="ianjuta_iterable_diff ()" link="IAnjutaIterable.html#ianjuta-iterable-diff"/>
+    <keyword type="function" name="ianjuta_iterable_first ()" link="IAnjutaIterable.html#ianjuta-iterable-first"/>
+    <keyword type="function" name="ianjuta_iterable_foreach ()" link="IAnjutaIterable.html#ianjuta-iterable-foreach"/>
+    <keyword type="function" name="ianjuta_iterable_get_length ()" link="IAnjutaIterable.html#ianjuta-iterable-get-length"/>
+    <keyword type="function" name="ianjuta_iterable_get_position ()" link="IAnjutaIterable.html#ianjuta-iterable-get-position"/>
+    <keyword type="function" name="ianjuta_iterable_last ()" link="IAnjutaIterable.html#ianjuta-iterable-last"/>
+    <keyword type="function" name="ianjuta_iterable_next ()" link="IAnjutaIterable.html#ianjuta-iterable-next"/>
+    <keyword type="function" name="ianjuta_iterable_previous ()" link="IAnjutaIterable.html#ianjuta-iterable-previous"/>
+    <keyword type="function" name="ianjuta_iterable_set_position ()" link="IAnjutaIterable.html#ianjuta-iterable-set-position"/>
+    <keyword type="macro" name="IANJUTA_ITERABLE_ERROR" link="IAnjutaIterable.html#IANJUTA-ITERABLE-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_iterable_tree_error_quark ()" link="IAnjutaIterableTree.html#ianjuta-iterable-tree-error-quark"/>
+    <keyword type="function" name="ianjuta_iterable_tree_children ()" link="IAnjutaIterableTree.html#ianjuta-iterable-tree-children"/>
+    <keyword type="function" name="ianjuta_iterable_tree_foreach_post ()" link="IAnjutaIterableTree.html#ianjuta-iterable-tree-foreach-post"/>
+    <keyword type="function" name="ianjuta_iterable_tree_foreach_pre ()" link="IAnjutaIterableTree.html#ianjuta-iterable-tree-foreach-pre"/>
+    <keyword type="function" name="ianjuta_iterable_tree_has_children ()" link="IAnjutaIterableTree.html#ianjuta-iterable-tree-has-children"/>
+    <keyword type="function" name="ianjuta_iterable_tree_parent ()" link="IAnjutaIterableTree.html#ianjuta-iterable-tree-parent"/>
+    <keyword type="macro" name="IANJUTA_ITERABLE_TREE_ERROR" link="IAnjutaIterableTree.html#IANJUTA-ITERABLE-TREE-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_language_error_quark ()" link="IAnjutaLanguage.html#ianjuta-language-error-quark"/>
+    <keyword type="function" name="ianjuta_language_get_from_editor ()" link="IAnjutaLanguage.html#ianjuta-language-get-from-editor"/>
+    <keyword type="function" name="ianjuta_language_get_from_mime_type ()" link="IAnjutaLanguage.html#ianjuta-language-get-from-mime-type"/>
+    <keyword type="function" name="ianjuta_language_get_from_string ()" link="IAnjutaLanguage.html#ianjuta-language-get-from-string"/>
+    <keyword type="function" name="ianjuta_language_get_languages ()" link="IAnjutaLanguage.html#ianjuta-language-get-languages"/>
+    <keyword type="function" name="ianjuta_language_get_make_target ()" link="IAnjutaLanguage.html#ianjuta-language-get-make-target"/>
+    <keyword type="function" name="ianjuta_language_get_mime_types ()" link="IAnjutaLanguage.html#ianjuta-language-get-mime-types"/>
+    <keyword type="function" name="ianjuta_language_get_name ()" link="IAnjutaLanguage.html#ianjuta-language-get-name"/>
+    <keyword type="function" name="ianjuta_language_get_name_from_editor ()" link="IAnjutaLanguage.html#ianjuta-language-get-name-from-editor"/>
+    <keyword type="function" name="ianjuta_language_get_strings ()" link="IAnjutaLanguage.html#ianjuta-language-get-strings"/>
+    <keyword type="macro" name="IANJUTA_LANGUAGE_ERROR" link="IAnjutaLanguage.html#IANJUTA-LANGUAGE-ERROR:CAPS"/>
+    <keyword type="typedef" name="IAnjutaLanguageId" link="IAnjutaLanguage.html#IAnjutaLanguageId"/>
+    <keyword type="function" name="ianjuta_language_provider_error_quark ()" link="IAnjutaLanguageProvider.html#ianjuta-language-provider-error-quark"/>
+    <keyword type="function" name="ianjuta_language_provider_get_calltip_cache ()" link="IAnjutaLanguageProvider.html#ianjuta-language-provider-get-calltip-cache"/>
+    <keyword type="function" name="ianjuta_language_provider_get_calltip_context ()" link="IAnjutaLanguageProvider.html#ianjuta-language-provider-get-calltip-context"/>
+    <keyword type="function" name="ianjuta_language_provider_new_calltip ()" link="IAnjutaLanguageProvider.html#ianjuta-language-provider-new-calltip"/>
+    <keyword type="function" name="ianjuta_language_provider_populate_completions ()" link="IAnjutaLanguageProvider.html#ianjuta-language-provider-populate-completions"/>
+    <keyword type="macro" name="IANJUTA_LANGUAGE_PROVIDER_ERROR" link="IAnjutaLanguageProvider.html#IANJUTA-LANGUAGE-PROVIDER-ERROR:CAPS"/>
+    <keyword type="macro" name="IANJUTA_LANGUAGE_PROVIDER_PREF_CALLTIP_ENABLE" link="IAnjutaLanguageProvider.html#IANJUTA-LANGUAGE-PROVIDER-PREF-CALLTIP-ENABLE:CAPS"/>
+    <keyword type="macro" name="IANJUTA_LANGUAGE_PROVIDER_PREF_AUTOCOMPLETE_ENABLE" link="IAnjutaLanguageProvider.html#IANJUTA-LANGUAGE-PROVIDER-PREF-AUTOCOMPLETE-ENABLE:CAPS"/>
+    <keyword type="macro" name="IANJUTA_LANGUAGE_PROVIDER_PREF_AUTOCOMPLETE_SPACE_AFTER_FUNC" link="IAnjutaLanguageProvider.html#IANJUTA-LANGUAGE-PROVIDER-PREF-AUTOCOMPLETE-SPACE-AFTER-FUNC:CAPS"/>
+    <keyword type="macro" name="IANJUTA_LANGUAGE_PROVIDER_PREF_AUTOCOMPLETE_BRACE_AFTER_FUNC" link="IAnjutaLanguageProvider.html#IANJUTA-LANGUAGE-PROVIDER-PREF-AUTOCOMPLETE-BRACE-AFTER-FUNC:CAPS"/>
+    <keyword type="macro" name="IANJUTA_LANGUAGE_PROVIDER_PREF_AUTOCOMPLETE_CLOSEBRACE_AFTER_FUNC" link="IAnjutaLanguageProvider.html#IANJUTA-LANGUAGE-PROVIDER-PREF-AUTOCOMPLETE-CLOSEBRACE-AFTER-FUNC:CAPS"/>
+    <keyword type="function" name="ianjuta_loader_error_quark ()" link="IAnjutaLoader.html#ianjuta-loader-error-quark"/>
+    <keyword type="function" name="ianjuta_loader_find_plugins ()" link="IAnjutaLoader.html#ianjuta-loader-find-plugins"/>
+    <keyword type="macro" name="IANJUTA_LOADER_ERROR" link="IAnjutaLoader.html#IANJUTA-LOADER-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_markable_error_quark ()" link="IAnjutaMarkable.html#ianjuta-markable-error-quark"/>
+    <keyword type="function" name="ianjuta_markable_delete_all_markers ()" link="IAnjutaMarkable.html#ianjuta-markable-delete-all-markers"/>
+    <keyword type="function" name="ianjuta_markable_is_marker_set ()" link="IAnjutaMarkable.html#ianjuta-markable-is-marker-set"/>
+    <keyword type="function" name="ianjuta_markable_location_from_handle ()" link="IAnjutaMarkable.html#ianjuta-markable-location-from-handle"/>
+    <keyword type="function" name="ianjuta_markable_mark ()" link="IAnjutaMarkable.html#ianjuta-markable-mark"/>
+    <keyword type="function" name="ianjuta_markable_unmark ()" link="IAnjutaMarkable.html#ianjuta-markable-unmark"/>
+    <keyword type="enum" name="enum IAnjutaMarkableMarker" link="IAnjutaMarkable.html#IAnjutaMarkableMarker"/>
+    <keyword type="signal" name="The “marker-clicked” signal" link="IAnjutaMarkable.html#IAnjutaMarkable-marker-clicked"/>
+    <keyword type="function" name="ianjuta_message_manager_error_quark ()" link="IAnjutaMessageManager.html#ianjuta-message-manager-error-quark"/>
+    <keyword type="function" name="ianjuta_message_manager_add_view ()" link="IAnjutaMessageManager.html#ianjuta-message-manager-add-view"/>
+    <keyword type="function" name="ianjuta_message_manager_get_all_views ()" link="IAnjutaMessageManager.html#ianjuta-message-manager-get-all-views"/>
+    <keyword type="function" name="ianjuta_message_manager_get_current_view ()" link="IAnjutaMessageManager.html#ianjuta-message-manager-get-current-view"/>
+    <keyword type="function" name="ianjuta_message_manager_get_view_by_name ()" link="IAnjutaMessageManager.html#ianjuta-message-manager-get-view-by-name"/>
+    <keyword type="function" name="ianjuta_message_manager_remove_view ()" link="IAnjutaMessageManager.html#ianjuta-message-manager-remove-view"/>
+    <keyword type="function" name="ianjuta_message_manager_set_current_view ()" link="IAnjutaMessageManager.html#ianjuta-message-manager-set-current-view"/>
+    <keyword type="function" name="ianjuta_message_manager_set_view_icon ()" link="IAnjutaMessageManager.html#ianjuta-message-manager-set-view-icon"/>
+    <keyword type="function" name="ianjuta_message_manager_set_view_icon_from_stock ()" link="IAnjutaMessageManager.html#ianjuta-message-manager-set-view-icon-from-stock"/>
+    <keyword type="function" name="ianjuta_message_manager_set_view_title ()" link="IAnjutaMessageManager.html#ianjuta-message-manager-set-view-title"/>
+    <keyword type="function" name="ianjuta_message_view_error_quark ()" link="IAnjutaMessageView.html#ianjuta-message-view-error-quark"/>
+    <keyword type="function" name="ianjuta_message_view_append ()" link="IAnjutaMessageView.html#ianjuta-message-view-append"/>
+    <keyword type="function" name="ianjuta_message_view_buffer_append ()" link="IAnjutaMessageView.html#ianjuta-message-view-buffer-append"/>
+    <keyword type="function" name="ianjuta_message_view_clear ()" link="IAnjutaMessageView.html#ianjuta-message-view-clear"/>
+    <keyword type="function" name="ianjuta_message_view_get_all_messages ()" link="IAnjutaMessageView.html#ianjuta-message-view-get-all-messages"/>
+    <keyword type="function" name="ianjuta_message_view_get_current_message ()" link="IAnjutaMessageView.html#ianjuta-message-view-get-current-message"/>
+    <keyword type="function" name="ianjuta_message_view_select_next ()" link="IAnjutaMessageView.html#ianjuta-message-view-select-next"/>
+    <keyword type="function" name="ianjuta_message_view_select_previous ()" link="IAnjutaMessageView.html#ianjuta-message-view-select-previous"/>
+    <keyword type="macro" name="IANJUTA_MESSAGE_VIEW_ERROR" link="IAnjutaMessageView.html#IANJUTA-MESSAGE-VIEW-ERROR:CAPS"/>
+    <keyword type="enum" name="enum IAnjutaMessageViewType" link="IAnjutaMessageView.html#IAnjutaMessageViewType"/>
+    <keyword type="signal" name="The “buffer-flushed” signal" link="IAnjutaMessageView.html#IAnjutaMessageView-buffer-flushed"/>
+    <keyword type="signal" name="The “message-clicked” signal" link="IAnjutaMessageView.html#IAnjutaMessageView-message-clicked"/>
+    <keyword type="function" name="ianjuta_plugin_factory_error_quark ()" link="IAnjutaPluginFactory.html#ianjuta-plugin-factory-error-quark"/>
+    <keyword type="function" name="ianjuta_plugin_factory_new_plugin ()" link="IAnjutaPluginFactory.html#ianjuta-plugin-factory-new-plugin"/>
+    <keyword type="enum" name="enum IAnjutaPluginFactoryError" link="IAnjutaPluginFactory.html#IAnjutaPluginFactoryError"/>
+    <keyword type="function" name="ianjuta_preferences_error_quark ()" link="IAnjutaPreferences.html#ianjuta-preferences-error-quark"/>
+    <keyword type="function" name="ianjuta_preferences_merge ()" link="IAnjutaPreferences.html#ianjuta-preferences-merge"/>
+    <keyword type="function" name="ianjuta_preferences_unmerge ()" link="IAnjutaPreferences.html#ianjuta-preferences-unmerge"/>
+    <keyword type="macro" name="IANJUTA_PREFERENCES_ERROR" link="IAnjutaPreferences.html#IANJUTA-PREFERENCES-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_print_error_quark ()" link="IAnjutaPrint.html#ianjuta-print-error-quark"/>
+    <keyword type="function" name="ianjuta_print_print ()" link="IAnjutaPrint.html#ianjuta-print-print"/>
+    <keyword type="function" name="ianjuta_print_print_preview ()" link="IAnjutaPrint.html#ianjuta-print-print-preview"/>
+    <keyword type="macro" name="IANJUTA_PRINT_ERROR" link="IAnjutaPrint.html#IANJUTA-PRINT-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_project_error_quark ()" link="IAnjutaProject.html#ianjuta-project-error-quark"/>
+    <keyword type="function" name="ianjuta_project_add_node_after ()" link="IAnjutaProject.html#ianjuta-project-add-node-after"/>
+    <keyword type="function" name="ianjuta_project_add_node_before ()" link="IAnjutaProject.html#ianjuta-project-add-node-before"/>
+    <keyword type="function" name="ianjuta_project_get_node_info ()" link="IAnjutaProject.html#ianjuta-project-get-node-info"/>
+    <keyword type="function" name="ianjuta_project_get_root ()" link="IAnjutaProject.html#ianjuta-project-get-root"/>
+    <keyword type="function" name="ianjuta_project_is_loaded ()" link="IAnjutaProject.html#ianjuta-project-is-loaded"/>
+    <keyword type="function" name="ianjuta_project_load_node ()" link="IAnjutaProject.html#ianjuta-project-load-node"/>
+    <keyword type="function" name="ianjuta_project_remove_node ()" link="IAnjutaProject.html#ianjuta-project-remove-node"/>
+    <keyword type="function" name="ianjuta_project_remove_property ()" link="IAnjutaProject.html#ianjuta-project-remove-property"/>
+    <keyword type="function" name="ianjuta_project_save_node ()" link="IAnjutaProject.html#ianjuta-project-save-node"/>
+    <keyword type="function" name="ianjuta_project_set_property ()" link="IAnjutaProject.html#ianjuta-project-set-property"/>
+    <keyword type="signal" name="The “file-changed” signal" link="IAnjutaProject.html#IAnjutaProject-file-changed"/>
+    <keyword type="signal" name="The “node-changed” signal" link="IAnjutaProject.html#IAnjutaProject-node-changed"/>
+    <keyword type="signal" name="The “node-loaded” signal" link="IAnjutaProject.html#IAnjutaProject-node-loaded"/>
+    <keyword type="signal" name="The “node-saved” signal" link="IAnjutaProject.html#IAnjutaProject-node-saved"/>
+    <keyword type="function" name="ianjuta_project_manager_error_quark ()" link="IAnjutaProjectManager.html#ianjuta-project-manager-error-quark"/>
+    <keyword type="function" name="ianjuta_project_manager_add_group ()" link="IAnjutaProjectManager.html#ianjuta-project-manager-add-group"/>
+    <keyword type="function" name="ianjuta_project_manager_add_source ()" link="IAnjutaProjectManager.html#ianjuta-project-manager-add-source"/>
+    <keyword type="function" name="ianjuta_project_manager_add_source_quiet ()" link="IAnjutaProjectManager.html#ianjuta-project-manager-add-source-quiet"/>
+    <keyword type="function" name="ianjuta_project_manager_add_sources ()" link="IAnjutaProjectManager.html#ianjuta-project-manager-add-sources"/>
+    <keyword type="function" name="ianjuta_project_manager_add_target ()" link="IAnjutaProjectManager.html#ianjuta-project-manager-add-target"/>
+    <keyword type="function" name="ianjuta_project_manager_get_capabilities ()" link="IAnjutaProjectManager.html#ianjuta-project-manager-get-capabilities"/>
+    <keyword type="function" name="ianjuta_project_manager_get_children ()" link="IAnjutaProjectManager.html#ianjuta-project-manager-get-children"/>
+    <keyword type="function" name="ianjuta_project_manager_get_current_project ()" link="IAnjutaProjectManager.html#ianjuta-project-manager-get-current-project"/>
+    <keyword type="function" name="ianjuta_project_manager_get_elements ()" link="IAnjutaProjectManager.html#ianjuta-project-manager-get-elements"/>
+    <keyword type="function" name="ianjuta_project_manager_get_packages ()" link="IAnjutaProjectManager.html#ianjuta-project-manager-get-packages"/>
+    <keyword type="function" name="ianjuta_project_manager_get_parent ()" link="IAnjutaProjectManager.html#ianjuta-project-manager-get-parent"/>
+    <keyword type="function" name="ianjuta_project_manager_get_selected ()" link="IAnjutaProjectManager.html#ianjuta-project-manager-get-selected"/>
+    <keyword type="function" name="ianjuta_project_manager_get_target_type ()" link="IAnjutaProjectManager.html#ianjuta-project-manager-get-target-type"/>
+    <keyword type="function" name="ianjuta_project_manager_get_targets ()" link="IAnjutaProjectManager.html#ianjuta-project-manager-get-targets"/>
+    <keyword type="function" name="ianjuta_project_manager_is_open ()" link="IAnjutaProjectManager.html#ianjuta-project-manager-is-open"/>
+    <keyword type="function" name="ianjuta_project_manager_remove_file ()" link="IAnjutaProjectManager.html#ianjuta-project-manager-remove-file"/>
+    <keyword type="macro" name="IANJUTA_PROJECT_MANAGER_ERROR" link="IAnjutaProjectManager.html#IANJUTA-PROJECT-MANAGER-ERROR:CAPS"/>
+    <keyword type="macro" name="IANJUTA_PROJECT_MANAGER_PROJECT_ROOT_URI" link="IAnjutaProjectManager.html#IANJUTA-PROJECT-MANAGER-PROJECT-ROOT-URI:CAPS"/>
+    <keyword type="macro" name="IANJUTA_PROJECT_MANAGER_CURRENT_PROJECT" link="IAnjutaProjectManager.html#IANJUTA-PROJECT-MANAGER-CURRENT-PROJECT:CAPS"/>
+    <keyword type="macro" name="IANJUTA_PROJECT_MANAGER_CURRENT_URI" link="IAnjutaProjectManager.html#IANJUTA-PROJECT-MANAGER-CURRENT-URI:CAPS"/>
+    <keyword type="signal" name="The “element-added” signal" link="IAnjutaProjectManager.html#IAnjutaProjectManager-element-added"/>
+    <keyword type="signal" name="The “element-removed” signal" link="IAnjutaProjectManager.html#IAnjutaProjectManager-element-removed"/>
+    <keyword type="signal" name="The “element-selected” signal" link="IAnjutaProjectManager.html#IAnjutaProjectManager-element-selected"/>
+    <keyword type="signal" name="The “project-loaded” signal" link="IAnjutaProjectManager.html#IAnjutaProjectManager-project-loaded"/>
+    <keyword type="function" name="ianjuta_project_chooser_error_quark ()" link="IAnjutaProjectChooser.html#ianjuta-project-chooser-error-quark"/>
+    <keyword type="function" name="ianjuta_project_chooser_get_selected ()" link="IAnjutaProjectChooser.html#ianjuta-project-chooser-get-selected"/>
+    <keyword type="function" name="ianjuta_project_chooser_set_project_model ()" link="IAnjutaProjectChooser.html#ianjuta-project-chooser-set-project-model"/>
+    <keyword type="macro" name="IANJUTA_PROJECT_CHOOSER_ERROR" link="IAnjutaProjectChooser.html#IANJUTA-PROJECT-CHOOSER-ERROR:CAPS"/>
+    <keyword type="signal" name="The “changed” signal" link="IAnjutaProjectChooser.html#IAnjutaProjectChooser-changed"/>
+    <keyword type="function" name="ianjuta_project_backend_error_quark ()" link="IAnjutaProjectBackend.html#ianjuta-project-backend-error-quark"/>
+    <keyword type="function" name="ianjuta_project_backend_new_project ()" link="IAnjutaProjectBackend.html#ianjuta-project-backend-new-project"/>
+    <keyword type="function" name="ianjuta_project_backend_probe ()" link="IAnjutaProjectBackend.html#ianjuta-project-backend-probe"/>
+    <keyword type="macro" name="IANJUTA_PROJECT_BACKEND_ERROR" link="IAnjutaProjectBackend.html#IANJUTA-PROJECT-BACKEND-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_provider_error_quark ()" link="IAnjutaProvider.html#ianjuta-provider-error-quark"/>
+    <keyword type="function" name="ianjuta_provider_activate ()" link="IAnjutaProvider.html#ianjuta-provider-activate"/>
+    <keyword type="function" name="ianjuta_provider_get_name ()" link="IAnjutaProvider.html#ianjuta-provider-get-name"/>
+    <keyword type="function" name="ianjuta_provider_get_start_iter ()" link="IAnjutaProvider.html#ianjuta-provider-get-start-iter"/>
+    <keyword type="function" name="ianjuta_provider_populate ()" link="IAnjutaProvider.html#ianjuta-provider-populate"/>
+    <keyword type="macro" name="IANJUTA_PROVIDER_ERROR" link="IAnjutaProvider.html#IANJUTA-PROVIDER-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_snippets_manager_error_quark ()" link="IAnjutaSnippetsManager.html#ianjuta-snippets-manager-error-quark"/>
+    <keyword type="function" name="ianjuta_snippets_manager_insert ()" link="IAnjutaSnippetsManager.html#ianjuta-snippets-manager-insert"/>
+    <keyword type="macro" name="IANJUTA_SNIPPETS_MANAGER_ERROR" link="IAnjutaSnippetsManager.html#IANJUTA-SNIPPETS-MANAGER-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_stream_error_quark ()" link="IAnjutaStream.html#ianjuta-stream-error-quark"/>
+    <keyword type="function" name="ianjuta_stream_open ()" link="IAnjutaStream.html#ianjuta-stream-open"/>
+    <keyword type="macro" name="IANJUTA_STREAM_ERROR" link="IAnjutaStream.html#IANJUTA-STREAM-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_stream_loader_error_quark ()" link="IAnjutaStreamLoader.html#ianjuta-stream-loader-error-quark"/>
+    <keyword type="function" name="ianjuta_stream_loader_load ()" link="IAnjutaStreamLoader.html#ianjuta-stream-loader-load"/>
+    <keyword type="function" name="ianjuta_stream_loader_peek_interface ()" link="IAnjutaStreamLoader.html#ianjuta-stream-loader-peek-interface"/>
+    <keyword type="macro" name="IANJUTA_STREAM_LOADER_ERROR" link="IAnjutaStreamLoader.html#IANJUTA-STREAM-LOADER-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_stream_savable_error_quark ()" link="IAnjutaStreamSavable.html#ianjuta-stream-savable-error-quark"/>
+    <keyword type="function" name="ianjuta_stream_savable_save ()" link="IAnjutaStreamSavable.html#ianjuta-stream-savable-save"/>
+    <keyword type="macro" name="IANJUTA_STREAM_SAVABLE_ERROR" link="IAnjutaStreamSavable.html#IANJUTA-STREAM-SAVABLE-ERROR:CAPS"/>
+    <keyword type="function" name="ianjuta_symbol_error_quark ()" link="IAnjutaSymbol.html#ianjuta-symbol-error-quark"/>
+    <keyword type="function" name="ianjuta_symbol_get_boolean ()" link="IAnjutaSymbol.html#ianjuta-symbol-get-boolean"/>
+    <keyword type="function" name="ianjuta_symbol_get_file ()" link="IAnjutaSymbol.html#ianjuta-symbol-get-file"/>
+    <keyword type="function" name="ianjuta_symbol_get_icon ()" link="IAnjutaSymbol.html#ianjuta-symbol-get-icon"/>
+    <keyword type="function" name="ianjuta_symbol_get_int ()" link="IAnjutaSymbol.html#ianjuta-symbol-get-int"/>
+    <keyword type="function" name="ianjuta_symbol_get_string ()" link="IAnjutaSymbol.html#ianjuta-symbol-get-string"/>
+    <keyword type="function" name="ianjuta_symbol_get_sym_type ()" link="IAnjutaSymbol.html#ianjuta-symbol-get-sym-type"/>
+    <keyword type="macro" name="IANJUTA_SYMBOL_ERROR" link="IAnjutaSymbol.html#IANJUTA-SYMBOL-ERROR:CAPS"/>
+    <keyword type="enum" name="enum IAnjutaSymbolField" link="IAnjutaSymbol.html#IAnjutaSymbolField"/>
+    <keyword type="enum" name="enum IAnjutaSymbolType" link="IAnjutaSymbol.html#IAnjutaSymbolType"/>
+    <keyword type="function" name="ianjuta_symbol_query_error_quark ()" link="IAnjutaSymbolQuery.html#ianjuta-symbol-query-error-quark"/>
+    <keyword type="function" name="ianjuta_symbol_query_cancel ()" link="IAnjutaSymbolQuery.html#ianjuta-symbol-query-cancel"/>
+    <keyword type="function" name="ianjuta_symbol_query_search ()" link="IAnjutaSymbolQuery.html#ianjuta-symbol-query-search"/>
+    <keyword type="function" name="ianjuta_symbol_query_search_all ()" link="IAnjutaSymbolQuery.html#ianjuta-symbol-query-search-all"/>
+    <keyword type="function" name="ianjuta_symbol_query_search_class_parents ()" link="IAnjutaSymbolQuery.html#ianjuta-symbol-query-search-class-parents"/>
+    <keyword type="function" name="ianjuta_symbol_query_search_file ()" link="IAnjutaSymbolQuery.html#ianjuta-symbol-query-search-file"/>
+    <keyword type="function" name="ianjuta_symbol_query_search_id ()" link="IAnjutaSymbolQuery.html#ianjuta-symbol-query-search-id"/>
+    <keyword type="function" name="ianjuta_symbol_query_search_in_scope ()" link="IAnjutaSymbolQuery.html#ianjuta-symbol-query-search-in-scope"/>
+    <keyword type="function" name="ianjuta_symbol_query_search_members ()" link="IAnjutaSymbolQuery.html#ianjuta-symbol-query-search-members"/>
+    <keyword type="function" name="ianjuta_symbol_query_search_parent_scope ()" link="IAnjutaSymbolQuery.html#ianjuta-symbol-query-search-parent-scope"/>
+    <keyword type="function" name="ianjuta_symbol_query_search_parent_scope_file ()" link="IAnjutaSymbolQuery.html#ianjuta-symbol-query-search-parent-scope-file"/>
+    <keyword type="function" name="ianjuta_symbol_query_search_scope ()" link="IAnjutaSymbolQuery.html#ianjuta-symbol-query-search-scope"/>
+    <keyword type="function" name="ianjuta_symbol_query_set_fields ()" link="IAnjutaSymbolQuery.html#ianjuta-symbol-query-set-fields"/>
+    <keyword type="function" name="ianjuta_symbol_query_set_file_scope ()" link="IAnjutaSymbolQuery.html#ianjuta-symbol-query-set-file-scope"/>
+    <keyword type="function" name="ianjuta_symbol_query_set_filters ()" link="IAnjutaSymbolQuery.html#ianjuta-symbol-query-set-filters"/>
+    <keyword type="function" name="ianjuta_symbol_query_set_group_by ()" link="IAnjutaSymbolQuery.html#ianjuta-symbol-query-set-group-by"/>
+    <keyword type="function" name="ianjuta_symbol_query_set_limit ()" link="IAnjutaSymbolQuery.html#ianjuta-symbol-query-set-limit"/>
+    <keyword type="function" name="ianjuta_symbol_query_set_mode ()" link="IAnjutaSymbolQuery.html#ianjuta-symbol-query-set-mode"/>
+    <keyword type="function" name="ianjuta_symbol_query_set_offset ()" link="IAnjutaSymbolQuery.html#ianjuta-symbol-query-set-offset"/>
+    <keyword type="function" name="ianjuta_symbol_query_set_order_by ()" link="IAnjutaSymbolQuery.html#ianjuta-symbol-query-set-order-by"/>
+    <keyword type="macro" name="IANJUTA_SYMBOL_QUERY_ERROR" link="IAnjutaSymbolQuery.html#IANJUTA-SYMBOL-QUERY-ERROR:CAPS"/>
+    <keyword type="enum" name="enum IAnjutaSymbolQueryDb" link="IAnjutaSymbolQuery.html#IAnjutaSymbolQueryDb"/>
+    <keyword type="enum" name="enum IAnjutaSymbolQueryFileScope" link="IAnjutaSymbolQuery.html#IAnjutaSymbolQueryFileScope"/>
+    <keyword type="enum" name="enum IAnjutaSymbolQueryMode" link="IAnjutaSymbolQuery.html#IAnjutaSymbolQueryMode"/>
+    <keyword type="enum" name="enum IAnjutaSymbolQueryName" link="IAnjutaSymbolQuery.html#IAnjutaSymbolQueryName"/>
+    <keyword type="signal" name="The “async-result” signal" link="IAnjutaSymbolQuery.html#IAnjutaSymbolQuery-async-result"/>
+    <keyword type="function" name="ianjuta_symbol_manager_error_quark ()" link="IAnjutaSymbolManager.html#ianjuta-symbol-manager-error-quark"/>
+    <keyword type="function" name="ianjuta_symbol_manager_activate_package ()" link="IAnjutaSymbolManager.html#ianjuta-symbol-manager-activate-package"/>
+    <keyword type="function" name="ianjuta_symbol_manager_add_package ()" link="IAnjutaSymbolManager.html#ianjuta-symbol-manager-add-package"/>
+    <keyword type="function" name="ianjuta_symbol_manager_create_query ()" link="IAnjutaSymbolManager.html#ianjuta-symbol-manager-create-query"/>
+    <keyword type="function" name="ianjuta_symbol_manager_deactivate_all ()" link="IAnjutaSymbolManager.html#ianjuta-symbol-manager-deactivate-all"/>
+    <keyword type="function" name="ianjuta_symbol_manager_deactivate_package ()" link="IAnjutaSymbolManager.html#ianjuta-symbol-manager-deactivate-package"/>
+    <keyword type="macro" name="IANJUTA_SYMBOL_MANAGER_ERROR" link="IAnjutaSymbolManager.html#IANJUTA-SYMBOL-MANAGER-ERROR:CAPS"/>
+    <keyword type="signal" name="The “prj-scan-end” signal" link="IAnjutaSymbolManager.html#IAnjutaSymbolManager-prj-scan-end"/>
+    <keyword type="signal" name="The “sys-scan-end” signal" link="IAnjutaSymbolManager.html#IAnjutaSymbolManager-sys-scan-end"/>
+    <keyword type="function" name="ianjuta_terminal_error_quark ()" link="IAnjutaTerminal.html#ianjuta-terminal-error-quark"/>
+    <keyword type="function" name="ianjuta_terminal_execute_command ()" link="IAnjutaTerminal.html#ianjuta-terminal-execute-command"/>
+    <keyword type="macro" name="IANJUTA_TERMINAL_ERROR" link="IAnjutaTerminal.html#IANJUTA-TERMINAL-ERROR:CAPS"/>
+    <keyword type="signal" name="The “child-exited” signal" link="IAnjutaTerminal.html#IAnjutaTerminal-child-exited"/>
+    <keyword type="function" name="ianjuta_todo_error_quark ()" link="IAnjutaTodo.html#ianjuta-todo-error-quark"/>
+    <keyword type="function" name="ianjuta_todo_load ()" link="IAnjutaTodo.html#ianjuta-todo-load"/>
+    <keyword type="macro" name="IANJUTA_TODO_ERROR" link="IAnjutaTodo.html#IANJUTA-TODO-ERROR:CAPS"/>
+    <keyword type="function" name="IAnjutaVcsStatusCallback ()" link="IAnjutaVcs.html#IAnjutaVcsStatusCallback"/>
+    <keyword type="function" name="IAnjutaVcsDiffCallback ()" link="IAnjutaVcs.html#IAnjutaVcsDiffCallback"/>
+    <keyword type="function" name="ianjuta_vcs_error_quark ()" link="IAnjutaVcs.html#ianjuta-vcs-error-quark"/>
+    <keyword type="function" name="ianjuta_vcs_add ()" link="IAnjutaVcs.html#ianjuta-vcs-add"/>
+    <keyword type="function" name="ianjuta_vcs_checkout ()" link="IAnjutaVcs.html#ianjuta-vcs-checkout"/>
+    <keyword type="function" name="ianjuta_vcs_diff ()" link="IAnjutaVcs.html#ianjuta-vcs-diff"/>
+    <keyword type="function" name="ianjuta_vcs_query_status ()" link="IAnjutaVcs.html#ianjuta-vcs-query-status"/>
+    <keyword type="function" name="ianjuta_vcs_remove ()" link="IAnjutaVcs.html#ianjuta-vcs-remove"/>
+    <keyword type="enum" name="enum IAnjutaVcsError" link="IAnjutaVcs.html#IAnjutaVcsError"/>
+    <keyword type="signal" name="The “status-changed” signal" link="IAnjutaVcs.html#IAnjutaVcs-status-changed"/>
+    <keyword type="function" name="ianjuta_wizard_error_quark ()" link="IAnjutaWizard.html#ianjuta-wizard-error-quark"/>
+    <keyword type="function" name="ianjuta_wizard_activate ()" link="IAnjutaWizard.html#ianjuta-wizard-activate"/>
+    <keyword type="macro" name="IANJUTA_WIZARD_ERROR" link="IAnjutaWizard.html#IANJUTA-WIZARD-ERROR:CAPS"/>
+    <keyword type="function" name="libanjuta_iface_cclosure_marshal_BOOLEAN__OBJECT ()" link="libanjuta-libanjuta-iface-marshallers.html#libanjuta-iface-cclosure-marshal-BOOLEAN--OBJECT"/>
+    <keyword type="function" name="libanjuta_iface_cclosure_marshal_VOID__BOOLEAN_INT ()" link="libanjuta-libanjuta-iface-marshallers.html#libanjuta-iface-cclosure-marshal-VOID--BOOLEAN-INT"/>
+    <keyword type="function" name="libanjuta_iface_cclosure_marshal_VOID__INT_INT ()" link="libanjuta-libanjuta-iface-marshallers.html#libanjuta-iface-cclosure-marshal-VOID--INT-INT"/>
+    <keyword type="function" name="libanjuta_iface_cclosure_marshal_VOID__INT_INT_ULONG_STRING_UINT ()" link="libanjuta-libanjuta-iface-marshallers.html#libanjuta-iface-cclosure-marshal-VOID--INT-INT-ULONG-STRING-UINT"/>
+    <keyword type="function" name="libanjuta_iface_cclosure_marshal_VOID__OBJECT_BOOLEAN_INT_INT_STRING ()" link="libanjuta-libanjuta-iface-marshallers.html#libanjuta-iface-cclosure-marshal-VOID--OBJECT-BOOLEAN-INT-INT-STRING"/>
+    <keyword type="function" name="libanjuta_iface_cclosure_marshal_VOID__OBJECT_CHAR ()" link="libanjuta-libanjuta-iface-marshallers.html#libanjuta-iface-cclosure-marshal-VOID--OBJECT-CHAR"/>
+    <keyword type="function" name="libanjuta_iface_cclosure_marshal_VOID__OBJECT_STRING ()" link="libanjuta-libanjuta-iface-marshallers.html#libanjuta-iface-cclosure-marshal-VOID--OBJECT-STRING"/>
+    <keyword type="function" name="libanjuta_iface_cclosure_marshal_VOID__POINTER_BOXED ()" link="libanjuta-libanjuta-iface-marshallers.html#libanjuta-iface-cclosure-marshal-VOID--POINTER-BOXED"/>
+    <keyword type="function" name="libanjuta_iface_cclosure_marshal_VOID__STRING_STRING ()" link="libanjuta-libanjuta-iface-marshallers.html#libanjuta-iface-cclosure-marshal-VOID--STRING-STRING"/>
+    <keyword type="function" name="libanjuta_iface_cclosure_marshal_VOID__STRING_STRING_STRING ()" link="libanjuta-libanjuta-iface-marshallers.html#libanjuta-iface-cclosure-marshal-VOID--STRING-STRING-STRING"/>
+    <keyword type="function" name="libanjuta_iface_cclosure_marshal_VOID__STRING_STRING_STRING_STRING_BOOLEAN_BOOLEAN_STRING ()" link="libanjuta-libanjuta-iface-marshallers.html#libanjuta-iface-cclosure-marshal-VOID--STRING-STRING-STRING-STRING-BOOLEAN-BOOLEAN-STRING"/>
+    <keyword type="function" name="libanjuta_iface_cclosure_marshal_VOID__UINT_INT ()" link="libanjuta-libanjuta-iface-marshallers.html#libanjuta-iface-cclosure-marshal-VOID--UINT-INT"/>
+    <keyword type="function" name="libanjuta_iface_cclosure_marshal_VOID__ULONG_STRING_UINT ()" link="libanjuta-libanjuta-iface-marshallers.html#libanjuta-iface-cclosure-marshal-VOID--ULONG-STRING-UINT"/>
+    <keyword type="macro" name="libanjuta_iface_cclosure_marshal_VOID__BOXED" link="libanjuta-libanjuta-iface-marshallers.html#libanjuta-iface-cclosure-marshal-VOID--BOXED"/>
+    <keyword type="macro" name="libanjuta_iface_cclosure_marshal_VOID__ENUM" link="libanjuta-libanjuta-iface-marshallers.html#libanjuta-iface-cclosure-marshal-VOID--ENUM"/>
+    <keyword type="macro" name="libanjuta_iface_cclosure_marshal_VOID__INT" link="libanjuta-libanjuta-iface-marshallers.html#libanjuta-iface-cclosure-marshal-VOID--INT"/>
+    <keyword type="macro" name="libanjuta_iface_cclosure_marshal_VOID__OBJECT" link="libanjuta-libanjuta-iface-marshallers.html#libanjuta-iface-cclosure-marshal-VOID--OBJECT"/>
+    <keyword type="macro" name="libanjuta_iface_cclosure_marshal_VOID__POINTER" link="libanjuta-libanjuta-iface-marshallers.html#libanjuta-iface-cclosure-marshal-VOID--POINTER"/>
+    <keyword type="macro" name="libanjuta_iface_cclosure_marshal_VOID__STRING" link="libanjuta-libanjuta-iface-marshallers.html#libanjuta-iface-cclosure-marshal-VOID--STRING"/>
+    <keyword type="macro" name="libanjuta_iface_cclosure_marshal_VOID__VOID" link="libanjuta-libanjuta-iface-marshallers.html#libanjuta-iface-cclosure-marshal-VOID--VOID"/>
+  </functions>
+</book>

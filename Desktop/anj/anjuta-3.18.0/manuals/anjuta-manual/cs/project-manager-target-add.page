@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-target-add" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-target" group="fifth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak přidat cíl do projektu.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Přidání cíle</title>
+
+  <p>Cíl seskupuje dohromady soubory a definuje jejich použití. Používá se zastoupení programu se všemi jeho zdrojovými soubory jako s jeho potomky nebo jen k seskupení datových souborů, které mají být nainstalovány na stejné místo.</p>
+
+  <steps>
+    <item>
+      <p>V <gui>zobrazení projektu</gui> vyberte složku, do které chcete nový cíl přidat, klikněte na ni pravým tlačítkem, aby se objevila <gui>kontextová nabídka projektu</gui> a zvolte <gui>Nový cíl</gui>.</p>
+      <p>Nebo v <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Projekt</gui> <gui>Nový cíl…</gui></guiseq></p>
+    </item>
+    <item>
+      <p>Můžete vybrat jinou složku ve spodním <gui>stromovém zobrazení složek</gui>.</p>
+      <p>Zadejte název cíle a v rozbalovacím seznamu vedle vyberte typ cíle. V závislosti na zpracujícím jádru vašeho projektu jsou možné různé typy cílů, viz dole.</p>
+      <note style="tip">
+        <p>Názvy cílů bývají často omezeny na písmena latinky bez diakritiky, číslice a podtržítko, takže je bezpečnější se vyhnout ostatním znakům.</p>
+     </note>
+    </item>
+    <item>
+      <p>Až máte zvolen název cíle, jeho typ a rodiče, klikněte na tlačítko <gui>Přidat</gui> a tento nový cíl se vytvoří.</p>
+    </item>
+ </steps>
+
+</page>

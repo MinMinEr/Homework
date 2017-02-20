@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="language-support-cpp-modelines-emacs" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="anjuta-code-indentation#editor-modelines"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Podpora schopností řádků s režimem ve stylu Emacs.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  </info>
+
+  <title>Řádky s režimem Emacs</title>
+
+  <p>Takový řádek s režimem je vlastně komentář na prvním (případně druhém, když je na prvním #!) řádku souboru. Tvoří jej seznam názvů proměnných následovaných <code>:</code> a hodnotou, kdy jsou jednotlivé údaje odděleny pomocí <code>;</code> a vše je uzavřeno do <code>-*-</code>.</p>
+
+  <p>Typický řádek s režimem <app>Emacs</app> vypadá nějak takto:</p>
+  
+  <code>
+/* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
+  </code>
+
+  <p>Anjuta podporuje jen následující proměnné.</p>
+
+  <terms>
+    <item>
+      <title><code>indent-tabs-mode</code></title>
+      <p>Nastavte na <code>t</code>, aby se pro odsazování používali tabulátory nebo na <code>nil</code>, aby se používaly mezery.</p>
+    </item>
+    <item>
+      <title><code>tab-width</code></title>
+      <p>Počet mezer odpovídajících jednomu tabulátoru.</p>
+    </item>
+    <item>
+      <title><code>c-basic-offset</code></title>
+      <p>Počet mezer používaných k odsazení kódu C.</p>
+    </item>
+  </terms>
+ 
+</page>

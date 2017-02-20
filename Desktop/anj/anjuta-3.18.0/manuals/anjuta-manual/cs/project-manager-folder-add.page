@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-folder-add" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-folder" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak do cíle přidat složku.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  </info>
+
+  <title>Přidání složky</title>
+
+  <p>Složka umožňuje seskupit několik cílů, aby bylo možné běžné položky nastavit u všech naráz. Často odpovídá složce v souborovém systému.</p>
+
+  <steps>
+    <item>
+      <p>V <gui>zobrazení projektu</gui> vyberte skupinu nebo projekt, do kterých chcete přidat novou skupinu, klikněte pravým tlačítkem myši, aby se <gui>objevila kontextová nabídka</gui> a vyberte <gui>Přidat skupinu</gui>.</p>
+      <p>Nebo v <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Projekt</gui> <gui>Přidat skupinu</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Zadejte nový název skupiny.</p>
+      <note style="tip">
+        <p>Název skupiny bývá typicky omezen na písmena latinky bez diakritiky, číslice a podtržítko, takže je bezpečnější se vyhnout ostatním znakům.</p>
+      </note>
+    </item>
+    <item>
+      <p>Můžete vybrat jinou skupinu v spodním <gui>stromovém zobrazení skupin</gui>.</p>
+    </item>
+    <item>
+      <p>Po té, co zvolíte rodiče a zadáte název, klikněte na tlačítko <gui>Přidat</gui> a skupina se přidá do vašeho projektu.</p>
+    </item>
+  </steps>
+
+</page>

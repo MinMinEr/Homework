@@ -1,0 +1,386 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaEditor
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_EDITOR_PREF_SCHEMA ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO IANJUTA_EDITOR_USE_TABS_KEY ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO IANJUTA_EDITOR_TAB_WIDTH_KEY ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO IANJUTA_EDITOR_INDENT_WIDTH_KEY ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### ENUM IAnjutaEditorAttribute ##### -->
+<para>
+
+</para>
+
+@IANJUTA_EDITOR_TEXT: 
+@IANJUTA_EDITOR_KEYWORD: 
+@IANJUTA_EDITOR_COMMENT: 
+@IANJUTA_EDITOR_STRING: 
+
+<!-- ##### FUNCTION ianjuta_editor_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_append ##### -->
+<para>
+
+</para>
+
+@obj: 
+@text: 
+@length: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_erase ##### -->
+<para>
+
+</para>
+
+@obj: 
+@position_start: 
+@position_end: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_erase_all ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_get_column ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_get_current_word ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_get_end_position ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_get_indentsize ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_get_length ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_get_line_begin_position ##### -->
+<para>
+
+</para>
+
+@obj: 
+@line: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_get_line_end_position ##### -->
+<para>
+
+</para>
+
+@obj: 
+@line: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_get_line_from_position ##### -->
+<para>
+
+</para>
+
+@obj: 
+@position: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_get_lineno ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_get_offset ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_get_overwrite ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_get_position ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_get_position_from_offset ##### -->
+<para>
+
+</para>
+
+@obj: 
+@offset: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_get_start_position ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_get_tabsize ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_get_text ##### -->
+<para>
+
+</para>
+
+@obj: 
+@begin: 
+@end: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_get_text_all ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_get_use_spaces ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_goto_end ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_goto_line ##### -->
+<para>
+
+</para>
+
+@obj: 
+@lineno: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_goto_position ##### -->
+<para>
+
+</para>
+
+@obj: 
+@position: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_goto_start ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_insert ##### -->
+<para>
+
+</para>
+
+@obj: 
+@position: 
+@text: 
+@length: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_set_auto_indent ##### -->
+<para>
+
+</para>
+
+@obj: 
+@auto_indent: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_set_indentsize ##### -->
+<para>
+
+</para>
+
+@obj: 
+@indentsize: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_set_popup_menu ##### -->
+<para>
+
+</para>
+
+@obj: 
+@menu: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_set_tabsize ##### -->
+<para>
+
+</para>
+
+@obj: 
+@tabsize: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_set_use_spaces ##### -->
+<para>
+
+</para>
+
+@obj: 
+@use_spaces: 
+@err: 
+
+

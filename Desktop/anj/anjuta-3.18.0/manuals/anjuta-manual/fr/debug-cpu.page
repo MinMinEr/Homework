@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-cpu" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="sixth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Examiner les informations du processeur.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Processeur</title>
+
+  <section>
+    <title>Affichage des registres du processeur</title>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Affichage</gui> <gui>Registres</gui></guiseq> pour ouvrir la fenêtre <gui>Registres</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Les registres dont la valeur a changé depuis le dernier arrêt sont en rouge. Il est possible de modifier la valeur de n'importe quel registre en cliquant dans la colonne « Valeur » et en saisissant une nouvelle valeur.</p>	
+
+  </section>
+
+  <section>
+    <title>Affichage de la mémoire</title>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Affichage</gui> <gui>Mémoire</gui></guiseq> pour ouvrir la fenêtre <gui>Mémoire</gui>.</p>
+      </item>
+    </steps>
+
+    <p>La première colonne affiche les adresses mémoires en hexadécimal, la seconde affiche le contenu de la mémoire en hexadécimal et la dernière le même contenu en ASCII.</p>
+    <p>L'espace d'adressage d'un simple microprocesseur 32 bits est très grand (4 gigaoctets), il est donc très difficile de se rendre à une adresse précise à l'aide de la barre de défilement. Mais, si vous cliquez avec le bouton droit de la souris pour afficher le menu contextuel et choisissez <gui>Aller à l'adresse</gui>, vous accédez à une petite boîte de dialogue dans laquelle vous pouvez saisir une adresse en notation hexadécimale.</p>
+  </section>
+
+
+  <section>
+    <title>Fenêtre « Désassemblage »</title>
+
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Affichage</gui> <gui>Désassemblage</gui></guiseq> pour ouvrir la fenêtre <gui>Désassemblage</gui>.</p>
+      </item>
+    </steps>
+
+    <p>La première colonne affiche les adresses en hexadécimal. La seconde colonne affiche soit une étiquette dès le début de la ligne et terminée par deux points, soit une instruction en langage assembleur indentée de 4 espaces.</p>
+
+    <p>La position dans la fenêtre de désassemblage est remplacée par la valeur du pointeur d'instruction quand le programme est arrêté.</p>
+
+    <p>L'espace d'adressage d'un simple microprocesseur 32 bits est très grand (4 gigaoctets), il est donc très difficile de se rendre à une adresse précise à l'aide de la barre de défilement. Mais, si vous cliquez avec le bouton droit de la souris pour afficher le menu contextuel et choisissez <gui>Aller à l'adresse</gui>, vous accédez à une petite boîte de dialogue dans laquelle vous pouvez saisir une adresse en notation hexadécimale.</p>
+  </section>
+
+
+</page>

@@ -1,0 +1,116 @@
+<!-- ##### SECTION Title ##### -->
+anjuta-token-stream
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION anjuta_token_stream_push ##### -->
+<para>
+
+</para>
+
+@parent: 
+@root: 
+@content: 
+@file: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_stream_pop ##### -->
+<para>
+
+</para>
+
+@stream: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_stream_get_parent ##### -->
+<para>
+
+</para>
+
+@stream: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_stream_get_root ##### -->
+<para>
+
+</para>
+
+@stream: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_stream_get_current_directory ##### -->
+<para>
+
+</para>
+
+@stream: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_stream_get_current_file ##### -->
+<para>
+
+</para>
+
+@stream: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_stream_tokenize ##### -->
+<para>
+
+</para>
+
+@stream: 
+@type: 
+@length: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_stream_read ##### -->
+<para>
+
+</para>
+
+@stream: 
+@buffer: 
+@max_size: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_stream_append_token ##### -->
+<para>
+
+</para>
+
+@stream: 
+@token: 
+
+
+<!-- ##### STRUCT AnjutaTokenStream ##### -->
+<para>
+
+</para>
+
+

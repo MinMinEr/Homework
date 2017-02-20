@@ -1,0 +1,60 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaEditorConvert
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_EDITOR_CONVERT_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ianjuta_editor_convert_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_convert_to_lower ##### -->
+<para>
+
+</para>
+
+@obj: 
+@start_position: 
+@end_position: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_convert_to_upper ##### -->
+<para>
+
+</para>
+
+@obj: 
+@start_position: 
+@end_position: 
+@err: 
+
+

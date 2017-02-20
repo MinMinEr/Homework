@@ -1,0 +1,116 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaVcsStatusTreeView
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO ANJUTA_VCS_DEFAULT_STATUS_CODES ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### STRUCT AnjutaVcsStatusTreeViewClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+
+<!-- ##### STRUCT AnjutaVcsStatusTreeView ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG AnjutaVcsStatusTreeView:conflicted-selectable ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AnjutaVcsStatusTreeView:show-status ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AnjutaVcsStatusTreeView:status-codes ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION anjuta_vcs_status_tree_view_new ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_vcs_status_tree_view_destroy ##### -->
+<para>
+
+</para>
+
+@self: 
+
+
+<!-- ##### FUNCTION anjuta_vcs_status_tree_view_add ##### -->
+<para>
+
+</para>
+
+@self: 
+@path: 
+@status: 
+@selected: 
+
+
+<!-- ##### FUNCTION anjuta_vcs_status_tree_view_select_all ##### -->
+<para>
+
+</para>
+
+@self: 
+
+
+<!-- ##### FUNCTION anjuta_vcs_status_tree_view_unselect_all ##### -->
+<para>
+
+</para>
+
+@self: 
+
+
+<!-- ##### FUNCTION anjuta_vcs_status_tree_view_get_selected ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### STRUCT AnjutaVcsStatusTreeViewPriv ##### -->
+<para>
+
+</para>
+
+

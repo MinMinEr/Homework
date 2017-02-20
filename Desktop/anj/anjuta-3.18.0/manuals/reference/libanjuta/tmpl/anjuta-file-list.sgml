@@ -1,0 +1,63 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaFileList
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION anjuta_file_list_new ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_file_list_get_paths ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_file_list_set_relative_path ##### -->
+<para>
+
+</para>
+
+@self: 
+@path: 
+
+
+<!-- ##### FUNCTION anjuta_file_list_clear ##### -->
+<para>
+
+</para>
+
+@self: 
+
+
+<!-- ##### STRUCT AnjutaFileListPriv ##### -->
+<para>
+
+</para>
+
+

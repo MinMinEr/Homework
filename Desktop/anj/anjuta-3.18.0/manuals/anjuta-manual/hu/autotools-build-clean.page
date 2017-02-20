@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-clean" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="fourth"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <link type="seealso" xref="autotools-build-preferences-dialog"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Lefordított fájlok eltávolítása.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Célok tisztítása</title>
+
+  <p>Hasznos lehet az összeállítási folyamat által létrehozott összes fájl törlése. Ha például nem minden függőség kerül figyelembe vételre, és egy módosított fájl nem vált ki újrafordítást (ahogyan annak történnie kellene), akkor az összes fájl törlése megoldhatja ezt a problémát.</p>
+  <steps>
+    <item>
+      <p>A <gui>főmenüből</gui> válassza az <guiseq><gui>Összeállítás</gui><gui>Tisztítás</gui></guiseq> menüpontot az összes lefordított fájl törléséhez abból a könyvtárból, ahol az éppen szerkesztett fájl van.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>A <gui>főmenüből</gui> válassza az <guiseq><gui>Összeállítás</gui><gui>Projekt tisztítása</gui></guiseq> menüpontot az összes lefordított fájl törléséhez.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>A <gui>fájlkezelő ablaktáblán</gui> válasszon egy fájlt vagy könyvtárat.</p>
+    </item>
+    <item>
+      <p>Kattintson a jobb egérgombbal a <gui>fájlkezelő helyi menüjének</gui> megjelenítéséhez, és válassza az <guiseq><gui>Összeállítás</gui><gui>Tisztítás</gui></guiseq> menüpontot a kijelölt könyvtárban vagy az éppen kijelölt fájl szülőkönyvtárában lévő összes lefordított fájl törléséhez.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>A <gui>projektkezelő ablaktáblán</gui> válasszon egy forrásfájlt vagy célt.</p>
+    </item>
+    <item>
+      <p>Kattintson a jobb egérgombbal a <gui>projektkezelő helyi menüjének</gui> megjelenítéséhez, és válassza az <guiseq><gui>Összeállítás</gui><gui>Tisztítás</gui></guiseq> menüpontot a kijelölt fájlt vagy célt tartalmazó könyvtárban lévő összes lefordított fájl törléséhez.</p>
+    </item>
+  </steps>
+
+</page>

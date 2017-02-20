@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-compile" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="second"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <link type="seealso" xref="autotools-build-preferences-dialog"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Dateien kompilieren.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Dateien kompilieren</title>
+
+    <p>Die meisten Programmiersprachen ermöglichen das Compilieren von einzelnen Quelldateien. Die Datei wird gelesen, auf Syntaxfehler geprüft und in eine vorläufige Objektdatei umgewandelt. Die meisten Fehler passieren in diesem Schritt. Es ist daher sinnvoll, eine Datei nach Bearbeitung zu kompilieren und auf Fehler prüfen zu lassen. Dazu gibt es mehrere Möglichkeiten.</p>
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Erstellen</gui><gui>Compilieren</gui></guiseq> im <gui>Hauptmenü</gui>, oder drücken Sie <key>F9</key> zum Compilieren der aktuellen Datei in Bearbeitung.</p>
+      </item>
+    </steps>
+    <steps>
+      <item>
+        <p>Wählen Sie in der <gui>Dateiverwaltungsleiste</gui> eine Datei aus.</p>
+      </item>
+      <item>
+        <p>Drücken Sie die rechte Maustaste. Das <gui>Kontextmenü der Dateiverwaltung</gui> öffnet sich. Wählen Sie <guiseq><gui>Erstellen</gui><gui>Compilieren</gui></guiseq>, um alle Dateien in dem aktuell gewählten Ordner oder dem übergeordneten Ordner der aktuell gewählten Datei zu kompilieren.</p>
+      </item>
+    </steps>
+    <steps>
+      <item>
+        <p>Wählen Sie in der <gui>Projektverwaltungsleiste</gui> eine Quelldatei aus.</p>
+      </item>
+      <item>
+        <p>Drücken Sie die rechte Maustaste. Das <gui>Kontextmenü der Dateiverwaltung</gui> öffnet sich. Wählen Sie <guiseq><gui>Erstellen</gui><gui>Compilieren</gui></guiseq>, um die aktuell in der <gui>Seitenleiste der Projektverwaltung</gui> gewählte Datei zu kompilieren.</p>
+      </item>
+    </steps>
+    <note style="tip">
+      <p>Sie müssen Ihre Datei vor der Kompilierung nicht notwendigerweise speichern. Dies erledigt <app>Anjuta</app> automatisch, falls nötig.</p>
+    </note>
+
+</page>

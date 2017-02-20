@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-install" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="fifth"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <link type="seealso" xref="autotools-build-preferences-dialog"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Ziele oder das Projekt installieren.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ziele installieren</title>
+
+  <p>Es werden einige Datendateien wie Beschreibungen der Benutzerschnittstelle benötigt, es sei denn, Ihr Projekt ist sehr einfach angelegt. Diese Dateien werden üblicherweise in Standard-Ordner kopiert und von dort eingelesen, das heißt, Sie können Ihr Programm nicht im Erstellungsordner ausführen. Sie müssen eine Installation durchführen, um alle Dateien in die zugehörigen Ordner wie beispielsweise einen Unterordner von <file>/usr/local</file> zu kopieren</p>
+
+  <p>Es gibt mehrere Möglichkeiten, Ziele oder ein Projekt zu installieren.</p>
+
+  <steps>
+    <item>
+      <p>Wählen Sie <guiseq><gui>Erstellen</gui><gui>Installieren</gui></guiseq> im <gui>Hauptmenü</gui>, um alle Dateien in den gleichen Ordner zu installieren wie die aktuelle in Bearbeitung befindliche Datei.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>Wählen Sie <guiseq><gui>Erstellen</gui><gui>Projekt installieren</gui></guiseq> im <gui>Hauptmenü</gui>, um alle Projektdateien zu installieren.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>Wählen Sie eine Datei oder einen Ordner in der <gui>Dateiverwaltungsleiste</gui> aus.</p>
+    </item>
+    <item>
+      <p>Drücken Sie die rechte Maustaste. Das <gui>Kontextmenü der Dateiverwaltung</gui> öffnet sich. Wählen Sie <guiseq><gui>Erstellen</gui><gui>Installieren</gui></guiseq>, um alle Dateien in dem aktuell gewählten Ordner oder dem übergeordneten Ordner der aktuell gewählten Datei zu installieren.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>Wählen Sie in der <gui>Projektverwaltungsleiste</gui> eine Quelldatei oder ein Ziel aus.</p>
+    </item>
+    <item>
+      <p>Drücken Sie die rechte Maustaste zum Öffnen des <gui>Kontextmenüs der Projektverwaltung</gui> und wählen Sie <guiseq><gui>Erstellen</gui><gui>Installieren</gui></guiseq>, um alle Dateien in den Ordner mit der derzeit gewählten Datei oder dem gewählten Ziel zu installieren.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Wenn Sie das Programm in einen Systemordner installieren, müssen Sie für ausreichende Berechtigungen <cmd>su</cmd> oder <cmd>sudo</cmd> verwenden. Lesen Sie bitte auch <link xref="autotools-build-preferences-dialog"/></p>
+  </note>
+
+</page>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="autotools-project-backend" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager#backend"/>
+    <desc>«Backend» del proyecto de autotools.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Complemento para el «backend» del proyecto de autotools</title>
+
+  <p>Este es el formato de proyecto más común el Linux. Se ha diseñado para distribuir paquetes de código fuente en un amplio rango de sistemas Unix. Si alguna vez ha instalado un programa usando <cmd>configure</cmd>, <cmd>make</cmd> y <cmd>make install</cmd>, probablemente ya lo habrá usado como usuario.</p>
+
+  <p>Generalmente es más difícil de usar como programador. Sin embargo, es el «backend» predeterminado de <app>Anjuta</app>, y tiene características que hacen que sea más sencillo de usar. Todas las características del gestor de proyectos se activan al usarlas. Debería poder mantener un proyecto usando el «backend» de autotools sin escribir una sola línea en <file>configure.ac</file> o el cualquiera de los archivos <file>Makefile.am</file>.</p> 
+
+  <note style="bug">
+    <p>Los archivos de autotools dan más información que un makefile, pero el «backend» no soporta todos los trucos posibles. Si encuentra un proyecto que no puede leer correctamente, se agradecerá que envíe un <link href="https://bugzilla.gnome.org/browse.cgi?product=anjuta">informe de error</link>. Mientras tanto, como solución alternativa, puede usar la carpeta del «backend» del proyecto en su lugar. Esto es más limitado, pero debería encontrar todos los archivos de fuentes.</p>
+  </note>
+
+
+</page>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-step" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-execute" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Parar y continuar.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Parar y pasos</title>
+
+  <p>Al igual que una sesión de edición de vídeo, el programa se puede ejecutar a cámara lenta con la posibilidad de ir hacia adelante, pausarlo, detenerlo, etc. Esto es esencial para seguir el comportamiento del programa. Aunque no puede ir hacia atrás.</p>
+
+  <section>
+    <title>Avanzar</title>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Depurar</gui><gui>Avanzar sobre</gui></guiseq> o pulse <key>F5</key> o pulse en el icono <gui>Avanzar sobre</gui> en la barra de herramientas.</p>
+      </item>
+    </steps>
+
+    <p>El avance simple ejecuta solo una sentencia del programa (desde el lugar en el que se ha detenido) y devuelve el control. Si la sentencia ejecutada contiene una función, el depurador intenta avanzar dentro de las funciones (en la secuencia en la que se ejecutan). Una vez que la sentencia se ha ejecutado y se devuelve el control, puede estudiar el estado de su programa.</p>
+
+    <note style="advanced">
+     <p>Si la <gui>Ventana de desensamblado</gui> tiene el foco al seleccionar este comando, solo se ejecuta una instrucción de ensamblador.</p>
+    </note>
+  </section>
+
+
+  <section>
+    <title>Avanzar sobre</title>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Depurar</gui><gui>Avanzar sobre</gui></guiseq> o pulse <key>F6</key> o pulse en el icono <gui>Avanzar sobre</gui> en la barra de herramientas.</p>
+      </item>
+    </steps>
+
+    <p>«Avanzar sobre» es similar a «avanzar» con la excepción de que no se detiene en ninguna función dentro de la declaración en ejecución.</p>
+
+    <note style="advanced">
+      <p>Si la <gui>Ventana de desensamblado</gui> tiene el foco al seleccionar este comando, solo ejecuta una instrucción de ensamblador excepto si esta instrucción es una llamada a una subrutina; en ese caso el programa se detiene al finalizar la subrutina.</p>
+    </note>
+  </section>
+
+
+  <section>
+    <title>Avanzar al final</title>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Depurar</gui><gui>Avanzar sobre</gui></guiseq> o pulse <keyseq><key>Mayús</key><key>F5</key></keyseq> o pulse en el icono <gui>Avanzar sobre</gui> en la barra de herramientas.</p>
+      </item>
+    </steps>
+
+    <p>Avanzar al final ejecuta la función actual hasta que vuelve a la función que la llamó.</p>
+  </section>
+
+
+  <section>
+    <title>Ejecutar y continuar</title>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Depurar</gui><gui>Ejecutar/Continuar</gui></guiseq>, pulse <key>F4</key> o pulse en el icono <gui>Continuar</gui> en la barra de herramientas.</p>
+      </item>
+    </steps>
+
+    <p>Este comando reinicia el programa y lo deja ejecutándose hasta que encuentra un punto de parada o el programa termina.</p>
+  </section>
+
+  <section>
+   <title>Ejecutar hasta</title>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Depurar</gui><gui>Ejecutar hasta cursor</gui></guiseq>, pulse <key>F8</key> o pulse en el icono <gui>Ejecutar hasta</gui> en la barra de herramientas.</p>
+      </item>
+    </steps>
+
+    <p>Reinicia el programa y lo ejecuta hasta que se llega a la línea o la dirección (si la <gui>Ventana de desensamblado</gui> tiene el foco) en la posición del cursor.</p>
+  </section>
+  
+  <section>
+   <title>Detener el programa</title>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Depurar</gui><gui>Pausar el programa</gui></guiseq> o pulse el icono <gui>Pausar</gui> en la barra de herramientas.</p>
+      </item>
+    </steps>
+
+   <p>Interrumpe el programa y devuelve el control al depurador, permitiendo realizar tareas de depuración como inspeccionar datos o añadir puntos de parada.</p>
+  </section>
+
+
+</page>

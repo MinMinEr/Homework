@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-project-root-edit" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-root" group="second"/>
+    <link type="seealso" xref="autotools-project-folder-edit"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Modifier les propriétés du projet autotools.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Modification des propriétés du projet Autotools</title>
+
+  <p>Voici les propriétés de l'élément racine.</p>
+
+  <terms>
+    <item>
+      <title><gui>Moteur</gui></title>
+      <p>Le moteur de projet utilisé par le projet : Autotools. Un autre moteur peut être sélectionné en cliquant sur ce bouton. C'est utile si le moteur actuel a quelques difficultés à analyser les fichiers du projet.</p>
+    </item>
+    <item>
+      <title><gui>Nom</gui></title>
+      <p>Le nom du projet. Il peut contenir des espaces.</p>
+    </item>
+    <item>
+      <title><gui>Version</gui></title>
+      <p>C'est la version du projet.</p>
+    </item>
+    <item>
+      <title><gui>URL de rapport d'anomalie</gui></title>
+      <p>C'est un URL permettant de soumettre un rapport d'anomalie, par exemple une adresse électronique ou un lien vers un outil de suivi de bogues. Il est facultatif.</p>
+    </item>
+    <item>
+      <title><gui>Nom du paquet</gui></title>
+      <p>C'est le nom de la distribution, il ne doit pas contenir d'espace. Il est facultatif.</p>
+    </item>
+    <item>
+      <title><gui>URL</gui></title>
+      <p>Ceci est la page d'accueil du projet. Elle est facultative.</p>
+    </item>
+  </terms>
+
+  <p>De plus, l'élément racine se comporte comme un dossier et en possède toutes les propriétés. Consultez la liste <link xref="autotools-project-folder-edit"/>.</p>
+
+</page>

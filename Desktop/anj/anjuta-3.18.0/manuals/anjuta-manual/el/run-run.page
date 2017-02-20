@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="run-run" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="first"/>
+    <link type="seealso" xref="run-parameters-dialog"/>
+    <link type="seealso" xref="autotools-build-install"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Έναρξη προγράμματος χωρίς αποσφαλμάτωση.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Εκτέλεση προγράμματος</title>
+
+  <p>Εάν το <app>Anjuta</app> χρησιμοποιείται για εκκίνηση προγράμματος, ελέγχει την ενημερότητα και το δομεί εάν χρειάζεται.</p>
+
+  <steps>
+    <item>
+      <p>Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Εκτέλεση</gui> <gui>Εκτέλεση</gui></guiseq> ή πατήστε <key>F3</key> για εκτέλεση του τρέχοντος προγράμματος.</p>
+    </item>
+  </steps>
+
+  <p>Το τρέχον πρόγραμμα και αρκετές παράμετροι μπορούν να οριστούν στον διάλογο <gui>παράμετροι</gui>. Δείτε <link xref="run-parameters-dialog"/> για περισσότερες πληροφορίες.</p>
+
+  <steps>
+    <item>
+      <p>Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Εκτέλεση</gui> <gui>Παράμετροι προγράμματος...</gui></guiseq> για εμφάνιση του διαλόγου.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Εάν το πρόγραμμά σας χρειάζεται αρχεία δεδομένων, πρέπει να τα εγκαταστήσετε προφανώς τουλάχιστον μια φορά πριν την εκτέλεση του. Δείτε <link xref="autotools-build-install"/> για περισσότερες πληροφορίες.</p>
+  </note>
+ 
+</page>

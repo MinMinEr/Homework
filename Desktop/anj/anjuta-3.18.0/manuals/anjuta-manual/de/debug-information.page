@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-information" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="seventh"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Zusätzliche Programminformationen untersuchen.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Verschiedene Informationen</title>
+
+  <p>Der Debugger kann verschiedene Informationen über das Programm liefern, während es läuft.</p>
+
+  <section>
+    <title>Gemeinsam genutzten Bibliotheken betrachten</title>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Fehlerdiagnose</gui><gui>Information</gui><gui>Gemeinsam verwendete Bibliotheken</gui></guiseq> im <gui>Hauptmenü</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Dadurch wird ein Fenster geöffnet, das alle vom Programm geladenen gemeinsamen Bibliotheken sowie deren Speicherbereiche auflistet. Es zeigt außerdem für jede der Bibliotheken, ob deren Symboltabelle geladen ist oder nicht.</p>
+  </section>
+
+
+  <section>
+    <title>Signale betrachten</title>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Fehlerdiagnose</gui><gui>Information</gui><gui>Kernel-Signale</gui></guiseq> im <gui>Hauptmenü</gui>.</p>
+      </item>
+    </steps>
+ 
+    <p>Dies listet alle verfügbaren Signale einschließlich einer Kurzbeschreibung und drei Spalten, welche angeben, was zu tun ist, wenn ein Signal empfangen wird:</p>
+
+    <terms>
+      <item>
+        <title>Stopp</title>
+        <p>Der Debugger stoppt die Ausführung des Programms, sobald das Programm dieses Signal empfängt.</p>
+      </item>
+      <item>
+        <title>Drucken</title>
+        <p>Der Debugger zeigt das empfangene Signal an.</p>
+      </item>
+      <item>
+        <title>Durchgang</title>
+        <p>Der Debugger übergibt das Signal an das Programm.</p>
+      </item>
+    </terms>
+
+    <note style="bug">
+      <p>Die Einträge des über einen Klick mit der rechten Maustaste erreichbare Kontextmenü sind derzeit deaktiviert, da die entsprechenden Funktionen noch nicht implementiert wurden.</p>
+    </note>
+
+  </section>
+
+</page>

@@ -1,0 +1,2045 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: Anjuta project</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="libanjuta-api.html" title="libanjuta API">
+<link rel="prev" href="AnjutaPkgScanner.html" title="AnjutaPkgScanner">
+<link rel="next" href="AnjutaTabber.html" title="AnjutaTabber">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#AnjutaProjectNode.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#AnjutaProjectNode.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#AnjutaProjectNode.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#AnjutaProjectNode.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libanjuta-api.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="AnjutaPkgScanner.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="AnjutaTabber.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="AnjutaProjectNode"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="AnjutaProjectNode.top_of_page"></a>Anjuta project</span></h2>
+<p>Anjuta project — Anjuta project</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="AnjutaProjectNode.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Unstable"><span class="acronym">Unstable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="AnjutaProjectNode.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html#AnjutaProjectProperty"><span class="returnvalue">AnjutaProjectProperty</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-property-new" title="anjuta_project_property_new ()">anjuta_project_property_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html#AnjutaProjectProperty"><span class="returnvalue">AnjutaProjectProperty</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-property-copy" title="anjuta_project_property_copy ()">anjuta_project_property_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-property-free" title="anjuta_project_property_free ()">anjuta_project_property_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html#AnjutaProjectPropertyInfo"><span class="returnvalue">AnjutaProjectPropertyInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-property-info-new" title="anjuta_project_property_info_new ()">anjuta_project_property_info_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html#AnjutaProjectPropertyInfo"><span class="returnvalue">AnjutaProjectPropertyInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-property-info-copy" title="anjuta_project_property_info_copy ()">anjuta_project_property_info_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-property-info-free" title="anjuta_project_property_info_free ()">anjuta_project_property_info_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeTraverseFunc" title="AnjutaProjectNodeTraverseFunc ()">*AnjutaProjectNodeTraverseFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeForeachFunc" title="AnjutaProjectNodeForeachFunc ()">*AnjutaProjectNodeForeachFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-root" title="anjuta_project_node_root ()">anjuta_project_node_root</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-parent" title="anjuta_project_node_parent ()">anjuta_project_node_parent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-first-child" title="anjuta_project_node_first_child ()">anjuta_project_node_first_child</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-last-child" title="anjuta_project_node_last_child ()">anjuta_project_node_last_child</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-next-sibling" title="anjuta_project_node_next_sibling ()">anjuta_project_node_next_sibling</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-prev-sibling" title="anjuta_project_node_prev_sibling ()">anjuta_project_node_prev_sibling</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-nth-child" title="anjuta_project_node_nth_child ()">anjuta_project_node_nth_child</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-parent-type" title="anjuta_project_node_parent_type ()">anjuta_project_node_parent_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-foreach" title="anjuta_project_node_foreach ()">anjuta_project_node_foreach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-children-foreach" title="anjuta_project_node_children_foreach ()">anjuta_project_node_children_foreach</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-traverse" title="anjuta_project_node_traverse ()">anjuta_project_node_traverse</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-children-traverse" title="anjuta_project_node_children_traverse ()">anjuta_project_node_children_traverse</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-check" title="anjuta_project_node_check ()">anjuta_project_node_check</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-dump" title="anjuta_project_node_dump ()">anjuta_project_node_dump</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-insert-before" title="anjuta_project_node_insert_before ()">anjuta_project_node_insert_before</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-insert-after" title="anjuta_project_node_insert_after ()">anjuta_project_node_insert_after</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-remove" title="anjuta_project_node_remove ()">anjuta_project_node_remove</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-append" title="anjuta_project_node_append ()">anjuta_project_node_append</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-prepend" title="anjuta_project_node_prepend ()">anjuta_project_node_prepend</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeType" title="enum AnjutaProjectNodeType"><span class="returnvalue">AnjutaProjectNodeType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-get-node-type" title="anjuta_project_node_get_node_type ()">anjuta_project_node_get_node_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeType" title="enum AnjutaProjectNodeType"><span class="returnvalue">AnjutaProjectNodeType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-get-full-type" title="anjuta_project_node_get_full_type ()">anjuta_project_node_get_full_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeState" title="enum AnjutaProjectNodeState"><span class="returnvalue">AnjutaProjectNodeState</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-get-state" title="anjuta_project_node_get_state ()">anjuta_project_node_get_state</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-get-name" title="anjuta_project_node_get_name ()">anjuta_project_node_get_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-get-file" title="anjuta_project_node_get_file ()">anjuta_project_node_get_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-get-properties-info" title="anjuta_project_node_get_properties_info ()">anjuta_project_node_get_properties_info</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-get-properties" title="anjuta_project_node_get_properties ()">anjuta_project_node_get_properties</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html#AnjutaProjectPropertyInfo"><span class="returnvalue">AnjutaProjectPropertyInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-get-property-info" title="anjuta_project_node_get_property_info ()">anjuta_project_node_get_property_info</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html#AnjutaProjectProperty"><span class="returnvalue">AnjutaProjectProperty</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-get-property" title="anjuta_project_node_get_property ()">anjuta_project_node_get_property</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html#AnjutaProjectProperty"><span class="returnvalue">AnjutaProjectProperty</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-get-map-property" title="anjuta_project_node_get_map_property ()">anjuta_project_node_get_map_property</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html#AnjutaProjectPropertyInfo"><span class="returnvalue">AnjutaProjectPropertyInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-insert-property-info" title="anjuta_project_node_insert_property_info ()">anjuta_project_node_insert_property_info</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html#AnjutaProjectProperty"><span class="returnvalue">AnjutaProjectProperty</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-insert-property" title="anjuta_project_node_insert_property ()">anjuta_project_node_insert_property</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html#AnjutaProjectProperty"><span class="returnvalue">AnjutaProjectProperty</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-remove-property" title="anjuta_project_node_remove_property ()">anjuta_project_node_remove_property</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-set-state" title="anjuta_project_node_set_state ()">anjuta_project_node_set_state</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-clear-state" title="anjuta_project_node_clear_state ()">anjuta_project_node_clear_state</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-get-group-from-file" title="anjuta_project_node_get_group_from_file ()">anjuta_project_node_get_group_from_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-target-get-node-from-name" title="anjuta_project_target_get_node_from_name ()">anjuta_project_target_get_node_from_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-get-source-from-file" title="anjuta_project_node_get_source_from_file ()">anjuta_project_node_get_source_from_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeInfo"><span class="returnvalue">AnjutaProjectNodeInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-info-new" title="anjuta_project_node_info_new ()">anjuta_project_node_info_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeInfo"><span class="returnvalue">AnjutaProjectNodeInfo</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-info-copy" title="anjuta_project_node_info_copy ()">anjuta_project_node_info_copy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-info-free" title="anjuta_project_node_info_free ()">anjuta_project_node_info_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-info-name" title="anjuta_project_node_info_name ()">anjuta_project_node_info_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-info-mime" title="anjuta_project_node_info_mime ()">anjuta_project_node_info_mime</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeType" title="enum AnjutaProjectNodeType"><span class="returnvalue">AnjutaProjectNodeType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-info-type" title="anjuta_project_node_info_type ()">anjuta_project_node_info_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProjectNode.html#anjuta-project-node-info-property-help-id" title="anjuta_project_node_info_property_help_id ()">anjuta_project_node_info_property_help_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaProjectNode.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *</td>
+<td class="property_name"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNode--file" title="The “file” property">file</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNode--name" title="The “name” property">name</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeState" title="enum AnjutaProjectNodeState"><span class="type">AnjutaProjectNodeState</span></a></td>
+<td class="property_name"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNode--state" title="The “state” property">state</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeType" title="enum AnjutaProjectNodeType"><span class="type">AnjutaProjectNodeType</span></a></td>
+<td class="property_name"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNode--type" title="The “type” property">type</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaProjectNode.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNode-loaded" title="The “loaded” signal">loaded</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNode-updated" title="The “updated” signal">updated</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="AnjutaProjectNodeInfo"></a><a name="AnjutaProjectProperty"></a><a name="AnjutaProjectPropertyInfo"></a><div class="refsect1">
+<a name="AnjutaProjectNode.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectValueType" title="enum AnjutaProjectValueType">AnjutaProjectValueType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectPropertyFlags" title="enum AnjutaProjectPropertyFlags">AnjutaProjectPropertyFlags</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeType" title="enum AnjutaProjectNodeType">AnjutaProjectNodeType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeState" title="enum AnjutaProjectNodeState">AnjutaProjectNodeState</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNode-struct" title="struct AnjutaProjectNode">AnjutaProjectNode</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaProjectNode.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-Boxed-Types.html">GBoxed</a>
+    <span class="lineart">├──</span> AnjutaProjectNodeInfo
+    <span class="lineart">├──</span> AnjutaProjectProperty
+    <span class="lineart">╰──</span> AnjutaProjectPropertyInfo
+    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> AnjutaProjectNode
+</pre>
+</div>
+<div class="refsect1">
+<a name="AnjutaProjectNode.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libanjuta/anjuta-project.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="AnjutaProjectNode.description"></a><h2>Description</h2>
+<p>A project in Anjuta is represented by a tree. There are six kinds of node.</p>
+<p>The root node is the parent of all other nodes, it can implement
+IAnjutaProject interface and represent the project itself but it is not
+mandatory.</p>
+<p>A module node represents a module in autotools project, it is a group of
+packages.</p>
+<p>A package node represents a package in autotools project, it is library.</p>
+<p>A group node is used to group several target or source, it can represent
+a directory by example.</p>
+<p>A target node represents an object file defined explicitely.
+There are different kinds of target: program, library...
+A target have as children all source needed to build it.</p>
+<p>A source node represents a source file. These are lead of the tree, a source
+node cannot have children.</p>
+<p>All these nodes are base objects. They have derived in each project backend
+to provide more specific information.</p>
+</div>
+<div class="refsect1">
+<a name="AnjutaProjectNode.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="anjuta-project-property-new"></a><h3>anjuta_project_property_new ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectProperty"><span class="returnvalue">AnjutaProjectProperty</span></a> *
+anjuta_project_property_new (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *value</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.2.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p> Value. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p> Optional name used by map properties. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>][<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p> Optional user data. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>][<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.44.14.2.5"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-property-copy"></a><h3>anjuta_project_property_copy ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectProperty"><span class="returnvalue">AnjutaProjectProperty</span></a> *
+anjuta_project_property_copy (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectProperty"><span class="type">AnjutaProjectProperty</span></a> *prop</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.14.3.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-property-free"></a><h3>anjuta_project_property_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_project_property_free (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectProperty"><span class="type">AnjutaProjectProperty</span></a> *prop</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-property-info-new"></a><h3>anjuta_project_property_info_new ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectPropertyInfo"><span class="returnvalue">AnjutaProjectPropertyInfo</span></a> *
+anjuta_project_property_info_new (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                  <em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectValueType" title="enum AnjutaProjectValueType"><span class="type">AnjutaProjectValueType</span></a> type</code></em>,
+                                  <em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectPropertyFlags" title="enum AnjutaProjectPropertyFlags"><span class="type">AnjutaProjectPropertyFlags</span></a> flags</code></em>,
+                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *description</code></em>,
+                                  <em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectProperty"><span class="type">AnjutaProjectProperty</span></a> *default_value</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.5.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p> Property identifier. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p> Translatable property name. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>Property value type</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>flags</p></td>
+<td class="parameter_description"><p>Property flags</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>description</p></td>
+<td class="parameter_description"><p> Property description. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_value</p></td>
+<td class="parameter_description"><p> Default property value. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p> Optional user data. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>][<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.44.14.5.5"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-property-info-copy"></a><h3>anjuta_project_property_info_copy ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectPropertyInfo"><span class="returnvalue">AnjutaProjectPropertyInfo</span></a> *
+anjuta_project_property_info_copy (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectPropertyInfo"><span class="type">AnjutaProjectPropertyInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.14.6.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-property-info-free"></a><h3>anjuta_project_property_info_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_project_property_info_free (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectPropertyInfo"><span class="type">AnjutaProjectPropertyInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AnjutaProjectNodeTraverseFunc"></a><h3>AnjutaProjectNodeTraverseFunc ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<span class="c_punctuation">(</span>*AnjutaProjectNodeTraverseFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.14.8.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AnjutaProjectNodeForeachFunc"></a><h3>AnjutaProjectNodeForeachFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*AnjutaProjectNodeForeachFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.9.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/closure"><span class="acronym">closure</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-root"></a><h3>anjuta_project_node_root ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+anjuta_project_node_root (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.10.4"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-parent"></a><h3>anjuta_project_node_parent ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+anjuta_project_node_parent (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.11.4"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-first-child"></a><h3>anjuta_project_node_first_child ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+anjuta_project_node_first_child (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.12.4"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-last-child"></a><h3>anjuta_project_node_last_child ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+anjuta_project_node_last_child (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.13.4"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-next-sibling"></a><h3>anjuta_project_node_next_sibling ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+anjuta_project_node_next_sibling (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.14.4"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-prev-sibling"></a><h3>anjuta_project_node_prev_sibling ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+anjuta_project_node_prev_sibling (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.15.4"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-nth-child"></a><h3>anjuta_project_node_nth_child ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+anjuta_project_node_nth_child (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.16.4"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-parent-type"></a><h3>anjuta_project_node_parent_type ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+anjuta_project_node_parent_type (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>,
+                                 <em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeType" title="enum AnjutaProjectNodeType"><span class="type">AnjutaProjectNodeType</span></a> type</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.17.4"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-foreach"></a><h3>anjuta_project_node_foreach ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_project_node_foreach (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GTraverseType"><span class="type">GTraverseType</span></a> order</code></em>,
+                             <em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeForeachFunc" title="AnjutaProjectNodeForeachFunc ()"><span class="type">AnjutaProjectNodeForeachFunc</span></a> func</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.18.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>func</p></td>
+<td class="parameter_description"><p>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/scope%20call"><span class="acronym">scope call</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-children-foreach"></a><h3>anjuta_project_node_children_foreach ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_project_node_children_foreach (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>,
+                                      <em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeForeachFunc" title="AnjutaProjectNodeForeachFunc ()"><span class="type">AnjutaProjectNodeForeachFunc</span></a> func</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.19.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>func</p></td>
+<td class="parameter_description"><p>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/scope%20call"><span class="acronym">scope call</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-traverse"></a><h3>anjuta_project_node_traverse ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+anjuta_project_node_traverse (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-N-ary-Trees.html#GTraverseType"><span class="type">GTraverseType</span></a> order</code></em>,
+                              <em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeTraverseFunc" title="AnjutaProjectNodeTraverseFunc ()"><span class="type">AnjutaProjectNodeTraverseFunc</span></a> func</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.20.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>func</p></td>
+<td class="parameter_description"><p>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/scope%20call"><span class="acronym">scope call</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.44.14.20.5"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-children-traverse"></a><h3>anjuta_project_node_children_traverse ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+anjuta_project_node_children_traverse (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>,
+                                       <em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeTraverseFunc" title="AnjutaProjectNodeTraverseFunc ()"><span class="type">AnjutaProjectNodeTraverseFunc</span></a> func</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.21.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>func</p></td>
+<td class="parameter_description"><p>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/scope%20call"><span class="acronym">scope call</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.44.14.21.5"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-check"></a><h3>anjuta_project_node_check ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_project_node_check (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *parent</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-dump"></a><h3>anjuta_project_node_dump ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_project_node_dump (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *parent</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-insert-before"></a><h3>anjuta_project_node_insert_before ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+anjuta_project_node_insert_before (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *parent</code></em>,
+                                   <em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *sibling</code></em>,
+                                   <em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.24.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sibling</p></td>
+<td class="parameter_description"><p>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>][<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>node</p></td>
+<td class="parameter_description"><p>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.44.14.24.5"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-insert-after"></a><h3>anjuta_project_node_insert_after ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+anjuta_project_node_insert_after (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *parent</code></em>,
+                                  <em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *sibling</code></em>,
+                                  <em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.25.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sibling</p></td>
+<td class="parameter_description"><p>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>][<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>node</p></td>
+<td class="parameter_description"><p>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.44.14.25.5"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-remove"></a><h3>anjuta_project_node_remove ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+anjuta_project_node_remove (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.26.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>node</p></td>
+<td class="parameter_description"><p>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.44.14.26.5"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-append"></a><h3>anjuta_project_node_append ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+anjuta_project_node_append (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *parent</code></em>,
+                            <em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.27.4"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-prepend"></a><h3>anjuta_project_node_prepend ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+anjuta_project_node_prepend (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *parent</code></em>,
+                             <em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.28.4"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-get-node-type"></a><h3>anjuta_project_node_get_node_type ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeType" title="enum AnjutaProjectNodeType"><span class="returnvalue">AnjutaProjectNodeType</span></a>
+anjuta_project_node_get_node_type (<em class="parameter"><code>const <a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.14.29.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-get-full-type"></a><h3>anjuta_project_node_get_full_type ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeType" title="enum AnjutaProjectNodeType"><span class="returnvalue">AnjutaProjectNodeType</span></a>
+anjuta_project_node_get_full_type (<em class="parameter"><code>const <a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.14.30.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-get-state"></a><h3>anjuta_project_node_get_state ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeState" title="enum AnjutaProjectNodeState"><span class="returnvalue">AnjutaProjectNodeState</span></a>
+anjuta_project_node_get_state (<em class="parameter"><code>const <a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.14.31.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-get-name"></a><h3>anjuta_project_node_get_name ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+anjuta_project_node_get_name (<em class="parameter"><code>const <a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.14.32.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-get-file"></a><h3>anjuta_project_node_get_file ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+anjuta_project_node_get_file (<em class="parameter"><code>const <a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.33.4"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-get-properties-info"></a><h3>anjuta_project_node_get_properties_info ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+anjuta_project_node_get_properties_info
+                               (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.34.4"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>][<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> Anjuta.ProjectPropertyInfo]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-get-properties"></a><h3>anjuta_project_node_get_properties ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+anjuta_project_node_get_properties (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.35.4"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>][<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> Anjuta.ProjectProperty]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-get-property-info"></a><h3>anjuta_project_node_get_property_info ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectPropertyInfo"><span class="returnvalue">AnjutaProjectPropertyInfo</span></a> *
+anjuta_project_node_get_property_info (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>,
+                                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.36.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>node</p></td>
+<td class="parameter_description"><p>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p> Property identifier. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.44.14.36.5"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-get-property"></a><h3>anjuta_project_node_get_property ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectProperty"><span class="returnvalue">AnjutaProjectProperty</span></a> *
+anjuta_project_node_get_property (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>,
+                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.37.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>node</p></td>
+<td class="parameter_description"><p>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>id</p></td>
+<td class="parameter_description"><p> Property identifier. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.44.14.37.5"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-get-map-property"></a><h3>anjuta_project_node_get_map_property ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectProperty"><span class="returnvalue">AnjutaProjectProperty</span></a> *
+anjuta_project_node_get_map_property (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>,
+                                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *id</code></em>,
+                                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.14.38.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-insert-property-info"></a><h3>anjuta_project_node_insert_property_info ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectPropertyInfo"><span class="returnvalue">AnjutaProjectPropertyInfo</span></a> *
+anjuta_project_node_insert_property_info
+                               (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>,
+                                <em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectPropertyInfo"><span class="type">AnjutaProjectPropertyInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.39.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>node</p></td>
+<td class="parameter_description"><p>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.44.14.39.5"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-insert-property"></a><h3>anjuta_project_node_insert_property ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectProperty"><span class="returnvalue">AnjutaProjectProperty</span></a> *
+anjuta_project_node_insert_property (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>,
+                                     <em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectPropertyInfo"><span class="type">AnjutaProjectPropertyInfo</span></a> *info</code></em>,
+                                     <em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectProperty"><span class="type">AnjutaProjectProperty</span></a> *property</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.40.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>node</p></td>
+<td class="parameter_description"><p>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>property</p></td>
+<td class="parameter_description"><p>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.44.14.40.5"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-remove-property"></a><h3>anjuta_project_node_remove_property ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectProperty"><span class="returnvalue">AnjutaProjectProperty</span></a> *
+anjuta_project_node_remove_property (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>,
+                                     <em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectProperty"><span class="type">AnjutaProjectProperty</span></a> *property</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.14.41.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-set-state"></a><h3>anjuta_project_node_set_state ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_project_node_set_state (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>,
+                               <em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeState" title="enum AnjutaProjectNodeState"><span class="type">AnjutaProjectNodeState</span></a> state</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.14.42.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-clear-state"></a><h3>anjuta_project_node_clear_state ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_project_node_clear_state (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *node</code></em>,
+                                 <em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeState" title="enum AnjutaProjectNodeState"><span class="type">AnjutaProjectNodeState</span></a> state</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.14.43.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-get-group-from-file"></a><h3>anjuta_project_node_get_group_from_file ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+anjuta_project_node_get_group_from_file
+                               (<em class="parameter"><code>const <a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *root</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *directory</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.44.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>root</p></td>
+<td class="parameter_description"><p>the root node</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>directory</p></td>
+<td class="parameter_description"><p>Directory to search in</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.44.14.44.5"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-target-get-node-from-name"></a><h3>anjuta_project_target_get_node_from_name ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+anjuta_project_target_get_node_from_name
+                               (<em class="parameter"><code>const <a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *parent</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.14.45.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-get-source-from-file"></a><h3>anjuta_project_node_get_source_from_file ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="returnvalue">AnjutaProjectNode</span></a> *
+anjuta_project_node_get_source_from_file
+                               (<em class="parameter"><code>const <a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *parent</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *file</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.46.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>the parent node</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>file</p></td>
+<td class="parameter_description"><p>The file to query the source for</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.44.14.46.5"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-info-new"></a><h3>anjuta_project_node_info_new ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeInfo"><span class="returnvalue">AnjutaProjectNodeInfo</span></a> *
+anjuta_project_node_info_new (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeType" title="enum AnjutaProjectNodeType"><span class="type">AnjutaProjectNodeType</span></a> type</code></em>,
+                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *mime_type</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.44.14.47.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.44.14.47.5"></a><h4>Returns</h4>
+<p>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-info-copy"></a><h3>anjuta_project_node_info_copy ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeInfo"><span class="returnvalue">AnjutaProjectNodeInfo</span></a> *
+anjuta_project_node_info_copy (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeInfo"><span class="type">AnjutaProjectNodeInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.14.48.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-info-free"></a><h3>anjuta_project_node_info_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_project_node_info_free (<em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeInfo"><span class="type">AnjutaProjectNodeInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-info-name"></a><h3>anjuta_project_node_info_name ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+anjuta_project_node_info_name (<em class="parameter"><code>const <a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeInfo"><span class="type">AnjutaProjectNodeInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.14.50.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-info-mime"></a><h3>anjuta_project_node_info_mime ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+anjuta_project_node_info_mime (<em class="parameter"><code>const <a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeInfo"><span class="type">AnjutaProjectNodeInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.14.51.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-info-type"></a><h3>anjuta_project_node_info_type ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeType" title="enum AnjutaProjectNodeType"><span class="returnvalue">AnjutaProjectNodeType</span></a>
+anjuta_project_node_info_type (<em class="parameter"><code>const <a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeInfo"><span class="type">AnjutaProjectNodeInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.14.52.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-project-node-info-property-help-id"></a><h3>anjuta_project_node_info_property_help_id ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+anjuta_project_node_info_property_help_id
+                               (<em class="parameter"><code>const <a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeInfo"><span class="type">AnjutaProjectNodeInfo</span></a> *info</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.14.53.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="AnjutaProjectNode.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="AnjutaProjectValueType"></a><h3>enum AnjutaProjectValueType</h3>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.15.2.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-PROPERTY-STRING:CAPS"></a>ANJUTA_PROJECT_PROPERTY_STRING</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-PROPERTY-LIST:CAPS"></a>ANJUTA_PROJECT_PROPERTY_LIST</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-PROPERTY-BOOLEAN:CAPS"></a>ANJUTA_PROJECT_PROPERTY_BOOLEAN</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-PROPERTY-MAP:CAPS"></a>ANJUTA_PROJECT_PROPERTY_MAP</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AnjutaProjectPropertyFlags"></a><h3>enum AnjutaProjectPropertyFlags</h3>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.15.3.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-PROPERTY-READ-ONLY:CAPS"></a>ANJUTA_PROJECT_PROPERTY_READ_ONLY</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-PROPERTY-READ-WRITE:CAPS"></a>ANJUTA_PROJECT_PROPERTY_READ_WRITE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-PROPERTY-HIDDEN:CAPS"></a>ANJUTA_PROJECT_PROPERTY_HIDDEN</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-PROPERTY-STATIC:CAPS"></a>ANJUTA_PROJECT_PROPERTY_STATIC</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AnjutaProjectNodeType"></a><h3>enum AnjutaProjectNodeType</h3>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.15.4.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-UNKNOWN:CAPS"></a>ANJUTA_PROJECT_UNKNOWN</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-SHAREDLIB:CAPS"></a>ANJUTA_PROJECT_SHAREDLIB</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-STATICLIB:CAPS"></a>ANJUTA_PROJECT_STATICLIB</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-PROGRAM:CAPS"></a>ANJUTA_PROJECT_PROGRAM</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-PYTHON:CAPS"></a>ANJUTA_PROJECT_PYTHON</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-JAVA:CAPS"></a>ANJUTA_PROJECT_JAVA</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-LISP:CAPS"></a>ANJUTA_PROJECT_LISP</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-HEADER:CAPS"></a>ANJUTA_PROJECT_HEADER</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-MAN:CAPS"></a>ANJUTA_PROJECT_MAN</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-INFO:CAPS"></a>ANJUTA_PROJECT_INFO</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-GENERIC:CAPS"></a>ANJUTA_PROJECT_GENERIC</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-DATA:CAPS"></a>ANJUTA_PROJECT_DATA</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-EXTRA:CAPS"></a>ANJUTA_PROJECT_EXTRA</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-INTLTOOL:CAPS"></a>ANJUTA_PROJECT_INTLTOOL</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-CONFIGURE:CAPS"></a>ANJUTA_PROJECT_CONFIGURE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-IDL:CAPS"></a>ANJUTA_PROJECT_IDL</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-MKENUMS:CAPS"></a>ANJUTA_PROJECT_MKENUMS</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-GENMARSHAL:CAPS"></a>ANJUTA_PROJECT_GENMARSHAL</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-SCRIPT:CAPS"></a>ANJUTA_PROJECT_SCRIPT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-ROOT-GROUP:CAPS"></a>ANJUTA_PROJECT_ROOT_GROUP</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-LT-MODULE:CAPS"></a>ANJUTA_PROJECT_LT_MODULE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-PROXY:CAPS"></a>ANJUTA_PROJECT_PROXY</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-PROJECT:CAPS"></a>ANJUTA_PROJECT_PROJECT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-PRIMARY:CAPS"></a>ANJUTA_PROJECT_PRIMARY</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-EXECUTABLE:CAPS"></a>ANJUTA_PROJECT_EXECUTABLE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-READ-ONLY:CAPS"></a>ANJUTA_PROJECT_READ_ONLY</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-FRAME:CAPS"></a>ANJUTA_PROJECT_FRAME</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-ID-MASK:CAPS"></a>ANJUTA_PROJECT_ID_MASK</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-FLAG-MASK:CAPS"></a>ANJUTA_PROJECT_FLAG_MASK</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-TYPE-MASK:CAPS"></a>ANJUTA_PROJECT_TYPE_MASK</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-ROOT:CAPS"></a>ANJUTA_PROJECT_ROOT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-GROUP:CAPS"></a>ANJUTA_PROJECT_GROUP</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-TARGET:CAPS"></a>ANJUTA_PROJECT_TARGET</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-SOURCE:CAPS"></a>ANJUTA_PROJECT_SOURCE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-MODULE:CAPS"></a>ANJUTA_PROJECT_MODULE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-PACKAGE:CAPS"></a>ANJUTA_PROJECT_PACKAGE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-VARIABLE:CAPS"></a>ANJUTA_PROJECT_VARIABLE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-OBJECT:CAPS"></a>ANJUTA_PROJECT_OBJECT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AnjutaProjectNodeState"></a><h3>enum AnjutaProjectNodeState</h3>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.15.5.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-OK:CAPS"></a>ANJUTA_PROJECT_OK</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-MODIFIED:CAPS"></a>ANJUTA_PROJECT_MODIFIED</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-INCOMPLETE:CAPS"></a>ANJUTA_PROJECT_INCOMPLETE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-LOADING:CAPS"></a>ANJUTA_PROJECT_LOADING</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-REMOVED:CAPS"></a>ANJUTA_PROJECT_REMOVED</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-CAN-ADD-GROUP:CAPS"></a>ANJUTA_PROJECT_CAN_ADD_GROUP</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-CAN-ADD-TARGET:CAPS"></a>ANJUTA_PROJECT_CAN_ADD_TARGET</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-CAN-ADD-SOURCE:CAPS"></a>ANJUTA_PROJECT_CAN_ADD_SOURCE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-CAN-ADD-MODULE:CAPS"></a>ANJUTA_PROJECT_CAN_ADD_MODULE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-CAN-ADD-PACKAGE:CAPS"></a>ANJUTA_PROJECT_CAN_ADD_PACKAGE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-CAN-REMOVE:CAPS"></a>ANJUTA_PROJECT_CAN_REMOVE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-CAN-SAVE:CAPS"></a>ANJUTA_PROJECT_CAN_SAVE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PROJECT-REMOVE-FILE:CAPS"></a>ANJUTA_PROJECT_REMOVE_FILE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AnjutaProjectNode-struct"></a><h3>struct AnjutaProjectNode</h3>
+<pre class="programlisting">struct AnjutaProjectNode;</pre>
+<p>The <a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> struct contains private data only, and should
+accessed using the functions below.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="AnjutaProjectNode.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="AnjutaProjectNode--file"></a><h3>The <code class="literal">“file”</code> property</h3>
+<pre class="programlisting">  “file”                     <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *</pre>
+<p>The GFile for the node.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AnjutaProjectNode--name"></a><h3>The <code class="literal">“name”</code> property</h3>
+<pre class="programlisting">  “name”                     <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Node name.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AnjutaProjectNode--state"></a><h3>The <code class="literal">“state”</code> property</h3>
+<pre class="programlisting">  “state”                    <a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeState" title="enum AnjutaProjectNodeState"><span class="type">AnjutaProjectNodeState</span></a></pre>
+<p>Node state.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AnjutaProjectNode--type"></a><h3>The <code class="literal">“type”</code> property</h3>
+<pre class="programlisting">  “type”                     <a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeType" title="enum AnjutaProjectNodeType"><span class="type">AnjutaProjectNodeType</span></a></pre>
+<p>Node type.</p>
+<p>Flags: Read / Write</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="AnjutaProjectNode.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="AnjutaProjectNode-loaded"></a><h3>The <code class="literal">“loaded”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *anjutaprojectnode,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>           arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>            *arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>           user_data)</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.17.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>anjutaprojectnode</p></td>
+<td class="parameter_description"><p>the object which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AnjutaProjectNode-updated"></a><h3>The <code class="literal">“updated”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="AnjutaProjectNode.html" title="Anjuta project"><span class="type">AnjutaProjectNode</span></a> *anjutaprojectnode,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>           arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>            *arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>           user_data)</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.44.17.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>anjutaprojectnode</p></td>
+<td class="parameter_description"><p>the object which received the signal.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

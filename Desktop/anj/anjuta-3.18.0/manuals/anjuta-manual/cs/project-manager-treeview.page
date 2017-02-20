@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="project-manager-treeview" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-project-management" group="third"/>
+    <desc>Jak zobrazit obsah projektu.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  </info>
+
+  <title>Zobrazení projektu</title>
+
+  <p>Projekt je představován stromem, ve kterém kořenové položky odpovídají projektu, zatímco dceřiné položky představují programy, knihovny, složky a zdrojové soubory. Každá z položek může mít vlastnosti, které umožňují nastavit další podrobnosti, jako je verze projektu, přepínače kompilátoru nebo instalační složky. Tyto položky jsou rozděleny do několika kategorií a v závislosti na zpracujícím jádru nemusí být k dispozici všechny:</p>
+
+  <terms>
+    <item>
+      <title>Kořen</title>
+      <p>Je jen jeden uzel tohoto druhu. Představuje přímo projekt samotný a jedná se o místo, kde můžete nastavit vlastnosti týkající se celého projektu, jako je jeho název nebo verze.</p>
+    </item>
+    <item>
+      <title>Modul</title>
+      <p>Jedná se o sadu balíčků použitých v projektech autotools. Objeví se jako potomci kořenového uzlu, který představuje všechny definované moduly a jako potomci každého cíle, který je používá. Více podrobností viz <link xref="project-manager-module-new"/>.</p>
+    </item>
+    <item>
+      <title>Balíček</title>
+      <p>Jedná se o balíčky s knihovnami použitými v projektech s autotools. Objeví se jako potomci u jednotlivých modulů. Více podrobností viz <link xref="project-manager-library"/>.</p>
+    </item>
+    <item>
+      <title>Složka</title>
+      <p>Je používáno k seskupení cílů a umožňuje nastavit běžné vlastnosti. Často je implementováno pomocí podsložek. Více podrobností viz <link xref="project-manager-folder"/>.</p>
+    </item>
+    <item>
+      <title>Cíl</title>
+      <p>Seskupuje soubory a definuje, jak se budou používat. Existuje několik druhů cílů, například program, knihovna nebo data, které odpovídají různému použití synovských souborů. Často představují soubory generované projektem, jako jsou zkompilované programy nebo knihovny. Více podrobností viz <link xref="project-manager-target"/>.</p>
+	
+      <note style="tip">
+        <p>Pomocí přetažení a upuštění cíle na začátek stromového zobrazení projektu si můžete vytvořit zkratku umožňující snadnější přístup k takovémuto cíli. Ve výchozím stavu jsou takto zpřístupněny všechny cíle typu program.</p>
+      </note>
+
+    </item>
+    <item>
+      <title>Zdrojový kód</title>
+      <p>Každý ze zdrojovým souborů je představován položkou v zobrazení projektu. Použití každého ze souborů závisí na jeho rodičovském cíli. Všichni potomci cíle typu program jsou kompilováni, aby jej vygenerovali. Naproti tomu potomci cíle typu data jsou jen zkopírováni do složky, do které je projekt instalován. Více podrobností viz <link xref="project-manager-source"/>.</p>
+    </item>
+  </terms>
+  
+</page>

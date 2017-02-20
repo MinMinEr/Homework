@@ -1,0 +1,55 @@
+# Schema file
+gsettings_in_file = org.gnome.anjuta.starter.gschema.xml.in
+@INTLTOOL_XML_NOMERGE_RULE@
+@GSETTINGS_RULES@
+
+# Plugin file
+plugin_in_files = anjuta-starter.plugin.in
+%.plugin: %.plugin.in $(INTLTOOL_MERGE) $(wildcard $(top_srcdir)/po/*po) ; $(INTLTOOL_MERGE) $(top_srcdir)/po $< $@ -d -u -c $(top_builddir)/po/.intltool-merge-cache
+
+starter_plugindir = $(anjuta_plugin_dir)
+dist_starter_plugin_DATA = $(plugin_in_files:.plugin.in=.plugin)
+
+plugindir = $(anjuta_plugin_dir)
+plugin_LTLIBRARIES = libanjuta-starter.la
+
+starter-resources.c: starter.gresource.xml $(shell glib-compile-resources --sourcedir=$(srcdir) --generate-dependencies $(srcdir)/starter.gresource.xml)
+	$(AM_V_GEN) glib-compile-resources --target=$@ --sourcedir=$(srcdir) --generate-source $<
+
+BUILT_SOURCES = \
+	starter-resources.c
+
+AM_CPPFLAGS = \
+	$(WARN_CFLAGS) \
+	$(DEPRECATED_FLAGS) \
+	$(GDL_CFLAGS) \
+	$(LIBANJUTA_CFLAGS) \
+	-DG_LOG_DOMAIN=\"starter\"
+
+libanjuta_starter_la_LDFLAGS = $(ANJUTA_PLUGIN_LDFLAGS)
+
+libanjuta_starter_la_LIBADD = \
+	$(GDL_LIBS) \
+	$(LIBANJUTA_LIBS)
+
+libanjuta_starter_la_SOURCES= \
+	plugin.c \
+	plugin.h
+
+nodist_libanjuta_starter_la_SOURCES= = \
+	$(BUILT_SOURCES)
+
+gsettings_SCHEMAS = $(gsettings_in_file:.xml.in=.xml)
+
+CLEANFILES = \
+	$(BUILT_SOURCES) \
+	$(gsettings_SCHEMAS)
+
+EXTRA_DIST = \
+	$(plugin_in_files) \
+	$(gsettings_in_file) \
+	starter.gresource.xml \
+	starter.ui
+
+-include $(top_srcdir)/git.mk
+

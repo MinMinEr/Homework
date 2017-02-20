@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="anjuta-code-indentation" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-10-24" status="draft"/>
+    <desc>Configurar y usar el sangrado automático para un estilo de programación consistente</desc>
+
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Sangría automática</title>
+
+<section>
+<title>Configurar y usar la sangría automática</title>
+
+<section>
+<title>Configuración manual</title>
+
+<p>La sangría automática se configura en las preferencias (<guiseq><gui>Editar</gui><gui>Preferencias</gui></guiseq>) en la pestaña correspondiente al lenguaje de programación usado. Aquí se puede establecer la anchura de la sangría para distintos tipos de sentencias.</p>
+
+<p>La gran desventaja de configurar la sangría manualmente es que todos los programadores que trabajen en un proyecto deben usar la misma configuración, o el resultado serán varios estilos diferentes en los mismo archivos. Para una solución mejor, consulte la siguiente sección.</p>
+
+<note>
+<p>A menos que se cambie la configuración del sangrado de manera explícita en las preferencias del modo de línwa de un archivo, se puede usar en lugar de los ajustes configurados para mantener la consistencia.</p>
+</note>
+</section>
+
+<section id="editor-modelines">
+<title>Modos</title>
+
+<p>Los modos se usan para ayudar a los editores a detectar automáticamente el modo de sangrado que se se debe usar para un archivo concreto. Son especialmente útiles si varios desarrolladores trabajan en el mismo proyecto y usan entornos diferentes.</p>
+
+<p>Anjuta soporta líneas de modo en los dos formatos usados por <app>Vim</app> y <app>Emacs</app>.</p>
+
+</section>
+
+</section>
+
+<section>
+<title>Sangrado de bloques de código</title>
+
+<p>Normalmente, las líneas nuevas se sangran adecuadamente de manera automática, pero puede editar el sangrado de las líneas existentes o de todo el código seleccionado con el elemento de menú <guiseq><gui>Editar</gui><gui>Sangría automática</gui></guiseq>.</p>
+
+</section>
+
+</page>

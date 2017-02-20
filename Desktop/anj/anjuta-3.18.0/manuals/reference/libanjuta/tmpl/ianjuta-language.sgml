@@ -1,0 +1,142 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaLanguage
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_LANGUAGE_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### TYPEDEF IAnjutaLanguageId ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION ianjuta_language_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_language_get_from_editor ##### -->
+<para>
+
+</para>
+
+@obj: 
+@editor: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_language_get_from_mime_type ##### -->
+<para>
+
+</para>
+
+@obj: 
+@mime_type: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_language_get_from_string ##### -->
+<para>
+
+</para>
+
+@obj: 
+@string: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_language_get_languages ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_language_get_make_target ##### -->
+<para>
+
+</para>
+
+@obj: 
+@id: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_language_get_mime_types ##### -->
+<para>
+
+</para>
+
+@obj: 
+@id: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_language_get_name ##### -->
+<para>
+
+</para>
+
+@obj: 
+@id: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_language_get_name_from_editor ##### -->
+<para>
+
+</para>
+
+@obj: 
+@editor: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_language_get_strings ##### -->
+<para>
+
+</para>
+
+@obj: 
+@id: 
+@err: 
+@Returns: 
+
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-preferences-dialog" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Autotools összeállítási beállítások ablak.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Autotools build beállítások ablak</title>
+
+  <p>Az ablak lehetővé teszi globális beállítások megadását a fájlok összeállításához.</p>
+
+  <terms>
+    <item>
+      <title><gui>Egyszerre több parancs futtatása</gui></title>
+      <p>A <app>make</app> képes egyszerre több fordítást is futtatni. Többmagos processzoros rendszereken csökkenti a fordítási időt, de problémákat okozhat, így itt igény szerint be- vagy kikapcsolható.</p>
+    </item>
+    <item>
+      <title><gui>Folytatás hibák esetén</gui></title>
+      <p>Alapértelmezésben a <app>make</app> azonnal megáll, amint hibát észlel. Néha azonban gyorsabb lehet a folytatás, és az összes fájl hibáinak egy lépésben való megkapása. Ehhez be kell jelölnie ezt a négyzetet.</p>
+    </item>
+    <item>
+      <title><gui>Üzenetek fordítása</gui></title>
+      <p>Alapértelmezésben a hibák és figyelmeztetések szövegei le vannak fordítva. Ennek van azonban hátránya is. A hibák és figyelmeztetések felismeréséhez az <app>Anjuta</app> és a fordítóprogram fordításának tökéletesen egyeznie kell. Ezen túl a lefordított üzentek alapján keresve gyakran nehezebb segítséget találni az interneten, mert azok kevésbé gyakoriak. Ezen négyzet törlése lehetővé teszi a fordítások kikapcsolását.</p>
+    </item>
+    <item>
+      <title><gui>Összeállítási figyelmeztetések és hibák kiemelése a szerkesztőben</gui></title>
+      <p>A program összeállítása során a hibák és figyelmeztetések kiemelésre kerülnek az üzenetablakban. Ezen négyzet bejelölésével a szerkesztőben is kiemelésre kerülnek.</p>
+    </item>
+    <item>
+      <title><gui>Telepítés rootként</gui></title>
+      <p>A programok telepítése fájlok másolását igényli rendszerkönyvtárakba, amelyek gyakran nem írhatók normál felhasználóként. Ezen négyzet bejelölésével a fájlok telepítése előtt a <cmd>sudo</cmd> vagy <cmd>su</cmd> használatával megszerezheti a megfelelő jogosultságokat.</p>
+    </item>
+  </terms>
+
+</page>

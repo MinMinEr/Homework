@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-stack" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="fourth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>A verem vizsgálata.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Verem</title>
+
+  <section>
+    <title>Veremkeretek felsorolása</title>
+
+    <p>A veremkeret a verem egyes függvényhívásokhoz tartozó területe. A hívásuk sorrendjében felsorolja az összes függvényt és azok argumentumait. Minden veremkeret 0-tól számozódik, az aktuális függvénytől kezdve. Csak addig láthatja a veremkereteket, amíg a hibakereső fut.</p>
+
+    <p>Ezen kívül egy program több szálból is állhat. Minden szál egymástól függetlenül kerül végrehajtásra, és saját regiszterekkel, veremmel és helyi változókkal rendelkezik, de az összes globális változót közösen használja.</p>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Nézet</gui><gui>Verem</gui></guiseq> menüpontot a <gui>Verem</gui> ablak megjelenítéséhez.</p>
+      </item>
+    </steps>
+
+    <p>A vermek egy fanézetben jelennek meg, a megfelelő szál lesz szülőként felhasználva, és a következő információk jelennek meg:</p>	
+
+    <terms>
+      <item>
+        <title>Aktív</title>
+        <p>Ez egy sárga nyilat tartalmaz, amely az aktív veremkeretet képviseli. Alapesetben ez a 0. keret, az aktuális függvény. Minden kiértékelés és helyi változó ehhez az aktív kerethez képest értendő. Az aktív veremkeret módosítható más függvények helyi változóinak vizsgálatához.</p>
+      </item>
+      <item>
+        <title>Szál</title>
+        <p>Ez egy, az egyes szálaknak megfelelő szám.</p>
+      </item>
+      <item>
+        <title>Keret</title>
+        <p>Ez a keret száma, a 0 az aktuális függvényt jelöli. A program első függvénye rendelkezik a legmagasabb számmal, például egy C programban a <code>main()</code>.</p>
+      </item>
+      <item>
+        <title>Fájl</title>
+        <p>A keretnek megfelelő függvényt tartalmazó fájl neve.</p>
+      </item>
+      <item>
+        <title>Sor</title>
+        <p>A keretnek megfelelő függvényt tartalmazó sor száma.</p>
+      </item>
+      <item>
+        <title>Függvény</title>
+        <p>A keretnek megfelelő függvény neve.</p>
+      </item>
+      <item>
+        <title>Cím</title>
+        <p>A keretnek megfelelő függvény címe.</p>
+      </item>
+      <item>
+        <title>Argumentumok</title>
+        <p>A függvényargumentumok.</p>
+      </item>
+    </terms>
+
+  </section>
+
+
+  <section>
+    <title>Az aktuális veremkeret vagy szál módosítása</title>
+
+    <steps>
+      <item>
+        <p>A <gui>Verem</gui> ablakban válassza ki a kívánt keretet.</p>
+      </item>
+      <item>
+        <p>Kattintson rá a jobb egérgombbal, és válassza a <gui>Jelenlegi keret beállítása</gui> menüpontot.</p>
+      </item>
+    </steps>
+
+    <p>Egy veremkeretre kattintás ugyanabban a szálban csak a veremkeretet változtatja, lehetővé téve más helyi változók megjelentését. Másik szálban ugyanez megváltoztatja a veremkeretet és a szálat is. A regiszterértékek eltérőek lesznek, és a hibakereső újraindítja a kijelölt szálat.</p>
+  </section>
+
+
+  <section>
+    <title>A jelenlegi függvény megjelenítése</title>
+
+    <steps>
+      <item>
+        <p>A <gui>Verem</gui> ablakban válassza ki a kívánt keretet.</p>
+      </item>
+      <item>
+        <p>Kattintson duplán vagy a jobb egérgombbal, és válassza a <gui>Forrás megjelenítése</gui> menüpontot.</p>
+      </item>
+    </steps>
+  </section>
+
+
+  <section>
+    <title>Veremnyomkövetés kérése</title>
+ 
+    <steps>
+      <item>
+        <p>A <gui>Verem</gui> ablakban kattintson a jobb egérgombbal, és válassza az <gui>Veremnyomkövetés kérése</gui> menüpontot.</p>
+      </item>
+    </steps>
+  </section>
+
+
+</page>

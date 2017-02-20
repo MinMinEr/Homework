@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-build" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="third"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <link type="seealso" xref="autotools-build-preferences-dialog"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Construir objetivos o proyecto.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Construir objetivos</title>
+  <p>Un objetivo es un archivo creado desde archivos de fuentes. Generalmente es un programa o una biblioteca, pero también puede ser documentación si se necesita algún procesado, por ejemplo.</p>
+  <p>El comando de construcción compila todas las fuentes necesarias y las enlaza con otros posibles archivos, como bibliotecas, para crear el objetivo. Si algún archivo de fuentes ya está compilado y no se ha modificado, para ahorrar tiempo, no se vuelve a compilar. Hay varias maneras de lanzar una construcción.</p>
+  <steps>
+    <item>
+      <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Construir</gui><gui>Construir</gui></guiseq> o pulse <key>F7</key> para construir todos los objetivos en la misma carpeta del archivo actualmente abierto.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Construir</gui><gui>Construir proyecto</gui></guiseq> o pulse <keyseq><key>Mayús</key><key>F7</key></keyseq> para construir el proyecto completo. Se compilan recursivamente todas las subcarpetas.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>Desde el <gui>panel del gestor de archivos</gui>, seleccione un archivo o carpeta.</p>
+    </item>
+    <item>
+      <p>Pulse con el botón derecho del ratón para mostrar el <gui>menú contextual del gestor de archivos</gui> y seleccione <guiseq><gui>Construir</gui><gui>Construir</gui></guiseq> para construir todos los archivos en la carpeta actualmente seleccionada o en la carpeta padre del archivo actualmente seleccionado.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>Desde el <gui>panel del gestor de proyectos</gui>, seleccione un archivo de fuentes o un objetivo.</p>
+    </item>
+    <item>
+      <p>Pulse con el botón derecho del ratón para hacer que aparezca el <gui>menú contextual del gestor de proyecto</gui> y seleccione <guiseq><gui>Construir</gui><gui>Construir</gui></guiseq> para construir todos los objetivos de la carpeta que contiene el archivo o el objetivo actualmente seleccionado.</p>
+    </item>
+  </steps>
+
+</page>

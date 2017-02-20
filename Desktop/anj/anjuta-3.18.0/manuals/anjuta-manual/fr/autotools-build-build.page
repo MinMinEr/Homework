@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-build" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="third"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <link type="seealso" xref="autotools-build-preferences-dialog"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Construire des cibles ou un projet.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Construction de cibles</title>
+  <p>Une cible est un fichier créé à partir de fichiers source. C'est typiquement un programme ou une bibliothèque, mais ce peut être aussi une documentation par exemple, si cette documentation doit être construite.</p>
+  <p>La commande « Construire » compile tous les fichiers nécessaires et éventuellement les lie à d'autres fichiers, comme des bibliothèques, de façon à créer la cible. Si certains fichiers sources ont déjà été compilés et n'ont pas été modifiés depuis, ils ne sont pas recompilés pour éviter une perte de temps. Il existe plusieurs façons de déclencher une construction.</p>
+  <steps>
+    <item>
+      <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Construire</gui><gui>Construire</gui></guiseq> ou appuyez sur <key>F7</key> pour construire toutes les cibles dans le même répertoire que le fichier actuellement ouvert.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Construire</gui><gui>Construire le projet</gui></guiseq> ou appuyez sur <keyseq><key>Maj</key><key>F7</key></keyseq> pour construire le projet complet. Tous les sous-répertoires sont construits récursivement.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>Dans le <gui>volet du gestionnaire de fichiers</gui>, sélectionnez un fichier ou un répertoire.</p>
+    </item>
+    <item>
+      <p>Cliquez sur le bouton droit de la souris pour faire apparaître le <gui>menu contextuel du gestionnaire de fichiers</gui> et sélectionnez <guiseq><gui>Construire</gui><gui>Construire</gui></guiseq> pour construire toutes les cibles dans le répertoire actuellement sélectionné ou le répertoire parent du fichier actuellement sélectionné.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>Dans le <gui>volet du gestionnaire de projets</gui>, sélectionnez un fichier source ou une cible.</p>
+    </item>
+    <item>
+      <p>Cliquez sur le bouton droit de la souris pour faire apparaître le <gui>menu contextuel du gestionnaire de projet</gui> et sélectionnez <guiseq><gui>Construire</gui><gui>Construire</gui></guiseq> pour construire toutes les cibles dans le répertoire contenant la cible ou le fichier actuellement sélectionné.</p>
+    </item>
+  </steps>
+
+</page>

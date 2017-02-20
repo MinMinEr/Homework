@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-stack" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="fourth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak zkoumat zásobník.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Zásobník</title>
+
+  <section>
+    <title>Vypsání rámců zásobníku</title>
+
+    <p>Rámce zásobníku jsou oblasti na zásobníku související s jednotlivými voláními funkcí. Poskytují tak seznam všech funkcí a jejich argumentů v pořadí, v jakém byly volány. Každý rámec má přiděleno číslo počínaje od 0 pro aktuální funkci. Rámce zásobníku si můžete prohlížet jen když běží ladicí program.</p>
+
+    <p>Navíc se program může skládat z několika vláken. Každé vlákno běží nezávisle a má své vlastní registry, zásobník a lokální proměnné, ale sdílí globální proměnné.</p>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Zobrazit</gui> <gui>Zásobník</gui></guiseq> pro otevření okna <gui>Zásobník</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Zásobník je zobrazen v podobě stromu, ve kterém jsou vlákna rodiči, a zobrazují se následující údaje:</p>	
+
+    <terms>
+      <item>
+        <title>Aktivní</title>
+        <p>Obsahuje žlutou šipku, která představuje aktivní rámec zásobníku. Jako výchozí to bývá rámec 0, což je aktuální funkce. Veškerá vyhodnocování a lokální proměnné se vztahují relativně k tomuto rámci. Abyste mohli zkoumat lokální proměnné v jiné funkci, můžete aktivní rámec zásobníku měnit.</p>
+      </item>
+      <item>
+        <title>Vlákno</title>
+        <p>Jedná se o číslo odpovídající jednotlivému vláknu.</p>
+      </item>
+      <item>
+        <title>Rámec</title>
+        <p>Jedná se o číslo rámce počítáno od nuly pro aktuální funkci. První funkce vašeho programu, například <code>main()</code> v jazyce C tak bude mít nejvyšší číslo.</p>
+      </item>
+      <item>
+        <title>Soubor</title>
+        <p>Název souboru, který obsahuje funkci odpovídající tomuto rámci.</p>
+      </item>
+      <item>
+        <title>Řádek</title>
+        <p>Číslo řádku s funkcí odpovídající tomuto rámci.</p>
+      </item>
+      <item>
+        <title>Funkce</title>
+        <p>Název funkce odpovídající tomuto rámci.</p>
+      </item>
+      <item>
+        <title>Adresa</title>
+        <p>Adresa funkce odpovídající tomuto rámci.</p>
+      </item>
+      <item>
+        <title>Argumenty</title>
+        <p>Argumenty funkce.</p>
+      </item>
+    </terms>
+
+  </section>
+
+
+  <section>
+    <title>Změna aktuálního rámce v zásobníku nebo vlákna</title>
+
+    <steps>
+      <item>
+        <p>V okně <gui>Zásobník</gui> vyberte rámec, který potřebujete.</p>
+      </item>
+      <item>
+        <p>Klikněte pravým tlačítkem a vyberte <gui>Nastavit aktuální rámec</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Kliknutí na rámec zásobníku ve stejném vlákně změní jen rámec zásobníku, abyste viděli jeho lokální proměnné. Ale když to stejné uděláte s jiným vláknem, změní se jak rámec zásobníku, tak vlákno. Budou jiné i hodnoty registru a ladicí program započne ladění ve vybraném vlákně.</p>
+  </section>
+
+
+  <section>
+    <title>Zobrazení aktuální funkce</title>
+
+    <steps>
+      <item>
+        <p>V okně <gui>Zásobník</gui> vyberte rámec, který potřebujete.</p>
+      </item>
+      <item>
+        <p>Dvojitě klikněte nebo klikněte pravým tlačítkem a vyberte <gui>Zobrazit zdrojový kód</gui>.</p>
+      </item>
+    </steps>
+  </section>
+
+
+  <section>
+    <title>Získání zásobníku trasování</title>
+ 
+    <steps>
+      <item>
+        <p>V okně <gui>Zásobník</gui> klikněte pravým tlačítkem a vyberte <gui>Získat zásobník trasování</gui>.</p>
+      </item>
+    </steps>
+  </section>
+
+
+</page>

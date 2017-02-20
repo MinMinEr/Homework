@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-library-add" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-library" group="sixth"/>
+    <link type="seealso" xref="project-manager-target"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Ajouter une bibliothèque personnalisée à une cible.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ajout d'une bibliothèque personnalisée</title>
+ 
+  <p>Comme il est d'usage sous Linux, il est plus aisé d'utiliser un paquet de bibliothèque, donc vérifiez si cela est possible <link xref="project-manager-module-new">ici</link>. Sinon, suivez la procédure ci-dessous.</p>
+
+  <p>Pour utiliser une bibliothèque en C, vous devez indiquer au compilateur où se trouvent les fichiers d'en-tête (header) et à l'éditeur de lien (linker) où se trouvent les bibliothèques nécessaires. Le problème est que votre programme ne pourra pas être compilé sur un autre ordinateur si les fichiers d'en-tête et les bibliothèques sont situés ailleurs.</p>
+
+  <steps>
+    <item>
+      <p>Sélectionnez le répertoire contenant le programme dans lequel vous voulez ajouter la bibliothèque dans la <gui>vue projet</gui>, cliquez sur le bouton droit de la souris pour afficher le <gui>menu contextuel du projet</gui>, puis sélectionnez <gui>Propriétés</gui>.</p>
+
+      <p>D'une autre façon, dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Projet</gui><gui>Propriétés</gui></guiseq>. Par défaut, ces propriétés sont celles de l'élément actif sélectionné dans la vue projet. Vous pouvez sélectionner un autre élément dans la liste du menu déroulant.</p>
+    </item>
+    <item>
+      <p>Si les fichiers d'en-tête (header) sont installés dans un emplacement standard (<file>/usr/include</file>), vous n'avez pas besoin de faire ce réglage. Sinon, vous devez ajouter <input>-I<var>include_path</var></input> dans la propriété <gui>Drapeaux du préprocesseur C</gui> si vous utilisez le compilateur <app>gcc</app>. Vous pouvez ajouter plusieurs chemins en les séparant par des espaces. Ces options seront utilisées pour toutes les cibles de ce répertoire.</p>
+
+      <p>Il se peut que vous deviez cliquer sur le bouton <gui>Plus d'options</gui> pour afficher cela. Quand vous êtes prêt, cliquez sur le bouton <gui>Appliquer</gui>.</p>
+    </item>
+    <item>
+      <p>Ensuite, vous devez ajouter la bibliothèque à la cible. Sélectionnez le programme dans lequel vous voulez ajouter la bibliothèque dans la <gui>Vue projet</gui>, cliquez sur le bouton droit de la souris pour afficher le <gui>menu contextuel du projet</gui>, puis sélectionnez <gui>Propriétés</gui>.</p>
+
+      <p>D'une autre façon, dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Projet</gui><gui>Propriétés</gui></guiseq>. Par défaut, ces propriétés sont celles de l'élément actif sélectionné dans la vue projet. Vous pouvez sélectionner un autre élément dans la liste du menu déroulant.</p>
+    </item>
+    <item>
+      <p>Vous devez paramétrer la propriété <gui>Drapeaux de l'éditeur de liens</gui>, en ajoutant <input>-l<var>library_name</var></input> si votre compilateur est <app>gcc</app>. <var>library_name</var> est le nom du fichier de bibliothèque sans le préfixe <file>lib</file> et sans l'extension <file>.a</file> ou <file>.so</file>.</p>
+
+      <p>Si la bibliothèque n'est pas dans un répertoire standard, <app>gcc</app> peut la rechercher dans d'autres répertoires grâce à l'option <input>-L<var>library_path</var></input>.</p>  
+    </item>
+  </steps>
+
+</page>

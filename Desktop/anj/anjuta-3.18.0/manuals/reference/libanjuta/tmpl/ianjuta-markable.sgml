@@ -1,0 +1,100 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaMarkable
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### ENUM IAnjutaMarkableMarker ##### -->
+<para>
+
+</para>
+
+@IANJUTA_MARKABLE_LINEMARKER: 
+@IANJUTA_MARKABLE_BOOKMARK: 
+@IANJUTA_MARKABLE_MESSAGE: 
+@IANJUTA_MARKABLE_BREAKPOINT_DISABLED: 
+@IANJUTA_MARKABLE_BREAKPOINT_ENABLED: 
+@IANJUTA_MARKABLE_PROGRAM_COUNTER: 
+
+<!-- ##### FUNCTION ianjuta_markable_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_markable_delete_all_markers ##### -->
+<para>
+
+</para>
+
+@obj: 
+@marker: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_markable_is_marker_set ##### -->
+<para>
+
+</para>
+
+@obj: 
+@location: 
+@marker: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_markable_location_from_handle ##### -->
+<para>
+
+</para>
+
+@obj: 
+@handle: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_markable_mark ##### -->
+<para>
+
+</para>
+
+@obj: 
+@location: 
+@marker: 
+@tooltip: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_markable_unmark ##### -->
+<para>
+
+</para>
+
+@obj: 
+@location: 
+@marker: 
+@err: 
+
+

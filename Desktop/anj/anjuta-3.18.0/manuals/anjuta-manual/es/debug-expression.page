@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-expression" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Evaluar expresiones y modificar variables.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Examinar expresiones</title>
+
+  <section>
+    <title>Inspeccionar una expresión y modificar una variable</title>
+
+	<p>Mientras esté depurando un programa, puede buscar el valor de una expresión o variable si el programa está parado. A veces, también es útil cambiar el valor de la variable.</p>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Depurar</gui><gui>Inspeccionar/Evaluar...</gui></guiseq> o pulse con el botón derecho en la ventana <gui>Editor</gui> y seleccione <gui>Inspeccionar/Evaluar...</gui>.</p>
+      </item>
+      <item>
+        <p>Si la expresión es un nombre de variable, puede cambiar su valor pulsando en la columna <gui>Valor</gui> e introduciendo un valor nuevo.</p>
+      </item>
+    </steps>
+
+  </section>
+
+</page>

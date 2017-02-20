@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-project-folder-edit" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-folder" group="second"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Επεξεργασία ιδιοτήτων προορισμού autotools.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Επεξεργασία φακέλου Autotools</title>
+
+  <p>Αυτές οι ιδιότητες επιτρέπουν τον ορισμό κοινών ιδιοτήτων για όλους τους προορισμούς που ανήκουν σε αυτόν το φακέλο.</p>
+
+  <terms>
+    <item>
+      <title><gui>Σημαίες μεταγλωττιστή C</gui></title>
+      <p>Οι σημαίες για πέρασμα στον μεταγλωττιστή C, εάν η τιμή ανά προορισμό δεν ορίστηκε.</p>
+    </item>
+    <item>
+      <title><gui>Σημαίες προεπεξεργαστή C</gui></title>
+      <p>Αυτές οι σημαίες περνούν σε κάθε μεταγλώττιση που καλεί τον προεπεξεργαστή C. Αυτή η τιμή αγνοείται, εάν αυτές οι σημαίες ορίζονται για τον προορισμό.</p>
+    </item>
+    <item>
+      <title><gui>Σημαίες μεταγλωττιστή C++</gui></title>
+      <p>Οι σημαίες για πέρασμα στον μεταγλωττιστή C++, εάν η τιμή ανά προορισμό δεν ορίστηκε.</p>
+    </item>
+    <item>
+      <title><gui>Σημαίες μεταγλωττιστή Fortran</gui></title>
+      <p>Οι σημαίες για πέρασμα στον Fortran 9x, εάν η τιμή ανά προορισμό δεν ορίστηκε.</p>
+    </item>
+    <item>
+      <title><gui>Κατάλογοι εγκατάστασης</gui></title>
+      <p>Αυτό ορίζει τους καταλόγους εγκατάστασης. Χρειάζεται, εάν θέλετε να εγκαταστήσετε αρχεία σε προσαρμοσμένους καταλόγους.</p>
+    </item>
+    <item>
+      <title><gui>Σημαίες μεταγλωττιστή Java</gui></title>
+      <p>Οι σημαίες για πέρασμα στον μεταγλωττιστή Java, εάν η τιμή ανά προορισμό δεν ορίστηκε.</p>
+    </item>
+    <item>
+      <title><gui>Σημαίες μεταγλωττιστή Lex/Flex</gui></title>
+      <p>Οι σημαίες για πέρασμα στον παραγωγό σαρωτή Lex ή Flex, εάν η τιμή ανά προορισμό δεν ορίστηκε.</p>
+    </item>
+    <item>
+      <title><gui>Σημαίες συνδέσμου</gui></title>
+      <p>Οι σημαίες για πέρασμα στον σύνδεσμο, εάν η τιμή ανά προορισμό δεν ορίστηκε.</p>
+    </item>
+    <item>
+      <title><gui>Σημαίες μεταγλωττιστή Objective C</gui></title>
+      <p>Οι σημαίες για πέρασμα στον μεταγλωττιστή Objective C, εάν η τιμή ανά προορισμό δεν ορίστηκε.</p>
+    </item>
+    <item>
+      <title><gui>Σημαίες μεταγλωττιστή Vala</gui></title>
+      <p>Οι σημαίες για πέρασμα στον μεταγλωττιστή Vala, εάν η τιμή ανά προορισμό δεν ορίστηκε.</p>
+    </item>
+    <item>
+      <title><gui>Σημαίες μεταγλωττιστή Yacc/Bison</gui></title>
+      <p>Οι σημαίες για πέρασμα στον παραγωγό αναλυτή Bison ή Yacc, εάν η τιμή ανά προορισμό δεν ορίστηκε.</p>
+    </item>
+  </terms>
+
+</page>

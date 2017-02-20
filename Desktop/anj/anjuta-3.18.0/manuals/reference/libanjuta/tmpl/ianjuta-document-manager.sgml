@@ -1,0 +1,160 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaDocumentManager
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_DOCUMENT_MANAGER_CURRENT_DOCUMENT ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ianjuta_document_manager_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_document_manager_add_bookmark ##### -->
+<para>
+
+</para>
+
+@obj: 
+@file: 
+@line: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_document_manager_add_buffer ##### -->
+<para>
+
+</para>
+
+@obj: 
+@name: 
+@content: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_document_manager_add_document ##### -->
+<para>
+
+</para>
+
+@obj: 
+@document: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_document_manager_find_document_with_file ##### -->
+<para>
+
+</para>
+
+@obj: 
+@file: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_document_manager_get_current_document ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_document_manager_get_doc_widgets ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_document_manager_get_file ##### -->
+<para>
+
+</para>
+
+@obj: 
+@filename: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_document_manager_goto_file_line ##### -->
+<para>
+
+</para>
+
+@obj: 
+@file: 
+@lineno: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_document_manager_goto_file_line_mark ##### -->
+<para>
+
+</para>
+
+@obj: 
+@file: 
+@lineno: 
+@mark: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_document_manager_remove_document ##### -->
+<para>
+
+</para>
+
+@obj: 
+@document: 
+@save_before: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_document_manager_set_current_document ##### -->
+<para>
+
+</para>
+
+@obj: 
+@document: 
+@err: 
+
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-distribute" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="sixth"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <link type="seealso" xref="autotools-build-preferences-dialog"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Disztribúciós csomag készítése.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Disztribúciós csomag készítése</title>
+
+  <p>Az autotools projektek általános terjesztési módja a tömörített tar archívum, amely az összes forrásfájlt tartalmazza. A felhasználónak ki kell csomagolnia, majd a <cmd>configure</cmd>, <cmd>make</cmd> és <cmd>make install</cmd> parancssorozattal le kell fordítania és telepítenie kell a rendszerére.</p>
+
+  <steps>
+    <item>
+      <p>A <gui>főmenüből</gui> válassza az <guiseq><gui>Összeállítás</gui><gui>Tarball készítése</gui></guiseq> menüpontot a forrásdisztribúciós csomag előállításához.</p>
+    </item>
+  </steps>
+
+</page>

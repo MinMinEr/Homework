@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-cpu" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="sixth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Examinar la información de la CPU.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>CPU</title>
+
+  <section>
+    <title>Ver los registros de la CPU</title>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Ver</gui><gui>Registros</gui></guiseq> para abrir la ventana <gui>Registro</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Los registros cuyos valores han cambiado desde la última parada están en rojo. Es posible cambiar el valor de cualquier registro pulsando en la columna de valor e introduciendo un valor nuevo.</p>	
+
+  </section>
+
+  <section>
+    <title>Ver la memoria</title>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Ver</gui><gui>Memoria</gui></guiseq> para abrir la ventana <gui>Memoria</gui>.</p>
+      </item>
+    </steps>
+
+    <p>La primera columna muestra direcciones de memoria en hexadecimal, la segunda muestra el contenido de la memoria en hexadecimal, y la última columna muestra en contenido de la memoria en ASCII.</p>
+    <p>El espacio de direccionamiento, incluso de un microprocesador de 32-bit, es muy grande (4 gigabytes), de tal forma que es muy difícil ir a una dirección en particular con la barra de desplazamiento. Pero puede pulsar en el botón derecho del ratón y seleccionar <gui>Ir a la dirección</gui> para obtener una pequeña caja de texto donde puede introducir una dirección en hexadecimal.</p>
+  </section>
+
+
+  <section>
+    <title>Ver el desensamblado</title>
+
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Ver</gui><gui>Desensamblado</gui></guiseq> para abrir la ventana <gui>Desensamblado</gui>.</p>
+      </item>
+    </steps>
+
+    <p>La primera columna muestra las direcciones en hexadecimal. En la segunda columna puede tener una etiqueta que comienza al principio de la línea y termina con dos puntos o con una instrucción en lenguaje de ensamblador, sangrada por 4 espacios.</p>
+
+    <p>La posición en la ventana de desensamblado cambiará al contador valor del programa cuando se detenga el programa.</p>
+
+    <p>El espacio de direccionamiento, incluso de un microprocesador de 32-bit, es muy grande (4 gigabytes), de tal forma que es muy difícil ir a una dirección en particular con la barra de desplazamiento. Pero puede pulsar en el botón derecho del ratón y seleccionar <gui>Ir a la dirección</gui> para obtener una pequeña caja de texto donde puede introducir una dirección en hexadecimal.</p>
+  </section>
+
+
+</page>

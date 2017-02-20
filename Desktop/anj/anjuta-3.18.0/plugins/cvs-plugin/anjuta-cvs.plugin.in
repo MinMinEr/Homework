@@ -1,0 +1,8 @@
+[Anjuta Plugin]
+_Name=CVS Plugin
+_Description=A version control system plugin
+Location=anjuta-cvs-plugin:CVSPlugin
+Icon=anjuta-cvs-plugin-48.png
+
+[Version Control]
+Supported-Vcs-Types=cvs

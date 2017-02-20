@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-target-add" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-target" group="fifth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Ajouter une cible à un projet.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ajout d'une cible</title>
+
+  <p>Une cible regroupe des fichiers et définit leur utilisation. Elle sert à représenter un programme avec tous ses fichiers sources comme enfants, ou regroupe seulement les fichiers de données qui doivent être installés au même endroit.</p>
+
+  <steps>
+    <item>
+      <p>Sélectionnez le répertoire dans lequel vous voulez ajouter la nouvelle cible dans la <gui>vue projet</gui>, cliquez sur le bouton droit de la souris pour afficher le <gui>menu contextuel du projet</gui>, puis sélectionnez <gui>Nouvelle cible</gui>.</p>
+      <p>D'une autre façon dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Projet</gui><gui>Nouvelle cible</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Vous pouvez sélectionner un autre répertoire dans la partie inférieure de la <gui>vue arborescente des répertoires</gui>.</p>
+      <p>Saisissez un nom de cible et sélectionnez le type de cible dans la liste déroulante en-dessous. Selon votre moteur de gestion de projet, différents types de cible sont possibles, comme ci-dessous.</p>
+      <note style="tip">
+        <p>Les noms de cibles sont habituellement restreints aux lettres, chiffres et le caractère de soulignement. Aussi vaut-il mieux éviter d'utiliser d'autres caractères.</p>
+     </note>
+    </item>
+    <item>
+      <p>Quand vous avez choisi le nom, le type et le parent de la cible, cliquez sur le bouton <gui>Ajouter</gui> pour créer cette nouvelle cible.</p>
+    </item>
+ </steps>
+
+</page>

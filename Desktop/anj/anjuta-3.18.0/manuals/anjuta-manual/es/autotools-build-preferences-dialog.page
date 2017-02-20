@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-preferences-dialog" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Dialogo de preferencias de construcción de «autotools».</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Dialogo de preferencias de construcción de «autotools»</title>
+
+  <p>El cuadro de diálogo le permite configurar las opciones globales para construir archivos.</p>
+
+  <terms>
+    <item>
+      <title><gui>Ejecutar varios comandos a la vez</gui></title>
+      <p><app>make</app> es capaz de ejecutar varias compilaciones al mismo tiempo. Reduce el tiempo de la compilación cuando se tienen procesadores multinúcleo pero puede provocar algunos problemas, de tal forma que se puede activar o desactivar con esta casilla de verificación.</p>
+    </item>
+    <item>
+      <title><gui>Continuar en errores</gui></title>
+      <p>De forma predeterminada, <app>make</app> se detiene tan pronto como obtenga un error, puede ser más rápido continuar y obtener errores para todos los archivos en un solo paso. Marque esta casilla para obtener este comportamiento.</p>
+    </item>
+    <item>
+      <title><gui>Traducir mensajes</gui></title>
+      <p>De forma predeterminada los mensajes de error y avisos están traducidos. No obstante tiene dos inconvenientes. Para poder reconocer los errores y avisos, la traducción de <app>Anjuta</app> y del compilador deben coincidir perfectamente. Además, a menudo es más difícil encontrar ayuda en internet al buscar los mensajes traducidos ya que son mucho menos comunes. Desactivar esta casilla de verificación permite desactivar la traducción.</p>
+    </item>
+    <item>
+      <title><gui>Resaltar avisos y errores de construcción en el editor</gui></title>
+      <p>Se muestran y resaltan los errores y avisos de construcción en la ventana de mensajes. Activando esta opción, también se resaltan en el editor.</p>
+    </item>
+    <item>
+      <title><gui>Instalar como root</gui></title>
+      <p>Instalar programas necesita copiar archivos en carpetas del sistema que a menudo no son escribibles por el usuario. Si esta casilla está marcada, puede elegir usar <cmd>sudo</cmd> o <cmd>su</cmd> antes de instalar los archivos para obtener permisos para hacerlo.</p>
+    </item>
+  </terms>
+
+</page>

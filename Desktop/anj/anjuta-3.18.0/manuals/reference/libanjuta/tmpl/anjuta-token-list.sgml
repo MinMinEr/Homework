@@ -1,0 +1,186 @@
+<!-- ##### SECTION Title ##### -->
+anjuta-token-list
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION anjuta_token_style_new ##### -->
+<para>
+
+</para>
+
+@start: 
+@next: 
+@eol: 
+@last: 
+@max_width: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_style_new_from_base ##### -->
+<para>
+
+</para>
+
+@base: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_style_free ##### -->
+<para>
+
+</para>
+
+@style: 
+
+
+<!-- ##### FUNCTION anjuta_token_style_update ##### -->
+<para>
+
+</para>
+
+@style: 
+@list: 
+
+
+<!-- ##### FUNCTION anjuta_token_style_format ##### -->
+<para>
+
+</para>
+
+@style: 
+@list: 
+
+
+<!-- ##### FUNCTION anjuta_token_first_word ##### -->
+<para>
+
+</para>
+
+@list: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_nth_word ##### -->
+<para>
+
+</para>
+
+@list: 
+@n: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_next_word ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_replace_nth_word ##### -->
+<para>
+
+</para>
+
+@list: 
+@n: 
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_insert_word_before ##### -->
+<para>
+
+</para>
+
+@list: 
+@sibling: 
+@baby: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_insert_word_after ##### -->
+<para>
+
+</para>
+
+@list: 
+@sibling: 
+@baby: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_remove_word ##### -->
+<para>
+
+</para>
+
+@token: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_remove_list ##### -->
+<para>
+
+</para>
+
+@token: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_insert_token_list ##### -->
+<para>
+
+</para>
+
+@after: 
+@list: 
+@...: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_find_type ##### -->
+<para>
+
+</para>
+
+@list: 
+@flags: 
+@types: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_skip_comment ##### -->
+<para>
+
+</para>
+
+@list: 
+@Returns: 
+
+
+<!-- ##### STRUCT AnjutaTokenStyle ##### -->
+<para>
+
+</para>
+
+

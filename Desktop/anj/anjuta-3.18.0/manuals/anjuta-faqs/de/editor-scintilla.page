@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" xmlns:if="http://projectmallard.org/experimental/if/" type="topic" id="editor-scintilla" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#faq-editor"/>
+    
+    <revision pkgversion="0.1" version="0.1" date="2010-12-02" status="stub"/>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>How to use <app>Scintilla editor</app></title>
+
+  <p><app href="http://www.scintilla.org">Scintilla editor</app> is available through the package <sys>anjuta-extras</sys> package which can either be downloaded 
+  from the <link href="http://projects.gnome.org/anjuta/downloads.html">Anjuta website</link> or installed from the software management application of your distribution. After you have installed it you will be prompted to choose an editor and you can set it as the default editor for this project.</p>
+
+<if:choose>
+  <if:when test="if:supports('action:install')">
+    <note style="info package">
+      <p><link action="install:anjuta-extras" href="http://projects.gnome.org/anjuta/downloads.html" style="button">Install anjuta-extras</link></p>
+    </note>
+  </if:when>
+</if:choose>
+
+  <note>
+    <p><app>Scintilla Editor</app> is available since Anjuta version 3.2.</p>
+  </note>
+
+</page>

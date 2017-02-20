@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-project-folder-edit" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-folder" group="second"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Autotools Ordner-Eigenschaften bearbeiten.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Einen Autotools-Ordner bearbeiten</title>
+
+  <p>Diese Eigenschaft ermöglicht Ihnen gemeinsame Eigenschaften für alle Ziele festzulegen, die zu diesem Ordner gehören.</p>
+
+  <terms>
+    <item>
+      <title><gui>C Compiler-Flags</gui></title>
+      <p>Flags, die dem C-Compiler übergeben werden sollen, wenn ein Wert pro Ziel nicht definiert ist.</p>
+    </item>
+    <item>
+      <title><gui>Flags für C-Präprozessor</gui></title>
+      <p>Diese Flags werden jedem Übersetzungsvorgang übergeben, der den C-Präprozessor aufruft. Dieser Wert wird ignoriert, wenn diese Flags für das Ziel definiert sind.</p>
+    </item>
+    <item>
+      <title><gui>C++ Compiler-Flags</gui></title>
+      <p>Flags, die dem C++-Compiler übergeben werden sollen, wenn ein Wert pro Ziel nicht definiert ist.</p>
+    </item>
+    <item>
+      <title><gui>Flags für Fortran-Compiler</gui></title>
+      <p>Flags, die dem Fortran 9x-Compiler übergeben werden sollen, wenn ein Wert pro Ziel nicht definiert ist.</p>
+    </item>
+    <item>
+      <title><gui>Installationsordner</gui></title>
+      <p>Hier werden Installationsordner festgelegt. Es wird gebraucht, wenn Sie Dateien in eigene Ordner installieren wollen.</p>
+    </item>
+    <item>
+      <title><gui>Java Compiler-Flags</gui></title>
+      <p>Flags, die dem Java-Compiler übergeben werden sollen, wenn ein Wert pro Ziel nicht definiert ist.</p>
+    </item>
+    <item>
+      <title><gui>Flags für Lex/Flex</gui></title>
+      <p>Flags, die dem Scanner-Generator Lex oder Flex übergeben werden sollen, wenn ein Wert pro Ziel nicht definiert ist.</p>
+    </item>
+    <item>
+      <title><gui>Flags für Linker</gui></title>
+      <p>Flags, die dem Linker übergeben werden sollen, wenn ein Wert pro Ziel nicht definiert ist.</p>
+    </item>
+    <item>
+      <title><gui>Flags für Objective C-Compiler</gui></title>
+      <p>Flags, die dem Objective C-Compiler übergeben werden sollen, wenn ein Wert pro Ziel nicht definiert ist.</p>
+    </item>
+    <item>
+      <title><gui>Vala Compiler-Flags</gui></title>
+      <p>Flags, die dem Vala-Compiler übergeben werden sollen, wenn ein Wert pro Ziel nicht definiert ist.</p>
+    </item>
+    <item>
+      <title><gui>Flags für Yacc/Bison</gui></title>
+      <p>Flags, die dem Parser-Generator Bison oder Yacc übergeben werden sollen, wenn ein Wert pro Ziel nicht definiert ist.</p>
+    </item>
+  </terms>
+
+</page>

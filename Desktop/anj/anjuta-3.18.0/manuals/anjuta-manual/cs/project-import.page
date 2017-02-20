@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-import" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-project-management" group="first"/>
+    <link type="seealso" xref="anjuta-project-create"/>
+    <link type="seealso" xref="project-manager"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak importovat existující projekt.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Import projektu</title>
+
+  <p><app>Anjuta</app> nemá svůj vlastní formát projektů. Projekty načítá pomocí již existujících formátů, jako makefile nebo autotools, a nevyžaduje, aby ji používali i ostatní vývojáři. Vlastní nastavení aplikace Anjuta se uchovává v souboru s příponou <file>.anjuta</file> a ve skryté složce vytvořené ve složce projektu. Abyste mohli projekt používat a abyste vytvořili tyto soubory s nastavením, musíte naimportovat projekt. Při tom se neprovádí žádné změny v souborech projektu.</p>
+
+  <steps>
+    <item>
+      <p>Aby se spustil průvodce projektem, vyberte v <gui>hlavní nabídce</gui> <guiseq><gui>Soubor</gui> <gui>Nový</gui> <gui>Projekt z existujících zdrojových kódů</gui></guiseq> nebo <gui>Projekt z existujících zdrojových kódů</gui> v rozbalovacím seznamu na tlačítku <gui>Nový</gui> na <gui>horní nástrojové liště</gui>.</p>
+    </item>
+    <item>
+      <p>Pokud se projekt již nachází ve vašem počítači, vyberte <gui>Import ze složky</gui> a následně vyberte složku s projektem.</p>
+      <p>Nebo vyberte <gui>Import ze systému pro správu verzí</gui>, pokud je potřeba projekt stáhnout ze serveru. Vyberte systém správy verzí, adresu serveru a cílovou složku ve vašem počítači.</p>
+    </item>
+    <item>
+      <p>Po té, co vyberete existující projekt, mělo by se textové pole <gui>Název projektu</gui> vyplnit názvem složky s projektem, ale můžete jej změnit. Když to máte hotovo, klikněte na tlačítko <gui>Import</gui>. Projekt se v případě potřeby stáhne, a vytvoří se soubory vyžadované aplikací <app>Anjuta</app>.</p>
+    </item>
+    <item>
+      <p><app>Anjuta</app> se poukusí automaticky pro projekt určit zpracující jádro. Pokud je jich ale na výběr více, objeví se vám dialogové okno, ve kterém budete na správné dotázáni. Přečtěte si popis zpracujícího jádra, abyste zjistili, které zvolit.</p>
+    </item>
+  </steps>
+
+</page>

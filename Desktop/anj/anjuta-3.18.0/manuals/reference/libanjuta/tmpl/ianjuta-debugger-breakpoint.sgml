@@ -1,0 +1,214 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaDebuggerBreakpoint
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_DEBUGGER_BREAKPOINT_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### ENUM IAnjutaDebuggerBreakpointMethod ##### -->
+<para>
+
+</para>
+
+@IANJUTA_DEBUGGER_BREAKPOINT_SET_AT_ADDRESS: 
+@IANJUTA_DEBUGGER_BREAKPOINT_SET_AT_FUNCTION: 
+@IANJUTA_DEBUGGER_BREAKPOINT_ENABLE: 
+@IANJUTA_DEBUGGER_BREAKPOINT_IGNORE: 
+@IANJUTA_DEBUGGER_BREAKPOINT_CONDITION: 
+
+<!-- ##### ENUM IAnjutaDebuggerBreakpointType ##### -->
+<para>
+
+</para>
+
+@IANJUTA_DEBUGGER_BREAKPOINT_REMOVED: 
+@IANJUTA_DEBUGGER_BREAKPOINT_UPDATED: 
+@IANJUTA_DEBUGGER_BREAKPOINT_ON_LINE: 
+@IANJUTA_DEBUGGER_BREAKPOINT_ON_ADDRESS: 
+@IANJUTA_DEBUGGER_BREAKPOINT_ON_FUNCTION: 
+@IANJUTA_DEBUGGER_BREAKPOINT_ON_READ: 
+@IANJUTA_DEBUGGER_BREAKPOINT_ON_WRITE: 
+@IANJUTA_DEBUGGER_BREAKPOINT_WITH_ENABLE: 
+@IANJUTA_DEBUGGER_BREAKPOINT_WITH_IGNORE: 
+@IANJUTA_DEBUGGER_BREAKPOINT_WITH_TIME: 
+@IANJUTA_DEBUGGER_BREAKPOINT_WITH_CONDITION: 
+@IANJUTA_DEBUGGER_BREAKPOINT_WITH_TEMPORARY: 
+@IANJUTA_DEBUGGER_BREAKPOINT_WITH_PENDING: 
+
+<!-- ##### STRUCT IAnjutaDebuggerBreakpointItem ##### -->
+<para>
+
+</para>
+
+@type: 
+@id: 
+@file: 
+@line: 
+@function: 
+@address: 
+@enable: 
+@ignore: 
+@times: 
+@condition: 
+@temporary: 
+@pending: 
+
+<!-- ##### USER_FUNCTION IAnjutaDebuggerBreakpointCallback ##### -->
+<para>
+
+</para>
+
+@data: 
+@user_data: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_debugger_breakpoint_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_debugger_breakpoint_clear_breakpoint ##### -->
+<para>
+
+</para>
+
+@obj: 
+@id: 
+@callback: 
+@user_data: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_debugger_breakpoint_condition_breakpoint ##### -->
+<para>
+
+</para>
+
+@obj: 
+@id: 
+@condition: 
+@callback: 
+@user_data: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_debugger_breakpoint_enable_breakpoint ##### -->
+<para>
+
+</para>
+
+@obj: 
+@id: 
+@enable: 
+@callback: 
+@user_data: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_debugger_breakpoint_ignore_breakpoint ##### -->
+<para>
+
+</para>
+
+@obj: 
+@id: 
+@ignore: 
+@callback: 
+@user_data: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_debugger_breakpoint_implement_breakpoint ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_debugger_breakpoint_list_breakpoint ##### -->
+<para>
+
+</para>
+
+@obj: 
+@callback: 
+@user_data: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_debugger_breakpoint_set_breakpoint_at_address ##### -->
+<para>
+
+</para>
+
+@obj: 
+@address: 
+@callback: 
+@user_data: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_debugger_breakpoint_set_breakpoint_at_function ##### -->
+<para>
+
+</para>
+
+@obj: 
+@file: 
+@function: 
+@callback: 
+@user_data: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_debugger_breakpoint_set_breakpoint_at_line ##### -->
+<para>
+
+</para>
+
+@obj: 
+@file: 
+@line: 
+@callback: 
+@user_data: 
+@err: 
+@Returns: 
+
+

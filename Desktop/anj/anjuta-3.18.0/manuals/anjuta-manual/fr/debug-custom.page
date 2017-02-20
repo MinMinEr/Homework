@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-custom" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="sixth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Utiliser une commande de débogueur personnalisée.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Commande personnalisée</title>
+
+  <p>Vous pouvez envoyer une commande personnalisée au débogueur de la façon suivante :</p>
+
+  <steps>
+    <item>
+      <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Déboguer</gui> <gui>Commande de débogueur</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Saisissez votre commande.</p>
+    </item>
+  </steps>
+
+  <p>La sortie de la commande est affichée dans la fenêtre de message utilisée par le débogueur.</p>
+
+  <note style="warning">
+    <p>Cette commande est envoyée directement au débogueur sans effectuer aucun contrôle. Par exemple, si vous définissez un point d'arrêt de cette façon, il n'apparaît pas dans la fenêtre <gui>Point d'arrêt</gui>. Il vaut mieux éviter d'utiliser cette commande à moins que vous ne sachiez exactement ce que vous faites.</p>
+  </note>
+
+</page>

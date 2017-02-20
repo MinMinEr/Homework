@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-local" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="third"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Helyi változók vizsgálata.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Helyi változók</title>
+
+  <p>Az aktuális keret (az a függvény, amelyben a programvezérlés tartózkodik) helyi változói a <gui>Helyi változók</gui> ablakban jelennek meg. A program végrehajtása során (például egyszeres léptetés során) a helyi változók frissülnek. Ha bármely változóérték megváltozott az utolsó hibakeresési lépésben, akkor az értéke vörössel kerül kiemelésre. A változók fanézetben jelennek meg a könnyebb áttekinthetőség érdekében.</p>
+
+  <section>
+    <title>Helyi változók felsorolása</title>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Nézet</gui><gui>Helyi változók</gui></guiseq> menüpontot a <gui>Helyi változók</gui> ablak megnyitásához.</p>
+      </item>
+    </steps>
+
+    <p>Minden helyi változó egy fanézetben jelenik meg, a gyermekek pedig struktúra- vagy tömbtagokat képviselnek.</p>
+  
+    <terms>
+      <item>
+        <title>Változó</title>
+        <p>A változó neve.</p>
+      </item>
+      <item>
+        <title>Érték</title>
+        <p>A változó értéke.</p>
+      </item>
+      <item>
+        <title>Típus</title>
+        <p>A változó típusa.</p>
+      </item>
+    </terms>
+  </section>
+
+  <section>
+    <title>Változó értékének módosítása</title>
+
+    <steps>
+      <item>
+        <p>A <gui>Helyi változók</gui> ablakban válassza ki a szerkeszteni kívánt változót, és kattintson duplán az <gui>Érték</gui> oszlopra.</p>
+      </item>
+      <item>
+        <p>Adja meg az új értéket.</p>
+      </item>
+    </steps>
+  </section>
+
+</page>

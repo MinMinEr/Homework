@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="run-parameters-dialog" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="run-run"/>
+    <link type="seealso" xref="debug-run"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Boîte de dialogue des paramètres du programme</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Boîte de dialogue « Paramètres du programme »</title>
+
+  <p>La boîte de dialogue <gui>Paramètres du programme</gui> vous permet de définir le programme actuel et plusieurs paramètres.</p>
+
+  <terms>
+    <item>
+      <title><gui>Programme</gui></title>
+      <p>C'est le programme qui est exécuté quand vous le lancez avec ou sans le débogueur. La liste déroulante vous permet de sélectionner les programmes créés par le projet actuel, mais vous pouvez cliquer sur le bouton <gui>Parcourir</gui> pour choisir un autre programme.</p>
+    </item>
+    <item>
+      <title><gui>Paramètres</gui></title>
+      <p>Ce sont les paramètres de la ligne de commande utilisés par votre programme. La liste déroulante conserve un historique des derniers paramètres utilisés.</p>
+    </item>
+    <item>
+      <title><gui>Répertoire de travail</gui></title>
+      <p>Le répertoire de travail est le répertoire actuel où votre programme est exécuté.</p>
+    </item>
+    <item>
+      <title><gui>Variables d'environnement</gui></title>
+      <p>Cliquez sur la section déroulante pour afficher toutes les variables d'environnement accessibles à votre programme. Par défaut, elle inclut toutes les variables d'environnement actuelles, celles-ci sont affichées en gris clair.</p>
+      <p>Cliquez sur le bouton <gui>Nouveau</gui> pour ajouter une nouvelle variable d'environnement.</p>
+      <p>Cliquez sur <gui>Édition</gui> pour modifier la valeur de la variable d'environnement sélectionnée.</p>
+      <p>Cliquez sur <gui>Supprimer</gui> pour supprimer la variable d'environnement sélectionnée.</p>
+      <p>Quand une variable n'a pas la même valeur que dans l'environnement actuel, elle s'affiche en noir.</p>
+    </item>
+    <item>
+      <title><gui>Exécution dans un terminal</gui></title>
+      <p>Cochez cette case pour exécuter le programme dans un terminal permettant de saisir des données et de les visualiser avec les flux Unix standards. Ce n'est pas nécessaire pour les programmes possédant une interface graphique.</p>
+    </item>
+  </terms>
+
+</page>

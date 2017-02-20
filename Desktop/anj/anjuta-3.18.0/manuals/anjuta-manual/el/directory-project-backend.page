@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="directory-project-backend" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager#backend"/>
+    <desc>Κατάλογος συστήματος υποστήριξης έργου.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Κατάλογος προσθέτου συστήματος υποστήριξης έργου</title>
+
+  <p>Αυτό είναι το πιο απλό σύστημα υποστήριξης του έργου. Δεν υπάρχει αρχείο έργου. Δουλεύει ως θεατής αρχείου, θεωρώντας ότι όλα τα αρχεία που ταιριάζουν σε τυπικές πηγαίες επεκτάσεις (για παράδειγμα <file>.c</file>, <file>.py</file>) είναι πηγαία αρχεία. Οι κατάλογοι διατηρούνται για ομαδοποίηση των πηγαίων αρχείων, αλλά δεν υπάρχει προορισμός.</p>
+
+  <p>Αυτό το σύστημα υποστήριξης είναι μια χρήσιμη παράκαμψη εάν το έργο σας δεν έχει ένα αντίστοιχο σύστημα υποστήριξης στο <app>Anjuta</app> ή εάν το αντίστοιχο σύστημα υποστήριξης δεν υποστηρίζει πλήρως το έργο σας.</p>
+
+  <p>Δεν είναι δυνατή η προσθήκη ή η αλλαγή σε οτιδήποτε με ένα έργο που χρησιμοποιεί αυτό το σύστημα υποστήριξης. Αλλά εάν δημιουργήσετε ένα πηγαίο αρχείο στον κατάλογο του έργου, με τη σωστή επέκταση, θα προστεθεί αυτόματα.</p>
+
+</page>

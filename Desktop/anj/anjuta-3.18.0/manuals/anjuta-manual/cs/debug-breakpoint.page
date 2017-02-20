@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-breakpoint" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-execute" group="second"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak spravovat body přerušení.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Body přerušení</title>
+
+  <p>Body přerušení se používají k zastavení provádění programu v konkrétním bodě, takže v onom místě můžete prozkoumat stav programu.</p>
+
+  <section>
+    <title>Vypsání bodů přerušení</title>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Zobrazit</gui> <gui>Body přerušení</gui></guiseq> a otevře se okno <gui>Body přerušení</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Zobrazení má následující sloupce:</p>
+  
+    <terms>
+      <item>
+        <title>Umístění</title>
+        <p>Jedná se o místo bodu přerušení v souboru se zdrojovým kódem. Když je bod přerušení nastaven ladicím programem, můžete získat další informace, jako je název funkce obsahující bod přerušení.</p>
+      </item>
+      <item>
+        <title>Adresa</title>
+        <p>Toto pole je vyplněno adresou bodu přerušení, když je nastavena ladicím programem.</p>
+      </item>
+      <item>
+        <title>Typ</title>
+        <p>Vždy zobrazuje <gui>bod přerušení</gui>. Bude použito v budoucích verzích pro podporu jiných druhů bodů přerušení.</p>
+      </item>
+      <item>
+        <title>Podmínka</title>
+        <p>Jedná se o podmínku bodu přerušení. Pokud není žádná definována, je pole prázdné.</p>
+      </item>
+      <item>
+        <title>Počet průchodů</title>
+        <p>Když ladicí program neběží, zobrazuje tento sloupec počet průchodů bodem přerušení nebo nulu, pokud není definován.</p>
+        <p>Když ladicí program běží, tak pokud je počet průchodů roven nule, zobrazuje tento sloupec kolikrát byl tento bod přerušení spuštěn. Pokud počet průchodů není roven nule, jsou zobrazena obě čísla. Počet průchodů je v tomto případě druhé číslo.</p>
+      </item>
+      <item>
+        <title>Stav</title>
+        <p>Jedná se o stav bodu přerušení. Může být:</p>
+        <terms>
+          <item><title>Čekající:</title><p>bod přerušení není ve vašem programu nastaven.</p></item>
+          <item><title>Trvalý:</title><p>bod přerušení je nastaven (jeho ID je zobrazeno v závorkách).</p></item>
+          <item><title>Dočasný:</title><p>bod přerušení je nastaven, ale po dosažení bude smazán.</p></item>
+        </terms>
+      </item>
+    </terms>
+
+    <note style="tip">
+     <p>Všechny body přerušení jsou udržovány napříč sezeními Anjuty, i když přísluší neexistujícímu místu, například ve zdrojovém kódu knihovny, která ještě není načtena. V takovémto případě je jejich stav nastaven na „čekající“.</p>
+    </note>
+  </section>
+
+  <section>
+    <title>Nastavení bodů přerušení</title>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Ladit</gui> <gui>Přidat bod přerušení…</gui></guiseq> nebo klikněte pravým tlačítkem v okně <gui>Body přerušení</gui> a vyberte <gui>Přidat bod přerušení…</gui>.</p>
+      </item>
+      <item>
+        <p>Vyplňte <gui>Místo</gui>, na kterém se bod přerušení nachází, a další požadovaná pole. Pokud je soubor právě otevřen v editoru, je v <gui>Místo</gui> předvyplněn aktuální řádek. Více informací viz <link xref="debug-breakpoint-dialog"/>.</p>
+      </item>
+    </steps>
+
+    <p>Jinou možností je použít funkci přepínání bodů přerušení. Pokud na řádku žádný bod přerušení není, bude přidán. V opačeném případě bude odebrán.</p>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Ladit</gui> <gui>Přepnout bod přerušení</gui></guiseq> nebo klikněte pravým tlačítkem v okně <gui>Editor</gui> a vyberte <gui>Přepnout bod přerušení</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+
+  <section>
+    <title>Úprava bodů přerušení</title>
+
+    <p>Nemůžete změnit místo bodu přerušení. Místo toho vytvořte nový bod přerušení. Můžete však změnit podmínku nebo počet průchodů. Když chcete bod přerušení upravit:</p>
+
+    <steps>
+      <item>
+        <p>V okně <gui>Body přerušení</gui> vyberte bod přerušení.</p>
+      </item>
+      <item>
+        <p>Klikněte pravým tlačítkem v okně <gui>Body přerušení</gui> a vyberte <gui>Upravit bod přerušení…</gui></p>
+      </item>
+      <item>
+        <p>Změňte pole <gui>Podmínka</gui> nebo <gui>Počet průchodů</gui> a až jste hotovi, klikněte na <gui>Budiž</gui>. Více informací viz <link xref="debug-breakpoint-dialog"/>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+
+  <section>
+    <title>Odstranění bodu přerušení</title>
+
+	<p>Bod přerušení můžete odstranit pomocí přepínače bodu přerušení popsaného výše. Pokud však chcete odstranit více bodů přerušení nebo bod přerušení v jiném souboru, než v tom, který upravujete, můžete použít okno s body přerušení:</p>
+
+    <steps>
+      <item>
+        <p>V okně <gui>Body přerušení</gui> vyberte bod přerušení.</p>
+      </item>
+      <item>
+        <p>Klikněte pravým tlačítkem do okna <gui>Body přerušení</gui> a vyberte <gui>Odstranit bod přerušení</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Když chcete odstranit všechny body přerušení:</p>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Ladit</gui> <gui>Odstranit všechny body přerušení</gui></guiseq> nebo klikněte pravým tlačítkem do okna <gui>Body přerušení</gui> a vyberte <gui>Odstranit všechny body přerušení</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+
+  <section>
+    <title>Povolení a zakázání bodů přerušení</title>
+
+    <p>Někdy můžete chtít bod přerušení jen dočasně zakázat, místo abyste jej zcela smazali. Když chcete bod přerušení zakázat nebo znovu povolit:</p>
+
+    <steps>
+      <item>
+        <p>Klikněte na zaškrtávátko <gui>Povolit</gui> v okně <gui>Body přerušení</gui> nebo klikněte v okně <gui>Body přerušení</gui> pravým tlačítkem a vyberte <gui>Povolit bod přerušení</gui> či <gui>Zakázat bod přerušení</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Můžete zakázat všechny body přerušení pomocí:</p>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Ladit</gui> <gui>Zakázat všechny body přerušení</gui></guiseq> nebo klikněte pravým tlačítkem v okně <gui>Body přerušení</gui> a vyberte <gui>Zakázat všechny body přerušení</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+  
+
+</page>

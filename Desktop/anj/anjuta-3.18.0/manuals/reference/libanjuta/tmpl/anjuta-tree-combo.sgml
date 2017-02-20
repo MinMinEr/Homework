@@ -1,0 +1,97 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaTreeComboBox
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION anjuta_tree_combo_box_new ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_tree_combo_box_set_model ##### -->
+<para>
+
+</para>
+
+@combo: 
+@model: 
+
+
+<!-- ##### FUNCTION anjuta_tree_combo_box_get_model ##### -->
+<para>
+
+</para>
+
+@combo: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_tree_combo_box_set_active ##### -->
+<para>
+
+</para>
+
+@combo: 
+@index: 
+
+
+<!-- ##### FUNCTION anjuta_tree_combo_box_set_active_iter ##### -->
+<para>
+
+</para>
+
+@combo: 
+@iter: 
+
+
+<!-- ##### FUNCTION anjuta_tree_combo_box_get_active_iter ##### -->
+<para>
+
+</para>
+
+@combo: 
+@iter: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_tree_combo_box_set_valid_function ##### -->
+<para>
+
+</para>
+
+@combo: 
+@func: 
+@data: 
+@destroy: 
+
+
+<!-- ##### FUNCTION anjuta_tree_combo_box_set_invalid_text ##### -->
+<para>
+
+</para>
+
+@combo: 
+@str: 
+
+

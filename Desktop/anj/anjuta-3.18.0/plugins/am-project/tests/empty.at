@@ -1,0 +1,98 @@
+AT_SETUP([Load empty project])
+AS_MKDIR_P([empty1])
+AT_DATA([empty1/configure.ac],
+[[AC_CONFIG_FILES(Makefile)
+]])
+AT_DATA([empty1/Makefile.am],
+[[
+]])
+AT_DATA([expect],
+[[ROOT (): empty1
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load empty1 \
+		 list])
+AT_CHECK([diff output expect])
+
+
+
+AS_MKDIR_P([empty2])
+AT_DATA([empty2/configure.ac],
+[[]])
+AT_DATA([empty2/Makefile.am],
+[[]])
+AT_DATA([expect],
+[[ROOT (): empty3
+    GROUP (): group1
+        SOURCE (): group1/Makefile.am
+    SOURCE (): configure.ac
+]])
+AT_PARSER_CHECK([load empty2 \
+		 move empty3 \
+		 add group 0 group1 \
+		 save \
+		 list])
+AT_CHECK([diff output expect])
+
+
+
+AS_MKDIR_P([empty4])
+AT_DATA([empty4/configure.ac],
+[[]])
+AT_DATA([empty4/Makefile.am],
+[[]])
+AT_DATA([expect],
+[[Error: Target parent is not a valid group
+ROOT (): empty4
+    SOURCE (): configure.ac
+]])
+AT_PARSER_CHECK([load empty4 \
+		 add target 0 target1 prog \
+		 list])
+AT_CHECK([diff output expect])
+
+
+
+AS_MKDIR_P([empty5])
+AT_DATA([empty5/configure.ac],
+[[]])
+AT_DATA([empty5/Makefile.am],
+[[]])
+AT_DATA([expect],
+[[ROOT (): empty6
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load empty5 \
+		 move empty6 \
+		 add group 0 . \
+		 save \
+		 list])
+AT_CHECK([diff output expect])
+AT_PARSER_CHECK([load empty6 \
+		 list])
+AT_CHECK([diff output expect])
+
+
+
+AT_DATA([expect],
+[[ROOT (): empty7
+    GROUP (): subdir/group1
+        SOURCE (): subdir/group1/Makefile.am
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load empty6 \
+		 move empty7 \
+		 add group 0 subdir/group1 \
+		 save \
+		 list])
+AT_CHECK([diff output expect])
+AT_PARSER_CHECK([load empty7 \
+		 list])
+AT_CHECK([diff output expect])
+
+
+
+AT_CLEANUP

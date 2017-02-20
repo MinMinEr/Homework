@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-build" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="third"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <link type="seealso" xref="autotools-build-preferences-dialog"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak sestavit cíle nebo projekt.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Sestavení cílů</title>
+  <p>Cíl je soubor vytvořený ze zdrojových souborů. Typicky se jedná o program nebo knihovnu, ale může jít například i o dokumentaci, pokud dokumentace vyžaduje nějaké zpracování.</p>
+  <p>Příkaz pro sestavení zkompiluje všechny potřebné soubory se zdrojovými kódy a případně je slinkuje s ostatními soubory, jako jsou knihovny, za účelem vytvořit cíl. Pokud některé zdrojové kódy již byly kompilovány a nedošlo v nich k žádné změně, nebudou kompilovány znovu, aby se ušetřil čas. Je několik způsobů, jak sestavení vyvolat.</p>
+  <steps>
+    <item>
+      <p>Aby se sestavily všechny cíle ve stejné složce, ve které je právě otevřený soubor, vyberte v <gui>hlavní nabídce</gui> položku <guiseq><gui>Sestavit</gui> <gui>Sestavit</gui></guiseq> nebo zmáčkněte <key>F7</key>.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>Aby se sestavil celý projekt, vyberte v <gui>hlavní nabídce</gui> položku <guiseq><gui>Sestavit</gui> <gui>Sestavit projekt</gui></guiseq> nebo zmáčkněte <keyseq><key>Shift</key><key>F7</key></keyseq>. Rekurzivně budou sestaveny všechny podsložky.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>V <gui>panelu správy souborů</gui> vyberte soubor nebo složku.</p>
+    </item>
+    <item>
+      <p>Pro sestavení všech cílů v právě vybrané složce nebo v rodičovské složce právě vybraného souboru klikněte pravým tlačítkem myši, aby se objevila <gui>kontextová nabídka správce souborů</gui> a vyberte <guiseq><gui>Sestavit</gui> <gui>Sestavit</gui></guiseq>.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>V <gui>panelu správy projektu</gui> vyberte zdrojový soubor nebo cíl.</p>
+    </item>
+    <item>
+      <p>Pro sestavení všech cílů ve složce obsahující právě vybraný soubor nebo cíl, klikněte pravým tlačítkem myši, aby se objevila <gui>kontextová nabídka správce souborů</gui> a vyberte <guiseq><gui>Sestavit</gui> <gui>Sestavit</gui></guiseq>.</p>
+    </item>
+  </steps>
+
+</page>

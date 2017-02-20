@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-watch" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="second"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak sledovat výrazy a proměnné.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Sledování výrazů</title>
+
+  <p>Sledované výrazy, zkráceně sledování, jsou výrazy, které ladicí program vyhodnocuje a zobrazuje jejich výsledky pokaždé, když se program zastaví. Například po každém <link xref="debug-step">jednotlivém kroku</link> provedeném programem.</p>
+
+  <section>
+    <title>Vypsání sledovaných výrazů</title>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Zobrazit</gui> <gui>Sledované</gui></guiseq> pro otevření okna <gui>Sledované</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Podobně jako lokální proměnné, i sledované výrazy jsou zobrazeny v podobě stromu, kde potomci představují členy struktury nebo pole.</p>
+  
+    <terms>
+      <item>
+        <title>Proměnná</title>
+        <p>Název proměnné nebo výraz.</p>
+      </item>
+      <item>
+        <title>Hodnota</title>
+        <p>Hodnota proměnné nebo výrazu.</p>
+      </item>
+      <item>
+        <title>Typ</title>
+        <p>Typ proměnné nebo výsledku výrazu.</p>
+      </item>
+    </terms>
+  </section>
+
+  <section>
+    <title>Aktualizace sledováných</title>
+
+    <p>Sledované výrazy mohou být aktualizovány automaticky ve chvíli, kdy je program zastaven, nebo až na vyžádání uživatele.</p>
+
+    <p>Když chcete nastavit sledovaný výraz, aby se aktualizoval automaticky:</p>
+
+    <steps>
+      <item>
+        <p>V okně <gui>Sledované</gui> vyberte sledovaný výraz, který chcete aktualizovat automaticky. Klikněte na něj pravým tlačítkem a podívejte se, jestli je zaškrtnuto <gui>Automaticky aktualizovat</gui>. Pokud ne, zaškrtněte jej.</p>
+      </item>
+    </steps>
+
+    <p>Když chcete sledovaný výraz aktualizovat ručně:</p>
+
+    <steps>
+      <item>
+        <p>V okně <gui>Sledované</gui> klikněte pravým tlačítkem a pomocí <gui>Aktualizovat sledované</gui> aktualizujte vybraný sledovaný výraz.</p>
+      </item>
+    </steps>
+
+    <p>Když chcete všechny sledované výrazy ručně aktualizovat naráz:</p>
+
+    <steps>
+      <item>
+        <p>V okně <gui>Sledované</gui> klikněte pravým tlačítkem a pomocí <gui>Aktualizovat vše</gui> aktualizujte naráz všechny sledované výrazy.</p>
+      </item>
+    </steps>
+
+  </section>
+
+
+  <section>
+    <title>Přidání výrazu ke sledování</title>
+
+    <p>Když chcete přidat výraz do seznamu sledovaných:</p>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavním okně</gui> vyberte <guiseq><gui>Ladit</gui> <gui>Přidat sledování…</gui></guiseq> nebo v okně <gui>Sledované</gui> klikněte pravým tlačítkem a zvolte <gui>Přidat sledování…</gui></p>
+      </item>
+      <item>
+        <p>Zadejte výraz, který chcete sledovat. Pokud chcete, aby byl výraz vyhodnocen pokaždé, když dojte k zastavení programu, zaškrtněte <gui>Automaticky aktualizovat</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Výraz může být vyhodnocen a následně přidán do sledovaných takto:</p>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Ladit</gui> <gui>Zkoumat/vyhodnotit</gui></guiseq> nebo klikněte pravým tlačítkem v okně <gui>Editor</gui> a vyberte <gui>Zkoumat/vyhodnotit</gui>.</p>
+      </item>
+      <item>
+        <p>Kliknutím na tlačítko <gui>Přidat</gui> přidáte tento výraz do seznamu sledovaných.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section>
+    <title>Odebrání ze sledování</title>
+
+    <p>Kterýkoliv výraz můžete ze seznamu sledovaných odebrat.</p>
+
+    <steps>
+      <item>
+        <p>V okně <gui>Sledované</gui> vyberte sledovaný výraz, který chcete odebrat, klikněte na něj pravým tlačítkem a zvolte <gui>Odstranit sledování</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Všechny sledované výrazy je možné odstranit naráz.</p>
+
+    <steps>
+      <item>
+        <p>V okně <gui>Sledované</gui> klikněte pravým tlačítkem a vyberte <gui>Odstranit vše</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section>
+    <title>Změna hodnoty proměnné</title>
+
+    <p>Pokud sledovaný výraz odpovídá samostatné proměnné, můžete změnit jeho hodnotu.</p>
+
+    <steps>
+      <item>
+        <p>V okně <gui>Sledované</gui> vyberte proměnnou, kterou chcete upravit a dvojitě klikněte do sloupce <gui>Hodnota</gui>.</p>
+      </item>
+      <item>
+        <p>Zadejte novou hodnotu.</p>
+      </item>
+    </steps>
+  </section>
+
+
+</page>

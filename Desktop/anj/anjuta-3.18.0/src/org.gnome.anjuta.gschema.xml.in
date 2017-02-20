@@ -1,0 +1,56 @@
+<schemalist>
+	<schema id="org.gnome.anjuta" path="/org/gnome/anjuta/">
+		<key name="toolbar-visible" type="b">
+			<default>true</default>
+		</key>
+		<key name="remembered-plugins" type="s">
+			<default>""</default>
+		</key>
+		<key name="session-skip-last" type="b">
+			<default>false</default>
+		</key>
+		<key name="session-skip-last-files" type="b">
+			<default>false</default>
+		</key>
+		<key name="gdl-style" type="s">
+			<choices>
+				<choice value="Text" />
+				<choice value="Icon" />
+				<choice value="Both" />
+				<choice value="Toolbar" />
+				<choice value="Tabs" />
+			</choices>
+			<default>"Both"</default>
+		</key>
+		<key name="toolbar-style" type="s">
+			<choices>
+				<choice value="Default" />
+				<choice value="Both" />
+				<choice value="Horiz" />
+				<choice value="Icons" />
+				<choice value="Text" />
+			</choices>
+			<default>"Default"</default>
+		</key>
+
+		<key name="email" type="s">
+			<default>""</default>
+			<_summary>Default email used in new project</_summary>
+			<_description>If empty, current login and machine name is used.</_description>
+		</key>
+	</schema>
+	<schema id="org.gnome.anjuta.editor" path="/org/gnome/anjuta/editor/">
+		<key name="use-tabs" type="b">
+			<default>true</default>
+			<_summary>Use tabulation for indentation</_summary>
+		</key>
+		<key name="tab-width" type="i">
+			<default>4</default>
+			<_summary>Number of characters of one tabulation</_summary>
+		</key>
+		<key name="indent-width" type="i">
+			<default>4</default>
+			<_summary>Number of spaces on every indentation step</_summary> 
+		</key>
+	</schema>
+</schemalist>

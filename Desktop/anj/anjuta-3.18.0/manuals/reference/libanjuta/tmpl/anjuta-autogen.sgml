@@ -1,0 +1,147 @@
+<!-- ##### SECTION Title ##### -->
+anjuta-autogen
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### USER_FUNCTION AnjutaAutogenFunc ##### -->
+<para>
+
+</para>
+
+@autogen: 
+@data: 
+
+
+<!-- ##### USER_FUNCTION AnjutaAutogenOutputFunc ##### -->
+<para>
+
+</para>
+
+@output: 
+@data: 
+
+
+<!-- ##### FUNCTION anjuta_autogen_new ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_autogen_write_definition_file ##### -->
+<para>
+
+</para>
+
+@this: 
+@values: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_autogen_set_library_path ##### -->
+<para>
+
+</para>
+
+@this: 
+@directory: 
+
+
+<!-- ##### FUNCTION anjuta_autogen_clear_library_path ##### -->
+<para>
+
+</para>
+
+@this: 
+
+
+<!-- ##### FUNCTION anjuta_autogen_get_library_paths ##### -->
+<para>
+
+</para>
+
+@this: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_autogen_set_input_file ##### -->
+<para>
+
+</para>
+
+@this: 
+@filename: 
+@start_marker: 
+@end_marker: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_autogen_set_output_file ##### -->
+<para>
+
+</para>
+
+@this: 
+@filename: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_autogen_set_output_callback ##### -->
+<para>
+
+</para>
+
+@this: 
+@func: 
+@user_data: 
+@destroy: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_autogen_execute ##### -->
+<para>
+
+</para>
+
+@this: 
+@func: 
+@data: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_check_autogen ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### STRUCT AnjutaAutogen ##### -->
+<para>
+
+</para>
+
+

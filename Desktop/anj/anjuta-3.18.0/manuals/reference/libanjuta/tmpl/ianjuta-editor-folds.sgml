@@ -1,0 +1,65 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaEditorFolds
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_EDITOR_FOLDS_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ianjuta_editor_folds_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_folds_close_all ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_folds_open_all ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_folds_toggle_current ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+
+

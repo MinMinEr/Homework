@@ -1,0 +1,652 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaProjectNode
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### ENUM AnjutaProjectValueType ##### -->
+<para>
+
+</para>
+
+@ANJUTA_PROJECT_PROPERTY_STRING: 
+@ANJUTA_PROJECT_PROPERTY_LIST: 
+@ANJUTA_PROJECT_PROPERTY_BOOLEAN: 
+@ANJUTA_PROJECT_PROPERTY_MAP: 
+
+<!-- ##### ENUM AnjutaProjectPropertyFlags ##### -->
+<para>
+
+</para>
+
+@ANJUTA_PROJECT_PROPERTY_READ_ONLY: 
+@ANJUTA_PROJECT_PROPERTY_READ_WRITE: 
+@ANJUTA_PROJECT_PROPERTY_HIDDEN: 
+@ANJUTA_PROJECT_PROPERTY_STATIC: 
+
+<!-- ##### FUNCTION anjuta_project_property_new ##### -->
+<para>
+
+</para>
+
+@value: 
+@name: 
+@user_data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_property_copy ##### -->
+<para>
+
+</para>
+
+@prop: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_property_free ##### -->
+<para>
+
+</para>
+
+@prop: 
+
+
+<!-- ##### FUNCTION anjuta_project_property_info_new ##### -->
+<para>
+
+</para>
+
+@id: 
+@name: 
+@type: 
+@flags: 
+@description: 
+@default_value: 
+@user_data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_property_info_copy ##### -->
+<para>
+
+</para>
+
+@info: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_property_info_free ##### -->
+<para>
+
+</para>
+
+@info: 
+
+
+<!-- ##### ENUM AnjutaProjectNodeType ##### -->
+<para>
+
+</para>
+
+@ANJUTA_PROJECT_UNKNOWN: 
+@ANJUTA_PROJECT_SHAREDLIB: 
+@ANJUTA_PROJECT_STATICLIB: 
+@ANJUTA_PROJECT_PROGRAM: 
+@ANJUTA_PROJECT_PYTHON: 
+@ANJUTA_PROJECT_JAVA: 
+@ANJUTA_PROJECT_LISP: 
+@ANJUTA_PROJECT_HEADER: 
+@ANJUTA_PROJECT_MAN: 
+@ANJUTA_PROJECT_INFO: 
+@ANJUTA_PROJECT_GENERIC: 
+@ANJUTA_PROJECT_DATA: 
+@ANJUTA_PROJECT_EXTRA: 
+@ANJUTA_PROJECT_INTLTOOL: 
+@ANJUTA_PROJECT_CONFIGURE: 
+@ANJUTA_PROJECT_IDL: 
+@ANJUTA_PROJECT_MKENUMS: 
+@ANJUTA_PROJECT_GENMARSHAL: 
+@ANJUTA_PROJECT_SCRIPT: 
+@ANJUTA_PROJECT_ROOT_GROUP: 
+@ANJUTA_PROJECT_LT_MODULE: 
+@ANJUTA_PROJECT_PROXY: 
+@ANJUTA_PROJECT_PROJECT: 
+@ANJUTA_PROJECT_PRIMARY: 
+@ANJUTA_PROJECT_EXECUTABLE: 
+@ANJUTA_PROJECT_READ_ONLY: 
+@ANJUTA_PROJECT_FRAME: 
+@ANJUTA_PROJECT_ID_MASK: 
+@ANJUTA_PROJECT_FLAG_MASK: 
+@ANJUTA_PROJECT_TYPE_MASK: 
+@ANJUTA_PROJECT_ROOT: 
+@ANJUTA_PROJECT_GROUP: 
+@ANJUTA_PROJECT_TARGET: 
+@ANJUTA_PROJECT_SOURCE: 
+@ANJUTA_PROJECT_MODULE: 
+@ANJUTA_PROJECT_PACKAGE: 
+@ANJUTA_PROJECT_VARIABLE: 
+@ANJUTA_PROJECT_OBJECT: 
+
+<!-- ##### ENUM AnjutaProjectNodeState ##### -->
+<para>
+
+</para>
+
+@ANJUTA_PROJECT_OK: 
+@ANJUTA_PROJECT_MODIFIED: 
+@ANJUTA_PROJECT_INCOMPLETE: 
+@ANJUTA_PROJECT_LOADING: 
+@ANJUTA_PROJECT_REMOVED: 
+@ANJUTA_PROJECT_CAN_ADD_GROUP: 
+@ANJUTA_PROJECT_CAN_ADD_TARGET: 
+@ANJUTA_PROJECT_CAN_ADD_SOURCE: 
+@ANJUTA_PROJECT_CAN_ADD_MODULE: 
+@ANJUTA_PROJECT_CAN_ADD_PACKAGE: 
+@ANJUTA_PROJECT_CAN_REMOVE: 
+@ANJUTA_PROJECT_CAN_SAVE: 
+@ANJUTA_PROJECT_REMOVE_FILE: 
+
+<!-- ##### STRUCT AnjutaProjectNode ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL AnjutaProjectNode::loaded ##### -->
+<para>
+
+</para>
+
+@anjutaprojectnode: the object which received the signal.
+@arg1: 
+@arg2: 
+
+<!-- ##### SIGNAL AnjutaProjectNode::updated ##### -->
+<para>
+
+</para>
+
+@anjutaprojectnode: the object which received the signal.
+@arg1: 
+@arg2: 
+
+<!-- ##### ARG AnjutaProjectNode:file ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AnjutaProjectNode:name ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AnjutaProjectNode:state ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AnjutaProjectNode:type ##### -->
+<para>
+
+</para>
+
+<!-- ##### USER_FUNCTION AnjutaProjectNodeTraverseFunc ##### -->
+<para>
+
+</para>
+
+@node: 
+@data: 
+@Returns: 
+
+
+<!-- ##### USER_FUNCTION AnjutaProjectNodeForeachFunc ##### -->
+<para>
+
+</para>
+
+@node: 
+@data: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_root ##### -->
+<para>
+
+</para>
+
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_parent ##### -->
+<para>
+
+</para>
+
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_first_child ##### -->
+<para>
+
+</para>
+
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_last_child ##### -->
+<para>
+
+</para>
+
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_next_sibling ##### -->
+<para>
+
+</para>
+
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_prev_sibling ##### -->
+<para>
+
+</para>
+
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_nth_child ##### -->
+<para>
+
+</para>
+
+@node: 
+@n: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_parent_type ##### -->
+<para>
+
+</para>
+
+@node: 
+@type: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_foreach ##### -->
+<para>
+
+</para>
+
+@node: 
+@order: 
+@func: 
+@data: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_children_foreach ##### -->
+<para>
+
+</para>
+
+@node: 
+@func: 
+@data: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_traverse ##### -->
+<para>
+
+</para>
+
+@node: 
+@order: 
+@func: 
+@data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_children_traverse ##### -->
+<para>
+
+</para>
+
+@node: 
+@func: 
+@data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_check ##### -->
+<para>
+
+</para>
+
+@parent: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_dump ##### -->
+<para>
+
+</para>
+
+@parent: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_insert_before ##### -->
+<para>
+
+</para>
+
+@parent: 
+@sibling: 
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_insert_after ##### -->
+<para>
+
+</para>
+
+@parent: 
+@sibling: 
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_remove ##### -->
+<para>
+
+</para>
+
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_append ##### -->
+<para>
+
+</para>
+
+@parent: 
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_prepend ##### -->
+<para>
+
+</para>
+
+@parent: 
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_get_node_type ##### -->
+<para>
+
+</para>
+
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_get_full_type ##### -->
+<para>
+
+</para>
+
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_get_state ##### -->
+<para>
+
+</para>
+
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_get_name ##### -->
+<para>
+
+</para>
+
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_get_file ##### -->
+<para>
+
+</para>
+
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_get_properties_info ##### -->
+<para>
+
+</para>
+
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_get_properties ##### -->
+<para>
+
+</para>
+
+@node: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_get_property_info ##### -->
+<para>
+
+</para>
+
+@node: 
+@id: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_get_property ##### -->
+<para>
+
+</para>
+
+@node: 
+@id: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_get_map_property ##### -->
+<para>
+
+</para>
+
+@node: 
+@id: 
+@name: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_insert_property_info ##### -->
+<para>
+
+</para>
+
+@node: 
+@info: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_insert_property ##### -->
+<para>
+
+</para>
+
+@node: 
+@info: 
+@property: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_remove_property ##### -->
+<para>
+
+</para>
+
+@node: 
+@property: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_set_state ##### -->
+<para>
+
+</para>
+
+@node: 
+@state: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_clear_state ##### -->
+<para>
+
+</para>
+
+@node: 
+@state: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_get_group_from_file ##### -->
+<para>
+
+</para>
+
+@root: 
+@directory: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_target_get_node_from_name ##### -->
+<para>
+
+</para>
+
+@parent: 
+@name: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_get_source_from_file ##### -->
+<para>
+
+</para>
+
+@parent: 
+@file: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_info_new ##### -->
+<para>
+
+</para>
+
+@type: 
+@name: 
+@mime_type: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_info_copy ##### -->
+<para>
+
+</para>
+
+@info: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_info_free ##### -->
+<para>
+
+</para>
+
+@info: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_info_name ##### -->
+<para>
+
+</para>
+
+@info: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_info_mime ##### -->
+<para>
+
+</para>
+
+@info: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_info_type ##### -->
+<para>
+
+</para>
+
+@info: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_project_node_info_property_help_id ##### -->
+<para>
+
+</para>
+
+@info: 
+@Returns: 
+
+

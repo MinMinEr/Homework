@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-expression" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak vyhodnotit výraz a změnit hodnotu proměnné.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Zkoumání výrazů</title>
+
+  <section>
+    <title>Zkoumání výrazu a změna proměnné</title>
+
+	<p>Když ladíte program, můžete chtít zjistit hodnotu nějakého výrazu nebo proměnné ve chvíli, kdy je program pozastaven. Někdy se může hodit i změnit hodnotu proměnné.</p>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Ladit</gui> <gui>Zkoumat/vyhodnotit…</gui></guiseq> nebo klikněte pravým tlačítkem v okně <gui>Editor</gui> a vyberte <gui>Zkoumat/vyhodnotit…</gui></p>
+      </item>
+      <item>
+        <p>Pokud je výrazem název proměnné, můžete změnit jeho hodnotu kliknutím ve sloupci <gui>Hodnota</gui> a zadáním nové hodnoty.</p>
+      </item>
+    </steps>
+
+  </section>
+
+</page>

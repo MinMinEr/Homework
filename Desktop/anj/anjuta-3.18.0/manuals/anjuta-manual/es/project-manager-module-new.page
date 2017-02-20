@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-module-new" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-library" group="first"/>
+    <link type="next" xref="project-manager-module-add"/>
+    <link type="next" xref="project-manager-library-add"/>
+    <link type="seealso" xref="project-manager-library"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Agrupar bibliotecas en un módulo.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Añadir un módulo</title>
+
+  <p>Los paquetes no se pueden añadir directamente a un programa pero sí se pueden agrupar en un módulo.</p>
+
+  <steps>
+    <item>
+      <p>Seleccione el programa en la <gui>vista de proyecto</gui>, pulse con el botón derecho del ratón para mostrar el <gui>menú contextual del proyecto</gui> y seleccione <gui>Añadir biblioteca</gui>.</p>
+      <p>O desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Proyecto</gui><gui>Añadir biblioteca...</gui></guiseq></p>
+    </item>
+    <item>
+      <p>En el diálogo <gui>Añadir biblioteca</gui>, pulse el botón <gui>Biblioteca nueva</gui>.</p>
+    </item>
+    <item>
+      <p>Obtendrá una lista de todas las bibliotecas empaquetadas instaladas en su sistema. Puede marcar una o más bibliotecas.</p>
+      <note style="tip">
+        <p>Si la biblioteca que quiere no aparece aquí:</p>
+	  <list>
+            <item>
+              <p>Quizá no está instalada en su sistema. Lance la aplicación que usa para instalar la nuevos programas y busque el nombre de la biblioteca. A menudo, el paquete que necesita tiene un sufijo «dev» o «devel» y debe incluir los archivos de cabecera y un archivo <app>pkg-config</app> con una extensión <file>.pc</file>.</p>
+            </item>
+            <item>
+              <p>Es posible que la biblioteca no esté empaquetada, lo que sucede a menudo con bibliotecas no desarrolladas en Linux. Consulte el capítulo <link xref="project-manager-library-add"/> donde se explica cómo usarlas.</p>
+            </item>
+          </list>
+      </note>
+    </item>
+    <item>
+      <p>Después de seleccionar una biblioteca, se generará automáticamente un nombre de módulo pero puede cambiarlo. Puede seleccionar un nombre de módulo que ya exista para añadirle una biblioteca nueva y a todos los objetivos que lo usen.</p>
+    </item>
+    <item>
+      <p>Cuando termine, pulse el botón <gui>Añadir</gui> para crear el módulo nuevo con las bibliotecas seleccionadas. Necesita añadir un módulo nuevo a al menos un objetivo para usarlo realmente.</p>
+    </item>
+  </steps>
+
+</page>

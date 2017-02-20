@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="anjuta-code-help" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak v dokumentaci API rychle najít informace, které potřebujete.</desc>
+
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  </info>
+
+  <title>Používání příručky k API</title>
+
+<section>
+<title>Procházení příručky k API</title>
+
+<p>Abyste se rychle dostali k příručce s API knihoven, má Anjuta integrovaný prohlížeč API. Pokud tomu již tak není, můžete jej aktivovat v předvolbách (<guiseq><gui>Upravit</gui> <gui>Předvolby</gui></guiseq>) v <guiseq><gui>Obecné</gui> <gui>Zásuvné moduly</gui></guiseq> povolením zásuvného modulu <app>Nápověda k API</app>.</p>
+
+<p>Příručka k API má dvě okna. Jedno pro vyhledání konkrétního symbolu a druhé pro prohlížení dokumentace.</p>
+
+</section>
+
+<section>
+<title>Odskočení do příručky API pomocí klávesové zkratky v editoru</title>
+
+<p>Kdy si nejste jisti, jak konkrétní funkce použít ve stávajícím kódu, stačí umístit kurzor na název funkce a zmáčknout <keyseq><key>Shift</key> <key>F1</key></keyseq> (nebo použít <guiseq><gui>Nápověda</gui> <gui>Kontextová nápověda</gui></guiseq>) a odskočíte do dokumentace.</p>
+
+</section>
+
+</page>

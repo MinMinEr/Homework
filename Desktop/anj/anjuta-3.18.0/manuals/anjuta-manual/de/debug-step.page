@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-step" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-execute" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Anhalten und Fortsetzen</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Anhalten und Einzelschritt</title>
+
+  <p>Ähnlich wie in der Videobearbeitung kann das Programm in Zeitlupe ausgeführt werden, wobei Sie fortsetzen, pausieren und anhalten können usw. So können Sie das Verhalten des Programms besser nachvollziehen. Sie können es jedoch nicht rückwärts laufen lassen.</p>
+
+  <section>
+    <title>Hineinspringen</title>
+
+    <steps>
+      <item>
+        <p>Wählen Sie im <gui>Hauptmenü</gui> <guiseq><gui>Fehlerdiagnose</gui><gui>Hineinspringen</gui></guiseq>, drücken Sie <key>F5</key> oder klicken Sie auf <gui>Hineinspringen</gui> in der Werkzeugleiste.</p>
+      </item>
+    </steps>
+
+    <p>Einzelschritte führen nur eine Programmanweisung aus (ab Haltepunkt) und geben dann die Kontrolle zurück. Wenn die ausgeführte Anweisung eine Funktion ausführt, so versucht die Fehlerdiagnose in die Funktion zu springen (in der Reihenfolge, in der die Funktionen ausgeführt werden). Sobald die Anweisung ausgeführt und die Kontrolle zurück gegeben wurde, können Sie den Zustand Ihres Programms analysieren.</p>
+
+    <note style="advanced">
+     <p>Wenn das Fenster <gui>Disassemblierung</gui> den Eingabefokus hat und dieser Befehl ausgewählt ist, so wird eine Assembler-Anweisung ausgeführt.</p>
+    </note>
+  </section>
+
+
+  <section>
+    <title>Einzelner Schritt über eine Funktion</title>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Fehlerdiagnose</gui><gui>Überspringen</gui></guiseq> im <gui>Hauptmenü</gui>, drücken Sie <key>F6</key> oder klicken Sie auf das Symbol <key>Überspringen</key> in der Werkzeugleiste.</p>
+      </item>
+    </steps>
+
+    <p>Überspringen ist ähnlich wie Einzelschritt mit der Ausnahme, dass nicht innerhalb von Funktionen bei ausgeführten Anweisungen angehalten wird.</p>
+
+    <note style="advanced">
+      <p>Wenn das Fenster <gui>Disassemblierung</gui> den Eingabefokus hat und dieser Befehl ausgewählt ist, so wird nur eine Assembler-Anweisung ausgeführt, es sei denn, diese Anweisung ist ein Aufruf einer Unterroutine. In letztem Fall hält das Programm an, sobald die Unterroutine abgeschlossen wurde.</p>
+    </note>
+  </section>
+
+
+  <section>
+    <title>Herausspringen</title>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Fehlerdiagnose</gui><gui>Herausspringen</gui></guiseq> im <gui>Hauptmenü</gui>, drücken Sie <keyseq><key>Umschalttaste</key><key>F5</key></keyseq> oder klicken Sie auf das Symbol <key>Herausspringen</key> in der Werkzeugleiste.</p>
+      </item>
+    </steps>
+
+    <p>Herausspringen führt die aktuelle Funktion aus, bis diese in die aufrufende Funktion zurückkehrt.</p>
+  </section>
+
+
+  <section>
+    <title>Ausführen und Fortsetzen</title>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Fehlerdiagnose</gui><gui>Ausführen/Fortsetzen</gui></guiseq> im <gui>Hauptmenü</gui>, drücken Sie <key>F4</key> oder klicken Sie auf das Symbol <key>Fortsetzen</key> in der Werkzeugleiste.</p>
+      </item>
+    </steps>
+
+    <p>Dieser Befehl startet das Programm neu und führt es aus, bis ein Haltepunkt angelaufen wird oder das Programm regulär beendet wird.</p>
+  </section>
+
+  <section>
+   <title>Ausführen bis</title>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Fehlerdiagnose</gui><gui>Bis zur Eingabemarke ausführen</gui></guiseq> im <gui>Hauptmenü</gui>, drücken Sie <key>F4</key> oder klicken Sie auf das Symbol <key>Bis zur Eingabemarke ausführen</key> in der Werkzeugleiste.</p>
+      </item>
+    </steps>
+
+    <p>Das Programm neu starten und bis zur Zeile oder Adresse (falls das Fenster <gui>Disassemblierung</gui> den Eingabefokus hat) an der aktuellen Eingabemarke ausführen.</p>
+  </section>
+  
+  <section>
+   <title>Programm stoppen</title>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Fehlerdiagnose</gui><gui>Programm anhalten</gui></guiseq> im <gui>Hauptmenü</gui>, oder klicken Sie auf das Symbol <gui>Anhalten</gui> in der Werkzeugleiste.</p>
+      </item>
+    </steps>
+
+   <p>Das Programm unterbrechen und Kontrolle zurück an die Fehlerdiagnose geben, so dass diagnostiziert werden kann, wie z.B. Inspizieren von Daten oder Hinzufügen von Haltepunkten.</p>
+  </section>
+
+
+</page>

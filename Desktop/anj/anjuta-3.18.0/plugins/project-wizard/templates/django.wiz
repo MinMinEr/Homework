@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-template>
+	<project-wizard>
+		<name>Django Project</name>
+		<name xml:lang="ar">مشروع دجانغو</name>
+		<name xml:lang="ast">Proyeutu Django</name>
+		<name xml:lang="be@latin">Prajekt Django</name>
+		<name xml:lang="bg">Проект на Джанго</name>
+		<name xml:lang="bs">Đango projekat</name>
+		<name xml:lang="ca">Projecte Django</name>
+		<name xml:lang="ca@valencia">Projecte Django</name>
+		<name xml:lang="cs">Projekt Django</name>
+		<name xml:lang="da">Django-projekt</name>
+		<name xml:lang="de">Django-Projekt</name>
+		<name xml:lang="el">Έργο django</name>
+		<name xml:lang="en_CA">Django Project</name>
+		<name xml:lang="en_GB">Django Project</name>
+		<name xml:lang="es">Proyecto Django</name>
+		<name xml:lang="eu">Django proiektua</name>
+		<name xml:lang="fi">Django-projekti</name>
+		<name xml:lang="fr">Projet Django</name>
+		<name xml:lang="gl">Proxecto Django</name>
+		<name xml:lang="gu">Django પ્રોજેક્ટ</name>
+		<name xml:lang="he">פרויקט Djano</name>
+		<name xml:lang="hi">जैंगो परियोजना</name>
+		<name xml:lang="hu">Django projekt</name>
+		<name xml:lang="hy">Django նախագիծ </name>
+		<name xml:lang="id">Projek Django</name>
+		<name xml:lang="it">Progetto Django</name>
+		<name xml:lang="ja">Django プロジェクト</name>
+		<name xml:lang="km">គម្រោង Django</name>
+		<name xml:lang="ko">Django 프로젝트</name>
+		<name xml:lang="lt">Django projektas</name>
+		<name xml:lang="lv">Django projekts</name>
+		<name xml:lang="ml">Django പദ്ധതി</name>
+		<name xml:lang="mr">Django प्रकल्प</name>
+		<name xml:lang="nb">Django-prosjekt</name>
+		<name xml:lang="nl">Django project</name>
+		<name xml:lang="pl">Projekt Django</name>
+		<name xml:lang="pt">Projeto Django</name>
+		<name xml:lang="pt_BR">Projeto Django</name>
+		<name xml:lang="ro">Proiect Django</name>
+		<name xml:lang="ru">Проект Django</name>
+		<name xml:lang="sk">Projekt Django</name>
+		<name xml:lang="sl">Django projekt</name>
+		<name xml:lang="sr">Ђанго пројекат</name>
+		<name xml:lang="sr@latin">Đango projekat</name>
+		<name xml:lang="sv">Django-projekt</name>
+		<name xml:lang="te">జంగో ప్రాజెక్టు</name>
+		<name xml:lang="th">โครงการ Django</name>
+		<name xml:lang="tr">Django Projesi</name>
+		<name xml:lang="ug">Django قۇرۇلۇشى</name>
+		<name xml:lang="uk">Проект Django</name>
+		<name xml:lang="vi">Dự án Django</name>
+		<name xml:lang="zh_CN">Django 项目</name>
+		<name xml:lang="zh_HK">Django 專案</name>
+		<name xml:lang="zh_TW">Django 專案</name>
+		<description>Python webproject using Django Web Framework</description>
+		<description xml:lang="ar">مشروع webproject لبايثون باستخدام إطار Django للوب</description>
+		<description xml:lang="ast">Proyeutu web Python usando l'entornu de trabayu web Django</description>
+		<description xml:lang="bg">Уеб-проект на Python използващ системата Джанго</description>
+		<description xml:lang="bs">Veb projekat Pitona koristeći Đango veb radni okvir</description>
+		<description xml:lang="ca">Projecte web en Python que utilitza l'entorn de treball web Django</description>
+		<description xml:lang="ca@valencia">Projecte web en Python que utilitza l'entorn de treball web Django</description>
+		<description xml:lang="cs">Webový projekt v Pythonu používající webový framework Django</description>
+		<description xml:lang="da">Python-webprojekt, der bruger Django</description>
+		<description xml:lang="de">Python-Webprojekt mit dem Django Web-Framework</description>
+		<description xml:lang="el">Διαδικτυακό έργο Python που χρησιμοποιεί το Django Web Framework</description>
+		<description xml:lang="en_CA">Python webproject using Django Web Framework</description>
+		<description xml:lang="en_GB">Python web project using Django Web Framework</description>
+		<description xml:lang="es">Proyecto web Python usando el entorno de trabajo web Django</description>
+		<description xml:lang="eu">Django Web Framework erabiltzen duen Python web-proiektua</description>
+		<description xml:lang="fi">Python www-projekti käyttäen django-kirjastoja</description>
+		<description xml:lang="fr">Projet Web Python utilisant l'architecture Web Django</description>
+		<description xml:lang="gl">Proxecto web en Python usando o marco de traballo web Django</description>
+		<description xml:lang="hu">Python webprojekt a Django webes keretrendszer használatával</description>
+		<description xml:lang="hy">Python web նախագիծ, որն օգտագործում է Django Web Framework</description>
+		<description xml:lang="id">Projek web python memakai Framework Web Django</description>
+		<description xml:lang="it">Progetto web Python che utilizza il framework web Django</description>
+		<description xml:lang="ja">Django ウェブフレームワークを使った Python のウェブプロジェクトです</description>
+		<description xml:lang="km">គម្រោង​បណ្ដាញ Python ដោយ​ប្រើ​ស៊ុម​បណ្ដាញ Django</description>
+		<description xml:lang="ko">Django 웹 프레임워크를 사용하는 파이선 웹 프로젝트</description>
+		<description xml:lang="lt">Python internetinis projektas naudojant Django karkasą</description>
+		<description xml:lang="lv">Python tīmekļa projekts izmantojot Django tīmekļa struktūru</description>
+		<description xml:lang="ml">Django വലയുടെ ചട്ടപ്പണി ഉപയോഗിച്ച പൈത്തോണ്‍വല പദ്ധതി </description>
+		<description xml:lang="mr">Django वेब फेमवर्कचा वापर करणारे Python वेब प्रकल्प</description>
+		<description xml:lang="pl">Projekt sieciowy w języku Python używając struktury WWW Django</description>
+		<description xml:lang="pt">Projeto web em python utilizando a arquitetura Web Django</description>
+		<description xml:lang="pt_BR">Projeto Python para Web usando o Framework Web Django</description>
+		<description xml:lang="ro">Proiect web Python folosind platforma web Django</description>
+		<description xml:lang="ru">Веб-проект python, использующий веб-фреймворк Django</description>
+		<description xml:lang="sk">Webový projekt v Pythone používajúci webovú platformu Django</description>
+		<description xml:lang="sl">Spletni projekt Python z Django spletnim okvirjem</description>
+		<description xml:lang="sr">Веб пројекат Питона користећи Ђанго веб радни оквир</description>
+		<description xml:lang="sr@latin">Veb projekat Pitona koristeći Đango veb radni okvir</description>
+		<description xml:lang="sv">Python-webbprojekt med webbramverket Django</description>
+		<description xml:lang="te">జంగో వెబ్ ముసాయిదా ఉపయోగించి పైథాన్ webproject</description>
+		<description xml:lang="th">โครงการเว็บด้วยไพธอน โดยใช้กรอบงานเว็บ Django</description>
+		<description xml:lang="tr">Django Web Alt Yapısı kullanan python web projesi</description>
+		<description xml:lang="ug">Django Web Framework نى ئىشلەتكەن Python تور قۇرۇلۇشى</description>
+		<description xml:lang="uk">Веб-проект python, що використовує веб-фреймворк Django</description>
+		<description xml:lang="vi">Dự án Web Python dùng Khuôn Khổ Web Django</description>
+		<description xml:lang="zh_CN">使用 Django Web Framework 的 Python Web 项目 </description>
+		<description xml:lang="zh_HK">使用 Django Web 架構的 Python 網絡專案</description>
+		<description xml:lang="zh_TW">使用 Django Web 架構的 Python 網路專案</description>
+		<icon>django-logo.png</icon>
+		<category>Python</category>
+	</project-wizard>
+	
+	<page name="basic" label="Django Project information" description="General Project Information">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Project Name:" description="project name"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destination:" description=""></property>
+		
+	</page>
+	<page xml:lang="ar" name="basic" label="معلومات مشروع دجانغو" description="معلومات المشروع العامة">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="اسم المشروع:" description="اسم المشروع" xml:lang="ar"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="الوجهة:" description="" xml:lang="ar"></property>
+		
+	</page>
+	<page xml:lang="ast" name="basic" label="Información del proyeutu Django" description="Información xeneral del proyeutu">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Nome del proyeutu:" description="nome del proyeutu" xml:lang="ast"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destín:" description="" xml:lang="ast"></property>
+		
+	</page>
+	<page xml:lang="az" name="basic" label="Django Project information" description="General Project Information">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Layihə Adı:" description="project name" xml:lang="az"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destination:" description="" xml:lang="az"></property>
+		
+	</page>
+	<page xml:lang="be@latin" name="basic" label="Infarmacyja ab prajekcie Django" description="Ahulnaja infarmacyja ab prajekcie">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Nazva prajektu:" description="nazva prajektu" xml:lang="be@latin"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Pałažeńnie:" description="" xml:lang="be@latin"></property>
+		
+	</page>
+	<page xml:lang="bg" name="basic" label="Информация за проект на Джанго" description="Обща информация за проекта">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Име на проект:" description="име на проект" xml:lang="bg"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Назначение:" description="" xml:lang="bg"></property>
+		
+	</page>
+	<page xml:lang="bs" name="basic" label="Podaci o Đango projektu" description="Informacije o projektu">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Naziv projekta:" description="naziv projekta" xml:lang="bs"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Odredište:" description="" xml:lang="bs"></property>
+		
+	</page>
+	<page xml:lang="ca" name="basic" label="Informació del projecte Django" description="Informació general del projecte">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Nom del projecte:" description="nom del projecte" xml:lang="ca"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destinació:" description="" xml:lang="ca"></property>
+		
+	</page>
+	<page xml:lang="ca@valencia" name="basic" label="Informació del projecte Django" description="Informació general del projecte">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Nom del projecte:" description="nom del projecte" xml:lang="ca@valencia"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destinació:" description="" xml:lang="ca@valencia"></property>
+		
+	</page>
+	<page xml:lang="cs" name="basic" label="Informace o projektu Django" description="Obecné informace o projektu">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Název projektu:" description="název projektu" xml:lang="cs"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Cíl:" description="" xml:lang="cs"></property>
+		
+	</page>
+	<page xml:lang="da" name="basic" label="Django-projektinformation" description="Generel projektinformation">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Projektnavn:" description="projektnavn" xml:lang="da"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destination:" description="" xml:lang="da"></property>
+		
+	</page>
+	<page xml:lang="de" name="basic" label="Django-Projektinformationen" description="Allgemeine Informationen zum Projekt">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Projektname:" description="Projektname" xml:lang="de"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Ziel:" description="" xml:lang="de"></property>
+		
+	</page>
+	<page xml:lang="dz" name="basic" label="Django Project information" description="ཡོངས་ཁྱབ་ལས་འགུལ་བརྡ་དོན།">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="ལས་འགུལ་མིང་།" description="ལས་འགུལ་མིང་" xml:lang="dz"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="འགྲོ་ཡུལ།" description="" xml:lang="dz"></property>
+		
+	</page>
+	<page xml:lang="el" name="basic" label="Πληροφορίες έργου django" description="Γενικές πληροφορίες έργου">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Όνομα έργου:" description="όνομα έργου" xml:lang="el"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Προορισμός:" description="" xml:lang="el"></property>
+		
+	</page>
+	<page xml:lang="en@shaw" name="basic" label="Django Project information" description="𐑡𐑧𐑯𐑼𐑩𐑤 𐑐𐑮𐑩𐑡𐑧𐑒𐑑 𐑦𐑯𐑓𐑼𐑥𐑱𐑖𐑩𐑯">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="𐑐𐑮𐑩𐑡𐑧𐑒𐑑 𐑯𐑱𐑥:" description="𐑐𐑮𐑩𐑡𐑧𐑒𐑑 𐑯𐑱𐑥" xml:lang="en@shaw"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="𐑛𐑧𐑕𐑑𐑦𐑯𐑱𐑖𐑩𐑯:" description="" xml:lang="en@shaw"></property>
+		
+	</page>
+	<page xml:lang="en_CA" name="basic" label="Django Project information" description="General Project Information">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Project Name:" description="project name" xml:lang="en_CA"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destination:" description="" xml:lang="en_CA"></property>
+		
+	</page>
+	<page xml:lang="en_GB" name="basic" label="Django Project information" description="General Project Information">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Project Name:" description="project name" xml:lang="en_GB"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destination:" description="" xml:lang="en_GB"></property>
+		
+	</page>
+	<page xml:lang="eo" name="basic" label="Django Project information" description="General Project Information">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Projektnomo:" description="projektnomo" xml:lang="eo"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Celo:" description="" xml:lang="eo"></property>
+		
+	</page>
+	<page xml:lang="es" name="basic" label="Información del proyecto Django" description="Información general del proyecto">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Nombre del proyecto:" description="nombre del proyecto" xml:lang="es"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destino:" description="" xml:lang="es"></property>
+		
+	</page>
+	<page xml:lang="eu" name="basic" label="Django proiektu-informazioa" description="Proiektuaren informazio orokorra">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Proiektuaren izena:" description="proiektuaren izena" xml:lang="eu"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Helburua:" description="" xml:lang="eu"></property>
+		
+	</page>
+	<page xml:lang="fi" name="basic" label="Django-projektin tiedot" description="Projektin perustiedot">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Projektin nimi:" description="projektin nimi" xml:lang="fi"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Kohde:" description="" xml:lang="fi"></property>
+		
+	</page>
+	<page xml:lang="fr" name="basic" label="Informations sur le projet Django" description="Informations générales du projet">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Nom du projet :" description="nom du projet" xml:lang="fr"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destination :" description="" xml:lang="fr"></property>
+		
+	</page>
+	<page xml:lang="ga" name="basic" label="Django Project information" description="General Project Information">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Ainm Tionscadail:" description="ainm tionscadail" xml:lang="ga"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destination:" description="" xml:lang="ga"></property>
+		
+	</page>
+	<page xml:lang="gl" name="basic" label="Información do proxecto Django" description="Información xeral do proxecto">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Nome do proxecto:" description="nome do proxecto" xml:lang="gl"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destino:" description="" xml:lang="gl"></property>
+		
+	</page>
+	<page xml:lang="gu" name="basic" label="Django Project information" description="General Project Information">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="પ્રોજેક્ટ નામ:" description="project name" xml:lang="gu"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destination:" description="" xml:lang="gu"></property>
+		
+	</page>
+	<page xml:lang="he" name="basic" label="מידע על פרןייקט Djano" description="מידע כללי על הפרויקט">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="שם פרויקט:" description="שם פרויקט" xml:lang="he"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="יעד:‎" description="" xml:lang="he"></property>
+		
+	</page>
+	<page xml:lang="hi" name="basic" label="जैंगो परियोजना सूचना" description="सामान्य प्रोजेक्ट सूचना">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="परियोजना नाम:" description="प्रोजेक्ट नाम" xml:lang="hi"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="गंतव्य:" description="" xml:lang="hi"></property>
+		
+	</page>
+	<page xml:lang="hr" name="basic" label="Django Project information" description="General Project Information">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Ime projekta:" description="project name" xml:lang="hr"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destination:" description="" xml:lang="hr"></property>
+		
+	</page>
+	<page xml:lang="hu" name="basic" label="Django projektinformációk" description="Általános projektinformációk">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Projektnév:" description="projekt neve" xml:lang="hu"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Cél:" description="" xml:lang="hu"></property>
+		
+	</page>
+	<page xml:lang="hy" name="basic" label="Տեղեեկություն Django նախագծի մասին" description="Ինֆորմացիա գլխավոր նախագծի մասին">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Նախագծի Անուն․" description="նախագծի անուն" xml:lang="hy"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Նպատակակետ․" description="" xml:lang="hy"></property>
+		
+	</page>
+	<page xml:lang="id" name="basic" label="Informasi Projek Django" description="Informasi Umum Projek">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Nama Projek:" description="nama projek" xml:lang="id"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Tujuan:" description="" xml:lang="id"></property>
+		
+	</page>
+	<page xml:lang="it" name="basic" label="Informazioni progetto Django" description="Informazioni generali sul progetto">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Nome del progetto:" description="nome del progetto" xml:lang="it"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destinazione:" description="" xml:lang="it"></property>
+		
+	</page>
+	<page xml:lang="ja" name="basic" label="Django プロジェクトの情報" description="プロジェクト全般の情報">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="プロジェクト名:" description="プロジェクトの名前です" xml:lang="ja"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="プロジェクトのフォルダー:" description="" xml:lang="ja"></property>
+		
+	</page>
+	<page xml:lang="kk" name="basic" label="Django Project information" description="General Project Information">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Project Name:" description="project name" xml:lang="kk"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destination:" description="" xml:lang="kk"></property>
+		
+	</page>
+	<page xml:lang="km" name="basic" label="ព័ត៌មាន​គម្រោង Django" description="ព័ត៌មាន​គម្រោង​ទូទៅ">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="ឈ្មោះ​គម្រោង ៖" description="ឈ្មោះ​គម្រោង" xml:lang="km"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="ទិសដៅ ៖" description="" xml:lang="km"></property>
+		
+	</page>
+	<page xml:lang="kn" name="basic" label="Django ಪರಿಯೋಜನೆ ಮಾಹಿತಿ" description="ಸಾಮಾನ್ಯ ಪರಿಯೋಜನೆ ಮಾಹಿತಿ">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="ಪರಿಯೋಜನೆಯ ಹೆಸರು:" description="ಪರಿಯೋಜನೆಯ ಹೆಸರು" xml:lang="kn"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="ಗುರಿ:" description="" xml:lang="kn"></property>
+		
+	</page>
+	<page xml:lang="ko" name="basic" label="Django 프로젝트 정보" description="일반 프로젝트 정보">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="프로젝트 이름:" description="프로젝트 이름" xml:lang="ko"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="대상:" description="" xml:lang="ko"></property>
+		
+	</page>
+	<page xml:lang="lt" name="basic" label="Django projekto informacija" description="Bendra projekto informacija">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Projekto pavadinimas:" description="projekto pavadinimas" xml:lang="lt"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Paskirtis:" description="" xml:lang="lt"></property>
+		
+	</page>
+	<page xml:lang="lv" name="basic" label="Informācija par Django projektu" description="Vispārīga informācija par projektu">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Projekta nosaukums:" description="projekta nosaukums" xml:lang="lv"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Mērķis:" description="" xml:lang="lv"></property>
+		
+	</page>
+	<page xml:lang="mai" name="basic" label="Django Project information" description="General Project Information">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Project Name:" description="project name" xml:lang="mai"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="गंतव्य:" description="" xml:lang="mai"></property>
+		
+	</page>
+	<page xml:lang="mk" name="basic" label="Django Project information" description="General Project Information">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Проект Име:" description="project name" xml:lang="mk"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destination:" description="" xml:lang="mk"></property>
+		
+	</page>
+	<page xml:lang="ml" name="basic" label="Django പദ്ധതി വിവരണം" description="പൊതുവായ പദ്ധതി വിവരങ്ങള്‍‍">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="പദ്ധതിയുടെ പേര്:" description="project name" xml:lang="ml"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="ലക്ഷ്യസ്ഥാനം:" description="" xml:lang="ml"></property>
+		
+	</page>
+	<page xml:lang="mr" name="basic" label="Django प्रकल्प माहिती" description="सर्वसाधारन प्रकल्प माहिती">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="प्रकल्प नाव:" description="प्रकल्प नाव" xml:lang="mr"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="मुक्काम:" description="" xml:lang="mr"></property>
+		
+	</page>
+	<page xml:lang="ms" name="basic" label="Django Project information" description="General Project Information">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Nama Projek:" description="project name" xml:lang="ms"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destination:" description="" xml:lang="ms"></property>
+		
+	</page>
+	<page xml:lang="nb" name="basic" label="Informasjon om Django-prosjekt" description="Generell informasjon om prosjektet">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Prosjektnavn:" description="Prosjektnavn" xml:lang="nb"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Mål:" description="" xml:lang="nb"></property>
+		
+	</page>
+	<page xml:lang="ne" name="basic" label="डिजङ्गो परियोजना सूचना" description="साधारण परियोजना सूचना">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="परियोजनाको नाम:" description="परियोजनाको नाम" xml:lang="ne"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="गन्तव्य:" description="" xml:lang="ne"></property>
+		
+	</page>
+	<page xml:lang="nl" name="basic" label="Django projectinformatie" description="Algemene projectinformatie">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Projectnaam:" description="projectnaam" xml:lang="nl"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Bestemming:" description="" xml:lang="nl"></property>
+		
+	</page>
+	<page xml:lang="oc" name="basic" label="Django Project information" description="General Project Information">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Nom del projècte :" description="nom del projècte" xml:lang="oc"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destinacion :" description="" xml:lang="oc"></property>
+		
+	</page>
+	<page xml:lang="or" name="basic" label="Django Project information" description="General Project Information">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Project Name:" description="project name" xml:lang="or"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="ଲକ୍ଷ୍ଯ:" description="" xml:lang="or"></property>
+		
+	</page>
+	<page xml:lang="pa" name="basic" label="Django Project information" description="General Project Information">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="ਪ੍ਰੋਜੈਕਟ ਨਾਂ:" description="project name" xml:lang="pa"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destination:" description="" xml:lang="pa"></property>
+		
+	</page>
+	<page xml:lang="pl" name="basic" label="Informacje o projekcie Django" description="Ogólne informacje o projekcie">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Nazwa projektu:" description="nazwa projektu" xml:lang="pl"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Katalog docelowy:" description="" xml:lang="pl"></property>
+		
+	</page>
+	<page xml:lang="pt" name="basic" label="Informação do projeto Django" description="Informação geral do projeto">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Nome do projeto:" description="nome do projeto" xml:lang="pt"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destino:" description="" xml:lang="pt"></property>
+		
+	</page>
+	<page xml:lang="pt_BR" name="basic" label="Informações do projeto Django" description="Informações gerais do projeto">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Nome do projeto:" description="nome do projeto" xml:lang="pt_BR"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destino:" description="" xml:lang="pt_BR"></property>
+		
+	</page>
+	<page xml:lang="ro" name="basic" label="Informații proiect Django" description="Informație generală despre proiect">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Nume proiect:" description="nume proiect" xml:lang="ro"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destinație:" description="" xml:lang="ro"></property>
+		
+	</page>
+	<page xml:lang="ru" name="basic" label="Информация о проекте Django" description="Основная информация о проекте">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Название проекта:" description="Название проекта" xml:lang="ru"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Назначение:" description="" xml:lang="ru"></property>
+		
+	</page>
+	<page xml:lang="rw" name="basic" label="Django Project information" description="General Project Information">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Project Name:" description="project name" xml:lang="rw"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Aho bijya" description="" xml:lang="rw"></property>
+		
+	</page>
+	<page xml:lang="si" name="basic" label="Django Project information" description="General Project Information">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Project Name:" description="project name" xml:lang="si"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="ගමනාන්තය:" description="" xml:lang="si"></property>
+		
+	</page>
+	<page xml:lang="sk" name="basic" label="Informácie o projekte Django" description="Základné informácie o projekte">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Názov projektu:" description="názov projektu" xml:lang="sk"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Cieľ:" description="" xml:lang="sk"></property>
+		
+	</page>
+	<page xml:lang="sl" name="basic" label="Podrobnosti Django projekta" description="Splošne podrobnosti projekta">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Ime projekta:" description="ime projekta" xml:lang="sl"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Cilj:" description="" xml:lang="sl"></property>
+		
+	</page>
+	<page xml:lang="sq" name="basic" label="Django Project information" description="General Project Information">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Project Name:" description="project name" xml:lang="sq"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destinimi:" description="" xml:lang="sq"></property>
+		
+	</page>
+	<page xml:lang="sr" name="basic" label="Подаци о Ђанго пројекту" description="Информације о пројекту">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Назив пројекта:" description="назив пројекта" xml:lang="sr"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Одредиште:" description="" xml:lang="sr"></property>
+		
+	</page>
+	<page xml:lang="sr@latin" name="basic" label="Podaci o Đango projektu" description="Informacije o projektu">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Naziv projekta:" description="naziv projekta" xml:lang="sr@latin"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Odredište:" description="" xml:lang="sr@latin"></property>
+		
+	</page>
+	<page xml:lang="sv" name="basic" label="Information om Django-projekt" description="Allmän projektinformation">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Projektnamn:" description="projektnamn" xml:lang="sv"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Mål:" description="" xml:lang="sv"></property>
+		
+	</page>
+	<page xml:lang="te" name="basic" label="జంగో ప్రాజెక్టు సమాచారం" description="సాధారణ ప్రాజెక్టు సమాచారం">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="ప్రాజెక్టు పేరు:" description="ప్రాజెక్టు పేరు" xml:lang="te"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="గమ్యం:" description="" xml:lang="te"></property>
+		
+	</page>
+	<page xml:lang="tg" name="basic" label="Django Project information" description="General Project Information">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Project Name:" description="project name" xml:lang="tg"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Destination:" description="" xml:lang="tg"></property>
+		
+	</page>
+	<page xml:lang="th" name="basic" label="ข้อมูลโครงการ Django" description="ข้อมูลทั่วไปของโครงการ">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="ชื่อโครงการ:" description="ชื่อโครงการ" xml:lang="th"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="ปลายทาง:" description="" xml:lang="th"></property>
+		
+	</page>
+	<page xml:lang="tr" name="basic" label="Django Proje bilgisi" description="Genel Proje Bilgisi">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Projenin Adı:" description="proje ismi" xml:lang="tr"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Hedef:" description="" xml:lang="tr"></property>
+		
+	</page>
+	<page xml:lang="ug" name="basic" label="Django قۇرۇلۇشى ئۇچۇرى" description="قۇرۇلۇشنىڭ ئومۇمىي ئۇچۇرلىرى">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="قۇرۇلۇش ئاتى:" description="قۇرۇلۇش ئاتى" xml:lang="ug"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="نىشان:" description="" xml:lang="ug"></property>
+		
+	</page>
+	<page xml:lang="uk" name="basic" label="Інформація про проект Django" description="Інформація про проект">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Назва проекту:" description="Назва проекту" xml:lang="uk"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Опис:" description="" xml:lang="uk"></property>
+		
+	</page>
+	<page xml:lang="vi" name="basic" label="Thông tin dự án Django" description="Thông tin dự án chung">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="Tên dự án:" description="tên dự án" xml:lang="vi"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="Ðích:" description="" xml:lang="vi"></property>
+		
+	</page>
+	<page xml:lang="zh_CN" name="basic" label="Django 项目信息 " description="项目常规信息">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="项目名称：" description="项目名称" xml:lang="zh_CN"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="目的：" description="" xml:lang="zh_CN"></property>
+		
+	</page>
+	<page xml:lang="zh_HK" name="basic" label="Django 專案資訊" description="一般專案資訊">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="專案名稱：" description="專案名稱" xml:lang="zh_HK"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="目的地:" description="" xml:lang="zh_HK"></property>
+		
+	</page>
+	<page xml:lang="zh_TW" name="basic" label="Django 專案資訊" description="一般專案資訊">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="myweb" label="專案名稱：" description="專案名稱" xml:lang="zh_TW"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default='[+AnjutaProjectDirectory+]/[+(string-downcase (get "Name"))+]' label="目的地:" description="" xml:lang="zh_TW"></property>
+		
+	</page>
+	
+	
+	<content>
+		<directory source="python" destination="[+Destination+]">
+			<file source="project.anjuta" destination='[+(string-substitute (string->c-name! (string-downcase (get "Name"))) " " "-")+].anjuta'/>
+		</directory>
+	</content>
+	
+	<action>
+		
+		<run command="sh -c &quot;cd [+(raw-shell-str (get 'Destination))+] &amp;&amp; if [ &quot;&quot;`which django-admin` != &quot;&quot; ]; then `which django-admin` startproject [+(string-substitute (string->c-name! (string-downcase (get 'Name))) (string #\sp) (string #\-))+]; else `which django-admin.py` startproject [+(string-substitute (string->c-name! (string-downcase (get 'Name))) (string #\sp) (string #\-))+]; fi;&quot;"/>
+		<open file='[+Destination+]/[+(string-substitute (string->c-name! (string-downcase (get "Name"))) " " "-")+].anjuta'/>
+		<open file='[+Destination+]/[+(string-substitute (string->c-name! (string-downcase (get "Name"))) " " "-")+]/settings.py'/>
+	</action>
+</project-template>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="language-support-cpp-modelines-emacs" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="anjuta-code-indentation#editor-modelines"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Támogatott Emacs módsor-szolgáltatások.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Emacs módsorok</title>
+
+  <p>Az ilyen módsor egy megjegyzés a fájl első sorában (vagy a másodikban, ha az első egy shebang-et („#!”) tartalmaz). Ez változónevek listájából áll, melyeket <code>:</code> és egy érték követ. A változóneveket <code>;</code> választja el, és az egészet <code>-*-</code> veszi körül.</p>
+
+  <p>Egy tipikus <app>Emacs</app> módsor a következőképpen néz ki:</p>
+  
+  <code>
+/* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
+  </code>
+
+  <p>Az Anjuta csak a következő változókat támogatja.</p>
+
+  <terms>
+    <item>
+      <title><code>indent-tabs-mode</code></title>
+      <p>Állítsa <code>t</code>-re tabok használatához behúzásra, vagy <code>nil</code>-re szóközök használatához.</p>
+    </item>
+    <item>
+      <title><code>tab-width</code></title>
+      <p>Egy tab karakternek megfelelő szóköz karakterek száma.</p>
+    </item>
+    <item>
+      <title><code>c-basic-offset</code></title>
+      <p>C kód behúzásához használt szóköz karakterek száma.</p>
+    </item>
+  </terms>
+ 
+</page>

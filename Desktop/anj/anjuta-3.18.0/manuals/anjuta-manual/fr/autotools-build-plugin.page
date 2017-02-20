@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-plugin" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Greffon de construction autotools</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Greffon de construction autotools</title>
+
+  <p>Ce greffon vise les projets autotools, mais comme ils utilisent make, il sert aussi à d'autres sortes de projets utilisant make.</p>
+
+  <section>
+    <title>Utilisation de la commande make</title>
+    <p>Voici une liste des cibles utilisées par le greffon. Elles sont mises en œuvre dans tous les projets autotools, mais vous aurez à les mettre en œuvre vous-même si vous utilisez un makefile personnalisé.</p>
+    <terms>
+      <item>
+        <title><cmd>make <var>nom_du_fichier_objet</var></cmd></title>
+        <p>Utilisée pour compiler un fichier source. Le nom du fichier objet est obtenu en remplaçant l'extension du fichier source par l'extension de l'objet correspondant.</p>
+      </item>
+      <item>
+        <title><cmd>make</cmd></title>
+        <p>Utilisée pour construire toutes les cibles dans un répertoire.</p>
+      </item>
+      <item>
+        <title><cmd>make install</cmd></title>
+        <p>Utilisée pour installer toutes les cibles dans un répertoire.</p>
+      </item>
+      <item>
+        <title><cmd>make clean</cmd></title>
+        <p>Utilisée pour supprimer tous les fichiers construits dans un répertoire.</p>
+      </item>
+      <item>
+        <title><cmd>make dist</cmd></title>
+        <p>Utilisée pour construire un paquet de distribution, n'est appelée que dans le répertoire du projet.</p>
+      </item>
+    </terms>    
+
+    <note style="tip">
+      <p>Étant donné que make est livré avec des règles par défaut qui lui permettent de compiler et de faire l'édition de lien d'un programme C sans avoir besoin d'un makefile, il est possible de compiler un programme C à partir d'un fichier source unique, sans makefile ni projet.</p>
+    </note>
+  </section>
+
+</page>

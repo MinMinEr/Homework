@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-wizard-create" xml:lang="ca">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-project-management" group="first"/>
+    <link type="seealso" xref="project-manager"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Creació d'un projecte nou des de zero.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jaume Planas</mal:name>
+      <mal:email>jplanas@itberga.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gil Forcada</mal:name>
+      <mal:email>gilforcada@guifi.net</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Creació d'un projecte</title>
+
+  <p>Els projectes nous es creen a partir de plantilles. L'<app>Anjuta</app> us demanarà alguna informació, com el tipus de projecte, el seu nom, etc.</p>
+
+  <steps>
+    <item>
+      <p>Trieu <guiseq><gui>Fitxer</gui><gui>Nou</gui><gui>Projecte</gui></guiseq> en el <gui>menú principal</gui>.</p>
+      <p>O a la llista desplegable del botó <gui>Nou</gui> de la <gui>barra d'eines superior</gui>, trieu <gui>Projecte</gui> per iniciar l'auxiliar de projectes.</p>
+    </item>
+    <item>
+      <p>Trieu la icona que representa el tipus de projecte que voleu crear i feu clic a <gui>Continua</gui>.</p>
+      <note style="tip">
+        <p>Deixeu el ratolí sobre d'una icona de projecte un moment perquè aparegui un missatge emergent que mostrarà més informació sobre el tipus de projecte.</p>
+      </note>
+    </item>
+    <item>
+      <p>Segons el tipus de projecte triat, haureu d'introduir un tipus d'informació o una altra. Quan hàgiu acabat, feu clic a <gui>Continua</gui>.</p>
+      <p>Totes les dades s'agrupen en pàgines, normalment haureu d'emplenar dues o tres pàgines. Podeu tornar enrere en qualsevol moment utilitzant el botó <gui>Vés enrere</gui>.</p>
+      <note style="tip">
+        <p>Mantingueu el ratolí sobre del botó o de l'àrea d'escriptura un moment perquè es mostri un petit missatge emergent amb més informació sobre el paràmetre corresponent.</p>
+      </note>
+    </item>
+    <item>
+      <p>Després d'emplenar totes les pàgines de dades, obtindreu una pàgina de resum on es mostra la informació principal sobre el projecte. Encara no s'ha escrit res al disc. Feu clic a <gui>Aplica</gui> per desar el projecte i obrir-lo a l'<app>Anjuta</app>.</p>
+    </item>
+  </steps>
+
+  <note style="advanced">
+    <p>Cada tipus de project correspon a una plantilla. L'<app>Anjuta</app> ja inclou diverses plantilles, però podeu afegir-ne de personalitzades o escriure les vostres.</p>
+  </note>
+
+</page>

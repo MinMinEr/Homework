@@ -1,0 +1,57 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaPluginFactory
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### ENUM IAnjutaPluginFactoryError ##### -->
+<para>
+
+</para>
+
+@IANJUTA_PLUGIN_FACTORY_OK: 
+@IANJUTA_PLUGIN_FACTORY_MISSING_LOCATION: 
+@IANJUTA_PLUGIN_FACTORY_MISSING_TYPE: 
+@IANJUTA_PLUGIN_FACTORY_MISSING_MODULE: 
+@IANJUTA_PLUGIN_FACTORY_INVALID_MODULE: 
+@IANJUTA_PLUGIN_FACTORY_MISSING_FUNCTION: 
+@IANJUTA_PLUGIN_FACTORY_INVALID_TYPE: 
+@IANJUTA_PLUGIN_FACTORY_UNKNOWN_ERROR: 
+
+<!-- ##### FUNCTION ianjuta_plugin_factory_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_plugin_factory_new_plugin ##### -->
+<para>
+
+</para>
+
+@obj: 
+@handle: 
+@shell: 
+@err: 
+@Returns: 
+
+

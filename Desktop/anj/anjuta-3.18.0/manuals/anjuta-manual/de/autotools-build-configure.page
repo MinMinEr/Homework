@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-configure" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="first"/>
+    <link type="seealso" xref="autotools-project-backend"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Ein Autotools-Projekt konfigurieren und Konfigurationen verwalten.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ein Projekt konfigurieren</title>
+
+  <p>Vor dem Compilieren und Erstellen von Dateien muss ein Autotools-Projekt konfiguriert werden. Dieser Schritt ist zum Einstellen globaler Optionen erforderlich, um zu prüfen, ob alle benötigten Bibliotheken und Programme auf dem System installiert sind, und um die passenden Erstellungsskripte zu generieren.</p>
+
+  <section>
+    <title>Das Projekt konfigurieren</title>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Erstellen</gui><gui>Projekt konfigurieren …</gui></guiseq> im <gui>Hauptmenü</gui>.</p>
+      </item>
+      <item>
+        <p>Die voreingestellte Konfiguration beibehalten, eine neue Konfiguration wählen oder eine neue erstellen. Sie können alle Konfigurationsoptionen einsehen und ändern. Lesen Sie <link xref="autotools-build-configure-dialog"/> für weitere Informationen.</p>
+      </item>
+      <item>
+        <p>Klicken Sie auf <gui>Ausführen</gui>, um das Projekt zu konfigurieren.</p>
+      </item>
+    </steps>
+
+    <p>Die Konfiguration könnte scheitern, wenn einige Bibliotheken oder Programme nicht oder nicht in der richtigen Version installiert sind. Die Fehlermeldung informiert Sie darüber, was genau fehlt.</p>
+  </section>
+
+  <section>
+    <title>Die Konfiguration ändern</title>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Erstellen</gui><gui>Konfiguration wählen</gui><gui>Weitere Konfiguration</gui></guiseq> im <gui>Hauptmenü</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Wenn das Projekt noch nicht konfiguriert wurde, so wird es automatisch vor dem Erstellen einer Datei konfiguriert.</p>
+
+  </section>
+
+  <section>
+    <title>Konfiguration entfernen</title>
+
+    <p>Es ist vergleichbar mit dem Bereinigen eines Projekts, aber es werden noch mehr Dateien entfernt. Sie müssen Ihr Projekt danach neu konfigurieren, um es erstellen zu können.</p>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Erstellen</gui><gui>Konfiguration entfernen</gui></guiseq> im <gui>Hauptmenü</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+</page>

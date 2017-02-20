@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="project-manager" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="project-manager-root"/>
+    <desc>Projektverwaltung</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Projektverwaltung-Plugin</title>
+
+  <p><app>Anjuta</app> unterstützt bereits vorhandene Projektformate über Plugin-Backends. Das wichtigste davon ist das Autotools-Format, das üblicherweise unter Linux verwendet wird.</p>
+
+  <p>
+    The project backend to use is chosen when creating or importing a new
+    project in <app>Anjuta</app>. It is displayed in the properties of the
+    project root node and can be changed at any time.
+  </p>
+
+  <p>Was auch immer das darunterliegende Backend ist, die grafische Benutzeroberfläche wird immer die gleiche sein. Allerdings könnten einige Funktionen deaktiviert sein.</p>
+
+  <section id="backend">
+    <title>Projekt-Backend-Plugin</title>
+  </section>
+
+</page>

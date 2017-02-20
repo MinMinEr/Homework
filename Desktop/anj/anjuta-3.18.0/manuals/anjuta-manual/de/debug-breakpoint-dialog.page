@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-breakpoint-dialog" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="debug-breakpoint"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Wird zum Anlegen oder Bearbeiten von Haltepunkten verwendet</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Haltepunkt-Dialog</title>
+
+  <terms>
+    <item>
+      <title><gui>Ort</gui></title>
+      <p>Die Position des Haltepunkts. Sie kann für einen bestehenden Haltepunkt nicht geändert werden. Der Haltepunkt kann in einer bestimmten Zeilennummer oder an den Beginn einer Funktion festgelegt werden. Verwenden Sie eines der folgenden Formate:</p>
+      <list>
+        <item><p><var>Dateiname</var>:<var>Zeilennummer</var></p></item>
+        <item><p><var>Funktionsname</var></p></item>
+        <item><p><var>Datei</var>:<var>Funktionsname</var></p></item>
+      </list>
+    </item>
+    <item>
+      <title><gui>Bedingung</gui></title>
+      <p>Die Haltebedingung ist ein Ausdruck, der zum booleschen Wert <code>WAHR</code> (1) oder <code>FALSCH</code> (0) auswertet. Die Haltebedingung wird jedes Mal ausgewertet, wenn der Haltepunkt während der Programmausführung angelaufen wird. Die Fehlerdiagnose unterbricht die Ausführung nur, wenn das Ergebnis der Auswertung <code>WAHR</code> ist.</p>
+      <p>Bei leerem Feld ist die Bedingung immer <code>WAHR</code>.</p>
+    </item>
+    <item>
+      <title><gui>Durchgang</gui></title>
+       <p>Die Fehlerdiagnose kann den Haltepunkt für eine bestimmte Anzahl an Durchgängen übergehen. Wenn die Durchgangszahl ungleich Null ist, so wird die Fehlerdiagnose den Haltepunkt eine bestimmte Anzahl Durchgänge durchlaufen, bevor angehalten wird.</p>
+       <p>Die Durchgangszahl hat höhere Präferenz als die Bedingung. Nur wenn die Durchgangszahl erreicht wurde, wertet die Fehlerdiagnose die Bedingung aus und hält das Programm an, falls diese vorhanden ist.</p>
+    </item>
+  </terms>
+
+</page>

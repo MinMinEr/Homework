@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="anjuta-code-indentation" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-10-24" status="draft"/>
+    <desc>Jak nastavit a používat automatické odsazování, aby byl styl kódu jednotný.</desc>
+
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  </info>
+
+  <title>Automatické odsazování</title>
+
+<section>
+<title>Jak nastavit a používat automatické odsazování</title>
+
+<section>
+<title>Ruční nastavení</title>
+
+<p>Automatické odsazování se nastavuje v předvolbách (<guiseq><gui>Upravit</gui> <gui>Předvolby</gui></guiseq>) na kartě příslušného programovacího jazyka. Je možné nastavit šířku odsazení pro několik typů výrazů.</p>
+
+<p>Velkou nevýhodou ručního nastavení odsazování je, že všichni vývojáři pracující na projektu musí používat to stejné nastavení, jinak budou výsledkem různé styly použité ve stejném souboru. Jak to řešit lépe se podívejte v následujícím oddíle.</p>
+
+<note>
+<p>Pokud to výslovně nezměníte v předvolbách, tak nastevení nazlezená v řádcích s režimem v souboru budou mít kvůli zachování jednotnosti souboru přednost před nastavením v aplikaci.</p>
+</note>
+</section>
+
+<section id="editor-modelines">
+<title>Řádky s režimem</title>
+
+<p>Řádky s režimem se používají jako pomocné, aby editory mohly automaticky zjistit režim odsazení, jaký se má používat v konkrétním souboru. To je obzvláště užitečné, když na tomtéž projektu pracuje více vývojářů a používají při tom různá vývojová prostředí.</p>
+
+<p>Anjuta podporuje řádky s režimem ve dvou formátech používaných editory <app>Vim</app> a <app>Emacs</app>.</p>
+
+</section>
+
+</section>
+
+<section>
+<title>Odsazení bloku kódu</title>
+
+<p>Normálně jsou nové řádky vhodně odsazovány automaticky, ale můžete odsadit i stávající řádky nebo všechen vybraný kód pomocí nabídky <guiseq><gui>Upravit</gui> <gui>Automaticky odsadit</gui></guiseq>.</p>
+
+</section>
+
+</page>

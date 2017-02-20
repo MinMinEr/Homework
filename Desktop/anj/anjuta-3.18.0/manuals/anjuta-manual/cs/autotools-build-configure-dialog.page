@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-configure-dialog" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="autotools-project-backend"/>
+    <link type="seealso" xref="autotools-build-configure"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Dialogové okno konfigurace Autotools.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  </info>
+
+  <title>Konfigurace autotools</title>
+
+  <p>V dialogovém okně <gui>Konfigurace projektu</gui> můžete nastavit následující volby a zkonfigurovat projekt.</p>
+
+  <terms>
+    <item>
+      <title><gui>Přegenerovat projekt</gui></title>
+      <p>Když je zaškrtnuto, je projet zcela znovu vygenerován. V opačném případě se jen zavolá příkaz „configure“. <app>Anjuta</app> automaticky kontroluje toto záškrtávací pole, když je zapotřebí, takže jej můžete ponechat v aktuálním stavu.</p>
+    </item>
+    <item>
+      <title><gui>Konfigurace</gui></title>
+      <p>Můžete mít několik různých konfigurací s různými volbami a složkami sestavení a v tomto textovém poli si je můžete pojmenovat. Typicky již máte nadefinovanou Výchozí konfiguraci, Ladicí konfiguraci usnadňující ladění programu (zachovávající zprostředkující proměnné a pořadí kódu) a Optimalizovanou konfiguraci generující rychlejší programy za cenu delšího času při sestavování. Můžete si definovat další vlastní konfigurace.</p>
+    </item>
+    <item>
+      <title><gui>Složka pro sestavení</gui></title>
+      <p>Zde vyberte složku pro sestavení. Může se jednat o složku projektu nebo jeho podsložku. To je užitečné zejména když se přepínáte mezi různými konfiguracemi, aby se nemusel vždy znovu sestavovat celý projekt.</p>
+      <note style="advanced">
+        <p>S autotools nemůžete mít konfiguraci používající různé složky, když již máte konfiguraci používající projektovou složku. Nejprve ji musíte odstranit.</p>
+      </note>
+      <note style="bug">
+        <p>Některé projekty s autotools nelze sestavit mimo projektovou složku. Stále sice můžete použít jinou konfiguraci, ale i ta musí používat nějakou projektovou složku a při každé takové změně konfigurace bude vše znovu kompilováno.</p>
+      </note>
+    </item>
+    <item>
+      <title><gui>Volby příkazu configure</gui></title>
+      <p>Toto textové pole uvádí všechny argumenty příkazového řádku použitého při volání configure. Všechny argumenty jsou oddělené mezerou a pokud obsahují mezeru, musí být uzavřeny do uvozovek. Každá z konfigurací vyplní toto textové pole výchozími hodnotami, které pak můžete upravit.</p>
+      <note style="advanced">
+        <p>Každý projekt s autotools podporuje běžný seznam s argumenty, ale může mít i argementy zadané. Seznam všech přejímaných argumentů můžete získat spuštěním <cmd>configure --help</cmd> na příkazovém řádku. Projekt potřebuje zkonfigurovat alespoň jedním spuštěním skriptu <cmd>configure</cmd>.</p>
+      </note>
+    </item>
+  </terms>
+
+</page>

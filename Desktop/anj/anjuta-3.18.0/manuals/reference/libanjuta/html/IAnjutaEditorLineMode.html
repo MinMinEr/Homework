@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: IAnjutaEditorLineMode</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="plugin-interfaces.html" title="Plugin interfaces">
+<link rel="prev" href="IAnjutaEditorLanguage.html" title="IAnjutaEditorLanguage">
+<link rel="next" href="IAnjutaEditorSearch.html" title="IAnjutaEditorSearch">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#IAnjutaEditorLineMode.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#IAnjutaEditorLineMode.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="plugin-interfaces.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="IAnjutaEditorLanguage.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="IAnjutaEditorSearch.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="IAnjutaEditorLineMode"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="IAnjutaEditorLineMode.top_of_page"></a>IAnjutaEditorLineMode</span></h2>
+<p>IAnjutaEditorLineMode — Text editor line mode</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="IAnjutaEditorLineMode.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Unstable"><span class="acronym">Unstable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="IAnjutaEditorLineMode.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditorLineMode.html#ianjuta-editor-line-mode-error-quark" title="ianjuta_editor_line_mode_error_quark ()">ianjuta_editor_line_mode_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditorLineMode.html#ianjuta-editor-line-mode-convert" title="ianjuta_editor_line_mode_convert ()">ianjuta_editor_line_mode_convert</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditorLineMode.html#ianjuta-editor-line-mode-fix" title="ianjuta_editor_line_mode_fix ()">ianjuta_editor_line_mode_fix</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="IAnjutaEditorLineMode.html#IAnjutaEditorLineModeType" title="enum IAnjutaEditorLineModeType"><span class="returnvalue">IAnjutaEditorLineModeType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditorLineMode.html#ianjuta-editor-line-mode-get" title="ianjuta_editor_line_mode_get ()">ianjuta_editor_line_mode_get</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditorLineMode.html#ianjuta-editor-line-mode-set" title="ianjuta_editor_line_mode_set ()">ianjuta_editor_line_mode_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaEditorLineMode.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="IAnjutaEditorLineMode.html#IANJUTA-EDITOR-LINE-MODE-ERROR:CAPS" title="IANJUTA_EDITOR_LINE_MODE_ERROR">IANJUTA_EDITOR_LINE_MODE_ERROR</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="IAnjutaEditorLineMode.html#IAnjutaEditorLineModeType" title="enum IAnjutaEditorLineModeType">IAnjutaEditorLineModeType</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaEditorLineMode.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">╰──</span> IAnjutaEditorLineModeType
+    <a href="https://developer.gnome.org/gobject/unstable/GTypeModule.html">GInterface</a>
+    <span class="lineart">╰──</span> IAnjutaEditorLineMode
+</pre>
+</div>
+<div class="refsect1">
+<a name="IAnjutaEditorLineMode.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libanjuta/interfaces/ianjuta-editor-line-mode.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="IAnjutaEditorLineMode.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="IAnjutaEditorLineMode.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="ianjuta-editor-line-mode-error-quark"></a><h3>ianjuta_editor_line_mode_error_quark ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+ianjuta_editor_line_mode_error_quark (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.8.25.9.2.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-line-mode-convert"></a><h3>ianjuta_editor_line_mode_convert ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_editor_line_mode_convert (<em class="parameter"><code><a class="link" href="IAnjutaEditorLineMode.html" title="IAnjutaEditorLineMode"><span class="type">IAnjutaEditorLineMode</span></a> *obj</code></em>,
+                                  <em class="parameter"><code><a class="link" href="IAnjutaEditorLineMode.html#IAnjutaEditorLineModeType" title="enum IAnjutaEditorLineModeType"><span class="type">IAnjutaEditorLineModeType</span></a> mode</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Set the line ending mode to the given <em class="parameter"><code>mode</code></em>
+ and convert all line end
+characters in the buffer to <em class="parameter"><code>mode</code></em>
+ line end characters.</p>
+<div class="refsect3">
+<a name="id-1.8.25.9.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>Line mode to convert.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-line-mode-fix"></a><h3>ianjuta_editor_line_mode_fix ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_editor_line_mode_fix (<em class="parameter"><code><a class="link" href="IAnjutaEditorLineMode.html" title="IAnjutaEditorLineMode"><span class="type">IAnjutaEditorLineMode</span></a> *obj</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Convert EOL characters to majority of line mode. This is helpful
+when the buffer contains mixed line modes and we want to fix it.</p>
+<div class="refsect3">
+<a name="id-1.8.25.9.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-line-mode-get"></a><h3>ianjuta_editor_line_mode_get ()</h3>
+<pre class="programlisting"><a class="link" href="IAnjutaEditorLineMode.html#IAnjutaEditorLineModeType" title="enum IAnjutaEditorLineModeType"><span class="returnvalue">IAnjutaEditorLineModeType</span></a>
+ianjuta_editor_line_mode_get (<em class="parameter"><code><a class="link" href="IAnjutaEditorLineMode.html" title="IAnjutaEditorLineMode"><span class="type">IAnjutaEditorLineMode</span></a> *obj</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Get current line ending mode. It is auto-detected from the
+buffer contents.</p>
+<div class="refsect3">
+<a name="id-1.8.25.9.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.25.9.5.6"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-line-mode-set"></a><h3>ianjuta_editor_line_mode_set ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_editor_line_mode_set (<em class="parameter"><code><a class="link" href="IAnjutaEditorLineMode.html" title="IAnjutaEditorLineMode"><span class="type">IAnjutaEditorLineMode</span></a> *obj</code></em>,
+                              <em class="parameter"><code><a class="link" href="IAnjutaEditorLineMode.html#IAnjutaEditorLineModeType" title="enum IAnjutaEditorLineModeType"><span class="type">IAnjutaEditorLineModeType</span></a> mode</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Set the line ending mode to the given <em class="parameter"><code>mode</code></em>
+. Existing line end
+characters in the buffer are not touched. Only the newly added
+texts will have <em class="parameter"><code>mode</code></em>
+ line end characters.</p>
+<div class="refsect3">
+<a name="id-1.8.25.9.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mode</p></td>
+<td class="parameter_description"><p>Line mode to set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaEditorLineMode.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="IANJUTA-EDITOR-LINE-MODE-ERROR:CAPS"></a><h3>IANJUTA_EDITOR_LINE_MODE_ERROR</h3>
+<pre class="programlisting">#define IANJUTA_EDITOR_LINE_MODE_ERROR ianjuta_editor_line_mode_error_quark()
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IAnjutaEditorLineModeType"></a><h3>enum IAnjutaEditorLineModeType</h3>
+<p>This enumeration is used to specify the type of text. Note that not all
+editors implement this.</p>
+<div class="refsect3">
+<a name="id-1.8.25.10.3.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-EDITOR-LINE-MODE-LF:CAPS"></a>IANJUTA_EDITOR_LINE_MODE_LF</p></td>
+<td class="enum_member_description">
+<p>Line-Feed (Unix)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-EDITOR-LINE-MODE-CR:CAPS"></a>IANJUTA_EDITOR_LINE_MODE_CR</p></td>
+<td class="enum_member_description">
+<p>Carat return (Max)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-EDITOR-LINE-MODE-CRLF:CAPS"></a>IANJUTA_EDITOR_LINE_MODE_CRLF</p></td>
+<td class="enum_member_description">
+<p>Caret return + line-feed (Windows)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

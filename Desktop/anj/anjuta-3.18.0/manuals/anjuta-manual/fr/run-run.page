@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="run-run" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="first"/>
+    <link type="seealso" xref="run-parameters-dialog"/>
+    <link type="seealso" xref="autotools-build-install"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Démarrer un programme sans le débogueur.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Exécution d'un programme</title>
+
+  <p>Si <app>Anjuta</app> est utilisé pour démarrer un programme, il s'assure qu'il est bien à jour et le construit si besoin.</p>
+
+  <steps>
+    <item>
+      <p>Dans le <gui>menu principal</gui>, choisissez <guiseq><gui>Exécuter</gui><gui>Exécuter</gui></guiseq> ou appuyez sur <key>F3</key> pour exécuter le programme actuel.</p>
+    </item>
+  </steps>
+
+  <p>Le programme actuel et plusieurs paramètres peuvent être définis dans la boîte de dialogue <gui>Paramètres du programme</gui>. Consultez <link xref="run-parameters-dialog"/> pour plus d'informations.</p>
+
+  <steps>
+    <item>
+      <p>Dans le <gui>menu principal</gui>, choisissez <guiseq><gui>Exécuter</gui><gui>Paramètres du programme...</gui></guiseq> pour afficher la boîte de dialogue.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Si le programme a besoin de fichiers de données, il vous faut probablement les installer avant de l'exécuter. Consultez <link xref="autotools-build-install"/> pour plus d'informations.</p>
+  </note>
+ 
+</page>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-import" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-project-management" group="first"/>
+    <link type="seealso" xref="anjuta-project-create"/>
+    <link type="seealso" xref="project-manager"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Létező projekt importálása.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Projekt importálása</title>
+
+  <p>Az <app>Anjuta</app> nem rendelkezik saját projektformátummal. Képes betölteni a már meglévő formátumú (például makefile vagy autotools) projekteket, és nem követeli meg, hogy más fejlesztők is azt használják. Az Anjuta saját beállításait egy <file>.anjuta</file> kiterjesztésű fájl tárolja, és egy rejtett könyvtár a projekt könyvtárában. Egy projekt <app>Anjutaban</app> való használatához és ezen beállításfájlok létrehozásához importálnia kell a projektet. Az importálás nem módosítja a projektfájlokat.</p>
+
+  <steps>
+    <item>
+      <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Fájl</gui><gui>Új</gui><gui>Projekt meglévő forrásokból</gui></guiseq> menüpontot, vagy a <gui>felső eszköztár</gui> <gui>Új</gui> gombja melletti legördülő lista <gui>Projekt meglévő forrásokból</gui> menüpontját.</p>
+    </item>
+    <item>
+      <p>Ha a projekt már jelen van a számítógépén, akkor válassza az <gui>Importálás mappából</gui> lehetőséget, majd válassza ki a projekt könyvtárát.</p>
+      <p>Ha a projektet egy verziókövetőből kell kimásolni, akkor válassza az <gui>Importálás verziókövetőből</gui> lehetőséget. Ezután válassza ki a verziókövető rendszert, a kiszolgáló címét és a célkönyvtárat a számítógépén.</p>
+    </item>
+    <item>
+      <p>Egy meglévő projekt kiválasztása után a <gui>Projekt neve</gui> szövegmező kitöltésre kerül a projektkönyvtár nevével, de ezt megváltoztathatja. Ha elkészült, akkor nyomja meg az <gui>Importálás</gui> gombot a projekt szükség szerinti letöltéséhez és az <app>Anjuta</app> által igényelt fájlok létrehozásához.</p>
+    </item>
+    <item>
+      <p>Az <app>Anjuta</app> megpróbálja automatikusan megtalálni a projekt által használt projekt-háttérprogramot. Ha azonban több háttérprogram is lehetséges, akkor megjelenik egy ablak, amelyben ki kell választania egy projektháttérprogram-bővítményt. Olvassa el a projektháttérprogram leírását a választáshoz.</p>
+    </item>
+  </steps>
+
+</page>

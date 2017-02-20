@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="run-parameters-dialog" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="run-run"/>
+    <link type="seealso" xref="debug-run"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Ejecutar el diálogo de parámetros</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ejecutar el diálogo de parámetros</title>
+
+  <p>El diálogo <gui>ejecutar parámetro</gui> le permite definir el programa actual y diversos parámetros.</p>
+
+  <terms>
+    <item>
+      <title><gui>Programa</gui></title>
+      <p>Este es el programa que se ejecutará si ejecuta un programa con o sin el depurador. El menú desplegable le permite seleccionar programas creados por el proyecto actual, pero puede pulsar el botón <gui>Examinar</gui> para elegir otro programa.</p>
+    </item>
+    <item>
+      <title><gui>Argumentos</gui></title>
+      <p>Estos son los argumentos de línea de comandos usados por su programa. La lista desplegable almacena un histórico de los últimos argumentos usados.</p>
+    </item>
+    <item>
+      <title><gui>Carpeta de trabajo</gui></title>
+      <p>La carpeta de trabajo es la carpeta actual en la que se ejecutará su programa.</p>
+    </item>
+    <item>
+      <title><gui>Variables de entorno</gui></title>
+      <p>Puede pulsar en la sección desplegable para mostrar todas las variables de entorno que serán accesibles por su programa. De manera predeterminada, incluye todas las variables de entorno, que se muestran en gris claro.</p>
+      <p>Puede pulsar en el botón <gui>Nueva</gui> para añadir una variable de entorno nueva.</p>
+      <p>Puede pulsar en el botón <gui>Editar</gui> para editar el valor de la variable de entorno seleccionada.</p>
+      <p>Puede pulsar el botón <gui>Eliminar</gui> para quitar la variable de entorno seleccionada.</p>
+      <p>Cuando una variable no tiene el mismo valor que en el entorno actual, se muestra en negro.</p>
+    </item>
+    <item>
+      <title><gui>Ejecutar en una terminal</gui></title>
+      <p>Esto se debe comprobar para ejecutar el programa en una terminal, permitiéndole proporcionar entradas y ver sus salidas, usando los flujos estándar de Unix. No es necesario para programas que tengan interfaz gráfica.</p>
+    </item>
+  </terms>
+
+</page>

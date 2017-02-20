@@ -1,0 +1,467 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: IAnjutaMarkable</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="plugin-interfaces.html" title="Plugin interfaces">
+<link rel="prev" href="IAnjutaLoader.html" title="IAnjutaLoader">
+<link rel="next" href="IAnjutaMessageManager.html" title="IAnjutaMessageManager">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#IAnjutaMarkable.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#IAnjutaMarkable.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#IAnjutaMarkable.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="plugin-interfaces.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="IAnjutaLoader.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="IAnjutaMessageManager.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="IAnjutaMarkable"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="IAnjutaMarkable.top_of_page"></a>IAnjutaMarkable</span></h2>
+<p>IAnjutaMarkable — Implemented by editors (or views) with markers support</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="IAnjutaMarkable.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Unstable"><span class="acronym">Unstable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="IAnjutaMarkable.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaMarkable.html#ianjuta-markable-error-quark" title="ianjuta_markable_error_quark ()">ianjuta_markable_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaMarkable.html#ianjuta-markable-delete-all-markers" title="ianjuta_markable_delete_all_markers ()">ianjuta_markable_delete_all_markers</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaMarkable.html#ianjuta-markable-is-marker-set" title="ianjuta_markable_is_marker_set ()">ianjuta_markable_is_marker_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaMarkable.html#ianjuta-markable-location-from-handle" title="ianjuta_markable_location_from_handle ()">ianjuta_markable_location_from_handle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaMarkable.html#ianjuta-markable-mark" title="ianjuta_markable_mark ()">ianjuta_markable_mark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaMarkable.html#ianjuta-markable-unmark" title="ianjuta_markable_unmark ()">ianjuta_markable_unmark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaMarkable.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody><tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="IAnjutaMarkable.html#IAnjutaMarkable-marker-clicked" title="The “marker-clicked” signal">marker-clicked</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaMarkable.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="IAnjutaMarkable.html#IAnjutaMarkableMarker" title="enum IAnjutaMarkableMarker">IAnjutaMarkableMarker</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaMarkable.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">├──</span> IAnjutaMarkableError
+    <span class="lineart">╰──</span> IAnjutaMarkableMarker
+    <a href="https://developer.gnome.org/gobject/unstable/GTypeModule.html">GInterface</a>
+    <span class="lineart">╰──</span> IAnjutaMarkable
+</pre>
+</div>
+<div class="refsect1">
+<a name="IAnjutaMarkable.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libanjuta/interfaces/ianjuta-markable.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="IAnjutaMarkable.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="IAnjutaMarkable.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="ianjuta-markable-error-quark"></a><h3>ianjuta_markable_error_quark ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+ianjuta_markable_error_quark (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.8.44.10.2.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-markable-delete-all-markers"></a><h3>ianjuta_markable_delete_all_markers ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_markable_delete_all_markers (<em class="parameter"><code><a class="link" href="IAnjutaMarkable.html" title="IAnjutaMarkable"><span class="type">IAnjutaMarkable</span></a> *obj</code></em>,
+                                     <em class="parameter"><code><a class="link" href="IAnjutaMarkable.html#IAnjutaMarkableMarker" title="enum IAnjutaMarkableMarker"><span class="type">IAnjutaMarkableMarker</span></a> marker</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Delete the <em class="parameter"><code>marker</code></em>
+ from all locations.</p>
+<div class="refsect3">
+<a name="id-1.8.44.10.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>marker</p></td>
+<td class="parameter_description"><p>Marker to delete.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-markable-is-marker-set"></a><h3>ianjuta_markable_is_marker_set ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ianjuta_markable_is_marker_set (<em class="parameter"><code><a class="link" href="IAnjutaMarkable.html" title="IAnjutaMarkable"><span class="type">IAnjutaMarkable</span></a> *obj</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> location</code></em>,
+                                <em class="parameter"><code><a class="link" href="IAnjutaMarkable.html#IAnjutaMarkableMarker" title="enum IAnjutaMarkableMarker"><span class="type">IAnjutaMarkableMarker</span></a> marker</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Check if the <em class="parameter"><code>marker</code></em>
+ is set at the given <em class="parameter"><code>location</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.8.44.10.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>location</p></td>
+<td class="parameter_description"><p>Location to check.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>marker</p></td>
+<td class="parameter_description"><p>Marker to check.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.44.10.4.6"></a><h4>Returns</h4>
+<p> TRUE if the marker is set at the location, other false.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-markable-location-from-handle"></a><h3>ianjuta_markable_location_from_handle ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+ianjuta_markable_location_from_handle (<em class="parameter"><code><a class="link" href="IAnjutaMarkable.html" title="IAnjutaMarkable"><span class="type">IAnjutaMarkable</span></a> *obj</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> handle</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Location where a marker is set could have moved by some operation in
+the implementation. To retrieve the correct location where the marker
+has moved, pass the handle retured by <a class="link" href="IAnjutaMarkable.html#ianjuta-markable-mark" title="ianjuta_markable_mark ()"><code class="function">ianjuta_markable_mark()</code></a> to this
+method.</p>
+<div class="refsect3">
+<a name="id-1.8.44.10.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>Handle of location.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.44.10.5.6"></a><h4>Returns</h4>
+<p> Current location where the marker was set.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-markable-mark"></a><h3>ianjuta_markable_mark ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+ianjuta_markable_mark (<em class="parameter"><code><a class="link" href="IAnjutaMarkable.html" title="IAnjutaMarkable"><span class="type">IAnjutaMarkable</span></a> *obj</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> location</code></em>,
+                       <em class="parameter"><code><a class="link" href="IAnjutaMarkable.html#IAnjutaMarkableMarker" title="enum IAnjutaMarkableMarker"><span class="type">IAnjutaMarkableMarker</span></a> marker</code></em>,
+                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *tooltip</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Marks the specified location with the given marker type. Location is
+implementation depenedent. For example, for an editor location means
+lines where markers are set.</p>
+<div class="refsect3">
+<a name="id-1.8.44.10.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>location</p></td>
+<td class="parameter_description"><p>Location at which the marker to set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>marker</p></td>
+<td class="parameter_description"><p>Type of marker to be used</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tooltip</p></td>
+<td class="parameter_description"><p> optional tooltip displayed with the marker. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.44.10.6.6"></a><h4>Returns</h4>
+<p> Handle of the location marked. Can be used later to obtain
+new location, if it has been moved due to addetions/deletions in the
+implementor object.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-markable-unmark"></a><h3>ianjuta_markable_unmark ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_markable_unmark (<em class="parameter"><code><a class="link" href="IAnjutaMarkable.html" title="IAnjutaMarkable"><span class="type">IAnjutaMarkable</span></a> *obj</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> location</code></em>,
+                         <em class="parameter"><code><a class="link" href="IAnjutaMarkable.html#IAnjutaMarkableMarker" title="enum IAnjutaMarkableMarker"><span class="type">IAnjutaMarkableMarker</span></a> marker</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Clears the <em class="parameter"><code>marker</code></em>
+ at given <em class="parameter"><code>location</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.8.44.10.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>location</p></td>
+<td class="parameter_description"><p>Location where the marker is set.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>marker</p></td>
+<td class="parameter_description"><p>The marker to unset.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaMarkable.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="IAnjutaMarkableMarker"></a><h3>enum IAnjutaMarkableMarker</h3>
+<p>This enumeration is used to specify the pixmap used for the marker</p>
+<div class="refsect3">
+<a name="id-1.8.44.11.2.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-MARKABLE-LINEMARKER:CAPS"></a>IANJUTA_MARKABLE_LINEMARKER</p></td>
+<td class="enum_member_description">
+<p>Mark a particular line</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-MARKABLE-BOOKMARK:CAPS"></a>IANJUTA_MARKABLE_BOOKMARK</p></td>
+<td class="enum_member_description">
+<p>A bookmark</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-MARKABLE-MESSAGE:CAPS"></a>IANJUTA_MARKABLE_MESSAGE</p></td>
+<td class="enum_member_description">
+<p>An (error) message</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-MARKABLE-BREAKPOINT-DISABLED:CAPS"></a>IANJUTA_MARKABLE_BREAKPOINT_DISABLED</p></td>
+<td class="enum_member_description">
+<p>a disabled breakpoint</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-MARKABLE-BREAKPOINT-ENABLED:CAPS"></a>IANJUTA_MARKABLE_BREAKPOINT_ENABLED</p></td>
+<td class="enum_member_description">
+<p>a enabled breakpoint</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-MARKABLE-PROGRAM-COUNTER:CAPS"></a>IANJUTA_MARKABLE_PROGRAM_COUNTER</p></td>
+<td class="enum_member_description">
+<p>Marks the program counter position</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaMarkable.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="IAnjutaMarkable-marker-clicked"></a><h3>The <code class="literal">“marker-clicked”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="IAnjutaMarkable.html" title="IAnjutaMarkable"><span class="type">IAnjutaMarkable</span></a> *obj,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>         double_click,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>             location,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)</pre>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

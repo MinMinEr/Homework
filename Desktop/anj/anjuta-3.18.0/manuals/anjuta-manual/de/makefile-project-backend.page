@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="makefile-project-backend" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager#backend"/>
+    <desc>Makefile-basiertes Projekt-Backend</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Plugin für Makefile-basiertes Projekt-Backend</title>
+
+  <p>Ein »makefile« ist vermutlich die meist genutzte Methode, Software auf verschiedensten Plattformen zu erstellen. Ein »makefile« enthält eine Liste oder Regeln, die beschreiben, welche Befehle ausgeführt werden müssen, um ein Ziel unter Berücksichtigung all seiner Abhängigkeiten zu erstellen. Bei der Erstellung eines Programms ist das Ziel eine Objektdatei, und die Abhängigkeiten sind die Quelldateien. Das Ziel einer Regel kann eine Abhängigkeit einer anderen sein. Regeln können demnach untereinander verkettet sein bei der Erstellung des endgültigen Ziels.</p>
+
+  <p>Es ist ein allgemeines Werkzeug auf Basisebene, so dass es schwierig ist, alle Quelldateien und Ziele eines Projekts zu finden. D.h. <app>Anjuta</app> bietet nur eingeschränkte Unterstützung für makefile-Projekte. Es wird nur die eine makefile-Datei in dem obersten Projektordner eingelesen und Quelldateien und Ziele werden daraus extrahiert.</p>
+
+  <note style="bug">
+    <p>Wenn das Projekt-Backend nicht in der Lage ist, alle Quelldateien zu finden, so können Sie probieren, dass Ordner-Backend statt dessen zu verwenden. Es erkennt keine Ziele, sollte aber alle Quelldateien finden.</p>
+  </note>
+
+  <p>Das Ändern von Eigenschaften, Hinzufügen und Entfernen von Zielen und Quelldateien sind für dieses Backend deaktiviert, weil ein automatisches Bearbeiten nicht implementiert ist. Es muss von Hand mit einem Texteditor geändert werden. Nach jedem Speichern der makefile-Datei wird diese automatisch neu eingelesen.</p>
+
+</page>

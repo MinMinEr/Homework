@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="directory-project-backend" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager#backend"/>
+    <desc>Könyvtár projektháttérprogram.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Könyvtár projektháttérprogram-bővítmény</title>
+
+  <p>Ez a legegyszerűbb projekt-háttérprogram. Ebben nincs projektfájl. Egy fájlmegjelenítőhöz hasonlóan működik, az összes illeszkedő gyakori forráskiterjesztést (például <file>.c</file>, <file>.py</file>) forrásfájlnak tekintve. A könyvtárak megmaradnak a forrásfájlok csoportosítása érdekében, de nincs célfájl.</p>
+
+  <p>Ez a háttérprogram egy hasznos kerülő megoldás, ha a projektjéhez nincs megfelelő háttérprogram az <app>Anjutaban</app>, vagy ha a megfelelő háttérprogram nem támogatja teljesen a projektjét.</p>
+
+  <p>Az ilyen háttérprogramot használó projektben semmit nem lehet hozzáadni vagy megváltoztatni. Ha azonban létrehoz egy forrásfájlt a projekt könyvtárában a megfelelő kiterjesztéssel, akkor automatikusan felvételre kerül.</p>
+
+</page>

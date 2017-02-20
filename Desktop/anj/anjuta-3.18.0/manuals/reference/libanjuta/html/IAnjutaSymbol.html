@@ -1,0 +1,753 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: IAnjutaSymbol</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="plugin-interfaces.html" title="Plugin interfaces">
+<link rel="prev" href="IAnjutaStreamSavable.html" title="IAnjutaStreamSavable">
+<link rel="next" href="IAnjutaSymbolQuery.html" title="IAnjutaSymbolQuery">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#IAnjutaSymbol.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#IAnjutaSymbol.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="plugin-interfaces.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="IAnjutaStreamSavable.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="IAnjutaSymbolQuery.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="IAnjutaSymbol"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="IAnjutaSymbol.top_of_page"></a>IAnjutaSymbol</span></h2>
+<p>IAnjutaSymbol — Source code symbol interface</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="IAnjutaSymbol.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Unstable"><span class="acronym">Unstable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="IAnjutaSymbol.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaSymbol.html#ianjuta-symbol-error-quark" title="ianjuta_symbol_error_quark ()">ianjuta_symbol_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaSymbol.html#ianjuta-symbol-get-boolean" title="ianjuta_symbol_get_boolean ()">ianjuta_symbol_get_boolean</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaSymbol.html#ianjuta-symbol-get-file" title="ianjuta_symbol_get_file ()">ianjuta_symbol_get_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaSymbol.html#ianjuta-symbol-get-icon" title="ianjuta_symbol_get_icon ()">ianjuta_symbol_get_icon</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaSymbol.html#ianjuta-symbol-get-int" title="ianjuta_symbol_get_int ()">ianjuta_symbol_get_int</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaSymbol.html#ianjuta-symbol-get-string" title="ianjuta_symbol_get_string ()">ianjuta_symbol_get_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="IAnjutaSymbol.html#IAnjutaSymbolType" title="enum IAnjutaSymbolType"><span class="returnvalue">IAnjutaSymbolType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaSymbol.html#ianjuta-symbol-get-sym-type" title="ianjuta_symbol_get_sym_type ()">ianjuta_symbol_get_sym_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaSymbol.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="IAnjutaSymbol.html#IANJUTA-SYMBOL-ERROR:CAPS" title="IANJUTA_SYMBOL_ERROR">IANJUTA_SYMBOL_ERROR</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="IAnjutaSymbol.html#IAnjutaSymbolField" title="enum IAnjutaSymbolField">IAnjutaSymbolField</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="IAnjutaSymbol.html#IAnjutaSymbolType" title="enum IAnjutaSymbolType">IAnjutaSymbolType</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaSymbol.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">├──</span> IAnjutaSymbolField
+    <span class="lineart">╰──</span> IAnjutaSymbolType
+    <a href="https://developer.gnome.org/gobject/unstable/GTypeModule.html">GInterface</a>
+    <span class="lineart">╰──</span> IAnjutaSymbol
+</pre>
+</div>
+<div class="refsect1">
+<a name="IAnjutaSymbol.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libanjuta/interfaces/ianjuta-symbol.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="IAnjutaSymbol.description"></a><h2>Description</h2>
+<p>This interface is used to define a symbol, normally got from symbol
+queries. A symbol has various fields that can be retrieved by using
+their get methods. A symbol will have only those fields which have
+been selected to be included in their respective queries, so make sure
+the needed fields are correctly specified during query creation.</p>
+</div>
+<div class="refsect1">
+<a name="IAnjutaSymbol.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="ianjuta-symbol-error-quark"></a><h3>ianjuta_symbol_error_quark ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+ianjuta_symbol_error_quark (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.8.59.9.2.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-symbol-get-boolean"></a><h3>ianjuta_symbol_get_boolean ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ianjuta_symbol_get_boolean (<em class="parameter"><code><a class="link" href="IAnjutaSymbol.html" title="IAnjutaSymbol"><span class="type">IAnjutaSymbol</span></a> *obj</code></em>,
+                            <em class="parameter"><code><a class="link" href="IAnjutaSymbol.html#IAnjutaSymbolField" title="enum IAnjutaSymbolField"><span class="type">IAnjutaSymbolField</span></a> field</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Retreives the boolean value of a boolean <em class="parameter"><code>field</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.8.59.9.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>field</p></td>
+<td class="parameter_description"><p>The field to retrieve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.59.9.3.6"></a><h4>Returns</h4>
+<p> The boolean</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-symbol-get-file"></a><h3>ianjuta_symbol_get_file ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+ianjuta_symbol_get_file (<em class="parameter"><code><a class="link" href="IAnjutaSymbol.html" title="IAnjutaSymbol"><span class="type">IAnjutaSymbol</span></a> *obj</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>A convenience method to get GFile object for
+<a class="link" href="IAnjutaSymbol.html#IANJUTA-SYMBOL-FIELD-FILE-PATH:CAPS"><span class="type">IANJUTA_SYMBOL_FIELD_FILE_PATH</span></a> field. The file where the
+symbol is declared. It contains the absolute path of the file
+unlike raw value of field <a class="link" href="IAnjutaSymbol.html#IANJUTA-SYMBOL-FIELD-FILE-PATH:CAPS"><span class="type">IANJUTA_SYMBOL_FIELD_FILE_PATH</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.8.59.9.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.59.9.4.6"></a><h4>Returns</h4>
+<p> A GFile object. It must be unrefed after use.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-symbol-get-icon"></a><h3>ianjuta_symbol_get_icon ()</h3>
+<pre class="programlisting">const <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *
+ianjuta_symbol_get_icon (<em class="parameter"><code><a class="link" href="IAnjutaSymbol.html" title="IAnjutaSymbol"><span class="type">IAnjutaSymbol</span></a> *obj</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>A convenience method to get a small icon (16x16) representing the symbol
+kind. You *need* a query with fields <a class="link" href="IAnjutaSymbol.html#IANJUTA-SYMBOL-FIELD-ACCESS:CAPS"><span class="type">IANJUTA_SYMBOL_FIELD_ACCESS</span></a> and
+<a class="link" href="IAnjutaSymbol.html#IANJUTA-SYMBOL-FIELD-KIND:CAPS"><span class="type">IANJUTA_SYMBOL_FIELD_KIND</span></a> selected.</p>
+<div class="refsect3">
+<a name="id-1.8.59.9.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.59.9.5.6"></a><h4>Returns</h4>
+<p> a Pixbuf icon representing the symbol. Ref the icon if you
+need to keep it.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-symbol-get-int"></a><h3>ianjuta_symbol_get_int ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+ianjuta_symbol_get_int (<em class="parameter"><code><a class="link" href="IAnjutaSymbol.html" title="IAnjutaSymbol"><span class="type">IAnjutaSymbol</span></a> *obj</code></em>,
+                        <em class="parameter"><code><a class="link" href="IAnjutaSymbol.html#IAnjutaSymbolField" title="enum IAnjutaSymbolField"><span class="type">IAnjutaSymbolField</span></a> field</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Retreives the integer value of an integer <em class="parameter"><code>field</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.8.59.9.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>field</p></td>
+<td class="parameter_description"><p>The field to retrieve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.59.9.6.6"></a><h4>Returns</h4>
+<p> The integer</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-symbol-get-string"></a><h3>ianjuta_symbol_get_string ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+ianjuta_symbol_get_string (<em class="parameter"><code><a class="link" href="IAnjutaSymbol.html" title="IAnjutaSymbol"><span class="type">IAnjutaSymbol</span></a> *obj</code></em>,
+                           <em class="parameter"><code><a class="link" href="IAnjutaSymbol.html#IAnjutaSymbolField" title="enum IAnjutaSymbolField"><span class="type">IAnjutaSymbolField</span></a> field</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Retreives the string value of a string <em class="parameter"><code>field</code></em>
+.</p>
+<div class="refsect3">
+<a name="id-1.8.59.9.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>field</p></td>
+<td class="parameter_description"><p>The field to retrieve.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.59.9.7.6"></a><h4>Returns</h4>
+<p> The string</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-symbol-get-sym-type"></a><h3>ianjuta_symbol_get_sym_type ()</h3>
+<pre class="programlisting"><a class="link" href="IAnjutaSymbol.html#IAnjutaSymbolType" title="enum IAnjutaSymbolType"><span class="returnvalue">IAnjutaSymbolType</span></a>
+ianjuta_symbol_get_sym_type (<em class="parameter"><code><a class="link" href="IAnjutaSymbol.html" title="IAnjutaSymbol"><span class="type">IAnjutaSymbol</span></a> *obj</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>A convenience method to get value of <a class="link" href="IAnjutaSymbol.html#IANJUTA-SYMBOL-FIELD-TYPE:CAPS"><span class="type">IANJUTA_SYMBOL_FIELD_TYPE</span></a>
+field typecasted to IAnjutaSymbolType. Numerical value is unchanged.</p>
+<div class="refsect3">
+<a name="id-1.8.59.9.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.59.9.8.6"></a><h4>Returns</h4>
+<p> a <a class="link" href="IAnjutaSymbol.html#IAnjutaSymbolType" title="enum IAnjutaSymbolType"><span class="type">IAnjutaSymbolType</span></a></p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaSymbol.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="IANJUTA-SYMBOL-ERROR:CAPS"></a><h3>IANJUTA_SYMBOL_ERROR</h3>
+<pre class="programlisting">#define IANJUTA_SYMBOL_ERROR ianjuta_symbol_error_quark()
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IAnjutaSymbolField"></a><h3>enum IAnjutaSymbolField</h3>
+<p>Symbol Fields. Used to define and retrieve results from query. Each of
+these fields are either integer or string. Use the right method to
+retrieve them. That is, for integer use <a class="link" href="IAnjutaSymbol.html#ianjuta-symbol-get-int" title="ianjuta_symbol_get_int ()"><code class="function">ianjuta_symbol_get_int()</code></a>,
+for string use <a class="link" href="IAnjutaSymbol.html#ianjuta-symbol-get-string" title="ianjuta_symbol_get_string ()"><code class="function">ianjuta_symbol_get_string()</code></a>, and for boolean use
+<a class="link" href="IAnjutaSymbol.html#ianjuta-symbol-get-boolean" title="ianjuta_symbol_get_boolean ()"><code class="function">ianjuta_symbol_get_boolean()</code></a>. Some fields can be in both forms,
+e.g. <a class="link" href="IAnjutaSymbol.html#IANJUTA-SYMBOL-FIELD-TYPE:CAPS"><span class="type">IANJUTA_SYMBOL_FIELD_TYPE</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.8.59.10.3.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-FIELD-ID:CAPS"></a>IANJUTA_SYMBOL_FIELD_ID</p></td>
+<td class="enum_member_description">
+<p>Integer. A unique ID of the symbol</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-FIELD-NAME:CAPS"></a>IANJUTA_SYMBOL_FIELD_NAME</p></td>
+<td class="enum_member_description">
+<p>String. Name of the symbol</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-FIELD-FILE-POS:CAPS"></a>IANJUTA_SYMBOL_FIELD_FILE_POS</p></td>
+<td class="enum_member_description">
+<p>Integer. The file line number where the symbol is found.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-FILED-SCOPE-DEF-ID:CAPS"></a>IANJUTA_SYMBOL_FILED_SCOPE_DEF_ID</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-FIELD-FILE-SCOPE:CAPS"></a>IANJUTA_SYMBOL_FIELD_FILE_SCOPE</p></td>
+<td class="enum_member_description">
+<p>Boolean: TRUE if symbol is within file scope,
+    otherwise FALSE.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-FIELD-SIGNATURE:CAPS"></a>IANJUTA_SYMBOL_FIELD_SIGNATURE</p></td>
+<td class="enum_member_description">
+<p>String. Signature of a method, if symbol is a funtion.
+    Namely, the arguments list of the funtion.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-FIELD-RETURNTYPE:CAPS"></a>IANJUTA_SYMBOL_FIELD_RETURNTYPE</p></td>
+<td class="enum_member_description">
+<p>String. Return type of a method, if symbol is a function.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-FIELD-TYPE:CAPS"></a>IANJUTA_SYMBOL_FIELD_TYPE</p></td>
+<td class="enum_member_description">
+<p>Both string and Integer. Type attribute of a symbol.
+    In string form, it is name of the type in string form.
+    In integer form, it is IAnjutaSymbolType enumerator value.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-FIELD-TYPE-NAME:CAPS"></a>IANJUTA_SYMBOL_FIELD_TYPE_NAME</p></td>
+<td class="enum_member_description">
+<p>type_name attribute of a symbol.
+    If a type could be "class" then its type_name may be "MyFooClass" etc.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-FIELD-FILE-PATH:CAPS"></a>IANJUTA_SYMBOL_FIELD_FILE_PATH</p></td>
+<td class="enum_member_description">
+<p>String. The relative path to the file where the symbol is found.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-FIELD-PROJECT-NAME:CAPS"></a>IANJUTA_SYMBOL_FIELD_PROJECT_NAME</p></td>
+<td class="enum_member_description">
+<p>String. The project name to which the symbol belongs to.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-FIELD-PROJECT-VERSION:CAPS"></a>IANJUTA_SYMBOL_FIELD_PROJECT_VERSION</p></td>
+<td class="enum_member_description">
+<p>String. The project version to which the symbol belongs to.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-FIELD-IMPLEMENTATION:CAPS"></a>IANJUTA_SYMBOL_FIELD_IMPLEMENTATION</p></td>
+<td class="enum_member_description">
+<p>String. Implementation attribute of a symbol. It may be
+    "pure virtual", "virtual", etc.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-FIELD-ACCESS:CAPS"></a>IANJUTA_SYMBOL_FIELD_ACCESS</p></td>
+<td class="enum_member_description">
+<p>String. Access attribute of a symbol.
+    It may be "public", "private" etc.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-FIELD-KIND:CAPS"></a>IANJUTA_SYMBOL_FIELD_KIND</p></td>
+<td class="enum_member_description">
+<p>Kind attribute of a symbol, such as
+    "enumerator", "namespace", "class" etc.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-FIELD-IS-CONTAINER:CAPS"></a>IANJUTA_SYMBOL_FIELD_IS_CONTAINER</p></td>
+<td class="enum_member_description">
+<p>Boolean. TRUE if symbol is
+    a scope container, such as namespace, class, struct etc., otherwise
+    FALSE.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-FIELD-END:CAPS"></a>IANJUTA_SYMBOL_FIELD_END</p></td>
+<td class="enum_member_description">
+<p>The end marker.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IAnjutaSymbolType"></a><h3>enum IAnjutaSymbolType</h3>
+<div class="refsect3">
+<a name="id-1.8.59.10.4.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-NONE:CAPS"></a>IANJUTA_SYMBOL_TYPE_NONE</p></td>
+<td class="enum_member_description">
+<p>None spedified.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-UNDEF:CAPS"></a>IANJUTA_SYMBOL_TYPE_UNDEF</p></td>
+<td class="enum_member_description">
+<p>Unknown type.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-CLASS:CAPS"></a>IANJUTA_SYMBOL_TYPE_CLASS</p></td>
+<td class="enum_member_description">
+<p>Class declaration</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-ENUM:CAPS"></a>IANJUTA_SYMBOL_TYPE_ENUM</p></td>
+<td class="enum_member_description">
+<p>Enum declaration</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-ENUMERATOR:CAPS"></a>IANJUTA_SYMBOL_TYPE_ENUMERATOR</p></td>
+<td class="enum_member_description">
+<p>Enumerator value</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-FIELD:CAPS"></a>IANJUTA_SYMBOL_TYPE_FIELD</p></td>
+<td class="enum_member_description">
+<p>Field (Java only)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-FUNCTION:CAPS"></a>IANJUTA_SYMBOL_TYPE_FUNCTION</p></td>
+<td class="enum_member_description">
+<p>Function definition</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-INTERFACE:CAPS"></a>IANJUTA_SYMBOL_TYPE_INTERFACE</p></td>
+<td class="enum_member_description">
+<p>Interface (Java only)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-MEMBER:CAPS"></a>IANJUTA_SYMBOL_TYPE_MEMBER</p></td>
+<td class="enum_member_description">
+<p>Member variable of class/struct</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-METHOD:CAPS"></a>IANJUTA_SYMBOL_TYPE_METHOD</p></td>
+<td class="enum_member_description">
+<p>Class method (Java only)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-NAMESPACE:CAPS"></a>IANJUTA_SYMBOL_TYPE_NAMESPACE</p></td>
+<td class="enum_member_description">
+<p>Namespace declaration</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-PACKAGE:CAPS"></a>IANJUTA_SYMBOL_TYPE_PACKAGE</p></td>
+<td class="enum_member_description">
+<p>Package (Java only)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-PROTOTYPE:CAPS"></a>IANJUTA_SYMBOL_TYPE_PROTOTYPE</p></td>
+<td class="enum_member_description">
+<p>Function prototype</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-STRUCT:CAPS"></a>IANJUTA_SYMBOL_TYPE_STRUCT</p></td>
+<td class="enum_member_description">
+<p>Struct declaration</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-TYPEDEF:CAPS"></a>IANJUTA_SYMBOL_TYPE_TYPEDEF</p></td>
+<td class="enum_member_description">
+<p>Typedef</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-UNION:CAPS"></a>IANJUTA_SYMBOL_TYPE_UNION</p></td>
+<td class="enum_member_description">
+<p>Union</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-VARIABLE:CAPS"></a>IANJUTA_SYMBOL_TYPE_VARIABLE</p></td>
+<td class="enum_member_description">
+<p>Variable</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-EXTERNVAR:CAPS"></a>IANJUTA_SYMBOL_TYPE_EXTERNVAR</p></td>
+<td class="enum_member_description">
+<p>Extern or forward declaration</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-MACRO:CAPS"></a>IANJUTA_SYMBOL_TYPE_MACRO</p></td>
+<td class="enum_member_description">
+<p>Macro (without arguments)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-MACRO-WITH-ARG:CAPS"></a>IANJUTA_SYMBOL_TYPE_MACRO_WITH_ARG</p></td>
+<td class="enum_member_description">
+<p>Parameterized macro</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-FILE:CAPS"></a>IANJUTA_SYMBOL_TYPE_FILE</p></td>
+<td class="enum_member_description">
+<p>File (Pseudo tag)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-OTHER:CAPS"></a>IANJUTA_SYMBOL_TYPE_OTHER</p></td>
+<td class="enum_member_description">
+<p>Other (non C/C++/Java tag)</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-SCOPE-CONTAINER:CAPS"></a>IANJUTA_SYMBOL_TYPE_SCOPE_CONTAINER</p></td>
+<td class="enum_member_description">
+<p>types which are subjected to create a scope.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-SYMBOL-TYPE-MAX:CAPS"></a>IANJUTA_SYMBOL_TYPE_MAX</p></td>
+<td class="enum_member_description">
+<p>Maximum value, used as end marker.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaSymbol.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="IAnjutaSymbolQuery.html" title="IAnjutaSymbolQuery"><span class="type">IAnjutaSymbolQuery</span></a>, <a class="link" href="IAnjutaSymbolManager.html" title="IAnjutaSymbolManager"><span class="type">IAnjutaSymbolManager</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

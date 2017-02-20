@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="makefile-project-backend" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager#backend"/>
+    <desc>Zásuvný modul Zpracující jádro Makefile.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Zpracující jádro Makefile</title>
+
+  <p>Makefile je pravděpodobně nejběžnější způsob sestavení souftwaru na všech druzích platforem. Makefile obsahuje seznam nebo pravidla popisující, které příkazy je třeba postupně spustit, aby se vygeneroval cíl ze seznamu závislostí. Když se sestavuje program, je cílem objektový soubor a závislostmi jsou zdrojové soubory. Cíl jednoho pravidla může záviset na jiném, takže se pro vytvoření výsledného cíle zřetězí několik pravidel.</p>
+
+  <p>Jedná se o obecný nástroj na nejnižší úrovni, takže je náročné najít všechny zdrojové soubory a cíle projektu. Proto má <app>Anjuta</app> pro soubory Makefiles jen omezenou podporu, která se zakládá na čtení hlavního souboru Makefile v nejvyšší složce projektu a získání zdrojových souborů a cílů z něj.</p>
+
+  <note style="bug">
+    <p>V případě, že není toto zpracující jádro schopné najít všechny zdrojové sobory, můžete místo něj zkusit zpracující jádro Složka. Nerozpozná sice žádné cíle, ale mělo by převzít všechny zdrojové soubory.</p>
+  </note>
+
+  <p>Změna vlastností, případně přidání nebo přetažení cíle či zdrojového souboru, je v tomto zpracujícím jádře zakázáno, protože nejsou implementovány automatické úpravy souboru Makefile. Ten musíte měnit ručně v textovém editoru. Avšak, když jej uložíte, je automaticky znovu načten.</p>
+
+</page>

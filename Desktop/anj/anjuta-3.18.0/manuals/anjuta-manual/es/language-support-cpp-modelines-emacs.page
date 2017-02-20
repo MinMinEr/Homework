@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="language-support-cpp-modelines-emacs" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="anjuta-code-indentation#editor-modelines"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Características de líneas de modos de Emacs soportadas.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Líneas de modo Emacs</title>
+
+  <p>Esta línea de modo es un comentario en la primera línea del archivo, compuesta por una lista de nombres de variables seguida de<code>:</code> y un valor, separado por <code>;</code> y rodeado por <code>-*-</code>.</p>
+
+  <p>Una línea de modo de <app>Emacs</app> típica se parece a esto:</p>
+  
+  <code>
+/* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 4; tab-width: 4 -*- */
+  </code>
+
+  <p>Anjuta sólo soporta las siguientes variables.</p>
+
+  <terms>
+    <item>
+      <title><code>indent-tabs-mode</code></title>
+      <p>Establecer a <code>t</code> para usar tabuladores para el sangrado o <code>nil</code> para usar espacios.</p>
+    </item>
+    <item>
+      <title><code>tab-width</code></title>
+      <p>Número de espacios correspondientes a un carácter de tabulación.</p>
+    </item>
+    <item>
+      <title><code>c-basic-offset</code></title>
+      <p>Número de espacios usados para sangrar código en C.</p>
+    </item>
+  </terms>
+ 
+</page>

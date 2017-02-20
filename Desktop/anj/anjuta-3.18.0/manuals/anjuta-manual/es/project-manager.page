@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="project-manager" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="project-manager-root"/>
+    <desc>Gestor de proyectos.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Complemento del gestor de proyectos</title>
+
+  <p><app>Anjuta</app> soporta varios formatos de proyectos ya existentes a través de complementos de «backends». El principal es el formato «autotools» ampliamente usado en GNU/Linux.</p>
+
+  <p>El «backend» del proyecto que usar cuando se crea o se importa un proyecto nuevo en <app>Anjuta</app>. Se muestra en las propiedades del nodo raíz del proyecto y se puede cambiar en cualquier momento.</p>
+
+  <p>Cualquiera que sea el «backend» subyacente, la interfaz gráfica es la mismo pero algunas funciones pueden estar desactivadas.</p>
+
+  <section id="backend">
+    <title>Complemento de «backend» del proyecto</title>
+  </section>
+
+</page>

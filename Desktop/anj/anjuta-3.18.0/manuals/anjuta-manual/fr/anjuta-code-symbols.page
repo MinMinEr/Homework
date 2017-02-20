@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="anjuta-build-indentation" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Méthodes efficaces de navigation dans le code source</desc>
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Parcours du code en utilisant le navigateur de symboles</title>
+
+<section>
+<title>Utilisation du navigateur de symboles</title>
+<p>Le navigateur de symboles vous permet d'obtenir un aperçu des symboles utilisés dans votre projet. Ici, les symboles se rapportent à des variables, des fonctions/méthodes et des classes et leur définition exacte dépend du langage de programmation utilisé.</p>
+
+<p>Le navigateur de symboles comporte trois onglets :</p>
+<list>
+	<item><p><gui>Fichier</gui> affiche les symboles du fichier actuel dans l'éditeur</p></item>
+	<item><p><gui>Projet</gui> affiche tous les symboles du projet</p></item>
+	<item><p><gui>Rechercher</gui> vous permet de rechercher les symboles dans le projet (appuyez sur <keyseq><key>Ctrl</key><key>L</key></keyseq> pour aller directement à la boîte de dialogue de recherche).</p></item>
+</list>
+
+<p>Un double clic sur un symbole permet de se rendre là où celui-ci est défini dans l'éditeur.</p>
+</section>
+
+<section>
+<title>Navigation dans l'éditeur</title>
+<p>Dans le menu surgissant <gui>Aller à</gui> de l'éditeur, il y a deux éléments qui vous aident à naviguer rapidement dans le code source :</p>
+
+<list>
+	<item><p><gui>Définition du symbole</gui></p></item>
+	<item><p><gui>Déclaration du symbole</gui></p></item>
+</list>
+
+<p>Vous pouvez revenir à votre position de départ avant le <gui>Aller à</gui> en utilisant les éléments <gui>Historique précédent</gui> et <gui>Historique suivant</gui> du même menu.</p>
+
+</section>
+
+</page>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-cpu" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="sixth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Εξέταση πληροφοριών CPU.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>CPU</title>
+
+  <section>
+    <title>Προβολή καταχωρητών CPU</title>
+
+    <steps>
+      <item>
+        <p>Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Προβολή</gui> <gui>Καταχωρητές</gui></guiseq> για το άνοιγμα του παραθύρου <gui>Καταχωρητές</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Οι καταχωρητές των οποίων οι τιμές έχουν αλλάξει από την τελευταία διακοπή είναι κόκκινοι. Μπορείτε να αλλάξετε την τιμή οποιουδήποτε καταχωρητή, με κλικ στην στήλη τιμής και εισαγωγή νέας τιμής.</p>	
+
+  </section>
+
+  <section>
+    <title>Προβολή μνήμης</title>
+
+    <steps>
+      <item>
+        <p>Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Προβολή</gui> <gui>Μνήμη</gui></guiseq> για το άνοιγμα του παραθύρου <gui>Μνήμη</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Η πρώτη στήλη περιέχει τις διευθύνσεις μνήμης σε δεκαεξαδική μορφή, η δεύτερη στήλη περιέχει το περιεχόμενο της μνήμης σε δεκαεξαδική μορφή, και η τελευταία στήλη περιέχει τα περιεχόμενα της μνήμης σε ASCII.</p>
+    <p>Ο χώρος διευθυνσιοδότησης ακόμη και σε μικροεπεξεργαστές 32-bit είναι πολύ μεγάλος (4 Gb), άρα είναι πολύ δύσκολη η μετάβαση σε συγκεκριμένη διεύθυνση με τη γραμμή κύλισης. Αλλά, μπορείτε με δεξί κλικ και επιλογή <gui>Μετάβαση στη διεύθυνση</gui> να πάρετε ένα μικρό πλαίσιο επεξεργασίας όπου μπορείτε να εισάγετε μια δεκαεξαδική διεύθυνση.</p>
+  </section>
+
+
+  <section>
+    <title>Προβολή αποσυμβολομετάφρασης</title>
+
+
+    <steps>
+      <item>
+        <p>Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>προβολή</gui> <gui>Αποσυμβολομετάφραση</gui></guiseq> για το άνοιγμα του παραθύρου <gui>Αποσυμβολομετάφραση</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Η πρώτη στήλη περιέχει τις διευθύνσεις σε δεκαεξαδική μορφή. Στη δεύτερη στήλη, μπορεί να έχετε μια ετικέτα που ξεκινάει στην αρχή της γραμμής και τελειώνει σε διπλή τελεία (:) ή μία εντολή συμβολομεταφραστή με εσοχές αποτελούμενες από 4 χαρακτήρες διαστημάτων.</p>
+
+    <p>Η θέση στο παράθυρο αποσυμβολομετάφρασης θα αλλαχθεί στην τιμή μετρητή προγράμματος όταν το πρόγραμμα διακοπεί.</p>
+
+    <p>Ο χώρος διευθυνσιοδότησης ακόμη και σε μικροεπεξεργαστές 32-bit είναι πολύ μεγάλος (4 Gb), άρα είναι πολύ δύσκολη η μετάβαση σε συγκεκριμένη διεύθυνση με τη γραμμή κύλισης. Αλλά, μπορείτε με δεξί κλικ και επιλογή <gui>Μετάβαση στη διεύθυνση</gui> να πάρετε ένα μικρό πλαίσιο επεξεργασίας όπου μπορείτε να εισάγετε μια δεκαεξαδική διεύθυνση.</p>
+  </section>
+
+
+</page>

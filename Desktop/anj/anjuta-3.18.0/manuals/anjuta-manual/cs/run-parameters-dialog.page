@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="run-parameters-dialog" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="run-run"/>
+    <link type="seealso" xref="debug-run"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak spustit dialogové Parametry programu.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  </info>
+
+  <title>Spuštění dialogového okna s parametry</title>
+
+  <p>Dialogové okno s <gui>běhovými parametry</gui> umožňuje určit aktuální program a několik parametrů.</p>
+
+  <terms>
+    <item>
+      <title><gui>Program</gui></title>
+      <p>Zde se zadává program, který se bude spouštět, když spustíte program, ať už bez nebo s laděním. V rozbalovacím seznamu můžete vybrat programy vytvořené aktuálním projektem, ale můžete i kliknout na tlačítko <gui>Procházet</gui>, abyste zvolili jiný program.</p>
+    </item>
+    <item>
+      <title><gui>Argumenty</gui></title>
+      <p>Zde se zadávají argumenty příkazového řádku použité vaším programem. V rozbalovacím seznamu se uchovává historie naposledy použitých argumentů.</p>
+    </item>
+    <item>
+      <title><gui>Pracovní složka</gui></title>
+      <p>Pracovní složka bude aktuální složkou, až spustíte svůj program.</p>
+    </item>
+    <item>
+      <title><gui>Proměnné prostředí</gui></title>
+      <p>Můžete kliknout na rozbalovací seznam, aby se zobrazily všechny proměnné prostředí, ke kterým může váš program přistupovat. Standardně to zahrnuje všechny aktuální proměnné prostředí, které jsou zobrazeny světle šedou.</p>
+      <p>Můžete kliknout na tlačítko <gui>Nová</gui>, abyste přidali novou proměnnou prostředí.</p>
+      <p>Můžete kliknout na tlačítko <gui>Upravit</gui>, abyste změnili hodnotu vybrané proměnné prostředí.</p>
+      <p>Můžete kliknout na tlačítko <gui>Smazat</gui>, abyste odstranili vybranou proměnou prostředí.</p>
+      <p>V případě, že proměná nemá stejnou hodnotu, jako v aktuálním prostředí, je zobrazena černě.</p>
+    </item>
+    <item>
+      <title><gui>Spustit v terminálu</gui></title>
+      <p>Musíte zaškrtnout, když se má program spustit v terminálu, abyste mohli zadávat vstupy a vidět výstupy prováděné přes standardní unixové proudy. U programů, které mají grafické rozhraní, to není zapotřebí.</p>
+    </item>
+  </terms>
+
+</page>

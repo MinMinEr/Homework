@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="run-run" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="first"/>
+    <link type="seealso" xref="run-parameters-dialog"/>
+    <link type="seealso" xref="autotools-build-install"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Program indítása a hibakereső nélkül.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Egy program futtatása</title>
+
+  <p>Ha az <app>Anjutat</app> egy program indítására használja, akkor az ellenőrzi, hogy naprakész-e, és szükség esetén lefordítja.</p>
+
+  <steps>
+    <item>
+      <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Futtatás</gui><gui>Futtatás</gui></guiseq> menüpontot, vagy nyomja meg az <key>F3</key> billentyűt az aktuális program végrehajtásához.</p>
+    </item>
+  </steps>
+
+  <p>Az aktuális program és számos paraméter beállítható a <gui>Paraméter</gui> ablakban. További információkért lásd a <link xref="run-parameters-dialog"/> szakaszt.</p>
+
+  <steps>
+    <item>
+      <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Futtatás</gui><gui>Program paraméterei</gui></guiseq> menüpontot az ablak megjelenítéséhez.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Ha a programjának adatfájlokra van szüksége, akkor valószínűleg legalább egyszer telepítenie kell a futtatása előtt. További információkért lásd a <link xref="autotools-build-install"/> fejezetet.</p>
+  </note>
+ 
+</page>

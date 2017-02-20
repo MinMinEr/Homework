@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="project-manager-treeview" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-project-management" group="third"/>
+    <desc>Mostrar el contenido del proyecto.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ver un proyecto</title>
+
+  <p>Un proyecto se representa mediante un árbol, en el que el elemento raíz corresponde al proyecto, mientras que los hijos representan los programas, bibliotecas, carpetas y archivos de fuentes. Cada elemento puede tener propiedades que permiten establecer más detalles como la versión del proyecto, opciones del compilador o carpetas de instalación. Estos elementos se dividen en varias categorías y, dependiendo del «backend», no todas están disponibles.</p>
+
+  <terms>
+    <item>
+      <title>Raíz</title>
+      <p>Sólo hay un nodo de este tipo. Representa al proyecto en sí. Es el lugar donde puede establecer propiedades que afecten a todo el proyecto, como el nombre o la versión.</p>
+    </item>
+    <item>
+      <title>Módulo</title>
+      <p>Esto es un conjunto de paquetes usados en un proyecto de autotools. Aparecen como hijos del nodo raíz para representar a todos los módulos definidos y como hijos de cada objetivo que los usa. Para obtener más detalles, consulte la <link xref="project-manager-module-new"/>.</p>
+    </item>
+    <item>
+      <title>Paquete</title>
+      <p>Esto es una biblioteca empaquetada usada en proyectos de autotools. Aparece como un hijo en cada módulo. Para obtener más detalles, consulte <link xref="project-manager-library"/>.</p>
+    </item>
+    <item>
+      <title>Carpeta</title>
+      <p>Esto se usar para agrupar objetivos, permitiendo establecer propiedades comunes. A menudo se implementan como subcarpetas. Para obtener más detalles, consulte la <link xref="project-manager-folder"/>.</p>
+    </item>
+    <item>
+      <title>Objetivo</title>
+      <p>Agrupa archivos y define cómo se usan. Hay varios tipos de objetivos, por ejemplo, programa, biblioteca o datos, que corresponden con los diferentes usos de los archivos hijos. A menudo representan archivos generados por el proyecto como programas compilados o bibliotecas. Para obtener más detalles, consulte la <link xref="project-manager-target"/>.</p>
+	
+      <note style="tip">
+        <p>Puede arrastrar y soltar objetivos al principio de la vista en árbol de un proyecto para crear un atajo que permita acceder a ellos más fácilmente. De manera predeterminada, todos los objetivos del programa ya aparecen aquí.</p>
+      </note>
+
+    </item>
+    <item>
+      <title>Fuente</title>
+      <p>Cada archivo de fuentes se representa por un elemento en la vista del proyecto. El uso de cada archivo depende de su objetivo padre. Todos los hijos de un programa objetivo se compila para generarlo, mientras que los hijos de un objetivo de datos se copian en una carpeta cuando se instala el proyecto. Para obtener más detalles, consulte la <link xref="project-manager-source"/>.</p>
+    </item>
+  </terms>
+  
+</page>

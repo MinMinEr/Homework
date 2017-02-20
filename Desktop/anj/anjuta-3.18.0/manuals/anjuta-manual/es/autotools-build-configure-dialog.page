@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-configure-dialog" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="autotools-project-backend"/>
+    <link type="seealso" xref="autotools-build-configure"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Diálogo de configuración de «autotools»</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Diálogo de configuración de «autotools»</title>
+
+  <p>El diálogo <gui>Configurar</gui> le permite establecer las siguientes opciones y configurar el proyecto.</p>
+
+  <terms>
+    <item>
+      <title><gui>Regenerar proyecto</gui></title>
+      <p>Si está seleccionada, el proyecto se regenerará completamente; de otra forma sólo se ejecutará el paso de configuración. <app>Anjuta</app> automáticamente marca esta casilla cuando se necesita, de forma que puede dejarla en su estado actual.</p>
+    </item>
+    <item>
+      <title><gui>Configuración</gui>.</title>
+      <p>Puede tener varias configuraciones, cada una con sus opciones y su carpeta de construcción; esta caja de texto le permite ponerles un nombre. Generalmente tendrá ya definida una configuración «predeterminada», una opción «de depuración» que hace que los programas sean más fáciles de depurar (manteniendo variables intermedias y ordenando el código) y una opción «optimizada» que genera programas más rápidos pero que aumenta el tiempo de construcción. Puede definir configuraciones personalizadas adicionales.</p>
+    </item>
+    <item>
+      <title><gui>Construir carpeta</gui></title>
+      <p>Seleccione aquí la carpeta de construcción, que puede ser la carpeta del proyecto o una subcarpeta. Esto es especialmente útil cuando se cambia entre distintas configuraciones, para evitar tener que reconstruir el proyecto entero.</p>
+      <note style="advanced">
+        <p>Con «autotools» no puede tener una configuración usando una carpeta diferente, si ya tiene una configuración usando la carpeta del proyecto. Antes debe quitarla.</p>
+      </note>
+      <note style="bug">
+        <p>Algunos proyectos de «autotools» no se pueden construir fuera de la carpeta del proyecto. Aún podrá usar diferentes configuraciones pero todas deben usar la carpeta de proyecto y todo se debe recompilar en cada cambio de configuración.</p>
+      </note>
+    </item>
+    <item>
+      <title><gui>Opciones de configuración</gui></title>
+      <p>Esta caja de texto lista todos los argumentos de la línea de comandos que usa el paso de configuración («configure»). Todos los argumentos se separan por eespacios y deben estar entrecomillados si contienen espacios. Cada configuración rellena esta caja de texto con valores predeterminados que puede modificar.</p>
+      <note style="advanced">
+        <p>Cada proyecto de «autotools» soporta una lista común de argumentos, pero puede tener argumentos específicos. Puede obtener una lista de todos los argumentos aceptados ejecutando <cmd>configure --help</cmd> en la línea de comandos. Debe tener configurado su proyecto al menos una vez para obtener el script <cmd>configure</cmd>.</p>
+      </note>
+    </item>
+  </terms>
+
+</page>

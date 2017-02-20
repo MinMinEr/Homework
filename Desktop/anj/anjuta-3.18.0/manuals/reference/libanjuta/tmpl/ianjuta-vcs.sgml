@@ -1,0 +1,121 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaVcs
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### ENUM IAnjutaVcsError ##### -->
+<para>
+
+</para>
+
+@IANJUTA_VCS_UNKOWN_ERROR: 
+
+<!-- ##### USER_FUNCTION IAnjutaVcsStatusCallback ##### -->
+<para>
+
+</para>
+
+@file: 
+@status: 
+@user_data: 
+
+
+<!-- ##### USER_FUNCTION IAnjutaVcsDiffCallback ##### -->
+<para>
+
+</para>
+
+@file: 
+@diff: 
+@user_data: 
+
+
+<!-- ##### FUNCTION ianjuta_vcs_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_vcs_add ##### -->
+<para>
+
+</para>
+
+@obj: 
+@files: 
+@notify: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_vcs_checkout ##### -->
+<para>
+
+</para>
+
+@obj: 
+@repository_location: 
+@dest: 
+@cancel: 
+@notify: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_vcs_diff ##### -->
+<para>
+
+</para>
+
+@obj: 
+@file: 
+@callback: 
+@user_data: 
+@cancel: 
+@notify: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_vcs_query_status ##### -->
+<para>
+
+</para>
+
+@obj: 
+@file: 
+@callback: 
+@user_data: 
+@cancel: 
+@notify: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_vcs_remove ##### -->
+<para>
+
+</para>
+
+@obj: 
+@files: 
+@notify: 
+@err: 
+
+

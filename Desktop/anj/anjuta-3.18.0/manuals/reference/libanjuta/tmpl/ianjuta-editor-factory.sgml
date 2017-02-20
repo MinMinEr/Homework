@@ -1,0 +1,50 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaEditorFactory
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_EDITOR_FACTORY_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ianjuta_editor_factory_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_factory_new_editor ##### -->
+<para>
+
+</para>
+
+@obj: 
+@file: 
+@filename: 
+@err: 
+@Returns: 
+
+

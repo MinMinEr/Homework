@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-stack" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="fourth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Den Stack untersuchen.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Stack</title>
+
+  <section>
+    <title>Stack-Frames auflisten</title>
+
+    <p>Ein Stack-Frame ist der Bereich des Stacks, der einem Funktionsaufruf zugeordnet ist. Es werden alle Funktionen und deren Aufrufargumente in der Aufrufreihenfolge aufgeführt. Jeder Stack-Frames ist beginnend mit 0 ab der aktuellen Funktion nummeriert. Die Stack-Frames werden nur angezeigt, während die Fehlerdiagnose läuft.</p>
+
+    <p>Ein Programm kann aus mehreren Threads bestehen. Alle diese Threads werden unabhängig voneinander ausgeführt, mit eigenen Registern, Stacks und lokalen Variablen, aber mit gemeinsamen globalen Variablen.</p>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Ansicht</gui><gui>Stack</gui></guiseq> im <gui>Hauptmenü</gui>, um das Fenster <gui>Stack</gui> zu öffnen.</p>
+      </item>
+    </steps>
+
+    <p>Die Stacks werden in einer Baumansicht dargestellt, jeweils mit dem zugehörigen Thread übergeordnet. Die folgenden Informationen werden angezeigt:</p>	
+
+    <terms>
+      <item>
+        <title>Aktiv</title>
+        <p>Der gelbe Pfeil repräsentiert den aktiven Stack-Frame. Laut Vorgabe ist dies Frame 0, d.h. die aktuelle Funktion. Alle Auswertungen und lokalen Variablen sind relativ zu diesem aktiven Frame. Wechseln Sie den aktuellen Stack-Frame, um lokale Variablen anderer Funktionen zu untersuchen.</p>
+      </item>
+      <item>
+        <title>Thread</title>
+        <p>Eine Nummer, korrespondierend zu jedem Thread.</p>
+      </item>
+      <item>
+        <title>Frame</title>
+        <p>Dies ist die Frame-Nummer, beginnend mit 0 für die aktuelle Funktion. Die erste Funktion Ihres Programms (z.B. <code>main()</code> in einem C-Programm) hat die höchste Nummer.</p>
+      </item>
+      <item>
+        <title>Datei</title>
+        <p>Der Name der Datei, welche die Funktion des aktuellen Threads enthält.</p>
+      </item>
+      <item>
+        <title>Zeile</title>
+        <p>Die Zeilennummer der Funktion, die diesem Frame entspricht.</p>
+      </item>
+      <item>
+        <title>Funktion</title>
+        <p>Der Name der Funktion, welche diesem Frame entspricht.</p>
+      </item>
+      <item>
+        <title>Adresse</title>
+        <p>Die Adresse der Funktion, welche diesem Frame entspricht.</p>
+      </item>
+      <item>
+        <title>Argumente</title>
+        <p>Die Funktionsargumente.</p>
+      </item>
+    </terms>
+
+  </section>
+
+
+  <section>
+    <title>Den aktuellen Stack-Frame oder Thread wechseln</title>
+
+    <steps>
+      <item>
+        <p>Wählen Sie im Fenster <gui>Stack</gui> den gewünschten Frame aus.</p>
+      </item>
+      <item>
+        <p>Drücken Sie die rechte Maustaste und wählen Sie <gui>Aktuellen Frame auswählen</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Ein Klick auf einen Stack-Rahmen im selben Thread wechselt nur den Stack-Rahmen, so dass andere lokale Variablen untersucht werden können. Wird dies in einem anderen Thread getan, so ändern sich sowohl der Stack-Rahmen als auch der Thread. Die Registerwerte werden andere sein und die Fehlerdiagnose wird im gewählten Thread neu gestartet.</p>
+  </section>
+
+
+  <section>
+    <title>Die aktuelle Funktion betrachten</title>
+
+    <steps>
+      <item>
+        <p>Wählen Sie im Fenster <gui>Stack</gui> den gewünschten Frame aus.</p>
+      </item>
+      <item>
+        <p>Klicken Sie zweimal, oder drücken Sie die rechte Maustaste und wählen Sie <gui>Quelle anzeigen</gui>.</p>
+      </item>
+    </steps>
+  </section>
+
+
+  <section>
+    <title>Stacktrace ermitteln</title>
+ 
+    <steps>
+      <item>
+        <p>Klicken Sie mit der rechten Maustaste in das <gui>Stack</gui>-Fenster und wählen Sie <gui>Stacktrace holen</gui>.</p>
+      </item>
+    </steps>
+  </section>
+
+
+</page>

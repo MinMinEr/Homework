@@ -1,0 +1,115 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaCompletion
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### USER_FUNCTION AnjutaCompletionNameFunc ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### USER_FUNCTION AnjutaCompletionFilterFunc ##### -->
+<para>
+
+</para>
+
+@item: 
+@user_data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_completion_new ##### -->
+<para>
+
+</para>
+
+@name_func: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_completion_get_case_sensitive ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_completion_set_case_sensitive ##### -->
+<para>
+
+</para>
+
+@self: 
+@case_sensitive: 
+
+
+<!-- ##### FUNCTION anjuta_completion_set_item_destroy_func ##### -->
+<para>
+
+</para>
+
+@self: 
+@item_destroy_func: 
+
+
+<!-- ##### FUNCTION anjuta_completion_set_filter_func ##### -->
+<para>
+
+</para>
+
+@self: 
+@filter_func: 
+@user_data: 
+
+
+<!-- ##### FUNCTION anjuta_completion_add_item ##### -->
+<para>
+
+</para>
+
+@self: 
+@item: 
+
+
+<!-- ##### FUNCTION anjuta_completion_clear ##### -->
+<para>
+
+</para>
+
+@self: 
+
+
+<!-- ##### FUNCTION anjuta_completion_complete ##### -->
+<para>
+
+</para>
+
+@self: 
+@prefix: 
+@max_completions: 
+@Returns: 
+
+

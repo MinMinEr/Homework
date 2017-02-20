@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="autotools-project-target-type" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="project-manager-target-add"/>
+    <desc>Autotools céltípus.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Autotools projekttípus</title>
+
+  <p>Számos különböző céltípus létezik.</p>
+
+  <terms>
+    <item>
+      <title>Osztott programkönyvtár (Libtool)</title>
+      <p>Ez egy több program által megosztott programkönyvtárat képvisel, amely futásidőben kerül összeállításra. A leggyakrabban használt programkönyvtártípus Linux alatt. Windowson dinamikusan szerkesztett könyvtárnak hívják.</p>
+      <p>A Libtool csomagot használja. A nevének a „lib” szóval kell kezdődnie, és a „.la” kiterjesztéssel kell rendelkeznie.</p>
+    </item>
+    <item>
+      <title>Modul (Libtool)</title>
+      <p>Egy programkönyvtárat képvisel, amelyet gyakran bővítménynek is neveznek, ezt futásidőben explicit módon maga a program szerkeszti. Ezt kizárólag a használt funkcióknak megfelelő kód betöltésére használják.</p>
+      <p>A Libtool csomagot használja. A nevének nem kell a „lib” szóval kell kezdődnie, de a „.la” kiterjesztéssel kell rendelkeznie.</p>
+    </item>
+    <item>
+      <title>Statikus programkönyvtár (Libtool)</title>
+      <p>Ez a programmal fordítási időben szerkesztett programkönyvtárat képvisel. Csak a ténylegesen használt függvények maradnak az előállított futtatható fájlban.</p>
+      <p>A Libtool csomagot használja. A nevének a „lib” szóval kell kezdődnie, és a „.a” kiterjesztéssel kell rendelkeznie.</p>
+    </item>
+    <item>
+      <title>Program</title>
+      <p>Ez például egy C forrásfájlokból lefordított programot képvisel. Minden gyermek a program előállításához lefordított forrásfájlokat képviseli.</p>
+    </item>
+    <item>
+      <title>Python modul</title>
+      <p>Egy Pythonban írt programot képvisel.</p>
+    </item>
+    <item>
+      <title>Java modul</title>
+      <p>Egy Javaban írt programot képvisel.</p>
+    </item>
+    <item>
+      <title>LISP modul</title>
+      <p>Egy LISP-ben írt programot képvisel.</p>
+    </item>
+    <item>
+      <title>Fejlécfájlok</title>
+      <p>Ez a cél lehetővé teszi fejlécfájlok csoportosítását, és a telepítési helyük megadását.</p>
+    </item>
+    <item>
+      <title>Man dokumentáció</title>
+      <p>A projekt által igényelt man oldalakat csoportosítja.</p>
+    </item>
+    <item>
+      <title>Info dokumentáció</title>
+      <p>A projekt által igényelt info oldalakat csoportosítja.</p>
+    </item>
+    <item>
+      <title>Egyéb adatok</title>
+      <p>A projekt által igényelt adatfájlokat, például képeket, felületleírásokat, beállításfájlokat stb. csoportosítja.</p>
+    </item>
+    <item>
+      <title>Parancsfájl</title>
+      <p>A parancsfájlokat képviseli. Ezek a parancsfájlok csak a megadott könyvtárba kerülnek telepítésre. Ha a parancsfájlok előállításra kerülnek, akkor további szabályok szükségesek.</p>
+    </item>
+  </terms>
+
+</page>

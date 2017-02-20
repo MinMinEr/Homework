@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-run" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="second"/>
+    <link type="seealso" xref="run-parameters-dialog"/>
+    <link type="seealso" xref="autotools-build-configure"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Démarrer un programme avec le débogueur.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Débogage d'un programme</title>
+  
+  <section>
+    <title>Lancement d'un programme dans le débogueur</title>
+
+    <p>Le programme actuel est défini dans la boîte de dialogue <gui>Paramètres du programme</gui>. Reportez-vous à <link xref="run-parameters-dialog"/> pour plus d'informations. Ce programme peut être démarré dans le débogueur de la façon suivante :</p>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Exécuter</gui><gui>Déboguer le programme</gui></guiseq>, ou utilisez la combinaison de touches <keyseq><key>Maj</key><key>F12</key></keyseq>.</p>
+      </item>
+    </steps>
+
+    <note style="tip">
+      <p>Un programme peut être difficile à déboguer s'il est hautement optimisé ou si les informations de débogage sont absentes. L'optimisation et les informations de débogage sont activées lors de l'étape de configuration. Normalement, une configuration de débogage est disponible, qui désactive l'optimisation et inclut toutes les informations de débogage. Anjuta affiche un avertissement si cette configuration n'est pas utilisée. Reportez-vous à <link xref="auto-tools-build-configure"/> pour plus d'informations.</p>
+    </note>
+   </section>
+
+  <section>
+    <title>Débogage d'une application déjà en cours d'exécution</title>
+
+    <p>Vous pouvez utiliser le débogueur sur une application déjà en cours d'exécution.</p>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Exécuter</gui> <gui>Déboguer le processus...</gui></guiseq> pour obtenir une boite de dialogue affichant tous les processus actuellement en cours d'exécution.</p>
+      </item>
+      <item>
+        <p>Sélectionnez un processus dans la boîte de dialogue <gui>Attacher au processus</gui> et cliquez sur <gui>Attacher</gui> pour démarrer le débogueur sur ce processus. Référez-vous à <link xref="debug-process-dialog"/> pour plus de détails.</p>
+      </item>
+    </steps>
+  </section>
+ 
+  <section>
+    <title>Débogage d'une application distante</title>
+
+    <p>Vous pouvez utiliser le débogueur pour déboguer une application exécutée sur un autre ordinateur à travers une connexion TCP (protocole de contrôle de transmission) ou une connexion série.</p>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Exécuter</gui> <gui>Déboguer une cible distante...</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Sélectionnez le type de connexion vers l'application distante, <gui>Connexion en ligne série</gui> ou <gui>Connexion TCP/IP</gui>.</p>
+      </item>
+      <item>
+        <p>S'il s'agit d'une connexion TCP/IP, remplissez les champs <gui>Adresse</gui> et <gui>Port</gui>.</p>
+        <p>S'il s'agit d'une connexion en ligne série, remplissez la boîte de texte en-dessous avec le nom du périphérique série, par exemple <cmd>/dev/ttyb</cmd>.</p>
+      </item>
+      <item>
+        <p>Cliquez sur <gui>Se connecter</gui> pour démarrer le débogueur et vous connecter à la cible distante.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section>
+    <title>Arrêt du débogueur</title>
+
+    <p>Le débogueur et le programme peuvent être arrêtés à tout moment de la façon suivante :</p>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Exécuter</gui> <gui>Arrêter le débogueur</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+  </section>
+</page>

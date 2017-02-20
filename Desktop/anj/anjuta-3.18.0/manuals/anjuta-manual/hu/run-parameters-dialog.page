@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="run-parameters-dialog" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="run-run"/>
+    <link type="seealso" xref="debug-run"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Futtatási paraméterek ablak</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Futtatási paraméterek ablak</title>
+
+  <p>A <gui>Futtatási paraméter</gui> ablak lehetővé teszi az aktuális program és több paraméter megadását.</p>
+
+  <terms>
+    <item>
+      <title><gui>Program</gui></title>
+      <p>Ez a program kerül végrehajtásra a program hibakeresővel vagy a nélkül futtatásakor. A legördülő lista lehetővé teszi az aktuális projekt által létrehozott programok kiválasztását, de a <gui>Tallózás</gui> gombra kattintva egy tetszőleges programot is kiválaszthat.</p>
+    </item>
+    <item>
+      <title><gui>Argumentumok</gui></title>
+      <p>A program által használt parancssori argumentumok. A legördülő lista megőrzi a legutóbb használt argumentumokat.</p>
+    </item>
+    <item>
+      <title><gui>Munkakönyvtár</gui></title>
+      <p>A munkakönyvtár az a könyvtár, amelyben a programja futni fog.</p>
+    </item>
+    <item>
+      <title><gui>Környezeti változók</gui></title>
+      <p>A legördülő menüben kiválaszthatja a programja által elérhető környezeti változókat. Alapértelmezésben az összes aktuális környezeti változót tartalmazza, ezek világosszürkén jelennek meg.</p>
+      <p>Az <gui>Új</gui> gombra kattintva új környezeti változót vehet fel.</p>
+      <p>A <gui>Szerkesztés</gui> gombra kattintva módosíthatja a kiválasztott környezeti változó értékét.</p>
+      <p>A <gui>Törlés</gui> gombra kattintva eltávolíthatja a kijelölt környezeti változót.</p>
+      <p>Ha egy változó értéke nem egyezik az aktuális környezetben lévő értékével, akkor feketével jelenik meg.</p>
+    </item>
+    <item>
+      <title><gui>Futtatás terminálban</gui></title>
+      <p>Ezt a program terminálban való futtatása érdekében kell bejelölni, amely lehetővé teszi adatok bevitelét és a program kimenetének megjelenítését a szabványos Unix adatfolyamokon. A grafikus felülettel rendelkező programok esetén nem szükséges.</p>
+    </item>
+  </terms>
+
+</page>

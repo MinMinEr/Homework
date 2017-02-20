@@ -1,0 +1,62 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaAsyncCommand
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION anjuta_async_command_set_error_message ##### -->
+<para>
+
+</para>
+
+@command: 
+@error_message: 
+
+
+<!-- ##### FUNCTION anjuta_async_command_get_error_message ##### -->
+<para>
+
+</para>
+
+@command: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_async_command_lock ##### -->
+<para>
+
+</para>
+
+@self: 
+
+
+<!-- ##### FUNCTION anjuta_async_command_unlock ##### -->
+<para>
+
+</para>
+
+@self: 
+
+
+<!-- ##### STRUCT AnjutaAsyncCommandPriv ##### -->
+<para>
+
+</para>
+
+

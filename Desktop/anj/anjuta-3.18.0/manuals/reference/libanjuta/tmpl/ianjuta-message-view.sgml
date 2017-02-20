@@ -1,0 +1,117 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaMessageView
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_MESSAGE_VIEW_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### ENUM IAnjutaMessageViewType ##### -->
+<para>
+
+</para>
+
+@IANJUTA_MESSAGE_VIEW_TYPE_NORMAL: 
+@IANJUTA_MESSAGE_VIEW_TYPE_INFO: 
+@IANJUTA_MESSAGE_VIEW_TYPE_WARNING: 
+@IANJUTA_MESSAGE_VIEW_TYPE_ERROR: 
+
+<!-- ##### FUNCTION ianjuta_message_view_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_message_view_append ##### -->
+<para>
+
+</para>
+
+@obj: 
+@type: 
+@summary: 
+@details: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_message_view_buffer_append ##### -->
+<para>
+
+</para>
+
+@obj: 
+@text: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_message_view_clear ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_message_view_get_all_messages ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_message_view_get_current_message ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_message_view_select_next ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_message_view_select_previous ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+
+

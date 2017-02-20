@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-library-add" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-library" group="sixth"/>
+    <link type="seealso" xref="project-manager-target"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Eine benutzerdefinierte Bibliothek zu einem Ziel hinzufügen.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Eine benutzerdefinierte Bibliothek hinzufügen</title>
+ 
+  <p>Es ist einfacher eine Bibliothek als Paket zu verwenden. Dies ist unter Linux üblich. Prüfen Sie <link xref="project-manager-module-new">hier</link>, ob dies der Fall ist. Andernfalls können Sie immer noch die Bibliothek wie unten erklärt verwenden.</p>
+
+  <p>Um eine Bibliothek in C nutzen zu können, müssen Sie dem Compiler mitteilen, wo sich die Header-Dateien befinden und dem Linker mitteilen, wo die erforderlichen Bibliotheken aufzufinden sind. Das Problem ist, dass Ihr Programm nicht auf einem anderen Rechner kompilieren wird, wenn sich die Header- oder Bibliotheksdateien an einem anderen Ort befinden.</p>
+
+  <steps>
+    <item>
+      <p>Wählen Sie in der <gui>Projektansicht</gui> den Ordner mit dem Programm, in welchem Sie die Bibliothek hinzufügen möchten. Drücken Sie dann die rechte Maustaste, um das <gui>Projekt-Kontextmenü</gui> zu öffnen, und wählen Sie <gui>Eigenschaften</gui>.</p>
+
+      <p>Oder wählen Sie im <gui>Hauptmenü</gui> <guiseq><gui>Projekt</gui><gui>Eigenschaften</gui></guiseq>. Per Voreinstellung werden die Eigenschaften des aktuell in der Projektansicht ausgewählten Objekts bearbeitet. Wählen Sie bei Bedarf ein anderes Objekt in der Auswahlliste.</p>
+    </item>
+    <item>
+      <p>Wenn die Header-Dateien im üblichen Pfad installiert sind (<file>/usr/include</file>), müssen Sie nichts weiter tun. Andernfalls müssen Sie<input>-I<var>include_path</var></input> den <gui>C-Präprozessorflags</gui> hinzufügen, wenn Sie <app>gcc</app> einsetzen.</p>
+
+      <p>Eventuell müssen Sie den Knopf <gui>Weitere Optionen</gui> ausklappen, um dies sehen zu können. Klicken Sie auf den Knopf <gui>Anwenden</gui>, sobald Sie fertig sind.</p>
+    </item>
+    <item>
+      <p>Als nächstes müssen Sie die Bibliothek einem Ziel hinzufügen. Wählen Sie in der <gui>Projektansicht</gui> das Ziel, dem Sie die Bibliothek hinzufügen wollen. Drücken Sie dann die rechte Maustaste, um das <gui>Kontextmenü des Projekts</gui> zu öffnen, und wählen Sie <gui>Eigenschaften</gui>.</p>
+
+      <p>Oder wählen Sie im <gui>Hauptmenü</gui> <guiseq><gui>Projekt</gui><gui>Eigenschaften</gui></guiseq>. Per Voreinstellung werden die Eigenschaften des aktuell in der Projektansicht ausgewählten Objekts bearbeitet. Wählen Sie bei Bedarf ein anderes Objekt in der Auswahlliste.</p>
+    </item>
+    <item>
+      <p>Sie müssen die Eigenschaft <gui>Linker-flags</gui> festlegen, indem Sie <input>-l<var>Bibliotheks_Name</var></input> hinzufügen, wenn Ihr Compiler <app>gcc</app> ist. <var>&gt;Bibliotheks_Name</var> ist der Name der Bibliotheksdatei ohne das Präfix <file>lib</file> und ohne die Erweiterung <file>.a</file> oder <file>.so</file>.</p>
+
+      <p>Wenn die Bibliothek nicht in einem Standardordner liegt, so schaut <app>gcc</app> mit der Option <input>-L<var>Bibliotheks_Name</var></input> in weiteren Ordnern nach.</p>  
+    </item>
+  </steps>
+
+</page>

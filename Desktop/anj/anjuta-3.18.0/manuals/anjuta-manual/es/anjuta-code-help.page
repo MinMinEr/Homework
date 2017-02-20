@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="anjuta-code-help" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Encontrar rápidamente la información que necesita en la documentación de la API</desc>
+
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Uso de referencia de la API</title>
+
+<section>
+<title>Examinar la referencia de la API</title>
+
+<p>Para un acceso rápido a la referencia de la API de las bibliotecas, Anjuta incluye un examinador de la API. Si no lo ha hecho todavía, puede activarlo en las preferencias(<guiseq><gui>Editar</gui><gui>Preferencias</gui></guiseq>) en <guiseq><gui>General</gui><gui>Complementos</gui></guiseq> eligiendo el complemento <app>DevHelp</app>.</p>
+
+<p>La referencia de la API tiene dos ventanas, una para buscar un símbolo concreto y el examinador para ver los documentos de la ayuda.</p>
+
+</section>
+
+<section>
+<title>Saltar a la referencia de la API usando atajos en el editor</title>
+
+<p>Si no está seguro de cómo se usa una función específica en el código en el que está trabajando, sitúe el cursor sobre el nombre de la función y use <keyseq><key>Mayús</key><key>F1</key></keyseq> (o <guiseq><gui>Ayuda</gui><gui>Ayuda contextual</gui></guiseq>) para ir a la documentación.</p>
+
+</section>
+
+</page>

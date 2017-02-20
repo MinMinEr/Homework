@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-source-delete" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-source" group="third"/>
+   <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Quitar archivos de un proyecto.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Quitar archivos</title>
+
+  <steps>
+    <item>
+      <p>Seleccione el archivo que quiere quitar en la <gui>vista de proyecto</gui>, pulse con el botón derecho del ratón para mostrar el <gui>menú contextual del proyecto</gui> y seleccione <gui>Quitar</gui>.</p>
+    </item>
+    <item>
+      <p>Confirme que quiere quitarlo. El archivo sólo se quitará del proyecto, no se eliminará en el disco.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Puede seleccionar varios archivos a la vez manteniendo pulsada la tecla <key>Ctrl</key> o seleccionar un rango usando la tecla <key>Mayús</key>.</p>
+  </note> 
+  
+</page>

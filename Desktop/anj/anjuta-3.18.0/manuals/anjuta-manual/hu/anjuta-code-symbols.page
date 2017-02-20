@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="anjuta-build-indentation" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Hatékony módszerek a forráskódban való navigációra</desc>
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Kódnavigáció a szimbólumböngésző használatával</title>
+
+<section>
+<title>A szimbólumböngésző használata</title>
+<p>A szimbólumböngésző lehetővé teszi a projektben használt szimbólumok áttekintését. A szimbólumok alatt itt változókat, függvényeket/metódusokat és osztályokat értünk, a pontos definíció a használt programnyelvtől függ.</p>
+
+<p>A szimbólumböngésző három lapot tartalmaz:</p>
+<list>
+	<item><p>A <gui>Fájl</gui> a szerkesztőben lévő aktuális fájl szimbólumait jeleníti meg</p></item>
+	<item><p>A <gui>Projekt</gui> a projekt összes szimbólumát jeleníti meg</p></item>
+	<item><p>A <gui>Keresés</gui> lehetővé teszi a projekt szimbólumai közti keresést (a keresőmezőbe ugráshoz használja a <keyseq><key>Ctrl</key><key>L</key></keyseq> billentyűkombinációt)</p></item>
+</list>
+
+<p>Az elemekre való dupla kattintás a szimbólum definíciójára ugrik a szerkesztőben.</p>
+</section>
+
+<section>
+<title>Navigáció a szerkesztőben</title>
+<p>A szerkesztő <gui>Ugrás</gui> felugró menüjében két elem segíti a forráskódban való gyors navigációt:</p>
+
+<list>
+	<item><p><gui>Szimbólumdefiníció</gui></p></item>
+	<item><p><gui>Szimbólumdeklaráció</gui></p></item>
+</list>
+
+<p>Ha a szerkesztőben arra a pozícióra szeretne visszalépni, ahol a megjelenített elemeket használta, akkor az <gui>Ugrás</gui> menüben használja az <gui>Előző előzmény</gui> (illetve <gui>Következő előzmény</gui>) menüpontot.</p>
+
+</section>
+
+</page>

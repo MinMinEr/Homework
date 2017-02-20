@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="language-support-cpp-modelines-vim" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="anjuta-code-indentation#editor-modelines"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Támogatott Vim módsor-szolgáltatások.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Vim módsorok</title>
+
+  <p>Ez a módsor egy sor a fájl első 5 vagy utolsó 5 sorában, amelynek a <code>vim:</code> karaktereket kell tartalmaznia, és legalább egy szóközzel, és változónevek szóközzel vagy <code>:</code>-tal elválasztott listájával kell folytatódnia. A változóneveket egy elhagyható érték követheti egy <code>=</code> után.</p>
+  
+  <p>Egy tipikus <app>Vim</app> módsor a következőképpen néz ki:</p>
+  
+  <code>
+/* vim: set noet ts=4 sw=4: */</code>
+
+  <p>Az Anjuta csak a következő változókat támogatja.</p>
+
+  <terms>
+    <item>
+      <title><code>expandtab</code></title>
+      <title><code>et</code></title>
+      <p>Szóközök használata a behúzáshoz.</p>
+    </item>
+    <item>
+      <title><code>noexpandtab</code></title>
+      <title><code>noet</code></title>
+      <p>Tabok használata a behúzáshoz.</p>
+    </item>
+    <item>
+      <title><code>softtabstop</code></title>
+      <title><code>sts</code></title>
+      <title><code>tabstop</code></title>
+      <title><code>ts</code></title>
+      <p>Egy tab karakternek megfelelő szóköz karakterek száma.</p>
+    </item>
+    <item>
+      <title><code>shiftwidth</code></title>
+      <title><code>sw</code></title>
+      <p>C kód behúzásához használt szóköz karakterek száma.</p>
+    </item>
+  </terms>
+ 
+</page>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="run-run" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="first"/>
+    <link type="seealso" xref="run-parameters-dialog"/>
+    <link type="seealso" xref="autotools-build-install"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Iniciar un programa sin el depurador.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ejecutar un programa</title>
+
+  <p>Si se usa <app>Anjuta</app> para iniciar un programa, se comprueba que está actualizado y lo construye si es necesario.</p>
+
+  <steps>
+    <item>
+      <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Ejecutar</gui><gui>Ejecutar</gui></guiseq> o pulse <key>F3</key> para ejecutar el programa actual.</p>
+    </item>
+  </steps>
+
+  <p>En el diálogo <gui>Parámetros</gui> se pueden establecer el programa actual y varios parámetros. Consulte la <link xref="run-parameters-dialog"/> para obtener más información.</p>
+
+  <steps>
+    <item>
+      <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Ejecutar</gui><gui>Parámetros del programa...</gui></guiseq> para mostrar el diálogo.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Si su programa necesita archivos de datos, probablemente tenga que instalarlos, al menos una vez antes de ejecutarlo. Para obtener más información consulte la <link xref="autotools-build-install"/>.</p>
+  </note>
+ 
+</page>

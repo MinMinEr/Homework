@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: AnjutaEntry</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="libanjuta-api.html" title="libanjuta API">
+<link rel="prev" href="AnjutaDropEntry.html" title="AnjutaDropEntry">
+<link rel="next" href="AnjutaEnvironmentEditor.html" title="AnjutaEnvironmentEditor">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#AnjutaEntry.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#AnjutaEntry.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#AnjutaEntry.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libanjuta-api.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="AnjutaDropEntry.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="AnjutaEnvironmentEditor.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="AnjutaEntry"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="AnjutaEntry.top_of_page"></a>AnjutaEntry</span></h2>
+<p>AnjutaEntry — <a href="http://developer.gnome.org/gtk2/GtkEntry.html"><span class="type">GtkEntry</span></a> subclass that displays help text with a button
+                    to clear the entry's contents.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="AnjutaEntry.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaEntry.html#anjuta-entry-new" title="anjuta_entry_new ()">anjuta_entry_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaEntry.html#anjuta-entry-get-text" title="anjuta_entry_get_text ()">anjuta_entry_get_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaEntry.html#anjuta-entry-dup-text" title="anjuta_entry_dup_text ()">anjuta_entry_dup_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaEntry.html#anjuta-entry-set-text" title="anjuta_entry_set_text ()">anjuta_entry_set_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaEntry.html#anjuta-entry-is-showing-help-text" title="anjuta_entry_is_showing_help_text ()">anjuta_entry_is_showing_help_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaEntry.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="AnjutaEntry.html#AnjutaEntry--help-text" title="The “help-text” property">help-text</a></td>
+<td class="property_flags">Read / Write</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaEntry.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="AnjutaEntry.html#AnjutaEntryPriv" title="AnjutaEntryPriv">AnjutaEntryPriv</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaEntry.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkWidget.html">GtkWidget</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkEntry.html">GtkEntry</a>
+                <span class="lineart">╰──</span> AnjutaEntry
+                    <span class="lineart">╰──</span> <a class="link" href="AnjutaDropEntry.html" title="AnjutaDropEntry">AnjutaDropEntry</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="AnjutaEntry.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libanjuta/anjuta-entry.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="AnjutaEntry.description"></a><h2>Description</h2>
+<p>AnjutaEntry is a  version of a <a href="http://developer.gnome.org/gtk2/GtkEntry.html"><span class="type">GtkEntry</span></a> that displays some text, in
+a lighter color, that describes what is to be entered into it. There is also
+a button on the left to clear the entry's content quickly. AnjutaEntry is 
+similar to the serach boxes used in Evolution and Glade, but is more generic
+can can be used in almost any situation.</p>
+</div>
+<div class="refsect1">
+<a name="AnjutaEntry.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="anjuta-entry-new"></a><h3>anjuta_entry_new ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+anjuta_entry_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new AnjutaEntry.</p>
+<div class="refsect3">
+<a name="id-1.6.36.9.2.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-entry-get-text"></a><h3>anjuta_entry_get_text ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+anjuta_entry_get_text (<em class="parameter"><code><a class="link" href="AnjutaEntry.html" title="AnjutaEntry"><span class="type">AnjutaEntry</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.36.9.3.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>An AnjutaEntry</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.36.9.3.5"></a><h4>Returns</h4>
+<p> The contents of the entry. If the entry is empty, the help text will
+be displayed and an empty string will be returned.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-entry-dup-text"></a><h3>anjuta_entry_dup_text ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+anjuta_entry_dup_text (<em class="parameter"><code><a class="link" href="AnjutaEntry.html" title="AnjutaEntry"><span class="type">AnjutaEntry</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.36.9.4.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>An AnjutaEntry</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.36.9.4.5"></a><h4>Returns</h4>
+<p> A copy of the contents of the entry. If the entry
+is empty, the returned string will be empty. The returned string must be
+freed when no longer needed. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-entry-set-text"></a><h3>anjuta_entry_set_text ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_entry_set_text (<em class="parameter"><code><a class="link" href="AnjutaEntry.html" title="AnjutaEntry"><span class="type">AnjutaEntry</span></a> *self</code></em>,
+                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text</code></em>);</pre>
+<p>Sets the text on the entry, showing the help text if the text is empty.</p>
+<div class="refsect3">
+<a name="id-1.6.36.9.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>An AnjutaEntry</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text</p></td>
+<td class="parameter_description"><p>The new text</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-entry-is-showing-help-text"></a><h3>anjuta_entry_is_showing_help_text ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_entry_is_showing_help_text (<em class="parameter"><code><a class="link" href="AnjutaEntry.html" title="AnjutaEntry"><span class="type">AnjutaEntry</span></a> *self</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.36.9.6.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>An AnjutaEntry</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.36.9.6.5"></a><h4>Returns</h4>
+<p> Whether the entry is showing its help text. In practice, if this
+method returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, it means that the user has not entered anything.</p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="AnjutaEntry.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="AnjutaEntryPriv"></a><h3>AnjutaEntryPriv</h3>
+<pre class="programlisting">typedef struct _AnjutaEntryPriv AnjutaEntryPriv;</pre>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="AnjutaEntry.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="AnjutaEntry--help-text"></a><h3>The <code class="literal">“help-text”</code> property</h3>
+<pre class="programlisting">  “help-text”                <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Text to show the user what to enter into the entry.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: ""</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

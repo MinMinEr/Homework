@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-source-add" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-source" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak přidat existující soubory do projektu.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Přidání souborů</title>
+
+  <steps>
+    <item>
+      <p>V <gui>zobrazení projektu</gui> vyberte cíl, do kterého chcete přidat nové zdrojové soubory, klikněte na něj pravým tlačítkem myši, aby se objevila <gui>kontextová nabídka projektu</gui>, a zvolte <gui>Přidat zdrojový soubor</gui>.</p>
+
+      <p>Nebo v <gui>hlavní nabídce</gui> zvolte <guiseq><gui>Projekt</gui> <gui>Přidat zdrojový soubor…</gui></guiseq></p>
+    </item>
+    <item>
+      <p>Pomocí <gui>tlačítka pro výběr cíle</gui> můžete vybrat jiný cíl.</p>
+    </item>
+    <item>
+      <p>V okně pro výběr souboru níže vyberte soubory, které chcete přidat. Kliknutím na tlačítko <gui>Přidat</gui> je pak přidáte do svého projektu. Můžete vybrat několik souborů naráz přidržením tlačítka <key>Ctrl</key> nebo bloku souborů pomocí <key>Shift</key>.</p>
+    </item>
+  </steps>
+    
+  <note style="tip">
+    <p>Můžete přidat soubory v podsložkách projektu. Většina formátů projektů vyžaduje, aby soubory byly ve složce projektu. Přidání zdrojových souborů mimo složku projektu způsobí, že se tyto sobory automaticky nakopírují, aby byl požadavek splněn.</p>
+  </note>
+ 
+</page>

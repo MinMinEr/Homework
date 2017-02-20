@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-stack" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="fourth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Εξέταση της στοίβας.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Στοίβα</title>
+
+  <section>
+    <title>Λίστα πλαισίων στοίβας</title>
+
+    <p>Πλαίσιο στοίβας είναι η περιοχή της στοίβας που συνδέεται με κάθε κλήση συνάρτησης. Καταχωρίζει όλες τις συναρτήσεις και τα ορίσματά τους με τη σειρά κλήσης. Κάθε πλαίσιο στοίβας αριθμείται ξεκινώντας από 0 για την τρέχουσα συνάρτηση. Μπορείτε να προβάλλετε μόνο τα πλαίσια στοίβας ενώ εκτελείται ο αποσφαλματωτής.</p>
+
+    <p>Επιπλέον, ένα πρόγραμμα μπορεί να συντίθεται από μερικά νήματα. Κάθε νήμα εκτελείται ανεξάρτητα και έχει τους δικούς του καταχωρητές, τοπικές μεταβλητές και μεταβλητές στοίβας, αλλά μοιράζεται όλες τις γενικές μεταβλητές.</p>
+
+    <steps>
+      <item>
+        <p>Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Προβολή</gui> <gui>Στοίβα</gui></guiseq> για το άνοιγμα του παραθύρου <gui>Στοίβας</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Οι στοίβες εμφανίζονται σε δενδροειδή προβολή έχοντας το αντίστοιχο τους νήμα ως γονικό και εμφανίζουν την παρακάτω πληροφορία:</p>	
+
+    <terms>
+      <item>
+        <title>Ενεργό</title>
+        <p>Αυτό περιέχει ένα κίτρινο βέλος για αναπαράσταση του ενεργού πλαισίου στοίβας. Από προεπιλογή είναι πλαίσιο 0, η τρέχουσα συνάρτηση. Όλες οι αξιολογήσεις και οι τοπικές μεταβλητές είναι σχετικές με αυτό το ενεργό πλαίσιο. Μπορείτε να αλλάξετε το ενεργό πλαίσιο στοίβας για να εξετάσετε τοπικές μεταβλητές σε άλλες συναρτήσεις.</p>
+      </item>
+      <item>
+        <title>Νήμα</title>
+        <p>Αυτός είναι ένας αριθμός που αντιστοιχεί σε κάθε νήμα.</p>
+      </item>
+      <item>
+        <title>Πλαίσιο</title>
+        <p>Αυτός είναι ο αριθμός πλαισίου που ξεκινά από 0 για την τρέχουσα συνάρτηση. Η πρώτη συνάρτηση του προγράμματός σας, για παράδειγμα <code>main()</code> σε πρόγραμμα C, έχει το μέγιστο αριθμό.</p>
+      </item>
+      <item>
+        <title>Αρχείο</title>
+        <p>Το όνομα του αρχείου που περιέχει τη συνάρτηση που αντιστοιχεί σε αυτό το πλαίσιο.</p>
+      </item>
+      <item>
+        <title>Γραμμή</title>
+        <p>Ο αριθμός γραμμής της συνάρτησης που αντιστοιχεί σε αυτό το πλαίσιο.</p>
+      </item>
+      <item>
+        <title>Συνάρτηση</title>
+        <p>Το όνομα της συνάρτησης που αντιστοιχεί σε αυτό το πλαίσιο.</p>
+      </item>
+      <item>
+        <title>Διεύθυνση</title>
+        <p>Η διεύθυνση της συνάρτησης που αντιστοιχεί σε αυτό το πλαίσιο.</p>
+      </item>
+      <item>
+        <title>Ορίσματα</title>
+        <p>Τα ορίσματα της συνάρτησης.</p>
+      </item>
+    </terms>
+
+  </section>
+
+
+  <section>
+    <title>Αλλαγή του τρέχοντος πλαισίου στοίβας ή νήματος</title>
+
+    <steps>
+      <item>
+        <p>Στο παράθυρο <gui>Στοίβα</gui>, επιλέξτε το επιθυμητό πλαίσιο.</p>
+      </item>
+      <item>
+        <p>Δεξί κλικ και επιλέξτε <gui>Ορισμός τρέχοντος πλαισίου</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Κλικ σε πλαίσιο στοίβας στο ίδιο νήμα αλλάζει μόνο το πλαίσιο στοίβας, επιτρέποντας να δείτε άλλες τοπικές μεταβλητές. Αλλά κάνοντας το σε άλλο νήμα θα αλλάξει και το πλαίσιο στοίβας και το νήμα. Οι τιμές καταχώρισης θα είναι διαφορετικές και ο αποσφαλματωτής θα ξαναρχίσει στο επιλεγμένο νήμα.</p>
+  </section>
+
+
+  <section>
+    <title>Προβολή της τρέχουσας συνάρτησης</title>
+
+    <steps>
+      <item>
+        <p>Στο παράθυρο <gui>Στοίβα</gui>, επιλέξτε το επιθυμητό πλαίσιο.</p>
+      </item>
+      <item>
+        <p>Διπλό κλικ, ή δεξιό κλικ και επιλογή <gui>Προβολή πηγής</gui>.</p>
+      </item>
+    </steps>
+  </section>
+
+
+  <section>
+    <title>Λήψη ίχνους στοίβας</title>
+ 
+    <steps>
+      <item>
+        <p>Στο παράθυρο <gui>Στοίβα</gui>, δεξί κλικ και επιλογή <gui>Λήψη ίχνους στοίβας</gui>.</p>
+      </item>
+    </steps>
+  </section>
+
+
+</page>

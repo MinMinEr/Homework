@@ -1,0 +1,17 @@
+# We want a recent Autotest
+m4_version_prereq([2.58])
+
+# AT_PARSER_CHECK (PROJECTPARSER_ARG)
+# ------------------------------
+# Run AT_CHECK on projectparser, ignoring stdout and stderr and putting the
+# result in a file named output
+m4_define([AT_PARSER_CHECK],
+[AT_CHECK([$abs_builddir/../projectparser --no-id -o output] m4_quote($1),
+		 0,
+		 ignore,
+		 ignore)])
+
+
+# Launch test suite
+#------------------
+AT_INIT([Autotools project backend plugin])

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-module-new" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-library" group="first"/>
+    <link type="next" xref="project-manager-module-add"/>
+    <link type="next" xref="project-manager-library-add"/>
+    <link type="seealso" xref="project-manager-library"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak seskupit knihovny do modulu.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Přidání modulu</title>
+
+  <p>Balíček nemůže být přidán přímo do programu, ale musí být seskupen do modulu.</p>
+
+  <steps>
+    <item>
+      <p>V <gui>zobrazení projektu</gui> vyberte program, klikněte na něj pravým tlačítkem myši, aby se objevila <gui>kontextová nabídka projektu</gui>, a vyberte <gui>Přidat knihovnu</gui>.</p>
+      <p>Nebo v <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Projekt</gui> <gui>Přidat knihovnu…</gui></guiseq></p>
+    </item>
+    <item>
+      <p>V dialogovém okně <gui>Přidat knihovnu</gui> klikněte na tlačítko <gui>Nová knihovna</gui>.</p>
+    </item>
+    <item>
+      <p>Získáte seznam všech knihoven z balíčků nainstalovaných ve vašem systému. Můžete zaškrtnou jednu nebo i více knihoven.</p>
+      <note style="tip">
+        <p>Pokud se zde knihovna, kterou chcete, neobjeví:</p>
+	  <list>
+            <item>
+              <p>Pravděpodobně není nainstalována ve vašem systému. Spusťte aplikaci, kterou používáte k instalaci nových programů a vyhledejte název knihovny. Balíček, který potřebujete má často na konci názvu „dev“ nebo „devel“ a měl by obsahovat hlavičkové soubory a soubor <app>pkg-config</app> s příponou <file>.pc</file>.</p>
+            </item>
+            <item>
+              <p>Může to být i tím, že knihovna není z balíčku, což je často případ knihoven vyvíjených mimo Linux. Viz kapitola <link xref="project-manager-library-add"/> vysvětlující, jak je použít.</p>
+            </item>
+          </list>
+      </note>
+    </item>
+    <item>
+      <p>Po té, co vyberete knihovnu, je automaticky vygenerován název modulu, ale můžete jej změnit. Můžete i vybrat některý již existující název modulu, aby se nová knihovna přidala do něj a tím i do všech cílů, které jej již používají.</p>
+    </item>
+    <item>
+      <p>Když máte vše hotovo, klikněte na tlačítko <gui>Přidat</gui> a vytvoří se nový modul s vybranými knihovnami. Aby se modul opravdu použil, musíte jej přidat aspoň do jednoho cíle.</p>
+    </item>
+  </steps>
+
+</page>

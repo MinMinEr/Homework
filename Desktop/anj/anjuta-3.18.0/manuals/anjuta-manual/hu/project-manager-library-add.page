@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-library-add" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-library" group="sixth"/>
+    <link type="seealso" xref="project-manager-target"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Egyéni programkönyvtár hozzáadása célhoz.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Egyéni programkönyvtár hozzáadása</title>
+ 
+  <p>A Linux alatt gyakori csomagolt programkönyvtárak használata egyszerűbb, emiatt <link xref="project-manager-module-new">ellenőrizze</link>, hogy nem áll-e rendelkezésre ilyen. Egyéb esetben az alábbiakban ismertetett módon használhatja a programkönyvtárat.</p>
+
+  <p>Egy programkönyvtár C-ből való használatához meg kell adnia a fordítónak, hogy hol vannak a fejlécfájlok, és a szerkesztőnek, hogy hol találja a szükséges programkönyvtárakat. A probléma az, hogy a programja nem fog lefordulni egy másik számítógépen, ha a fejlécek és a programkönyvtárak más helyen vannak.</p>
+
+  <steps>
+    <item>
+      <p>Válassza ki a <gui>projektnézetben</gui> a programot tartalmazó könyvtárat, amelybe a programkönyvtárat fel kívánja venni, kattintson a jobb egérgombbal a <gui>helyi menü</gui> megjelenítéséhez, és válassza ki a <gui>Tulajdonságok</gui> menüpontot.</p>
+
+      <p>A <gui>főmenüből</gui> kiválaszthatja a <guiseq><gui>Projekt</gui><gui>Tulajdonságok</gui></guiseq> menüpontot is. Alapesetben ez a projektnézetben éppen kijelölt elem tulajdonságait szerkeszti. A legördülő lista gombbal kiválaszthat egy másik elemet.</p>
+    </item>
+    <item>
+      <p>Ha a fejlécfájlok szabványos helyre vannak telepítve (<file>/usr/include</file>), akkor ezt nem kell beállítania. Ellenkező esetben a <gui>C előfeldolgozó jelzői</gui> tulajdonsághoz fel kell vennie a <input>-I<var>include_útvonal</var></input> paramétert, ha a <app>gcc</app> fordítót használja.</p>
+
+      <p>Ennek megjelenítéséhez szükség lehet a <gui>További beállítások</gui> gomb megnyomására. Nyomja meg az <gui>Alkalmaz</gui> gombot, ha befejezte.</p>
+    </item>
+    <item>
+      <p>Ezután hozzá kell adnia a programkönyvtárat a célhoz. Válassza ki a <gui>projektnézetben</gui> a célt, amelybe a programkönyvtárat fel kívánja venni, kattintson a jobb egérgombbal a <gui>helyi menü</gui> megjelenítéséhez, és válassza ki a <gui>Tulajdonságok</gui> menüpontot.</p>
+
+      <p>A <gui>főmenüből</gui> kiválaszthatja a <guiseq><gui>Projekt</gui><gui>Tulajdonságok</gui></guiseq> menüpontot is. Alapesetben ez a projektnézetben éppen kijelölt elem tulajdonságait szerkeszti. A legördülő lista gombbal kiválaszthat egy másik elemet.</p>
+    </item>
+    <item>
+      <p>Be kell állítania a <gui>Szerkesztő paraméterei</gui> tulajdonságot, a <input>-l<var>programkönyvtár_neve</var></input> felvételével, ha a <app>gcc</app> fordítót használja. A <var>programkönyvtár_neve</var> a programkönyvtár fájlneve a <file>lib</file> előtag és a <file>.a</file> vagy <file>.so</file> kiterjesztés nélkül.</p>
+
+      <p>Ha a programkönyvtár nem szabványos könyvtárban van, akkor a <app>gcc</app> további könyvtárakban is képes keresni a <input>-L<var>programkönyvtár_útvonala</var></input> kapcsoló megadásával.</p>  
+    </item>
+  </steps>
+
+</page>

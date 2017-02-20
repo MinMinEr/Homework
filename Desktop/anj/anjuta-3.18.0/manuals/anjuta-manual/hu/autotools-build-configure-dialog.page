@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-configure-dialog" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="autotools-project-backend"/>
+    <link type="seealso" xref="autotools-build-configure"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Autotools konfigurálás ablak</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Autotools konfigurálás ablak</title>
+
+  <p>A <gui>Projekt konfigurálása</gui> ablak lehetővé teszi a következő beállítások megadását és a projekt konfigurálását.</p>
+
+  <terms>
+    <item>
+      <title><gui>Projekt regenerálása</gui></title>
+      <p>Ha be van jelölve, akkor a projekt lefordításához szükséges fájlok teljesen újra lesznek generálva, ellenkező esetben csak a konfigurálás lépés kerül végrehajtásra. Az <app>Anjuta</app> automatikusan bejelöli ezt a négyzetet, ha szükség van rá, így nem kell módosítania az aktuális állapotán.</p>
+    </item>
+    <item>
+      <title><gui>Konfiguráció</gui></title>
+      <p>Számos konfigurációt használhat, amelyek saját beállításokkal és összeállítási könyvtárral rendelkeznek, ebben a mezőben pedig elnevezheti azokat. Alapesetben van egy Alapértelmezett konfiguráció, a programok hibakeresését megkönnyítő (az átmeneti változókat és a kód sorrendjét megtartó) Hibakeresési és egy gyorsabb programokat lassabban előállító Optimalizált. További egyéni konfigurációkat is megadhat.</p>
+    </item>
+    <item>
+      <title><gui>Összeállítási könyvtár</gui></title>
+      <p>Válassza ki az összeállítási könyvtárat. Ez lehet a projekt könyvtára, vagy egy alkönyvtár. Ez akkor hasznos, ha különböző konfigurációk között váltogat, mert elkerülheti az egész projekt ismételt összeállítását.</p>
+      <note style="advanced">
+        <p>Az autotools használatakor nem állíthat be egy konfigurációt másik könyvtár használatára, ha egy konfiguráció már a projekt könyvtárát használja. Ezt előbb el kell távolítania. </p>
+      </note>
+      <note style="bug">
+        <p>Egyes autotools projektek nem állíthatók össze a projekt könyvtárán kívül. Ekkor is használhat különböző konfigurációkat, de mindnek a projekt könyvtárát kell használnia, és minden újra lesz fordítva a konfiguráció minden egyes megváltoztatásakor.</p>
+      </note>
+    </item>
+    <item>
+      <title><gui>Configure beállításai</gui></title>
+      <p>Ez a szövegmező felsorolja a configure futtatásakor használt összes parancssori argumentumot. Minden argumentumot szóköz választ el, és idézőjelbe kell tenni, ha szóközt tartalmaz. Minden konfiguráció alapértelmezett értékekkel tölti ki ezt a mezőt, amelyek módosíthatók.</p>
+      <note style="advanced">
+        <p>Minden autotools projekt támogatja argumentumok egy általános halmazát, de rendelkezhetnek egyedi argumentumokkal is. Az összes elfogadott argumentum listája a <cmd>configure --help</cmd> parancssori futtatásával kérhető le. A projektet legalább egyszer konfigurálnia kell, hogy a <cmd>configure</cmd> parancsfájl egyáltalán létezzen.</p>
+      </note>
+    </item>
+  </terms>
+
+</page>

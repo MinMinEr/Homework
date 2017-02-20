@@ -1,0 +1,138 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaDebuggerVariable
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_DEBUGGER_VARIABLE_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### STRUCT IAnjutaDebuggerVariableObject ##### -->
+<para>
+
+</para>
+
+@name: 
+@expression: 
+@type: 
+@value: 
+@changed: 
+@exited: 
+@deleted: 
+@children: 
+@has_more: 
+
+<!-- ##### USER_FUNCTION IAnjutaDebuggerVariableCallback ##### -->
+<para>
+
+</para>
+
+@data: 
+@user_data: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_debugger_variable_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_debugger_variable_assign ##### -->
+<para>
+
+</para>
+
+@obj: 
+@name: 
+@value: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_debugger_variable_create ##### -->
+<para>
+
+</para>
+
+@obj: 
+@expression: 
+@callback: 
+@user_data: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_debugger_variable_destroy ##### -->
+<para>
+
+</para>
+
+@obj: 
+@name: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_debugger_variable_evaluate ##### -->
+<para>
+
+</para>
+
+@obj: 
+@name: 
+@callback: 
+@user_data: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_debugger_variable_list_children ##### -->
+<para>
+
+</para>
+
+@obj: 
+@name: 
+@from: 
+@callback: 
+@user_data: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_debugger_variable_update ##### -->
+<para>
+
+</para>
+
+@obj: 
+@callback: 
+@user_data: 
+@err: 
+@Returns: 
+
+

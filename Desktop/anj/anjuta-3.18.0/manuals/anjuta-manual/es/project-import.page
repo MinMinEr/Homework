@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-import" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-project-management" group="first"/>
+    <link type="seealso" xref="anjuta-project-create"/>
+    <link type="seealso" xref="project-manager"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Importar un proyecto existente.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Importar un proyecto</title>
+
+  <p><app>Anjuta</app> no tiene su propio formato de proyecto. Carga proyectos usando formatos ya existentes, como «makefile» o «autotools», y no requiere que otros desarrolladores lo usen. La configuración de Anjuta se almacena en un archivo con la extensión <file>.anjuta</file> y una carpeta oculta creada en la carpeta de proyecto. Para usar un proyecto en <app>Anjuta</app> y crear estos archivos de configuración debe importar un proyecto. Esto no modificará ningún archivo de proyecto.</p>
+
+  <steps>
+    <item>
+      <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Archivo</gui><gui>Nuevo</gui><gui>Proyecto desde fuentes existentes</gui></guiseq>, o pulse <gui>Proyecto desde fuentes existentes</gui> de la lista desplegable en el botón <gui>Nuevo</gui> en la <gui>barra de herramientas superior</gui> para iniciar el asistente de proyectos.</p>
+    </item>
+    <item>
+      <p>Seleccione <gui>Importar desde una carpeta</gui> si el proyecto ya está presente en su equipo, después seleccione la carpeta del proyecto.</p>
+      <p>O seleccione <gui>Importar desde un sistema de control de versiones</gui> si el proyecto debe descargarse desde un servidor. Después, seleccione el sistema de control de versiones, la dirección del servidor y la carpeta de destino en su equipo.</p>
+    </item>
+    <item>
+      <p>Después de seleccionar un proyecto existente, se debe rellenar la caja de texto <gui>Nombre del proyecto</gui> con el nombre de la carpeta del proyecto, pero puede cambiarlo. Cuando lo haya hecho, pulse el botón <gui>Importar</gui> para descargar el proyecto y, si es necesario, crear los archivos requeridos por <app>Anjuta</app>.</p>
+    </item>
+    <item>
+      <p><app>Anjuta</app> intenta encontrar automáticamente el «backend» usado en su proyecto. Se le preguntará que elija un complemento de «backend» si es posible usar varios «backends» en su proyecto. Lea la descripción del «backend» para saber cuál elegir.</p>
+    </item>
+  </steps>
+
+</page>

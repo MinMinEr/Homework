@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-library-add" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-library" group="sixth"/>
+    <link type="seealso" xref="project-manager-target"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Προσθήκη προσαρμοσμένης βιβλιοθήκης σε προορισμό.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Προσθήκη προσαρμοσμένης βιβλιοθήκης</title>
+ 
+  <p>Είναι πιο εύκολο να χρησιμοποιήσετε μια πεκεταρισμένη βιβλιοθήκη, που είναι κοινή στο Linux, έτσι σημειώστε εάν είναι η περίπτωση <link xref="project-manager-module-new">εδώ</link>. Αλλά αλλιώς μπορείτε ακόμα να χρησιμοποιήσετε τη βιβλιοθήκη όπως περιγράφεται παρακάτω.</p>
+
+  <p>Για τη χρήση βιβλιοθήκης στη C, πρέπει να πείτε στον μεταγλωττιστή πού είναι τα αρχεία κεφαλίδας και να πείτε στον σύνδεσμο πού να βρει τις απαιτούμενες βιβλιοθήκες. Το θέμα είναι ότι το πρόγραμμά σας δεν θα μεταγλωττιστεί σε άλλο υπολογιστή εάν η κεφαλίδα και οι βιβλιοθήκες είναι κάπου αλλού.</p>
+
+  <steps>
+    <item>
+      <p>Επιλέξτε τον κατάλογο που περιέχει το επιθυμητό πρόγραμμα για προσθήκη στη νέα βιβλιοθήκη στην <gui>προβολή έργου</gui>, κλικ στο δεξί πλήκτρο του ποντικιού για την εμφάνιση του <gui>μενού περιεχομένου έργου</gui> και επιλέξτε <gui>Ιδιότητες</gui>.</p>
+
+      <p>Ή από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Έργο</gui> <gui>Ιδιότητες</gui></guiseq>. Από προεπιλογή, επεξεργάζεται τις ιδιότητες του τρέχοντος επιλεγμένου στοιχείου στην προβολή έργου. Μπορείτε να επιλέξετε διαφορετικό στοιχείο στο κουμπί πτυσσόμενης λίστας.</p>
+    </item>
+    <item>
+      <p>Εάν τα αρχεία κεφαλίδας είναι εγκατεστημένα σε μια τυπική τοποθεσία (<file>/usr/include</file>) δεν απαιτείται να το ορίσετε αυτό. Εάν όχι, πρέπει να προσθέσετε <input>-I<var>include_path</var></input> στην ιδιότητα <gui>σημαίες προεπεξεργαστή C</gui>, εάν χρησιμοποιείτε <app>gcc</app> ως μεταγλωττιστή σας. Μπορείτε να προσθέσετε πολλές διαδρομές χωρισμένες με κενά. Αυτές οι επιλογές θα χρησιμοποιηθούν για όλους τους προορισμούς σε αυτόν τον κατάλογο.</p>
+
+      <p>Ίσως χρειαστεί να επεκτείνετε το κουμπί <gui>Περισσότερες επιλογές</gui> για να το δείτε. Κλικ στο κουμπί <gui>Εφαρμογή</gui> όταν τελειώσετε.</p>
+    </item>
+    <item>
+      <p>Έπειτα, πρέπει να προσθέσετε τη βιβλιοθήκη σε προορισμό. Επιλέξτε τον επιθυμητό προορισμό για προσθήκη στη βιβλιοθήκη στην <gui>προβολή έργου</gui>, κλικ στο δεξί πλήκτρο του ποντικιού για την εμφάνιση του <gui>μενού περιεχομένου έργου</gui> και επιλέξτε <gui>Ιδιότητες</gui>.</p>
+
+      <p>Ή από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Έργο</gui> <gui>Ιδιότητες</gui></guiseq>. Από προεπιλογή, επεξεργάζεται τις ιδιότητες του τρέχοντος επιλεγμένου στοιχείου στην προβολή έργου. Μπορείτε να επιλέξετε διαφορετικό στοιχείο στο κουμπί πτυσσόμενης λίστας.</p>
+    </item>
+    <item>
+      <p>Πρέπει να ορίσετε την ιδιότητα <gui>Σημαίες συνδέσμου</gui>, προσθέτοντας <input>-l<var>library_name</var></input> εάν ο μεταγλωττιστής σας είναι <app>gcc</app>. <var>library_name</var> είναι το όνομα του αρχείου βιβλιοθήκης χωρίς το πρόθεμα <file>lib</file> και χωρίς την επέκταση <file>.a</file> ή <file>.so</file>.</p>
+
+      <p>Εάν η βιβλιοθήκη δεν είναι σε έναν τυπικό κατάλογο, το <app>gcc</app> μπορεί να ψάξει σε επιπλέον καταλόγους με την επιλογή <input>-L<var>library_path</var></input>.</p>  
+    </item>
+  </steps>
+
+</page>

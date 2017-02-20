@@ -1,0 +1,121 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaProfileManager
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT AnjutaProfileManager ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL AnjutaProfileManager::profile-popped ##### -->
+<para>
+
+</para>
+
+@anjutaprofilemanager: the object which received the signal.
+@arg1: 
+
+<!-- ##### SIGNAL AnjutaProfileManager::profile-pushed ##### -->
+<para>
+
+</para>
+
+@anjutaprofilemanager: the object which received the signal.
+@arg1: 
+
+<!-- ##### ARG AnjutaProfileManager:plugin-manager ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION anjuta_profile_manager_new ##### -->
+<para>
+
+</para>
+
+@plugin_manager: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_profile_manager_push ##### -->
+<para>
+
+</para>
+
+@profile_manager: 
+@profile: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_profile_manager_pop ##### -->
+<para>
+
+</para>
+
+@profile_manager: 
+@profile: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_profile_manager_freeze ##### -->
+<para>
+
+</para>
+
+@profile_manager: 
+
+
+<!-- ##### FUNCTION anjuta_profile_manager_thaw ##### -->
+<para>
+
+</para>
+
+@profile_manager: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_profile_manager_get_current ##### -->
+<para>
+
+</para>
+
+@profile_manager: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_profile_manager_close ##### -->
+<para>
+
+</para>
+
+@profile_manager: 
+
+
+<!-- ##### STRUCT AnjutaProfileManagerPriv ##### -->
+<para>
+
+</para>
+
+

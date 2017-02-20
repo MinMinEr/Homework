@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="autotools-project-target-type" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="project-manager-target-add"/>
+    <desc>Τύπος προορισμού autotools.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Τύπος έργου autotools</title>
+
+  <p>Υπάρχουν διαφορετικοί διαθέσιμοι τύποι προορισμού.</p>
+
+  <terms>
+    <item>
+      <title>Κοινόχρηστη βιβλιοθήκη (Libtool)</title>
+      <p>Αναπαριστά μια κοινόχρηστη βιβλιοθήκη πολλών προγραμμάτων που συνδέεται στο χρόνο εκτέλεσης. Είναι το πιο κοινό είδος βιβλιοθηκών στο Linux. Λέγεται δυναμικός σύνδεσμος βιβλιοθήκης στα Windows.</p>
+      <p>Χρησιμοποιεί το πακέτο Libtool. Το όνομά του πρέπει να αρχίζει με 'lib' και έχει την επέκταση '.la'.</p>
+    </item>
+    <item>
+      <title>Άρθρωμα (Libtool)</title>
+      <p>Αντιπροσωπεύει μια βιβλιοθήκη, που συχνά ονομάζεται πρόσθετο, συνδεμένο στον χρόνο εκτέλεσης ρητά από το ίδιο το πρόγραμμα. Χρησιμοποιείται μόνο για φόρτωση του κώδικα που αντιστοιχεί στα χρησιμοποιούμενα χαρακτηριστικά.</p>
+      <p>Χρησιμοποιεί το πακέτο Libtool. Το όνομά του δεν χρειάζεται το πρόθεμα 'lib', αλλά πρέπει να έχει την επέκταση '.la'.</p>
+    </item>
+    <item>
+      <title>Στατική βιβλιοθήκη (Libtool)</title>
+      <p>Αντιπροσωπεύει μια βιβλιοθήκη συνδεμένη με το πρόγραμμα στο χρόνο μεταγλώττισης. Μόνο η χρησιμοποιούμενη συνάρτηση διατηρείται μέσα στο δημιουργούμενο εκτελέσιμο.</p>
+      <p>Χρησιμοποιεί το πακέτο Libtool. Το όνομά του πρέπει να αρχίζει με 'lib' και να έχει την επέκταση '.a'.</p>
+    </item>
+    <item>
+      <title>Πρόγραμμα</title>
+      <p>Αντιπροσωπεύει μεταγλωττισμένο πρόγραμμα για παράδειγμα από πηγαία αρχεία C. Όλα τα θυγατρικά αντιπροσωπεύουν τα πηγαία μεταγλωττισμένα αρχεία για δημιουργία του προγράμματος.</p>
+    </item>
+    <item>
+      <title>Άρθρωμα python</title>
+      <p>Αντιπροσωπεύει ένα πρόγραμμα γραμμένο σε Python.</p>
+    </item>
+    <item>
+      <title>Άρθρωμα java</title>
+      <p>Αντιπροσωπεύει ένα πρόγραμμα γραμμένο σε Java.</p>
+    </item>
+    <item>
+      <title>Άρθρωμα LISP</title>
+      <p>Αντιπροσωπεύει ένα πρόγραμμα γραμμένο σε LISP.</p>
+    </item>
+    <item>
+      <title>Αρχεία κεφαλίδας</title>
+      <p>Αυτός ο προορισμός επιτρέπει την ομαδοποίηση αρχείων κεφαλίδας και ορίζει πού πρέπει να εγκατασταθούν.</p>
+    </item>
+    <item>
+      <title>Τεκμηρίωση Man</title>
+      <p>Ομαδοποιεί τις απαιτούμενες σελίδες man από το έργο.</p>
+    </item>
+    <item>
+      <title>Τεκμηρίωση Info</title>
+      <p>Ομαδοποιεί τις απαιτούμενες σελίδες πληροφοριών από το έργο.</p>
+    </item>
+    <item>
+      <title>Ποικίλα δεδομένα</title>
+      <p>Ομαδοποιεί αρχεία δεδομένων που απαιτούνται από το έργο όπως εικόνες, περιγραφή διεπαφής χρήστη, ρυθμίσεις αρχείων...</p>
+    </item>
+    <item>
+      <title>Δέσμη ενεργειών</title>
+      <p>Αντιπροσωπεύει προγράμματα που είναι δέσμες ενεργειών. Αυτά τα σενάρια εγκαθίστανται μόνο στο καθορισμένο κατάλογο. Εάν τα δημιουργούνται δέσμες ενεργειών απαιτούνται πρόσθετοι κανόνες.</p>
+    </item>
+  </terms>
+
+</page>

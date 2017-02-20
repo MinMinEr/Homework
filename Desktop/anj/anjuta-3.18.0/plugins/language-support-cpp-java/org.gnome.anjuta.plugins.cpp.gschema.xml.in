@@ -1,0 +1,16 @@
+<schemalist>
+	<schema id="org.gnome.anjuta.plugins.cpp" path="/org/gnome/anjuta/plugins/cpp/">
+		<key name="user-packages" type="s">
+			<default>""</default>
+		</key>
+		<key name="load-project-packages" type="b">
+			<default>true</default>
+		</key>
+		<key name="load-libc" type="b">
+			<default>true</default>
+		</key>
+		<key name="load-stdcpp" type="b">
+			<default>true</default>
+		</key>
+	</schema>
+</schemalist>

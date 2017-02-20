@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-watch" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="second"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Επόπτης εκφράσεων και μεταβλητών.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Εκφράσεις παρακολούθησης</title>
+
+  <p>Εκφράσεις εποπτείας, ή επόπτες για συντομία, είναι εκφράσεις που ο αποσφαλματωτής αξιολογεί και τυπώνει το αποτέλεσμα κάθε φορά που το πρόγραμμα σταματά· για παράδειγμα, μετά από κάθε <link xref="debug-step">μοναδικό βήμα</link> μέσα από το πρόγραμμα.</p>
+
+  <section>
+    <title>Λίστα εποπτευόμενων εκφράσεων</title>
+
+    <steps>
+      <item>
+        <p>Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Προβολή</gui> <gui>Επόπτες</gui></guiseq> για το άνοιγμα του παραθύρου <gui>Επόπτες</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Όπως οι τοπικές μεταβλητές, όλες οι εκφράσεις εποπτείας εμφανίζονται σε ένα δέντρο με θυγατρικά που χρησιμοποιούνται για την αναπαράσταση μελών δομής ή διανύσματος.</p>
+  
+    <terms>
+      <item>
+        <title>Μεταβλητή</title>
+        <p>Το όνομα της μεταβλητής ή της έκφρασης.</p>
+      </item>
+      <item>
+        <title>Τιμή</title>
+        <p>Η μεταβλητή ή έκφραση τιμής.</p>
+      </item>
+      <item>
+        <title>Τύπος</title>
+        <p>Ο τύπος της μεταβλητής ή το αποτέλεσμα της έκφρασης.</p>
+      </item>
+    </terms>
+  </section>
+
+  <section>
+    <title>Επόπτες ενημέρωσης</title>
+
+    <p>Οι εκφράσεις εποπτείας μπορούν να ενημερωθούν αυτόματα μόλις σταματήσει το πρόγραμμα ή ζητηθεί από τον χρήστη.</p>
+
+    <p>Για ορισμό έκφρασης εποπτείας για αυτόματη ενημέρωση:</p>
+
+    <steps>
+      <item>
+        <p>Στο παράθυρο <gui>Επόπτες</gui>, επιλέξτε τον επιθυμητό επόπτη για αυτόματη ενημέρωση. Δεξί κλικ και έλεγχος σημείωσης της <gui>Αυτόματης ενημέρωσης</gui>. Εάν όχι, επιλέξτε τον.</p>
+      </item>
+    </steps>
+
+    <p>Για χειροκίνητη ενημέρωση της έκφρασης εποπτείας:</p>
+
+    <steps>
+      <item>
+        <p>Στο παράθυρο <gui>Επόπτες</gui>, δεξί κλικ και επιλογή <gui>Ενημέρωση επόπτη</gui> για ενημέρωση του επιλεγμένου επόπτη.</p>
+      </item>
+    </steps>
+
+    <p>Για ταυτόχρονη χειροκίνητη ενημέρωση όλων των εκφράσεων εποπτείας:</p>
+
+    <steps>
+      <item>
+        <p>Στο παράθυρο <gui>Επόπτες</gui>, δεξί κλικ και επιλογή <gui>Ενημέρωση όλων</gui> για την ταυτόχρονη ενημέρωση όλων των εποπτών.</p>
+      </item>
+    </steps>
+
+  </section>
+
+
+  <section>
+    <title>Προσθήκη επόπτη σε έκφραση</title>
+
+    <p>Προσθήκη έκφρασης στη λίστα εποπτείας:</p>
+
+    <steps>
+      <item>
+        <p>Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αποσφαλμάτωση</gui> <gui>Προσθήκη επόπτη...</gui></guiseq> ή στο παράθυρο <gui>επόπτες</gui>, δεξί κλικ και επιλογή <gui>Προσθήκη επόπτη...</gui>.</p>
+      </item>
+      <item>
+        <p>Εισαγωγή της έκφρασης εποπτείας. Σημειώστε <gui>Αυτόματη ενημέρωση</gui> εάν θέλετε η έκφραση να αξιολογηθεί κάθε φορά που το πρόγραμμα σταματά.</p>
+      </item>
+    </steps>
+
+    <p>Μια έκφραση μπορεί να αξιολογηθεί και έπειτα να προστεθεί ως επόπτης όπως αυτό:</p>
+
+    <steps>
+      <item>
+        <p>Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αποσφαλμάτωση</gui> <gui>Έλεγχος/Αξιολόγηση</gui></guiseq> ή δεξί κλικ στο παράθυρο <gui>Επεξεργαστή</gui> και επιλογή <gui>Έλεγχος/Αξιολόγηση</gui>.</p>
+      </item>
+      <item>
+        <p>Κλικ στο κουμπί <gui>Προσθήκη</gui> για προσθήκη αυτής της έκφρασης στη λίστα εποπτών.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section>
+    <title>Αφαίρεση επόπτη</title>
+
+    <p>Μπορείτε να αφαιρέσετε μια έκφραση από τη λίστα εποπτών.</p>
+
+    <steps>
+      <item>
+        <p>Στο παράθυρο <gui>Επόπτες</gui>, επιλέξτε τον επιθυμητό επόπτη για αφαίρεση, έπειτα δεξί κλικ και επιλογή <gui>Αφαίρεση επόπτη</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Όλοι οι επόπτες μπορούν να αφαιρεθούν ταυτόχρονα.</p>
+
+    <steps>
+      <item>
+        <p>Στο παράθυρο <gui>Επόπτες</gui>, δεξί κλικ και επιλογή <gui>Αφαίρεση όλων</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section>
+    <title>Αλλαγή της τιμής μεταβλητής</title>
+
+    <p>Εάν μια έκφραση εποπτείας αντιστοιχεί σε μεταβλητή, μπορείτε να αλλάξετε την τιμή της.</p>
+
+    <steps>
+      <item>
+        <p>Στο παράθυρο <gui>Επόπτες</gui>, επιλέξτε την επιθυμητή μεταβλητή για επεξεργασία και διπλό κλικ στη στήλη <gui>Τιμή</gui>.</p>
+      </item>
+      <item>
+        <p>Εισάγετε τη νέα τιμή.</p>
+      </item>
+    </steps>
+  </section>
+
+
+</page>

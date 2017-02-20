@@ -1,0 +1,63 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaAsyncNotify
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION anjuta_async_notify_new ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_async_notify_get_error ##### -->
+<para>
+
+</para>
+
+@self: 
+@error: 
+
+
+<!-- ##### FUNCTION anjuta_async_notify_notify_finished ##### -->
+<para>
+
+</para>
+
+@self: 
+
+
+<!-- ##### FUNCTION anjuta_async_notify_set_error ##### -->
+<para>
+
+</para>
+
+@self: 
+@error: 
+
+
+<!-- ##### STRUCT AnjutaAsyncNotifyPriv ##### -->
+<para>
+
+</para>
+
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-library-add" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-library" group="sixth"/>
+    <link type="seealso" xref="project-manager-target"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Añadir una biblioteca personalizada a un objetivo.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Añadir una biblioteca personalizada</title>
+ 
+  <p>Es más fácil usar una biblioteca empaquetada, lo que es muy habitual en Linux; compruebe si este es el caso <link xref="project-manager-module-new">aquí</link>. Pero si no, todavía puede la biblioteca como se explica más abajo.</p>
+
+  <p>Para poder usar una biblioteca en C, debe indicar al compilador dónde se encontran los archivos de cabecera, y decirle al enlazador dónde están las bibliotecas necesarias. El problema es que su programa puede que no compile en otro equipo si las cabeceras y las bibliotecas están en otra ubicación.</p>
+
+  <steps>
+    <item>
+      <p>Seleccione la carpeta que contiene el programa donde quiere añadir la biblioteca en la <gui>vista de proyecto</gui>, pulse con el botón derecho del ratón para mostrar el <gui>menú contextual del proyecto</gui> y selecione <gui>Propiedades</gui>.</p>
+
+      <p>O desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Proyecto</gui><gui>Propiedades</gui></guiseq>. De manera predeterminada, edita las propiedades del elemento actualmente seleccionado en la vista del proyecto. Puede seleccionar un nodo diferente en el botón de la lista desplegable.</p>
+    </item>
+    <item>
+      <p>Si los archivos de cabecera están instalados en una ubicación estándar (<file>/usr/include</file>) no tiene que configurarlo. De lo contrario, debe añadir <input>-I<var>include_path</var></input> en la propiedad <gui>Opciones de preprocesado de C</gui> si usa <app>gcc</app> como compilador. Puede añadir varias rutas, separadas con espacios, para todos estos objetivos dentro de esta carpeta.</p>
+
+      <p>Puede tener que expandir el botón <gui>Más opciones</gui> para verlo. Pulse el botón <gui>Aplicar</gui> cuando haya terminado.</p>
+    </item>
+    <item>
+      <p>Después, necesita añadir la biblioteca a un objetivo. Seleccione el objetivo donde quiere añadir la biblioteca en la <gui>vista de proyecto</gui>, pulse con el botón derecho del ratón para mostrar el <gui>menú contextual del proyecto</gui> y seleccione <gui>Propiedades</gui>. </p>
+
+      <p>O desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Proyecto</gui><gui>Propiedades</gui></guiseq>. De manera predeterminada, edita las propiedades del elemento actualmente seleccionado en la vista del proyecto. Puede seleccionar un nodo diferente en el botón de la lista desplegable.</p>
+    </item>
+    <item>
+      <p>Debe establecer la propiedad <gui>Opciones del enlazador</gui>, añadiendo <input>-|<var>library_name</var></input> si compila con <app>gcc</app>. La <var>library_name</var> es el nombre del archivo de la biblioteca sin el prefijo <file>lib</file> y sin la extensión <file>.a</file> o <file>.so</file>.</p>
+
+      <p>Si la biblioteca no está en una carpeta estándar, <app>gcc</app> puede buscar en carpetas adicionales usando la opción <input>-L<var>library_path</var></input>.</p>  
+    </item>
+  </steps>
+
+</page>

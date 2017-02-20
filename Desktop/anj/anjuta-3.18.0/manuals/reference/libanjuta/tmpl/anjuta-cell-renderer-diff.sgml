@@ -1,0 +1,40 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaCellRendererDiff
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION anjuta_cell_renderer_diff_set_diff ##### -->
+<para>
+
+</para>
+
+@self: 
+@diff: 
+
+
+<!-- ##### FUNCTION anjuta_cell_renderer_diff_new ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+

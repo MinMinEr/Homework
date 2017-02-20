@@ -1,0 +1,70 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaEditorSearch
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_EDITOR_SEARCH_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ianjuta_editor_search_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_search_backward ##### -->
+<para>
+
+</para>
+
+@obj: 
+@search: 
+@case_sensitive: 
+@start: 
+@end: 
+@result_start: 
+@result_end: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_search_forward ##### -->
+<para>
+
+</para>
+
+@obj: 
+@search: 
+@case_sensitive: 
+@start: 
+@end: 
+@result_start: 
+@result_end: 
+@err: 
+@Returns: 
+
+

@@ -1,0 +1,284 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaSymbolQuery
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_SYMBOL_QUERY_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### ENUM IAnjutaSymbolQueryDb ##### -->
+<para>
+
+</para>
+
+@IANJUTA_SYMBOL_QUERY_DB_PROJECT: 
+@IANJUTA_SYMBOL_QUERY_DB_SYSTEM: 
+
+<!-- ##### ENUM IAnjutaSymbolQueryFileScope ##### -->
+<para>
+
+</para>
+
+@IANJUTA_SYMBOL_QUERY_SEARCH_FS_IGNORE: 
+@IANJUTA_SYMBOL_QUERY_SEARCH_FS_PUBLIC: 
+@IANJUTA_SYMBOL_QUERY_SEARCH_FS_PRIVATE: 
+
+<!-- ##### ENUM IAnjutaSymbolQueryMode ##### -->
+<para>
+
+</para>
+
+@IANJUTA_SYMBOL_QUERY_MODE_SYNC: 
+@IANJUTA_SYMBOL_QUERY_MODE_ASYNC: 
+@IANJUTA_SYMBOL_QUERY_MODE_QUEUED: 
+
+<!-- ##### ENUM IAnjutaSymbolQueryName ##### -->
+<para>
+
+</para>
+
+@IANJUTA_SYMBOL_QUERY_SEARCH: 
+@IANJUTA_SYMBOL_QUERY_SEARCH_ALL: 
+@IANJUTA_SYMBOL_QUERY_SEARCH_FILE: 
+@IANJUTA_SYMBOL_QUERY_SEARCH_IN_SCOPE: 
+@IANJUTA_SYMBOL_QUERY_SEARCH_ID: 
+@IANJUTA_SYMBOL_QUERY_SEARCH_MEMBERS: 
+@IANJUTA_SYMBOL_QUERY_SEARCH_CLASS_PARENTS: 
+@IANJUTA_SYMBOL_QUERY_SEARCH_SCOPE: 
+@IANJUTA_SYMBOL_QUERY_SEARCH_PARENT_SCOPE: 
+@IANJUTA_SYMBOL_QUERY_SEARCH_PARENT_SCOPE_FILE: 
+
+<!-- ##### FUNCTION ianjuta_symbol_query_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_query_cancel ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_query_search ##### -->
+<para>
+
+</para>
+
+@obj: 
+@pattern: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_query_search_all ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_query_search_class_parents ##### -->
+<para>
+
+</para>
+
+@obj: 
+@symbol: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_query_search_file ##### -->
+<para>
+
+</para>
+
+@obj: 
+@pattern: 
+@file: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_query_search_id ##### -->
+<para>
+
+</para>
+
+@obj: 
+@symbol: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_query_search_in_scope ##### -->
+<para>
+
+</para>
+
+@obj: 
+@pattern: 
+@scope: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_query_search_members ##### -->
+<para>
+
+</para>
+
+@obj: 
+@symbol: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_query_search_parent_scope ##### -->
+<para>
+
+</para>
+
+@obj: 
+@symbol: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_query_search_parent_scope_file ##### -->
+<para>
+
+</para>
+
+@obj: 
+@symbol: 
+@file_path: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_query_search_scope ##### -->
+<para>
+
+</para>
+
+@obj: 
+@file_path: 
+@line: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_query_set_fields ##### -->
+<para>
+
+</para>
+
+@obj: 
+@n_fields: 
+@fields: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_query_set_file_scope ##### -->
+<para>
+
+</para>
+
+@obj: 
+@filescope_search: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_query_set_filters ##### -->
+<para>
+
+</para>
+
+@obj: 
+@filters: 
+@include_types: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_query_set_group_by ##### -->
+<para>
+
+</para>
+
+@obj: 
+@field: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_query_set_limit ##### -->
+<para>
+
+</para>
+
+@obj: 
+@limit: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_query_set_mode ##### -->
+<para>
+
+</para>
+
+@obj: 
+@mode: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_query_set_offset ##### -->
+<para>
+
+</para>
+
+@obj: 
+@offset: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_query_set_order_by ##### -->
+<para>
+
+</para>
+
+@obj: 
+@field: 
+@err: 
+
+

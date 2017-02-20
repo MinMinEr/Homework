@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="project-manager" xml:lang="ca">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="project-manager-root"/>
+    <desc>Gestor de projectes.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jaume Planas</mal:name>
+      <mal:email>jplanas@itberga.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gil Forcada</mal:name>
+      <mal:email>gilforcada@guifi.net</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Connector del gestor de projectes</title>
+
+  <p>L'<app>Anjuta</app> permet diversos formats de projecte ja existents mitjançant els rerefons de connectors. El principal és el format autotools que s'utilitza habitualment a Linux.</p>
+
+  <p>
+    The project backend to use is chosen when creating or importing a new
+    project in <app>Anjuta</app>. It is displayed in the properties of the
+    project root node and can be changed at any time.
+  </p>
+
+  <p>Sigui quin sigui el rerefons que s'utilitzi, la interfície gràfica és la mateixa però podria tenir certes funcions inhabilitades.</p>
+
+  <section id="backend">
+    <title>Connector de rerefons de projecte</title>
+  </section>
+
+</page>

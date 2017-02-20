@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: AnjutaSerializer</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="libanjuta-api.html" title="libanjuta API">
+<link rel="prev" href="AnjutaSavePrompt.html" title="AnjutaSavePrompt">
+<link rel="next" href="AnjutaSession.html" title="AnjutaSession">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#AnjutaSerializer.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#AnjutaSerializer.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#AnjutaSerializer.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libanjuta-api.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="AnjutaSavePrompt.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="AnjutaSession.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="AnjutaSerializer"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="AnjutaSerializer.top_of_page"></a>AnjutaSerializer</span></h2>
+<p>AnjutaSerializer — Data serializer</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="AnjutaSerializer.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Unstable"><span class="acronym">Unstable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="AnjutaSerializer.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaSerializer.html" title="AnjutaSerializer"><span class="returnvalue">AnjutaSerializer</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaSerializer.html#anjuta-serializer-new" title="anjuta_serializer_new ()">anjuta_serializer_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaSerializer.html#anjuta-serializer-write-int" title="anjuta_serializer_write_int ()">anjuta_serializer_write_int</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaSerializer.html#anjuta-serializer-write-float" title="anjuta_serializer_write_float ()">anjuta_serializer_write_float</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaSerializer.html#anjuta-serializer-write-string" title="anjuta_serializer_write_string ()">anjuta_serializer_write_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaSerializer.html#anjuta-serializer-read-int" title="anjuta_serializer_read_int ()">anjuta_serializer_read_int</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaSerializer.html#anjuta-serializer-read-float" title="anjuta_serializer_read_float ()">anjuta_serializer_read_float</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaSerializer.html#anjuta-serializer-read-string" title="anjuta_serializer_read_string ()">anjuta_serializer_read_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaSerializer.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="AnjutaSerializer.html#AnjutaSerializer--filepath" title="The “filepath” property">filepath</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="AnjutaSerializer.html#AnjutaSerializerMode" title="enum AnjutaSerializerMode"><span class="type">AnjutaSerializerMode</span></a></td>
+<td class="property_name"><a class="link" href="AnjutaSerializer.html#AnjutaSerializer--mode" title="The “mode” property">mode</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaSerializer.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="AnjutaSerializer.html#AnjutaSerializerMode" title="enum AnjutaSerializerMode">AnjutaSerializerMode</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaSerializer.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">╰──</span> AnjutaSerializerMode
+    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> AnjutaSerializer
+</pre>
+</div>
+<div class="refsect1">
+<a name="AnjutaSerializer.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libanjuta/anjuta-serializer.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="AnjutaSerializer.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="AnjutaSerializer.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="anjuta-serializer-new"></a><h3>anjuta_serializer_new ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaSerializer.html" title="AnjutaSerializer"><span class="returnvalue">AnjutaSerializer</span></a> *
+anjuta_serializer_new (<em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filepath</code></em>,
+                       <em class="parameter"><code><a class="link" href="AnjutaSerializer.html#AnjutaSerializerMode" title="enum AnjutaSerializerMode"><span class="type">AnjutaSerializerMode</span></a> mode</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.15.10.2.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-serializer-write-int"></a><h3>anjuta_serializer_write_int ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_serializer_write_int (<em class="parameter"><code><a class="link" href="AnjutaSerializer.html" title="AnjutaSerializer"><span class="type">AnjutaSerializer</span></a> *serializer</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> value</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.15.10.3.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-serializer-write-float"></a><h3>anjuta_serializer_write_float ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_serializer_write_float (<em class="parameter"><code><a class="link" href="AnjutaSerializer.html" title="AnjutaSerializer"><span class="type">AnjutaSerializer</span></a> *serializer</code></em>,
+                               <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> value</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.15.10.4.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-serializer-write-string"></a><h3>anjuta_serializer_write_string ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_serializer_write_string (<em class="parameter"><code><a class="link" href="AnjutaSerializer.html" title="AnjutaSerializer"><span class="type">AnjutaSerializer</span></a> *serializer</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *value</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.15.10.5.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-serializer-read-int"></a><h3>anjuta_serializer_read_int ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_serializer_read_int (<em class="parameter"><code><a class="link" href="AnjutaSerializer.html" title="AnjutaSerializer"><span class="type">AnjutaSerializer</span></a> *serializer</code></em>,
+                            <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> *value</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.15.10.6.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-serializer-read-float"></a><h3>anjuta_serializer_read_float ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_serializer_read_float (<em class="parameter"><code><a class="link" href="AnjutaSerializer.html" title="AnjutaSerializer"><span class="type">AnjutaSerializer</span></a> *serializer</code></em>,
+                              <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a> *value</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.15.10.7.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-serializer-read-string"></a><h3>anjuta_serializer_read_string ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_serializer_read_string (<em class="parameter"><code><a class="link" href="AnjutaSerializer.html" title="AnjutaSerializer"><span class="type">AnjutaSerializer</span></a> *serializer</code></em>,
+                               <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> **value</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> replace</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.15.10.8.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="AnjutaSerializer.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="AnjutaSerializerMode"></a><h3>enum AnjutaSerializerMode</h3>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.15.11.2.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-SERIALIZER-READ:CAPS"></a>ANJUTA_SERIALIZER_READ</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-SERIALIZER-WRITE:CAPS"></a>ANJUTA_SERIALIZER_WRITE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="AnjutaSerializer.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="AnjutaSerializer--filepath"></a><h3>The <code class="literal">“filepath”</code> property</h3>
+<pre class="programlisting">  “filepath”                 <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Used to store and retrieve the streamtranslateable.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AnjutaSerializer--mode"></a><h3>The <code class="literal">“mode”</code> property</h3>
+<pre class="programlisting">  “mode”                     <a class="link" href="AnjutaSerializer.html#AnjutaSerializerMode" title="enum AnjutaSerializerMode"><span class="type">AnjutaSerializerMode</span></a></pre>
+<p>Used to decide read or write operation.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: ANJUTA_SERIALIZER_READ</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-project-folder-edit" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-folder" group="second"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak upravit vlastnosti složky nástroje Autotools.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  </info>
+
+  <title>Úprava složky Autotools</title>
+
+  <p>V těchto vlastnostech můžete definovat běžné vlastnosti pro všechny cíle náležející k této složce.</p>
+
+  <terms>
+    <item>
+      <title><gui>Přepínače kompilátoru jazyka C</gui></title>
+      <p>Tyto přepínače se předávají kompilátoru jazyka C, pokud nejsou definovány pro konkrétní cíl.</p>
+    </item>
+    <item>
+      <title><gui>Přepínače preprocesoru jazyka C</gui></title>
+      <p>Tyto přepínače se předávají každé kompilaci, která volá preprocesor jazyka C. Jsou ignorovány v případě, že jsou definovány pro konkrétní cíl.</p>
+    </item>
+    <item>
+      <title><gui>Přepínače kompilátoru jazyka C++</gui></title>
+      <p>Tyto přepínače se předávají kompilátoru jazyka C++, pokud nejsou definovány pro konkrétní cíl.</p>
+    </item>
+    <item>
+      <title><gui>Přepínače kompilátoru jazyka Fortran</gui></title>
+      <p>Tyto přepínače se předávají kompilátoru jazyka Fortran 9x, pokud nejsou definovány pro konkrétní cíl.</p>
+    </item>
+    <item>
+      <title><gui>Instalační složky</gui></title>
+      <p>Zde se definují instalační složky. To je zapotřebí, když chcete soubory instalovat do vlastních složek.</p>
+    </item>
+    <item>
+      <title><gui>Přepínače kompilátoru jazyka Java</gui></title>
+      <p>Tyto přepínače se předávají kompilátoru jazyka Java, pokud nejsou definovány pro konkrétní cíl.</p>
+    </item>
+    <item>
+      <title><gui>Přepínače generátoru Lex/Flex</gui></title>
+      <p>Tyto přepínače se předávají generátoru lexikálních analyzátorů Lex nebo Flex, pokud nejsou definovány pro konkrétní cíl.</p>
+    </item>
+    <item>
+      <title><gui>Přepínače linkeru</gui></title>
+      <p>Tyto přepínače se předávají linkeru, pokud nejsou definovány pro konkrétní cíl.</p>
+    </item>
+    <item>
+      <title><gui>Přepínače kompilátoru jazyka Objective C</gui></title>
+      <p>Tyto přepínače se předávají kompilátoru jazyka Objective C, pokud nejsou definovány pro konkrétní cíl.</p>
+    </item>
+    <item>
+      <title><gui>Přepínače kompilátoru jazyka Vala</gui></title>
+      <p>Tyto přepínače se předávají kompilátoru jazyka Vala, pokud nejsou definovány pro konkrétní cíl.</p>
+    </item>
+    <item>
+      <title><gui>Přepínače generátoru Yacc/Bison</gui></title>
+      <p>Tyto přepínače se předávají generátoru syntaktických analyzátorů Bison nebo Yacc, pokud nejsou definovány pro konkrétní cíl.</p>
+    </item>
+  </terms>
+
+</page>

@@ -1,0 +1,71 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaDebuggerMemory
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_DEBUGGER_MEMORY_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### STRUCT IAnjutaDebuggerMemoryBlock ##### -->
+<para>
+
+</para>
+
+@address: 
+@length: 
+@data: 
+
+<!-- ##### USER_FUNCTION IAnjutaDebuggerMemoryCallback ##### -->
+<para>
+
+</para>
+
+@data: 
+@user_data: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_debugger_memory_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_debugger_memory_inspect ##### -->
+<para>
+
+</para>
+
+@obj: 
+@address: 
+@length: 
+@callback: 
+@user_data: 
+@err: 
+@Returns: 
+
+

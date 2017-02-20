@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-local" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="third"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Zkoumání lokálních proměnných.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Lokální proměnné</title>
+
+  <p>Lokální proměnné aktuálního rámce (tj. aktuální funkce, ve které je ukazováno řízení programu) jsou zobrazeny v okně <gui>Lokální proměnné</gui>. Během provádění programu (např. během krokování) jsou lokální proměnné aktualizovány. V případě, že došlo v posledním kroku ladění ke změně hodnoty některé proměnné, je její hodnota zvýrazněna červeně. Proměnné jsou prezentovány kvůli snadnému zobrazení v podobě stromu.</p>
+
+  <section>
+    <title>Vypsání lokálních proměnných</title>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Zobrazit</gui> <gui>Lokální proměnné</gui></guiseq> pro zobrazení okna <gui>Lokální proměnné</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Všechny lokální proměnné se zobrazí ve stromovém zobrazení, ve kterém jsou potomci použiti k prezentování struktury členů polí.</p>
+  
+    <terms>
+      <item>
+        <title>Proměnná</title>
+        <p>Název proměnné.</p>
+      </item>
+      <item>
+        <title>Hodnota</title>
+        <p>Hodnota proměnné.</p>
+      </item>
+      <item>
+        <title>Typ</title>
+        <p>Typ proměnné.</p>
+      </item>
+    </terms>
+  </section>
+
+  <section>
+    <title>Změna hodnoty proměnné</title>
+
+    <steps>
+      <item>
+        <p>V okně <gui>Lokální proměnné</gui> vyberte proměnnou, kterou chcete upravit a dvojitě klikněte ve sloupci <gui>Hodnota</gui>.</p>
+      </item>
+      <item>
+        <p>Napište novou hodnotu.</p>
+      </item>
+    </steps>
+  </section>
+
+</page>

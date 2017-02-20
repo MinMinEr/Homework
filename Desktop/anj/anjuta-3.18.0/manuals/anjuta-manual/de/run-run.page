@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="run-run" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="first"/>
+    <link type="seealso" xref="run-parameters-dialog"/>
+    <link type="seealso" xref="autotools-build-install"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Ein Programm ohne Debugger ausführen.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ein Programm ausführen</title>
+
+  <p>Wenn mit <app>Anjuta</app> ein Programm gestartet wird, so wird geprüft, ob es aktuell ist und es wird gegebenenfalls neu erstellt.</p>
+
+  <steps>
+    <item>
+      <p>Wählen Sie <guiseq><gui>Ausführen</gui><gui>Ausführen</gui></guiseq> im <gui>Hauptmenü</gui>, oder drücken Sie <key>F3</key>, um das aktuelle Programm auszuführen.</p>
+    </item>
+  </steps>
+
+  <p>Das aktuelle Programm sowie weitere Parameter werden im Dialog <gui>Parameter</gui> festgelegt. Lesen Sie auch <link xref="run-parameters-dialog"/> für weitere Informationen.</p>
+
+  <steps>
+    <item>
+      <p>Wählen Sie <guiseq><gui>Ausführen</gui><gui>Programmparameter …</gui></guiseq> im <gui>Hauptmenü</gui>, um das Dialogfenster anzuzeigen.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Wenn Ihr Programm Datendateien benötigt, so müssen Sie es wahrscheinlich zumindest einmalig installieren, bevor Sie es ausführen können. Lesen Sie auch <link xref="autotools-build-install"/> für weitere Informationen.</p>
+  </note>
+ 
+</page>

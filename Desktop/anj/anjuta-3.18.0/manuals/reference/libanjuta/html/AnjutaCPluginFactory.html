@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: AnjutaCPluginFactory</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="libanjuta-internal-api.html" title="libanjuta internal API">
+<link rel="prev" href="libanjuta-internal-api.html" title="libanjuta internal API">
+<link rel="next" href="AnjutaCModule.html" title="AnjutaCModule">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#AnjutaCPluginFactory.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#AnjutaCPluginFactory.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libanjuta-internal-api.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libanjuta-internal-api.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="AnjutaCModule.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="AnjutaCPluginFactory"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="AnjutaCPluginFactory.top_of_page"></a>AnjutaCPluginFactory</span></h2>
+<p>AnjutaCPluginFactory — Anjuta C plugin factory</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="AnjutaCPluginFactory.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Unstable"><span class="acronym">Unstable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="AnjutaCPluginFactory.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaCPluginFactory.html" title="AnjutaCPluginFactory"><span class="returnvalue">AnjutaCPluginFactory</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaCPluginFactory.html#anjuta-c-plugin-factory-new" title="anjuta_c_plugin_factory_new ()">anjuta_c_plugin_factory_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaCPluginFactory.html#anjuta-c-plugin-factory-free" title="anjuta_c_plugin_factory_free ()">anjuta_c_plugin_factory_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaCPluginFactory.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> AnjutaCPluginFactory
+</pre>
+</div>
+<div class="refsect1">
+<a name="AnjutaCPluginFactory.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libanjuta/anjuta-c-plugin-factory.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="AnjutaCPluginFactory.description"></a><h2>Description</h2>
+<p><a class="link" href="AnjutaCPluginFactory.html" title="AnjutaCPluginFactory"><span class="type">AnjutaCPluginFactory</span></a> implements the <a class="link" href="IAnjutaPluginFactory.html" title="IAnjutaPluginFactory"><span class="type">IAnjutaPluginFactory</span></a> interface. This
+interface is used to create new plugin objects in Anjuta.</p>
+<p>This plugin factory creates new plugin objects which have a source code
+written in C. This factory is always available in Anjuta. Other plugin
+factories can be implemented as Anjuta plugins.</p>
+<p>This plugin factory uses the GLib dynamic type support implemented in 
+<a class="link" href="AnjutaCModule.html" title="AnjutaCModule"><span class="type">AnjutaCModule</span></a> object to allow loading and unloading of plugins code. But
+if the plugins itself can be unloaded, the <a class="link" href="AnjutaCModule.html" title="AnjutaCModule"><span class="type">AnjutaCModule</span></a> object must stay.
+If the plugin is needed later, it must be registed with the same
+module object. The factory take care of this and of creating the plugin
+object itself.</p>
+</div>
+<div class="refsect1">
+<a name="AnjutaCPluginFactory.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="anjuta-c-plugin-factory-new"></a><h3>anjuta_c_plugin_factory_new ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaCPluginFactory.html" title="AnjutaCPluginFactory"><span class="returnvalue">AnjutaCPluginFactory</span></a> *
+anjuta_c_plugin_factory_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Create a new <a class="link" href="AnjutaCPluginFactory.html" title="AnjutaCPluginFactory"><span class="type">AnjutaCPluginFactory</span></a> object.</p>
+<div class="refsect3">
+<a name="id-1.7.2.8.2.5"></a><h4>Returns</h4>
+<p> a new <a class="link" href="AnjutaCPluginFactory.html" title="AnjutaCPluginFactory"><span class="type">AnjutaCPluginFactory</span></a> object.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-c-plugin-factory-free"></a><h3>anjuta_c_plugin_factory_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_c_plugin_factory_free (<em class="parameter"><code><a class="link" href="AnjutaCPluginFactory.html" title="AnjutaCPluginFactory"><span class="type">AnjutaCPluginFactory</span></a> *factory</code></em>);</pre>
+<p>Delete a <a class="link" href="AnjutaCPluginFactory.html" title="AnjutaCPluginFactory"><span class="type">AnjutaCPluginFactory</span></a> object.</p>
+<div class="refsect3">
+<a name="id-1.7.2.8.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>factory</p></td>
+<td class="parameter_description"><p>a <a class="link" href="AnjutaCPluginFactory.html" title="AnjutaCPluginFactory"><span class="type">AnjutaCPluginFactory</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="AnjutaCPluginFactory.other_details"></a><h2>Types and Values</h2>
+</div>
+<div class="refsect1">
+<a name="AnjutaCPluginFactory.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="AnjutaCModule.html" title="AnjutaCModule"><span class="type">AnjutaCModule</span></a>, <a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaEntry
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION anjuta_entry_new ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_entry_get_text ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_entry_dup_text ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_entry_set_text ##### -->
+<para>
+
+</para>
+
+@self: 
+@text: 
+
+
+<!-- ##### FUNCTION anjuta_entry_is_showing_help_text ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### STRUCT AnjutaEntryPriv ##### -->
+<para>
+
+</para>
+
+

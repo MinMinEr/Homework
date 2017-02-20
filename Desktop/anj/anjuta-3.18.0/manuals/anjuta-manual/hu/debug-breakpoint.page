@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-breakpoint" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-execute" group="second"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Töréspontok kezelése.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Töréspontok</title>
+
+  <p>A töréspontok a program végrehajtásának adott helyen való megállítására használatosak, így a program állapota megvizsgálható azokon a helyeken.</p>
+
+  <section>
+    <title>Töréspontok felsorolása</title>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Nézet</gui><gui>Töréspontok</gui></guiseq> menüpontot a <gui>Töréspont</gui> ablak megnyitásához.</p>
+      </item>
+    </steps>
+
+    <p>Ez a nézet a következő oszlopokat tartalmazza:</p>
+  
+    <terms>
+      <item>
+        <title>Hely</title>
+        <p>Ez a töréspont pozíciója a forrásfájlban. Amikor a hibakereső beállítja a töréspontot, akkor további információkat kaphat, mint például a töréspontot tartalmazó függvény nevét.</p>
+      </item>
+      <item>
+        <title>Cím</title>
+        <p>Ez a mező a töréspont címével van kitöltve, amikor azt a hibakereső beállítja.</p>
+      </item>
+      <item>
+        <title>Típus</title>
+        <p>Ez mindig a <gui>töréspontot</gui> jeleníti meg. Egy jövőbeli, a különböző típusú töréspontokat támogató kiadás fogja használni.</p>
+      </item>
+      <item>
+        <title>Feltétel</title>
+        <p>Ez a töréspont feltétele. Üres, ha nincs megadva feltétel.</p>
+      </item>
+      <item>
+        <title>Lépésszám</title>
+        <p>Amikor a hibakereső nem fut, akkor ez az oszlop megjeleníti a töréspont lépésszámát, vagy nullát ha nincs megadva.</p>
+        <p>Amikor a hibakereső fut és a lépésszám nulla, akkor ez az oszlop megjeleníti a töréspont aktiválásainak számát. HA a lépésszám nem nulla, akkor mindkét szám megjelenik. A lépésszám a második szám.</p>
+      </item>
+      <item>
+        <title>Állapot</title>
+        <p>A töréspont állapota. Lehetséges értékek:</p>
+        <terms>
+          <item><title>Függőben:</title><p>a töréspont nincs beállítva a programjában.</p></item>
+          <item><title>Állandó:</title><p>a töréspont be van állítva (azonosítója zárójelben jelenik meg).</p></item>
+          <item><title>Ideiglenes:</title><p>a töréspont be van állítva, de elérésekor törlésre kerül.</p></item>
+        </terms>
+      </item>
+    </terms>
+
+    <note style="tip">
+     <p>Minden töréspont megőrzésre kerül az Anjuta munkamenetek között, még ha nem létező helyeknek felelnek is meg, például egy még be nem töltött megosztott programkönyvtárban. Ebben az esetben az állapot „függőben” lesz.</p>
+    </note>
+  </section>
+
+  <section>
+    <title>Töréspontok beállítása</title>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Hibakeresés</gui><gui>Töréspont hozzáadása</gui></guiseq> menüpontot, vagy kattintson a jobb egérgombbal a <gui>Töréspont</gui> ablakban, és válassza a <gui>Töréspont hozzáadása</gui> menüpontot.</p>
+      </item>
+      <item>
+        <p>Töltse ki a <gui>Helyet</gui>, amely a töréspont pozíciója, és igény szerint a többi mezőt. Ha egy fájl pillanatnyilag meg van nyitva a szerkesztőben, akkor a <gui>Hely</gui> alapértelmezése az aktuális sor lesz. További információkért lásd a <link xref="debug-breakpoint-dialog"/> részt.</p>
+      </item>
+    </steps>
+
+    <p>Egy másik megoldás a töréspont átváltása funkció. Ha nincs töréspont az aktuális sorban, akkor ez felvesz egyet. Ellenkező esetben eltávolítja azt.</p>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Hibakeresés</gui><gui>Töréspont átváltása</gui></guiseq> menüpontot, vagy kattintson a jobb egérgombbal a <gui>Szerkesztő</gui> ablakban, és válassza a <gui>Töréspont átváltása</gui> menüpontot.</p>
+      </item>
+    </steps>
+
+  </section>
+
+
+  <section>
+    <title>Töréspontok szerkesztése</title>
+
+    <p>A töréspontok helye nem módosítható; ehelyett hozzon létre új töréspontokat. Azonban megváltoztathatja a törési feltételt, vagy a lépésszámot. Töréspontok szerkesztéséhez:</p>
+
+    <steps>
+      <item>
+        <p>Válasszon ki egy töréspontot a <gui>Töréspont</gui> ablakban.</p>
+      </item>
+      <item>
+        <p>Kattintson a jobb egérgombbal a <gui>Töréspont</gui> ablakban, és válassza a <gui>Töréspont szerkesztése</gui> menüpontot.</p>
+      </item>
+      <item>
+        <p>Módosítsa a <gui>Feltétel</gui> vagy a <gui>Lépésszám</gui> mezőket, és nyomja meg az <gui>OK</gui> gombot, amikor befejezte. További információkat a <link xref="debug-breakpoint-dialog"/> részben talál.</p>
+      </item>
+    </steps>
+
+  </section>
+
+
+  <section>
+    <title>Töréspontok eltávolítása</title>
+
+	<p>Eltávolíthat egy töréspontot a fentebb leírt Töréspont átváltása funkcióval. Ha azonban egynél több töréspontot szeretne eltávolítani, vagy a töréspont másik fájlban van, akkor használhatja a töréspont ablakot:</p>
+
+    <steps>
+      <item>
+        <p>Válasszon ki egy töréspontot a <gui>Töréspont</gui> ablakban.</p>
+      </item>
+      <item>
+        <p>Kattintson a jobb egérgombbal a <gui>Töréspont</gui> ablakban, és válassza a <gui>Töréspont eltávolítása</gui> menüpontot.</p>
+      </item>
+    </steps>
+
+    <p>Minden töréspont eltávolításához:</p>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Hibakeresés</gui><gui>Összes töréspont eltávolítása</gui></guiseq> menüpontot, vagy kattintson a jobb egérgombbal a <gui>Hibakeresés</gui> ablakban, és válassza az <gui>Összes töréspont eltávolítása</gui> menüpontot.</p>
+      </item>
+    </steps>
+
+  </section>
+
+
+  <section>
+    <title>Töréspontok engedélyezése és letiltása</title>
+
+    <p>Egyes esetekben csak a töréspont ideiglenes letiltása szükséges a teljes törlése helyett. Töréspont letiltásához vagy újraengedélyezéséhez:</p>
+
+    <steps>
+      <item>
+        <p>Kattintson az <gui>Engedélyezés</gui> pipára a <gui>Töréspont</gui> ablakban, vagy kattintson a jobb egérgombbal a <gui>Töréspont</gui> ablakban, és válassza a <gui>Töréspont engedélyezése</gui> vagy a <gui>Töréspont letiltása</gui> menüpontot.</p>
+      </item>
+    </steps>
+
+    <p>Letilthatja az összes töréspontot:</p>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Hibakeresés</gui><gui>Összes töréspont letiltása</gui></guiseq> menüpontot, vagy kattintson a jobb egérgombbal a <gui>Hibakeresés</gui> ablakban, és válassza az <gui>Összes töréspont letiltása</gui> menüpontot.</p>
+      </item>
+    </steps>
+
+  </section>
+  
+
+</page>

@@ -1,0 +1,66 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaEnvironmentEditor
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION anjuta_environment_editor_new ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_environment_editor_set_variable ##### -->
+<para>
+
+</para>
+
+@editor: 
+@variable: 
+
+
+<!-- ##### FUNCTION anjuta_environment_editor_get_all_variables ##### -->
+<para>
+
+</para>
+
+@editor: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_environment_editor_get_modified_variables ##### -->
+<para>
+
+</para>
+
+@editor: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_environment_editor_reset ##### -->
+<para>
+
+</para>
+
+@editor: 
+
+

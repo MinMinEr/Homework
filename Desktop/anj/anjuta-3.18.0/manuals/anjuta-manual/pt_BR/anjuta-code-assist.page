@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="anjuta-code-assist" xml:lang="pt-BR">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-10-24" status="draft"/>
+    <desc>Configure e use os recursos do editor integrado</desc>
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  </info>
+
+  <title>Autocompletação e dicas de funções</title>
+
+<section>
+<title>Autocompletação</title>
+<p>Autocompletion automatically suggests functions and other code symbols after
+you start typing by trying to match existing symbols with the first characters typed.
+It will popup a drop-down menu where you can select a match by using the
+<key>Enter</key> key. Normally this happens automatically after you typed the third
+(non-whitespace) character but you can also
+force it by using the <guiseq><gui>Edit</gui><gui>Auto-Complete</gui></guiseq>
+menu item.
+</p>
+<note>
+<p>O Anjuta tem suporte para autocompletar códigos escritos em C/C++, Vala, Javascript e Python. Note que o autocompletar só funciona caso o Anjuta saiba dos símbolos usados. Se você está usando bibliotecas em C/C++ que não são configuradas usando o <cmd>pkg-config</cmd> e/ou não foram adicionadas à configuração do projeto, o Anjuta não poderá encontrar estes símbolos e o autocompletar pode não funcionar.</p>
+<p>Além disso, algumas sintaxes podem ser muito complexas para o analisador integrado e pode não ser capar de detectar qual completação é necessária</p>
+</note>
+</section>
+
+<section>
+<title>Codificação efetiva usando dicas de funções</title>
+
+<p>Como geralmente é difícil lembrar a assinatura de cada método ou função usados em um projeto, o editor automaticamente mostra uma pequena dica de ferramenta sempre que você digitar '(' depois de um nome de função e exibe sua assinatura.</p>
+
+</section>
+
+</page>

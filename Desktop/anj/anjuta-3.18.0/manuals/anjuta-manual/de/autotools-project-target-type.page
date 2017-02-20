@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="autotools-project-target-type" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="project-manager-target-add"/>
+    <desc>Zieltyp der Autotools.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Projekttyp der Autotools</title>
+
+  <p>Es stehen verschiedene Typen von Zielen zur Verfügung.</p>
+
+  <terms>
+    <item>
+      <title>Gemeinsam verwendete Bibliothek (libtool)</title>
+      <p>Es repräsentiert eine von mehreren Programmen gemeinsam verwendete Bibliothek, die zur Laufzeit gebunden wird. Dies ist die üblichste Variante einer Bibliothek unter Linux. Sie wird unter Windows »dynamic link library« (DLL) genannt.</p>
+      <p>Es verwendet das Libtool-Paket. Dessen Name muss mit »lib« beginnen und besitzt die Erweiterung ».la«.</p>
+    </item>
+    <item>
+      <title>Modul (Libtool)</title>
+      <p>It represents a library, often named a plugin, linked at run time
+      explicitly by the program itself.
+      It is used to only load the code corresponding to the used features.</p>
+      <p>Es verwendet das Libtool-Paket. Dessen Name ist nicht auf das Präfix »lib« angewiesen, muss aber die Erweiterung ».la« besitzen.</p>
+    </item>
+    <item>
+      <title>Statische Bibliothek (Libtool)</title>
+      <p>Repräsentiert eine Bibliothek, die zur Übersetzungszeit mit dem Programm gebunden wird. Nur die verwendeten Funktionen sind in der erstellten ausführbaren Datei enthalten.</p>
+      <p>Es verwendet das Libtool-Paket. Dessen Name muss mit »lib« beginnen und besitzt die Erweiterung ».a«.</p>
+    </item>
+    <item>
+      <title>Programm</title>
+      <p>It represents compiled program by example from C source files.
+      All children represent the source files compiled to generate the
+      program.</p>
+    </item>
+    <item>
+      <title>Python-Modul</title>
+      <p>Es repräsentiert ein in Python geschriebenes Programm.</p>
+    </item>
+    <item>
+      <title>Java-Modul</title>
+      <p>It represents a program written in Java.</p>
+    </item>
+    <item>
+      <title>LISP-Modul</title>
+      <p>It represents a program written in LISP.</p>
+    </item>
+    <item>
+      <title>Header-Dateien</title>
+      <p>Dieses Ziel ermöglicht es, Kopfdateien zu gruppieren und zu definieren, wo diese installiert werden müssen.</p>
+    </item>
+    <item>
+      <title>Man-Dokumentation</title>
+      <p>Gruppiert Hilfeseiten, die vom Projekt gebraucht werden.</p>
+    </item>
+    <item>
+      <title>Info-Dokumentation</title>
+      <p>Gruppiert Infoseiten, die vom Projekt gebraucht werden.</p>
+    </item>
+    <item>
+      <title>Verschiedene Informationen</title>
+      <p>Gruppiert Datendateien, die vom Projekt gebraucht werden, wie z.B. Bilder, Oberflächenbeschreibungen, Einstellungsdateien usw.</p>
+    </item>
+    <item>
+      <title>Skript</title>
+      <p>Repräsentiert Programme, die Skripte sind. Skripte werden nur in den angegebenen Ordner installiert. Wenn Skripte erstellt werden, so sind zusätzliche Regeln notwendig.</p>
+    </item>
+  </terms>
+
+</page>

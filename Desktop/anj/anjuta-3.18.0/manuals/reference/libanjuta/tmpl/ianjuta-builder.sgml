@@ -1,0 +1,148 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaBuilder
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_BUILDER_ROOT_URI ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO IANJUTA_BUILDER_CONFIGURATION_DEBUG ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO IANJUTA_BUILDER_CONFIGURATION_OPTIMIZED ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO IANJUTA_BUILDER_CONFIGURATION_PROFILING ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### ENUM IAnjutaBuilderError ##### -->
+<para>
+
+</para>
+
+@IANJUTA_BUILDER_SUCCEED: 
+@IANJUTA_BUILDER_FAILED: 
+@IANJUTA_BUILDER_CANCELED: 
+@IANJUTA_BUILDER_ABORTED: 
+@IANJUTA_BUILDER_INTERRUPTED: 
+@IANJUTA_BUILDER_TERMINATED: 
+@IANJUTA_BUILDER_UNKNOWN_TARGET: 
+@IANJUTA_BUILDER_UNKNOWN_ERROR: 
+@IANJUTA_BUILDER_OTHER_ERROR: 
+
+<!-- ##### TYPEDEF IAnjutaBuilderHandle ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### USER_FUNCTION IAnjutaBuilderCallback ##### -->
+<para>
+
+</para>
+
+@sender: 
+@command: 
+@err: 
+@user_data: 
+
+
+<!-- ##### FUNCTION ianjuta_builder_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_builder_build ##### -->
+<para>
+
+</para>
+
+@obj: 
+@uri: 
+@callback: 
+@user_data: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_builder_cancel ##### -->
+<para>
+
+</para>
+
+@obj: 
+@handle: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_builder_get_uri_configuration ##### -->
+<para>
+
+</para>
+
+@obj: 
+@uri: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_builder_is_built ##### -->
+<para>
+
+</para>
+
+@obj: 
+@uri: 
+@callback: 
+@user_data: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_builder_list_configuration ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+

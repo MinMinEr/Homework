@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="autotools-project-target-type" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="project-manager-target-add"/>
+    <desc>Tipo de proyecto de autotools</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Tipo de proyecto de autotools</title>
+
+  <p>Hay diferentes tipos de objetivos disponibles.</p>
+
+  <terms>
+    <item>
+      <title>Biblioteca compartida (Libtool)</title>
+      <p>Representa una biblioteca compartida por varios programas, enlazada en tiempo de ejecución. Es el tipo mas habitual de bibliotecas en Linux. En Windows se llaman bibliotecas enlazadas dinámicamente.</p>
+      <p>Usa el paquete Libtool. Su nombre debe empezar por «lib» y tiene la extensión «.la».</p>
+    </item>
+    <item>
+      <title>Módulo (Libtool)</title>
+      <p>Representa una biblioteca, denominada frecuentemente «complemento», enlazada explícitamente en tiempo de ejecución por el propio programa. Sólo se usa para cargar el código correspondiente a las características usadas.</p>
+      <p>Usa el paquete Libtool. Su nombre no necesita el prefijo «lib», pero debe tener la extensión «.la».</p>
+    </item>
+    <item>
+      <title>Biblioteca estática (Libtool)</title>
+      <p>Representa una biblioteca enlazada con el programa en tiempo de compilación. Dentro del ejecutable sólo se mantienen la funciones usadas.</p>
+      <p>Usa el paquete Libtool. Su nombre debe empezar por «lib» y tiene la extensión «.a».</p>
+    </item>
+    <item>
+      <title>Programa</title>
+      <p>Representa un programa compilado, por ejemplo, desde archivos fuente de C. Todos los hijos representan los archivos fuente compilados para generar el programa.</p>
+    </item>
+    <item>
+      <title>Módulo de Python</title>
+      <p>Representa un programa escrito en Python.</p>
+    </item>
+    <item>
+      <title>Módulo Java</title>
+      <p>Representa un programa escrito en Java.</p>
+    </item>
+    <item>
+      <title>Módulo LISP</title>
+      <p>Representa un programa escrito en LISP.</p>
+    </item>
+    <item>
+      <title>Archivos de cabeceras</title>
+      <p>Este objetivo le permite agrupar cabeceras y definir dónde se tiene que instalar.</p>
+    </item>
+    <item>
+      <title>Documentación man</title>
+      <p>Agrupa las páginas del manual que necesita el proyecto.</p>
+    </item>
+    <item>
+      <title>Documentación info</title>
+      <p>Agrupa las páginas de información que necesita el proyecto.</p>
+    </item>
+    <item>
+      <title>Datos variados</title>
+      <p>Agrupa archivos de datos necesarios para el proyecto como imágenes, descripciones de la IU, archivos de configuración, etc.</p>
+    </item>
+    <item>
+      <title>Script</title>
+      <p>Representa los programas que son scripts. Estos scripts sólo se instalan en la carpeta especificada. Si los scripts se generan, se necesitan reglas adicionales.</p>
+    </item>
+  </terms>
+
+</page>

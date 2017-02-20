@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-configure" xml:lang="ca">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="first"/>
+    <link type="seealso" xref="autotools-project-backend"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>
+      Configure an autotools project and manage configurations.
+    </desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jaume Planas</mal:name>
+      <mal:email>jplanas@itberga.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gil Forcada</mal:name>
+      <mal:email>gilforcada@guifi.net</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Configuració d'un projecte</title>
+
+  <p>
+    Before compiling and building files, an autotools project has to be
+    configured. This step is needed to set global options, to check that
+    all required libraries and programs are installed on your system and
+    to generate appropriate build scripts.
+  </p>
+
+  <section>
+    <title>Configureu el projecte</title>
+
+    <steps>
+      <item>
+        <p>Trieu <guiseq><gui>Munta</gui> <gui>Configura el projecte...</gui></guiseq> en el <gui>menú principal</gui>.</p>
+      </item>
+      <item>
+        <p>
+          Keep the default configuration, select a new configuration or create 
+          a new one. You can inspect and modify all configuration options.
+          See <link xref="autotools-build-configure-dialog"/> for more information.
+        </p>
+      </item>
+      <item>
+        <p>
+          Click on <gui>Execute</gui> to configure the project.
+        </p>
+      </item>
+    </steps>
+
+    <p>
+      The configuration could fail if some libraries or programs are not installed
+      or do not have the right version. The error message tell you what is missing.
+    </p>
+  </section>
+
+  <section>
+    <title>Change the configuration</title>
+
+    <steps>
+      <item>
+        <p>Trieu <guiseq><gui>Munta</gui><gui>Selecciona la configuració</gui><gui>Una altra configuració</gui></guiseq> en el <gui>menú principal</gui>.</p>
+      </item>
+    </steps>
+
+    <p>
+      If the project has not been already configured, it will be automatically
+      configured before building any file.
+    </p>
+
+  </section>
+
+  <section>
+    <title>Remove configuration</title>
+
+    <p>
+      It is a like cleaning the project but it removes even more files. You
+      need to re-configure your project to build it afterward.
+    </p>
+
+    <steps>
+      <item>
+        <p>Trieu <guiseq><gui>Munta</gui> <gui>Suprimeix la configuració</gui></guiseq> en el <gui>menú principal</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+</page>

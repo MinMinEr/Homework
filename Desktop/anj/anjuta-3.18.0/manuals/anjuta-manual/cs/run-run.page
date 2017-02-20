@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="run-run" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="first"/>
+    <link type="seealso" xref="run-parameters-dialog"/>
+    <link type="seealso" xref="autotools-build-install"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak spustit program bez ladění.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Spuštění programu</title>
+
+  <p>Když se <app>Anjuta</app> použije ke spuštění programu, kontroluje, jestli je aktuální a v případě potřeby jej znovu sestaví.</p>
+
+  <steps>
+    <item>
+      <p>Aby se spustil aktuální program, zvolte v <gui>hlavní nabídce</gui> položku <guiseq><gui>Spustit</gui> <gui>Spustit</gui></guiseq> nebo zmáčkněte <key>F3</key>.</p>
+    </item>
+  </steps>
+
+  <p>Který program je aktuální a jeho případné parametry je možné nastavit v dialogovém okně <gui>Parametry programu</gui>. Více informací viz <link xref="run-parameters-dialog"/>.</p>
+
+  <steps>
+    <item>
+      <p>Toto dialogové okno zobrazíte z <gui>hlavní nabídky</gui> volbou <guiseq><gui>Spustit</gui> <gui>Parametry programu…</gui></guiseq>.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Pokud váš program potřebuje datové soubory, budete je muset nejspíše aspoň napoprvé nainstalovat před jeho spuštěním. Více informací viz <link xref="autotools-build-install"/>.</p>
+  </note>
+ 
+</page>

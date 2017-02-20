@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-project-folder-edit" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-folder" group="second"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Editar las propiedades de una carpeta de autotools.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Editar una carpeta de autotools</title>
+
+  <p>Estas propiedades le permiten definir propiedades comunes para todos los objetivos que pertenezcan a esta carpeta.</p>
+
+  <terms>
+    <item>
+      <title><gui>Opciones del compilador de C</gui></title>
+      <p>Las opciones que pasar al compilador de C si no se define el valor de un objetivo.</p>
+    </item>
+    <item>
+      <title><gui>Opciones del preprocesador de C</gui></title>
+      <p>Estas opciones se pasan a cada compilación que invoque al preprocesador de C. Este valor se ignora si estas opciones están definidas para la carpeta.</p>
+    </item>
+    <item>
+      <title><gui>Opciones del compilador de C++</gui></title>
+      <p>Las opciones que pasar al compilador de C++ si no se define el valor de un objetivo.</p>
+    </item>
+    <item>
+      <title><gui>FOpciones del compilador de Fortran</gui></title>
+      <p>Las opciones que pasar al compilador de Fortran 9x si no se define el valor de un objetivo.</p>
+    </item>
+    <item>
+      <title><gui>Carpetas de instalación</gui></title>
+      <p>Esto define las carpetas de instalación. Es necesario si quiere instalar los archivos en carpetas personalizadas.</p>
+    </item>
+    <item>
+      <title><gui>Opciones del compilador de Java</gui></title>
+      <p>Las opciones que pasar al compilador de Java si no se define el valor de un objetivo.</p>
+    </item>
+    <item>
+      <title><gui>Opciones del compilador de Lex/Flex</gui></title>
+      <p>Las opciones que pasar al analizador Lex o Flex si no se define el valor de un objetivo.</p>
+    </item>
+    <item>
+      <title><gui>Opciones del enlazador</gui></title>
+      <p>Las opciones que pasar al enlazador si no se define el valor de un objetivo.</p>
+    </item>
+    <item>
+      <title><gui>Opciones del compilador de Objetive C</gui></title>
+      <p>Las opciones que pasar al compilador de Objetive C si no se define el valor de un objetivo.</p>
+    </item>
+    <item>
+      <title><gui>Opciones del compilador de Vala</gui></title>
+      <p>Las opciones que pasar al compilador de Vala si no se define el valor de un objetivo.</p>
+    </item>
+    <item>
+      <title><gui>Opciones del compilador de Yacc/Bison</gui></title>
+      <p>Las opciones que pasar al compilador de Bison o Yacc si no se define el valor de un objetivo.</p>
+    </item>
+  </terms>
+
+</page>

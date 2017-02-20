@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-module-new" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-library" group="first"/>
+    <link type="next" xref="project-manager-module-add"/>
+    <link type="next" xref="project-manager-library-add"/>
+    <link type="seealso" xref="project-manager-library"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Regrouper les bibliothèques dans un module.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ajout d'un module</title>
+
+  <p>Les paquets ne peuvent pas être ajoutés directement à un programme ; ils doivent être regroupés dans un module.</p>
+
+  <steps>
+    <item>
+      <p>Sélectionnez le programme dans la <gui>vue projet</gui>, cliquez sur le bouton droit de la souris pour afficher le <gui>menu contextuel du projet</gui>, puis sélectionnez <gui>Ajouter une bibliothèque</gui>.</p>
+      <p>D'une autre façon dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Projet</gui> <gui>Ajouter la bibliothèque</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Dans la fenêtre <gui>Ajouter une bibliothèque</gui>, cliquez sur le bouton <gui>Nouvelle bibliothèque</gui>.</p>
+    </item>
+    <item>
+      <p>Vous obtenez une liste des paquets de bibliothèques installés sur votre système. Vous pouvez cocher une ou plusieurs bibliothèques.</p>
+      <note style="tip">
+        <p>Si la bibliothèque désirée n'y figure pas :</p>
+	  <list>
+            <item>
+              <p>C'est probablement qu'elle n'est pas installée sur votre système. Lancez l'application que vous utilisez pour installer des nouveaux programmes et recherchez le nom de la bibliothèque. Le paquet voulu a souvent une extension « .dev » ou « .devel » et devrait inclure les fichiers d'en-tête (header) ainsi  qu'un fichier <app>pkg.config</app> avec une extension <file>.pc</file>.</p>
+            </item>
+            <item>
+              <p>Il peut arriver que la bibliothèque n'appartienne pas à un paquet, ce qui est souvent le cas des bibliothèques développées en dehors de Linux. Reportez-vous au chapitre <link xref="project-manager-library-add"/> qui explique comment les utiliser.</p>
+            </item>
+          </list>
+      </note>
+    </item>
+    <item>
+      <p>Une fois la bibliothèque sélectionnée, un nom de module est automatiquement généré, mais vous pouvez le modifier. Vous pouvez sélectionner un nom de module existant pour ajouter une bibliothèque, à lui et à toutes les cibles qui l'utilise déjà.</p>
+    </item>
+    <item>
+      <p>Quand vous êtes prêt, cliquez sur le bouton <gui>Ajouter</gui> pour créer un nouveau module avec les bibliothèques sélectionnées. Vous devez ajouter un nouveau module à au moins une cible pour l'utiliser effectivement.</p>
+    </item>
+  </steps>
+
+</page>

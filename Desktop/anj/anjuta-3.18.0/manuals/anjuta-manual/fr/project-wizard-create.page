@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-wizard-create" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-project-management" group="first"/>
+    <link type="seealso" xref="project-manager"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Créer un projet à partir de rien.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Création d'un projet</title>
+
+  <p>Les nouveaux projets sont créés à partir de modèles. <app>Anjuta</app> vous demande diverses informations, comme le type du projet, son nom et bien d'autres choses encore.</p>
+
+  <steps>
+    <item>
+      <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Fichier</gui> <gui>Nouveau</gui><gui>Projet</gui></guiseq>.</p>
+      <p>D'une autre façon, dans la liste déroulante du bouton <gui>Nouveau</gui> dans la <gui>barre d'outils supérieure</gui>, sélectionnez <gui>Projet</gui> pour démarrer l'assistant de projet.</p>
+    </item>
+    <item>
+      <p>Sélectionnez l'icône représentant le type de projet que vous voulez créer et cliquez sur <gui>Continuer</gui>.</p>
+      <note style="tip">
+        <p>En laissant le pointeur de souris sur une icône de projet pendant quelques instants, un message d'aide apparaît donnant des informations sur le type de projet.</p>
+      </note>
+    </item>
+    <item>
+      <p>Selon le type de projet sélectionné, vous devez saisir des informations différentes. Une fois réalisé, cliquez sur <gui>Continuer</gui>.</p>
+      <p>Toutes les informations sont regroupées par pages et il vous faut souvent renseigner deux ou trois pages. Vous pouvez toujours revenir en arrière en utilisant le bouton <gui>Précédent</gui>.</p>
+      <note style="tip">
+        <p>Laissez le pointeur de souris sur un bouton ou une zone de saisie pendant quelques instants pour obtenir un petit message d'aide donnant plus de détails sur les paramètres correspondants.</p>
+      </note>
+    </item>
+    <item>
+      <p>Après avoir renseigné toutes les pages, vous obtenez une page de résumé affichant les principales informations sur ce projet. Rien n'a encore été écrit sur votre disque jusque-là. Cliquez sur <gui>Appliquer</gui> pour enregistrer le projet et l'ouvrir dans <app>Anjuta</app>.</p>
+    </item>
+  </steps>
+
+  <note style="advanced">
+    <p>Chaque type de projet correspond à un modèle. <app>Anjuta</app> inclut déjà plusieurs modèles mais vous pouvez ajouter des projets personnalisés et même écrire les vôtres.</p>
+  </note>
+
+</page>

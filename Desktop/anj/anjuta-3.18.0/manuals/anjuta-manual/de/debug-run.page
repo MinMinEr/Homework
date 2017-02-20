@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-run" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="second"/>
+    <link type="seealso" xref="run-parameters-dialog"/>
+    <link type="seealso" xref="autotools-build-configure"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Ein Programm in einem Debugger starten.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ein Programm diagnostizieren</title>
+  
+  <section>
+    <title>Ein Programm in einem Debugger starten</title>
+
+    <p>Das aktuelle Programm ist im Dialog <gui>Programmparameter</gui> definiert. Lesen Sie bitte <link xref="run-parameters-dialog"/> für weitere Informationen. Dieses Programm wird im Debugger folgendermaßen gestartet:</p>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Ausführen</gui><gui>Programm diagnostizieren</gui></guiseq> im <gui>Hauptmenü</gui>, oder drücken Sie <keyseq><key>Umschalttaste</key><key>F12</key></keyseq></p>
+      </item>
+    </steps>
+
+    <note style="tip">
+      <p>Es kann schwieriger sein, ein Programm zu diagnostizieren, das hoch optimiert ist oder wenn Informationen zur Fehlerdiagnose fehlen. Im Konfigurationsschritt ist festgelegt, ob Optimierungen und Informationen zur Fehlerdiagnose aktiviert sind. Normalerweise gibt es eine Konfigurationsmöglichkeit zur Fehlerdiagnose, die Optimierungen abschaltet und alle Informationen zur Fehlerdiagnose beinhaltet. Anjuta gibt eine Warnung aus, wenn diese Konfiguration nicht verwendet wird. Lesen Sie <link xref="autotools-build-configure"/> für weitere Informationen.</p>
+    </note>
+   </section>
+
+  <section>
+    <title>Fehlerdiagnose in einer bereits laufenden Anwendung</title>
+
+    <p>Der Debugger kann in einer bereits laufenden Anwendung verwendet werden.</p>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Ausführen</gui><gui>Einen Prozess diagnostizieren …</gui></guiseq> im <gui>Hauptmenü</gui>, um einen Dialog zu öffnen, der alle aktuell laufenden Prozesse aufführt.</p>
+      </item>
+      <item>
+        <p>Wählen Sie einen Prozess im Dialog <gui>An Prozess anhängen</gui> und klicken Sie auf <gui>Anhängen</gui>, um die Fehlerdiagnose zu starten. Lesen Sie <link xref="debug-process-dialog"/> für weitere Informationen.</p>
+      </item>
+    </steps>
+  </section>
+ 
+  <section>
+    <title>Fehlerdiagnose einer entfernten Anwendung</title>
+
+    <p>Der Debugger kann zum Debuggen einer auf einem anderen Rechner laufenden Anwendung verwendet werden, sofern der Rechner über eine TCP- oder serielle Verbindung angeschlossen ist.</p>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Ausführen</gui><gui>Entferntes Ziel diagnostizieren …</gui></guiseq> im <gui>Hauptmenü</gui>.</p>
+      </item>
+      <item>
+        <p>Wählen Sie die Art der Verbindung zur entfernten Anwendung, entweder <gui>Serielle Kabelverbindung</gui> oder <gui>TCP/IP-Verbindung</gui>.</p>
+      </item>
+      <item>
+        <p>Bei einer TCP-Verbindung füllen Sie die Felder <gui>Adresse</gui> und <gui>Port</gui> aus.</p>
+        <p>Bei einer seriellen Verbindung geben Sie im Texteingabefeld den Namen des seriellen Geräts an, beispielsweise <cmd>/dev/ttyb</cmd>.</p>
+      </item>
+      <item>
+        <p>Klicken Sie auf <gui>Verbinden</gui>, um den Debugger zu starten und zum entfernten Ziel zu verbinden.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section>
+    <title>Debugger anhalten</title>
+
+    <p>Die Fehlerdiagnose und das Programm können jederzeit so beendet werden:</p>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Ausführen</gui><gui>Fehlerdiagnose anhalten</gui></guiseq> im <gui>Hauptmenü</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+</page>

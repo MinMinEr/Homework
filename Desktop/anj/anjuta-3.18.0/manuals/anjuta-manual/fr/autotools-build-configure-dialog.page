@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-configure-dialog" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="autotools-project-backend"/>
+    <link type="seealso" xref="autotools-build-configure"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Boîte de dialogue de configuration autotools</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Boîte de dialogue de configuration autotools</title>
+
+  <p>La boîte de dialogue <gui>Configurer le projet</gui> vous permet de paramétrer les options suivantes et de configurer le projet.</p>
+
+  <terms>
+    <item>
+      <title><gui>Régénérer le projet</gui></title>
+      <p>Si cette option est cochée, le projet sera complètement régénéré, sinon seule l'étape de configuration est effectuée. <app>Anjuta</app> coche automatiquement cette option quand c'est nécessaire. Vous pouvez donc la laisser dans son état actuel.</p>
+    </item>
+    <item>
+      <title><gui>Configuration</gui></title>
+      <p>Il est possible d'avoir plusieurs configurations avec chacune ses propres options et son propre répertoire. Cette boîte de dialogue permet de les nommer. Habituellement, vous disposez déjà d'une configuration Par défaut, d'une configuration Débogage rendant plus facile le débogage (en conservant les variables intermédiaires et l'ordre du code), ainsi qu'une configuration Optimisé générant des programmes plus rapides mais accroissant le temps de construction. Vous pouvez aussi définir des configurations personnalisées supplémentaires.</p>
+    </item>
+    <item>
+      <title><gui>Répertoire de construction</gui></title>
+      <p>Sélectionnez ici le répertoire de construction ; cela peut être le répertoire du projet ou un sous-répertoire. C'est particulièrement utile en cas de passage d'une configuration à une autre pour éviter de reconstruire tout le projet.</p>
+      <note style="advanced">
+        <p>Avec autotools, il n'est pas possible d'avoir une configuration utilisant un répertoire différent s'il existe déjà une configuration utilisant le répertoire du projet. Vous devez l'enlever d'abord.</p>
+      </note>
+      <note style="bug">
+        <p>Certains projets autotools ne peuvent pas être construits en dehors du répertoire projet. Vous pouvez encore vous servir de différentes configurations, mais elles doivent toutes utiliser le répertoire du projet et tout sera recompilé à chaque changement de configuration.</p>
+      </note>
+    </item>
+    <item>
+      <title><gui>Options de configuration</gui></title>
+      <p>Cette boîte de texte donne la liste de tous les paramètres de la ligne de commande utilisés lors de l'étape de configuration (configure). Les paramètres sont séparés par des espaces et doivent être mis entre guillemets anglais simple « ' » s'ils contiennent un espace. Chaque configuration complète cette boîte de texte avec des valeurs par défaut que vous pouvez modifier.</p>
+      <note style="advanced">
+        <p>Chaque projet autotools prend en compte une liste commune de paramètres mais peut aussi comporter des paramètres spécifiques. La liste de tous les paramètres acceptés peut être obtenue en lançant <cmd>configure --help</cmd> en ligne de commande, à condition d'avoir configuré le projet au moins une fois afin de disposer du script <cmd>configure</cmd>.</p>
+      </note>
+    </item>
+  </terms>
+
+</page>

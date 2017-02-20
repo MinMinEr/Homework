@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="directory-project-backend" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager#backend"/>
+    <desc>Moteur de gestion de projet Répertoire.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Greffon moteur de gestion de projet Répertoire</title>
+
+  <p>C'est le plus simple des moteurs de gestion de projet. Il n'y a pas de fichier projet. Il fonctionne comme un visionneur de fichiers, considérant tous les fichiers correspondants à des extensions de sources typiques (par exemple <file>.c</file>, <file>.py</file>) comme des fichiers sources. Les répertoires sont conservés pour regrouper les fichiers sources, mais il n'y a pas de cible.</p>
+
+  <p>Ce moteur de gestion est une solution alternative bien pratique si votre projet n'a pas de moteur de gestion correspondant dans <app>Anjuta</app> ou si le moteur de gestion approprié ne prend pas complètement en charge votre projet.</p>
+
+  <p>Il n'est pas possible d'ajouter ou de modifier quoi que ce soit avec un projet utilisant ce moteur de gestion. Mais si vous créez un fichier source dans le répertoire de projet, avec la bonne extension, il sera ajouté automatiquement.</p>
+
+</page>

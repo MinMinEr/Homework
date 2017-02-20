@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: IAnjutaIndicable</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="plugin-interfaces.html" title="Plugin interfaces">
+<link rel="prev" href="IAnjutaIndenter.html" title="IAnjutaIndenter">
+<link rel="next" href="IAnjutaIterable.html" title="IAnjutaIterable">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#IAnjutaIndicable.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#IAnjutaIndicable.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="plugin-interfaces.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="IAnjutaIndenter.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="IAnjutaIterable.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="IAnjutaIndicable"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="IAnjutaIndicable.top_of_page"></a>IAnjutaIndicable</span></h2>
+<p>IAnjutaIndicable — Implemented by indicate that indicate a range</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="IAnjutaIndicable.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Unstable"><span class="acronym">Unstable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="IAnjutaIndicable.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaIndicable.html#ianjuta-indicable-error-quark" title="ianjuta_indicable_error_quark ()">ianjuta_indicable_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaIndicable.html#ianjuta-indicable-clear" title="ianjuta_indicable_clear ()">ianjuta_indicable_clear</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaIndicable.html#ianjuta-indicable-set" title="ianjuta_indicable_set ()">ianjuta_indicable_set</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaIndicable.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="IAnjutaIndicable.html#IANJUTA-INDICABLE-ERROR:CAPS" title="IANJUTA_INDICABLE_ERROR">IANJUTA_INDICABLE_ERROR</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="IAnjutaIndicable.html#IAnjutaIndicableIndicator" title="enum IAnjutaIndicableIndicator">IAnjutaIndicableIndicator</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaIndicable.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">╰──</span> IAnjutaIndicableIndicator
+    <a href="https://developer.gnome.org/gobject/unstable/GTypeModule.html">GInterface</a>
+    <span class="lineart">╰──</span> IAnjutaIndicable
+</pre>
+</div>
+<div class="refsect1">
+<a name="IAnjutaIndicable.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libanjuta/interfaces/ianjuta-indicable.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="IAnjutaIndicable.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="IAnjutaIndicable.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="ianjuta-indicable-error-quark"></a><h3>ianjuta_indicable_error_quark ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+ianjuta_indicable_error_quark (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.8.38.9.2.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-indicable-clear"></a><h3>ianjuta_indicable_clear ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_indicable_clear (<em class="parameter"><code><a class="link" href="IAnjutaIndicable.html" title="IAnjutaIndicable"><span class="type">IAnjutaIndicable</span></a> *obj</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Clear all indicators</p>
+<div class="refsect3">
+<a name="id-1.8.38.9.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-indicable-set"></a><h3>ianjuta_indicable_set ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_indicable_set (<em class="parameter"><code><a class="link" href="IAnjutaIndicable.html" title="IAnjutaIndicable"><span class="type">IAnjutaIndicable</span></a> *obj</code></em>,
+                       <em class="parameter"><code><a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="type">IAnjutaIterable</span></a> *begin_location</code></em>,
+                       <em class="parameter"><code><a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="type">IAnjutaIterable</span></a> *end_location</code></em>,
+                       <em class="parameter"><code><a class="link" href="IAnjutaIndicable.html#IAnjutaIndicableIndicator" title="enum IAnjutaIndicableIndicator"><span class="type">IAnjutaIndicableIndicator</span></a> indicator</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Set an indicator</p>
+<div class="refsect3">
+<a name="id-1.8.38.9.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>begin_location</p></td>
+<td class="parameter_description"><p>Location where the indication should start</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>end_location</p></td>
+<td class="parameter_description"><p>Location where the indication should end</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>indicator</p></td>
+<td class="parameter_description"><p>the indicator to use</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaIndicable.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="IANJUTA-INDICABLE-ERROR:CAPS"></a><h3>IANJUTA_INDICABLE_ERROR</h3>
+<pre class="programlisting">#define IANJUTA_INDICABLE_ERROR ianjuta_indicable_error_quark()
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IAnjutaIndicableIndicator"></a><h3>enum IAnjutaIndicableIndicator</h3>
+<p>This enumeration is used to specify the appearance of the indicator</p>
+<div class="refsect3">
+<a name="id-1.8.38.10.3.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-INDICABLE-NONE:CAPS"></a>IANJUTA_INDICABLE_NONE</p></td>
+<td class="enum_member_description">
+<p>No indicator</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-INDICABLE-IMPORTANT:CAPS"></a>IANJUTA_INDICABLE_IMPORTANT</p></td>
+<td class="enum_member_description">
+<p>Important indicator</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-INDICABLE-WARNING:CAPS"></a>IANJUTA_INDICABLE_WARNING</p></td>
+<td class="enum_member_description">
+<p>Warning indicator</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-INDICABLE-CRITICAL:CAPS"></a>IANJUTA_INDICABLE_CRITICAL</p></td>
+<td class="enum_member_description">
+<p>Critical indicator</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

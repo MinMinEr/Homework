@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-stack" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="fourth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Examiner la pile.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Pile</title>
+
+  <section>
+    <title>Affichage de la liste des cadres de pile</title>
+
+    <p>Un cadre de pile est une zone de la pile associée à chaque appel de fonction. Il énumère toutes les fonctions et leurs arguments dans l'ordre où ils ont été appelés. Chaque cadre de pile est numéroté en partant de 0 pour la fonction actuelle. Vous ne pouvez afficher les cadres de pile que pendant l'exécution du débogueur.</p>
+
+    <p>De plus, un programme peut être composé de plusieurs threads (ou fil d'exécution). Chaque thread est exécuté indépendamment et possède ses propres registres, piles et variables locales, mais partage toutes les variables globales.</p>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Affichage</gui><gui>Pile</gui></guiseq> pour ouvrir la fenêtre <gui>Pile</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Les piles s'affichent selon une arborescence avec leur thread correspondant comme parent et présentant les informations suivantes :</p>	
+
+    <terms>
+      <item>
+        <title>Actif</title>
+        <p>On y trouve une flèche jaune qui représente le cadre de pile actif. Par défaut, c'est le cadre 0, la fonction actuelle. Toutes les évaluations et les variables locales sont relatives à ce cadre actif. Vous pouvez changer de cadre actif pour examiner les variables locales dans d'autres fonctions.</p>
+      </item>
+      <item>
+        <title>Thread</title>
+        <p>C'est un numéro correspondant à chaque thread.</p>
+      </item>
+      <item>
+        <title>Cadre</title>
+        <p>C'est le numéro de cadre partant de 0 pour la fonction en cours. La première fonction d'un programme, par exemple <code>main()</code> dans un programme C, possède le numéro le plus élevé.</p>
+      </item>
+      <item>
+        <title>Fichier</title>
+        <p>Nom du fichier contenant la fonction correspondant à ce cadre.</p>
+      </item>
+      <item>
+        <title>Ligne</title>
+        <p>Numéro de ligne de la fonction correspondant à ce cadre.</p>
+      </item>
+      <item>
+        <title>Fonction</title>
+        <p>Nom de la fonction correspondant à ce cadre.</p>
+      </item>
+      <item>
+        <title>Adresse</title>
+        <p>Adresse de la fonction correspondant à ce cadre.</p>
+      </item>
+      <item>
+        <title>Paramètres</title>
+        <p>Les paramètres de la fonction.</p>
+      </item>
+    </terms>
+
+  </section>
+
+
+  <section>
+    <title>Changement de cadre de pile ou de thread actif</title>
+
+    <steps>
+      <item>
+        <p>Dans la fenêtre <gui>Pile</gui>, sélectionnez le cadre voulu.</p>
+      </item>
+      <item>
+        <p>Faites un clic droit et sélectionnez <gui>Définir le cadre actuel</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Le fait de cliquer sur un cadre de pile dans le même thread ne modifie que ce cadre de pile, permettant de voir les autres variables locales. Mais faire cela dans un autre thread modifie à la fois le cadre de pile et le thread sélectionné. Les valeurs des registres sont différentes et le débogueur redémarrera dans le thread sélectionné.</p>
+  </section>
+
+
+  <section>
+    <title>Affichage de la fonction actuelle</title>
+
+    <steps>
+      <item>
+        <p>Dans la fenêtre <gui>Pile</gui>, sélectionnez le cadre voulu.</p>
+      </item>
+      <item>
+        <p>Faites un double clic, ou un clic droit et sélectionnez <gui>Afficher le code source</gui>.</p>
+      </item>
+    </steps>
+  </section>
+
+
+  <section>
+    <title>Obtention d'une trace de la pile</title>
+ 
+    <steps>
+      <item>
+        <p>Dans la fenêtre <gui>Pile</gui>, faites un clic droit et sélectionnez<gui>Obtenir la trace de la pile</gui>.</p>
+      </item>
+    </steps>
+  </section>
+
+
+</page>

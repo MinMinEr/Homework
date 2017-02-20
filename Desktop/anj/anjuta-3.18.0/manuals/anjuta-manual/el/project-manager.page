@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="project-manager" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="project-manager-root"/>
+    <desc>Διαχειριστής έργου.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Πρόσθετο διαχειριστή έργου</title>
+
+  <p>Το <app>Anjuta</app> υποστηρίζει πολλές ήδη υπάρχουσες μορφές έργου μέσω συστημάτων υποστήριξης προσθέτων. Ο κύριος τύπος είναι η μορφή autotools κοινή στο Linux.</p>
+
+  <p>Το σύστημα υποστήριξης του έργου που χρησιμοποιείται επιλέγεται κατά τη δημιουργία ή εισαγωγή ενός νέου έργου στο <app>Anjuta</app>. Εμφανίζεται στις ιδιότητες του ριζικού κόμβου του έργου και μπορεί να αλλαχθεί οποτεδήποτε.</p>
+
+  <p>Όποιο και αν είναι το υποκείμενο σύστημα υποστήριξης, η γραφική διεπαφή είναι η ίδια αλλά μερικές λειτουργίες ίσως είναι ανενεργές.</p>
+
+  <section id="backend">
+    <title>Πρόσθετο συστήματος υποστήριξης έργου</title>
+  </section>
+
+</page>

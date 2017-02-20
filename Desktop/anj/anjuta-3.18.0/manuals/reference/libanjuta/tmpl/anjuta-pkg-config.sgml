@@ -1,0 +1,61 @@
+<!-- ##### SECTION Title ##### -->
+anjuta-pkg-config
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION anjuta_pkg_config_list_dependencies ##### -->
+<para>
+
+</para>
+
+@package: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_pkg_config_get_directories ##### -->
+<para>
+
+</para>
+
+@pkg_name: 
+@no_deps: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_pkg_config_ignore_package ##### -->
+<para>
+
+</para>
+
+@name: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_pkg_config_get_version ##### -->
+<para>
+
+</para>
+
+@package: 
+@Returns: 
+
+

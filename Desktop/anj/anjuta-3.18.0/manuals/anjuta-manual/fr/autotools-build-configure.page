@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-configure" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="first"/>
+    <link type="seealso" xref="autotools-project-backend"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Configurer un projet autotools et gérer les configurations.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Configuration d'un projet</title>
+
+  <p>Avant de compiler et de construire des fichiers, un projet autotools doit être configuré. Cette étape est nécessaire pour paramétrer des options globales, s'assurer que toutes les bibliothèques et tous les programmes requis sont installés sur votre système et pour générer les scripts de construction appropriés.</p>
+
+  <section>
+    <title>Configuration du projet</title>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Construire</gui><gui>Configurer le projet...</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Conserver la configuration par défaut, sélectionner une nouvelle configuration ou en créer une nouvelle. Vous pouvez examiner et modifier toutes les options de configuration. Reportez-vous à <link xref="autotools-build-configuration-dialog"/> pour plus d'informations.</p>
+      </item>
+      <item>
+        <p>Cliquez sur <gui>Exécuter</gui> pour configurer le projet.</p>
+      </item>
+    </steps>
+
+    <p>La configuration peut échouer si certaines bibliothèques ou programmes ne sont pas installés ou n'ont pas la bonne version. Un message d'erreur vous dira ce qui manque.</p>
+  </section>
+
+  <section>
+    <title>Changement de configuration</title>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Construire</gui><gui>Sélectionner une configuration</gui><gui>Autre configuration</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+    <p>Si le projet n'a pas encore été configuré, il le sera automatiquement avant la construction du premier fichier.</p>
+
+  </section>
+
+  <section>
+    <title>Suppression d'une configuration</title>
+
+    <p>Cela ressemble à un nettoyage de projet, sauf que beaucoup plus de fichiers sont supprimés. Après cela, vous devrez configurer à nouveau le projet pour pouvoir le construire.</p>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Construire</gui><gui>Enlever la configuration</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+</page>

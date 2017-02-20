@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-target-add" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-target" group="fifth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Añadir un objetivo a un proyecto.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Añadir un objetivo</title>
+
+  <p>Un objetivo agrupa archivos y define su uso. Se usa para representar un programa, con todos su archivos de fuentes y sus hijos o sólo para para agrupar los archivos de datos que se deben instalar en el mismo sitio.</p>
+
+  <steps>
+    <item>
+      <p>Seleccione la carpeta donde quiere añadir el objetivo nuevo en la <gui>vista de proyecto</gui>, pulse con el botón derecho del ratón para mostrar el <gui>menú contextual del proyecto</gui> y seleccione <gui>Objetivo nuevo</gui>.</p>
+      <p>O desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Proyecto</gui><gui>Objetivo nuevo...</gui></guiseq></p>
+    </item>
+    <item>
+      <p>Puede seleccionar otra carpeta en la parte superior de la <gui>vista de árbol de carpetas</gui>.</p>
+      <p>Introduzca el nombre de un objetivo y seleccione el tipo de objetivo en la lista desplegable de debajo. Dependiendo del «backend» de su proyecto habrá varios tipos de objetivos disponibles.</p>
+      <note style="tip">
+        <p>Generalmente los nombres de los objetivos están restringidos a letras, dígitos y el guión bajo, así que es mejor evitar otros caracteres.</p>
+     </note>
+    </item>
+    <item>
+      <p>Cuando haya elegido el nombre del objetivo, escriba el padre y pulse el botón <gui>Añadir</gui> para crear este objetivo nuevo.</p>
+    </item>
+ </steps>
+
+</page>

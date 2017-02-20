@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-clean" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="fourth"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <link type="seealso" xref="autotools-build-preferences-dialog"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak odstranit sestavené soubory.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  </info>
+
+  <title>Mazání cílů</title>
+
+  <p>Může se hodit vymazat všechny soubory vytvořené při sestavení. Například, když se nevezmou v potaz všechny závislosti a změněný soubor nezpůsobí opětovnou kompilaci, jak by měl, lze to vyřešit smazáním všech souborů. Existuje několik způsobů, jak to udělat.</p>
+  <steps>
+    <item>
+      <p>Aby se vymazaly všechny soubory vzniklé při sestavení ve stejné složce, jako je upravovaný soubor, zvolte v <gui>hlavní nabídce</gui> položku <guiseq><gui>Sestavit</gui> <gui>Vyčistit</gui></guiseq>.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>Aby se vymazaly všechny soubory vzniklé při sestavení projektu, zvolte v <gui>hlavní nabídce</gui> položku <guiseq><gui>Sestavit</gui> <gui>Vyčistit projekt</gui></guiseq>.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>V <gui>panelu správy souborů</gui> vyberte soubor nebo složku.</p>
+    </item>
+    <item>
+      <p>Klikněte na něj pravým tlačítkem myši, aby se objevila <gui>kontextová nabídka správy souborů</gui>, a vyberte <guiseq><gui>Sestavit</gui> <gui>Vyčistit</gui></guiseq> a smažou se všechny soubory vzniklé při překladu ve složce, která je právě vybraná, nebo v rodičovské složce souboru, který je právě vybraný.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>V <gui>panelu správy projektu</gui> vyberte zdrojový soubor nebo cíl.</p>
+    </item>
+    <item>
+      <p>Klikněte na něj pravým tlačítkem myši, aby se objevila <gui>kontextová nabídka správy projektu</gui>, a vyberte <guiseq><gui>Sestavit</gui> <gui>Vyčistit</gui></guiseq> a smažou se všechny soubory vzniklé při překladu ve složce, která obsahuje aktuálně vybraný soubor nebo cíl.</p>
+    </item>
+  </steps>
+
+</page>

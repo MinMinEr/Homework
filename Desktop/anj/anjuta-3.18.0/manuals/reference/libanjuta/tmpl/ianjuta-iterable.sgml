@@ -1,0 +1,162 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaIterable
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_ITERABLE_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ianjuta_iterable_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_iterable_assign ##### -->
+<para>
+
+</para>
+
+@obj: 
+@src_iter: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_iterable_clone ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_iterable_compare ##### -->
+<para>
+
+</para>
+
+@obj: 
+@iter2: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_iterable_diff ##### -->
+<para>
+
+</para>
+
+@obj: 
+@iter2: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_iterable_first ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_iterable_foreach ##### -->
+<para>
+
+</para>
+
+@obj: 
+@callback: 
+@user_data: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_iterable_get_length ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_iterable_get_position ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_iterable_last ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_iterable_next ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_iterable_previous ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_iterable_set_position ##### -->
+<para>
+
+</para>
+
+@obj: 
+@position: 
+@err: 
+@Returns: 
+
+

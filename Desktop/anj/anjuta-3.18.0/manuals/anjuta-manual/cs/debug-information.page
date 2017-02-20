@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-information" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="seventh"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak zkoumat další informace o programu.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Různorodé informace</title>
+
+  <p>Ladicí program vám dokáže o běžícím programu sdělit různé informace.</p>
+
+  <section>
+    <title>Zobrazení sdílených knihoven</title>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Ladit</gui> <gui>Informace</gui> <gui>Sdílené knihovny</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+    <p>Tím se otevře okno, ve kterém jsou vypsány všechny sdílené knihovny, které program načetl, a jejich umístění v paměti. Rovněž je zobrazeno, jestli má ta která knihovna načtenou tabulku symbolů, či nikoliv.</p>
+  </section>
+
+
+  <section>
+    <title>Zobrazení signálů</title>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Ladit</gui> <gui>Informace</gui> <gui>Signály jádra</gui></guiseq>.</p>
+      </item>
+    </steps>
+ 
+    <p>Tím se vypíší všechny dostupné signály s krátkým popisem a tři sloupce, které určují, co se má udělat při obdržení signálu:</p>
+
+    <terms>
+      <item>
+        <title>Zastavit</title>
+        <p>Ladicí program zastaví běh programu, když program obdrží tento signál.</p>
+      </item>
+      <item>
+        <title>Vypsat</title>
+        <p>Ladicí program zobrazí přijatý signál.</p>
+      </item>
+      <item>
+        <title>Předat</title>
+        <p>Ladicí program předá signál programu.</p>
+      </item>
+    </terms>
+
+    <note style="bug">
+      <p>Kontextová nabídky, která se zobrazí po kliknutí pravým tlačítkem, má všechny položky nepřístupné, protože příslušné funkce zatím nejsou implementovány.</p>
+    </note>
+
+  </section>
+
+</page>

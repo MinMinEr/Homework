@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="autotools-project-target-type" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="project-manager-target-add"/>
+    <desc>Typ projektu využívající Autotools.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  </info>
+
+  <title>Typ projektu Autotools</title>
+
+  <p>Existují různé typy dostupných cílů.</p>
+
+  <terms>
+    <item>
+      <title>Sdílená knihovna (Libtool)</title>
+      <p>Představuje knihovnu sdílenou několika programy, které se s ní slinkují za běhu. Jedná se o nějběžnější druh knihoven v Linuxu. Ve Windows se nazývají dynamicky linkované knihovny (DLL).</p>
+      <p>Používá se balíček Libtool. Název musí začínat „lib“ a přípona musí být „.la“.</p>
+    </item>
+    <item>
+      <title>Modul (Libtool)</title>
+      <p>Představuje knihovnu, často nazývanou zásuvný modul, která se linkuje za běhu na výslovnou žádost programu. Používá se pouze k načtení kódu odpovídajícího požadovaným funkcím.</p>
+      <p>Používá se balíček Libtool. Název nemusí mít předponu „lib“, ale přípona musí být „.la“.</p>
+    </item>
+    <item>
+      <title>Statická knihovna (Libtool)</title>
+      <p>Představuje knihovnu slinkovanou s programem během kompilace. Ve vygenerovaném běhovém kódu zůstanou jen funkce, které jsou opravdu použity.</p>
+      <p>Používá se balíček Libtool. Název musí začínat „lib“ a přípona musí být „.a“.</p>
+    </item>
+    <item>
+      <title>Program</title>
+      <p>Představuje zkompilovaný program, například ze zdrojových kódů v jazyce C. K vygenerování programu se použijí všechny související soubory se zdrojovými kódy.</p>
+    </item>
+    <item>
+      <title>Modul Python</title>
+      <p>Představuje program napsaný v jazyce Python.</p>
+    </item>
+    <item>
+      <title>Modul Java</title>
+      <p>Představuje program napsaný v jazyce Java.</p>
+    </item>
+    <item>
+      <title>Modul LISP</title>
+      <p>Představuje program napsaný v jazyce LISP.</p>
+    </item>
+    <item>
+      <title>Hlavičkové soubory</title>
+      <p>Tento cíl umožňuje seskupit hlavičkové soubory a definovat, kam mají být nainstalovány.</p>
+    </item>
+    <item>
+      <title>Dokumentace man</title>
+      <p>Seskupuje manuálové stránky potřebné v projektu.</p>
+    </item>
+    <item>
+      <title>Dokumentace info</title>
+      <p>Seskupuje informační stránky potřebné v projektu.</p>
+    </item>
+    <item>
+      <title>Různorodá data</title>
+      <p>Seskupuje datové soubory potřebné v projektu, například obrázky, popisy uživatelského rozhraní, soubory s nastavením…</p>
+    </item>
+    <item>
+      <title>Skript</title>
+      <p>Představuje programy, které jsou skripty. Tyto skripty se jen nainstalují do zadané složky. Pokud se skripty generují, jsou zapotřebí další pravidla.</p>
+    </item>
+  </terms>
+
+</page>

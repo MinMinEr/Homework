@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-source-add" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-source" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Vorhandene Dateien zu einem Projekt hinzufügen.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Dateien hinzufügen</title>
+
+  <steps>
+    <item>
+      <p>Wählen Sie das Ziel in der <gui>Projektansicht</gui>, dem Sie die neue Quelldatei hinzufügen möchten. Klicken Sie dann mit der rechten Maustaste, um das <gui>Kontextmenü des Projekts</gui> zu öffnen, und wählen Sie <gui>Quelldatei hinzufügen</gui>.</p>
+
+      <p>Oder wählen Sie <guiseq><gui>Projekt</gui><gui>Quelldatei hinzufügen …</gui></guiseq> im <gui>Hauptmenü</gui>.</p>
+    </item>
+    <item>
+      <p>Sie können im oberen <gui>Zielwahlknopf</gui> ein anderes Ziel wählen.</p>
+    </item>
+    <item>
+      <p>Wählen Sie im Dateiwähler unten die gewünschten Dateien zum Hinzufügen. Klicken Sie anschließend auf den Knopf <gui>Hinzufügen</gui>, um diese Dateien Ihrem Projekt hinzuzufügen. Sie können mehrere Dateien auf einmal wählen, indem Sie die <key>Strg</key>-Taste gedrückt halten oder mit der <key>Umschalttaste</key> einen ganzen Block Dateien auswählen.</p>
+    </item>
+  </steps>
+    
+  <note style="tip">
+    <p>Die können Dateien in Unterordner des Projekts hinzufügen. Die meisten Projektformate erfordern die Dateien im Projektordner. Dateien, die außerhalb des Projektordners hinzugefügt wurden, werden automatisch in diesen kopiert, um die Bedingung zu erfüllen.</p>
+  </note>
+ 
+</page>

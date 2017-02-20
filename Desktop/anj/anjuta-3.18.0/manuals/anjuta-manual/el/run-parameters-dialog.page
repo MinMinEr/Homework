@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="run-parameters-dialog" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="run-run"/>
+    <link type="seealso" xref="debug-run"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Διάλογος παραμέτρων εκτέλεσης</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Διάλογος παραμέτρων εκτέλεσης</title>
+
+  <p>Ο διάλογος <gui>παραμέτρων εκτέλεσης</gui> επιτρέπει τον καθορισμό του τρέχοντος προγράμματος και αρκετών παραμέτρων.</p>
+
+  <terms>
+    <item>
+      <title><gui>Πρόγραμμα</gui></title>
+      <p>Αυτό είναι το πρόγραμμα που θα εκτελεστεί εάν εκτελέσετε ένα πρόγραμμα με ή χωρίς αποσφαλμάτωση. Η πτυσσόμενη λίστα επιτρέπει την επιλογή προγραμμάτων που δημιουργήθηκαν από το τρέχον έργο, αλλά μπορείτε με κλικ στο κουμπί <gui>Περιήγηση</gui> να επιλέξετε οποιοδήποτε άλλο πρόγραμμα.</p>
+    </item>
+    <item>
+      <title><gui>Ορίσματα</gui></title>
+      <p>Αυτά είναι τα χρησιμοποιούμενα ορίσματα της γραμμής εντολών από το πρόγραμμά σας. Η πτυσσόμενη λίστα διατηρεί ιστορικό των τελευταίων χρησιμοποιημένων ορισμάτων.</p>
+    </item>
+    <item>
+      <title><gui>Κατάλογος εργασίας</gui></title>
+      <p>Ο κατάλογος εργασίας είναι ο τρέχον κατάλογος όταν το πρόγραμμά σας θα εκτελεστεί.</p>
+    </item>
+    <item>
+      <title><gui>Μεταβλητές περιβάλλοντος</gui></title>
+      <p>Μπορείτε να πατήσετε στην πτυσσόμενη ενότητα, για να εμφανίσετε όλες τις μεταβλητές περιβάλλοντος που θα είναι προσπελάσιμες από το πρόγραμμά σας. Από προεπιλογή, περιλαμβάνουν όλες τις τρέχουσες μεταβλητές περιβάλλοντος, εμφανίζονται σε ανοιχτό γκρι.</p>
+      <p>Μπορείτε με κλικ στο κουμπί <gui>Νέο</gui> να προσθέσετε μια νέα μεταβλητή περιβάλλοντος.</p>
+      <p>Μπορείτε με κλικ στο κουμπί <gui>Επεξεργασία</gui> να αλλάξετε την τιμή της επιλεγμένης μεταβλητής περιβάλλοντος.</p>
+      <p>Μπορείτε με κλικ στο κουμπί <gui>Διαγραφή</gui> να αφαιρέσετε την επιλεγμένη μεταβλητή περιβάλλοντος.</p>
+      <p>Όταν μια μεταβλητή δεν έχει την ίδια τιμή όπως στο τρέχον περιβάλλον, εμφανίζεται μαύρη.</p>
+    </item>
+    <item>
+      <title><gui>Εκτέλεση σε τερματικό</gui></title>
+      <p>Αυτό πρέπει να ελεγχθεί για εκτέλεση του προγράμματος σε τερματικό επιτρέποντας σας την παροχή εισόδων και να δείτε τις εξόδους του χρησιμοποιώντας τις τυπικές ροές Unix. Δεν χρειάζεται για προγράμματα με γραφική διεπαφή.</p>
+    </item>
+  </terms>
+
+</page>

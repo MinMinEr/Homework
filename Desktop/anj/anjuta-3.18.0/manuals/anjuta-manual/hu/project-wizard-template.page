@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="project-wizard-template" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="project-wizard-create"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Projektvarázsló-sablon.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Projektvarázsló-sablon</title>
+
+  <p>A projektsablonok több fájlból állnak, amelyeket az <app>autogen</app> nevű hatékony sablonfeldolgozó rendszer képes feldolgozni. A projektsablon fájl <file>.wiz</file> kiterjesztéssel rendelkezik, és leírja az összes szükséges projekttulajdonságot és -fájlt.</p>
+
+  <p>A <file>.wiz</file> fájl az XML fájlokhoz hasonlóan néz ki, és <link href="http://library.gnome.org/devel/libanjuta/stable/project-wizard-format.html">itt található a dokumentációja</link>.</p> 
+
+
+</page>

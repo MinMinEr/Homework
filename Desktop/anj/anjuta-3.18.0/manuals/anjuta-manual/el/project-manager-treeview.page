@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="project-manager-treeview" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-project-management" group="third"/>
+    <desc>Εμφάνιση περιεχομένου του έργου.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Προβολή έργου</title>
+
+  <p>Ένα έργο αναπαριστάνεται από ένα δέντρο, το ριζικό στοιχείο αντιστοιχεί στο έργο, ενώ τα θυγατρικά αντιπροσωπεύουν προγράμματα, βιβλιοθήκες, καταλόγους και πηγαία αρχεία. Κάθε στοιχείο μπορεί να έχει ιδιότητες επιτρέποντας τον ορισμό περισσότερων λεπτομερειών όπως έκδοση έργου, σημαίες μεταγλωτιστή ή καταλόγους εγκατάστασης. Αυτά τα στοιχεία διαιρούνται σε αρκετές κατηγορίες, ανάλογα με το σύστημα υποστήριξης και δεν είναι όλα διαθέσιμα:</p>
+
+  <terms>
+    <item>
+      <title>Ρίζα</title>
+      <p>Υπάρχει μόνο ένας κόμβος αυτού του είδους. Αντιπροσωπεύει το ίδιο το έργο. Είναι ο τόπος όπου μπορείτε να ορίσετε ευρείες ιδιότητες του έργου όπως το όνομα του έργου ή την έκδοση του έργου.</p>
+    </item>
+    <item>
+      <title>Άρθρωμα</title>
+      <p>Αυτό είναι ένα σύνολο πακέτων που χρησιμεύει στο έργο autotools. Εμφανίζονται ως θυγατρικά του ριζικού κόμβου για να αντιπροσωπεύσουν όλα τα καθοριζόμενα αρθρώματα και ως θυγατρικά κάθε προορισμού που τα χρησιμοποιεί. Για περισσότερες λεπτομέρειες, δείτε <link xref="project-manager-module-new"/>.</p>
+    </item>
+    <item>
+      <title>Πακέτο</title>
+      <p>Αυτό είναι μια πακεταρισμένη βιβλιοθήκη που χρησιμεύει στο έργο autotools. Εμφανίζονται ως θυγατρικά κάθε αρθρώματος. Για περισσότερες λεπτομέρειες, δείτε <link xref="project-manager-library"/>.</p>
+    </item>
+    <item>
+      <title>Φάκελος</title>
+      <p>Αυτό χρησιμεύει για ομαδοποίηση προορισμών επιτρέποντας τον ορισμό κοινών ιδιοτήτων. Υλοποιούνται συχνά από υποκαταλόγους. Για περισσότερες λεπτομέρειες, δείτε <link xref="project-manager-folder"/>.</p>
+    </item>
+    <item>
+      <title>Προορισμός</title>
+      <p>Ομαδοποιεί αρχεία και καθορίζει τη χρήση τους. Υπάρχουν πολλά είδη προορισμών, για παράδειγμα προγράμματα, βιβλιοθήκες ή δεδομένα, που αντιστοιχούν σε διαφορετική χρήση θυγατρικά φακέλων. Συχνά αντιπροσωπεύουν δημιουργημένα αρχεία έργου όπως μεταγλωττισμένα προγράμματα ή βιβλιοθήκες. Για περισσότερες λεπτομέρειες δείτε <link xref="project-manager-target"/>.</p>
+	
+      <note style="tip">
+        <p>Μπορείτε να σύρετε και να αποθέσετε προορισμούς στην αρχή της προβολής δένδρου του έργου, να δημιουργήσετε μια συντόμευση επιτρέποντας την πιο εύκολη πρόσβασή τους. Από προεπιλογή, όλοι οι προορισμοί προγράμματος είναι ήδη εδώ.</p>
+      </note>
+
+    </item>
+    <item>
+      <title>Πηγή</title>
+      <p>Κάθε πηγαίο αρχείο αντιπροσωπεύεται από ένα στοιχείο στην προβολή έργου. Η χρήση κάθε αρχείου εξαρτάται από τον γονικό προορισμό. Όλα τα θυγατρικά ενός προορισμού προγράμματος μεταγλωττίζονται για τη δημιουργία του. Ενώ τα θυγατρικά προορισμού δεδομένων απλά αντιγράφονται σε κατάλογο, όταν το έργο εγκαθίσταται. Για περισσότερες λεπτομέρειες δείτε <link xref="project-manager-source"/>.</p>
+    </item>
+  </terms>
+  
+</page>

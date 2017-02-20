@@ -1,0 +1,90 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaIterableTree
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_ITERABLE_TREE_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ianjuta_iterable_tree_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_iterable_tree_children ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_iterable_tree_foreach_post ##### -->
+<para>
+
+</para>
+
+@obj: 
+@callback: 
+@user_data: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_iterable_tree_foreach_pre ##### -->
+<para>
+
+</para>
+
+@obj: 
+@callback: 
+@user_data: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_iterable_tree_has_children ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_iterable_tree_parent ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+

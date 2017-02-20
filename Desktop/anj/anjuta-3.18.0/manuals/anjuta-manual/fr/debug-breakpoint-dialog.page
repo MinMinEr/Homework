@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-breakpoint-dialog" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="debug-breakpoint"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Utilisée pour créer ou modifier un point d'arrêt</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Boîte de dialogue « Propriétés du point d'arrêt »</title>
+
+  <terms>
+    <item>
+      <title><gui>Emplacement</gui></title>
+      <p>C'est la position du point d'arrêt. S'il s'agit d'un point d'arrêt existant, il est impossible de la modifier. Vous pouvez fixer un point d'arrêt à un certain numéro de ligne ou au début d'une fonction. Utilisez un des formats suivants :</p>
+      <list>
+        <item><p><var>nom_de_fichier</var> : <var>numéro_de_ligne</var></p></item>
+        <item><p><var>nom_de_la_fonction</var></p></item>
+        <item><p><var>nom_de_fichier</var> : <var>nom_de_la_fonction</var></p></item>
+      </list>
+    </item>
+    <item>
+      <title><gui>Condition</gui></title>
+      <p>La condition d'arrêt est une expression qui doit retourner une valeur booléenne <code>TRUE</code> (1) (VRAI) ou <code>FALSE</code> (0) (FAUX). Chaque fois qu'un point d'arrêt est rencontré pendant l'exécution du programme, la condition d'arrêt est évaluée. Le débogueur stoppe l'exécution seulement si le résultat de l'évaluation retourne <code>TRUE</code>.</p>
+      <p>Si ce champ est vide, la condition est toujours <code>TRUE</code>.</p>
+    </item>
+    <item>
+      <title><gui>Nombre de passages</gui></title>
+       <p>Le débogueur peut sauter le point d'arrêt un certain nombre de fois avant de s'y arrêter. Si le nombre de passages n'est pas zéro, le débogueur devra sauter le point d'arrêt ce nombre de fois avant d'arrêter le programme.</p>
+       <p>Le nombre de passages a une priorité plus forte que la condition. C'est seulement quand le nombre de passages a été atteint que le débogueur évalue la condition, si elle est présente et interrompt l'exécution du programme.</p>
+    </item>
+  </terms>
+
+</page>

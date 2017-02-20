@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-wizard-create" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-project-management" group="first"/>
+    <link type="seealso" xref="project-manager"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Új projekt létrehozása a semmiből.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Projekt létrehozása</title>
+
+  <p>Az új projektek sablonokból hozhatók létre. Az <app>Anjuta</app> különböző információkat kér be, mint például a projekt típusát, nevét és sok mást.</p>
+
+  <steps>
+    <item>
+      <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Fájl</gui><gui>Új</gui><gui>Projekt</gui></guiseq> menüpontot.</p>
+      <p>Vagy válassza a <gui>felső eszköztár</gui> <gui>Új</gui> gombja melletti legördülő lista <gui>Projekt</gui> menüpontját a projektvarázsló elindításához.</p>
+    </item>
+    <item>
+      <p>Válassza ki a létrehozni kívánt projektet képviselő ikont, és kattintson a <gui>Tovább</gui> gombra.</p>
+      <note style="tip">
+        <p>Mutasson az egérrel egy projektikonra, és a megjelenő buboréksúgóban további információkat olvashat az adott típusú projektről.</p>
+      </note>
+    </item>
+    <item>
+      <p>A kijelölt projekt típusától függően eltérő információkat kell megadnia. Amikor ezzel kész, kattintson a <gui>Tovább</gui> gombra.</p>
+      <p>Az információk oldalakra vannak csoportosítva, általában két-három oldalt kell kitöltenie. A <gui>Vissza</gui> gomb használatával bármikor visszaléphet az előző oldalakra.</p>
+      <note style="tip">
+        <p>Tartsa az egeret a gomb vagy a beviteli terület fölött egy kis ideig, és a megjelenő buboréksúgó további részleteket fog közölni a megfelelő beállításról.</p>
+      </note>
+    </item>
+    <item>
+      <p>Az összes információs oldal kitöltése után egy összegző oldalra jut, amely felsorolja a projekttel kapcsolatos főbb információkat. Ekkor még semmi sincs a lemezre írva. Kattintson az <gui>Alkalmaz</gui> gombra a projekt mentéséhez, és az <app>Anjutaban</app> való megnyitásához.</p>
+    </item>
+  </steps>
+
+  <note style="advanced">
+    <p>Minden projekttípus megfelel egy sablonnak. Az <app>Anjuta</app> alapértelmezésben is számos sablont tartalmaz, de egyedieket is felvehet, sőt sajátokat is írhat.</p>
+  </note>
+
+</page>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-wizard-create" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-project-management" group="first"/>
+    <link type="seealso" xref="project-manager"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Ein neues Projekt von Grund auf erstellen.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ein Projekt erstellen</title>
+
+  <p>Neue Projekte werden aus Vorlagen erstellt. <app>Anjuta</app> bittet Sie um die Angabe verschiedener Informationen, wie den Typ des Projekts, dessen Namen und weiteres.</p>
+
+  <steps>
+    <item>
+      <p>Wählen Sie <guiseq><gui>Datei</gui><gui>Neu</gui><gui>Projekt</gui></guiseq> im <gui>Hauptmenü</gui>.</p>
+      <p>Oder wählen Sie in der Auswahlliste des Knopfes <gui>Neu</gui> in der <gui>oberen Werkzeugleiste</gui> <gui>Projekt</gui> aus, um den Projekt-Assistenten aufzurufen.</p>
+    </item>
+    <item>
+      <p>Wählen Sie das Symbol aus, welches Ihr gewünschtes Projekt repräsentiert, und klicken Sie auf <gui>Weiter</gui>.</p>
+      <note style="tip">
+        <p>Fahren Sie mit der Maus über eines der Projektsymbole. Eine kleine Meldung erscheint, in der weitere Informationen über den jeweiligen Projekttyp angezeigt werden.</p>
+      </note>
+    </item>
+    <item>
+      <p>Abhängig vom Projekttyp müssen Sie verschiedene Informationen angeben. Sobald Sie fertig sind, klicken Sie auf <gui>Weiter</gui>.</p>
+      <p>Alle Informationen sind seitenweise organisiert. Typischerweise müssen Sie in zwei oder drei Seiten Angaben machen. Mit dem Knopf <gui>Zurück</gui> können Sie jederzeit zu einer vorherigen Seite zurückkehren.</p>
+      <note style="tip">
+        <p>Fahren Sie mit der Maus über einen Knopf oder ein Eingabefeld. Eine kleine Meldung erscheint, in der weitere Informationen über die jeweilige Einstellung angezeigt werden.</p>
+      </note>
+    </item>
+    <item>
+      <p>Nachdem Ausfüllen der Informationsseiten wird eine zusammenfassende Liste mit den grundlegenden Informationen zu Ihrem Projekt angezeigt. Zu diesem Zeitpunkt wurde noch nichts auf der Festplatte gespeichert. Klicken Sie auf <gui>Anwenden</gui>, um das Projekt zu speichern und es in <app>Anjuta</app> zu öffnen.</p>
+    </item>
+  </steps>
+
+  <note style="advanced">
+    <p>Jeder Projekttyp korrespondiert zu einer Vorlage. <app>Anjuta</app> liefert bereits verschiedene Vorlagen mit, aber Sie können auch benutzerdefinierte hinzufügen oder Ihre eigenen Vorlagen schreiben.</p>
+  </note>
+
+</page>

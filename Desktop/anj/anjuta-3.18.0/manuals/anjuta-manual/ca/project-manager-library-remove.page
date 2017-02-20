@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-library-remove" xml:lang="ca">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-library" group="seventh"/>
+    <link type="seealso" xref="project-manager-target"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Suprimiu una biblioteca no empaquetada d'un objectiu.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jaume Planas</mal:name>
+      <mal:email>jplanas@itberga.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gil Forcada</mal:name>
+      <mal:email>gilforcada@guifi.net</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Remove a Custom Library</title>
+ 
+  <steps>
+    <item>
+      <p>A la <gui>vista de projecte</gui>, trieu l'objectiu que té la biblioteca que voleu suprimir, feu clic amb el botó secundari del ratolí perquè es mostri el <gui>menú contextual del projecte</gui> i trieu <gui>Propietats</gui>. </p>
+    </item>
+    <item>
+      <p>Suprimiu la biblioteca de les propietats <gui>Indicadors del preprocessador de C</gui> i <gui>Indicadors de l'enllaçador</gui>. Feu clic al botó <gui>Aplica</gui> per escriure els canvis als fitxers del projecte.</p>
+    </item>
+  </steps>
+
+</page>

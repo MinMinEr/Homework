@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="autotools-project-backend" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager#backend"/>
+    <desc>Moteur de gestion de projet autotools.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Greffon moteur de gestion de projet GNU Autotools</title>
+
+  <p>C'est le format de projet le plus répandu sous Linux. Il a été prévu pour distribuer des paquets de code source pour un vaste éventail de systèmes basés sur Unix. S'il vous est arrivé d'installer un programme avec <cmd>configure</cmd>, <cmd>make</cmd> et <cmd>make install</cmd>, vous l'avez probablement déjà utilisé.</p>
+
+  <p>Il est typiquement un peu plus compliqué d'utilisation en tant que développeur. Cependant, c'est le moteur par défaut dans <app>Anjuta</app>, qui possède des fonctions le rendant plus facile à mettre en œuvre. Pendant son utilisation, toutes les fonctions de gestion de projet sont activées et vous devez donc pouvoir mener à bien un projet avec le moteur Autotools sans avoir à écrire une seule ligne dans <file>configure.ac</file> ou dans <file>Makefile.am</file>.</p> 
+
+  <note style="bug">
+    <p>Les fichiers autotools donnent plus d'informations qu'un makefile, mais le moteur ne prend pas en charge toutes les astuces possibles. Si vous trouvez un projet qui ne peut pas être lu correctement, merci d'envoyer un <link href="https://bugzilla.gnome.org/browse.cgi?product=anjuta">rapport d'anomalie</link>. Pendant ce temps, comme alternative, vous pouvez utiliser le moteur de projet du répertoire. Il est beaucoup plus limité, mais doit pouvoir trouver tous les fichiers source.</p>
+  </note>
+
+
+</page>

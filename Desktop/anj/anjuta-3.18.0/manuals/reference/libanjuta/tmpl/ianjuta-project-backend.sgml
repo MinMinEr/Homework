@@ -1,0 +1,60 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaProjectBackend
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_PROJECT_BACKEND_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ianjuta_project_backend_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_backend_new_project ##### -->
+<para>
+
+</para>
+
+@obj: 
+@file: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_backend_probe ##### -->
+<para>
+
+</para>
+
+@obj: 
+@directory: 
+@err: 
+@Returns: 
+
+

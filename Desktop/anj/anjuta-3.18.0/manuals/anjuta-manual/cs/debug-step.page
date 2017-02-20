@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-step" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-execute" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak zastavit provádění a jak v něm pokračovat.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Zastavení a krokování</title>
+
+  <p>Podobně jako při úpravách videa, i program může být puštěn zpomaleně, můžete se v něm posouvat vpřed, pozastavovat jej, zastavovat apod. To je důležité pro sledování chování programu. Co však nelze, vracet se zpět.</p>
+
+  <section>
+    <title>Krok dovnitř</title>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Ladit</gui> <gui>Krok dovnitř</gui></guiseq> nebo zmáčkněte <key>F5</key> nebo klikněte na ikonu <gui>Krok dovnitř</gui> na nástrojové liště.</p>
+      </item>
+    </steps>
+
+    <p>Krokování provede jen jeden výraz v programu (od místa, kde byl zastaven) a opět vrátí řízení. Pokud prováděný příkaz obsahuje nějaké funkce, pokusí se ladicí program provést krok uvnitř funkce (v pořadí, v jakém jsou tyto funkce prováděny). Jakmile je příkaz proveden a řízení je vráceno zpět, můžete studovat stav programu.</p>
+
+    <note style="advanced">
+     <p>Pokud máte při zvolení tohoto příkazu zaměřeno okno <gui>Kód assembleru</gui>, provede se jediná instrukce assembleru.</p>
+    </note>
+  </section>
+
+
+  <section>
+    <title>Krok přes</title>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Ladit</gui> <gui>Krok přes</gui></guiseq> nebo zmáčkněte <key>F6</key> nebo klikněte na ikonu <gui>Krok přes</gui> na nástrojové liště.</p>
+      </item>
+    </steps>
+
+    <p>Krokování přes je podobné normálnímu krokování, až na to, že se nezastaví uvnitř žádné funkce, které je v rámci výrazu prováděna.</p>
+
+    <note style="advanced">
+      <p>Pokud máte při zvolení tohoto příkazu zaměřeno okno <gui>Kód assembleru</gui>, provede se jediná instrukce assembleru, vyjma instrukcí, které volají vnořené rutiny. V takovém připadě se program zastaví až po vykonání celé vnořené rutiny.</p>
+    </note>
+  </section>
+
+
+  <section>
+    <title>Krok ven</title>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Ladit</gui> <gui>Krok ven</gui></guiseq> nebo zmáčkněte <keyseq><key>Shift</key> <key>F5</key></keyseq> nebo klikněte na ikonu <gui>Krok ven</gui> na nástrojové liště.</p>
+      </item>
+    </steps>
+
+    <p>Krokování ven provádí aktuální funkci, dokud nedojde k návratu do volající funkce.</p>
+  </section>
+
+
+  <section>
+    <title>Spuštění a pokračování</title>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Ladit</gui> <gui>Spustit/pokračovat</gui></guiseq> nebo zmáčkněte <key>F4</key> nebo klikněte na ikonu <gui>Pokračovat</gui> na nástrojové liště.</p>
+      </item>
+    </steps>
+
+    <p>Tento příkaz znovu spustí program a nechá jej běžet, dokud nenarazí na bod přerušení nebo neskončí.</p>
+  </section>
+
+  <section>
+   <title>Spuštění do</title>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Ladit</gui> <gui>Spustit po kurzor</gui></guiseq> nebo zmáčkněte <key>F8</key> nebo klikněte na ikonu <gui>Spustit po kurzor</gui> na nástrojové liště.</p>
+      </item>
+    </steps>
+
+    <p>Tímto se program znovu spustí a poběží, dokud nedosáhne řádku nebo adresy (v případě, že je zaměřeno okno <gui>Kód assembleru</gui>) s kurzorem.</p>
+  </section>
+  
+  <section>
+   <title>Zastavení programu</title>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Ladit</gui> <gui>Pozastavit program</gui></guiseq> nebo klikněte na ikonu <gui>Pozastavit</gui> na nástrojové liště.</p>
+      </item>
+    </steps>
+
+   <p>Tímto se program přeruší a řízení se vrátí ladicímu programu, abyste mohli provést ladicí úkony, jako je zkoumání dat nebo přidání bodů přerušení.</p>
+  </section>
+
+
+</page>

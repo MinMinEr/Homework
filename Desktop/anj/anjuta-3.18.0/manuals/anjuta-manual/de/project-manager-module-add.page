@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-module-add" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <link type="guide" xref="project-manager-library" group="fourth"/>
+    <link type="seealso" xref="project-manager-module-new"/>
+    <desc>So füen Sie einen Satz Bibliotheken einem Ziel hinzu.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Paketierte Bibliotheken hinzufügen</title>
+
+  <p>Unter Linux werden die meisten Bibliotheken mit zusätzlichen Daten verteilt, die in der Datei <app>pkg-config</app> hinterlegt sind. Diese Datei enthält Information über andere erforderliche Bibliotheken, den C-Compiler und ´von dieser Bibliothek verlangte Linker-Flags . Diese Datei, die Header-Dateien und die Dateien der Bibliothek selbst werden ein Paket genannt.</p>
+
+  <steps>
+    <item>
+      <p>Wählen Sie das Programm in der <gui>Projektansicht</gui>, wo Sie eine neue Bibliothek hinzufügen möchten. Drücken Sie die rechte Maustaste, um das <gui>Kontextmenü des Projekts</gui> zu öffnen und wählen Sie <gui>Hinzufügen </gui>.</p>
+      <p>Oder wählen Sie im <gui>Hauptmenü</gui> den Eintrag <guiseq><gui>Projekt</gui><gui>Bibliothek hinzufügen …</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Sie müssen mit dem <gui>Zielwahlknopf</gui> oben ein Ziel wählen, wo Sie die Bibliothek hinzufügen wollen.</p>
+    </item>
+    <item>
+      <p>Eine Bibliothek kann nicht direkt einem Ziel hinzugefügt werden. Sie könne nur ein Modul hinzufügen, das in der <gui>Modulansicht</gui> unten angezeigt wird. Wenn Sie eine Bibliothek innerhalb eines Moduls wählen, so wird das übergeordnete Modul hinzugefügt.</p>
+    </item>
+    <item>
+      <p>Falls die gewünschte Bibliothek in der <gui>Modulansicht</gui> nicht erscheint, müssen Sie sie zuerst als Modul hinzufügen. Klicken Sie auf <gui>Neue Bibliothek</gui> und folgen Sie <link xref="project-manager-module-new">diesen Anweisungen</link>.</p>
+      <note style="tip">
+        <p>Nach dem Erstellen eines neuen Moduls müssen Sie einige Sekunden warten, bis die Projektdateien neu geladen wurden und das neue Modul in der Liste erscheint.</p>
+      </note>
+    </item>
+    <item>
+      <p>Sobald Sie fertig sind, klicken Sie auf den Knopf <gui>Hinzufügen</gui>, um das ausgewählte Modul zum Ziel hinzuzufügen.</p>
+    </item>
+  </steps>
+
+</page>

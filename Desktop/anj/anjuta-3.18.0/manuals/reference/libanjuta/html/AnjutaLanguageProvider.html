@@ -1,0 +1,550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: AnjutaLanguageProvider</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="libanjuta-api.html" title="libanjuta API">
+<link rel="prev" href="AnjutaFileList.html" title="AnjutaFileList">
+<link rel="next" href="AnjutaPkgConfigChooser.html" title="AnjutaPkgConfigChooser">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#AnjutaLanguageProvider.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#AnjutaLanguageProvider.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libanjuta-api.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="AnjutaFileList.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="AnjutaPkgConfigChooser.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="AnjutaLanguageProvider"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="AnjutaLanguageProvider.top_of_page"></a>AnjutaLanguageProvider</span></h2>
+<p>AnjutaLanguageProvider</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="AnjutaLanguageProvider.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaLanguageProvider.html#AnjutaLanguageProposalData"><span class="returnvalue">AnjutaLanguageProposalData</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaLanguageProvider.html#anjuta-language-proposal-data-new" title="anjuta_language_proposal_data_new ()">anjuta_language_proposal_data_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaLanguageProvider.html#anjuta-language-proposal-data-free" title="anjuta_language_proposal_data_free ()">anjuta_language_proposal_data_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaLanguageProvider.html#anjuta-language-provider-install" title="anjuta_language_provider_install ()">anjuta_language_provider_install</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaLanguageProvider.html#anjuta-language-provider-get-pre-word" title="anjuta_language_provider_get_pre_word ()">anjuta_language_provider_get_pre_word</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaLanguageProvider.html#anjuta-language-provider-get-calltip-context" title="anjuta_language_provider_get_calltip_context ()">anjuta_language_provider_get_calltip_context</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaLanguageProvider.html#anjuta-language-provider-activate" title="anjuta_language_provider_activate ()">anjuta_language_provider_activate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaLanguageProvider.html#anjuta-language-provider-populate" title="anjuta_language_provider_populate ()">anjuta_language_provider_populate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaLanguageProvider.html#anjuta-language-provider-proposals" title="anjuta_language_provider_proposals ()">anjuta_language_provider_proposals</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="returnvalue">IAnjutaIterable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaLanguageProvider.html#anjuta-language-provider-get-start-iter" title="anjuta_language_provider_get_start_iter ()">anjuta_language_provider_get_start_iter</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="AnjutaLanguageProposalData"></a><div class="refsect1">
+<a name="AnjutaLanguageProvider.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="AnjutaLanguageProvider.html#AnjutaLanguageProposalData-struct" title="struct AnjutaLanguageProposalData">AnjutaLanguageProposalData</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="AnjutaLanguageProvider.html#AnjutaLanguageProviderPriv" title="AnjutaLanguageProviderPriv">AnjutaLanguageProviderPriv</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaLanguageProvider.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-Boxed-Types.html">GBoxed</a>
+    <span class="lineart">╰──</span> AnjutaLanguageProposalData
+    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> AnjutaLanguageProvider
+</pre>
+</div>
+<div class="refsect1">
+<a name="AnjutaLanguageProvider.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="AnjutaLanguageProvider.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="anjuta-language-proposal-data-new"></a><h3>anjuta_language_proposal_data_new ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaLanguageProvider.html#AnjutaLanguageProposalData"><span class="returnvalue">AnjutaLanguageProposalData</span></a> *
+anjuta_language_proposal_data_new (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.40.8.2.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Name of the object</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.40.8.2.5"></a><h4>Returns</h4>
+<p> Creates a new AnjutaLanguageProposalData object. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-language-proposal-data-free"></a><h3>anjuta_language_proposal_data_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_language_proposal_data_free (<em class="parameter"><code><a class="link" href="AnjutaLanguageProvider.html#AnjutaLanguageProposalData"><span class="type">AnjutaLanguageProposalData</span></a> *data</code></em>);</pre>
+<p>Free the given proposal data</p>
+<div class="refsect3">
+<a name="id-1.6.40.8.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>a AnjutaLanguageProposalData</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-language-provider-install"></a><h3>anjuta_language_provider_install ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_language_provider_install (<em class="parameter"><code><a class="link" href="AnjutaLanguageProvider.html" title="AnjutaLanguageProvider"><span class="type">AnjutaLanguageProvider</span></a> *lang_prov</code></em>,
+                                  <em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *ieditor</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GSettings.html"><span class="type">GSettings</span></a> *settings</code></em>);</pre>
+<p>Install the settings for AnjutaLanguageProvider</p>
+<div class="refsect3">
+<a name="id-1.6.40.8.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lang_prov</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ieditor</p></td>
+<td class="parameter_description"><p> IAnjutaEditor object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/type"><span class="acronym">type</span></a> GObject]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>settings</p></td>
+<td class="parameter_description"><p>the settings</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-language-provider-get-pre-word"></a><h3>anjuta_language_provider_get_pre_word ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+anjuta_language_provider_get_pre_word (<em class="parameter"><code><a class="link" href="AnjutaLanguageProvider.html" title="AnjutaLanguageProvider"><span class="type">AnjutaLanguageProvider</span></a> *lang_prov</code></em>,
+                                       <em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *editor</code></em>,
+                                       <em class="parameter"><code><a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="type">IAnjutaIterable</span></a> *iter</code></em>,
+                                       <em class="parameter"><code><a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="type">IAnjutaIterable</span></a> **start_iter</code></em>,
+                                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *word_characters</code></em>);</pre>
+<p>Search for the current typed word</p>
+<div class="refsect3">
+<a name="id-1.6.40.8.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lang_prov</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>editor</p></td>
+<td class="parameter_description"><p> IAnjutaEditor object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/type"><span class="acronym">type</span></a> GObject]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iter</p></td>
+<td class="parameter_description"><p> current cursor position. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/type"><span class="acronym">type</span></a> GObject]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>start_iter</p></td>
+<td class="parameter_description"><p> return location for the start_iter (if a preword was found). </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/type"><span class="acronym">type</span></a> GObject]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.40.8.5.6"></a><h4>Returns</h4>
+<p> The current word (needs to be freed)
+or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if no word was found. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>][<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-language-provider-get-calltip-context"></a><h3>anjuta_language_provider_get_calltip_context ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+anjuta_language_provider_get_calltip_context
+                               (<em class="parameter"><code><a class="link" href="AnjutaLanguageProvider.html" title="AnjutaLanguageProvider"><span class="type">AnjutaLanguageProvider</span></a> *lang_prov</code></em>,
+                                <em class="parameter"><code><a class="link" href="IAnjutaEditorTip.html" title="IAnjutaEditorTip"><span class="type">IAnjutaEditorTip</span></a> *itip</code></em>,
+                                <em class="parameter"><code><a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="type">IAnjutaIterable</span></a> *iter</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *scope_context_ch</code></em>);</pre>
+<p>Searches for a calltip context</p>
+<div class="refsect3">
+<a name="id-1.6.40.8.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>itip</p></td>
+<td class="parameter_description"><p> whether a tooltip is crrently shown. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/type"><span class="acronym">type</span></a> GObject]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iter</p></td>
+<td class="parameter_description"><p> current cursor position. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/type"><span class="acronym">type</span></a> GObject]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>scope_context_ch</p></td>
+<td class="parameter_description"><p>language-specific context characters
+the end is marked with a '0' character</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.40.8.6.6"></a><h4>Returns</h4>
+<p> name of the method to show a calltip for or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a></p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-language-provider-activate"></a><h3>anjuta_language_provider_activate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_language_provider_activate (<em class="parameter"><code><a class="link" href="AnjutaLanguageProvider.html" title="AnjutaLanguageProvider"><span class="type">AnjutaLanguageProvider</span></a> *lang_prov</code></em>,
+                                   <em class="parameter"><code><a class="link" href="IAnjutaProvider.html" title="IAnjutaProvider"><span class="type">IAnjutaProvider</span></a> *iprov</code></em>,
+                                   <em class="parameter"><code><a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="type">IAnjutaIterable</span></a> *iter</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<p>Complete the function name</p>
+<div class="refsect3">
+<a name="id-1.6.40.8.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lang_prov</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iprov</p></td>
+<td class="parameter_description"><p> IAnjutaProvider object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/type"><span class="acronym">type</span></a> GObject]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iter</p></td>
+<td class="parameter_description"><p> the cursor. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/type"><span class="acronym">type</span></a> GObject]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>the ProposalData</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-language-provider-populate"></a><h3>anjuta_language_provider_populate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_language_provider_populate (<em class="parameter"><code><a class="link" href="AnjutaLanguageProvider.html" title="AnjutaLanguageProvider"><span class="type">AnjutaLanguageProvider</span></a> *lang_prov</code></em>,
+                                   <em class="parameter"><code><a class="link" href="IAnjutaProvider.html" title="IAnjutaProvider"><span class="type">IAnjutaProvider</span></a> *iprov</code></em>,
+                                   <em class="parameter"><code><a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="type">IAnjutaIterable</span></a> *cursor</code></em>);</pre>
+<p>Show completion for the context at position <em class="parameter"><code>iter</code></em>
+. The provider should
+call anjuta_language_provider_proposals here to add proposals to the list.</p>
+<div class="refsect3">
+<a name="id-1.6.40.8.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lang_prov</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iprov</p></td>
+<td class="parameter_description"><p> IAnjutaProvider object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/type"><span class="acronym">type</span></a> GObject]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>cursor</p></td>
+<td class="parameter_description"><p> the text iter where the provider should be populated. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/type"><span class="acronym">type</span></a> GObject]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-language-provider-proposals"></a><h3>anjuta_language_provider_proposals ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_language_provider_proposals (<em class="parameter"><code><a class="link" href="AnjutaLanguageProvider.html" title="AnjutaLanguageProvider"><span class="type">AnjutaLanguageProvider</span></a> *lang_prov</code></em>,
+                                    <em class="parameter"><code><a class="link" href="IAnjutaProvider.html" title="IAnjutaProvider"><span class="type">IAnjutaProvider</span></a> *iprov</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *proposals</code></em>,
+                                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *pre_word</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> finished</code></em>);</pre>
+<p>Add the list of proposals for the current population. You can add
+proposals async as long as the last call sets finished to TRUE. That
+is usually called by the IAnjutaLanguageProvider after it was triggered by
+<a class="link" href="IAnjutaLanguageProvider.html#ianjuta-language-provider-populate-completions" title="ianjuta_language_provider_populate_completions ()"><code class="function">ianjuta_language_provider_populate_completions()</code></a></p>
+<div class="refsect3">
+<a name="id-1.6.40.8.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>lang_prov</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iprov</p></td>
+<td class="parameter_description"><p> IAnjutaProvider object. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/type"><span class="acronym">type</span></a> GObject]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>proposals</p></td>
+<td class="parameter_description"><p> a list of IAnjutaProposals. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> IAnjutaEditorAssistProposal]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pre_word</p></td>
+<td class="parameter_description"><p>the word before the cursor</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>finished</p></td>
+<td class="parameter_description"><p>whether is was the last call in an async operation</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-language-provider-get-start-iter"></a><h3>anjuta_language_provider_get_start_iter ()</h3>
+<pre class="programlisting"><a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="returnvalue">IAnjutaIterable</span></a> *
+anjuta_language_provider_get_start_iter
+                               (<em class="parameter"><code><a class="link" href="AnjutaLanguageProvider.html" title="AnjutaLanguageProvider"><span class="type">AnjutaLanguageProvider</span></a> *lang_prov</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.40.8.10.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>lang_prov</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.40.8.10.5"></a><h4>Returns</h4>
+<p> the start iter. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="AnjutaLanguageProvider.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="AnjutaLanguageProposalData-struct"></a><h3>struct AnjutaLanguageProposalData</h3>
+<pre class="programlisting">struct AnjutaLanguageProposalData {
+	gchar* name;
+	gchar* info;
+	gboolean is_func;
+	gboolean has_para;
+	IAnjutaSymbolType type;
+};
+</pre>
+<div class="refsect3">
+<a name="id-1.6.40.9.2.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="AnjutaLanguageProposalData-struct.name"></a>name</code></em>;</p></td>
+<td class="struct_member_description"><p>Name of the object</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="AnjutaLanguageProposalData-struct.info"></a>info</code></em>;</p></td>
+<td class="struct_member_description"><p>Info about the object</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> <em class="structfield"><code><a name="AnjutaLanguageProposalData-struct.is-func"></a>is_func</code></em>;</p></td>
+<td class="struct_member_description"><p>If this is a function</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> <em class="structfield"><code><a name="AnjutaLanguageProposalData-struct.has-para"></a>has_para</code></em>;</p></td>
+<td class="struct_member_description"><p>If the function has at least one parameters</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="IAnjutaSymbol.html#IAnjutaSymbolType" title="enum IAnjutaSymbolType"><span class="type">IAnjutaSymbolType</span></a> <em class="structfield"><code><a name="AnjutaLanguageProposalData-struct.type"></a>type</code></em>;</p></td>
+<td class="struct_member_description"><p>Type of the object</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AnjutaLanguageProviderPriv"></a><h3>AnjutaLanguageProviderPriv</h3>
+<pre class="programlisting">typedef struct _AnjutaLanguageProviderPriv AnjutaLanguageProviderPriv;</pre>
+<p>
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

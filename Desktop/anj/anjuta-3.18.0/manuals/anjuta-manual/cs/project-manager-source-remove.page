@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-source-delete" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-source" group="third"/>
+   <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak odebrat soubory z projektu.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Odebrání souborů</title>
+
+  <steps>
+    <item>
+      <p>Vyberte v <gui>zobrazení projektu</gui> soubor, který chcete odebrat, klikněte na něj pravým tlačítkem myši, aby se zobrazila <gui>kontextová nabídka projektu</gui>, a zvolte <gui>Odstranit</gui>.</p>
+    </item>
+    <item>
+      <p>Odebrání potvrďte. Soubor bude odebrán pouze z projektu, z disku ne.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Můžete naráz označit i několik souborů držením klávesy <key>Ctrl</key> nebo rozsah souborů pomocí klávesy <key>Shift</key>.</p>
+  </note> 
+  
+</page>

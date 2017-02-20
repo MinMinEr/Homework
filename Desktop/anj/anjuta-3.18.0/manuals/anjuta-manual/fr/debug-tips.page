@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-tips" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="fifth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Trucs et astuces de débogage.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Astuces de débogage</title>
+
+  <section>
+  <title>Résolution des erreurs critiques de Glib/GTK+</title>
+  
+  <p>Il est parfois difficile de trouver où les erreurs critiques Glib sont survenues, car elles n'interrompent pas le programme. Vous pouvez régler le programme de façon à ce qu'il s'arrête dès qu'une erreur critique GLib survient en donnant à la variable d'environnement <sys>G_DEBUG</sys> la valeur <sys>fatal_criticals</sys>.</p>
+
+  <steps>
+    <item>
+      <p>Ouvrez la <link xref="run-parameters-dialog"/> en sélectionnant <guiseq><gui>Exécuter</gui><gui>Paramètres du programme...</gui></guiseq> dans le menu principal.</p>
+    </item>
+    <item>
+      <p>Cliquez sur le signe plus, à côté de <gui>Variables d'environnement</gui>, pour développer la liste des variables d'environnement.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui>Nouveau</gui> pour ajouter une nouvelle entrée à la liste.</p>
+    </item>
+    <item>
+      <p>Remplissez le <gui>Nom</gui> avec <input>G_DEBUG</input> et <gui>Valeur</gui> avec <input>fatal_criticals</input>.</p>
+    </item>
+    <item>
+      <p>Cliquez sur <gui>Appliquer</gui> pour confirmer les modifications.</p>
+    </item>
+    <item>
+      <p>Exécutez le programme avec le débogueur en sélectionnant <guiseq><gui>Exécuter</gui><gui>Déboguer le programme</gui></guiseq> dans le menu principal.</p>
+    </item>
+    <item>
+      <p>Faites tourner le programme jusqu'à ce que l'erreur critique survienne.</p>
+    </item>
+    <item>
+      <p>Quand le programme s'interrompt, examinez <link xref="debug-stack"/> pour chercher d'où provient cette erreur.</p>
+    </item>
+  </steps>
+
+  <p>La fonction la plus haute avec le numéro d'enregistrement 0 est dans Glib, aussi devez-vous parcourir la pile jusqu'en bas. Habituellement, l'erreur provient de la fonction la plus élevée appartenant à votre programme.</p>
+   
+  </section>
+
+</page>

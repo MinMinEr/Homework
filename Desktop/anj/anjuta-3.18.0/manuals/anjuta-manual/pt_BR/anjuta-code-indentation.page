@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="anjuta-code-indentation" xml:lang="pt-BR">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-10-24" status="draft"/>
+    <desc>Configure e use recuo automático para um estilo de codificação consistente</desc>
+
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  </info>
+
+  <title>Recuo automático</title>
+
+<section>
+<title>Configurando e usando o recuo automático</title>
+
+<section>
+<title>Manual de configuração</title>
+
+<p>O recuo automático é configurado no diálogo de preferências (<guiseq><gui>Editar</gui><gui>Preferências</gui></guiseq>) na aba correspondente da linguagem de programação utilizada. A largura do recuo para vários tipos de declarações podem ser configuradas lá.</p>
+
+<p>A grande desvantagem de configurar o recuo manualmente é que todos os desenvolvedores trabalhando em um projeto devem usar as mesmas configurações ou irá resultar em estilos diferentes usados no mesmo arquivo. Para uma solução melhor, veja a próxima seção.</p>
+
+<note>
+<p>Unless explicitly changed in the preferences the indentation settings found
+in the Modeline of a file will be used instead of the 
+configured settings to keep the file consistent.</p>
+</note>
+</section>
+
+<section id="editor-modelines">
+<title>Modos de linha</title>
+
+<p>Os modos de linha são usados para ajudar os editores de texto a detectar automaticamente o modo de recuo que deve ser usado para um arquivo em particular. São especialmente úteis caso muitos desenvolvedores trabalhem no mesmo projeto e usem ambientes diferentes.</p>
+
+<p>O Anjuta suporta modos de linha nos dois formatos usados pelo <app>Vim</app> e <app>Emacs</app>.</p>
+
+</section>
+
+</section>
+
+<section>
+<title>Blocos de recuo de código</title>
+
+<p>Normally new lines are appropriately indented automatically but you can
+indent existing lines or all selected code with the 
+<guiseq><gui>Edit</gui><gui>Auto-Indent</gui></guiseq> menu item.</p>
+
+</section>
+
+</page>

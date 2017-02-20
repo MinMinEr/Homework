@@ -1,0 +1,474 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: Anjuta token stream</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="libanjuta-api.html" title="libanjuta API">
+<link rel="prev" href="libanjuta-anjuta-token-list.html" title="anjuta-token-list">
+<link rel="next" href="AnjutaTreeComboBox.html" title="AnjutaTreeComboBox">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libanjuta-Anjuta-token-stream.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libanjuta-api.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libanjuta-anjuta-token-list.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="AnjutaTreeComboBox.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libanjuta-Anjuta-token-stream"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libanjuta-Anjuta-token-stream.top_of_page"></a>Anjuta token stream</span></h2>
+<p>Anjuta token stream — Anjuta token stream</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libanjuta-Anjuta-token-stream.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Unstable"><span class="acronym">Unstable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="libanjuta-Anjuta-token-stream.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="returnvalue">AnjutaTokenStream</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token-stream.html#anjuta-token-stream-push" title="anjuta_token_stream_push ()">anjuta_token_stream_push</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="returnvalue">AnjutaTokenStream</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token-stream.html#anjuta-token-stream-pop" title="anjuta_token_stream_pop ()">anjuta_token_stream_pop</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="returnvalue">AnjutaTokenStream</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token-stream.html#anjuta-token-stream-get-parent" title="anjuta_token_stream_get_parent ()">anjuta_token_stream_get_parent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token-stream.html#anjuta-token-stream-get-root" title="anjuta_token_stream_get_root ()">anjuta_token_stream_get_root</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token-stream.html#anjuta-token-stream-get-current-directory" title="anjuta_token_stream_get_current_directory ()">anjuta_token_stream_get_current_directory</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token-stream.html#anjuta-token-stream-get-current-file" title="anjuta_token_stream_get_current_file ()">anjuta_token_stream_get_current_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token-stream.html#anjuta-token-stream-tokenize" title="anjuta_token_stream_tokenize ()">anjuta_token_stream_tokenize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token-stream.html#anjuta-token-stream-read" title="anjuta_token_stream_read ()">anjuta_token_stream_read</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token-stream.html#anjuta-token-stream-append-token" title="anjuta_token_stream_append_token ()">anjuta_token_stream_append_token</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libanjuta-Anjuta-token-stream.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream">AnjutaTokenStream</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libanjuta-Anjuta-token-stream.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libanjuta/anjuta-token-stream.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libanjuta-Anjuta-token-stream.description"></a><h2>Description</h2>
+<p>A <a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="type">AnjutaTokenStream</span></a> object reads and writes a list of tokens. It uses two
+list. The first list is assigned when the object is created. Each token is
+read as characters discarding the separation between tokens. The second list
+is written using the data of the first list, so no new memory is allocated,
+in order to recreate a new list of tokens.</p>
+<p>This is used when the lexer needs several passes. At the beginning the file
+is read as a single token containing the whole file content. The first pass
+split this content into tokens. Additional passes are done on some parts of
+the token list to get a more precise splitting.</p>
+<p>It is important to not allocate new memory and keep the same character
+pointers in the additional passes because the token list does not own the
+memory. The address of each character is used to find the position of the
+changed data in the file.</p>
+<p>Several objects can be linked together to create a stack. It is used for
+included file or variable expansion.</p>
+</div>
+<div class="refsect1">
+<a name="libanjuta-Anjuta-token-stream.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="anjuta-token-stream-push"></a><h3>anjuta_token_stream_push ()</h3>
+<pre class="programlisting"><a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="returnvalue">AnjutaTokenStream</span></a> *
+anjuta_token_stream_push (<em class="parameter"><code><a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="type">AnjutaTokenStream</span></a> *parent</code></em>,
+                          <em class="parameter"><code><span class="type">AnjutaToken</span> *root</code></em>,
+                          <em class="parameter"><code><span class="type">AnjutaToken</span> *content</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *file</code></em>);</pre>
+<p>Create a new stream from a list of tokens. If a parent stream is passed,
+the new stream keep a link on it, so we can return it when the new stream
+will be destroyed.</p>
+<div class="refsect3">
+<a name="id-1.6.49.8.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p> a parent <a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="type">AnjutaTokenStream</span></a> object or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>root</p></td>
+<td class="parameter_description"><p> a token or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>content</p></td>
+<td class="parameter_description"><p>a token list.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>file</p></td>
+<td class="parameter_description"><p> a <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> of the file. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.49.8.2.6"></a><h4>Returns</h4>
+<p> The newly created stream.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-stream-pop"></a><h3>anjuta_token_stream_pop ()</h3>
+<pre class="programlisting"><a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="returnvalue">AnjutaTokenStream</span></a> *
+anjuta_token_stream_pop (<em class="parameter"><code><a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="type">AnjutaTokenStream</span></a> *stream</code></em>);</pre>
+<p>Destroy the stream object and return the parent stream if it exists.</p>
+<div class="refsect3">
+<a name="id-1.6.49.8.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="type">AnjutaTokenStream</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.49.8.3.6"></a><h4>Returns</h4>
+<p> The parent stream or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if there is no parent. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>][<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-stream-get-parent"></a><h3>anjuta_token_stream_get_parent ()</h3>
+<pre class="programlisting"><a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="returnvalue">AnjutaTokenStream</span></a> *
+anjuta_token_stream_get_parent (<em class="parameter"><code><a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="type">AnjutaTokenStream</span></a> *stream</code></em>);</pre>
+<p>Return the parent stream</p>
+<div class="refsect3">
+<a name="id-1.6.49.8.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="type">AnjutaTokenStream</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.49.8.4.6"></a><h4>Returns</h4>
+<p> The parent stream or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if
+there is no parent. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>][<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-stream-get-root"></a><h3>anjuta_token_stream_get_root ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_stream_get_root (<em class="parameter"><code><a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="type">AnjutaTokenStream</span></a> *stream</code></em>);</pre>
+<p>Return the root token for the output stream.</p>
+<div class="refsect3">
+<a name="id-1.6.49.8.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="type">AnjutaTokenStream</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.49.8.5.6"></a><h4>Returns</h4>
+<p> The output root token. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-stream-get-current-directory"></a><h3>anjuta_token_stream_get_current_directory ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+anjuta_token_stream_get_current_directory
+                               (<em class="parameter"><code><a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="type">AnjutaTokenStream</span></a> *stream</code></em>);</pre>
+<p>Return the current directory.</p>
+<div class="refsect3">
+<a name="id-1.6.49.8.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="type">AnjutaTokenStream</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.49.8.6.6"></a><h4>Returns</h4>
+<p> The current directory. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-stream-get-current-file"></a><h3>anjuta_token_stream_get_current_file ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+anjuta_token_stream_get_current_file (<em class="parameter"><code><a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="type">AnjutaTokenStream</span></a> *stream</code></em>);</pre>
+<p>Return the current file.</p>
+<div class="refsect3">
+<a name="id-1.6.49.8.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="type">AnjutaTokenStream</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.49.8.7.6"></a><h4>Returns</h4>
+<p> The current file. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-stream-tokenize"></a><h3>anjuta_token_stream_tokenize ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_stream_tokenize (<em class="parameter"><code><a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="type">AnjutaTokenStream</span></a> *stream</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> type</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> length</code></em>);</pre>
+<p>Create a token of type from the last length characters previously read and
+append it in the output stream. The characters are not copied in the output
+stream, the new token uses the same characters.</p>
+<div class="refsect3">
+<a name="id-1.6.49.8.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="type">AnjutaTokenStream</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>a token type.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>length</p></td>
+<td class="parameter_description"><p>the token length in character.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.49.8.8.6"></a><h4>Returns</h4>
+<p> The created token.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-stream-read"></a><h3>anjuta_token_stream_read ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+anjuta_token_stream_read (<em class="parameter"><code><a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="type">AnjutaTokenStream</span></a> *stream</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *buffer</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> max_size</code></em>);</pre>
+<p>Read token from the input stream and write the content as a C string in the
+buffer passed as argument.</p>
+<div class="refsect3">
+<a name="id-1.6.49.8.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="type">AnjutaTokenStream</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>buffer</p></td>
+<td class="parameter_description"><p>a character buffer to fill with token data.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>max_size</p></td>
+<td class="parameter_description"><p>the size of the buffer.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.49.8.9.6"></a><h4>Returns</h4>
+<p> The number of characters written in the buffer.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-stream-append-token"></a><h3>anjuta_token_stream_append_token ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_token_stream_append_token (<em class="parameter"><code><a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="type">AnjutaTokenStream</span></a> *stream</code></em>,
+                                  <em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>);</pre>
+<p>Append an already existing token in the output stream.</p>
+<div class="refsect3">
+<a name="id-1.6.49.8.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>stream</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libanjuta-Anjuta-token-stream.html#AnjutaTokenStream" title="AnjutaTokenStream"><span class="type">AnjutaTokenStream</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>token</p></td>
+<td class="parameter_description"><p>a <span class="type">AnjutaToken</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libanjuta-Anjuta-token-stream.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="AnjutaTokenStream"></a><h3>AnjutaTokenStream</h3>
+<pre class="programlisting">typedef struct _AnjutaTokenStream AnjutaTokenStream;</pre>
+<p>
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="anjuta-code-assist" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-10-24" status="draft"/>
+    <desc>Ρύθμιση και χρήση των χαρακτηριστικών ενσωματωμένου επεξεργαστή</desc>
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Αυτόματη συμπλήρωση και συμβουλές κλήσης</title>
+
+<section>
+<title>Αυτόματη συμπλήρωση</title>
+<p>Η αυτόματη συμπλήρωση προτείνει αυτόματα συναρτήσεις και άλλα σύμβολα κώδικα μετά την αρχική πληκτρολόγηση, προσπαθώντας να ταιριάξουν υπάρχοντα σύμβολα με τους πληκτρολογημένους πρώτους χαρακτήρες. Θα εμφανίσει ένα πτυσσόμενο μενού όπου μπορείτε να επιλέξετε μια συμφωνία χρησιμοποιώντας το πλήκτρο <key>Enter</key>. Κανονικά αυτό συμβαίνει αυτόματα μετά την πληκτρολόγηση του τρίτου (μη κενού) χαρακτήρα, αλλά μπορείτε επίσης να το εξαναγκάσετε χρησιμοποιώντας το στοιχείο μενού <guiseq><gui>Επεξεργασία</gui><gui>Αυτόματη συμπλήρωση</gui></guiseq>.</p>
+<note>
+<p>Το Anjuta υποστηρίζει αυτόματη συμπλήρωση για κώδικα γραμμένο σε C/C++, Vala, JavaScript και Python. Σημειώστε ότι η αυτόματη συμπλήρωση μπορεί να δουλέψει μόνο εάν το anjuta ξέρει τα χρησιμοποιούμενα σύμβολα. Εάν χρησιμοποιείτε βιβλιοθήκες C/C++ που δεν ρυθμίζονται με χρήση του <cmd>pkg-config</cmd> και/ή δεν προστίθενται στη ρύθμιση του έργου, το anjuta δεν θα μπορέσει να βρει αυτά τα σύμβολα και η αυτόματη συμπλήρωση μπορεί να μην δουλέψει.</p>
+<p>Επιπλέον κάποια σύνταξη μπορεί να είναι πολύ περίπλοκη για τον ενσωματωμένο αναλυτή και ίσως δεν μπορεί να ανιχνεύσει ποια συμπλήρωση απαιτείται</p>
+</note>
+</section>
+
+<section>
+<title>Ενεργή κωδικοποίηση χρησιμοποιώντας συμβουλές κλήσης</title>
+
+<p>Καθώς είναι συνήθως αρκετά δύσκολο να θυμόσαστε την υπογραφή κάθε χρησιμοποιούμενης μεθόδου ή συνάρτησης σε ένα έργο, ο επεξεργαστής θα εμφανίσει αυτόματα μια μικρή συμβουλή εργαλείου όποτε πληκτρολογείτε '(' μετά το όνομα συνάρτησης και θα σας δείξει την υπογραφή.</p>
+
+</section>
+
+</page>

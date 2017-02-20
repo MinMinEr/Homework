@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-process-dialog" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Dialogové okno Připojit se k procesu.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Připojení k procesu</title>
+
+  <p>Dialogové okno <gui>Připojit se k procesu</gui> vám umožňuje vybrat aktuálně běžící proces.</p>
+
+  <terms>
+    <item>
+      <title><gui>Skrýt cesty</gui></title>
+      <p>Když je zaškrtnuto, skryjí se u příkazů v seznamu procesů cesty.</p>
+    </item>
+    <item>
+      <title><gui>Skrýt parametry procesu</gui></title>
+      <p>Když je zaškrtnuto, skryjí se u příkazům v seznamu procesů argumenty příkazového řádku.</p>
+    </item>
+    <item>
+      <title><gui>Zobrazit strom procesů</gui></title>
+      <p>Když není zaškrtnuto, jsou procesy zobrazeny v podobě seznamu. Když je zaškrtnuto, jsou procesy zobrazeny v podobě stromu.</p>
+    </item>
+  </terms>
+
+</page>

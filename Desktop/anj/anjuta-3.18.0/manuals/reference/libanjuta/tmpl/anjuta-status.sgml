@@ -1,0 +1,202 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaStatus
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION anjuta_status_new ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_status_set ##### -->
+<para>
+
+</para>
+
+@status: 
+@mesg: 
+@...: 
+
+
+<!-- ##### FUNCTION anjuta_status_push ##### -->
+<para>
+
+</para>
+
+@status: 
+@mesg: 
+@...: 
+
+
+<!-- ##### FUNCTION anjuta_status_pop ##### -->
+<para>
+
+</para>
+
+@status: 
+
+
+<!-- ##### FUNCTION anjuta_status_clear_stack ##### -->
+<para>
+
+</para>
+
+@status: 
+
+
+<!-- ##### FUNCTION anjuta_status_busy_push ##### -->
+<para>
+
+</para>
+
+@status: 
+
+
+<!-- ##### FUNCTION anjuta_status_busy_pop ##### -->
+<para>
+
+</para>
+
+@status: 
+
+
+<!-- ##### FUNCTION anjuta_status_set_default ##### -->
+<para>
+
+</para>
+
+@status: 
+@label: 
+@value_format: 
+@...: 
+
+
+<!-- ##### FUNCTION anjuta_status_add_widget ##### -->
+<para>
+
+</para>
+
+@status: 
+@widget: 
+
+
+<!-- ##### FUNCTION anjuta_status ##### -->
+<para>
+
+</para>
+
+@status: 
+@mesg: 
+@timeout: 
+
+
+<!-- ##### FUNCTION anjuta_status_set_title_window ##### -->
+<para>
+
+</para>
+
+@status: 
+@window: 
+
+
+<!-- ##### FUNCTION anjuta_status_set_title ##### -->
+<para>
+
+</para>
+
+@status: 
+@title: 
+
+
+<!-- ##### FUNCTION anjuta_status_set_splash ##### -->
+<para>
+
+</para>
+
+@status: 
+@splash_file: 
+@splash_progress_position: 
+
+
+<!-- ##### FUNCTION anjuta_status_disable_splash ##### -->
+<para>
+
+</para>
+
+@status: 
+@disable_splash: 
+
+
+<!-- ##### FUNCTION anjuta_status_progress_add_ticks ##### -->
+<para>
+
+</para>
+
+@status: 
+@ticks: 
+
+
+<!-- ##### FUNCTION anjuta_status_progress_tick ##### -->
+<para>
+
+</para>
+
+@status: 
+@icon: 
+@text: 
+
+
+<!-- ##### FUNCTION anjuta_status_progress_increment_ticks ##### -->
+<para>
+
+</para>
+
+@status: 
+@ticks: 
+@text: 
+
+
+<!-- ##### FUNCTION anjuta_status_progress_pulse ##### -->
+<para>
+
+</para>
+
+@status: 
+@text: 
+
+
+<!-- ##### FUNCTION anjuta_status_progress_reset ##### -->
+<para>
+
+</para>
+
+@status: 
+
+
+<!-- ##### STRUCT AnjutaStatusPriv ##### -->
+<para>
+
+</para>
+
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="anjuta-code-indentation" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-10-24" status="draft"/>
+    <desc>Automatikus behúzás beállítása és használata konzisztens kódolási stílus használatához</desc>
+
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Automatikus behúzás</title>
+
+<section>
+<title>Automatikus behúzás beállítása és használata</title>
+
+<section>
+<title>Kézi beállítás</title>
+
+<p>Az automatikus behúzás a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui></guiseq> ablakban az adott programnyelvnek megfelelő lapon állítható be. A behúzás szélessége itt több különböző utasítástípushoz is megadható.</p>
+
+<p>A behúzás kézi beállításának nagy hátránya, hogy egy projekten dolgozó összes fejlesztőnek azonos beállításokat kell használnia, különben eltérő behúzásstílusok kerülnek ugyanazokba a fájlokba. A következő szakasz egy ennél jobb megoldást nyújt.</p>
+
+<note>
+<p>Hacsak nincs a beállításokban kifejezetten másként megadva, akkor a fájl módsorában talált behúzási beállítások kerülnek felhasználásra a fájl konzisztenciájának fenntartása érdekében.</p>
+</note>
+</section>
+
+<section id="editor-modelines">
+<title>Módsorok</title>
+
+<p>A módsorokat a szerkesztőprogramok az adott fájlban használandó behúzási beállítások automatikus felismerésére használják. Ezek különösen akkor hasznosak, ha több fejlesztő dolgozik ugyanazon a projekten, és különböző környezeteket használnak.</p>
+
+<p>Az Anjuta a <app>Vim</app> és <app>Emacs</app> által használt két módsorformátumot támogatja.</p>
+
+</section>
+
+</section>
+
+<section>
+<title>Kódblokkok behúzása</title>
+
+<p>Az új sorok általában automatikusan is megfelelően behúzásra kerülnek, de a <guiseq><gui>Szerkesztés</gui><gui>Automatikus behúzás</gui></guiseq> menüpont segítségével behúzhatja a meglévő sorokat vagy a kijelölt kódot.</p>
+
+</section>
+
+</page>

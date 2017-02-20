@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="anjuta-build-indentation" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Effiziente Möglichkeiten zum Navigieren durch den Quellcode</desc>
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Navigieren durch den Code mit dem Symbolbrowser</title>
+
+<section>
+<title>Verwendung des Symbolbrowsers</title>
+<p>Der Symbolbrowser gibt Ihnen eine Übersicht über die in Ihrem Projekt verwendeten Symbole. Symbole beziehen sich hier auf Variablen, Funktionen/Methoden und Klassen. Die exakte Definitionen hängt von der verwendeten Programmiersprache ab.</p>
+
+<p>Der Symbolbrowser verfügt über drei Reiter:</p>
+<list>
+	<item><p><gui>Datei</gui> zeigt die Symbole der aktuellen Datei im Editor an</p></item>
+	<item><p><gui>Projekt</gui> zeigt alle Symbole des Projekts an</p></item>
+	<item><p><gui>Suchen</gui> ermöglicht Ihnen die Suche nach Symbolen im Projekt. Mit <keyseq><key>Strg</key><key>L</key></keyseq> gelangen Sie direkt zum Suchfeld</p></item>
+</list>
+
+<p>Ein Doppelklick auf ein Symbol führt Sie direkt zur Definition des Symbols im Editor.</p>
+</section>
+
+<section>
+<title>Navigieren im Editor</title>
+<p>Im Einblend-Menü <gui>Gehe zu</gui> des Editors gibt es zwei Menüpunkte, die Ihnen dabei helfen, schnell den Quellcode zu durchsuchen:</p>
+
+<list>
+	<item><p><gui>Symboldefinition</gui></p></item>
+	<item><p><gui>Symboldeklaration</gui></p></item>
+</list>
+
+<p>Wenn Sie zu der Position im Editor zurückspringen wollen, an der Sie die gezeigten Einträge im Menü <gui>Gehe zu</gui> verwendet haben, nutzen Sie die Einträge <gui>Vorheriger Eintrag in der Chronik</gui> (und <gui>Nächster Eintrag in der Chronik</gui>) im gleichen Menü.</p>
+
+</section>
+
+</page>

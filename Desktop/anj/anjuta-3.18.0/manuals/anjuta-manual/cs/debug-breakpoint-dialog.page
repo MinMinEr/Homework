@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-breakpoint-dialog" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="debug-breakpoint"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak jej použít k vytvoření nebo změně bodu přerušení.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Dialogové okno bodu přerušení</title>
+
+  <terms>
+    <item>
+      <title><gui>Místo</gui></title>
+      <p>Jedná se o místo, ve kterém se bod přerušení nachází. U stávajícího bodu přerušení jej nelze změnit. Bod přerušení můžete nastavit na konkrétní číslo řádku nebo na začátek funkce. Použijte jeden z následujících formátů:</p>
+      <list>
+        <item><p><var>název_souboru</var>:<var>číslo_řádku</var></p></item>
+        <item><p><var>název_funkce</var></p></item>
+        <item><p><var>název_souboru</var>:<var>název_funkce</var></p></item>
+      </list>
+    </item>
+    <item>
+      <title><gui>Podmínka</gui></title>
+      <p>Podmínka bodu přerušení je výraz, který by měl být vyhodnocen jako pravdivostní hodnota <code>PRAVDA</code> (1) nebo <code>NEPRAVDA</code> (0). Pokaždé, když je při běhu programu dosaženo bodu přerušení, se podmínka vyhodnotí. Ladicí program přeruší provádění jen když je výsledkem vyhodnocení <code>PRAVDA</code>.</p>
+      <p>Pokud ponecháte toto pole prázdné, je jako výsledek podmínky vždy uvažována <code>PRAVDA</code>.</p>
+    </item>
+    <item>
+      <title><gui>Počet průchodů</gui></title>
+       <p>Ladicí program umí také bod přerušení přeskočit po konkrétní počet výskytu přerušení. Pokud není počet průchodů nastaven na nulu, bude muset ladicí program projít tímto bodem tolikrát, kolikrát je zadáno, než běh přeruší.</p>
+       <p>Počet průchodů má vyšší prioritu než podmínka. Jen když je dosaženo patřičného počtu průchodů, vyhodnotí ladicí program podmínku, pokud nějaká je zadána, a případně přeruší provádění programu.</p>
+    </item>
+  </terms>
+
+</page>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-project-target-edit" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-target" group="second"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Modifier les propriétés de la cible autotools.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Modification d'une cible Autotools</title>
+
+  <p>Voici une liste de toutes les propriétés de cible utilisées dans le projet autotools. Certaines ne sont pas disponibles pour toutes les cibles.</p>
+
+  <terms>
+    <item>
+      <title><gui>Construire pour vérification seulement</gui></title>
+      <p>Si cochée, cette cible n'est pas installée et doit être construite seulement au moment des vérifications.</p>
+    </item>
+    <item>
+      <title><gui>Drapeaux du compilateur C</gui></title>
+      <p>Les drapeaux à transmettre au compilateur C pendant la construction des fichiers source de la cible. Cette valeur outrepasse celle éventuellement définie dans le dossier parent.</p>
+    </item>
+    <item>
+      <title><gui>Drapeaux du pré-processeur C</gui></title>
+      <p>Ces drapeaux sont transmis à chaque compilation faisant appel au pré-processeur C. Cette valeur outrepasse celle éventuellement définie dans le dossier parent.</p>
+    </item>
+    <item>
+      <title><gui>Drapeaux du compilateur C++</gui></title>
+      <p>Les drapeaux à transmettre au compilateur C++ pendant la construction des fichiers source de la cible. Cette valeur outrepasse celle éventuellement définie dans le dossier parent.</p>
+    </item>
+    <item>
+      <title><gui>Ne pas installer</gui></title>
+      <p>Si cochée, cette cible n'est pas installée. Elle ne peut servir qu'aux développeurs comme utilitaire pour construire d'autres cibles ou programmes.</p>
+    </item>
+    <item>
+      <title><gui>Ne pas utiliser le préfixe</gui></title>
+      <p>Si coché, ne pas ajouter le préfixe à la page du manuel et à l'exécutable. Ce type de préfixe est utilisé pour fournir une alternative aux outils système.</p>
+    </item>
+    <item>
+      <title><gui>Drapeaux du compilateur Fortran</gui></title>
+      <p>Les drapeaux à transmettre au compilateur Fortran 9x pendant la construction des fichiers source de la cible. Cette valeur outrepasse celle éventuellement définie dans le dossier parent.</p>
+    </item>
+    <item>
+      <title><gui>Inclure dans la distribution</gui></title>
+      <p>Si coché, inclut la cible dans le paquet de la distribution.</p>
+    </item>
+    <item>
+      <title><gui>Répertoire d'installation</gui></title>
+      <p>Cela définit l'emplacement où la cible est installée. Ce n'est pas directement le dossier où les fichiers sont installés, mais le nom de l'une des variables standard de dossier (bindir, sbindir, libdir, libexecdir, datadir, pkgdatadir, pkglibexecdir, includedir, mandir, infodir, docdir) ou une variable personnalisée définie dans les propriétés du dossier.</p>
+    </item>
+    <item>
+      <title><gui>Drapeaux du compilateur Java</gui></title>
+      <p>Les drapeaux à transmettre au compilateur Java pendant la construction des fichiers source de la cible. Cette valeur outrepasse celle éventuellement définie dans le dossier parent.</p>
+    </item>
+    <item>
+      <title><gui>Conserver le chemin de la cible</gui></title>
+      <p>Si coché, préserve la hiérarchie du dossier du projet pendant l'installation des fichiers.</p>
+    </item>
+    <item>
+      <title><gui>Drapeaux du compilateur Lex/Flex</gui></title>
+      <p>Les drapeaux à transmettre au générateur d'analyse Lex ou Flex pendant la création des fichiers source de la cible. Cette valeur outrepasse celle éventuellement définie dans le dossier parent.</p>
+    </item>
+    <item>
+      <title><gui>Bibliothèques</gui></title>
+      <p>Définit les bibliothèques supplémentaires utilisées par la cible. Ceci est utile pour ajouter des bibliothèques hors paquet. Consultez la page <link xref="project-manager-library">Ajouter des bibliothèques hors paquet</link> pour plus de détails.</p>
+    </item>
+    <item>
+      <title><gui>Drapeaux de l'éditeur de liens </gui></title>
+      <p>Les drapeaux à transmettre à l'éditeur de liens pendant la liaison de la cible. Cette valeur outrepasse celle éventuellement définie dans le dossier parent.</p>
+    </item>
+    <item>
+      <title><gui>Section du manuel</gui></title>
+      <p>Définit la section du manuel où ajouter la page man. Les caractères valides pour le nom de la section sont les chiffres « 0 » à « 9 » et les lettres « l » et « n ».</p>
+    </item>
+    <item>
+      <title><gui>Drapeaux du compilateur Objective C</gui></title>
+      <p>Les drapeaux à transmettre au compilateur Objective C pendant la compilation des fichiers source de la cible. Cette valeur outrepasse celle éventuellement définie dans le dossier parent.</p>
+    </item>
+    <item>
+      <title><gui>Drapeaux du compilateur Vala</gui></title>
+      <p>Les drapeaux à transmettre au compilateur Vala pendant la compilation des fichiers source de la cible. Cette valeur outrepasse celle éventuellement définie dans le dossier parent.</p>
+    </item>
+    <item>
+      <title><gui>Drapeaux du compilateur Yacc/Bison</gui></title>
+      <p>Les drapeaux à transmettre aux générateurs d'analyse Bison ou Yacc pendant la création des fichiers source de la cible. Cette valeur outrepasse celle éventuellement définie dans le dossier parent.</p>
+    </item>
+  </terms>
+
+</page>

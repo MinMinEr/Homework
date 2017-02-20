@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-project-target-edit" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-target" group="second"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Επεξεργασία ιδιοτήτων προορισμού autotools.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Επεξεργασία προορισμού autotools</title>
+
+  <p>Εδώ είναι μια λίστα όλων των ιδιοτήτων προορισμού που χρησιμοποιείται στο έργο autotools. Μερικές από αυτές δεν είναι διαθέσιμες σε όλους τους προορισμούς.</p>
+
+  <terms>
+    <item>
+      <title><gui>Δόμηση μόνο για έλεγχο</gui></title>
+      <p>Εάν σημειωθεί, αυτός ο προορισμός δεν εγκαθίσταται και πρέπει να δομηθεί μόνο όταν εκτελούνται έλεγχοι.</p>
+    </item>
+    <item>
+      <title><gui>Σημαίες μεταγλωττιστή C</gui></title>
+      <p>Οι σημαίες που περνούν στον μεταγλωττιστή C, όταν μεταγλωττίζονται πηγαία αρχεία προορισμού. Αυτή η τιμή υπερισχύει της τιμής που ενδεχομένως ορίζεται στον γονικό φακέλο.</p>
+    </item>
+    <item>
+      <title><gui>Σημαίες προεπεξεργαστή C</gui></title>
+      <p>Αυτές οι σημαίες περνούν σε κάθε μεταγλώττιση που καλεί τον προεπεξεργαστή C. Αυτή η τιμή υπερισχύει της τιμής που ενδεχομένως ορίζεται στον γονικό φάκελο.</p>
+    </item>
+    <item>
+      <title><gui>Σημαίες μεταγλωττιστή C++</gui></title>
+      <p>Οι σημαίες που περνούν στις σημαίες του μεταγλωττιστή C++, όταν μεταγλωττίζονται πηγαία αρχεία προορισμού. Αυτή η τιμή υπερισχύει της τιμής που ενδεχομένως ορίζεται στον γονικό φάκελο.</p>
+    </item>
+    <item>
+      <title><gui>Να μην εγκατασταθεί</gui></title>
+      <p>Εάν σημειωθεί, αυτός ο προορισμός δεν εγκαθίσταται. Μπορεί να χρησιμοποιηθεί για προγράμματα δόμησης άλλων προορισμών ή χρησιμοποιούμενων προγραμμάτων μόνο από προγραμματιστές.</p>
+    </item>
+    <item>
+      <title><gui>Να μη χρησιμοποιηθεί πρόθεμα</gui></title>
+      <p>Εάν σημειωθεί, δεν προστίθεται πρόθεμα στη σελίδα εγχειριδίου και εκτελέσιμου. Τέτοιο πρόθεμα χρησιμοποιείται για παροχή εναλλακτικών των εργαλείων συστήματος.</p>
+    </item>
+    <item>
+      <title><gui>Σημαίες μεταγλωττιστή Fortran</gui></title>
+      <p>Οι σημαίες που περνούν στον μεταγλωττιστή Fortran 9x, όταν μεταγλωττίζονται πηγαία αρχεία προορισμού. Αυτή η τιμή υπερισχύει της τιμής που ενδεχομένως ορίζεται στον γονικό φάκελο.</p>
+    </item>
+    <item>
+      <title><gui>Συμπερίληψη στη διανομή</gui></title>
+      <p>Εάν σημειωθεί, να περιλαμβάνεται ο προορισμός στο πακέτο διανομής.</p>
+    </item>
+    <item>
+      <title><gui>Κατάλογος εγκατάστασης</gui></title>
+      <p>Καθορίζει πού εγκαθίσταται ο προορισμός. Δεν είναι άμεσα ο κατάλογος όπου εγκαθίστανται τα αρχεία, αλλά το όνομα μιας από τις τυπικές μεταβλητές καταλόγου (bindir, sbindir, libdir, libexecdir, datadir, pkgdatadir, pkglibexecdir, includedir, mandir, infodir, docdir) ή μιας προσαρμοσμένης μεταβλητής που ορίζεται στις ιδιότητες φακέλου.</p>
+    </item>
+    <item>
+      <title><gui>Σημαίες μεταγλωττιστή Java</gui></title>
+      <p>Οι σημαίες που περνούν στον μεταγλωττιστή Java, όταν μεταγλωττίζονται πηγαία αρχεία προορισμού. Αυτή η τιμή υπερισχύει της τιμής που ενδεχομένως ορίζεται στον γονικό φάκελο.</p>
+    </item>
+    <item>
+      <title><gui>Διατήρηση διαδρομής προορισμού</gui></title>
+      <p>Εάν σημειωθεί, διατήρηση της ιεραρχίας του καταλόγου έργου όταν εγκαθίστανται τα αρχεία.</p>
+    </item>
+    <item>
+      <title><gui>Σημαίες μεταγλωττιστή Lex/Flex</gui></title>
+      <p>Οι σημαίες που περνούν στη γεννήτρια σαρωτή Lex ή Flex, όταν παράγονται πηγαία αρχεία προορισμού. Αυτή η τιμή υπερισχύει της τιμής που ενδεχομένως ορίζεται στον γονικό φάκελο.</p>
+    </item>
+    <item>
+      <title><gui>Βιβλιοθήκες</gui></title>
+      <p>Ορισμός πρόσθετων βιβλιοθηκών που χρησιμοποιεί ο προορισμός. Χρήσιμο για προσθήκη μη πακεταρισμένων βιβλιοθηκών. Δείτε τη σελίδα <link xref="project-manager-library">προσθήκη μη πακεταρισμένων βιβλιοθηκών</link> για περισσότερες λεπτομέρειες.</p>
+    </item>
+    <item>
+      <title><gui>Σημαίες συνδέσμου</gui></title>
+      <p>Οι σημαίες που περνούν στον σύνδεσμο, όταν συνδέεται ο προορισμός. Αυτή η τιμή υπερισχύει της τιμής που ενδεχομένως ορίζεται στον γονικό φάκελο.</p>
+    </item>
+    <item>
+      <title><gui>Ενότητα εγχειριδίου</gui></title>
+      <p>Ορισμός της ενότητας του εγχειριδίου όπου θα προστεθεί σελίδα man. Έγκυρα ονόματα ενότητας είναι οι αριθμοί ‘0’ έως ‘9’ και τα γράμματα ‘l’ και ‘n’.</p>
+    </item>
+    <item>
+      <title><gui>Σημαίες μεταγλωττιστή Objective C</gui></title>
+      <p>Οι σημαίες που περνούν στον μεταγλωττιστή Objective C, όταν μεταγλωττίζονται πηγαία αρχεία προορισμού. Αυτή η τιμή υπερισχύει της ενδεχόμενης τιμής του γονικού φακέλου.</p>
+    </item>
+    <item>
+      <title><gui>Σημαίες μεταγλωττιστή Vala</gui></title>
+      <p>Οι σημαίες που περνούν στον μεταγλωττιστή Vala, όταν μεταγλωττίζονται πηγαία αρχεία προορισμού. Αυτή η τιμή υπερισχύει της τιμής που ενδεχομένως ορίζεται στον γονικό φάκελο.</p>
+    </item>
+    <item>
+      <title><gui>Σημαίες μεταγλωττιστή Yacc/Bison</gui></title>
+      <p>Οι σημαίες που περνούν στον παραγωγό ανάλυσης Bison ή Yacc, όταν παράγονται πηγαία αρχεία προορισμού. Αυτή η τιμή υπερισχύει της τιμής που ενδεχομένως ορίζεται στον γονικό φάκελο.</p>
+    </item>
+  </terms>
+
+</page>

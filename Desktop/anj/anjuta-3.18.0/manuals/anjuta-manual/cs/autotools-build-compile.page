@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-compile" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="second"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <link type="seealso" xref="autotools-build-preferences-dialog"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak zkompilovat soubory.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  </info>
+
+  <title>Kompilace souborů</title>
+
+    <p>Většina programovacích jazyků umožňuje kompilovat jednotlivé soubory se zdrojovými kódy. Přečte se soubor, zkontroluje na chyby a převede na mezičlánek v podobě objektového souboru. Většina chyb nastává během tohoto kroku, takže je vhodné zkompilovat soubor po provedení nějakých změn, aby se ověřila jeho bezchybnost. Existuje několik způsobů, jak to udělat.</p>
+    <steps>
+      <item>
+        <p>Aby se zkompiloval právě upravovaný soubor, vyberte v <gui>hlavní nabídce</gui> položku <guiseq><gui>Sestavit</gui> <gui>Zkompilovat</gui></guiseq> nebo zmáčkněte <key>F9</key>.</p>
+      </item>
+    </steps>
+    <steps>
+      <item>
+        <p>V <gui>panelu správy souborů</gui> vyberte soubor.</p>
+      </item>
+      <item>
+        <p>Klikněte na něj pravým tlačítkem myši, aby se objevila <gui>kontextová nabídka správy souborů</gui>, a vyberte <guiseq><gui>Sestavit</gui> <gui>Zkompilovat</gui></guiseq> a zkompiluje se soubor aktuálně vybraný v <gui>panelu správy souborů</gui>.</p>
+      </item>
+    </steps>
+    <steps>
+      <item>
+        <p>V <gui>panelu správy projektu</gui> vyberte soubor se zdrojovým kódem.</p>
+      </item>
+      <item>
+        <p>Klikněte na něj pravým tlačítkem myši, aby se objevila <gui>kontextová nabídka správy projektu</gui>, a vyberte <guiseq><gui>Sestavit</gui> <gui>Zkompilovat</gui></guiseq> a zkompiluje se soubor aktuálně vybraný v <gui>panelu správy projektu</gui>.</p>
+      </item>
+    </steps>
+    <note style="tip">
+      <p>Před provedením kompilace nemusíte soubor ukládat, <app>Anjuta</app> jej v případě potřeby uloží automaticky.</p>
+    </note>
+
+</page>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-preferences-dialog" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Dialog der Einstellungen zur Erstellung mit Autotools.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Dialog der Einstellungen zur Erstellung mit Autotools</title>
+
+  <p>Der Dialog ermöglicht das Festlegen globaler Optionen zum Erstellen von Dateien.</p>
+
+  <terms>
+    <item>
+      <title><gui>Mehrere Befehle zugleich ausführen</gui></title>
+      <p><app>make</app> kann gleichzeitig mehrere Kompilierungen ausführen. So wird die Erstellungsdauer bei Prozessoren mit mehreren Kernen reduziert. Dies kann allerdings einige Probleme verursachen. Deshalb kann es nach Bedarf mit diesem Ankreuzfeld aktiviert oder deaktiviert werden.</p>
+    </item>
+    <item>
+      <title><gui>Bei Fehlern fortfahren</gui></title>
+      <p>Per Voreinstellung stoppt <app>make</app>, sobald ein Fehler aufgetreten ist. Es kann besser sein, fortzusetzen und alle Fehler in einem Schritt ausgeben zu lassen. Wählen Sie dafür dieses Ankreuzfeld aus.</p>
+    </item>
+    <item>
+      <title><gui>Meldungen übersetzen</gui></title>
+      <p>Per Voreinstellung werden Fehler und Warnungen übersetzt. Dies hat jedoch zwei Nachteile. Um Fehler und Warnungen zu erkennen, sollten die Übersetzungen in <app>Anjuta</app> und dem Compiler exakt übereinstimmen. Des weiteren ist es oft schwierig, Hilfe im Internet zu erhalten, wenn Sie nach übersetzten Meldungen suchen, weil diese seltener zu finden sind. Wählen Sie dieses Ankreuzfeld ab, um Übersetzungen auszuschalten.</p>
+    </item>
+    <item>
+      <title><gui>Erstellungswarnungen und Fehler im Editor hervorheben</gui></title>
+      <p>Fehlermeldungen und Warnungen während des Erstellungsvorgangs werden im Meldungsfenster angezeigt und hervorgehoben. Wenn Sie diese Option aktivieren, geschieht dies auch im Editorfenster.</p>
+    </item>
+    <item>
+      <title><gui>Mit Administratorrechten installieren</gui></title>
+      <p>Eine Programminstallation erfordert es, Dateien in Systemordner zu kopieren, für die in der Regel ein Benutzer keine Schreibrechte hat. Wenn dieses Ankreuzfeld ausgewählt ist, wählen Sie zwischen <cmd>sudo</cmd> und <cmd>su</cmd> vor der Installation von Dateien, um ausreichende Rechte zu erlangen.</p>
+    </item>
+  </terms>
+
+</page>

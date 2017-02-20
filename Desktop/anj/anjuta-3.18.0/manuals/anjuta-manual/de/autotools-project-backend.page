@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="autotools-project-backend" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager#backend"/>
+    <desc>Autotools-basiertes Projekt-Backend.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Plugin für GNU Autotools-basiertes Projekt</title>
+
+  <p>Es ist das am weitesten verbreitete Projektformat unter Linux. Es wurde entworfen, um Quellcodepakete auf einer Vielzahl von Unix-ähnlichen Systemen zu verteilen. Wenn Sie jemals ein Programm mit Hilfe von <cmd>configure</cmd>, <cmd>make</cmd> und <cmd>make install</cmd> installiert haben, so haben sie es wahrscheinlich schon als Benutzer verwendet.</p>
+
+  <p>Es ist typischerweise ein wenig schwieriger als Entwickler zu verwenden. Jedoch ist es das voreingestellte Backend für <app>Anjuta</app> und hat Funktionen, die die Verwendung einfacher werden lassen. Alle Funktionen des Projektverwalters sind bei Verwendung aktiviert. Sie sollten in der Lage sein, ein Projekt mit dem Autotools-Backend zu verwalten, ohne eine Zeile in <file>configure.ac</file> oder einer <file>Makefile.am</file> Datei zu schreiben.</p> 
+
+  <note style="bug">
+    <p>Autotools-Dateien liefern mehr Informationen als ein makefile, aber das Backend unterstützt nicht alle möglichen Tricks. Wenn Sie auf ein Projekt treffen, das nicht ordnungsgemäß gelesen werden kann, so erstellen Sie bitte einen <link href="https://bugzilla.gnome.org/browse.cgi?product=anjuta">Fehlerbericht</link>. Als Abhilfe können Sie das Ordnerprojekt-Backend stattdessen verwenden. Es ist deutlich eingeschränkter, solle aber alle Quelldateien finden.</p>
+  </note>
+
+
+</page>

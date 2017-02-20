@@ -1,0 +1,536 @@
+<!-- ##### SECTION Title ##### -->
+anjuta-token
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### ENUM AnjutaTokenType ##### -->
+<para>
+
+</para>
+
+@ANJUTA_TOKEN_NONE: 
+@ANJUTA_TOKEN_EOL: 
+@ANJUTA_TOKEN_COMMA: 
+@ANJUTA_TOKEN_TYPE: 
+@ANJUTA_TOKEN_FIRST: 
+@ANJUTA_TOKEN_FILE: 
+@ANJUTA_TOKEN_MACRO: 
+@ANJUTA_TOKEN_CONTENT: 
+@ANJUTA_TOKEN_ARGUMENT: 
+@ANJUTA_TOKEN_VALUE: 
+@ANJUTA_TOKEN_EOV: 
+@ANJUTA_TOKEN_PARSED: 
+@ANJUTA_TOKEN_KEYWORD: 
+@ANJUTA_TOKEN_OPERATOR: 
+@ANJUTA_TOKEN_NAME: 
+@ANJUTA_TOKEN_VARIABLE: 
+@ANJUTA_TOKEN_DEFINITION: 
+@ANJUTA_TOKEN_STATEMENT: 
+@ANJUTA_TOKEN_NUMBER: 
+@ANJUTA_TOKEN_JUNK: 
+@ANJUTA_TOKEN_COMMENT: 
+@ANJUTA_TOKEN_OPEN_QUOTE: 
+@ANJUTA_TOKEN_CLOSE_QUOTE: 
+@ANJUTA_TOKEN_ESCAPE: 
+@ANJUTA_TOKEN_FUNCTION: 
+@ANJUTA_TOKEN_SPACE: 
+@ANJUTA_TOKEN_START: 
+@ANJUTA_TOKEN_NEXT: 
+@ANJUTA_TOKEN_LAST: 
+@ANJUTA_TOKEN_ITEM: 
+@ANJUTA_TOKEN_STRING: 
+@ANJUTA_TOKEN_ERROR: 
+@ANJUTA_TOKEN_WORD: 
+@ANJUTA_TOKEN_LIST: 
+@ANJUTA_TOKEN_ANY: 
+@ANJUTA_TOKEN_USER: 
+@ANJUTA_TOKEN_FLAGS: 
+@ANJUTA_TOKEN_PUBLIC_FLAGS: 
+@ANJUTA_TOKEN_IRRELEVANT: 
+@ANJUTA_TOKEN_OPEN: 
+@ANJUTA_TOKEN_CLOSE: 
+@ANJUTA_TOKEN_SIGNIFICANT: 
+@ANJUTA_TOKEN_PRIVATE_FLAGS: 
+@ANJUTA_TOKEN_CASE_INSENSITIVE: 
+@ANJUTA_TOKEN_STATIC: 
+@ANJUTA_TOKEN_REMOVED: 
+@ANJUTA_TOKEN_ADDED: 
+
+<!-- ##### USER_FUNCTION AnjutaTokenForeachFunc ##### -->
+<para>
+
+</para>
+
+@token: 
+@data: 
+
+
+<!-- ##### FUNCTION anjuta_token_new_string ##### -->
+<para>
+
+</para>
+
+@type: 
+@value: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_new_string_len ##### -->
+<para>
+
+</para>
+
+@type: 
+@value: 
+@length: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_new_static ##### -->
+<para>
+
+</para>
+
+@type: 
+@value: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_new_static_len ##### -->
+<para>
+
+</para>
+
+@type: 
+@pos: 
+@length: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_free_children ##### -->
+<para>
+
+</para>
+
+@token: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_free ##### -->
+<para>
+
+</para>
+
+@token: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_set_type ##### -->
+<para>
+
+</para>
+
+@token: 
+@type: 
+
+
+<!-- ##### FUNCTION anjuta_token_set_flags ##### -->
+<para>
+
+</para>
+
+@token: 
+@flags: 
+
+
+<!-- ##### FUNCTION anjuta_token_clear_flags ##### -->
+<para>
+
+</para>
+
+@token: 
+@flags: 
+
+
+<!-- ##### FUNCTION anjuta_token_get_flags ##### -->
+<para>
+
+</para>
+
+@token: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_set_string ##### -->
+<para>
+
+</para>
+
+@token: 
+@value: 
+@length: 
+
+
+<!-- ##### FUNCTION anjuta_token_get_string ##### -->
+<para>
+
+</para>
+
+@token: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_set_length ##### -->
+<para>
+
+</para>
+
+@token: 
+@length: 
+
+
+<!-- ##### FUNCTION anjuta_token_get_length ##### -->
+<para>
+
+</para>
+
+@token: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_next ##### -->
+<para>
+
+</para>
+
+@token: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_previous ##### -->
+<para>
+
+</para>
+
+@token: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_last ##### -->
+<para>
+
+</para>
+
+@token: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_parent ##### -->
+<para>
+
+</para>
+
+@token: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_list ##### -->
+<para>
+
+</para>
+
+@token: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_next_after_children ##### -->
+<para>
+
+</para>
+
+@token: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_foreach_content ##### -->
+<para>
+
+</para>
+
+@token: 
+@func: 
+@user_data: 
+
+
+<!-- ##### FUNCTION anjuta_token_foreach_token ##### -->
+<para>
+
+</para>
+
+@token: 
+@func: 
+@user_data: 
+
+
+<!-- ##### FUNCTION anjuta_token_foreach_post_order ##### -->
+<para>
+
+</para>
+
+@token: 
+@func: 
+@user_data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_first_item ##### -->
+<para>
+
+</para>
+
+@list: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_next_item ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_previous_item ##### -->
+<para>
+
+</para>
+
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_last_item ##### -->
+<para>
+
+</para>
+
+@list: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_append_child ##### -->
+<para>
+
+</para>
+
+@parent: 
+@children: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_prepend_child ##### -->
+<para>
+
+</para>
+
+@parent: 
+@children: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_prepend_items ##### -->
+<para>
+
+</para>
+
+@list: 
+@item: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_insert_after ##### -->
+<para>
+
+</para>
+
+@sibling: 
+@list: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_insert_before ##### -->
+<para>
+
+</para>
+
+@sibling: 
+@list: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_delete_parent ##### -->
+<para>
+
+</para>
+
+@parent: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_remove_item ##### -->
+<para>
+
+</para>
+
+@item: 
+
+
+<!-- ##### FUNCTION anjuta_token_merge ##### -->
+<para>
+
+</para>
+
+@first: 
+@end: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_merge_own_children ##### -->
+<para>
+
+</para>
+
+@first: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_merge_children ##### -->
+<para>
+
+</para>
+
+@first: 
+@end: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_merge_previous ##### -->
+<para>
+
+</para>
+
+@list: 
+@first: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_split ##### -->
+<para>
+
+</para>
+
+@token: 
+@size: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_cut ##### -->
+<para>
+
+</para>
+
+@token: 
+@pos: 
+@size: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_concat ##### -->
+<para>
+
+</para>
+
+@token: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_evaluate ##### -->
+<para>
+
+</para>
+
+@token: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_evaluate_name ##### -->
+<para>
+
+</para>
+
+@token: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_is_empty ##### -->
+<para>
+
+</para>
+
+@token: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_dump ##### -->
+<para>
+
+</para>
+
+@token: 
+
+
+<!-- ##### FUNCTION anjuta_token_check ##### -->
+<para>
+
+</para>
+
+@token: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_dump_link ##### -->
+<para>
+
+</para>
+
+@token: 
+
+
+<!-- ##### FUNCTION anjuta_token_compare ##### -->
+<para>
+
+</para>
+
+@tokena: 
+@tokenb: 
+@Returns: 
+
+

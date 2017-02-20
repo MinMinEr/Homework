@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="anjuta-code-assist" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-10-24" status="draft"/>
+    <desc>Configurer et utiliser les fonctions de l'éditeur intégré</desc>
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Complétion automatique et aide des appels</title>
+
+<section>
+<title>Complétion automatique</title>
+<p>La complétion automatique suggère des fonctions et d'autres symboles du code dès le début de la frappe en essayant de faire correspondre les premiers caractères tapés avec les symboles existants. Un menu déroulant apparaît dans lequel vous pouvez sélectionner une correspondance en appuyant sur la touche <key>Entrée</key>. Normalement, cette opération se fait automatiquement dès que vous avez saisi trois caractères (hors espace), mais vous pouvez la forcer en utilisant l'élément de menu <guiseq><gui>Édition</gui><gui>Complétion automatique</gui></guiseq>.</p>
+<note>
+<p>Anjuta gère la complétion automatique pour le code écrit en C/C++, Vala, Javascript et Python. Notez que la complétion automatique ne fonctionne que si Anjuta connaît les symboles utilisés. Si vous vous servez de bibliothèques C/C++ qui ne sont pas configurées avec <cmd>pkg-config</cmd> et/ou qui ne sont pas ajoutées à la configuration du projet, Anjuta ne pourra pas trouver ces symboles et la complétion automatique ne marchera pas.</p>
+<p>En outre, une partie de la syntaxe risque d'être trop complexe pour l'analyseur intégré et il est possible qu'il n'arrive pas à détecter la complétion requise.</p>
+</note>
+</section>
+
+<section>
+<title>Codage efficace avec l'aide des appels</title>
+
+<p>Comme il est très difficile de se souvenir de la signature de toutes les méthodes ou fonctions utilisées dans un projet, l'éditeur affiche une infobulle chaque fois que vous saisissez une parenthèse « ( » après un nom de fonction, et vous affiche la signature d'appel.</p>
+
+</section>
+
+</page>

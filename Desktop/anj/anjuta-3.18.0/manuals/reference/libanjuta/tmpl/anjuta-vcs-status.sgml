@@ -1,0 +1,39 @@
+<!-- ##### SECTION Title ##### -->
+anjuta-vcs-status
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### ENUM AnjutaVcsStatus ##### -->
+<para>
+
+</para>
+
+@ANJUTA_VCS_STATUS_NONE: 
+@ANJUTA_VCS_STATUS_MODIFIED: 
+@ANJUTA_VCS_STATUS_ADDED: 
+@ANJUTA_VCS_STATUS_DELETED: 
+@ANJUTA_VCS_STATUS_CONFLICTED: 
+@ANJUTA_VCS_STATUS_UPTODATE: 
+@ANJUTA_VCS_STATUS_LOCKED: 
+@ANJUTA_VCS_STATUS_MISSING: 
+@ANJUTA_VCS_STATUS_UNVERSIONED: 
+@ANJUTA_VCS_STATUS_IGNORED: 
+@ANJUTA_VCS_STATUS_ALL: 
+

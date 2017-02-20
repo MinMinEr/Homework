@@ -1,0 +1,93 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaEditorAssist
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_EDITOR_ASSIST_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### STRUCT IAnjutaEditorAssistProposal ##### -->
+<para>
+
+</para>
+
+@label: 
+@markup: 
+@info: 
+@text: 
+@icon: 
+@data: 
+
+<!-- ##### FUNCTION ianjuta_editor_assist_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_assist_add ##### -->
+<para>
+
+</para>
+
+@obj: 
+@provider: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_assist_invoke ##### -->
+<para>
+
+</para>
+
+@obj: 
+@provider: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_assist_proposals ##### -->
+<para>
+
+</para>
+
+@obj: 
+@provider: 
+@proposals: 
+@pre_word: 
+@finished: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_assist_remove ##### -->
+<para>
+
+</para>
+
+@obj: 
+@provider: 
+@err: 
+
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="anjuta-build-indentation" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak se ve zdrojovém kódu pohybovat efektivním způsobem.</desc>
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  </info>
+
+  <title>Pohyb v kódu pomocí prohlížeče symbolů</title>
+
+<section>
+<title>Používání prohlížeče symbolů</title>
+<p>Prohlížeč symbolů vám umožňuje získat přehled o symbolech použitých ve vašem projektu. Symboly se zde míní proměnné, funkce/metody a třídy a přesná definicie odvisí od použitého programovacího jazyka.</p>
+
+<p>Prohlížeč symbolů má tři karty:</p>
+<list>
+	<item><p><gui>Soubory</gui> zobrazují symboly aktuálního souboru v editoru</p></item>
+	<item><p><gui>Projekt</gui> zobrazuje všechny symboly projektu</p></item>
+	<item><p><gui>Hledat</gui> vám umožňuje v projektu hledat symboly (použijte <keyseq><key>Ctrl</key> <key>L</key></keyseq> k přímému odskoku do vyhledávacího pole).</p></item>
+</list>
+
+<p>Dvojitým kliknutím se přemístíte na definici symbolu v editoru.</p>
+</section>
+
+<section>
+<title>Pohyb v editoru</title>
+<p>Ve vyskakovací nabídce editoru <gui>Přejít</gui> jsou dvě položky, které vám pomohou se rychle pohybovat ve zdrojovém kódu:</p>
+
+<list>
+	<item><p><gui>Definice symbolu</gui></p></item>
+	<item><p><gui>Deklarace symbolu</gui></p></item>
+</list>
+
+<p>Pokud se chcete v editoru vrátit zpě na místo, kde jste použili položky zobrazené v nabídce <gui>Přejít</gui>, můžete použít položky <gui>Předchozí historie</gui> (a <gui>Následující historie</gui>) v téže nabídce.</p>
+
+</section>
+
+</page>

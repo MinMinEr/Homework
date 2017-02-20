@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-project-target-edit" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-target" group="second"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Editar las propiedades de un objetivo de autotools</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Editar un objetivo de autotools</title>
+
+  <p>Esta es una lista de todas las propiedades de objetivos usadas en un proyecto de autotools. Algunas de ellas no están disponibles en todos los objetivos.</p>
+
+  <terms>
+    <item>
+      <title><gui>Construir sólo para comprobar</gui></title>
+      <p>Si está marcada, este objetivo no se instalad y sólo se construye al ejecutar pruebas.</p>
+    </item>
+    <item>
+      <title><gui>Opciones del compilador de C</gui></title>
+      <p>Las opciones que pasar al compilador de C al compilar los archivos de fuente objetivos. Este valor sobrescribe los que se puedan definir eventualmente en la carpeta padre.</p>
+    </item>
+    <item>
+      <title><gui>Opciones del preprocesador de C</gui></title>
+      <p>Estas opciones se pasan a cada compilación que invoque al preprocesador de C. Este valor sobrescribe los que se puedan definir eventualmente en la carpeta padre.</p>
+    </item>
+    <item>
+      <title><gui>Opciones del compilador de C++</gui></title>
+      <p>Las opciones que pasar al compilador de C++ al compilar los archivos de fuente objetivos. Este valor sobrescribe los que se puedan definir eventualmente en la carpeta padre.</p>
+    </item>
+    <item>
+      <title><gui>No instalar</gui></title>
+      <p>Si está marcada, este objetivo no se instala. Lo pueden usar algunas utilidades usadas para construir otro objetivo o programas usados sólo por desarrolladores.</p>
+    </item>
+    <item>
+      <title><gui>No usar prefijo</gui></title>
+      <p>Si está marcada, no se añade el prefijo a las páginas del manual ni al ejecutable. Este prefijo se usa para proporcionar una alternativa a las herramientas del sistema.</p>
+    </item>
+    <item>
+      <title><gui>FOpciones del compilador de Fortran</gui></title>
+      <p>Las opciones que pasar al compilador de Fortran 9x al compilar los archivos de fuente objetivos. Este valor sobrescribe los que se puedan definir eventualmente en la carpeta padre.</p>
+    </item>
+    <item>
+      <title><gui>Incluir en la distribución</gui></title>
+      <p>Si está marcada. incluir el objetivo en un paquete de distribución.</p>
+    </item>
+    <item>
+      <title><gui>Carpeta de instalación</gui></title>
+      <p>Define dónde se instala el objetivo. No es directamente la carpeta donde se instalar los archivos; es el nombre de una carpeta estándar de variables (bindir, sbindir, libdir, libexecdir, datadir, pkgdatadir, pkglibexecdir, includedir, mandir, infodir, docdir) o una variable definida en las propiedades de la carpeta.</p>
+    </item>
+    <item>
+      <title><gui>Opciones del compilador de Java</gui></title>
+      <p>Las opciones que pasar al compilador de Java al compilar los archivos de fuente objetivos. Este valor sobrescribe los que se puedan definir eventualmente en la carpeta padre.</p>
+    </item>
+    <item>
+      <title><gui>Mantener la ruta objetivo</gui></title>
+      <p>Si está marcada, mantener la jerarquía de la carpeta del proyecto al instalar los archivos.</p>
+    </item>
+    <item>
+      <title><gui>Opciones del compilador de Lex/Flex</gui></title>
+      <p>Las opciones que pasar al analizador Lex o Flex al generar los objetivos. Este valor sobrescribe los que se puedan definir eventualmente en la carpeta padre.</p>
+    </item>
+    <item>
+      <title><gui>Bibliotecas</gui></title>
+      <p>Especifique bibliotecas adicionales usadas por el objetivo. Útil para añadir bibliotecas no empaquetadas. Consulte la página <link xref="project-manager-library">añadir bibliotecas no empaquetadas</link> para obtener más detalles</p>
+    </item>
+    <item>
+      <title><gui>Opciones del enlazador</gui></title>
+      <p>Las opciones que pasar al enlazador al enlazar los objetivos. Este valor sobrescribe los que se puedan definir eventualmente en la carpeta padre.</p>
+    </item>
+    <item>
+      <title><gui>Sección manual</gui></title>
+      <p>Especifique la sección del manual donde añadir la página del manual. Los nombres de secciones válidos son dígitos de «0» a «9» y las letras «l» y «n».</p>
+    </item>
+    <item>
+      <title><gui>Opciones del compilador de Objetive C</gui></title>
+      <p>Las opciones que pasar al compilador de Objetive C al compilar los archivos de fuente objetivos. Este valor sobrescribe los que se puedan definir eventualmente en la carpeta padre.</p>
+    </item>
+    <item>
+      <title><gui>Opciones del compilador de Vala</gui></title>
+      <p>Las opciones que pasar al compilador de Vala al compilar los archivos de fuente objetivos. Este valor sobrescribe los que se puedan definir eventualmente en la carpeta padre.</p>
+    </item>
+    <item>
+      <title><gui>Opciones del compilador de Yacc/Bison</gui></title>
+      <p>Las opciones que pasar al compilador de Bison o Yacc al compilar los archivos de fuente objetivos. Este valor sobrescribe los que se puedan definir eventualmente en la carpeta padre.</p>
+    </item>
+  </terms>
+
+</page>

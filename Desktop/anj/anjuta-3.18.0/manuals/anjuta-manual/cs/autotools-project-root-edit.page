@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-project-root-edit" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-root" group="second"/>
+    <link type="seealso" xref="autotools-project-folder-edit"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak upravit vlastnosti projektu používajícího Autotools.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  </info>
+
+  <title>Úprava vlastností projektu Autotools</title>
+
+  <p>Toto jsou vlastnosti kořenové položky.</p>
+
+  <terms>
+    <item>
+      <title><gui>Zpracující jádro</gui></title>
+      <p>Jedná se o zpracující jádro projektu používané projektem: Autotools. Jiná zpracující jádra je možné vybrat kliknutím na toto tlačítko. Může se to hodit v případech, kdy má aktuální zpracující jádro potíže se zpracováním projektových souborů.</p>
+    </item>
+    <item>
+      <title><gui>Název</gui></title>
+      <p>Název vašeho projektu. Může obsahovat i mezery.</p>
+    </item>
+    <item>
+      <title><gui>Verze</gui></title>
+      <p>Jedná se o verzi projektu.</p>
+    </item>
+    <item>
+      <title><gui>Adresa URL pro hlášení chyb</gui></title>
+      <p>Jedná se o adresu URL, na kterou je možné zasílat chybová hlášení. Může jít například o e-mailovou adresu nebo odkaz na systém sledování chyb. Údaj je volitelný.</p>
+    </item>
+    <item>
+      <title><gui>Název balíčku</gui></title>
+      <p>Jedná se o název distribučního balíčku. Název nesmí obsahovat mezery. Údaj je volitelný.</p>
+    </item>
+    <item>
+      <title><gui>Adresa URL</gui></title>
+      <p>Jedná se o domovskou stránku projektu. Údaj je volitelný.</p>
+    </item>
+  </terms>
+
+  <p>Navíc kořenová položka funguje jako složka a tak má i všechny vlastnosti složky. Jejich seznam najdete v <link xref="autotools-project-folder-edit"/>.</p>
+
+</page>

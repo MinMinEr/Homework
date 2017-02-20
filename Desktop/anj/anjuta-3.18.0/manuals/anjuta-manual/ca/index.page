@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="2column" id="index" xml:lang="ca">
+
+  <info>
+    <desc>Ajuda de l'estudi de desenvolupament Anjuta.</desc>
+    <title type="link">Anjuta</title>
+    <title type="text">Estudi de desenvolupament Anjuta</title>
+
+    <revision pkgversion="0.1" version="0.1" date="2011-03-20" status="incomplete"/>
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+
+<!--  
+   <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude" /> 
+-->
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jaume Planas</mal:name>
+      <mal:email>jplanas@itberga.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gil Forcada</mal:name>
+      <mal:email>gilforcada@guifi.net</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>  
+  
+  <title>
+    <media type="image" mime="image/png" its:translate="no" src="figures/anjuta_logo.png"><span its:translate="yes">Anjuta logo</span></media>
+    Anjuta DevStudio
+  </title>
+
+  <section id="anjuta-project-management" style="2column" groups="first second third fourth fifth">
+    <title>Gestió de projectes</title>
+  </section>
+
+  <section id="anjuta-code" style="2column">
+    <title>Programació i navegació pel codi</title>
+  </section> 
+
+  <section id="anjuta-build" style="2column" groups="first second third fourth fifth sixth">
+    <title>Construcció de projectes</title>
+  </section>
+
+  <section id="anjuta-debug" style="2column" groups="first second third fourth fifth">
+    <title>Depuració del programa</title>
+  </section>
+
+<!--
+  <section id="anjuta-glade" style="2column" groups="first second">
+    <title>User interface editor</title>
+  </section>
+-->
+
+  <section id="reference">
+    <title>Referència</title>
+  </section>
+
+</page>

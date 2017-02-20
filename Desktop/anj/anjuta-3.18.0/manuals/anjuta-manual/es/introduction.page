@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="introduction" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <title>Introducción</title>
+    <desc>Introducción al Entorno integrado de desarrollo <app>Anjuta</app></desc>
+    <link type="guide" xref="index"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Introducción</title>
+
+  <p><app>Anjuta</app> es un Entorno integrado de desarrollo (EID) para el escritorio GNOME. Tiene cierto número de facilidades avanzadas para programación incluyendo gestión de proyectos, asistentes de aplicación, depuración interactiva, diseñador de IU integrado con Glade, ayuda integrada para la API de Devhelp, generador de clases, potente editor de fuentes, examinado de símbolos, soporte para Git, C/C++, Python, Vala y mucho más.</p>
+
+  <p><app>Anjuta</app> tiene un sistema de acoplamiento flexible y avanzado que le permite distribuir todas las vistas de la forma que quiera. Puede arrastrar y soltar las vistas usando las barras de arrastrado y soltado y reorganizar la distribución.</p>
+
+  <p><app>Anjuta</app> se ha diseñado para ser simple de operar pero suficientemente potente para satisfacer todas sus necesidades de programación. Se han añadido muchas características a <app>Anjuta</app> a lo largo de su desarrollo. Los desarrolladores están centrados en proporcionar capacidades y usabilidad al mismo tiempo, haciendo que se pueda divertir desarrollando su software sin sobrecargar sus sentidos. Los desarrolladores tienen la intención de seguir mejorando y estabilizando <app>Anjuta</app> para proporcionarle la mejor experiencia EID posible.</p>
+
+  <p>Se espera que se divierta usando <app>Anjuta</app>. De lo contrario, ayúdenos a mejorarlo informando de errores y enviando sugerencias; esto nos ayudará a mejorar el software, así como ayudará a la comunidad del software libre.</p>
+
+  <p>La siguiente captura de pantalla ilustra algunas cosas que encontrará en <app>Anjuta</app>.</p>
+
+  <figure>
+    <title><app>Anjuta</app> en acción</title>
+    <desc>Ventana principal de <app>Anjuta</app></desc>
+    <media type="image" mime="image/png" src="figures/anjuta-in-action.png">
+      <p>Ventana principal de <app>Anjuta</app></p>
+    </media>
+  </figure>
+
+</page>

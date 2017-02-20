@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-local" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="third"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Examiner les variables locales.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Variables locales</title>
+
+  <p>Les variables locales du cadre courant (c-à-d. la fonction actuellement sous contrôle du programme) sont affichées dans la fenêtre <gui>Locales</gui>. Pendant l'exécution du programme (par ex. pendant un pas à pas) les variables locales sont mises à jour. Si la valeur d'une des variables a changé depuis le précédent pas de débogage, sa valeur est mise en surbrillance en rouge. Les variables sont affichées sous forme arborescente pour une meilleure présentation.</p>
+
+  <section>
+    <title>Affichage de la liste des variables locales</title>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Affichage</gui> <gui>Locales</gui></guiseq> pour ouvrir la fenêtre <gui>Locales</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Toutes les variables locales sont affichées sous forme d'arborescence avec des enfants représentant les membres de la structure ou du tableau.</p>
+  
+    <terms>
+      <item>
+        <title>Variable</title>
+        <p>Le nom de la variable.</p>
+      </item>
+      <item>
+        <title>Valeur</title>
+        <p>La valeur de la variable.</p>
+      </item>
+      <item>
+        <title>Type</title>
+        <p>Le type de la variable.</p>
+      </item>
+    </terms>
+  </section>
+
+  <section>
+    <title>Modification de la valeur d'une variable</title>
+
+    <steps>
+      <item>
+        <p>Dans la fenêtre <gui>Locales</gui>, sélectionnez la variable que vous voulez modifier et faites un double clic dans la colonne <gui>Valeur</gui>.</p>
+      </item>
+      <item>
+        <p>Saisissez la nouvelle valeur.</p>
+      </item>
+    </steps>
+  </section>
+
+</page>

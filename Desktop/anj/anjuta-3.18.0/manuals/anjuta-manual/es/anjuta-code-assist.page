@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="anjuta-code-assist" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-10-24" status="draft"/>
+    <desc>Configurar y usar las características integradas del editor</desc>
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Autocompletado y llamadas</title>
+
+<section>
+<title>Autocompletado</title>
+<p>El autocompletado sugiere automáticamente funciones y otros símbolos del código antes de que empiece a escribir, intentando que coincidan con los primeros caracteres escritos. Esto mostrará un un menú desplegable emergente donde puede seleccionar una coincidencia usando la tecla <key>Intro</key>. Normalmente, esto pasa de forma automática después de que haya escrito el tercer carácter (sin espacios), pero puede forzarlo usando el elemento de menú <guiseq><gui>Editar</gui><gui>Autocompletado</gui></guiseq></p>
+<note>
+<p>Anjuta soporta el autocompletado para código escrito en C/C++, Vala, Javascript y Python. Tenga en cuenta que el autocompletado sólo funciona si Anjuta conoce los símbolos usados. Si está usando bibliotecas de C/C++ que no están configuradas usando <cmd>pkg-config</cmd> y/o no están añadidas a la configuración del proyecto, Anjuta no podrá encontrar esos símbolos y el autocompletado no funcionará.</p>
+<p>De todos modos, alguna sintaxis puede ser muy compleja para el analizador integrado y es posible que no pueda detectar que completado se necesita.</p>
+</note>
+</section>
+
+<section>
+<title>Codificación efectiva usando sugerencias de llamadas («calltips»)</title>
+
+<p>Como generalmente es difícil recordar la firma de cada método o función usada en un proyecto, el editor mostrará automáticamente una pequeña descripción cuando escriba «(» después del nombre de una función y le mostrará la firma.</p>
+
+</section>
+
+</page>

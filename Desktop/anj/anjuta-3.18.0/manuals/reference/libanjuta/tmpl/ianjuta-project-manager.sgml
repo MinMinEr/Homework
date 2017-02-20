@@ -1,0 +1,236 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaProjectManager
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_PROJECT_MANAGER_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO IANJUTA_PROJECT_MANAGER_PROJECT_ROOT_URI ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO IANJUTA_PROJECT_MANAGER_CURRENT_PROJECT ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO IANJUTA_PROJECT_MANAGER_CURRENT_URI ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ianjuta_project_manager_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_manager_add_group ##### -->
+<para>
+
+</para>
+
+@obj: 
+@name: 
+@default_group: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_manager_add_source ##### -->
+<para>
+
+</para>
+
+@obj: 
+@name: 
+@default_target: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_manager_add_source_quiet ##### -->
+<para>
+
+</para>
+
+@obj: 
+@name: 
+@target: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_manager_add_sources ##### -->
+<para>
+
+</para>
+
+@obj: 
+@names: 
+@default_target: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_manager_add_target ##### -->
+<para>
+
+</para>
+
+@obj: 
+@name: 
+@default_group: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_manager_get_capabilities ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_manager_get_children ##### -->
+<para>
+
+</para>
+
+@obj: 
+@parent: 
+@children_type: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_manager_get_current_project ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_manager_get_elements ##### -->
+<para>
+
+</para>
+
+@obj: 
+@element_type: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_manager_get_packages ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_manager_get_parent ##### -->
+<para>
+
+</para>
+
+@obj: 
+@element: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_manager_get_selected ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_manager_get_target_type ##### -->
+<para>
+
+</para>
+
+@obj: 
+@target: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_manager_get_targets ##### -->
+<para>
+
+</para>
+
+@obj: 
+@target_type: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_manager_is_open ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_manager_remove_file ##### -->
+<para>
+
+</para>
+
+@obj: 
+@file: 
+@err: 
+@Returns: 
+
+

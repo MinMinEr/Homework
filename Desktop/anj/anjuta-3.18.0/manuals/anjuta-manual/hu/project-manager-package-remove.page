@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-package-remove" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-library" group="third"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Programkönyvtár eltávolítása modulból.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Csomag eltávolítása</title>
+
+  <steps>
+    <item>
+      <p>Válassza ki a <gui>projektnézetben</gui> az eltávolítani kívánt csomagot, kattintson a jobb egérgombbal a <gui>helyi menü</gui> megjelenítéséhez, és válassza ki az <gui>Eltávolítás</gui> pontot.</p>
+    </item>
+    <item>
+      <p>Erősítse meg az eltávolítást. A csomag eltávolításra kerül a projektfájlból.</p>
+    </item>
+  </steps>
+
+</page>

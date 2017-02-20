@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-package-remove" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-library" group="third"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak odebrat knihovnu z modulu.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Odebrání balíčku</title>
+
+  <steps>
+    <item>
+      <p>V <gui>zobrazení projektu</gui> vyberte balíček, který chcete odebrat, klikněte na něj pravým tlačítkem, aby se objevila <gui>kontextová nabídka projektu</gui> a vyberte <gui>Odstranit</gui>.</p>
+    </item>
+    <item>
+      <p>Odstranění potvrďte. Balíček bude z projektu následně odebrán.</p>
+    </item>
+  </steps>
+
+</page>

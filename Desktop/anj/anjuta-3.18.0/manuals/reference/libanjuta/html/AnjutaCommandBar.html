@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: AnjutaCommandBar</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="libanjuta-api.html" title="libanjuta API">
+<link rel="prev" href="AnjutaColumnTextView.html" title="AnjutaColumnTextView">
+<link rel="next" href="AnjutaCommandQueue.html" title="AnjutaCommandQueue">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#AnjutaCommandBar.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#AnjutaCommandBar.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#AnjutaCommandBar.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libanjuta-api.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="AnjutaColumnTextView.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="AnjutaCommandQueue.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="AnjutaCommandBar"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="AnjutaCommandBar.top_of_page"></a>AnjutaCommandBar</span></h2>
+<p>AnjutaCommandBar — Widget that lays out commands in a vertical row of 
+				   buttons and frames.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="AnjutaCommandBar.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaCommandBar.html#anjuta-command-bar-new" title="anjuta_command_bar_new ()">anjuta_command_bar_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaCommandBar.html#anjuta-command-bar-add-action-group" title="anjuta_command_bar_add_action_group ()">anjuta_command_bar_add_action_group</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaCommandBar.html#anjuta-command-bar-remove-action-group" title="anjuta_command_bar_remove_action_group ()">anjuta_command_bar_remove_action_group</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaCommandBar.html#anjuta-command-bar-show-action-group" title="anjuta_command_bar_show_action_group ()">anjuta_command_bar_show_action_group</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="returnvalue">GtkActionGroup</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaCommandBar.html#anjuta-command-bar-get-action-group" title="anjuta_command_bar_get_action_group ()">anjuta_command_bar_get_action_group</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="returnvalue">GtkAction</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaCommandBar.html#anjuta-command-bar-get-action" title="anjuta_command_bar_get_action ()">anjuta_command_bar_get_action</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaCommandBar.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="AnjutaCommandBar.html#AnjutaCommandBar--max-text-width" title="The “max-text-width” property">max-text-width</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaCommandBar.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="AnjutaCommandBar.html#AnjutaCommandBarEntryType" title="enum AnjutaCommandBarEntryType">AnjutaCommandBarEntryType</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="AnjutaCommandBar.html#AnjutaCommandBarPriv" title="AnjutaCommandBarPriv">AnjutaCommandBarPriv</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaCommandBar.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkWidget.html">GtkWidget</a>
+            <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkContainer.html">GtkContainer</a>
+                <span class="lineart">╰──</span> <a href="http://developer.gnome.org/gtk2/GtkNotebook.html">GtkNotebook</a>
+                    <span class="lineart">╰──</span> AnjutaCommandBar
+</pre>
+</div>
+<div class="refsect1">
+<a name="AnjutaCommandBar.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libanjuta/anjuta-command-bar.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="AnjutaCommandBar.description"></a><h2>Description</h2>
+<p>AnjutaCommandBar provides a convenient way to arrange several sets of 
+commands into one widget. It separates commands into different groups of 
+actions, with only one group visible at a time.</p>
+</div>
+<div class="refsect1">
+<a name="AnjutaCommandBar.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="anjuta-command-bar-new"></a><h3>anjuta_command_bar_new ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+anjuta_command_bar_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Creates a new AnjutaCommandBar.</p>
+<div class="refsect3">
+<a name="id-1.6.30.9.2.5"></a><h4>Returns</h4>
+<p> A new AnjutaCommandBar</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-command-bar-add-action-group"></a><h3>anjuta_command_bar_add_action_group ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_command_bar_add_action_group (<em class="parameter"><code><a class="link" href="AnjutaCommandBar.html" title="AnjutaCommandBar"><span class="type">AnjutaCommandBar</span></a> *self</code></em>,
+                                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *group_name</code></em>,
+                                     <em class="parameter"><code>const <span class="type">AnjutaCommandBarEntry</span> *entries</code></em>,
+                                     <em class="parameter"><code><span class="type">int</span> num_entries</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>Adds a group of entries to an AnjutaCommandBar.</p>
+<div class="refsect3">
+<a name="id-1.6.30.9.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>An AnjutaCommandBar</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>group_name</p></td>
+<td class="parameter_description"><p>A unique name for this group of entries</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>entries</p></td>
+<td class="parameter_description"><p> A list of entries to add. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/array"><span class="acronym">array</span></a> length=num_entries]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>num_entries</p></td>
+<td class="parameter_description"><p>The number of items pointed to by entries</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data to pass to the entry callback</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-command-bar-remove-action-group"></a><h3>anjuta_command_bar_remove_action_group ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_command_bar_remove_action_group
+                               (<em class="parameter"><code><a class="link" href="AnjutaCommandBar.html" title="AnjutaCommandBar"><span class="type">AnjutaCommandBar</span></a> *self</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *group_name</code></em>);</pre>
+<p>Removes an action group from an AnjutaCommandBar.</p>
+<div class="refsect3">
+<a name="id-1.6.30.9.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>An AnjutaCommandBar</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>group_name</p></td>
+<td class="parameter_description"><p>Name of the action group to remove</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-command-bar-show-action-group"></a><h3>anjuta_command_bar_show_action_group ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_command_bar_show_action_group (<em class="parameter"><code><a class="link" href="AnjutaCommandBar.html" title="AnjutaCommandBar"><span class="type">AnjutaCommandBar</span></a> *self</code></em>,
+                                      <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *group_name</code></em>);</pre>
+<p>Causes the actions in the given group to become visible, replacing the 
+previously visible group.</p>
+<div class="refsect3">
+<a name="id-1.6.30.9.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>An AnjutaCommandBar</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>group_name</p></td>
+<td class="parameter_description"><p>The name of the action group to show</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-command-bar-get-action-group"></a><h3>anjuta_command_bar_get_action_group ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="returnvalue">GtkActionGroup</span></a> *
+anjuta_command_bar_get_action_group (<em class="parameter"><code><a class="link" href="AnjutaCommandBar.html" title="AnjutaCommandBar"><span class="type">AnjutaCommandBar</span></a> *self</code></em>,
+                                     <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *group_name</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.30.9.6.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>group_name</p></td>
+<td class="parameter_description"><p>The name of the action group</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.30.9.6.5"></a><h4>Returns</h4>
+<p> The <a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="type">GtkActionGroup</span></a> with the given <em class="parameter"><code>group_name</code></em>
+</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-command-bar-get-action"></a><h3>anjuta_command_bar_get_action ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="returnvalue">GtkAction</span></a> *
+anjuta_command_bar_get_action (<em class="parameter"><code><a class="link" href="AnjutaCommandBar.html" title="AnjutaCommandBar"><span class="type">AnjutaCommandBar</span></a> *self</code></em>,
+                               <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *group_name</code></em>,
+                               <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *action_name</code></em>);</pre>
+<p>Retrieves a <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a> object in the given group with the given name</p>
+<div class="refsect3">
+<a name="id-1.6.30.9.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>An AnjutaCommandBar</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>group_name</p></td>
+<td class="parameter_description"><p>The name of the <a href="http://developer.gnome.org/gtk2/GtkActionGroup.html"><span class="type">GtkActionGroup</span></a> to look for the action in</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>action_name</p></td>
+<td class="parameter_description"><p>The name of the action</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.30.9.7.6"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="AnjutaCommandBar.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="AnjutaCommandBarEntryType"></a><h3>enum AnjutaCommandBarEntryType</h3>
+<p>Specifies if the entry corresponds to a frame or a button.
+Buttons are added to the last frame that appears before the button entry</p>
+<div class="refsect3">
+<a name="id-1.6.30.10.2.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-COMMAND-BAR-ENTRY-FRAME:CAPS"></a>ANJUTA_COMMAND_BAR_ENTRY_FRAME</p></td>
+<td class="enum_member_description">
+<p>This entry should create a frame in the 
+								action bar. The entry's action name and 
+								callback are ignored.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-COMMAND-BAR-ENTRY-BUTTON:CAPS"></a>ANJUTA_COMMAND_BAR_ENTRY_BUTTON</p></td>
+<td class="enum_member_description">
+<p>This entry adds a button to the action bar,
+								 either to the last frame to appear in the 
+								 entry list before this entry, or to the top
+								 of the bar if no frames were previously 
+								 added.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AnjutaCommandBarPriv"></a><h3>AnjutaCommandBarPriv</h3>
+<pre class="programlisting">typedef struct _AnjutaCommandBarPriv AnjutaCommandBarPriv;</pre>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="AnjutaCommandBar.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="AnjutaCommandBar--max-text-width"></a><h3>The <code class="literal">“max-text-width”</code> property</h3>
+<pre class="programlisting">  “max-text-width”           <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p></p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Allowed values: [10,1000]</p>
+<p>Default value: 25</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="AnjutaCommandBar.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="AnjutaDock.html" title="AnjutaDock"><span class="type">AnjutaDock</span></a>, <a href="http://developer.gnome.org/gtk2/GtkAction.html"><span class="type">GtkAction</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

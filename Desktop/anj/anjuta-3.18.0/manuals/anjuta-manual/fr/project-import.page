@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-import" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-project-management" group="first"/>
+    <link type="seealso" xref="anjuta-project-create"/>
+    <link type="seealso" xref="project-manager"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Importer un projet existant.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Importation d'un projet</title>
+
+  <p><app>Anjuta</app> n'a pas de format de projet propre. Il charge des projets possédant un format déjà existant, comme makefile ou autotools, et n'a pas besoin que d'autres développeurs utilise son format. Les paramétrages personnels d'<app>Anjuta</app> sont enregistrés dans un fichier portant l'extension <file>.anjuta</file> et dans un dossier caché créé dans le répertoire du projet. Pour utiliser un projet dans <app>Anjuta</app> et créer ses fichiers de paramétrages, vous devez importer le projet. Cela ne modifie pas les fichiers du projet.</p>
+
+  <steps>
+    <item>
+      <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Fichier</gui><gui>Nouveau</gui><gui>Projet basé sur des sources existantes</gui></guiseq> ou <gui>Projet basé sur des sources existantes</gui> dans la liste déroulante du bouton<gui>Nouveau</gui> de la <gui>barre d'outils</gui> pour démarrer l'assistant de projet.</p>
+    </item>
+    <item>
+      <p>Sélectionnez <gui>Importer à partir d'un dossier</gui> si le projet est déjà présent sur votre ordinateur, puis sélectionnez le répertoire de projet.</p>
+      <p>Vous pouvez aussi sélectionner <gui>Importer à partir d'un système de gestion de versions</gui> si le projet doit être extrait à partir d'un serveur. Sélectionnez alors le système de contrôle de version, l'adresse du serveur et le répertoire de destination sur votre ordinateur.</p>
+    </item>
+    <item>
+      <p>Après avoir sélectionné un projet existant, la boîte de texte <gui>Nom du projet</gui> devrait contenir le nom du répertoire du projet, mais vous pouvez le modifier. Cela fait, cliquez sur le bouton <gui>Importer</gui> pour télécharger le projet et créer les fichiers dont <app>Anjuta</app> a besoin.</p>
+    </item>
+    <item>
+      <p><app>Anjuta</app> essaie de trouver automatiquement le moteur de gestion de projet utilisé par votre projet. Mais si plusieurs moteurs de gestion sont possibles, vous obtenez une boite de dialogue vous demandant de choisir un greffon de moteur de gestion de projets. Lisez la description du moteur de gestion de projet pour trouver celui qui vous intéresse.</p>
+    </item>
+  </steps>
+
+</page>

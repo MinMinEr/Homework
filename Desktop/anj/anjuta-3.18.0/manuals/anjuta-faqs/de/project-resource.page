@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="project-resource" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#faq-project"/>
+    <desc>Einen Ordner und ein Datenziel hinzufügen.</desc>
+    
+    <revision pkgversion="0.1" version="0.1" date="2010-12-02" status="stub"/>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Einen Ordner zu einem Projekt hinzufügen, welcher Symbole enthält</title>
+
+  <p>Fügen Sie in einem Autotools-Projekt einen neuen Ordner hinzu: <guiseq><gui>Projekt</gui><gui>Neuer Ordner …</gui></guiseq>. Dann erstellen Sie innerhalb dieses Ordners ein neues Datenziel (<guiseq><gui>Projekt</gui><gui>Neues Ziel …</gui></guiseq>) und fügen die Dateien entsprechend den Symbolen zu diesem Ziel hinzu (<guiseq><gui>Projekt</gui><gui>Neue Quelle …</gui></guiseq>).</p>
+
+</page>

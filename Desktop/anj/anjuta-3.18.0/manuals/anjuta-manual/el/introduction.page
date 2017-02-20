@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="introduction" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <title>Εισαγωγή</title>
+    <desc>Εισαγωγή στο ολοκληρωμένο περιβάλλον ανάπτυξης του <app>Anjuta</app></desc>
+    <link type="guide" xref="index"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Εισαγωγή</title>
+
+  <p>Το <app>Anjuta</app> είναι ένα ολοκληρωμένο περιβάλλον ανάπτυξης λογισμικού (IDE) για την επιφάνεια εργασίας GNOME. Παρέχει μια σειρά από προχωρημένες προγραμματιστικές δυνατότητες, όπως διαχείριση έργου, οδηγοί εφαρμογής, διαδραστική αποσφαλμάτωση, ενσωματωμένο σχεδιαστή διεπαφής χρήστη Glade, ενσωματωμένη βοήθεια API Devhelp, γεννήτρια κλάσης, ισχυρό πηγαίο επεξεργαστή, περιήγηση συμβόλων, υποστήριξη Git, υποστήριξη C/C++, Python και Vala και πολλά άλλα.</p>
+
+  <p>Το <app>Anjuta</app> έχει ένα εύχρηστο και προχωρημένο σύστημα προσάρτησης που επιτρέπει την τακτοποίηση όλων των προβολών με τον επιθυμητό τρόπο. Μπορείτε να σύρετε και να αποθέσετε τις προβολές χρησιμοποιώντας γραμμές και αναδιευθέτηση της διάταξης.</p>
+
+  <p>Το <app>Anjuta</app> έχει σχεδιαστεί για να είναι εύκολο στη χρήση, αλλά αρκετά ισχυρό ώστε να καλύπτει πλήρως τις προγραμματιστικές σας ανάγκες. Προσθέσαμε πολλά νέα χαρακτηριστικά στο <app>Anjuta</app> κατά την ανάπτυξη. Στόχος μας είναι να σας προσφέρουμε ταυτόχρονα ισχύ και χρηστικότητα και να κάνουμε πιο ευχάριστη την ανάπτυξη λογισμικού χωρίς υπερφόρτωση. Σκοπεύουμε να συνεχίσουμε να βελτιώνουμε και να σταθεροποιούμε το <app>Anjuta</app> για να σας δώσουμε την καλύτερη δυνατή εμπειρία IDE.</p>
+
+  <p>Ελπίζουμε να περνάτε καλά χρησιμοποιώντας το <app>Anjuta</app>. Εάν όχι, παρακαλούμε βοηθήστε μας να το βελτιώσουμε αναφέροντας σφάλματα και προτάσεις - αυτό θα βοηθήσει την βελτίωση του λογισμικού, καθώς και την κοινότητα ανοιχτού λογισμικού.</p>
+
+  <p>Το επόμενο στιγμιότυπο δείχνει κάποια από τα χαρακτηριστικά που θα βρείτε στο <app>Anjuta</app>.</p>
+
+  <figure>
+    <title>Το <app>Anjuta</app> εν δράσει</title>
+    <desc>Το κύριο παράθυρο του <app>Anjuta</app></desc>
+    <media type="image" mime="image/png" src="figures/anjuta-in-action.png">
+      <p>Το κύριο παράθυρο του <app>Anjuta</app></p>
+    </media>
+  </figure>
+
+</page>

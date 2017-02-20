@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-process-dialog" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Kapcsolódás a folyamathoz ablak</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Kapcsolódás a folyamathoz ablak</title>
+
+  <p>A <gui>Kapcsolódás a folyamathoz</gui> ablak lehetővé teszi egy éppen futó folyamat kiválasztását.</p>
+
+  <terms>
+    <item>
+      <title><gui>Útvonalak rejtése</gui></title>
+      <p>Ezzel elrejtheti a parancsok útvonalait a folyamatlistában.</p>
+    </item>
+    <item>
+      <title><gui>Folyamat paramétereinek elrejtése</gui></title>
+      <p>Ezzel elrejtheti a parancssori paramétereket a folyamatlistában.</p>
+    </item>
+    <item>
+      <title><gui>Folyamatfa megjelenítése</gui></title>
+      <p>Ha nincs bejelölve, akkor a folyamatok listaként jelennek meg. Ha be van jelölve, akkor a folyamatok faként jelennek meg.</p>
+    </item>
+  </terms>
+
+</page>

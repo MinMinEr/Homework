@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="project-manager" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="project-manager-root"/>
+    <desc>Správa projektu.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Zásuvný modul Správa projektu</title>
+
+  <p><app>Anjuta</app> podporuje několik stávajících formátů projektů pomocí zásuvných modulů se zpracujícími jádry. Hlavním je formát autotools, který je běžně používán v Linuxu.</p>
+
+  <p>Které zpracující jádro má projekt používat se volí při vytváření nebo importu nového projeku do <app>Anjuty</app>. Je zobrazeno ve vlastnostech kořenového uzlu projektu a může být kdykoliv změněno.</p>
+
+  <p>Ať už je zpracující jádro v pozadí jakékoliv, grafické rozhraní je pořát totéž, akorát některé funkce nemusí být dostupné.</p>
+
+  <section id="backend">
+    <title>Zásuvný modul zpracujícho jádra projektu</title>
+  </section>
+
+</page>

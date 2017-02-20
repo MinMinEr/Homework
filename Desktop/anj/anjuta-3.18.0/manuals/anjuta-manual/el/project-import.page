@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-import" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-project-management" group="first"/>
+    <link type="seealso" xref="anjuta-project-create"/>
+    <link type="seealso" xref="project-manager"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Εισαγωγή υπάρχοντος έργου.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Εισαγωγή έργου</title>
+
+  <p>Το <app>Anjuta</app> δεν έχει τη δική του μορφή έργου. Φορτώνει έργα χρησιμοποιώντας ήδη υπάρχουσες μορφές, όπως makefile ή autotools και δεν απαιτεί οι άλλοι προγραμματιστές να το χρησιμοποιήσουν. Οι ρυθμίσεις του Anjuta αποθηκεύονται σε αρχείο με την επέκταση <file>.anjuta</file> και δημιουργείται ένας κρυφός κατάλογος στον κατάλογο έργου. Για να χρησιμοποιήσετε ένα έργο στο <app>Anjuta</app> και να δημιουργήσετε αυτά τα αρχεία ρυθμίσεων, θα χρειαστεί να εισάγετε το έργο. Αυτό δεν τροποποιεί κανένα αρχείο έργου.</p>
+
+  <steps>
+    <item>
+      <p>Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αρχείο</gui> <gui>Νέο</gui><gui>Έργο από υπάρχουσες πηγές</gui></guiseq> ή <gui>Έργο από υπάρχουσες πηγές</gui> από την πτυσσόμενη λίστα του κουμπιού <gui>Νέο</gui> στη <gui>κορυφαία γραμμή εργαλείου</gui> για να ξεκινήσει ο οδηγός του έργου.</p>
+    </item>
+    <item>
+      <p>Επιλέξτε <gui>Εισαγωγή από φάκελο</gui> εάν το έργο είναι ήδη παρόν στον υπολογιστή σας, έπειτα επιλέξτε τον κατάλογο έργου.</p>
+      <p>Ή επιλέξτε <gui>Εισαγωγή από σύστημα ελέγχου έκδοσης</gui> εάν το έργο απαιτεί έλεγχο από τον διακομιστή. Έπειτα επιλέξτε το σύστημα ελέγχου έκδοσης, τη διεύθυνση διακομιστή και τον κατάλογο προορισμού στον υπολογιστή σας.</p>
+    </item>
+    <item>
+      <p>Μετά την επιλογή υπάρχοντος έργου, το πλαίσιο κειμένου <gui>Όνομα έργου</gui> πρέπει να γεμίσει με το όνομα του καταλόγου έργου, αλλά μπορείτε να το αλλάξετε. Όταν τελειώσετε, κλικ στο κουμπί <gui>Εισαγωγή</gui> για κατέβασμα του έργου εάν απαιτείται και δημιουργία των απαιτούμενων αρχείων από το <app>Anjuta</app>.</p>
+    </item>
+    <item>
+      <p>Το <app>Anjuta</app> προσπαθεί να βρει αυτόματα το χρησιμοποιούμενο σύστημα υποστήριξης του έργου από το έργο σας. Αλλά εάν είναι δυνατά πολλά συστήματα υποστήριξης, θα πάρετε ένα διάλογο που ζητά την επιλογή ενός προσθέτου συστήματος υποστήριξης έργου. Διαβάστε την περιγραφή συστήματος υποστήριξης του έργου για να βρείτε την κατάλληλη επιλογή.</p>
+    </item>
+  </steps>
+
+</page>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="directory-project-backend" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager#backend"/>
+    <desc>«Backend» de la carpeta del proyecto</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Complemento de la carpeta de proyecto para el «backend»</title>
+
+  <p>Este es el «backend» de proyecto más simple. No hay ningún archivo de proyecto. Funciona como un visor de archivos, considerando todos los archivos cuya extensión coincida con las típicas de código fuente (por ejemplo <file>.c</file>, <file>.py</file>). Las carpetas se mantienen en orden para agrupar los archivos fuente, pero no hay un objetivo.</p>
+
+  <p>Este «backend» es una solución útil si su proyecto no tiene su «backend» correspindiente en <app>Anjuta</app>, o si el «backend» apropiado no soporta completamente su proyecto.</p>
+
+  <p>No es posible añadir o cambiar cualquier cosa en un proyecto usando este «backend». Pero si su crea un archivo de código fuente en la carpeta del proyecto, con la extendión adecuada, se añadirá automáticamente.</p>
+
+</page>

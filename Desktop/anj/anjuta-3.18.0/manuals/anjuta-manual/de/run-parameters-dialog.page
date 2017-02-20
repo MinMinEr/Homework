@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="run-parameters-dialog" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="run-run"/>
+    <link type="seealso" xref="debug-run"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Ausführungsparameter-Dialog</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ausführungsparameter-Dialog</title>
+
+  <p>Der Dialog <gui>Ausführungsparameter</gui> ermöglicht das Festlegen des aktuellen Programms und einiger Parameter.</p>
+
+  <terms>
+    <item>
+      <title><gui>Programm</gui></title>
+      <p>Dieses ist das Programm, welches ausgeführt wird, wenn Sie ein Programm mit oder ohne Fehlerdiagnose ausführen. Die Auswahlliste führt Programme auf, die durch das aktuelle Projekt erstellt wurden. Sie können aber über den Knopf <gui>Durchsuchen</gui> jedes andere Programm auswählen.</p>
+    </item>
+    <item>
+      <title><gui>Argumente</gui></title>
+      <p>Dies sind Befehlszeilenargumente, die von Ihrem Programm verwendet werden. Die Auswahlliste enthält eine Chronik der zuletzt verwendeten Argumente.</p>
+    </item>
+    <item>
+      <title><gui>Arbeitsordner</gui></title>
+      <p>Der Arbeitsordner ist der aktuelle Ordner bei der Ausführung Ihres Programms.</p>
+    </item>
+    <item>
+      <title><gui>Umgebungsvariablen</gui></title>
+      <p>Klicken Sie auf die Auswahlliste, um alle Umgebungsvariablen anzuzeigen, die durch Ihr Programm zugänglich sind. Dies sind normalerweise alle aktuellen Umgebungsvariablen. Sie werden in hellem Grau dargestellt.</p>
+      <p>Klicken Sie auf den Knopf <gui>Neu</gui>, um eine neue Umgebungsvariable hinzuzufügen.</p>
+      <p>Klicken Sie auf den Knopf <gui>Bearbeiten</gui>, um den Wert der gewählten Umgebungsvariable zu ändern.</p>
+      <p>Klicken Sie auf den Knopf <gui>Löschen</gui>, um die gewählte Umgebungsvariable zu löschen.</p>
+      <p>Wenn eine Variable nicht den gleichen Wert wie in der aktuellen Umgebung hat, so wird diese in schwarz dargestellt.</p>
+    </item>
+    <item>
+      <title><gui>Im Terminal ausführen</gui></title>
+      <p>Wählen Sie dies, um das Programm in einem Terminal auszuführen, so dass Sie Eingaben tätigen und Ausgaben lesen können, auch mit Hilfe von Unix-Streams. Es ist für Programme mit grafischer Oberfläche nicht erforderlich.</p>
+    </item>
+  </terms>
+
+</page>

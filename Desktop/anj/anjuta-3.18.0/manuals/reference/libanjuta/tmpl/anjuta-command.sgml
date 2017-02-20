@@ -1,0 +1,114 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaCommand
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION anjuta_command_start ##### -->
+<para>
+
+</para>
+
+@self: 
+
+
+<!-- ##### FUNCTION anjuta_command_cancel ##### -->
+<para>
+
+</para>
+
+@self: 
+
+
+<!-- ##### FUNCTION anjuta_command_notify_data_arrived ##### -->
+<para>
+
+</para>
+
+@self: 
+
+
+<!-- ##### FUNCTION anjuta_command_notify_complete ##### -->
+<para>
+
+</para>
+
+@self: 
+@return_code: 
+
+
+<!-- ##### FUNCTION anjuta_command_notify_progress ##### -->
+<para>
+
+</para>
+
+@self: 
+@progress: 
+
+
+<!-- ##### FUNCTION anjuta_command_is_running ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_command_set_error_message ##### -->
+<para>
+
+</para>
+
+@self: 
+@error_message: 
+
+
+<!-- ##### FUNCTION anjuta_command_get_error_message ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_command_start_automatic_monitor ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_command_stop_automatic_monitor ##### -->
+<para>
+
+</para>
+
+@self: 
+
+
+<!-- ##### STRUCT AnjutaCommandPriv ##### -->
+<para>
+
+</para>
+
+

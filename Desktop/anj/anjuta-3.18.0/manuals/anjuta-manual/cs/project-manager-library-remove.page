@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-library-remove" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-library" group="seventh"/>
+    <link type="seealso" xref="project-manager-target"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak z cíle odstranit vlastní knihovnu.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Odebrání vlastní knihovny</title>
+ 
+  <steps>
+    <item>
+      <p>V <gui>zobrazení projektu</gui> vyberte cíl, který má knihovnu jenž chcete odebrat, klikněte na něj pravým tlačítkem myši, aby se zobrazila <gui>kontextová nabídka projektu</gui>, a vyberte <gui>Vlastnosti</gui>.</p>
+    </item>
+    <item>
+      <p>Odstraňte knihovnu z vlastnosí <gui>Přepínačů preprocesoru C</gui> a <gui>Přepínačů linkeru</gui>. Kliknutím na tlačítko <gui>Použít</gui> se změny zapíší do projektového souboru.</p>
+    </item>
+  </steps>
+
+</page>

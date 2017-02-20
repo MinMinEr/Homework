@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-cpu" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="sixth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>CPU-információk vizsgálata.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>CPU</title>
+
+  <section>
+    <title>CPU regiszterek megjelenítése</title>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Nézet</gui><gui>Regiszterek</gui></guiseq> menüpontot a <gui>Regiszter</gui> ablak megnyitásához.</p>
+      </item>
+    </steps>
+
+    <p>Azok a regiszterek vörössel jelennek meg, amelyek értékei a legutolsó leállítás óta megváltoztak. Tetszőleges regiszter értéke megváltoztatható az érték oszlopra kattintással, és az új érték beírásával.</p>	
+
+  </section>
+
+  <section>
+    <title>Memória megjelenítése</title>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Nézet</gui><gui>Memória</gui></guiseq> menüpontot a <gui>Memória</gui> ablak megnyitásához.</p>
+      </item>
+    </steps>
+
+    <p>Az első oszlop a memóriacímeket jeleníti meg hexadecimális formában, a második a memória tartalmát jeleníti meg hexadecimálisan, az utolsó oszlop pedig a memória tartalmát ASCII-ben.</p>
+    <p>Még egy 32 bites mikroprocesszor címtere is nagyon nagy (4 gigabájt), így nagyon nehéz egy adott címre lépni a görgetősáv használatával. Ehelyett inkább kattintson a jobb egérgombbal, és válassza az <gui>Ugrás címre</gui> menüpontot egy kis szerkesztőmező megjelenítéséhez, amelyben megadhat egy hexadecimális címet.</p>
+  </section>
+
+
+  <section>
+    <title>Visszafejtés megjelenítése</title>
+
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Nézet</gui><gui>Visszafejtés</gui></guiseq> menüpontot a <gui>Visszafejtés</gui> ablak megnyitásához.</p>
+      </item>
+    </steps>
+
+    <p>Az első oszlop címeket jelenít meg hexadecimálisan. A második oszlopban egy címke kezdődik a sor elején, és egy kettősponttal vagy assembly-nyelvű utasítással végződik, amelyet 4 szóköz karakter húz be.</p>
+
+    <p>A visszafejtés ablakbeli pozíció a programszámláló értékére lesz módosítva a program leállításakor.</p>
+
+    <p>Még egy 32 bites mikroprocesszor címtere is nagyon nagy (4 gigabájt), így nagyon nehéz egy adott címre lépni a görgetősáv használatával. Ehelyett inkább kattintson a jobb egérgombbal, és válassza az <gui>Ugrás címre</gui> menüpontot egy kis szerkesztőmező megjelenítéséhez, amelyben megadhat egy hexadecimális címet.</p>
+  </section>
+
+
+</page>

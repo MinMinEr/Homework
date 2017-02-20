@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-project-target-edit" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-target" group="second"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Autotools Ziel-Eigenschaften bearbeiten</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ein Autotools-Ziel bearbeiten</title>
+
+  <p>Hier ist eine Liste aller Zieleigenschaften, die in Autotools-Projekten verwendet werden. Einige sind nicht für alle Ziele verfügbar.</p>
+
+  <terms>
+    <item>
+      <title><gui>Nur zum Test erstellen</gui></title>
+      <p>Wenn ausgewählt wird dieses Ziel nicht installiert und muss nur beim Ausführen von Tests erstellt werden.</p>
+    </item>
+    <item>
+      <title><gui>C Compiler-Flags</gui></title>
+      <p>Die Flags, die dem C-Compiler beim Übersetzen von Ziel-Quelldateien übergeben werden. Dieser Wert überschreibt gegebenenfalls denjenigen aus dem übergeordneten Ordner.</p>
+    </item>
+    <item>
+      <title><gui>Flags für C-Präprozessor</gui></title>
+      <p>Diese Flags werden jeder Übersetzung übergeben, die den C-Präprozessor aufruft. Dieser Wert überschreibt gegebenenfalls denjenigen aus dem übergeordneten Ordner.</p>
+    </item>
+    <item>
+      <title><gui>C++ Compiler-Flags</gui></title>
+      <p>Die Flags, die dem C++-Compiler beim Übersetzen von Ziel-Quelldateien übergeben werden. Dieser Wert überschreibt gegebenenfalls denjenigen aus dem übergeordneten Ordner.</p>
+    </item>
+    <item>
+      <title><gui>Nicht installieren</gui></title>
+      <p>Wenn ausgewählt wird dieses Ziel nicht installiert. Es kann für Werkzeuge verwendet werden, um andere Ziele oder Programme zu erstellen, welche nur von Entwicklern verwendet werden.</p>
+    </item>
+    <item>
+      <title><gui>Präfix nicht verwenden</gui></title>
+      <p>Wenn ausgewählt wird kein Präfix zu Handbuchseiten und ausführbare Datei hinzugefügt. Solche Präfixe werden als Alternativen zu Systemwerkzeugen eingesetzt.</p>
+    </item>
+    <item>
+      <title><gui>Flags für Fortran-Compiler</gui></title>
+      <p>Die Flags, die dem Fortran 9x-Compiler beim Übersetzen von Ziel-Quelldateien übergeben werden. Dieser Wert überschreibt gegebenenfalls denjenigen aus dem übergeordneten Ordner.</p>
+    </item>
+    <item>
+      <title><gui>In Distribution einschließen</gui></title>
+      <p>Wenn ausgewählt, so wird das Ziel im Distributionspaket enthalten sein.</p>
+    </item>
+    <item>
+      <title><gui>Installationsordner</gui></title>
+      <p>Legt fest, wo das Ziel installiert wird. Es ist nicht direkt der Ordner, in dem die Dateien installiert sind, sondern der Name eine der Standardvariable des Ordners (bindir, sbindir, libdir, libexecdir, datadir, pkgdatadir, pkglibexecdir, includedir, mandir, infodir, docdir) oder eine eigens definierte Variable in den Ordnereigenschaften.</p>
+    </item>
+    <item>
+      <title><gui>Java Compiler-Flags</gui></title>
+      <p>Die Flags, die dem Java-Compiler beim Übersetzen von Ziel-Quelldateien übergeben werden. Dieser Wert überschreibt gegebenenfalls denjenigen aus dem übergeordneten Ordner.</p>
+    </item>
+    <item>
+      <title><gui>Zielpfad beibehalten</gui></title>
+      <p>Wenn ausgewählt wird die Hierarchie des Projektordners bei Dateiinstallation beibehalten.</p>
+    </item>
+    <item>
+      <title><gui>Flags für Lex/Flex</gui></title>
+      <p>Die Flags zur Weitergabe an die Scanner-Generatoren Lex oder Flex beim Erstellen von Ziel-Quelldateien. Dieser Wert überschreibt den wahrscheinlich im Elternordner definierten.</p>
+    </item>
+    <item>
+      <title><gui>Bibliotheken</gui></title>
+      <p>Geben Sie zusätzliche Bibliotheken an, die von dem Projekt verwendet werden. Nützlich zum Hinzufügen nicht paketierter Bibliotheken. Lesen Sie auch die Seite <link xref="project-manager-library">Nicht-paketierte Bibliotheken hinzufügen</link> für weitere Informationen.</p>
+    </item>
+    <item>
+      <title><gui>Flags für Linker</gui></title>
+      <p>Die Flags, die dem Linker beim Binden von Zielen übergeben werden. Dieser Wert überschreibt gegebenenfalls denjenigen aus dem übergeordneten Ordner.</p>
+    </item>
+    <item>
+      <title><gui>Abschnitt im Handbuch</gui></title>
+      <p>Geben Sie den Abschnitt des Handbuchs an, wo die Hilfeseite hinzugefügt werden soll. Gültige Abschnittsnamen enthalten die Ziffern 0 bis 9 sowie die Buchstaben »l« und »n«.</p>
+    </item>
+    <item>
+      <title><gui>Flags für Objective C-Compiler</gui></title>
+      <p>Die Flags, die dem Objective C-Compiler beim Übersetzen von Ziel-Quelldateien übergeben werden. Dieser Wert überschreibt gegebenenfalls denjenigen aus dem übergeordneten Ordner.</p>
+    </item>
+    <item>
+      <title><gui>Vala Compiler-Flags</gui></title>
+      <p>Die Flags, die dem Vala-Compiler beim Übersetzen von Ziel-Quelldateien übergeben werden. Dieser Wert überschreibt gegebenenfalls denjenigen aus dem übergeordneten Ordner.</p>
+    </item>
+    <item>
+      <title><gui>Flags für Yacc/Bison</gui></title>
+      <p>Die Flags, die dem Parser-Ersteller Bison oder Yacc beim Erzeugen von Ziel-Quelldateien übergeben werden. Dieser Wert überschreibt gegebenenfalls denjenigen aus dem übergeordneten Ordner.</p>
+    </item>
+  </terms>
+
+</page>

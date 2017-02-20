@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="autotools-project-backend" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager#backend"/>
+    <desc>Autotools projekt háttérprogram.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>GNU Autotools projekt háttérprogram bővítmény</title>
+
+  <p>Ez a leggyakoribb projektformátum Linuxon. Forráskódcsomagok terjesztésére tervezték Unix-szerű rendszerek széles körére. Ha valaha telepített programot a <cmd>configure</cmd>, <cmd>make</cmd>, <cmd>make install</cmd> parancsok használatával, akkor már használta felhasználóként.</p>
+
+  <p>Fejlesztőként jellemzően egy kicsit bonyolultabb a használata. Azonban az <app>Anjuta</app> alapértelmezett háttérprogramja, amely szolgáltatásaival egyszerűbbé teszi a használatát. A projektmenedzser összes szolgáltatása bekapcsolásra kerül a használatakor. Egy projektet karban lehet tartani úgy az Autotools háttérprogram használatával, hogy egyetlen sort is írna a <file>configure.ac</file> vagy bármely <file>Makefile.am</file> fájlba.</p> 
+
+  <note style="bug">
+    <p>Az Autotools fájlok több információt biztosítanak egy Makefile-nál, de a háttérprogram nem támogatja az összes lehetséges trükköt. Ha egy olyan projektet talál, amely nem olvasható be megfelelően, akkor egy <link href="https://bugzilla.gnome.org/browse.cgi?product=anjuta">hibajelentés küldését</link> nagyon megbecsüljük. Addig is kerülő megoldásként használhatja helyette a könyvtár projekt háttérprogramot. Ennek sokkal kevesebb szolgáltatása van, de az összes forrásfájlt megtalálja.</p>
+  </note>
+
+
+</page>

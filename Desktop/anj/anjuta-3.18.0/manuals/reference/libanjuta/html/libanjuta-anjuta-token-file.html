@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: anjuta-token-file</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="libanjuta-api.html" title="libanjuta API">
+<link rel="prev" href="libanjuta-Anjuta-token.html" title="Anjuta token">
+<link rel="next" href="libanjuta-anjuta-token-list.html" title="anjuta-token-list">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libanjuta-anjuta-token-file.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#libanjuta-anjuta-token-file.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libanjuta-api.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="libanjuta-Anjuta-token.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libanjuta-anjuta-token-list.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libanjuta-anjuta-token-file"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libanjuta-anjuta-token-file.top_of_page"></a>anjuta-token-file</span></h2>
+<p>anjuta-token-file</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libanjuta-anjuta-token-file.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="libanjuta-anjuta-token-file.html#ANJUTA-TOKEN-FILE-TYPE:CAPS" title="ANJUTA_TOKEN_FILE_TYPE">ANJUTA_TOKEN_FILE_TYPE</a></td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="libanjuta-anjuta-token-file.html#AnjutaTokenFile"><span class="returnvalue">AnjutaTokenFile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-anjuta-token-file.html#anjuta-token-file-new" title="anjuta_token_file_new ()">anjuta_token_file_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-anjuta-token-file.html#anjuta-token-file-free" title="anjuta_token_file_free ()">anjuta_token_file_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-anjuta-token-file.html#anjuta-token-file-load" title="anjuta_token_file_load ()">anjuta_token_file_load</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-anjuta-token-file.html#anjuta-token-file-unload" title="anjuta_token_file_unload ()">anjuta_token_file_unload</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-anjuta-token-file.html#anjuta-token-file-save" title="anjuta_token_file_save ()">anjuta_token_file_save</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-anjuta-token-file.html#anjuta-token-file-move" title="anjuta_token_file_move ()">anjuta_token_file_move</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-anjuta-token-file.html#anjuta-token-file-update" title="anjuta_token_file_update ()">anjuta_token_file_update</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-anjuta-token-file.html#anjuta-token-file-get-token-location" title="anjuta_token_file_get_token_location ()">anjuta_token_file_get_token_location</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-anjuta-token-file.html#anjuta-token-file-get-token-position" title="anjuta_token_file_get_token_position ()">anjuta_token_file_get_token_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-anjuta-token-file.html#anjuta-token-file-get-file" title="anjuta_token_file_get_file ()">anjuta_token_file_get_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-anjuta-token-file.html#anjuta-token-file-get-content" title="anjuta_token_file_get_content ()">anjuta_token_file_get_content</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-anjuta-token-file.html#anjuta-token-file-is-dirty" title="anjuta_token_file_is_dirty ()">anjuta_token_file_is_dirty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="AnjutaTokenFile"></a><div class="refsect1">
+<a name="libanjuta-anjuta-token-file.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> AnjutaTokenFile
+</pre>
+</div>
+<div class="refsect1">
+<a name="libanjuta-anjuta-token-file.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="libanjuta-anjuta-token-file.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="ANJUTA-TOKEN-FILE-TYPE:CAPS"></a><h3>ANJUTA_TOKEN_FILE_TYPE</h3>
+<pre class="programlisting">#define ANJUTA_TOKEN_FILE_TYPE                     (anjuta_token_file_get_type ())
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-file-new"></a><h3>anjuta_token_file_new ()</h3>
+<pre class="programlisting"><a class="link" href="libanjuta-anjuta-token-file.html#AnjutaTokenFile"><span class="returnvalue">AnjutaTokenFile</span></a> *
+anjuta_token_file_new (<em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *file</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.47.7.3.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-file-free"></a><h3>anjuta_token_file_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_token_file_free (<em class="parameter"><code><a class="link" href="libanjuta-anjuta-token-file.html#AnjutaTokenFile"><span class="type">AnjutaTokenFile</span></a> *file</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-file-load"></a><h3>anjuta_token_file_load ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_file_load (<em class="parameter"><code><a class="link" href="libanjuta-anjuta-token-file.html#AnjutaTokenFile"><span class="type">AnjutaTokenFile</span></a> *file</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.47.7.5.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-file-unload"></a><h3>anjuta_token_file_unload ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_token_file_unload (<em class="parameter"><code><a class="link" href="libanjuta-anjuta-token-file.html#AnjutaTokenFile"><span class="type">AnjutaTokenFile</span></a> *file</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.47.7.6.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-file-save"></a><h3>anjuta_token_file_save ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_token_file_save (<em class="parameter"><code><a class="link" href="libanjuta-anjuta-token-file.html#AnjutaTokenFile"><span class="type">AnjutaTokenFile</span></a> *file</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.47.7.7.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-file-move"></a><h3>anjuta_token_file_move ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_token_file_move (<em class="parameter"><code><a class="link" href="libanjuta-anjuta-token-file.html#AnjutaTokenFile"><span class="type">AnjutaTokenFile</span></a> *file</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *new_file</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-file-update"></a><h3>anjuta_token_file_update ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_token_file_update (<em class="parameter"><code><a class="link" href="libanjuta-anjuta-token-file.html#AnjutaTokenFile"><span class="type">AnjutaTokenFile</span></a> *file</code></em>,
+                          <em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>);</pre>
+<p>Update the file with all changed token starting from <em class="parameter"><code>token</code></em>
+. The function can
+return an error if the token is not in the file.</p>
+<div class="refsect3">
+<a name="id-1.6.47.7.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>file</p></td>
+<td class="parameter_description"><p>a <a class="link" href="libanjuta-anjuta-token-file.html#AnjutaTokenFile"><span class="type">AnjutaTokenFile</span></a> derived class object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>token</p></td>
+<td class="parameter_description"><p>Token to update.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.47.7.9.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> is the update is done without error.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-file-get-token-location"></a><h3>anjuta_token_file_get_token_location ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_token_file_get_token_location (<em class="parameter"><code><a class="link" href="libanjuta-anjuta-token-file.html#AnjutaTokenFile"><span class="type">AnjutaTokenFile</span></a> *file</code></em>,
+                                      <em class="parameter"><code><span class="type">AnjutaTokenFileLocation</span> *location</code></em>,
+                                      <em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.47.7.10.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-file-get-token-position"></a><h3>anjuta_token_file_get_token_position ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
+anjuta_token_file_get_token_position (<em class="parameter"><code><a class="link" href="libanjuta-anjuta-token-file.html#AnjutaTokenFile"><span class="type">AnjutaTokenFile</span></a> *file</code></em>,
+                                      <em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>);</pre>
+<p>Returns the position of the token in the file. This position is a number
+which doesn't correspond to a line number or a character but respect the
+order of token in the file.</p>
+<div class="refsect3">
+<a name="id-1.6.47.7.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>file</p></td>
+<td class="parameter_description"><p><a class="link" href="libanjuta-anjuta-token-file.html#AnjutaTokenFile"><span class="type">AnjutaTokenFile</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>token</p></td>
+<td class="parameter_description"><p>token</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.47.7.11.6"></a><h4>Returns</h4>
+<p> The position of the token or 0 if the token is not in the file.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-file-get-file"></a><h3>anjuta_token_file_get_file ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+anjuta_token_file_get_file (<em class="parameter"><code><a class="link" href="libanjuta-anjuta-token-file.html#AnjutaTokenFile"><span class="type">AnjutaTokenFile</span></a> *file</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.47.7.12.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-file-get-content"></a><h3>anjuta_token_file_get_content ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_file_get_content (<em class="parameter"><code><a class="link" href="libanjuta-anjuta-token-file.html#AnjutaTokenFile"><span class="type">AnjutaTokenFile</span></a> *file</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.47.7.13.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-file-is-dirty"></a><h3>anjuta_token_file_is_dirty ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_token_file_is_dirty (<em class="parameter"><code><a class="link" href="libanjuta-anjuta-token-file.html#AnjutaTokenFile"><span class="type">AnjutaTokenFile</span></a> *file</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.47.7.14.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libanjuta-anjuta-token-file.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-source-add" xml:lang="ca">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-source" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Afegiu fitxers existents a un projecte.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jaume Planas</mal:name>
+      <mal:email>jplanas@itberga.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gil Forcada</mal:name>
+      <mal:email>gilforcada@guifi.net</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Afegiu fitxers</title>
+
+  <steps>
+    <item>
+      <p>A la <gui>vista de projecte</gui>, trieu l'objectiu on voleu afegir un fitxer de codi nou, feu clic amb el botó secundari del ratolí perquè es mostri el <gui>menú contextual del projecte</gui> i trieu <gui>Afegeix un fitxer de codi</gui>.</p>
+
+      <p>O trieu <guiseq><gui>Projecte</gui><gui>Afegeix un fitxer de codi...</gui></guiseq> en el <gui>menú principal</gui></p>
+    </item>
+    <item>
+      <p>Al <gui>botó de selecció d'objectius</gui> podeu seleccionar un altre objectiu.</p>
+    </item>
+    <item>
+      <p>In the file chooser below, select the files you want to add.
+      Then click on the <gui>Add</gui> button to add those files to your
+      project. You can select several files at the same time keeping
+      <key>Ctrl</key> key pressed or using the <key>Shift</key> to select
+      a range of files.</p>
+    </item>
+  </steps>
+    
+  <note style="tip">
+    <p>Podeu afegir fitxers als subdirectoris del projecte. La majoria de formats de projecte requereixen que els fitxers estiguin dins del directori del projecte. Es copiaran automàticament els fitxers que estiguin fora del directori del projecte per complir amb aquest requeriment.</p>
+  </note>
+ 
+</page>

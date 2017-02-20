@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="introduction" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <title>Einführung</title>
+    <desc>Einführung in die integrierte Entwicklungsumgebung <app>Anjuta</app></desc>
+    <link type="guide" xref="index"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Einführung</title>
+
+  <p><app>Anjuta</app> ist eine vielseitige integrierte Entwicklungsumgebung (IDE) für die GNOME-Arbeitsumgebung. Es bietet eine Vielzahl von fortschrittlichen Programmierhilfen wie eine Projektverwaltung, Assistenten für Anwendungen, interaktive Fehlerdiagnose, den integrierten Oberflächendesigner Glade, integrierte Devhelp API-Hilfe, einen Klassengenerator, einen mächtigen Quelltexteditor, einen Symbol-Browser, Unterstützung für Git, C/C++, Python, Vala und vieles andere.</p>
+
+  <p><app>Anjuta</app> hat ein flexibles und fortschrittliches Docking-System, mit dem alle Ansichten nach Belieben angeordnet werden können. Verschieben Sie die Ansichten per Ziehen-und-Ablegen der Verschiebeleisten und passen Sie das Layout an.</p>
+
+  <p><app>Anjuta</app> wurde für einfache Bedienung entworfen, ist aber mächtig genug, alle Ihre Programmierbedürfnisse zu erfüllen. Im Laufe der Entwicklung wurde <app>Anjuta</app> um viele neue Funktionsmerkmale erweitert. Unser Hauptziel ist Funktionsumfang und Bedienbarkeit zugleich zu erreichen, so dass Ihre Software-Entwicklung angenehm bleibt, ohne Ihre Sinne zu überfluten. Wie bemühen uns, <app>Anjuta</app> weiterhin zu verbessern und zu stabilisieren und Ihnen ein bestmögliches Erlebnis zu bieten.</p>
+
+  <p>Wir hoffen, dass Sie mit <app>Anjuta</app> zufrieden sind. Falls nicht, so helfen Sie uns bitte <app>Anjuta</app> zu verbessern, indem Sie Fehlerberichte und Vorschläge einreichen. So helfen Sie einerseits, die Software zu verbessern, und andererseits der Open-Source-Gemeinschaft als Ganzes.</p>
+
+  <p>Das folgende Bildschirmfoto zeigt einige Dinge, die Sie in <app>Anjuta</app> finden werden.</p>
+
+  <figure>
+    <title><app>Anjuta</app> in Aktion</title>
+    <desc><app>Anjuta</app>-Hauptfenster</desc>
+    <media type="image" mime="image/png" src="figures/anjuta-in-action.png">
+      <p><app>Anjuta</app>-Hauptfenster</p>
+    </media>
+  </figure>
+
+</page>

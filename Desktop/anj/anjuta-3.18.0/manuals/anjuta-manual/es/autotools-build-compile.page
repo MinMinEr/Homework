@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-compile" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="second"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <link type="seealso" xref="autotools-build-preferences-dialog"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Compilar archivos.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Compilar archivos</title>
+
+    <p>La mayoría de los lenguajes de programación le permiten compilar un archivo de fuentes individual. Se lee el archivo, se comprueban los errores y se convierte a un archivo objeto intermedio. La mayoría de los errores suceden en este paso, de tal forma que es útil compilar un archivo después de modificarlo, para comprobar posibles errores. Existen varias formas de hacerlo.</p>
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Construir</gui><gui>Compilar</gui></guiseq> o pulse <key>F9</key> para compilar el archivo actualmente en edición.</p>
+      </item>
+    </steps>
+    <steps>
+      <item>
+        <p>Desde el <gui>panel del gestor de archivos</gui>, seleccione un archivo.</p>
+      </item>
+      <item>
+        <p>Pulse con el botón derecho del ratón para mostrar el <gui>menú contextual del gestor de proyectos</gui> y seleccione <guiseq><gui>Construir</gui><gui>Compilar</gui></guiseq> para compilar el archivo actualmente seleccionado en el <gui>panel del gestor de archivos</gui>.</p>
+      </item>
+    </steps>
+    <steps>
+      <item>
+        <p>Desde el <gui>panel del gestor de archivos</gui>, seleccione un archivo de fuentes.</p>
+      </item>
+      <item>
+        <p>Pulse con el botón derecho del ratón para mostrar el <gui>menú contextual del gestor de proyecto</gui> y seleccione <guiseq><gui>Construir</gui><gui>Compilar</gui></guiseq> para compilar el archivo seleccionado actualmente en el <gui>panel del gestor de proyectos</gui>.</p>
+      </item>
+    </steps>
+    <note style="tip">
+      <p>No necesita guardar su archivo antes de compilarlo, <app>Anjuta</app> lo guardará automáticamente si es necesario.</p>
+    </note>
+
+</page>

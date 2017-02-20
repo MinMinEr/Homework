@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-run" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="second"/>
+    <link type="seealso" xref="run-parameters-dialog"/>
+    <link type="seealso" xref="autotools-build-configure"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Έναρξη προγράμματος με αποσφαλμάτωση.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Αποσφαλμάτωση προγράμματος</title>
+  
+  <section>
+    <title>Έναρξη προγράμματος στον αποσφαλματωτή</title>
+
+    <p>Το τρέχον πρόγραμμα καθορίζεται στο διάλογο <gui>Παράμετροι προγράμματος</gui>. Δείτε <link xref="run-parameters-dialog"/> για περισσότερες πληροφορίες. Αυτό το πρόγραμμα μπορεί να ξεκινήσει στον αποσφαλματωτή ως εξής:</p>
+
+    <steps>
+      <item>
+        <p>Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Εκτέλεση</gui> <gui>Πρόγραμμα αποσφαλμάτωσης</gui></guiseq> ή πατήστε <keyseq><key>Shift</key><key>F12</key></keyseq></p>
+      </item>
+    </steps>
+
+    <note style="tip">
+      <p>Ένα πρόγραμμα μπορεί να είναι πιο δύσκολο στην αποσφαλμάτωση εάν είναι έντονα βελτιστοποιημένο ή εάν λείπουν πληροφορίες αποσφαλμάτωσης. Εάν οι πληροφορίες βελτιστοποίησης και αποσφαλμάτωσης είναι ενεργές, καθορίζεται στο βήμα ρυθμίσεων. Κανονικά, υπάρχει μια διαθέσιμη ρύθμιση αποσφαλμάτωσης. Το Anjuta εμφανίζει μια προειδοποίηση εάν αυτή η ρύθμιση δεν χρησιμοποιείται. Δείτε <link xref="autotools-build-configure"/> για περισσότερες πληροφορίες.</p>
+    </note>
+   </section>
+
+  <section>
+    <title>Αποσφαλμάτωση μιας ήδη εκτελούμενης εφαρμογής</title>
+
+    <p>Ο αποσφαλματωτής μπορεί να χρησιμοποιηθεί σε μια ήδη εκτελούμενη εφαρμογή.</p>
+
+    <steps>
+      <item>
+        <p>Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Εκτέλεση</gui> <gui>Διεργασία αποσφαλμάτωσης...</gui></guiseq> για να πάρετε έναν διάλογο που καταχωρίζει όλες τις προς το παρόν εκτελούμενες διεργασίες.</p>
+      </item>
+      <item>
+        <p>Επιλογή μιας διεργασίας στο διάλογο <gui>Προσάρτηση στη διεργασία</gui> και κλικ στο <gui>Προσάρτηση</gui> για εκκίνηση του αποσφαλματωτή σε αυτή τη διεργασία. Δείτε <link xref="debug-process-dialog"/> για περισσότερες λεπτομέρειες.</p>
+      </item>
+    </steps>
+  </section>
+ 
+  <section>
+    <title>Αποσφαλμάτωση μιας απομακρυσμένης εφαρμογής</title>
+
+    <p>Ο αποσφαλματωτής μπορεί να χρησιμοποιηθεί για αποσφαλμάτωση μιας εφαρμογής που εκτελείται σε άλλον υπολογιστή συνδεμένο μέσα από TCP ή σειριακή σύνδεση.</p>
+
+    <steps>
+      <item>
+        <p>Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Εκτέλεση</gui> <gui>Απομακρυσμένη αποσφαλμάτωση...</gui></guiseq></p>
+      </item>
+      <item>
+        <p>Επιλέξτε τον τύπο της σύνδεσης στην απομακρυσμένη εφαρμογή, <gui>Σύνδεση σειριακής γραμμής</gui> ή <gui>Σύνδεση TCP/IP</gui>.</p>
+      </item>
+      <item>
+        <p>Για σύνδεση TCP, συμπληρώστε τα πεδία <gui>Διεύθυνση</gui> και <gui>Θύρα</gui>.</p>
+        <p>Για σειριακή σύνδεση, συμπληρώστε το παρακάτω πλαίσιο κειμένου με το σειριακό όνομα συσκευής, για παράδειγμα <cmd>/dev/ttyb</cmd>.</p>
+      </item>
+      <item>
+        <p>Κλικ στο <gui>Σύνδεση</gui> για την έναρξη του αποσφαλματωτή και σύνδεση σε απομακρυσμένο προορισμό.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section>
+    <title>Διακοπή του αποσφαλματωτή</title>
+
+    <p>Μπορούμε να σταματήσουμε τον αποσφαλματωτή και το πρόγραμμα οποτεδήποτε όπως αυτό:</p>
+
+    <steps>
+      <item>
+        <p>Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Εκτέλεση</gui> <gui>Διακοπή αποσφαλματωτή</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+  </section>
+</page>

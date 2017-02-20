@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="language-support-cpp-modelines-emacs" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="anjuta-code-indentation#editor-modelines"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Υποστηριζόμενα χαρακτηριστικά γραμμών διαμόρφωσης του Emacs.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Γραμμές διαμόρφωσης Emacs</title>
+
+  <p>Τέτοια γραμμή διαμόρφωσης είναι ένα σχόλιο στην πρώτη γραμμή του αρχείου, ή στη δεύτερη αν η πρώτη περιέχει το (#!). Αποτελείται από μια λίστα ονομάτων μεταβλητών που ακολουθείται από <code>:</code> και μια τιμή που χωρίζεται από <code>;</code> και περιβάλλεται από <code>-*-</code>.</p>
+
+  <p>Μια τυπική γραμμή διαμόρφωσης του <app>Emacs</app> δείχνει όπως αυτό:</p>
+  
+  <code>
+/* -*- Mode: C· indent-tabs-mode: t· c-basic-offset: 4· tab-width: 4 -*- */
+  </code>
+
+  <p>Το Anjuta υποστηρίζει μόνο τις επόμενες μεταβλητές.</p>
+
+  <terms>
+    <item>
+      <title><code>λειτουργία στηλοθετών εσοχής</code></title>
+      <p>Ορισμός σε <code>t</code> για χρήση στηλοθέτη για εσοχή ή <code>nil</code> για χρήση κενών.</p>
+    </item>
+    <item>
+      <title><code>tab-width</code></title>
+      <p>Αριθμός χαρακτήρων κενού που αντιστοιχούν σε χαρακτήρα στηλοθέτη.</p>
+    </item>
+    <item>
+      <title><code>βασική αντιστάθμιση c</code></title>
+      <p>Αριθμός χαρακτήρων κενού που χρησιμοποιούνται για εσοχή κώδικα C.</p>
+    </item>
+  </terms>
+ 
+</page>

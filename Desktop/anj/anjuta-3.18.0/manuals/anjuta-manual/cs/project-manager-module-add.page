@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-module-add" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <link type="guide" xref="project-manager-library" group="fourth"/>
+    <link type="seealso" xref="project-manager-module-new"/>
+    <desc>Jak přidat do cíle sadu knihoven.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Přidání knihoven z balíčků</title>
+
+  <p>V Linuxu je většina knihoven šířena s doplňujícími daty uloženými v souboru <app>pkg-config</app>. Tento soubor obsahuje informace, jako které další knihovny jsou zapotřebí nebo které přepínače překladače C a linkeru je potřeba použít u této knihovny. Tento soubor, hlavičkové soubory a soubory knihovny dohromady se nazývají balíček.</p>
+
+  <steps>
+    <item>
+      <p>V <gui>zobrazení projektu</gui> vyberte program, do kterého chcete přidat novou knihovnu, klikněte pravým tlačítkem myši, aby se objevila <gui>kontextová nabídka projektu</gui> a vyberte <gui>Přidat knihovnu</gui>.</p>
+      <p>Nebo v <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Projekt</gui> <gui>Přidat knihovnu…</gui></guiseq></p>
+    </item>
+    <item>
+      <p>Pomocí tlačíka <gui>Cíl</gui> výše musíte vybra cíl, do kterého chcete knihovnu přidat.</p>
+    </item>
+    <item>
+      <p>Knihovnu nelze přidat přímo do cíle. Můžete přidat jen modul zobrazený v <gui>zobrazení modulů</gui> níže. Když vyberete knihovnu uvnitř modulu, bude přidán rodičovský modul.</p>
+    </item>
+    <item>
+      <p>Pokud knihovna, kterou chcete, není zobrazena v <gui>zobrazení modulů</gui>, musíte ji nejprve přidat jako modul. Klikněte na tlačítko <gui>Nová knihovna</gui> a postupujte podle návodu <link xref="project-manager-module-new">zde</link>.</p>
+      <note style="tip">
+        <p>Po té, co je vytvořen nový modul, musíte pár sekund počkat, než se projektové soubory znovu načtou, abyste mohli vidět nový modul v seznamu.</p>
+      </note>
+    </item>
+    <item>
+      <p>Až jste hotovi, kliknutím na tlačítko <gui>Přidat</gui> vybraný modul přidejte do cíle.</p>
+    </item>
+  </steps>
+
+</page>

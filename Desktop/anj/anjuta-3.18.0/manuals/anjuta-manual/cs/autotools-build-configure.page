@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-configure" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="first"/>
+    <link type="seealso" xref="autotools-project-backend"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak konfigurovat projekt využívající autotools a jak spravovat konfigurace.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  </info>
+
+  <title>Konfigurace projektu</title>
+
+  <p>Než zkompilujete a sestavíte soubory, musí být projekty používající autotools nakonfigurovány. Tento krok je nutný k nastavení globálních voleb, ke kontrole přítomnosti všech požadovaných knihoven a programů ve vašem systému a k vygenerování příslušných skriptů pro sestavení.</p>
+
+  <section>
+    <title>Konfigurace projektu</title>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Sestavit</gui> <gui>Konfigurovat projekt…</gui></guiseq></p>
+      </item>
+      <item>
+        <p>Aby se zachovala výchozí konfigurace, vyberte novou konfiguraci nebo nějakou novou vytvořte. Můžete zkoumat a měnit všechny volby konfigurace. Více informací viz <link xref="autotools-build-configure-dialog"/>.</p>
+      </item>
+      <item>
+        <p>Kliknutím na <gui>Spustit</gui> projekt nakonfigurujete.</p>
+      </item>
+    </steps>
+
+    <p>Konfigurace může selhal v situaci, kdy nejsou nainstalovány některé knihovny nebo programy nebo nemáte jejich správnou verzi. Chybová zpráva vám řekne, co přesně chybí.</p>
+  </section>
+
+  <section>
+    <title>Změna konfigurace</title>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Sestavit</gui> <gui>Vybrat konfiguraci</gui> <gui>Jiná konfigurace</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+    <p>Pokud nebyl projekt doposud nakonfigurován, bude to provedeno automaticky před sestavením kteréhokoliv souboru.</p>
+
+  </section>
+
+  <section>
+    <title>Odstranění konfigurace</title>
+
+    <p>Je to podobné, jako čištění projektu, ale odstraní se více souborů. Při následném sestavení projektu je pak nutné jej znovu zkonfigurovat.</p>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Sestavit</gui> <gui>Odstranit konfiguraci</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+</page>

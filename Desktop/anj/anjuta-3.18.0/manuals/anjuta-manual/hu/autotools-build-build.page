@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-build" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="third"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <link type="seealso" xref="autotools-build-preferences-dialog"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Célok vagy projekt összeállítása.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Célok összeállítása</title>
+  <p>Célnak nevezzük a forrásfájlokból létrehozott fájlokat. Általában ez egy program vagy programkönyvtár, de lehet dokumentáció is, ha az feldolgozást igényel.</p>
+  <p>Az összeállítás parancs a cél létrehozása érdekében lefordítja az összes szükséges forrásfájlt, és szükség esetén összeállítja más fájlokkal, például programkönyvtárakkal. Ha egyes forrásfájlok már le vannak fordítva, és nem lettek módosítva, akkor azok a folyamat gyorsítása érdekében nem lesznek újra lefordítva. Az összeállítást több módon is elő lehet idézni.</p>
+  <steps>
+    <item>
+      <p>A <gui>főmenüből</gui> válassza az <guiseq><gui>Összeállítás</gui><gui>Összeállítás</gui></guiseq> menüpontot, vagy nyomja meg az <key>F7</key> billentyűt az összes cél összeállításához abban a könyvtárban, mint ahol az éppen megnyitott fájl van.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>A <gui>főmenüből</gui> válassza az <guiseq><gui>Összeállítás</gui><gui>Projekt összeállítása</gui></guiseq> menüpontot, vagy nyomja meg a <keyseq><key>Shift</key><key>F7</key></keyseq> kombinációt a teljes projekt összeállításához. Az összes alkönyvtár rekurzívan összeállításra kerül.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>A <gui>fájlkezelő ablaktáblán</gui> válasszon egy fájlt vagy könyvtárat.</p>
+    </item>
+    <item>
+      <p>Kattintson a jobb egérgombbal a <gui>fájlkezelő helyi menüjének</gui> megjelenítéséhez, és válassza az <guiseq><gui>Összeállítás</gui><gui>Összeállítás</gui></guiseq> menüpontot a kijelölt könyvtárban vagy az éppen kijelölt fájl szülőkönyvtárában lévő összes cél összeállításához.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>A <gui>projektkezelő ablaktáblán</gui> válasszon egy forrásfájlt vagy célt.</p>
+    </item>
+    <item>
+      <p>Kattintson a jobb egérgombbal a <gui>projektkezelő helyi menüjének</gui> megjelenítéséhez, és válassza az <guiseq><gui>Összeállítás</gui><gui>Összeállítás</gui></guiseq> menüpontot a kijelölt fájlt vagy célt tartalmazó könyvtár összes céljának összeállításához.</p>
+    </item>
+  </steps>
+
+</page>

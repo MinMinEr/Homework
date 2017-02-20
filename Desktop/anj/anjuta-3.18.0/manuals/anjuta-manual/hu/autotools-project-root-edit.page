@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-project-root-edit" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-root" group="second"/>
+    <link type="seealso" xref="autotools-project-folder-edit"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Autotools projekt tulajdonságainak szerkesztése.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Autotools projekt tulajdonságainak szerkesztése</title>
+
+  <p>Ezek a gyökérelem tulajdonságai.</p>
+
+  <terms>
+    <item>
+      <title><gui>Háttérprogram</gui></title>
+      <p>Ez a projekt által használt projekt háttérprogram: az Autotools. A gombra kattintva másik háttérprogram választható. Ez hasznos lehet, ha a jelenlegi háttérprogramnak problémát okoz a projektfájlok feldolgozása.</p>
+    </item>
+    <item>
+      <title><gui>Név</gui></title>
+      <p>A projekt neve. Tartalmazhat szóközöket.</p>
+    </item>
+    <item>
+      <title><gui>Verzió</gui></title>
+      <p>A projekt verziószáma.</p>
+    </item>
+    <item>
+      <title><gui>Hibajelentési URL</gui></title>
+      <p>Ez az URL lehetővé teszi hibajelentés küldését, például egy e-mail cím vagy a hibakövetőre mutató hivatkozás. Elhagyható.</p>
+    </item>
+    <item>
+      <title><gui>Csomag neve</gui></title>
+      <p>A disztribúciós csomag neve, nem tartalmazhat szóközt. Elhagyható.</p>
+    </item>
+    <item>
+      <title><gui>URL</gui></title>
+      <p>A projekt honlapja. Elhagyható.</p>
+    </item>
+  </terms>
+
+  <p>Ezen kívül a gyökérelem mappaként működik, és az összes tulajdonsággal rendelkezik. A lista megjelenítéséhez lásd: <link xref="autotools-project-folder-edit"/>.</p>
+
+</page>

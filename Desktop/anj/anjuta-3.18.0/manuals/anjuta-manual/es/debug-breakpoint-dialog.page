@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-breakpoint-dialog" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="debug-breakpoint"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Usado para crear o editar un punto de parada</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Diálogo «Punto de parada»</title>
+
+  <terms>
+    <item>
+      <title><gui>Ubicación</gui></title>
+      <p>Esta es la posición del punto de parada. No se puede cambiar en un punto de parada existente. Puede establecer un punto de parada en una línea determinada, o al principio de una función. Use uno de los siguientes formatos:</p>
+      <list>
+        <item><p><var>nombre_de_archivo</var>:<var>número_de_línea</var></p></item>
+        <item><p><var>nombre_de_la_función</var></p></item>
+        <item><p><var>nombre_de_archivo</var>:<var>nombre_de_la_función</var></p></item>
+      </list>
+    </item>
+    <item>
+      <title><gui>Condición</gui></title>
+      <p>Es una expresión que debería evaluar un valor booleano <code>TRUE</code> (1) o <code>FALSE</code> (0). Cada vez que se encuentra el punto de parada durante la ejecución de su programa, se evalúa también la condición de parada. El depurador detendrá la ejecución sólo si el resultado de la evaluación es cierto (<code>TRUE</code>).</p>
+      <p>Si deja el campo en blanco, la condición se considera siempre cierta (<code>TRUE</code>).</p>
+    </item>
+    <item>
+      <title><gui>Conteo de pasadas</gui></title>
+       <p>El depurador también puede omitir un punto de parada cierto número de veces antes de detenerlo. Si el conteo de pasadas no es cero, entonces el depurador tendrá que pasar por el punto de parada este número de veces antes de detener la ejecución.</p>
+       <p>El conteo de pasadas tiene una prioridad mayor que la condición. Sólo cuando el contador llega a cero, el depurador evaluará la condición, de estar presente, y detiene la ejecución del programa.</p>
+    </item>
+  </terms>
+
+</page>

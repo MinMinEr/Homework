@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-module-add" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <link type="guide" xref="project-manager-library" group="fourth"/>
+    <link type="seealso" xref="project-manager-module-new"/>
+    <desc>Προσθήκη συνόλου βιβλιοθηκών σε προορισμό.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Προσθήκη συσκευασμένων βιβλιοθηκών</title>
+
+  <p>Στο Linux, οι περισσότερες βιβλιοθήκες διανέμονται με πρόσθετα δεδομένα αποθηκευμένα σε ένα αρχείο <app>pkg-config</app>. Αυτό το αρχείο περιέχει πληροφορίες όπως τις άλλες απαιτούμενες βιβλιοθήκες, τον μεταγλωττιστή C και τις απαιτούμενες σημαίες σύνδεσης για αυτή τη βιβλιοθήκη. Αυτό το αρχείο, τα αρχεία κεφαλίδας και τα αρχεία βιβλιοθήκης τα ίδια λέγονται πακέτο.</p>
+
+  <steps>
+    <item>
+      <p>Επιλέξτε το επιθυμητό πρόγραμμα για προσθήκη της νέας βιβλιοθήκης στην <gui>προβολή έργου</gui>, κλικ στο δεξί πλήκτρο του ποντικιού για την εμφάνιση του <gui>μενού περιεχομένου έργου</gui> και επιλέξτε <gui>Προσθήκη βιβλιοθήκης</gui>.</p>
+      <p>Ή από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Έργο</gui> <gui>Προσθήκη βιβλιοθήκης...</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Μπορείτε να επιλέξτε τον προορισμό όπου θέλετε να προσθέσετε τη βιβλιοθήκη στο παραπάνω <gui>κουμπί προορισμού</gui>.</p>
+    </item>
+    <item>
+      <p>Μια βιβλιοθήκη δεν μπορεί να προστεθεί άμεσα σε έναν προορισμό. Μπορείτε να πρόσθετε μόνο ένα εμφανιζόμενο άρθρωμα στην παρακάτω <gui>προβολή αρθρώματος</gui>. Εάν επιλέξετε μια βιβλιοθήκη μέσα στο άρθρωμα, το γονικό άρθρωμα θα προστεθεί.</p>
+    </item>
+    <item>
+      <p>Εάν η βιβλιοθήκη που θέλετε δεν εμφανίζεται στην <gui>προβολή αρθρώματος</gui>, χρειάζεται να την προσθέσετε ως άρθρωμα πρώτα. Πατήστε στο κουμπί <gui>Νέα βιβλιοθήκη</gui> και ακολουθήστε την εξήγηση <link xref="project-manager-module-new">εδώ</link>.</p>
+      <note style="tip">
+        <p>Μετά τη δημιουργία νέου αρθρώματος, πρέπει να περιμένετε λίγα δευτερόλεπτα, ενώ τα αρχεία του έργου ξαναφορτώνονται για να δείτε το νέο άρθρωμα στη λίστα.</p>
+      </note>
+    </item>
+    <item>
+      <p>Όταν τελειώσετε, πατήστε στο κουμπί <gui>Προσθήκη</gui> για να προσθέσετε το επιλεγμένο άρθρωμα στον προορισμό.</p>
+    </item>
+  </steps>
+
+</page>

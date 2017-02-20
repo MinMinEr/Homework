@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-information" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="seventh"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Εξέταση πρόσθετων πληροφοριών προγράμματος.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ποικίλες πληροφορίες</title>
+
+  <p>Ο αποσφαλματωτής μπορεί να σας δώσει ποικίλες πληροφορίες για το πρόγραμμα ενώ εκτελείται.</p>
+
+  <section>
+    <title>Προβολή κοινόχρηστων βιβλιοθηκών</title>
+
+    <steps>
+      <item>
+        <p>Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αποσφαλμάτωση</gui> <gui>Πληροφορίες</gui><gui>Κοινόχρηστες βιβλιοθήκες</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+    <p>Αυτό ανοίγει ένα παράθυρο που καταχωρίζει όλες τις κοινόχρηστες βιβλιοθήκες που το πρόγραμμα φόρτωσε και τις τοποθεσίες τους στη μνήμη. Εμφανίζει επίσης εάν ο πίνακας συμβόλων κάθε βιβλιοθήκης φορτώνεται ή όχι.</p>
+  </section>
+
+
+  <section>
+    <title>Προβολή σημάτων</title>
+
+    <steps>
+      <item>
+        <p>Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αποσφαλμάτωση</gui> <gui>Πληροφορίες</gui><gui>Σήματα πυρήνα</gui></guiseq>.</p>
+      </item>
+    </steps>
+ 
+    <p>Αυτό εμφανίζει όλα τα διαθέσιμα σήματα με μια μικρή περιγραφή και τρεις στήλες για καθορισμό του πρακτέου όταν λαμβάνεται ένα σήμα:</p>
+
+    <terms>
+      <item>
+        <title>Διακοπή</title>
+        <p>Ο αποσφαλματωτής διακόπτει το πρόγραμμα εκτέλεσης όταν το πρόγραμμα δέχεται αυτό το σήμα.</p>
+      </item>
+      <item>
+        <title>Εκτύπωση</title>
+        <p>Ο αποσφαλματωτής εμφανίζει το δεχόμενο σήμα.</p>
+      </item>
+      <item>
+        <title>Πέρασμα</title>
+        <p>Ο αποσφαλματωτής περνά το σήμα στο πρόγραμμα.</p>
+      </item>
+    </terms>
+
+    <note style="bug">
+      <p>Το μενού περιεχομένου που εμφανίζεται με δεξί κλικ έχει όλα τα στοιχεία του απενεργοποιημένα γιατί δεν έχουν υλοποιηθεί ακόμη οι αντίστοιχες λειτουργίες.</p>
+    </note>
+
+  </section>
+
+</page>

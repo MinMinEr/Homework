@@ -1,0 +1,536 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: IAnjutaBuilder</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="plugin-interfaces.html" title="Plugin interfaces">
+<link rel="prev" href="IAnjutaBuildable.html" title="IAnjutaBuildable">
+<link rel="next" href="IAnjutaDebugger.html" title="IAnjutaDebugger">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#IAnjutaBuilder.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#IAnjutaBuilder.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="plugin-interfaces.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="IAnjutaBuildable.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="IAnjutaDebugger.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="IAnjutaBuilder"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="IAnjutaBuilder.top_of_page"></a>IAnjutaBuilder</span></h2>
+<p>IAnjutaBuilder — Implemented by plugins that can build</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="IAnjutaBuilder.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Unstable"><span class="acronym">Unstable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="IAnjutaBuilder.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="IAnjutaBuilder.html#IAnjutaBuilderCallback" title="IAnjutaBuilderCallback ()">*IAnjutaBuilderCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaBuilder.html#ianjuta-builder-error-quark" title="ianjuta_builder_error_quark ()">ianjuta_builder_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="IAnjutaBuilder.html#IAnjutaBuilderHandle" title="IAnjutaBuilderHandle"><span class="returnvalue">IAnjutaBuilderHandle</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaBuilder.html#ianjuta-builder-build" title="ianjuta_builder_build ()">ianjuta_builder_build</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaBuilder.html#ianjuta-builder-cancel" title="ianjuta_builder_cancel ()">ianjuta_builder_cancel</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaBuilder.html#ianjuta-builder-get-uri-configuration" title="ianjuta_builder_get_uri_configuration ()">ianjuta_builder_get_uri_configuration</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="IAnjutaBuilder.html#IAnjutaBuilderHandle" title="IAnjutaBuilderHandle"><span class="returnvalue">IAnjutaBuilderHandle</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaBuilder.html#ianjuta-builder-is-built" title="ianjuta_builder_is_built ()">ianjuta_builder_is_built</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaBuilder.html#ianjuta-builder-list-configuration" title="ianjuta_builder_list_configuration ()">ianjuta_builder_list_configuration</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaBuilder.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="IAnjutaBuilder.html#IANJUTA-BUILDER-ROOT-URI:CAPS" title="IANJUTA_BUILDER_ROOT_URI">IANJUTA_BUILDER_ROOT_URI</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="IAnjutaBuilder.html#IANJUTA-BUILDER-CONFIGURATION-DEBUG:CAPS" title="IANJUTA_BUILDER_CONFIGURATION_DEBUG">IANJUTA_BUILDER_CONFIGURATION_DEBUG</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="IAnjutaBuilder.html#IANJUTA-BUILDER-CONFIGURATION-OPTIMIZED:CAPS" title="IANJUTA_BUILDER_CONFIGURATION_OPTIMIZED">IANJUTA_BUILDER_CONFIGURATION_OPTIMIZED</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="IAnjutaBuilder.html#IANJUTA-BUILDER-CONFIGURATION-PROFILING:CAPS" title="IANJUTA_BUILDER_CONFIGURATION_PROFILING">IANJUTA_BUILDER_CONFIGURATION_PROFILING</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="IAnjutaBuilder.html#IAnjutaBuilderError" title="enum IAnjutaBuilderError">IAnjutaBuilderError</a></td>
+</tr>
+<tr>
+<td class="typedef_keyword">typedef</td>
+<td class="function_name"><a class="link" href="IAnjutaBuilder.html#IAnjutaBuilderHandle" title="IAnjutaBuilderHandle">IAnjutaBuilderHandle</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaBuilder.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">╰──</span> IAnjutaBuilderError
+    <a href="https://developer.gnome.org/gobject/unstable/GTypeModule.html">GInterface</a>
+    <span class="lineart">╰──</span> IAnjutaBuilder
+</pre>
+</div>
+<div class="refsect1">
+<a name="IAnjutaBuilder.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libanjuta/interfaces/ianjuta-builder.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="IAnjutaBuilder.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="IAnjutaBuilder.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="IAnjutaBuilderCallback"></a><h3>IAnjutaBuilderCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*IAnjutaBuilderCallback<span class="c_punctuation">)</span> (<em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *sender</code></em>,
+                           <em class="parameter"><code><a class="link" href="IAnjutaBuilder.html#IAnjutaBuilderHandle" title="IAnjutaBuilderHandle"><span class="type">IAnjutaBuilderHandle</span></a> command</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> *err</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-builder-error-quark"></a><h3>ianjuta_builder_error_quark ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+ianjuta_builder_error_quark (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.8.3.9.3.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-builder-build"></a><h3>ianjuta_builder_build ()</h3>
+<pre class="programlisting"><a class="link" href="IAnjutaBuilder.html#IAnjutaBuilderHandle" title="IAnjutaBuilderHandle"><span class="returnvalue">IAnjutaBuilderHandle</span></a>
+ianjuta_builder_build (<em class="parameter"><code><a class="link" href="IAnjutaBuilder.html" title="IAnjutaBuilder"><span class="type">IAnjutaBuilder</span></a> *obj</code></em>,
+                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri</code></em>,
+                       <em class="parameter"><code><a class="link" href="IAnjutaBuilder.html#IAnjutaBuilderCallback" title="IAnjutaBuilderCallback ()"><span class="type">IAnjutaBuilderCallback</span></a> callback</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Build the specified target.
+When the command if finished, the callback function is called
+if defined.</p>
+<div class="refsect3">
+<a name="id-1.8.3.9.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>target uri</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>callback called when command is finished</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>data passed to the callback</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.3.9.4.6"></a><h4>Returns</h4>
+<p> non null command handle if succeed</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-builder-cancel"></a><h3>ianjuta_builder_cancel ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_builder_cancel (<em class="parameter"><code><a class="link" href="IAnjutaBuilder.html" title="IAnjutaBuilder"><span class="type">IAnjutaBuilder</span></a> *obj</code></em>,
+                        <em class="parameter"><code><a class="link" href="IAnjutaBuilder.html#IAnjutaBuilderHandle" title="IAnjutaBuilderHandle"><span class="type">IAnjutaBuilderHandle</span></a> handle</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Cancel specified command. The callback function will not
+be called.</p>
+<div class="refsect3">
+<a name="id-1.8.3.9.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>handle of the command to cancel</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-builder-get-uri-configuration"></a><h3>ianjuta_builder_get_uri_configuration ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+ianjuta_builder_get_uri_configuration (<em class="parameter"><code><a class="link" href="IAnjutaBuilder.html" title="IAnjutaBuilder"><span class="type">IAnjutaBuilder</span></a> *obj</code></em>,
+                                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Get the configuration corresponding to the target uri.</p>
+<div class="refsect3">
+<a name="id-1.8.3.9.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>target uri</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.3.9.6.6"></a><h4>Returns</h4>
+<p> The configuration name or NULL if the corresponding
+configuration cannot be found.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-builder-is-built"></a><h3>ianjuta_builder_is_built ()</h3>
+<pre class="programlisting"><a class="link" href="IAnjutaBuilder.html#IAnjutaBuilderHandle" title="IAnjutaBuilderHandle"><span class="returnvalue">IAnjutaBuilderHandle</span></a>
+ianjuta_builder_is_built (<em class="parameter"><code><a class="link" href="IAnjutaBuilder.html" title="IAnjutaBuilder"><span class="type">IAnjutaBuilder</span></a> *obj</code></em>,
+                          <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *uri</code></em>,
+                          <em class="parameter"><code><a class="link" href="IAnjutaBuilder.html#IAnjutaBuilderCallback" title="IAnjutaBuilderCallback ()"><span class="type">IAnjutaBuilderCallback</span></a> callback</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Check if the corresponding target is up to date or not. This
+command doesn't display anything. If this command cannot be
+implemented, it is possible to return always TRUE.
+When the command is finished, the callback function is called
+if defined.</p>
+<div class="refsect3">
+<a name="id-1.8.3.9.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>target uri</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>callback called when command is finished</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>data passed to the callback</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.3.9.7.6"></a><h4>Returns</h4>
+<p> non null command handle if succeed</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-builder-list-configuration"></a><h3>ianjuta_builder_list_configuration ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+ianjuta_builder_list_configuration (<em class="parameter"><code><a class="link" href="IAnjutaBuilder.html" title="IAnjutaBuilder"><span class="type">IAnjutaBuilder</span></a> *obj</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>List all defined configuration. These names returned are
+the internal non localized names for the following
+predefined configuration: Debug, Profiling, Optimized.
+The default configuration has no name and is not returned.</p>
+<div class="refsect3">
+<a name="id-1.8.3.9.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.3.9.8.6"></a><h4>Returns</h4>
+<p> a list configuration name. The names are owned
+by the plugin, so only the list has to be free using
+g_list_free. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> utf8][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>]</span></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaBuilder.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="IANJUTA-BUILDER-ROOT-URI:CAPS"></a><h3>IANJUTA_BUILDER_ROOT_URI</h3>
+<pre class="programlisting">#define IANJUTA_BUILDER_ROOT_URI "build_root_uri"
+</pre>
+<p>Build directory uri. It is the same than the project_root_uri for
+in source build.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IANJUTA-BUILDER-CONFIGURATION-DEBUG:CAPS"></a><h3>IANJUTA_BUILDER_CONFIGURATION_DEBUG</h3>
+<pre class="programlisting">#define IANJUTA_BUILDER_CONFIGURATION_DEBUG "Debug"
+</pre>
+<p>Name of debugging configutation.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IANJUTA-BUILDER-CONFIGURATION-OPTIMIZED:CAPS"></a><h3>IANJUTA_BUILDER_CONFIGURATION_OPTIMIZED</h3>
+<pre class="programlisting">#define IANJUTA_BUILDER_CONFIGURATION_OPTIMIZED "Optimized"
+</pre>
+<p>Name of optimized configutation.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IANJUTA-BUILDER-CONFIGURATION-PROFILING:CAPS"></a><h3>IANJUTA_BUILDER_CONFIGURATION_PROFILING</h3>
+<pre class="programlisting">#define IANJUTA_BUILDER_CONFIGURATION_PROFILING "Profiling"
+</pre>
+<p>Name of profiling configutation.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IAnjutaBuilderError"></a><h3>enum IAnjutaBuilderError</h3>
+<p>Possible build errors</p>
+<div class="refsect3">
+<a name="id-1.8.3.10.6.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-BUILDER-SUCCEED:CAPS"></a>IANJUTA_BUILDER_SUCCEED</p></td>
+<td class="enum_member_description">
+<p>Build succeeded</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-BUILDER-FAILED:CAPS"></a>IANJUTA_BUILDER_FAILED</p></td>
+<td class="enum_member_description">
+<p>Build failed</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-BUILDER-CANCELED:CAPS"></a>IANJUTA_BUILDER_CANCELED</p></td>
+<td class="enum_member_description">
+<p>Build was canceld</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-BUILDER-ABORTED:CAPS"></a>IANJUTA_BUILDER_ABORTED</p></td>
+<td class="enum_member_description">
+<p>Build aborted</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-BUILDER-INTERRUPTED:CAPS"></a>IANJUTA_BUILDER_INTERRUPTED</p></td>
+<td class="enum_member_description">
+<p>Build interruped</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-BUILDER-TERMINATED:CAPS"></a>IANJUTA_BUILDER_TERMINATED</p></td>
+<td class="enum_member_description">
+<p>Build interruped</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-BUILDER-UNKNOWN-TARGET:CAPS"></a>IANJUTA_BUILDER_UNKNOWN_TARGET</p></td>
+<td class="enum_member_description">
+<p>The specified target is unknown</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-BUILDER-UNKNOWN-ERROR:CAPS"></a>IANJUTA_BUILDER_UNKNOWN_ERROR</p></td>
+<td class="enum_member_description">
+<p>Unknown Error</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-BUILDER-OTHER-ERROR:CAPS"></a>IANJUTA_BUILDER_OTHER_ERROR</p></td>
+<td class="enum_member_description">
+<p>Other Error (no unknown ;-))</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IAnjutaBuilderHandle"></a><h3>IAnjutaBuilderHandle</h3>
+<pre class="programlisting">typedef gpointer IAnjutaBuilderHandle;
+</pre>
+<p>
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

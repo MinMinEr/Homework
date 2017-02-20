@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-project-folder-edit" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-folder" group="second"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Modifier les propriétés du dossier autotools.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Modification d'un dossier autotools</title>
+
+  <p>Ces propriétés vous permettent d'attribuer des propriétés communes à toutes les cibles appartenant à ce dossier.</p>
+
+  <terms>
+    <item>
+      <title><gui>Drapeaux du compilateur C</gui></title>
+      <p>Les drapeaux à transmettre au compilateur C si une valeur individuelle n'est pas définie pour les cibles.</p>
+    </item>
+    <item>
+      <title><gui>Drapeaux du pré-processeur C</gui></title>
+      <p>Ces drapeaux sont transmis à chaque compilation faisant appel au pré-processeur C. Cette valeur est ignorée si ces drapeaux sont déjà définis pour la cible.</p>
+    </item>
+    <item>
+      <title><gui>Drapeaux du compilateur C++</gui></title>
+      <p>Les drapeaux à transmettre au compilateur C++ si une valeur individuelle n'est pas définie pour les cibles.</p>
+    </item>
+    <item>
+      <title><gui>Drapeaux du compilateur Fortran</gui></title>
+      <p>Les drapeaux à transmettre au compilateur Fortran 9x si une valeur individuelle n'est pas définie pour les cibles.</p>
+    </item>
+    <item>
+      <title><gui>Répertoires d'installation</gui></title>
+      <p>Ceci définit les répertoires d'installation. C'est nécessaire si vous souhaitez installer les fichiers dans des dossiers personnalisés.</p>
+    </item>
+    <item>
+      <title><gui>Drapeaux du compilateur Java</gui></title>
+      <p>Les drapeaux à transmettre au compilateur Java si une valeur individuelle n'est pas définie pour les cibles.</p>
+    </item>
+    <item>
+      <title><gui>Drapeaux du compilateur Lex/Flex</gui></title>
+      <p>Les drapeaux à transmettre au générateur de scanner Lex ou Flex si une valeur individuelle n'est pas définie pour les cibles.</p>
+    </item>
+    <item>
+      <title><gui>Drapeaux de l'éditeur de liens </gui></title>
+      <p>Les drapeaux à transmettre à l'éditeur de liens si une valeur individuelle n'est pas définie pour les cibles.</p>
+    </item>
+    <item>
+      <title><gui>Drapeaux du compilateur Objective C</gui></title>
+      <p>Les drapeaux à transmettre au compilateur Objective C si une valeur individuelle n'est pas définie pour les cibles.</p>
+    </item>
+    <item>
+      <title><gui>Drapeaux du compilateur Vala</gui></title>
+      <p>Les drapeaux à transmettre au compilateur Vala si une valeur individuelle n'est pas définie pour les cibles.</p>
+    </item>
+    <item>
+      <title><gui>Drapeaux du compilateur Yacc/Bison</gui></title>
+      <p>Les drapeaux à transmettre aux générateurs d'analyses Bison ou Yacc si une valeur individuelle n'est pas définie pour les cibles.</p>
+    </item>
+  </terms>
+
+</page>

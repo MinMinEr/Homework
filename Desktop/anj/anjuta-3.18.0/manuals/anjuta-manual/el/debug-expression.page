@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-expression" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Αξιολόγηση εκφράσεων και τροποποίηση μεταβλητών.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Εξέταση εκφράσεων</title>
+
+  <section>
+    <title>Επιθεώρηση έκφρασης και τροποποίηση μεταβλητής</title>
+
+	<p>Ενώ αποσφαλματώνετε ένα πρόγραμμα, μπορείτε να βρείτε την τιμή μιας έκφρασης ή μεταβλητής ενώ το πρόγραμμα παύεται. Είναι επίσης χρήσιμο μερικές φορές να αλλάζετε την τιμή μιας μεταβλητής.</p>
+
+    <steps>
+      <item>
+        <p>Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αποσφαλμάτωση</gui> <gui>Επιθεώρηση/Αξιολόγηση...</gui></guiseq> ή δεξί κλικ στο παράθυρο <gui>Επεξεργαστής</gui> και επιλογή <gui>Επιθεώρηση/Αξιολόγηση...</gui>.</p>
+      </item>
+      <item>
+        <p>Εάν η έκφραση είναι όνομα μεταβλητής, μπορείτε να αλλάξετε την τιμή της με κλικ στη στήλη <gui>Τιμή</gui> και εισαγωγή νέας τιμής.</p>
+      </item>
+    </steps>
+
+  </section>
+
+</page>

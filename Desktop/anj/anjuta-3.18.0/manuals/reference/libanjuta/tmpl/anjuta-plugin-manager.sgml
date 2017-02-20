@@ -1,0 +1,263 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaPluginManager
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO ANJUTA_PLUGIN_MANAGER_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### ENUM AnjutaPluginManagerError ##### -->
+<para>
+
+</para>
+
+@ANJUTA_PLUGIN_MANAGER_MISSING_FACTORY: 
+@ANJUTA_PLUGIN_MANAGER_ERROR_UNKNOWN: 
+
+<!-- ##### FUNCTION anjuta_plugin_manager_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_manager_new ##### -->
+<para>
+
+</para>
+
+@shell: 
+@status: 
+@plugin_search_paths: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_manager_is_active_plugin ##### -->
+<para>
+
+</para>
+
+@plugin_manager: 
+@iface_name: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_manager_get_plugin ##### -->
+<para>
+
+</para>
+
+@plugin_manager: 
+@iface_name: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_manager_get_plugin_by_handle ##### -->
+<para>
+
+</para>
+
+@plugin_manager: 
+@handle: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_manager_unload_plugin ##### -->
+<para>
+
+</para>
+
+@plugin_manager: 
+@plugin_object: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_manager_unload_plugin_by_handle ##### -->
+<para>
+
+</para>
+
+@plugin_manager: 
+@handle: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_manager_get_active_plugins ##### -->
+<para>
+
+</para>
+
+@plugin_manager: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_manager_get_active_plugin_objects ##### -->
+<para>
+
+</para>
+
+@plugin_manager: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_manager_get_plugins_page ##### -->
+<para>
+
+</para>
+
+@plugin_manager: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_manager_get_remembered_plugins_page ##### -->
+<para>
+
+</para>
+
+@plugin_manager: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_manager_query ##### -->
+<para>
+
+</para>
+
+@plugin_manager: 
+@section_names: 
+@attribute_names: 
+@attribute_values: 
+@...: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_manager_list_query ##### -->
+<para>
+
+</para>
+
+@plugin_manager: 
+@section_names: 
+@attribute_names: 
+@attribute_values: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_manager_select ##### -->
+<para>
+
+</para>
+
+@plugin_manager: 
+@title: 
+@description: 
+@plugin_handles: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_manager_select_and_activate ##### -->
+<para>
+
+</para>
+
+@plugin_manager: 
+@title: 
+@description: 
+@plugin_handles: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_manager_get_plugin_handle ##### -->
+<para>
+
+</para>
+
+@plugin_manager: 
+@plugin: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_manager_activate_plugins ##### -->
+<para>
+
+</para>
+
+@plugin_manager: 
+@plugin_handles: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_manager_unload_all_plugins ##### -->
+<para>
+
+</para>
+
+@plugin_manager: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_manager_get_remembered_plugins ##### -->
+<para>
+
+</para>
+
+@plugin_manager: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_manager_set_remembered_plugins ##### -->
+<para>
+
+</para>
+
+@plugin_manager: 
+@remembered_plugins: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_manager_set_disable_plugins ##### -->
+<para>
+
+</para>
+
+@plugin_manager: 
+@plugin_handles: 
+@disable: 
+
+
+<!-- ##### MACRO anjuta_plugin_manager_get_interface ##### -->
+<para>
+
+</para>
+
+@plugin_manager: 
+@iface_type: 
+@error: 
+
+
+<!-- ##### STRUCT AnjutaPluginManagerPriv ##### -->
+<para>
+
+</para>
+
+

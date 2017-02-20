@@ -1,0 +1,1524 @@
+<!-- ##### STRUCT AnjutaAsyncCommandClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+
+<!-- ##### STRUCT AnjutaAsyncNotifyClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+@finished: 
+
+<!-- ##### STRUCT AnjutaAutogenClass ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaCModule ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaCModuleClass ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaCPluginFactory ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaCPluginFactoryClass ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaCellRendererCaptionedImage ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG AnjutaCellRendererCaptionedImage:pixbuf ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG AnjutaCellRendererCaptionedImage:text ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaCellRendererCaptionedImageClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+
+<!-- ##### STRUCT AnjutaCellRendererDiffClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+
+<!-- ##### STRUCT AnjutaCloseButton ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaCloseButtonClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+@priv: 
+
+<!-- ##### STRUCT AnjutaColumnTextViewClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+
+<!-- ##### STRUCT AnjutaCommandBarClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+
+<!-- ##### STRUCT AnjutaCommandClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+@run: 
+@start: 
+@cancel: 
+@notify_data_arrived: 
+@notify_complete: 
+@notify_progress: 
+@set_error_message: 
+@get_error_message: 
+@start_automatic_monitor: 
+@stop_automatic_monitor: 
+@data_arrived: 
+@command_started: 
+@command_finished: 
+@progress: 
+
+<!-- ##### STRUCT AnjutaCommandQueueClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+@finished: 
+
+<!-- ##### STRUCT AnjutaCompletionClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+
+<!-- ##### STRUCT AnjutaDockClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+
+<!-- ##### STRUCT AnjutaDockPaneClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+@refresh: 
+@get_widget: 
+@single_selection_changed: 
+@multiple_selection_changed: 
+
+<!-- ##### STRUCT AnjutaDropEntryClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+
+<!-- ##### STRUCT AnjutaEncoding ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaEntryClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+
+<!-- ##### STRUCT AnjutaEnvironmentEditorClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+@changed: 
+
+<!-- ##### STRUCT AnjutaFileDropEntryClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+
+<!-- ##### STRUCT AnjutaFileListClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+
+<!-- ##### STRUCT AnjutaLanguageProviderClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+
+<!-- ##### STRUCT AnjutaLauncher ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL AnjutaLauncher::busy ##### -->
+<para>
+
+</para>
+
+@anjutalauncher: the object which received the signal.
+@arg1: 
+
+<!-- ##### SIGNAL AnjutaLauncher::child-exited ##### -->
+<para>
+
+</para>
+
+@anjutalauncher: the object which received the signal.
+@arg1: 
+@arg2: 
+@arg3: 
+
+<!-- ##### STRUCT AnjutaLauncherClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+@child_exited: 
+@busy: 
+
+<!-- ##### STRUCT AnjutaPkgConfigChooserClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+@package_activated: 
+@package_deactivated: 
+
+<!-- ##### STRUCT AnjutaPkgScannerClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+
+<!-- ##### STRUCT AnjutaPlugin ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL AnjutaPlugin::activated ##### -->
+<para>
+
+</para>
+
+@anjutaplugin: the object which received the signal.
+
+<!-- ##### SIGNAL AnjutaPlugin::deactivated ##### -->
+<para>
+
+</para>
+
+@anjutaplugin: the object which received the signal.
+
+<!-- ##### ARG AnjutaPlugin:shell ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaPluginClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+@activated: 
+@deactivated: 
+@activate: 
+@deactivate: 
+
+<!-- ##### STRUCT AnjutaPluginDescription ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaPluginHandleClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+
+<!-- ##### STRUCT AnjutaPluginManagerClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+@plugin_activated: 
+@plugin_deactivated: 
+
+<!-- ##### STRUCT AnjutaPreferences ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaPreferencesClass ##### -->
+<para>
+
+</para>
+
+@parent: 
+
+<!-- ##### STRUCT AnjutaPreferencesDialog ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaPreferencesDialogClass ##### -->
+<para>
+
+</para>
+
+@parent: 
+
+<!-- ##### STRUCT AnjutaProfileClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+@plugin_added: 
+@plugin_removed: 
+@changed: 
+@descoped: 
+@scoped: 
+
+<!-- ##### STRUCT AnjutaProfileManagerClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+@profile_pushed: 
+@profile_popped: 
+
+<!-- ##### STRUCT AnjutaProjectNodeClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+@updated: 
+@loaded: 
+
+<!-- ##### STRUCT AnjutaProjectNodeInfo ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaProjectProperty ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaProjectPropertyInfo ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaSavePrompt ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaSavePromptClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+
+<!-- ##### STRUCT AnjutaSerializer ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG AnjutaSerializer:filepath ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG AnjutaSerializer:mode ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaSerializerClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+
+<!-- ##### STRUCT AnjutaSession ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaSessionClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+
+<!-- ##### STRUCT AnjutaShellIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@value_added: 
+@value_removed: 
+@save_session: 
+@load_session: 
+@save_prompt: 
+@get_status: 
+@get_ui: 
+@get_preferences: 
+@get_plugin_manager: 
+@get_profile_manager: 
+@add_widget_full: 
+@add_widget_custom: 
+@remove_widget: 
+@present_widget: 
+@iconify_dockable_widget: 
+@hide_dockable_widget: 
+@show_dockable_widget: 
+@maximize_widget: 
+@unmaximize: 
+@add_value: 
+@get_value: 
+@remove_value: 
+@saving_push: 
+@saving_pop: 
+@get_object: 
+@create_window: 
+
+<!-- ##### STRUCT AnjutaStatus ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL AnjutaStatus::busy ##### -->
+<para>
+
+</para>
+
+@anjutastatus: the object which received the signal.
+@arg1: 
+
+<!-- ##### STRUCT AnjutaStatusClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+@busy: 
+
+<!-- ##### STRUCT AnjutaSyncCommandClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+
+<!-- ##### STRUCT AnjutaTabberClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+
+<!-- ##### STRUCT AnjutaToken ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaTokenFile ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaTokenFileClass ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaTreeComboBox ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL AnjutaTreeComboBox::changed ##### -->
+<para>
+
+</para>
+
+@anjutatreecombobox: the object which received the signal.
+
+<!-- ##### SIGNAL AnjutaTreeComboBox::popdown ##### -->
+<para>
+
+</para>
+
+@anjutatreecombobox: the object which received the signal.
+
+<!-- ##### SIGNAL AnjutaTreeComboBox::popup ##### -->
+<para>
+
+</para>
+
+@anjutatreecombobox: the object which received the signal.
+
+<!-- ##### ARG AnjutaTreeComboBox:model ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaTreeComboBoxClass ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaUI ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT AnjutaUIClass ##### -->
+<para>
+
+</para>
+
+@parent: 
+
+<!-- ##### MACRO DO_PRAGMA ##### -->
+<para>
+
+</para>
+
+@x: 
+
+<!-- ##### STRUCT ESplash ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT ESplashClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+
+<!-- ##### MACRO FORCE_WARNINGS ##### -->
+<para>
+
+</para>
+
+@warnings: 
+
+<!-- ##### STRUCT IAnjutaBuildableIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@build: 
+@clean: 
+@configure: 
+@execute: 
+@generate: 
+@get_command: 
+@install: 
+@reset_commands: 
+@set_command: 
+
+<!-- ##### STRUCT IAnjutaBuilderIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@build: 
+@cancel: 
+@get_uri_configuration: 
+@is_built: 
+@list_configuration: 
+
+<!-- ##### STRUCT IAnjutaDebugManagerIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@breakpoint_changed: 
+@debugger_started: 
+@debugger_stopped: 
+@frame_changed: 
+@location_changed: 
+@program_exited: 
+@program_loaded: 
+@program_moved: 
+@program_running: 
+@program_started: 
+@program_stopped: 
+@program_unloaded: 
+@sharedlib_event: 
+@signal_received: 
+@quit: 
+@start: 
+@start_remote: 
+
+<!-- ##### STRUCT IAnjutaDebuggerBreakpointIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@clear_breakpoint: 
+@condition_breakpoint: 
+@enable_breakpoint: 
+@ignore_breakpoint: 
+@implement_breakpoint: 
+@list_breakpoint: 
+@set_breakpoint_at_address: 
+@set_breakpoint_at_function: 
+@set_breakpoint_at_line: 
+
+<!-- ##### STRUCT IAnjutaDebuggerIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@debugger_ready: 
+@debugger_started: 
+@debugger_stopped: 
+@frame_changed: 
+@program_exited: 
+@program_loaded: 
+@program_moved: 
+@program_running: 
+@program_stopped: 
+@sharedlib_event: 
+@signal_received: 
+@abort: 
+@attach: 
+@callback: 
+@connect: 
+@disable_log: 
+@dump_stack_trace: 
+@enable_log: 
+@evaluate: 
+@exit: 
+@get_state: 
+@handle_signal: 
+@info_args: 
+@info_frame: 
+@info_program: 
+@info_sharedlib: 
+@info_signal: 
+@info_target: 
+@info_thread: 
+@info_udot: 
+@info_variables: 
+@inspect: 
+@interrupt: 
+@list_argument: 
+@list_frame: 
+@list_local: 
+@list_thread: 
+@load: 
+@print: 
+@quit: 
+@run: 
+@run_from: 
+@run_to: 
+@send_command: 
+@set_environment: 
+@set_frame: 
+@set_thread: 
+@set_working_directory: 
+@start: 
+@step_in: 
+@step_out: 
+@step_over: 
+@unload: 
+
+<!-- ##### STRUCT IAnjutaDebuggerInstructionIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@disassemble: 
+@run_from_address: 
+@run_to_address: 
+@step_in_instruction: 
+@step_over_instruction: 
+
+<!-- ##### STRUCT IAnjutaDebuggerMemoryIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@inspect: 
+
+<!-- ##### STRUCT IAnjutaDebuggerRegisterIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@list_register: 
+@update_register: 
+@write_register: 
+
+<!-- ##### STRUCT IAnjutaDebuggerVariableIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@assign: 
+@create: 
+@destroy: 
+@evaluate: 
+@list_children: 
+@update: 
+
+<!-- ##### STRUCT IAnjutaDocumentIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@update_ui: 
+@begin_undo_action: 
+@can_redo: 
+@can_undo: 
+@clear: 
+@copy: 
+@cut: 
+@end_undo_action: 
+@get_filename: 
+@grab_focus: 
+@paste: 
+@redo: 
+@undo: 
+
+<!-- ##### ENUM IAnjutaDocumentManagerError ##### -->
+<para>
+
+</para>
+
+@IANJUTA_DOCUMENT_MANAGER_DOESNT_EXIST: 
+
+<!-- ##### STRUCT IAnjutaDocumentManagerIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@document_added: 
+@document_removed: 
+@add_bookmark: 
+@add_buffer: 
+@add_document: 
+@find_document_with_file: 
+@get_current_document: 
+@get_doc_widgets: 
+@get_file: 
+@goto_file_line: 
+@goto_file_line_mark: 
+@remove_document: 
+@set_current_document: 
+
+<!-- ##### STRUCT IAnjutaEditorAssistIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@cancelled: 
+@add: 
+@invoke: 
+@proposals: 
+@remove: 
+
+<!-- ##### STRUCT IAnjutaEditorCellIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@get_attribute: 
+@get_char: 
+@get_character: 
+@get_length: 
+
+<!-- ##### STRUCT IAnjutaEditorCellStyleIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@get_background_color: 
+@get_color: 
+@get_font_description: 
+
+<!-- ##### STRUCT IAnjutaEditorCommentIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@block: 
+@box: 
+@stream: 
+
+<!-- ##### STRUCT IAnjutaEditorConvertIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@to_lower: 
+@to_upper: 
+
+<!-- ##### ENUM IAnjutaEditorError ##### -->
+<para>
+
+</para>
+
+@IANJUTA_EDITOR_DOESNT_EXIST: 
+
+<!-- ##### STRUCT IAnjutaEditorFactoryIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@new_editor: 
+
+<!-- ##### STRUCT IAnjutaEditorFoldsIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@close_all: 
+@open_all: 
+@toggle_current: 
+
+<!-- ##### STRUCT IAnjutaEditorGladeSignalIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@drop: 
+@drop_possible: 
+
+<!-- ##### STRUCT IAnjutaEditorGotoIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@end_block: 
+@matching_brace: 
+@start_block: 
+
+<!-- ##### STRUCT IAnjutaEditorHoverIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@hover_leave: 
+@hover_over: 
+@display: 
+
+<!-- ##### STRUCT IAnjutaEditorIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@backspace: 
+@changed: 
+@char_added: 
+@code_changed: 
+@cursor_moved: 
+@glade_callback_add: 
+@glade_member_add: 
+@line_marks_gutter_clicked: 
+@append: 
+@erase: 
+@erase_all: 
+@get_column: 
+@get_current_word: 
+@get_end_position: 
+@get_indentsize: 
+@get_length: 
+@get_line_begin_position: 
+@get_line_end_position: 
+@get_line_from_position: 
+@get_lineno: 
+@get_offset: 
+@get_overwrite: 
+@get_position: 
+@get_position_from_offset: 
+@get_start_position: 
+@get_tabsize: 
+@get_text: 
+@get_text_all: 
+@get_use_spaces: 
+@goto_end: 
+@goto_line: 
+@goto_position: 
+@goto_start: 
+@insert: 
+@set_auto_indent: 
+@set_indentsize: 
+@set_popup_menu: 
+@set_tabsize: 
+@set_use_spaces: 
+
+<!-- ##### STRUCT IAnjutaEditorLanguageIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@language_changed: 
+@get_language: 
+@get_language_name: 
+@get_supported_languages: 
+@set_language: 
+
+<!-- ##### STRUCT IAnjutaEditorLineModeIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@convert: 
+@fix: 
+@get: 
+@set: 
+
+<!-- ##### STRUCT IAnjutaEditorSearchIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@backward: 
+@forward: 
+
+<!-- ##### STRUCT IAnjutaEditorSelectionIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@get: 
+@get_end: 
+@get_start: 
+@has_selection: 
+@replace: 
+@select_all: 
+@select_block: 
+@select_function: 
+@set: 
+
+<!-- ##### STRUCT IAnjutaEditorTipIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@cancel: 
+@show: 
+@visible: 
+
+<!-- ##### STRUCT IAnjutaEditorViewIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@create: 
+@get_count: 
+@remove_current: 
+
+<!-- ##### STRUCT IAnjutaEditorZoomIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@in: 
+@out: 
+
+<!-- ##### STRUCT IAnjutaEnvironmentIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@get_real_directory: 
+@override: 
+
+<!-- ##### STRUCT IAnjutaFileIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@opened: 
+@get_file: 
+@open: 
+
+<!-- ##### STRUCT IAnjutaFileLoaderIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@load: 
+@peek_interface: 
+
+<!-- ##### STRUCT IAnjutaFileManagerIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@section_changed: 
+@get_selected: 
+@set_root: 
+@set_selected: 
+
+<!-- ##### STRUCT IAnjutaFileSavableIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@saved: 
+@update_save_ui: 
+@is_conflict: 
+@is_dirty: 
+@is_read_only: 
+@save: 
+@save_as: 
+@set_dirty: 
+
+<!-- ##### STRUCT IAnjutaGladeIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@add_association: 
+
+<!-- ##### STRUCT IAnjutaHelpIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@search: 
+
+<!-- ##### STRUCT IAnjutaIndenterIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@indent: 
+
+<!-- ##### STRUCT IAnjutaIndicableIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@clear: 
+@set: 
+
+<!-- ##### STRUCT IAnjutaIterableIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@assign: 
+@clone: 
+@compare: 
+@diff: 
+@first: 
+@foreach: 
+@get_length: 
+@get_position: 
+@last: 
+@next: 
+@previous: 
+@set_position: 
+
+<!-- ##### STRUCT IAnjutaIterableTreeIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@children: 
+@foreach_post: 
+@foreach_pre: 
+@has_children: 
+@parent: 
+
+<!-- ##### STRUCT IAnjutaLanguageIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@get_from_editor: 
+@get_from_mime_type: 
+@get_from_string: 
+@get_languages: 
+@get_make_target: 
+@get_mime_types: 
+@get_name: 
+@get_name_from_editor: 
+@get_strings: 
+
+<!-- ##### STRUCT IAnjutaLanguageProviderIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@get_calltip_cache: 
+@get_calltip_context: 
+@new_calltip: 
+@populate_completions: 
+
+<!-- ##### STRUCT IAnjutaLoaderIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@find_plugins: 
+
+<!-- ##### ENUM IAnjutaMarkableError ##### -->
+<para>
+
+</para>
+
+@IANJUTA_MARKABLE_INVALID_LOCATION: 
+
+<!-- ##### STRUCT IAnjutaMarkableIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@marker_clicked: 
+@delete_all_markers: 
+@is_marker_set: 
+@location_from_handle: 
+@mark: 
+@unmark: 
+
+<!-- ##### ENUM IAnjutaMessageManagerError ##### -->
+<para>
+
+</para>
+
+@IANJUTA_MESSAGE_MANAGER_DOESNT_EXIST: 
+
+<!-- ##### STRUCT IAnjutaMessageManagerIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@add_view: 
+@get_all_views: 
+@get_current_view: 
+@get_view_by_name: 
+@remove_view: 
+@set_current_view: 
+@set_view_icon: 
+@set_view_icon_from_stock: 
+@set_view_title: 
+
+<!-- ##### STRUCT IAnjutaMessageViewIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@buffer_flushed: 
+@message_clicked: 
+@append: 
+@buffer_append: 
+@clear: 
+@get_all_messages: 
+@get_current_message: 
+@select_next: 
+@select_previous: 
+
+<!-- ##### STRUCT IAnjutaPluginFactoryIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@new_plugin: 
+
+<!-- ##### STRUCT IAnjutaPreferencesIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@merge: 
+@unmerge: 
+
+<!-- ##### STRUCT IAnjutaPrintIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@print: 
+@print_preview: 
+
+<!-- ##### STRUCT IAnjutaProjectBackendIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@new_project: 
+@probe: 
+
+<!-- ##### STRUCT IAnjutaProjectChooserIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@changed: 
+@get_selected: 
+@set_project_model: 
+
+<!-- ##### ENUM IAnjutaProjectError ##### -->
+<para>
+
+</para>
+
+@IANJUTA_PROJECT_ERROR_SUCCESS: 
+@IANJUTA_PROJECT_ERROR_DOESNT_EXIST: 
+@IANJUTA_PROJECT_ERROR_ALREADY_EXISTS: 
+@IANJUTA_PROJECT_ERROR_VALIDATION_FAILED: 
+@IANJUTA_PROJECT_ERROR_PROJECT_MALFORMED: 
+@IANJUTA_PROJECT_ERROR_WRONG_PARENT: 
+@IANJUTA_PROJECT_ERROR_NOT_SUPPORTED: 
+@IANJUTA_PROJECT_ERROR_GENERAL_FAILURE: 
+
+<!-- ##### STRUCT IAnjutaProjectIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@file_changed: 
+@node_changed: 
+@node_loaded: 
+@node_saved: 
+@add_node_after: 
+@add_node_before: 
+@get_node_info: 
+@get_root: 
+@is_loaded: 
+@load_node: 
+@remove_node: 
+@remove_property: 
+@save_node: 
+@set_property: 
+
+<!-- ##### STRUCT IAnjutaProjectManagerIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@element_added: 
+@element_removed: 
+@element_selected: 
+@project_loaded: 
+@add_group: 
+@add_source: 
+@add_source_quiet: 
+@add_sources: 
+@add_target: 
+@get_capabilities: 
+@get_children: 
+@get_current_project: 
+@get_elements: 
+@get_packages: 
+@get_parent: 
+@get_selected: 
+@get_target_type: 
+@get_targets: 
+@is_open: 
+@remove_file: 
+
+<!-- ##### ENUM IAnjutaProjectProbe ##### -->
+<para>
+
+</para>
+
+@IANJUTA_PROJECT_PROBE_FILES: 
+@IANJUTA_PROJECT_PROBE_MAKE_FILES: 
+@IANJUTA_PROJECT_PROBE_PROJECT_FILES: 
+
+<!-- ##### STRUCT IAnjutaProviderIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@activate: 
+@get_name: 
+@get_start_iter: 
+@populate: 
+
+<!-- ##### STRUCT IAnjutaSnippetsManagerIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@insert: 
+
+<!-- ##### STRUCT IAnjutaStreamIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@open: 
+
+<!-- ##### STRUCT IAnjutaStreamLoaderIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@load: 
+@peek_interface: 
+
+<!-- ##### STRUCT IAnjutaStreamSavableIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@save: 
+
+<!-- ##### STRUCT IAnjutaSymbolIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@get_boolean: 
+@get_file: 
+@get_icon: 
+@get_int: 
+@get_string: 
+@get_sym_type: 
+
+<!-- ##### STRUCT IAnjutaSymbolManagerIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@prj_scan_end: 
+@sys_scan_end: 
+@activate_package: 
+@add_package: 
+@create_query: 
+@deactivate_all: 
+@deactivate_package: 
+
+<!-- ##### STRUCT IAnjutaSymbolQueryIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@async_result: 
+@cancel: 
+@search: 
+@search_all: 
+@search_class_parents: 
+@search_file: 
+@search_id: 
+@search_in_scope: 
+@search_members: 
+@search_parent_scope: 
+@search_parent_scope_file: 
+@search_scope: 
+@set_fields: 
+@set_file_scope: 
+@set_filters: 
+@set_group_by: 
+@set_limit: 
+@set_mode: 
+@set_offset: 
+@set_order_by: 
+
+<!-- ##### STRUCT IAnjutaTerminalIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@child_exited: 
+@execute_command: 
+
+<!-- ##### STRUCT IAnjutaTodoIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@load: 
+
+<!-- ##### STRUCT IAnjutaVcsIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@status_changed: 
+@add: 
+@checkout: 
+@diff: 
+@query_status: 
+@remove: 
+
+<!-- ##### STRUCT IAnjutaWizardIface ##### -->
+<para>
+
+</para>
+
+@g_iface: 
+@activate: 
+
+<!-- ##### MACRO POP_WARNINGS ##### -->
+<para>
+
+</para>
+
+

@@ -1,0 +1,1655 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: IAnjutaEditor</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="plugin-interfaces.html" title="Plugin interfaces">
+<link rel="prev" href="IAnjutaDocumentManager.html" title="IAnjutaDocumentManager">
+<link rel="next" href="IAnjutaEditorAssist.html" title="IAnjutaEditorAssist">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#IAnjutaEditor.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#IAnjutaEditor.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#IAnjutaEditor.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="plugin-interfaces.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="IAnjutaDocumentManager.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="IAnjutaEditorAssist.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="IAnjutaEditor"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="IAnjutaEditor.top_of_page"></a>IAnjutaEditor</span></h2>
+<p>IAnjutaEditor — Text editor interface</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="IAnjutaEditor.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Unstable"><span class="acronym">Unstable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="IAnjutaEditor.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-error-quark" title="ianjuta_editor_error_quark ()">ianjuta_editor_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-append" title="ianjuta_editor_append ()">ianjuta_editor_append</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-erase" title="ianjuta_editor_erase ()">ianjuta_editor_erase</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-erase-all" title="ianjuta_editor_erase_all ()">ianjuta_editor_erase_all</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-get-column" title="ianjuta_editor_get_column ()">ianjuta_editor_get_column</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-get-current-word" title="ianjuta_editor_get_current_word ()">ianjuta_editor_get_current_word</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="returnvalue">IAnjutaIterable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-get-end-position" title="ianjuta_editor_get_end_position ()">ianjuta_editor_get_end_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-get-indentsize" title="ianjuta_editor_get_indentsize ()">ianjuta_editor_get_indentsize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-get-length" title="ianjuta_editor_get_length ()">ianjuta_editor_get_length</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="returnvalue">IAnjutaIterable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-get-line-begin-position" title="ianjuta_editor_get_line_begin_position ()">ianjuta_editor_get_line_begin_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="returnvalue">IAnjutaIterable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-get-line-end-position" title="ianjuta_editor_get_line_end_position ()">ianjuta_editor_get_line_end_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-get-line-from-position" title="ianjuta_editor_get_line_from_position ()">ianjuta_editor_get_line_from_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-get-lineno" title="ianjuta_editor_get_lineno ()">ianjuta_editor_get_lineno</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-get-offset" title="ianjuta_editor_get_offset ()">ianjuta_editor_get_offset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-get-overwrite" title="ianjuta_editor_get_overwrite ()">ianjuta_editor_get_overwrite</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="returnvalue">IAnjutaIterable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-get-position" title="ianjuta_editor_get_position ()">ianjuta_editor_get_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="returnvalue">IAnjutaIterable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-get-position-from-offset" title="ianjuta_editor_get_position_from_offset ()">ianjuta_editor_get_position_from_offset</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="returnvalue">IAnjutaIterable</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-get-start-position" title="ianjuta_editor_get_start_position ()">ianjuta_editor_get_start_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-get-tabsize" title="ianjuta_editor_get_tabsize ()">ianjuta_editor_get_tabsize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-get-text" title="ianjuta_editor_get_text ()">ianjuta_editor_get_text</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-get-text-all" title="ianjuta_editor_get_text_all ()">ianjuta_editor_get_text_all</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-get-use-spaces" title="ianjuta_editor_get_use_spaces ()">ianjuta_editor_get_use_spaces</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-goto-end" title="ianjuta_editor_goto_end ()">ianjuta_editor_goto_end</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-goto-line" title="ianjuta_editor_goto_line ()">ianjuta_editor_goto_line</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-goto-position" title="ianjuta_editor_goto_position ()">ianjuta_editor_goto_position</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-goto-start" title="ianjuta_editor_goto_start ()">ianjuta_editor_goto_start</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-insert" title="ianjuta_editor_insert ()">ianjuta_editor_insert</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-set-auto-indent" title="ianjuta_editor_set_auto_indent ()">ianjuta_editor_set_auto_indent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-set-indentsize" title="ianjuta_editor_set_indentsize ()">ianjuta_editor_set_indentsize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-set-popup-menu" title="ianjuta_editor_set_popup_menu ()">ianjuta_editor_set_popup_menu</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-set-tabsize" title="ianjuta_editor_set_tabsize ()">ianjuta_editor_set_tabsize</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaEditor.html#ianjuta-editor-set-use-spaces" title="ianjuta_editor_set_use_spaces ()">ianjuta_editor_set_use_spaces</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaEditor.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="IAnjutaEditor.html#IAnjutaEditor-backspace" title="The “backspace” signal">backspace</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="IAnjutaEditor.html#IAnjutaEditor-changed" title="The “changed” signal">changed</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="IAnjutaEditor.html#IAnjutaEditor-char-added" title="The “char-added” signal">char-added</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="IAnjutaEditor.html#IAnjutaEditor-code-changed" title="The “code-changed” signal">code-changed</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="IAnjutaEditor.html#IAnjutaEditor-cursor-moved" title="The “cursor-moved” signal">cursor-moved</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="IAnjutaEditor.html#IAnjutaEditor-glade-callback-add" title="The “glade-callback-add” signal">glade-callback-add</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="IAnjutaEditor.html#IAnjutaEditor-glade-member-add" title="The “glade-member-add” signal">glade-member-add</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="IAnjutaEditor.html#IAnjutaEditor-line-marks-gutter-clicked" title="The “line-marks-gutter-clicked” signal">line-marks-gutter-clicked</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaEditor.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="IAnjutaEditor.html#IANJUTA-EDITOR-PREF-SCHEMA:CAPS" title="IANJUTA_EDITOR_PREF_SCHEMA">IANJUTA_EDITOR_PREF_SCHEMA</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="IAnjutaEditor.html#IANJUTA-EDITOR-USE-TABS-KEY:CAPS" title="IANJUTA_EDITOR_USE_TABS_KEY">IANJUTA_EDITOR_USE_TABS_KEY</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="IAnjutaEditor.html#IANJUTA-EDITOR-TAB-WIDTH-KEY:CAPS" title="IANJUTA_EDITOR_TAB_WIDTH_KEY">IANJUTA_EDITOR_TAB_WIDTH_KEY</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="IAnjutaEditor.html#IANJUTA-EDITOR-INDENT-WIDTH-KEY:CAPS" title="IANJUTA_EDITOR_INDENT_WIDTH_KEY">IANJUTA_EDITOR_INDENT_WIDTH_KEY</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="IAnjutaEditor.html#IAnjutaEditorAttribute" title="enum IAnjutaEditorAttribute">IAnjutaEditorAttribute</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaEditor.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">├──</span> IAnjutaEditorAttribute
+    <span class="lineart">╰──</span> IAnjutaEditorError
+    <a href="https://developer.gnome.org/gobject/unstable/GTypeModule.html">GInterface</a>
+    <span class="lineart">╰──</span> IAnjutaEditor
+</pre>
+</div>
+<div class="refsect1">
+<a name="IAnjutaEditor.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libanjuta/interfaces/ianjuta-editor.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="IAnjutaEditor.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="IAnjutaEditor.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="ianjuta-editor-error-quark"></a><h3>ianjuta_editor_error_quark ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+ianjuta_editor_error_quark (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.2.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-append"></a><h3>ianjuta_editor_append ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_editor_append (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> length</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Appends <em class="parameter"><code>length</code></em>
+ characters from <em class="parameter"><code>text</code></em>
+ buffer at the end of editor
+buffer. If <em class="parameter"><code>length</code></em>
+ is -1, the whole <em class="parameter"><code>text</code></em>
+ is used. <em class="parameter"><code>length</code></em>
+ is in bytes.</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text</p></td>
+<td class="parameter_description"><p>Text to append.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>length</p></td>
+<td class="parameter_description"><p>Length of <em class="parameter"><code>text</code></em>
+to use.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-erase"></a><h3>ianjuta_editor_erase ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_editor_erase (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                      <em class="parameter"><code><a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="type">IAnjutaIterable</span></a> *position_start</code></em>,
+                      <em class="parameter"><code><a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="type">IAnjutaIterable</span></a> *position_end</code></em>,
+                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-erase-all"></a><h3>ianjuta_editor_erase_all ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_editor_erase_all (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Empties the whole editor buffer. There will be zero characters.
+After the erase operation, none of the active iters are guranteed
+to be valid.</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-get-column"></a><h3>ianjuta_editor_get_column ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+ianjuta_editor_get_column (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.6.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-get-current-word"></a><h3>ianjuta_editor_get_current_word ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+ianjuta_editor_get_current_word (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Obtains the word on which carat is currently on.</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.13.10.7.6"></a><h4>Returns</h4>
+<p> Current word.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-get-end-position"></a><h3>ianjuta_editor_get_end_position ()</h3>
+<pre class="programlisting"><a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="returnvalue">IAnjutaIterable</span></a> *
+ianjuta_editor_get_end_position (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Gets the iter positioned at the end of the editor buffer. The
+returned iter is the end-iter which does not point to any valid
+character in the buffer (it is pointed one step beyond the last
+valid character).</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.13.10.8.6"></a><h4>Returns</h4>
+<p> Cell iter set to the end of the editor (end-iter). </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-get-indentsize"></a><h3>ianjuta_editor_get_indentsize ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+ianjuta_editor_get_indentsize (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Returns the indentation size in spaces currently used by the
+editor.</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.13.10.9.6"></a><h4>Returns</h4>
+<p> indentation size in number of spaces</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-get-length"></a><h3>ianjuta_editor_get_length ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+ianjuta_editor_get_length (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Get length of complete text in editor. This will be the total
+number of bytes in the file or buffer.</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.13.10.10.6"></a><h4>Returns</h4>
+<p> Text length.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-get-line-begin-position"></a><h3>ianjuta_editor_get_line_begin_position ()</h3>
+<pre class="programlisting"><a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="returnvalue">IAnjutaIterable</span></a> *
+ianjuta_editor_get_line_begin_position
+                               (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> line</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>fixme</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>line</p></td>
+<td class="parameter_description"><p>fixme</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.13.10.11.6"></a><h4>Returns</h4>
+<p> fixme. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-get-line-end-position"></a><h3>ianjuta_editor_get_line_end_position ()</h3>
+<pre class="programlisting"><a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="returnvalue">IAnjutaIterable</span></a> *
+ianjuta_editor_get_line_end_position (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> line</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>fixme</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.12.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>line</p></td>
+<td class="parameter_description"><p>fixme</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.13.10.12.6"></a><h4>Returns</h4>
+<p> fixme. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-get-line-from-position"></a><h3>ianjuta_editor_get_line_from_position ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+ianjuta_editor_get_line_from_position (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                                       <em class="parameter"><code><a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="type">IAnjutaIterable</span></a> *position</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.13.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-get-lineno"></a><h3>ianjuta_editor_get_lineno ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+ianjuta_editor_get_lineno (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Obtains current line number on which carat is.</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.13.10.14.6"></a><h4>Returns</h4>
+<p> Line number.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-get-offset"></a><h3>ianjuta_editor_get_offset ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+ianjuta_editor_get_offset (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.15.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-get-overwrite"></a><h3>ianjuta_editor_get_overwrite ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ianjuta_editor_get_overwrite (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Obtains editor overwirte mode: TRUE = Override, FALSE = Insert.</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.16.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.13.10.16.6"></a><h4>Returns</h4>
+<p> editor mode.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-get-position"></a><h3>ianjuta_editor_get_position ()</h3>
+<pre class="programlisting"><a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="returnvalue">IAnjutaIterable</span></a> *
+ianjuta_editor_get_position (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Get current caret position.</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.17.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.13.10.17.6"></a><h4>Returns</h4>
+<p> Iterator that points to the current position. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-get-position-from-offset"></a><h3>ianjuta_editor_get_position_from_offset ()</h3>
+<pre class="programlisting"><a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="returnvalue">IAnjutaIterable</span></a> *
+ianjuta_editor_get_position_from_offset
+                               (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> offset</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Creates and returns an iter for editor cells. The iter is
+placed at the unicode character position where the given offset
+<em class="parameter"><code>offset</code></em>
+ happens to fall. The returned iter is cell (character)
+iter and not byte iter, so all iter operations
+on it are character (not byte) iteration, including all position
+and index references in the iter.</p>
+<p>The iter must be unreferrenced by the caller when done.
+The iter navigates (next/previous) in step of unicode
+characters (one unicode character == one cell).</p>
+<p>Retrun value: a newly created iter of IAnjutaEditorCell placed at the
+given <em class="parameter"><code>offset</code></em>
+ position.</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.18.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>offset</p></td>
+<td class="parameter_description"><p>Character offset position where the iter will be set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.13.10.18.8"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-get-start-position"></a><h3>ianjuta_editor_get_start_position ()</h3>
+<pre class="programlisting"><a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="returnvalue">IAnjutaIterable</span></a> *
+ianjuta_editor_get_start_position (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Gets the iter positioned at the start of the editor buffer.</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.19.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.13.10.19.6"></a><h4>Returns</h4>
+<p> Cell iter set to the begining of the editor. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-get-tabsize"></a><h3>ianjuta_editor_get_tabsize ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+ianjuta_editor_get_tabsize (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Returns the tabsize (in spaces) currently used by the editor.</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.20.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.13.10.20.6"></a><h4>Returns</h4>
+<p> tabsize in number of spaces</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-get-text"></a><h3>ianjuta_editor_get_text ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+ianjuta_editor_get_text (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                         <em class="parameter"><code><a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="type">IAnjutaIterable</span></a> *begin</code></em>,
+                         <em class="parameter"><code><a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="type">IAnjutaIterable</span></a> *end</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Gets text characters beginning from <em class="parameter"><code>begin</code></em>
+ (including char
+pointed by <em class="parameter"><code>begin</code></em>
+) and ending with <em class="parameter"><code>end</code></em>
+ (excluding character
+pointed by <em class="parameter"><code>end</code></em>
+). The characters returned are utf-8 encoded.
+The iterators <em class="parameter"><code>begin</code></em>
+ and <em class="parameter"><code>end</code></em>
+ could be in either order. The returned
+text, however, is in right order. If both <em class="parameter"><code>begin</code></em>
+ and <em class="parameter"><code>end</code></em>
+ points
+to the same position, NULL is returned.</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.21.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>begin</p></td>
+<td class="parameter_description"><p>Begining iterator</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>end</p></td>
+<td class="parameter_description"><p>End iterator</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.13.10.21.6"></a><h4>Returns</h4>
+<p> A buffer of utf-8 characters.
+The returned buffer must be freed when no longer required.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-get-text-all"></a><h3>ianjuta_editor_get_text_all ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+ianjuta_editor_get_text_all (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Gets all text characters in the editor.
+The characters returned are utf-8 encoded.</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.22.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.13.10.22.6"></a><h4>Returns</h4>
+<p> A buffer of utf-8 characters containing all text from editor.
+The returned buffer must be freed when no longer required.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-get-use-spaces"></a><h3>ianjuta_editor_get_use_spaces ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ianjuta_editor_get_use_spaces (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Returns if the editor uses spaces for filling up tab characters.</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.23.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.13.10.23.6"></a><h4>Returns</h4>
+<p> TRUE if yes, FALSE if no.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-goto-end"></a><h3>ianjuta_editor_goto_end ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_editor_goto_end (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Carat is moved to the end of editor and text view is scrolled to
+bring it in viewable area of the editor.</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.24.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-goto-line"></a><h3>ianjuta_editor_goto_line ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_editor_goto_line (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> lineno</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Carat is moved to the given <em class="parameter"><code>lineno</code></em>
+ line and text view is scrolled to
+bring it in viewable area of the editor.</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.25.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>lineno</p></td>
+<td class="parameter_description"><p>line number where carat will be moved.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-goto-position"></a><h3>ianjuta_editor_goto_position ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_editor_goto_position (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                              <em class="parameter"><code><a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="type">IAnjutaIterable</span></a> *position</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Carat is moved to the given <em class="parameter"><code>position</code></em>
+ and text view is scrolled to
+bring <em class="parameter"><code>position</code></em>
+ in viewable area of the editor.</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.26.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>position</p></td>
+<td class="parameter_description"><p>Character position where carat will be moved.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-goto-start"></a><h3>ianjuta_editor_goto_start ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_editor_goto_start (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Carat is moved to the begining of editor and text view is scrolled to
+bring it in viewable area of the editor.</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.27.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-insert"></a><h3>ianjuta_editor_insert ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_editor_insert (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                       <em class="parameter"><code><a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="type">IAnjutaIterable</span></a> *position</code></em>,
+                       <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *text</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> length</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Inserts <em class="parameter"><code>length</code></em>
+ characters from <em class="parameter"><code>text</code></em>
+ buffer at given <em class="parameter"><code>position</code></em>
+ of
+editor buffer. If <em class="parameter"><code>length</code></em>
+ is -1, the whole <em class="parameter"><code>text</code></em>
+ is used.</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.28.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>position</p></td>
+<td class="parameter_description"><p>Character position in editor where insert will take place.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>text</p></td>
+<td class="parameter_description"><p>Text to append.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>length</p></td>
+<td class="parameter_description"><p>Length of <em class="parameter"><code>text</code></em>
+to use.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-set-auto-indent"></a><h3>ianjuta_editor_set_auto_indent ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_editor_set_auto_indent (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> auto_indent</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Sets whether the editor should auto-indent itself. A plugin that does
+custom auto-indent can set this to false and override the preferences
+setting</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.29.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>auto_indent</p></td>
+<td class="parameter_description"><p>TRUE to enable auto-indent, FALSE to disable</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-set-indentsize"></a><h3>ianjuta_editor_set_indentsize ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_editor_set_indentsize (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> indentsize</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Sets the indentation size of the editor.</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.30.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>indentsize</p></td>
+<td class="parameter_description"><p>Indentation size in spaces</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-set-popup-menu"></a><h3>ianjuta_editor_set_popup_menu ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_editor_set_popup_menu (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                               <em class="parameter"><code><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="type">GtkWidget</span></a> *menu</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Set Editor popup menu. This is the menu shown in the editor when one
+right-clicks on it.</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.31.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>menu</p></td>
+<td class="parameter_description"><p>Popupmenu</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-set-tabsize"></a><h3>ianjuta_editor_set_tabsize ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_editor_set_tabsize (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> tabsize</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Sets the tabsize of the editor.</p>
+<div class="refsect3">
+<a name="id-1.8.13.10.32.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>tabsize</p></td>
+<td class="parameter_description"><p>Tabsize in spaces</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-editor-set-use-spaces"></a><h3>ianjuta_editor_set_use_spaces ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_editor_set_use_spaces (<em class="parameter"><code><a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> use_spaces</code></em>,
+                               <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaEditor.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="IANJUTA-EDITOR-PREF-SCHEMA:CAPS"></a><h3>IANJUTA_EDITOR_PREF_SCHEMA</h3>
+<pre class="programlisting">#define IANJUTA_EDITOR_PREF_SCHEMA "editor"
+</pre>
+<p>Schema id used to store common editor settings.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IANJUTA-EDITOR-USE-TABS-KEY:CAPS"></a><h3>IANJUTA_EDITOR_USE_TABS_KEY</h3>
+<pre class="programlisting">#define IANJUTA_EDITOR_USE_TABS_KEY "use-tabs"
+</pre>
+<p>Boolean key, true is tabs has to be used for indenting.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IANJUTA-EDITOR-TAB-WIDTH-KEY:CAPS"></a><h3>IANJUTA_EDITOR_TAB_WIDTH_KEY</h3>
+<pre class="programlisting">#define IANJUTA_EDITOR_TAB_WIDTH_KEY "tab-width"
+</pre>
+<p>Integer key, defines the size of a tabulation in spaces.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IANJUTA-EDITOR-INDENT-WIDTH-KEY:CAPS"></a><h3>IANJUTA_EDITOR_INDENT_WIDTH_KEY</h3>
+<pre class="programlisting">#define IANJUTA_EDITOR_INDENT_WIDTH_KEY "indent-width"
+</pre>
+<p>Integer key, defines the number a space for one indentation step.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IAnjutaEditorAttribute"></a><h3>enum IAnjutaEditorAttribute</h3>
+<p>This enumeration is used to specify the type of text. Note that not all
+editors implement this.</p>
+<div class="refsect3">
+<a name="id-1.8.13.11.6.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-EDITOR-TEXT:CAPS"></a>IANJUTA_EDITOR_TEXT</p></td>
+<td class="enum_member_description">
+<p>Normal text</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-EDITOR-KEYWORD:CAPS"></a>IANJUTA_EDITOR_KEYWORD</p></td>
+<td class="enum_member_description">
+<p>A keyword of the programming language</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-EDITOR-COMMENT:CAPS"></a>IANJUTA_EDITOR_COMMENT</p></td>
+<td class="enum_member_description">
+<p>A comment</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="IANJUTA-EDITOR-STRING:CAPS"></a>IANJUTA_EDITOR_STRING</p></td>
+<td class="enum_member_description">
+<p>A string</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaEditor.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="IAnjutaEditor-backspace"></a><h3>The <code class="literal">“backspace”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       user_data)</pre>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IAnjutaEditor-changed"></a><h3>The <code class="literal">“changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a>   *position,
+               <a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="type">IAnjutaIterable</span></a> *added,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>         length,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>             lines,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>             text,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>           *obj,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)</pre>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IAnjutaEditor-char-added"></a><h3>The <code class="literal">“char-added”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a>   *position,
+               <a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="type">IAnjutaIterable</span></a> *ch,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>            obj,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)</pre>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IAnjutaEditor-code-changed"></a><h3>The <code class="literal">“code-changed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a>   *position,
+               <a class="link" href="IAnjutaIterable.html" title="IAnjutaIterable"><span class="type">IAnjutaIterable</span></a> *code,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>           *obj,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>         user_data)</pre>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IAnjutaEditor-cursor-moved"></a><h3>The <code class="literal">“cursor-moved”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       user_data)</pre>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IAnjutaEditor-glade-callback-add"></a><h3>The <code class="literal">“glade-callback-add”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *widget_typename,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>         *signal_name,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>         *handler_name,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>         *object,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>         *swap,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>       after,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>       filename,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>         *obj,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       user_data)</pre>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IAnjutaEditor-glade-member-add"></a><h3>The <code class="literal">“glade-member-add”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *widget_typename,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>         *widget_name,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>         *filename,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>         *obj,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       user_data)</pre>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IAnjutaEditor-line-marks-gutter-clicked"></a><h3>The <code class="literal">“line-marks-gutter-clicked”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="IAnjutaEditor.html" title="IAnjutaEditor"><span class="type">IAnjutaEditor</span></a> *obj,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>           double_click,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       user_data)</pre>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

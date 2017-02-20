@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-plugin" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Autotools-Erstellungs-Plugin</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Autotools-Erstellungs-Plugin</title>
+
+  <p>Dieses Plugin ist für Autotools-Projekte ausgelegt, aber weil diese unter anderem auch »make« einbinden, ist es auch für andere Arten von Projekten geeignet, die auf »make« basieren.</p>
+
+  <section>
+    <title>Zu verwendender Make-Befehl</title>
+    <p>Nachfolgend finden Sie eine Liste der vom Plugin verwendeten Ziele. Sie sind in allen Autotools-Projekten implementiert, aber Sie müssen diese selbst implementieren, wenn Sie ein eigenes »makefile« einsetzen.</p>
+    <terms>
+      <item>
+        <title><cmd>make <var>objekt_datei_name</var></cmd></title>
+        <p>Verwenden Sie dies, um eine Quelldatei zu kompilieren. Der Name der Objektdatei wird gebildet, indem die Erweiterung der Quelldatei durch die korrespondierende Objektdatei-Erweiterung ersetzt wird.</p>
+      </item>
+      <item>
+        <title><cmd>make</cmd></title>
+        <p>Verwenden Sie dies, um alle Ziele in einem Ordner zu erstellen.</p>
+      </item>
+      <item>
+        <title><cmd>make install</cmd></title>
+        <p>Verwenden Sie dies, um alle Ziele in einem Ordner zu installieren.</p>
+      </item>
+      <item>
+        <title><cmd>make clean</cmd></title>
+        <p>Verwenden Sie dies, um alle in einem Ordner erstellten Dateien zu löschen.</p>
+      </item>
+      <item>
+        <title><cmd>make dist</cmd></title>
+        <p>Use to build a distribution package, called only in the project directory.</p>
+      </item>
+    </terms>    
+
+    <note style="tip">
+      <p>Da »make« über Standardregeln verfügt, ist es möglich, ein C-Programm ohne Makefile zu erstellen und zu linken. Sie können ein C-Programm aus einer einzelnen Quelldatei erstellen, ohne Makefile oder umgebendes Projekt.</p>
+    </note>
+  </section>
+
+</page>

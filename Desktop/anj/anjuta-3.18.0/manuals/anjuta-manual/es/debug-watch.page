@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-watch" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="second"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Monitorizar expresiones y variables.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Vigilar expresiones</title>
+
+  <p>Vigilancia de expresiones, o vigilancias para acortar, son expresiones que el depurador evalua e imprime su resultado cada vez que el programa se detiene; por ejemplo, después de cada <link xref="debug-step">avance de un paso</link> en el programa.</p>
+
+  <section>
+    <title>Lista de expresiones vigiladas</title>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Ver</gui><gui>Vigilancias</gui></guiseq> para abrir la ventana <gui>Vigilancias</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Al igual que las variables locales, las expresiones vigiladas se muestran en un árbol con hijos usado para representar estructuras o elementos de un vector.</p>
+  
+    <terms>
+      <item>
+        <title>Variable</title>
+        <p>El nombre de la variable o de la expresión.</p>
+      </item>
+      <item>
+        <title>Valor</title>
+        <p>El valor de la variable o de la expresión.</p>
+      </item>
+      <item>
+        <title>Tipo</title>
+        <p>El tipo de la variable o del resultado de la expresión.</p>
+      </item>
+    </terms>
+  </section>
+
+  <section>
+    <title>Actualizar vigilancias</title>
+
+    <p>Las expresiones vigiladas se pueden actualizar automáticamente cuando el detiene el programa o a petición del usuario.</p>
+
+    <p>Para establecer una expresión para vigilar su actualización automática:</p>
+
+    <steps>
+      <item>
+        <p>En la ventana <gui>Vigilancias</gui>, seleccione la vigilancia que quiere actualizar automáticamente. Pulse con el botón derecho del ratón y compruebe que <gui>Actualizar automáticamente</gui> está marcada; si no lo está, márquela.</p>
+      </item>
+    </steps>
+
+    <p>Para actualizar una expresión vigilada manualmente:</p>
+
+    <steps>
+      <item>
+        <p>En la ventana <gui>Vigilancias</gui>, pulse con el botón derecho y seleccione <gui>Actualizar vigilancia</gui> para actualizar la vigilancia seleccionada.</p>
+      </item>
+    </steps>
+
+    <p>Para actualizar todas las expresiones a la vez manualmente:</p>
+
+    <steps>
+      <item>
+        <p>En la ventana <gui>Vigilancias</gui>, pulse con el botón derecho y seleccione <gui>Actualizar todo</gui> para actualizar todas las vigilancias a la vez.</p>
+      </item>
+    </steps>
+
+  </section>
+
+
+  <section>
+    <title>Añadir una vigilancia a una expresión</title>
+
+    <p>Para añadir una expresión a la lista de vigilancias:</p>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Depurar</gui><gui>Añadir vigilancia...</gui></guiseq> o en la ventana <gui>Vigilancias</gui> pulse con el botón derecho del ratón y elija <gui>Añadir vigilancia...</gui>.</p>
+      </item>
+      <item>
+        <p>Introduzca la expresión para vigilar. Marque <gui>Actualización automática</gui> si quiere que la expresión se evalúe cada vez que se detiene el programa.</p>
+      </item>
+    </steps>
+
+    <p>Una expresión se puede evaluar y añadirse como vigilancia así:</p>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Depurar</gui><gui>Inspeccionar/Evaluar</gui></guiseq> o pulse con el botón derecho en la ventana <gui>Editor</gui> y seleccione <gui>Inspeccionar/Evaluar</gui>.</p>
+      </item>
+      <item>
+        <p>Pulse el botón <gui>Añadir</gui> para añadir esta expresión a la lista de vigilancias.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section>
+    <title>Quitar una vigilancia</title>
+
+    <p>Puede quitar una expresión de la lista de vigilancias.</p>
+
+    <steps>
+      <item>
+        <p>En la ventana <gui>Vigilancias</gui>, seleccione la vigilancia que quiere quitar, después pulse con el botón derecho del ratón y seleccione <gui>Quitar vigilancia</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Se pueden quitar todas las vigilancias al mismo tiempo</p>
+
+    <steps>
+      <item>
+        <p>En la ventana <gui>Vigilancias</gui> pulse con el botón derecho y seleccione <gui>Quitar todas</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section>
+    <title>Cambiar el valor de una variable</title>
+
+    <p>Si una expresión vigilada se corresponde con una variable, entonces puede cambiar su valor.</p>
+
+    <steps>
+      <item>
+        <p>En la ventana <gui>Vigilancias</gui> seleccione la variable que quiere editar y pulse dos veces en la columna <gui>Valor</gui>.</p>
+      </item>
+      <item>
+        <p>Introducir un valor nuevo.</p>
+      </item>
+    </steps>
+  </section>
+
+
+</page>

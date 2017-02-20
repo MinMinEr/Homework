@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-project-root-edit" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-root" group="second"/>
+    <link type="seealso" xref="autotools-project-folder-edit"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Autotools Projekt-Eigenschaften bearbeiten.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Autotools Projekt-Eigenschaften bearbeiten.</title>
+
+  <p>Dies sind die Eigenschaften des Hauptobjekts.</p>
+
+  <terms>
+    <item>
+      <title><gui>Backend</gui></title>
+      <p>Dies ist das Backend, das vom Projekt verwendet wird: Autotools. Ein anderes Backend kann mit Klick auf diesen Knopf gewählt werden. Es kann nützlich sein, falls das aktuelle Backend Schwierigkeiten hat Ihre Projektdateien zu verarbeiten.</p>
+    </item>
+    <item>
+      <title><gui>Name</gui></title>
+      <p>Der Name Ihres Projekts, der auch Leerzeichen enthalten darf.</p>
+    </item>
+    <item>
+      <title><gui>Version</gui></title>
+      <p>Dies ist die Projektversion.</p>
+    </item>
+    <item>
+      <title><gui>Adresse für Fehlerbericht</gui></title>
+      <p>Dies ist eine Adresse, die es ermöglicht, Fehlerberichte zu senden, zum Beispiel eine E-Mail-Adresse oder ein Verweis auf eine Fehlerdatenbank. Es ist optional.</p>
+    </item>
+    <item>
+      <title><gui>Paketname</gui></title>
+      <p>Dies ist der Name des Distributionspakets. Es sollte keine Leerzeichen enthalten. Er ist optional.</p>
+    </item>
+    <item>
+      <title><gui>Adresse</gui></title>
+      <p>Dies ist die Homepage des Projekts. Sie ist optional.</p>
+    </item>
+  </terms>
+
+  <p>Zusätzlich arbeitet das Wurzelelement als Ordner und besitzt alle dessen Eigenschaften. Lesen Sie auch <link xref="autotools-project-folder-edit"/>, um die Liste zu sehen.</p>
+
+</page>

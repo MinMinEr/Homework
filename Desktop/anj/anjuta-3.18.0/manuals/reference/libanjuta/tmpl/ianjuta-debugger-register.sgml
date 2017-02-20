@@ -1,0 +1,82 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaDebuggerRegister
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_DEBUGGER_REGISTER_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### STRUCT IAnjutaDebuggerRegisterData ##### -->
+<para>
+
+</para>
+
+@num: 
+@name: 
+@value: 
+
+<!-- ##### FUNCTION ianjuta_debugger_register_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_debugger_register_list_register ##### -->
+<para>
+
+</para>
+
+@obj: 
+@callback: 
+@user_data: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_debugger_register_update_register ##### -->
+<para>
+
+</para>
+
+@obj: 
+@callback: 
+@user_data: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_debugger_register_write_register ##### -->
+<para>
+
+</para>
+
+@obj: 
+@value: 
+@err: 
+@Returns: 
+
+

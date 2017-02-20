@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-compile" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="second"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <link type="seealso" xref="autotools-build-preferences-dialog"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Μεταγλώττιση αρχείων.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Μεταγλώττιση αρχείων</title>
+
+    <p>Οι περισσότερες προγραμματιστικές γλώσσες επιτρέπουν τη μεταγλώττιση μεμονωμένου πηγαίου αρχείου. Διαβάζει το αρχείο, ελέγχει για σφάλματα και μετατρέπει σε ένα ενδιάμεσο αρχείο αντικειμένου. Τα περισσότερα λάθη συμβαίνουν σε αυτό το βήμα, έτσι είναι χρήσιμη η μεταγλώττιση αρχείου μετά την τροποποίησή του για έλεγχο σφαλμάτων. Υπάρχουν πολλοί τρόποι για αυτό.</p>
+    <steps>
+      <item>
+        <p>Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Δόμηση</gui> <gui>μεταγλώττιση</gui></guiseq> ή πατήστε <key>F9</key> για μεταγλώττιση του τρέχοντος επεξεργασμένου αρχείου.</p>
+      </item>
+    </steps>
+    <steps>
+      <item>
+        <p>Από το <gui>παράθυρο διαχειριστή αρχείου</gui>, επιλέξτε ένα αρχείο.</p>
+      </item>
+      <item>
+        <p>Κλικ με το δεξί κουμπί για να κάνετε το <gui>μενού περιεχομένου διαχειριστή αρχείου</gui> να εμφανιστεί και επιλέξτε <guiseq><gui>Δόμηση</gui><gui>Μεταγλώττιση</gui></guiseq> για την μεταγλώττιση του τρέχοντος επιλεγμένου αρχείου στο <gui>παράθυρο διαχειριστή αρχείου</gui>.</p>
+      </item>
+    </steps>
+    <steps>
+      <item>
+        <p>Από το <gui>παράθυρο διαχειριστή αρχείου</gui>, επιλέξτε ένα πηγαίο αρχείο.</p>
+      </item>
+      <item>
+        <p>Κλικ με το δεξί κουμπί για να κάνετε το <gui>μενού περιεχομένου διαχειριστή αρχείου</gui> να εμφανιστεί και επιλέξτε <guiseq><gui>Δόμηση</gui><gui>Μεταγλώττιση</gui></guiseq> για την μεταγλώττιση του τρέχοντος επιλεγμένου αρχείου στο <gui>παράθυρο διαχειριστή αρχείου</gui>.</p>
+      </item>
+    </steps>
+    <note style="tip">
+      <p>Δεν χρειάζεται να αποθηκεύσετε το αρχείο σας πριν τη μεταγλώττισή του, αυτό θα γίνει αυτόματα από το <app>Anjuta</app> εάν χρειαστεί.</p>
+    </note>
+
+</page>

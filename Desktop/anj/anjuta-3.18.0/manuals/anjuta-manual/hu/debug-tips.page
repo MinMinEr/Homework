@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-tips" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="fifth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Hibakeresési tippek-trükkök.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Hibakeresési tippek</title>
+
+  <section>
+  <title>Kritikus GLib/GTK+ hibák javítása</title>
+  
+  <p>Néha bonyolult lehet megkeresni a kritikus GLib hibák bekövetkezési helyét, mivel ezek nem állítják le a programot. A <sys>G_DEBUG</sys> környezeti változó <sys>fatal_criticals</sys> értékre állításával a programot beállíthatja úgy, hogy azonnal megálljon, amikor kritikus GLib hibával találkozik.</p>
+
+  <steps>
+    <item>
+      <p>Nyissa meg a <link xref="run-parameters-dialog"/> ablakot a <guiseq><gui>Futtatás</gui><gui>Program paraméterei</gui></guiseq> menüpont kiválasztásával.</p>
+    </item>
+    <item>
+      <p>Kattintson a plusz jelre a <gui>Környezeti változók</gui> mellett a környezeti változók listájának kinyitásához.</p>
+    </item>
+    <item>
+      <p>Nyomja meg az <gui>Új</gui> gombot új bejegyzés hozzáadásához a listához.</p>
+    </item>
+    <item>
+      <p>A <gui>Név</gui> mezőbe írja be a <input>G_DEBUG</input>, az <gui>Érték</gui> mezőbe pedig a <input>fatal_criticals</input> kifejezést.</p>
+    </item>
+    <item>
+      <p>Nyomja meg az <gui>Alkalmaz</gui> gombot a változások megerősítéséhez.</p>
+    </item>
+    <item>
+      <p>Futtassa a programot a hibakeresővel a <guiseq><gui>Futtatás</gui><gui>Program hibakeresése</gui></guiseq> menüpont kiválasztásával.</p>
+    </item>
+    <item>
+      <p>Használja a programot a kritikus hiba bekövetkezéséig.</p>
+    </item>
+    <item>
+      <p>Amikor a hibakereső megállítja a programot, a hiba eredetét a <link xref="debug-stack"/> megnézésével keresheti meg.</p>
+    </item>
+  </steps>
+
+  <p>A 0 keretszámú felső függvény a GLib-ben van, így lejjebb kell mennie a veremben. A hiba általában a programjához tartozó legfelső függvényből ered.</p>
+   
+  </section>
+
+</page>

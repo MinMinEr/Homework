@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-target-add" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-target" group="fifth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Προσθήκη προορισμού σε έργο.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Προσθήκη προορισμού</title>
+
+  <p>Ένας προορισμός ομαδοποιεί αρχεία μαζί και ορίζει τη χρήση τους. Χρησιμοποιείται για αναπαράσταση προγράμματος, με όλα τα πηγαία αρχεία του ως θυγατρικά του ή μόνο ομάδα αρχείων δεδομένων που πρέπει να εγκατασταθούν στην ίδια τοποθεσία.</p>
+
+  <steps>
+    <item>
+      <p>Επιλέξτε τον επιθυμητό κατάλογο για προσθήκη του νέου προορισμού στην <gui>προβολή έργου</gui>, κλικ στο δεξί πλήκτρο ποντικιού για την εμφάνιση του <gui>μενού περιεχομένου έργου</gui> και επιλέξτε <gui>Νέος προορισμός</gui>.</p>
+      <p>Ή από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Έργο</gui> <gui>Νέος προορισμός...</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Μπορείτε να επιλέξετε έναν άλλο κατάλογο στον πυθμένα της <gui>προβολής δένδρου καταλόγου</gui>.</p>
+      <p>Εισάγετε ένα όνομα προορισμού και επιλέξτε τον τύπο του προορισμού στην πτυσσόμενη λίστα παρακάτω. Ανάλογα με το σύστημα υποστήριξης του έργου σας, ποικίλοι τύποι προορισμού είναι δυνατοί, δείτε στο κάτω μέρος.</p>
+      <note style="tip">
+        <p>Τα ονόματα προορισμού περιορίζονται τυπικά σε γράμματα, αριθμούς και την υπογράμμιση, έτσι είναι ασφαλέστερο να αποφύγετε άλλους χαρακτήρες.</p>
+     </note>
+    </item>
+    <item>
+      <p>Όταν επιλέξετε το όνομα προορισμού , τύπο και γονικό, κλικ στο κουμπί <gui>Προσθήκη</gui> για δημιουργία αυτού του νέου προορισμού.</p>
+    </item>
+ </steps>
+
+</page>

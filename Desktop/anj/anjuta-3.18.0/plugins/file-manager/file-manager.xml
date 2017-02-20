@@ -1,0 +1,15 @@
+<!--*- xml -*-->
+<ui>
+	<popup name="PopupFileManager">
+		<placeholder name="PlaceholderPopupFileProject"/>
+		<placeholder name="PlaceholderPopupFileBuild"/>
+		<placeholder name="PlaceholderPopupFileVCS"/>
+		<separator/>
+		<menuitem name="PopupFileManagerRename" action="ActionPopupFileManagerRename"/>
+	</popup>
+	<popup name="PopupDocumentManager">
+		<separator name="FileManagerSeparator1"/>
+		<menuitem name="PopupShowInFileManager" action="ActionPopupShowInFileManager" />
+		<separator name="FileManagerSeparator2"/>
+	</popup>
+</ui>

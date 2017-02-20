@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="project-existing" xml:lang="de">
+
+  <info>
+    <link type="guide" xref="index#faq-project"/>
+    <desc>Import a project into <app>Anjuta</app>.</desc>
+    
+    <revision pkgversion="0.1" version="0.1" date="2010-12-02" status="stub"/>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>How can I use Anjuta with an existing project?</title>
+
+  <p>Run <guiseq><gui>File</gui><gui>New</gui><gui>Project from existing sources</gui></guiseq>.</p>
+
+  <p><app>Anjuta</app> has no own project format. It uses already existing
+  project formats, like Autotools or Makefile. On Linux, the most common format
+  is Autotools.</p>
+
+</page>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-breakpoint" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-execute" group="second"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Gestionar los puntos de parada</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Puntos de parada</title>
+
+  <p>Los puntos de parada se usan para detener la ejecución de un programa en determinados puntos, para que se pueda examinar el estado del programa en esas ubicaciones.</p>
+
+  <section>
+    <title>Listar puntos de parada</title>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Ver</gui><gui>Puntos de parada</gui></guiseq> para abrir la ventana <gui>Punto de parada</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Esta vista tiene las siguientes columnas:</p>
+  
+    <terms>
+      <item>
+        <title>Ubicación</title>
+        <p>Esta es la posición del punto de parada en el archivo fuente. Cuando el punto de parada está configurado por el depurador puede obtener información adicional, tal como la función que contiene el punto de parada.</p>
+      </item>
+      <item>
+        <title>Dirección</title>
+        <p>Este campo se rellena con la dirección del punto de parada cuando está establecido por el depurador.</p>
+      </item>
+      <item>
+        <title>Tipo</title>
+        <p>Esto siempre muestra <gui>punto de parada</gui>. Se usará en una próxima versión, soportando distintos tipos de puntos de parada.</p>
+      </item>
+      <item>
+        <title>Condición</title>
+        <p>Esta es la condición del punto de parada. Está vacía si no se ha definido ninguna condición.</p>
+      </item>
+      <item>
+        <title>Conteo de pasadas</title>
+        <p>Cuando el depurador no se está ejecutando, esta columna muestra el conteo de pasadas del punto de parada, o cero si no está definido.</p>
+        <p>Cuando el depurador está en ejecución, si el conteo de pasadas es cero, esta columna muestra el número de veces que se ha disparado este punto de parada. Se muestran ambos números si el conteo de pasadas no es cero. El conteo de pasadas es el segundo número.</p>
+      </item>
+      <item>
+        <title>Estado</title>
+        <p>Este es el estado del punto de parada. Puede ser</p>
+        <terms>
+          <item><title>Pendiente:</title><p>el punto de parada no está establecido en su programa.</p></item>
+          <item><title>Permanente</title><p>el punto de parada está establecido (su número de ID se muestra entre paréntesis).</p></item>
+          <item><title>Temporal:</title><p>el punto de parada está establecido pero se eliminará de llegarse a él.</p></item>
+        </terms>
+      </item>
+    </terms>
+
+    <note style="tip">
+     <p>Todos los puntos de parada se mantienen a lo largo de diferentes sesiones en Anjuta, incluso si corresponden con ubicaciones inexistentes tales como un archivo de fuentes de una biblioteca compartida que aún no está cargada. En este caso sus estados se marcan como pendientes.</p>
+    </note>
+  </section>
+
+  <section>
+    <title>Establecer de puntos de parada</title>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Depurar</gui><gui>Añadir punto de parada...</gui></guiseq> o pulse con el botón derecho en la ventana <gui>Punto de parada</gui> y elija <gui>Añadir punto de parada...</gui>.</p>
+      </item>
+      <item>
+        <p>Rellene la <gui>Ubicación</gui> que es la posición del punto de parada, y los otros campos si así lo quiere. Si un archivo está actualmente abierto en el editor, la <gui>Ubicación</gui> del punto de parada se rellena con la línea actual de forma predeterminada. Para obtener más información consulte la <link xref="debug-breakpoint-dialog"/>.</p>
+      </item>
+    </steps>
+
+    <p>Otra solución es usar la función de conmutación de punto de parada. Si no existe un punto de parada en la línea actual, añadirá uno. En caso contrario lo quitará.</p>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Depurar</gui><gui>Conmutar punto de parada</gui></guiseq> o pulse con el botón derecho en la ventana <gui>Editor</gui> y elija <gui>Conmutar punto de parada</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+
+  <section>
+    <title>Editar puntos de parada</title>
+
+    <p>No puede cambiar la ubicación de un punto de parada; en su lugar cree un punto de parada nuevo. No obstante, puede cambiar la condición de parada o el conteo de pasadas. Para editar un punto de parada:</p>
+
+    <steps>
+      <item>
+        <p>Seleccione un punto de parada en la ventana de <gui>Punto de parada</gui>.</p>
+      </item>
+      <item>
+        <p>Pulse con el botón derecho del ratón en la ventana de <gui>Punto de parada</gui> y seleccione <gui>Editar punto de parada...</gui>.</p>
+      </item>
+      <item>
+        <p>Cambie la <gui>Condición</gui> o el <gui>Conteo de pasadas</gui> y pulse <gui>Aceptar</gui> cuando haya terminado. Para obtener más información consulte la <link xref="debug-breakpoint-dialog"/>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+
+  <section>
+    <title>Quitar puntos de parada</title>
+
+	<p>Puede quitar un punto de parada usando la función de conmutar punto de parada descrita anteriormente. No obstante, si quiere quitar más de un punto de parada, o si el punto de parada está en otro archivo diferente del que está editando, puede usar la ventana de punto de parada:</p>
+
+    <steps>
+      <item>
+        <p>Seleccione un punto de parada en la ventana de <gui>Punto de parada</gui>.</p>
+      </item>
+      <item>
+        <p>Pulse con el botón derecho del ratón en la ventana de <gui>Punto de parada</gui> y seleccione <gui>Quitar punto de parada</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Para quitar todos los puntos de parada:</p>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Depurar</gui><gui>Quitar todos los puntos de parada</gui></guiseq> o pulse con el botón derecho en la ventana <gui>Punto de parada</gui> y seleccione <gui>Quitar todos los puntos de parada</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+
+  <section>
+    <title>Activar y desactivar puntos de parada</title>
+
+    <p>A veces puede querer desactivar un punto de parada temporalmente en lugar de eliminarlo. Para desactivar o reactivar un punto de parada:</p>
+
+    <steps>
+      <item>
+        <p>Pulse en la columna <gui>Activar</gui> en la ventana de <gui>Punto de parada</gui> o pulse con el botón derecho del ratón en la ventana de <gui>Punto de parada</gui> y seleccione <gui>Activar punto de parada</gui> o <gui>Desactivar punto de parada</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Puede desactivar los puntos de parada usando:</p>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Depurar</gui><gui>Desactivar todos los puntos de parada</gui></guiseq> o pulse con el botón derecho en la ventana <gui>Punto de parada</gui> y seleccione <gui>Desactivar todos los puntos de parada</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+  
+
+</page>

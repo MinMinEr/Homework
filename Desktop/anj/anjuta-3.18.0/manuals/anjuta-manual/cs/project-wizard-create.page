@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-wizard-create" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-project-management" group="first"/>
+    <link type="seealso" xref="project-manager"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak vytvořit nový projekt úplně od začátku.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Vytvoření projektu</title>
+
+  <p>Nové projekty se vytvářejí ze šablon. <app>Anjuta</app> se vás dotáže na různé informace, jako je typ projektu, jeho název a pod.</p>
+
+  <steps>
+    <item>
+      <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Soubor</gui> <gui>Nový</gui> <gui>Projekt</gui></guiseq>.</p>
+      <p>Nebo v rozbalovacím seznamu tlačítka <gui>Nový</gui> na <gui>nástrojové liště</gui> vyberte <gui>Projekt</gui>, aby se spustil průvodce projektem.</p>
+    </item>
+    <item>
+      <p>Vyberte ikonu představující typ projektu, který chcete vytvořit a klikněte na <gui>Vpřed</gui>.</p>
+      <note style="tip">
+        <p>Ponechejte ukazatel myši okamžik nad ikonou projektu a objeví se malá zpráva zobrazující více informací o daném typu projektu.</p>
+      </note>
+    </item>
+    <item>
+      <p>V závislosti na vybraném typu projektu budete muset zadat různé informace. Až budete hotovi, klikněte na <gui>Vpřed</gui>.</p>
+      <p>Veškeré informace jsou seskupeny do stránek, obvykle musíte vyplnit dvě až tři. Kdykoliv se můžete vrátit zpátky pomocí tlačítka <gui>Zpět</gui>.</p>
+      <note style="tip">
+        <p>Ponechejte sekundu ukazatel myši nad tlačítkem nebo vstupní oblastí, aby se objevila malá zpráva s dalšími podrobnostmi o příslušném nastavení.</p>
+      </note>
+    </item>
+    <item>
+      <p>Po vyplnění všech stránek s informacemi se vám objeví stránka se souhrnem hlavních informací o vašem projektu. Až do této chvíle se nic neukládá na disk. Teprve kliknutím na <gui>Použít</gui> se projekt uloží a otevře v aplikaci <app>Anjuta</app>.</p>
+    </item>
+  </steps>
+
+  <note style="advanced">
+    <p>Každý typ projektu odpovídá šabloně. <app>Anjuta</app> již několik šablon obsahuje, ale můžete si přidat další nebo i napsat vlastní.</p>
+  </note>
+
+</page>

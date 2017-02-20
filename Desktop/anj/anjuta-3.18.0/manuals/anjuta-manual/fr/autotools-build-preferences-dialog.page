@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-preferences-dialog" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Boîte de dialogue des préférences de construction autotools.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Boîte de dialogue des préférences Construire les « autotools ».</title>
+
+  <p>Cette boîte de dialogue vous permet de paramétrer les options globales pour la construction des fichiers.</p>
+
+  <terms>
+    <item>
+      <title><gui>Exécuter plusieurs commandes en même temps</gui></title>
+      <p><app>make</app> est capable de lancer plusieurs compilations en même temps. Cela raccourcit le temps de construction en cas de processeur multi-cœurs mais peut être à l'origine de quelques problèmes. C'est pourquoi vous pouvez activer ou désactiver cette option grâce à cette case à cocher.</p>
+    </item>
+    <item>
+      <title><gui>Poursuivre malgré les erreurs</gui></title>
+      <p>Par défaut, <app>make</app> s'arrête dès qu'il rencontre une erreur. Il peut être plus rapide de passer outre et de regrouper toutes les erreurs de tous les fichiers. C'est ce que permet cette case à cocher.</p>
+    </item>
+    <item>
+      <title><gui>Traduire les messages</gui></title>
+      <p>Par défaut, les messages d'erreur et d'avertissement sont traduits. Cela a toutefois deux inconvénients. Pour reconnaître les erreurs et les avertissements, il faut que la traduction d'<app>Anjuta</app> et du compilateur correspondent parfaitement. En outre, la recherche d'aide sur internet est souvent moins fructueuse qu'une recherche en anglais. Décochez cette option pour désactiver la traduction.</p>
+    </item>
+    <item>
+      <title><gui>Mettre en surbrillance des erreurs et des avertissements dans l'éditeur</gui></title>
+      <p>Les erreurs et les avertissements survenant lors de la construction s'affichent normalement en surbrillance dans la fenêtre Messages. En cochant cette option, ils s'affichent également en surbrillance dans l'éditeur.</p>
+    </item>
+    <item>
+      <title><gui>Installer en tant que root</gui></title>
+      <p>L'installation d'un programme nécessite la copie de fichiers dans des répertoires systèmes pour lesquels l'utilisateur ne possède pas les droits d'écriture. Si cette option est cochée, vous pouvez utiliser <cmd>sudo</cmd> ou <cmd>su</cmd>, avant d'installer les fichiers, pour acquérir le droit de le faire.</p>
+    </item>
+  </terms>
+
+</page>

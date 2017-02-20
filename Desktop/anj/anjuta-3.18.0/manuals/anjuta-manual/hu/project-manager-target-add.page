@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-target-add" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-target" group="fifth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Cél projekthez adása.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Cél hozzáadása</title>
+
+  <p>A célok csoportosítják a fájlokat, és meghatározzák a felhasználási módjaikat. Ezek képviselhetnek egy programot, ekkor az összes forrásfájl a gyermekeiként jelenik meg; vagy képviselhetik az azonos helyre telepítendő adatfájlokat is.</p>
+
+  <steps>
+    <item>
+      <p>Válassza ki a <gui>projektnézetben</gui> a könyvtárat, amelybe az új célt fel kívánja venni, kattintson a jobb egérgombbal a <gui>helyi menü</gui> megjelenítéséhez, és válassza ki az <gui>Új cél</gui> menüpontot.</p>
+      <p>Vagy a <gui>főmenüből</gui> válassza a <guiseq><gui>Projekt</gui><gui>Új cél</gui></guiseq> menüpontot.</p>
+    </item>
+    <item>
+      <p>Az alsó <gui>könyvtárfa nézetben</gui> kiválaszthat egy másik könyvtárat.</p>
+      <p>Adjon meg egy célnevet, és válassza ki a céltípust a lenti legördülő listában. A projekt háttérprogramjától függően különböző céltípusok érhetők el, részletekért lásd az oldal alján lévő témát.</p>
+      <note style="tip">
+        <p>A célnevek általában betűket, számjegyeket és aláhúzást tartalmazhatnak.</p>
+     </note>
+    </item>
+    <item>
+      <p>A célnév, típus és szülő kiválasztása után nyomja meg a <gui>Hozzáadás</gui> gombot az új cél létrehozásához.</p>
+    </item>
+ </steps>
+
+</page>

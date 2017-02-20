@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-project-root-edit" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-root" group="second"/>
+    <link type="seealso" xref="autotools-project-folder-edit"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Editar las propiedades de un proyecto de autotools.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Editar las propiedades de un proyecto de autotools</title>
+
+  <p>Estas son las propiedades del elemento raíz.</p>
+
+  <terms>
+    <item>
+      <title><gui>Backend</gui></title>
+      <p>Esto es el «backend» del proyecto: Autotools. Se puede seleccionar otro «backend» pulsando en este botón. Esto puede ser útil si el «backend» actual tiene problemas para analizar sus archivos de proyectos.</p>
+    </item>
+    <item>
+      <title><gui>Nombre</gui></title>
+      <p>El nombre del proyecto. Puede contener espacios.</p>
+    </item>
+    <item>
+      <title><gui>Versión</gui></title>
+      <p>Esto es la versión del proyecto</p>
+    </item>
+    <item>
+      <title><gui>URL de informe de errores</gui></title>
+      <p>Esto es un URL que permite enviar informes de error, por ejemplo, una dirección de correo-e o un enlace a un sistema de seguimiento de informes de error. Es opcional.</p>
+    </item>
+    <item>
+      <title><gui>Nombre del paquete</gui></title>
+      <p>Esto es el nombre del paquete de la distribución, no debe contener espacios. Es opcional.</p>
+    </item>
+    <item>
+      <title><gui>URL</gui></title>
+      <p>Esta es la página principal del proyecto. Es opcional</p>
+    </item>
+  </terms>
+
+  <p>Además, el elemento raíz funciona como una carpeta y tiene todas sus propiedades. Consulte la <link xref="autotools-project-folder-edit"/> para ver la lista.</p>
+
+</page>

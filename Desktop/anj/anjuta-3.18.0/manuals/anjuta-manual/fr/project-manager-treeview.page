@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="project-manager-treeview" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-project-management" group="third"/>
+    <desc>Afficher le contenu du projet.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Affichage d'un projet</title>
+
+  <p>Un projet est représenté sous forme d'arborescence, l'élément racine correspond au projet alors que les enfants représentent les programmes, les bibliothèques, les dossiers et les fichiers source. Chaque élément peut posséder des propriétés permettant de définir plus de détails comme la version du projet, les drapeaux de compilation ou les dossiers d'installation. Ces éléments sont divisés en plusieurs catégories, mais suivant le moteur, toutes ne sont pas disponibles :</p>
+
+  <terms>
+    <item>
+      <title>Racine</title>
+      <p>Il n'y a qu'un seul nœud de ce type. Il représente le projet lui-même. Il est l'endroit où vous pouvez définir les propriétés générales du projet comme son nom ou sa version.</p>
+    </item>
+    <item>
+      <title>Module</title>
+      <p>Ceci est un ensemble de paquets utilisés dans le projet autotools. Ils apparaissent comme les enfants du nœud racine pour représenter tous les modules définis et comme enfants de chaque cible les utilisant. Pour de plus amples détails, consultez <link xref="project-manager-module-new"/>.</p>
+    </item>
+    <item>
+      <title>Paquet</title>
+      <p>Ceci sont les paquets d'une bibliothèque utilisés dans le projet autotools. Ils apparaissent comme les enfants de chaque module. Pour plus de détails, consultez <link xref="project-manager-library"/>.</p>
+    </item>
+    <item>
+      <title>Dossier</title>
+      <p>Ceci est utilisé pour regrouper des cibles permettant de définir des propriétés communes. Elles sont souvent implémentées comme des sous-dossiers. Pour plus de détails, consultez <link xref="project-manager-folder"/>.</p>
+    </item>
+    <item>
+      <title>Cible</title>
+      <p>Elle regroupe des fichiers et définit la manière dont ils sont utilisés. Il existe plusieurs sortes de cibles, comme par exemple des cibles programme, bibliothèque ou de données et elles correspondent à des utilisations différentes des fichiers enfants. Elles représentent souvent des fichiers de projets générés comme des programmes compilés ou des bibliothèques. Pour plus de détails, consultez <link xref="project-manager-target"/>.</p>
+	
+      <note style="tip">
+        <p>Vous pouvez faire glisser et déposer les cibles en haut de la vue arborescente du projet pour créer un raccourci permettant un accès plus aisé. Par défaut, toutes les cibles programmes sont placées ici.</p>
+      </note>
+
+    </item>
+    <item>
+      <title>Source</title>
+      <p>Chaque fichier source est représenté par un élément dans la vue du projet. L'utilisation de chaque fichier dépend de sa cible parente. Tous les enfants d'une cible programme sont compilés pour le générer. À l'opposé, les enfants d'une cible de données ne sont copiés dans un dossier qu'à l'installation du projet. Pour plus de détails, consultez <link xref="project-manager-source"/>.</p>
+    </item>
+  </terms>
+  
+</page>

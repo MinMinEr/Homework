@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-step" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-execute" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Arrêter et continuer.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Arrêt et avancement d'un pas</title>
+
+  <p>Comme lors d'une session de montage vidéo, le programme peut être exécuté lentement, avec la possibilité d'avance, de pause, d'arrêt, etc. C'est essentiel pour suivre le comportement du programme. Toutefois, vous ne pouvez pas revenir en arrière.</p>
+
+  <section>
+    <title>Pas en avant</title>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Déboguer</gui> <gui>Pas en avant</gui></guiseq>, ou appuyez sur la touche <key>F5</key>, ou encore cliquez sur l'icône <gui>Pas en avant</gui> dans la barre d'outils.</p>
+      </item>
+    </steps>
+
+    <p>Le pas en avant n'exécute qu'une seule instruction du programme (celle où le programme a été interrompu) puis rend le contrôle au débogueur. Si l'instruction qui est exécutée appelle une ou plusieurs fonctions, le débogueur essaie de poursuivre son avancée d'un pas dans les fonctions (dans l'ordre où elles sont exécutées). Une fois l'instruction exécutée et la main rendue, vous pouvez étudier l'état de votre programme.</p>
+
+    <note style="advanced">
+     <p>Si la <gui>fenêtre Désassemblage</gui> est active lorsque cette commande est sélectionnée, une seule instruction assembleur est exécutée.</p>
+    </note>
+  </section>
+
+
+  <section>
+    <title>Avancer en sautant</title>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez<guiseq><gui>Déboguer</gui> <gui>Avancer en sautant</gui></guiseq>, ou appuyez sur la touche <key>F6</key>, ou encore cliquez sur l'icône <gui>Avancer en sautant</gui> dans la barre d'outils.</p>
+      </item>
+    </steps>
+
+    <p>« Avancer en sautant » est similaire à « Pas en avant », mis à part le fait que le débogueur ne s'arrête pas à l'intérieur des fonctions appelées par l'instruction en cours d'exécution.</p>
+
+    <note style="advanced">
+      <p>Si la <gui>fenêtre désassemblage</gui> est active lorsque cette commande est sélectionnée, une seule instruction assembleur est exécutée, mais si cette instruction est un appel de sous-programme, le programme s'arrête quand le sous-programme est terminé.</p>
+    </note>
+  </section>
+
+
+  <section>
+    <title>Avancer pour sortir</title>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Déboguer</gui> <gui>Avancer pour sortir</gui></guiseq>, ou utilisez la combinaison de touches <keyseq><key>Maj</key><key>F5</key></keyseq>, ou encore cliquez sur l'icône <gui>Avancer pour sortir</gui> dans la barre d'outils.</p>
+      </item>
+    </steps>
+
+    <p>« Avancer pour sortir » exécute la fonction en cours jusqu'à ce qu'elle retourne à la fonction d'appel.</p>
+  </section>
+
+
+  <section>
+    <title>Exécuter ou continuer</title>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Déboguer</gui> <gui>Exécuter/Continuer</gui></guiseq>, ou appuyez sur la touche <key>F4</key>, ou encore cliquez sur l'icône <gui>Exécuter/Continuer</gui> dans la barre d'outils.</p>
+      </item>
+    </steps>
+
+    <p>Cette commande redémarre le programme et continue son exécution jusqu'à ce qu'un point d'arrêt soit atteint ou que le programme se termine.</p>
+  </section>
+
+  <section>
+   <title>Exécuter jusqu'au curseur</title>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Déboguer</gui> <gui>Exécuter jusqu'au curseur</gui></guiseq>, ou appuyez sur la touche <key>F8</key>, ou encore cliquez sur l'icône <gui>Exécuter jusqu'à</gui> dans la barre d'outils.</p>
+      </item>
+    </steps>
+
+    <p>Cette commande redémarre le programme et continue son exécution jusqu'à ce que la ligne ou l'adresse (si la fenêtre <gui>Désassemblage</gui> est active) marquée par le curseur soit atteinte.</p>
+  </section>
+  
+  <section>
+   <title>Arrêt du programme</title>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Déboguer</gui> <gui>Suspendre le programme</gui></guiseq>, ou cliquez sur l'icône <gui>Suspendre le programme</gui> dans la barre d'outils.</p>
+      </item>
+    </steps>
+
+   <p>Cela interrompt le programme et rend le contrôle au débogueur, vous permettant de réaliser diverses tâches de débogage, comme l'inspection de données ou l'ajout de points d'arrêts.</p>
+  </section>
+
+
+</page>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="2column" id="index" xml:lang="cs">
+
+  <info>
+    <desc>Nápověda k vývojářskému studiu Anjuta.</desc>
+    <title type="link">Anjuta</title>
+    <title type="text">Vývojářské studio Anjuta</title>
+
+    <revision pkgversion="0.1" version="0.1" date="2011-03-20" status="incomplete"/>
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+
+<!--  
+   <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude" /> 
+-->
+  </info>  
+  
+  <title><media type="image" mime="image/png" its:translate="no" src="figures/anjuta_logo.png"><span its:translate="yes">Logo aplikace Anjuta</span></media> Vývojářské studio Anjuta</title>
+
+  <section id="anjuta-project-management" style="2column" groups="first second third fourth fifth">
+    <title>Správa projektu</title>
+  </section>
+
+  <section id="anjuta-code" style="2column">
+    <title>Programování a pohyb v kódu</title>
+  </section> 
+
+  <section id="anjuta-build" style="2column" groups="first second third fourth fifth sixth">
+    <title>Sestavení projektu</title>
+  </section>
+
+  <section id="anjuta-debug" style="2column" groups="first second third fourth fifth">
+    <title>Ladění programů</title>
+  </section>
+
+<!--
+  <section id="anjuta-glade" style="2column" groups="first second">
+    <title>User interface editor</title>
+  </section>
+-->
+
+  <section id="reference">
+    <title>Odkazy</title>
+  </section>
+
+</page>

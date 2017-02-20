@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-plugin" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Zásuvný modul Sestavní pomocí Autotools</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  </info>
+
+  <title>Zásuvný modul Sestavní pomocí Autotools</title>
+
+  <p>Tento zásuvný modul je zaměřen na projekty s autotools, ale protože používá make, je použitelný i pro jiné druhy projektů, které rovněž používají make.</p>
+
+  <section>
+    <title>Použitý příkaz Make</title>
+    <p>Zde je seznam všech cílů používaných zásuvným modulem. Jsou implementovány ve všech projektech používajích autotools, ale musíte je implementovat, když používáte svůj vlastní soubor makefile.</p>
+    <terms>
+      <item>
+        <title><cmd>make <var>název_objektového_souboru</var></cmd></title>
+        <p>Používá se ke kompilaci souboru se zdrojovým kódem. Název objektového souboru se najde nahrazením přípony souboru se zdrojovým kódem příslušnou příponou objektového souboru.</p>
+      </item>
+      <item>
+        <title><cmd>make</cmd></title>
+        <p>Používá se k sestavení všech cílů ve složce.</p>
+      </item>
+      <item>
+        <title><cmd>make install</cmd></title>
+        <p>Používá se k instalaci všech cílů ve složce.</p>
+      </item>
+      <item>
+        <title><cmd>make clean</cmd></title>
+        <p>Používá se ke smazání všech souborů ve složce vzniklých při sestavení.</p>
+      </item>
+      <item>
+        <title><cmd>make dist</cmd></title>
+        <p>Používá se k sestavení distribučního balíčku, volá se jen ve složce projektu.</p>
+      </item>
+    </terms>    
+
+    <note style="tip">
+      <p>Příkaz make má výchozí pravidla, která umožňují kompilovat a linkovat programy v jazyce C bez potřeby souboru Makefile. Program v C můžete zkompilovat z jediného souboru se zdrojovým kódem, aniž byste měli Makefile nebo dokonce projekt.</p>
+    </note>
+  </section>
+
+</page>

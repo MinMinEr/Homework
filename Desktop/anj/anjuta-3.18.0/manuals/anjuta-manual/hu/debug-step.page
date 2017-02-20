@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-step" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-execute" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Leállítás és folytatás.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Leállítás és léptetés</title>
+
+  <p>Egy videoszerkesztési munkamenethez hasonlóan a program végrehajtható „lassított felvételen”, lehetővé téve az előrelépést, szüneteltetést, megállítást stb. Ez alapvető a program viselkedésének követéséhez. Ugyanakkor visszafelé még nem lehet lépni.</p>
+
+  <section>
+    <title>Léptetés</title>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Hibakeresés</gui><gui>Léptetés</gui></guiseq> menüpontot, vagy nyomja meg az <key>F5</key> billentyűt, vagy kattintson az eszköztár <gui>Léptetés</gui> ikonjára.</p>
+      </item>
+    </steps>
+
+    <p>Az egyszeres léptetés csak egy programutasítást hajt végre (a megállítási ponttól számítva), majd visszaadja a vezérlést. Ha a végrehajtott utasítás egy függvényt tartalmaz, akkor a hibakereső megpróbál belépni a függvénybe (a függvények végrehajtási sorrendjében). Az utasítás végrehajtása és a vezérlés visszaadása után tanulmányozhatja a program állapotát.</p>
+
+    <note style="advanced">
+     <p>Ha a <gui>Visszafejtés</gui> ablakban van a fókusz ezen parancs kiválasztásakor, akkor csak egy assembler utasítást hajt végre.</p>
+    </note>
+  </section>
+
+
+  <section>
+    <title>Átlépés</title>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Hibakeresés</gui><gui>Átlépés</gui></guiseq> menüpontot, vagy nyomja meg az <key>F6</key> billentyűt, vagy kattintson az eszköztár <gui>Átlépés</gui> ikonjára.</p>
+      </item>
+    </steps>
+
+    <p>Az átlépés hasonlít a léptetéshez, kivéve hogy nem áll meg a végrehajtott utasítás egyik függvényén belül sem.</p>
+
+    <note style="advanced">
+      <p>Ha a <gui>Visszafejtés</gui> ablakban van a fókusz ezen parancs kiválasztásakor, akkor csak egy assembler utasítást hajt végre, kivéve ha az az utasítás egy szubrutin hívása, ebben az esetben a program a szubrutin befejeződésekor áll meg.</p>
+    </note>
+  </section>
+
+
+  <section>
+    <title>Kilépés</title>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Hibakeresés</gui><gui>Kilépés</gui></guiseq> menüpontot, vagy nyomja meg a <keyseq><key>Shift</key><key>F5</key></keyseq> billentyűkombinációt, vagy kattintson az eszköztár <gui>Kilépés</gui> ikonjára.</p>
+      </item>
+    </steps>
+
+    <p>A kilépés addig hajtja végig az aktuális függvényt, amíg az vissza nem tér a hívó függvényhez.</p>
+  </section>
+
+
+  <section>
+    <title>Futtatás és folytatás</title>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Hibakeresés</gui><gui>Futtatás/Folytatás</gui></guiseq> menüpontot, vagy nyomja meg az <key>F4</key> billentyűt, vagy kattintson az eszköztár <gui>Folytatás</gui> ikonjára.</p>
+      </item>
+    </steps>
+
+    <p>Ez a parancs újraindítja a programot, és addig engedi futni, amíg az töréspontot nem észlel, vagy a program ki nem lép.</p>
+  </section>
+
+  <section>
+   <title>Futtatás a kurzorig</title>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Hibakeresés</gui><gui>Futtatás a kurzorig</gui></guiseq> menüpontot, vagy nyomja meg az <key>F8</key> billentyűt, vagy kattintson az eszköztár <gui>Futtatás a kurzorig</gui> ikonjára.</p>
+      </item>
+    </steps>
+
+    <p>Ez újraindítja a programot, és addig hagyja futni, amíg a kurzornál lévő sort vagy címet (ha a <gui>Visszafejtés</gui> ablak van fókuszban) el nem éri.</p>
+  </section>
+  
+  <section>
+   <title>A program megállítása</title>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Hibakeresés</gui><gui>Program szüneteltetése</gui></guiseq> menüpontot, vagy kattintson az eszköztár <gui>Szüneteltetés</gui> ikonjára.</p>
+      </item>
+    </steps>
+
+   <p>Ez megszakítja a programot, és visszaadja a vezérlést a hibakeresőnek, lehetővé téve a hibakeresési feladatok (például adatok vizsgálata vagy töréspontok hozzáadása) elvégzését.</p>
+  </section>
+
+
+</page>

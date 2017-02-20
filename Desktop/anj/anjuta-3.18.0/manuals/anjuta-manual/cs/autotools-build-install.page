@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-install" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="fifth"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <link type="seealso" xref="autotools-build-preferences-dialog"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak instalovat cíle nebo projekt.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  </info>
+
+  <title>Instalace cílů</title>
+
+  <p>Pokud váš projekt není vyloženě velmi jednoduchý, určitě potřebuje nějaké datové soubory, jako třeba soubory s popisem uživatelského rozhraní. Tyto soubory se typicky kopírují do standardních složek, ze kterých jsou čteny. To znamená, že nemůžete váš program spustit přímo ze složky, ve které se sestavuje. Musíte jej nainstalovat, což znamená zkopírovat všechny tyto soubory na cílové místo, například do podsložky v <file>/usr/local</file>.</p>
+
+  <p>Je několik možností, jak cíle nebo projekt nainstalovat.</p>
+
+  <steps>
+    <item>
+      <p>Aby se nainstalovaly všechny soubory do stejné složky, jako je právě upravovaný soubor, vyberte v <gui>hlavní nabídce</gui> položku <guiseq><gui>Sestavit</gui> <gui>Nainstalovat</gui></guiseq>.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>Aby se nainstalovaly všechny projektové soubory, vyberte v <gui>hlavní nabídce</gui> položku <guiseq><gui>Sestavit</gui> <gui>Nainstalovat projekt</gui></guiseq>.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>V <gui>panelu správy souborů</gui> vyberte soubor nebo složku.</p>
+    </item>
+    <item>
+      <p>Pro nainstalování všech souborů v právě vybrané složce nebo v rodičovské složce právě vybraného souboru, klikněte pravým tlačítkem myši, aby se objevila <gui>kontextová nabídka správce souborů</gui> a vyberte <guiseq><gui>Sestavit</gui> <gui>Nainstalovat</gui></guiseq>.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>V <gui>panelu správy projektu</gui> vyberte zdrojový soubor nebo cíl.</p>
+    </item>
+    <item>
+      <p>Pro nainstalování všech souborů ve složce obsahující právě vybraný soubor nebo cíl, klikněte pravým tlačítkem myši, aby se objevila <gui>kontextová nabídka správce souborů</gui> a vyberte <guiseq><gui>Sestavit</gui> <gui>Nainstalovat</gui></guiseq>.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Pokud instalujete program do systémové složky, můžete potřebovat použít <cmd>su</cmd> nebo <cmd>sudo</cmd>, abyste měli dostatečná práva. Více informací viz <link xref="autotools-build-preferences-dialog"/>.</p>
+  </note>
+
+</page>

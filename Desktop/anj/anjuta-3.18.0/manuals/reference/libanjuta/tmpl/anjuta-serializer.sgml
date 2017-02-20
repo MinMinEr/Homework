@@ -1,0 +1,107 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaSerializer
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### ENUM AnjutaSerializerMode ##### -->
+<para>
+
+</para>
+
+@ANJUTA_SERIALIZER_READ: 
+@ANJUTA_SERIALIZER_WRITE: 
+
+<!-- ##### FUNCTION anjuta_serializer_new ##### -->
+<para>
+
+</para>
+
+@filepath: 
+@mode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_serializer_write_int ##### -->
+<para>
+
+</para>
+
+@serializer: 
+@name: 
+@value: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_serializer_write_float ##### -->
+<para>
+
+</para>
+
+@serializer: 
+@name: 
+@value: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_serializer_write_string ##### -->
+<para>
+
+</para>
+
+@serializer: 
+@name: 
+@value: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_serializer_read_int ##### -->
+<para>
+
+</para>
+
+@serializer: 
+@name: 
+@value: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_serializer_read_float ##### -->
+<para>
+
+</para>
+
+@serializer: 
+@name: 
+@value: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_serializer_read_string ##### -->
+<para>
+
+</para>
+
+@serializer: 
+@name: 
+@value: 
+@replace: 
+@Returns: 
+
+

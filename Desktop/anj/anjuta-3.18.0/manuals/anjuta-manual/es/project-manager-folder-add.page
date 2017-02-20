@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-folder-add" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-folder" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Añadir una carpeta a un proyecto.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Añadir una carpeta</title>
+
+  <p>Una carpeta le permite agrupar varios objetivos, pudiendo establecer propiedades comunes a todos ellos. Generalmente se corresponde con una carpeta.</p>
+
+  <steps>
+    <item>
+      <p>Seleccione el grupo o el programa donde quiere añadir el grupo nuevo en la <gui>vista de proyecto</gui>, pulse con el botón derecho del ratón para mostrar el <gui>menú contextual del proyecto</gui> y seleccione <gui>Añadir grupo</gui>.</p>
+      <p>O desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Proyecto</gui><gui>Añadir grupo</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Introducir un nombre de grupo nuevo.</p>
+      <note style="tip">
+        <p>Generalmente los nombres de los grupos están restringidos a letras, dígitos y el guión bajo, así que es mejor evitar otros caracteres.</p>
+      </note>
+    </item>
+    <item>
+      <p>Puede seleccionar otro grupo en la parte inferior de la <gui>vista en árbol de carpetas</gui>.</p>
+    </item>
+    <item>
+      <p>Cuando haya elegido el padre e introducido el nombre, pulse en el botón <gui>Añadir</gui> para añadir el grupo a su proyecto.</p>
+    </item>
+  </steps>
+
+</page>

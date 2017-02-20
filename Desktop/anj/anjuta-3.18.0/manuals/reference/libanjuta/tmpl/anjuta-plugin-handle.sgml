@@ -1,0 +1,234 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaPluginHandle
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_new ##### -->
+<para>
+
+</para>
+
+@plugin_desc_path: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_get_id ##### -->
+<para>
+
+</para>
+
+@plugin_handle: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_get_name ##### -->
+<para>
+
+</para>
+
+@plugin_handle: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_get_about ##### -->
+<para>
+
+</para>
+
+@plugin_handle: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_get_icon_path ##### -->
+<para>
+
+</para>
+
+@plugin_handle: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_get_path ##### -->
+<para>
+
+</para>
+
+@plugin_handle: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_get_user_activatable ##### -->
+<para>
+
+</para>
+
+@plugin_handle: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_get_resident ##### -->
+<para>
+
+</para>
+
+@plugin_handle: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_get_language ##### -->
+<para>
+
+</para>
+
+@plugin_handle: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_get_description ##### -->
+<para>
+
+</para>
+
+@plugin_handle: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_get_dependency_names ##### -->
+<para>
+
+</para>
+
+@plugin_handle: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_get_dependencies ##### -->
+<para>
+
+</para>
+
+@plugin_handle: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_get_dependents ##### -->
+<para>
+
+</para>
+
+@plugin_handle: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_get_interfaces ##### -->
+<para>
+
+</para>
+
+@plugin_handle: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_get_can_load ##### -->
+<para>
+
+</para>
+
+@plugin_handle: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_get_can_unload ##### -->
+<para>
+
+</para>
+
+@plugin_handle: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_get_checked ##### -->
+<para>
+
+</para>
+
+@plugin_handle: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_get_resolve_pass ##### -->
+<para>
+
+</para>
+
+@plugin_handle: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_set_can_load ##### -->
+<para>
+
+</para>
+
+@plugin_handle: 
+@can_load: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_set_can_unload ##### -->
+<para>
+
+</para>
+
+@plugin_handle: 
+@can_unload: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_set_checked ##### -->
+<para>
+
+</para>
+
+@plugin_handle: 
+@checked: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_set_resolve_pass ##### -->
+<para>
+
+</para>
+
+@plugin_handle: 
+@resolve_pass: 
+
+
+<!-- ##### FUNCTION anjuta_plugin_handle_unresolve_dependencies ##### -->
+<para>
+
+</para>
+
+@plugin_handle: 
+
+
+<!-- ##### STRUCT AnjutaPluginHandlePriv ##### -->
+<para>
+
+</para>
+
+

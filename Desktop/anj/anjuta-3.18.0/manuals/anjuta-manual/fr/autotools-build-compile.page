@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-compile" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="second"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <link type="seealso" xref="autotools-build-preferences-dialog"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Compiler les fichiers.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Compilation de fichiers</title>
+
+    <p>La plupart des langages de programmation permettent de compiler un fichier source individuel. Cela consiste à lire le fichier, vérifier s'il y a des erreurs et le convertir en un fichier objet intermédiaire. La plupart des erreurs surviennent pendant ce traitement. Aussi est-il judicieux de compiler un fichier après l'avoir modifié. Il existe plusieurs façons de faire cela.</p>
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Construire</gui><gui>Compiler</gui></guiseq> ou appuyez sur <key>F9</key> pour compiler le fichier en cours de modification.</p>
+      </item>
+    </steps>
+    <steps>
+      <item>
+        <p>Dans le <gui>volet du gestionnaire de fichiers</gui>, sélectionnez un fichier.</p>
+      </item>
+      <item>
+        <p>Cliquez sur le bouton droit de la souris pour faire apparaître le <gui>menu contextuel du gestionnaire de fichiers</gui> et sélectionnez <guiseq><gui>Construire</gui><gui>Compiler</gui></guiseq> pour compiler le fichier actuellement sélectionné dans le <gui>volet du gestionnaire de fichiers</gui>.</p>
+      </item>
+    </steps>
+    <steps>
+      <item>
+        <p>Dans le <gui>volet du gestionnaire de projets</gui>, sélectionnez un fichier source.</p>
+      </item>
+      <item>
+        <p>Cliquez sur le bouton droit de la souris pour faire apparaître le <gui>menu contextuel du gestionnaire de projets</gui> et sélectionnez <guiseq><gui>Construire</gui><gui>Compiler</gui></guiseq> pour compiler le fichier actuellement sélectionné dans le <gui>volet du gestionnaire de projets</gui>.</p>
+      </item>
+    </steps>
+    <note style="tip">
+      <p>Il n'est pas nécessaire d'enregistrer le fichier avant de compiler, <app>Anjuta</app> le fait automatiquement si besoin est.</p>
+    </note>
+
+</page>

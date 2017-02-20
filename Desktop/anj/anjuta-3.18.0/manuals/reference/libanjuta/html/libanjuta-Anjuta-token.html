@@ -1,0 +1,1474 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: Anjuta token</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="libanjuta-api.html" title="libanjuta API">
+<link rel="prev" href="AnjutaTabber.html" title="AnjutaTabber">
+<link rel="next" href="libanjuta-anjuta-token-file.html" title="anjuta-token-file">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#libanjuta-Anjuta-token.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libanjuta-api.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="AnjutaTabber.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="libanjuta-anjuta-token-file.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="libanjuta-Anjuta-token"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="libanjuta-Anjuta-token.top_of_page"></a>Anjuta token</span></h2>
+<p>Anjuta token — Anjuta token</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="libanjuta-Anjuta-token.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Unstable"><span class="acronym">Unstable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="libanjuta-Anjuta-token.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="libanjuta-Anjuta-token.html#AnjutaTokenForeachFunc" title="AnjutaTokenForeachFunc ()">*AnjutaTokenForeachFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-new-string" title="anjuta_token_new_string ()">anjuta_token_new_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-new-string-len" title="anjuta_token_new_string_len ()">anjuta_token_new_string_len</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-new-static" title="anjuta_token_new_static ()">anjuta_token_new_static</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-new-static-len" title="anjuta_token_new_static_len ()">anjuta_token_new_static_len</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-free-children" title="anjuta_token_free_children ()">anjuta_token_free_children</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-free" title="anjuta_token_free ()">anjuta_token_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-set-type" title="anjuta_token_set_type ()">anjuta_token_set_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-set-flags" title="anjuta_token_set_flags ()">anjuta_token_set_flags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-clear-flags" title="anjuta_token_clear_flags ()">anjuta_token_clear_flags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-get-flags" title="anjuta_token_get_flags ()">anjuta_token_get_flags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-set-string" title="anjuta_token_set_string ()">anjuta_token_set_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-get-string" title="anjuta_token_get_string ()">anjuta_token_get_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-set-length" title="anjuta_token_set_length ()">anjuta_token_set_length</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-get-length" title="anjuta_token_get_length ()">anjuta_token_get_length</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-next" title="anjuta_token_next ()">anjuta_token_next</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-previous" title="anjuta_token_previous ()">anjuta_token_previous</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-last" title="anjuta_token_last ()">anjuta_token_last</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-parent" title="anjuta_token_parent ()">anjuta_token_parent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-list" title="anjuta_token_list ()">anjuta_token_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-next-after-children" title="anjuta_token_next_after_children ()">anjuta_token_next_after_children</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-foreach-content" title="anjuta_token_foreach_content ()">anjuta_token_foreach_content</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-foreach-token" title="anjuta_token_foreach_token ()">anjuta_token_foreach_token</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-foreach-post-order" title="anjuta_token_foreach_post_order ()">anjuta_token_foreach_post_order</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-first-item" title="anjuta_token_first_item ()">anjuta_token_first_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-next-item" title="anjuta_token_next_item ()">anjuta_token_next_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-previous-item" title="anjuta_token_previous_item ()">anjuta_token_previous_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-last-item" title="anjuta_token_last_item ()">anjuta_token_last_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-append-child" title="anjuta_token_append_child ()">anjuta_token_append_child</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-prepend-child" title="anjuta_token_prepend_child ()">anjuta_token_prepend_child</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-prepend-items" title="anjuta_token_prepend_items ()">anjuta_token_prepend_items</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-insert-after" title="anjuta_token_insert_after ()">anjuta_token_insert_after</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-insert-before" title="anjuta_token_insert_before ()">anjuta_token_insert_before</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-delete-parent" title="anjuta_token_delete_parent ()">anjuta_token_delete_parent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-remove-item" title="anjuta_token_remove_item ()">anjuta_token_remove_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-merge" title="anjuta_token_merge ()">anjuta_token_merge</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-merge-own-children" title="anjuta_token_merge_own_children ()">anjuta_token_merge_own_children</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-merge-children" title="anjuta_token_merge_children ()">anjuta_token_merge_children</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-merge-previous" title="anjuta_token_merge_previous ()">anjuta_token_merge_previous</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-split" title="anjuta_token_split ()">anjuta_token_split</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-cut" title="anjuta_token_cut ()">anjuta_token_cut</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">AnjutaToken</span> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-concat" title="anjuta_token_concat ()">anjuta_token_concat</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-evaluate" title="anjuta_token_evaluate ()">anjuta_token_evaluate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-evaluate-name" title="anjuta_token_evaluate_name ()">anjuta_token_evaluate_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-is-empty" title="anjuta_token_is_empty ()">anjuta_token_is_empty</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-dump" title="anjuta_token_dump ()">anjuta_token_dump</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-check" title="anjuta_token_check ()">anjuta_token_check</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-dump-link" title="anjuta_token_dump_link ()">anjuta_token_dump_link</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="libanjuta-Anjuta-token.html#anjuta-token-compare" title="anjuta_token_compare ()">anjuta_token_compare</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libanjuta-Anjuta-token.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="libanjuta-Anjuta-token.html#AnjutaTokenType" title="enum AnjutaTokenType">AnjutaTokenType</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="libanjuta-Anjuta-token.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libanjuta/anjuta-token.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="libanjuta-Anjuta-token.description"></a><h2>Description</h2>
+<p>A <span class="type">AnjutaToken</span> represents a token. It is a sequence of characters associated
+with a type representing its meaning. By example, a token can represent
+a keyword, a comment, a variable...</p>
+<p>The token can own the string or has only a pointer on some data allocated
+somewhere else with a length.</p>
+<p>A token is linked with other tokens using three double linked lists.</p>
+<p>The first list using next and prev fields is used to keep the token in the
+order where there are in the file. The first character of the first token is
+the first character in the file.</p>
+<p>A second list is used to represent included
+files. Such file is represented by a special token in the first list which
+has a pointer, named children to a token list. Each token in this secondary
+list has a pointer to its parent, it means the token representing the file
+where is the token. It looks like a tree. In fact, every file is represented
+by a special token, so the root node is normally a file token and has as
+children all the token representing the file content. This parent/child list
+is used for expanded variable too.</p>
+<p>A third list is used to group several tokens. A token can have a pointer to
+another last token. It means that this token is a group starting from this
+token to the one indicated by the last field. In addition each token in this
+group has a pointer on the first token of the group. This grouping is
+independent of the parent/child list. So a group can start in one file and
+end in another included file. The grouping can be nested too. Typically
+we can have a group representing a command, a sub group representing the
+arguments and then one sub group for each argument.</p>
+</div>
+<div class="refsect1">
+<a name="libanjuta-Anjuta-token.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="AnjutaTokenForeachFunc"></a><h3>AnjutaTokenForeachFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*AnjutaTokenForeachFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-new-string"></a><h3>anjuta_token_new_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_new_string (<em class="parameter"><code><a class="link" href="libanjuta-Anjuta-token.html#AnjutaTokenType" title="enum AnjutaTokenType"><span class="type">AnjutaTokenType</span></a> type</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *value</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.3.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-new-string-len"></a><h3>anjuta_token_new_string_len ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_new_string_len (<em class="parameter"><code><a class="link" href="libanjuta-Anjuta-token.html#AnjutaTokenType" title="enum AnjutaTokenType"><span class="type">AnjutaTokenType</span></a> type</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *value</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> length</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.4.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-new-static"></a><h3>anjuta_token_new_static ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_new_static (<em class="parameter"><code><a class="link" href="libanjuta-Anjuta-token.html#AnjutaTokenType" title="enum AnjutaTokenType"><span class="type">AnjutaTokenType</span></a> type</code></em>,
+                         <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *value</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.5.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-new-static-len"></a><h3>anjuta_token_new_static_len ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_new_static_len (<em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> type</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *pos</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> length</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.6.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-free-children"></a><h3>anjuta_token_free_children ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_free_children (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.7.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-free"></a><h3>anjuta_token_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_free (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.8.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-set-type"></a><h3>anjuta_token_set_type ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_token_set_type (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>,
+                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> type</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-set-flags"></a><h3>anjuta_token_set_flags ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_token_set_flags (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>,
+                        <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> flags</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-clear-flags"></a><h3>anjuta_token_clear_flags ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_token_clear_flags (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>,
+                          <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> flags</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-get-flags"></a><h3>anjuta_token_get_flags ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+anjuta_token_get_flags (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.12.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-set-string"></a><h3>anjuta_token_set_string ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_token_set_string (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>,
+                         <em class="parameter"><code>const <span class="type">char</span> *value</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> length</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-get-string"></a><h3>anjuta_token_get_string ()</h3>
+<pre class="programlisting">const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+anjuta_token_get_string (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.14.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-set-length"></a><h3>anjuta_token_set_length ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_token_set_length (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>,
+                         <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> length</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-get-length"></a><h3>anjuta_token_get_length ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gsize"><span class="returnvalue">gsize</span></a>
+anjuta_token_get_length (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.16.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-next"></a><h3>anjuta_token_next ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_next (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.17.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-previous"></a><h3>anjuta_token_previous ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_previous (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.18.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-last"></a><h3>anjuta_token_last ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_last (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.19.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-parent"></a><h3>anjuta_token_parent ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_parent (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.20.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-list"></a><h3>anjuta_token_list ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_list (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.21.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-next-after-children"></a><h3>anjuta_token_next_after_children ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_next_after_children (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.22.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-foreach-content"></a><h3>anjuta_token_foreach_content ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_token_foreach_content (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>,
+                              <em class="parameter"><code><a class="link" href="libanjuta-Anjuta-token.html#AnjutaTokenForeachFunc" title="AnjutaTokenForeachFunc ()"><span class="type">AnjutaTokenForeachFunc</span></a> func</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-foreach-token"></a><h3>anjuta_token_foreach_token ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_token_foreach_token (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>,
+                            <em class="parameter"><code><a class="link" href="libanjuta-Anjuta-token.html#AnjutaTokenForeachFunc" title="AnjutaTokenForeachFunc ()"><span class="type">AnjutaTokenForeachFunc</span></a> func</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-foreach-post-order"></a><h3>anjuta_token_foreach_post_order ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_foreach_post_order (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>,
+                                 <em class="parameter"><code><a class="link" href="libanjuta-Anjuta-token.html#AnjutaTokenForeachFunc" title="AnjutaTokenForeachFunc ()"><span class="type">AnjutaTokenForeachFunc</span></a> func</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.25.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-first-item"></a><h3>anjuta_token_first_item ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_first_item (<em class="parameter"><code><span class="type">AnjutaToken</span> *list</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.26.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-next-item"></a><h3>anjuta_token_next_item ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_next_item (<em class="parameter"><code><span class="type">AnjutaToken</span> *item</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.27.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-previous-item"></a><h3>anjuta_token_previous_item ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_previous_item (<em class="parameter"><code><span class="type">AnjutaToken</span> *item</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.28.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-last-item"></a><h3>anjuta_token_last_item ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_last_item (<em class="parameter"><code><span class="type">AnjutaToken</span> *list</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.29.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-append-child"></a><h3>anjuta_token_append_child ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_append_child (<em class="parameter"><code><span class="type">AnjutaToken</span> *parent</code></em>,
+                           <em class="parameter"><code><span class="type">AnjutaToken</span> *children</code></em>);</pre>
+<p>Insert all tokens in children as the last children of the given parent.</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.30.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>a <span class="type">AnjutaToken</span> object used as parent.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>children</p></td>
+<td class="parameter_description"><p>a <span class="type">AnjutaToken</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.46.8.30.6"></a><h4>Returns</h4>
+<p> The first token append.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-prepend-child"></a><h3>anjuta_token_prepend_child ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_prepend_child (<em class="parameter"><code><span class="type">AnjutaToken</span> *parent</code></em>,
+                            <em class="parameter"><code><span class="type">AnjutaToken</span> *children</code></em>);</pre>
+<p>Insert all tokens in children as the first children of the given parent.</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.31.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>a <span class="type">AnjutaToken</span> object used as parent.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>children</p></td>
+<td class="parameter_description"><p>a <span class="type">AnjutaToken</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.46.8.31.6"></a><h4>Returns</h4>
+<p> The first token append.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-prepend-items"></a><h3>anjuta_token_prepend_items ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_prepend_items (<em class="parameter"><code><span class="type">AnjutaToken</span> *list</code></em>,
+                            <em class="parameter"><code><span class="type">AnjutaToken</span> *item</code></em>);</pre>
+<p>Insert all tokens in item as item of the given list.</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.32.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>list</p></td>
+<td class="parameter_description"><p>a <span class="type">AnjutaToken</span> object used as list.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>item</p></td>
+<td class="parameter_description"><p>a <span class="type">AnjutaToken</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.46.8.32.6"></a><h4>Returns</h4>
+<p> The first token append.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-insert-after"></a><h3>anjuta_token_insert_after ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_insert_after (<em class="parameter"><code><span class="type">AnjutaToken</span> *sibling</code></em>,
+                           <em class="parameter"><code><span class="type">AnjutaToken</span> *list</code></em>);</pre>
+<p>Insert all tokens after sibling.</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.33.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sibling</p></td>
+<td class="parameter_description"><p>a <span class="type">AnjutaToken</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>list</p></td>
+<td class="parameter_description"><p>a <span class="type">AnjutaToken</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.46.8.33.6"></a><h4>Returns</h4>
+<p> The first token inserted.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-insert-before"></a><h3>anjuta_token_insert_before ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_insert_before (<em class="parameter"><code><span class="type">AnjutaToken</span> *sibling</code></em>,
+                            <em class="parameter"><code><span class="type">AnjutaToken</span> *list</code></em>);</pre>
+<p>Insert all tokens before sibling.</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.34.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>sibling</p></td>
+<td class="parameter_description"><p>a <span class="type">AnjutaToken</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>list</p></td>
+<td class="parameter_description"><p>a <span class="type">AnjutaToken</span> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.46.8.34.6"></a><h4>Returns</h4>
+<p> The first token inserted.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-delete-parent"></a><h3>anjuta_token_delete_parent ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_delete_parent (<em class="parameter"><code><span class="type">AnjutaToken</span> *parent</code></em>);</pre>
+<p>Delete only the parent token.</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.35.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>a <span class="type">AnjutaToken</span> object used as parent.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.46.8.35.6"></a><h4>Returns</h4>
+<p> the first children</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-remove-item"></a><h3>anjuta_token_remove_item ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_token_remove_item (<em class="parameter"><code><span class="type">AnjutaToken</span> *item</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-merge"></a><h3>anjuta_token_merge ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_merge (<em class="parameter"><code><span class="type">AnjutaToken</span> *first</code></em>,
+                    <em class="parameter"><code><span class="type">AnjutaToken</span> *end</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.37.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-merge-own-children"></a><h3>anjuta_token_merge_own_children ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_merge_own_children (<em class="parameter"><code><span class="type">AnjutaToken</span> *first</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.38.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-merge-children"></a><h3>anjuta_token_merge_children ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_merge_children (<em class="parameter"><code><span class="type">AnjutaToken</span> *first</code></em>,
+                             <em class="parameter"><code><span class="type">AnjutaToken</span> *end</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.39.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-merge-previous"></a><h3>anjuta_token_merge_previous ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_merge_previous (<em class="parameter"><code><span class="type">AnjutaToken</span> *list</code></em>,
+                             <em class="parameter"><code><span class="type">AnjutaToken</span> *first</code></em>);</pre>
+<p>If the list token is not already linked with first, it is inserted
+just before first.
+If the list token is already linked, it must be in the same list after
+first token. It it possible to have several tokens beweent list and
+first.</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.40.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>list</p></td>
+<td class="parameter_description"><p>a <span class="type">AnjutaToken</span> object representing a list</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>first</p></td>
+<td class="parameter_description"><p>a <span class="type">AnjutaToken</span> object for the new beginning of the list</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.46.8.40.6"></a><h4>Returns</h4>
+<p> the new list</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-split"></a><h3>anjuta_token_split ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_split (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>,
+                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> size</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.41.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-cut"></a><h3>anjuta_token_cut ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_cut (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>,
+                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> pos</code></em>,
+                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> size</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.42.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-concat"></a><h3>anjuta_token_concat ()</h3>
+<pre class="programlisting"><span class="returnvalue">AnjutaToken</span> *
+anjuta_token_concat (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.43.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-evaluate"></a><h3>anjuta_token_evaluate ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+anjuta_token_evaluate (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.44.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-evaluate-name"></a><h3>anjuta_token_evaluate_name ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+anjuta_token_evaluate_name (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.45.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-is-empty"></a><h3>anjuta_token_is_empty ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_token_is_empty (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.46.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-dump"></a><h3>anjuta_token_dump ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_token_dump (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-check"></a><h3>anjuta_token_check ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_token_check (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.48.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-dump-link"></a><h3>anjuta_token_dump_link ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_token_dump_link (<em class="parameter"><code><span class="type">AnjutaToken</span> *token</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-token-compare"></a><h3>anjuta_token_compare ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_token_compare (<em class="parameter"><code><span class="type">AnjutaToken</span> *tokena</code></em>,
+                      <em class="parameter"><code><span class="type">AnjutaToken</span> *tokenb</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.8.50.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="libanjuta-Anjuta-token.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="AnjutaTokenType"></a><h3>enum AnjutaTokenType</h3>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.46.9.2.4"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-NONE:CAPS"></a>ANJUTA_TOKEN_NONE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-EOL:CAPS"></a>ANJUTA_TOKEN_EOL</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-COMMA:CAPS"></a>ANJUTA_TOKEN_COMMA</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-TYPE:CAPS"></a>ANJUTA_TOKEN_TYPE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-FIRST:CAPS"></a>ANJUTA_TOKEN_FIRST</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-FILE:CAPS"></a>ANJUTA_TOKEN_FILE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-MACRO:CAPS"></a>ANJUTA_TOKEN_MACRO</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-CONTENT:CAPS"></a>ANJUTA_TOKEN_CONTENT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-ARGUMENT:CAPS"></a>ANJUTA_TOKEN_ARGUMENT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-VALUE:CAPS"></a>ANJUTA_TOKEN_VALUE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-EOV:CAPS"></a>ANJUTA_TOKEN_EOV</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-PARSED:CAPS"></a>ANJUTA_TOKEN_PARSED</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-KEYWORD:CAPS"></a>ANJUTA_TOKEN_KEYWORD</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-OPERATOR:CAPS"></a>ANJUTA_TOKEN_OPERATOR</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-NAME:CAPS"></a>ANJUTA_TOKEN_NAME</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-VARIABLE:CAPS"></a>ANJUTA_TOKEN_VARIABLE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-DEFINITION:CAPS"></a>ANJUTA_TOKEN_DEFINITION</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-STATEMENT:CAPS"></a>ANJUTA_TOKEN_STATEMENT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-NUMBER:CAPS"></a>ANJUTA_TOKEN_NUMBER</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-JUNK:CAPS"></a>ANJUTA_TOKEN_JUNK</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-COMMENT:CAPS"></a>ANJUTA_TOKEN_COMMENT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-OPEN-QUOTE:CAPS"></a>ANJUTA_TOKEN_OPEN_QUOTE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-CLOSE-QUOTE:CAPS"></a>ANJUTA_TOKEN_CLOSE_QUOTE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-ESCAPE:CAPS"></a>ANJUTA_TOKEN_ESCAPE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-FUNCTION:CAPS"></a>ANJUTA_TOKEN_FUNCTION</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-SPACE:CAPS"></a>ANJUTA_TOKEN_SPACE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-START:CAPS"></a>ANJUTA_TOKEN_START</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-NEXT:CAPS"></a>ANJUTA_TOKEN_NEXT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-LAST:CAPS"></a>ANJUTA_TOKEN_LAST</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-ITEM:CAPS"></a>ANJUTA_TOKEN_ITEM</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-STRING:CAPS"></a>ANJUTA_TOKEN_STRING</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-ERROR:CAPS"></a>ANJUTA_TOKEN_ERROR</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-WORD:CAPS"></a>ANJUTA_TOKEN_WORD</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-LIST:CAPS"></a>ANJUTA_TOKEN_LIST</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-ANY:CAPS"></a>ANJUTA_TOKEN_ANY</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-USER:CAPS"></a>ANJUTA_TOKEN_USER</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-FLAGS:CAPS"></a>ANJUTA_TOKEN_FLAGS</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-PUBLIC-FLAGS:CAPS"></a>ANJUTA_TOKEN_PUBLIC_FLAGS</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-IRRELEVANT:CAPS"></a>ANJUTA_TOKEN_IRRELEVANT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-OPEN:CAPS"></a>ANJUTA_TOKEN_OPEN</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-CLOSE:CAPS"></a>ANJUTA_TOKEN_CLOSE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-SIGNIFICANT:CAPS"></a>ANJUTA_TOKEN_SIGNIFICANT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-PRIVATE-FLAGS:CAPS"></a>ANJUTA_TOKEN_PRIVATE_FLAGS</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-CASE-INSENSITIVE:CAPS"></a>ANJUTA_TOKEN_CASE_INSENSITIVE</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-STATIC:CAPS"></a>ANJUTA_TOKEN_STATIC</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-REMOVED:CAPS"></a>ANJUTA_TOKEN_REMOVED</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-TOKEN-ADDED:CAPS"></a>ANJUTA_TOKEN_ADDED</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

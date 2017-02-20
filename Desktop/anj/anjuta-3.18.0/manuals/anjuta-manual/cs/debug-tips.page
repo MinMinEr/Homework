@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-tips" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="fifth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Tipy a triky pro ladění.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Tipy pro ladění</title>
+
+  <section>
+  <title>Oprava kritických chyb GLib/GTK+</title>
+  
+  <p>Někdy může být obtížné vystopovat, kde se objevila kritická chyba GLib, protože při ní nedojde k zastavení programu. Proto máte možnost nastavením proměnné prostředí <sys>G_DEBUG</sys> na <sys>fatal_criticals</sys> říci programu, aby se zastavil, jakmile obdrží kritickou chybu GLib, </p>
+
+  <steps>
+    <item>
+      <p>Otevřete <link xref="run-parameters-dialog"/> pomocí nabídky <guiseq><gui>Spustit</gui><gui>Parametry programu…</gui></guiseq></p>
+    </item>
+    <item>
+      <p>Kliknutím na symbol plus vedle <gui>Proměnné prostředí</gui> rozbalte seznam s proměnnými prostředí.</p>
+    </item>
+    <item>
+      <p>Kliknutím na <gui>Nová</gui> přidejte do seznamu nový záznam.</p>
+    </item>
+    <item>
+      <p>Do <gui>Název</gui> vyplňte <input>G_DEBUG</input> a do <gui>Hodnota</gui> vyplňte <input>fatal_criticals</input>.</p>
+    </item>
+    <item>
+      <p>Změny potvrďte kliknutím na <gui>Použít</gui>.</p>
+    </item>
+    <item>
+      <p>Spusťte program pomocí ladicího programu přes nabídku <guiseq><gui>Spustit</gui> <gui>Ladit program</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Používejte program, dokud se neobjeví kritická chyba.</p>
+    </item>
+    <item>
+      <p>Až ladicí program zastaví váš program, podívejte se na <link xref="debug-stack"/>, abyste zjistili, odkud chyba přichází.</p>
+    </item>
+  </steps>
+
+  <p>Nejvrchnější funkce s rámcem 0 je v GLib, takže se musíte v zásobníku podívat níž. Typicky chyba vzniká v nejvrchnější funkci, která náleží vašemu programu.</p>
+   
+  </section>
+
+</page>

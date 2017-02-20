@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="anjuta-code-assist" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-10-24" status="draft"/>
+    <desc>Integrált szerkesztőfunkciók beállítása és használata</desc>
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Automatikus kiegészítés és hívástippek</title>
+
+<section>
+<title>Automatikus kiegészítés</title>
+<p>Az automatikus kiegészítés automatikusan javaslatokat tesz függvényekre és más kódszimbólumokra a gépelés elkezdése után, megpróbálva illeszkedést találni a meglévő szimbólumokra az elsőként begépelt karakterek alapján. Ezután megjelenít egy legördülő menüt, amelyből a le és fel nyilak és az <key>Enter</key> billentyűvel választhatja ki a kívánt találatot. Normális esetben ez automatikusan bekövetkezik a harmadik (nem üres hely) karakter begépelése után, de ki is kényszerítheti a <guiseq><gui>Szerkesztés</gui><gui>Automatikus kiegészítés</gui></guiseq> menüpont kiválasztásával.</p>
+<note>
+<p>Az Anjuta a C/C++, Vala, JavaScript és Python nyelven írt kódokhoz támogatja az automatikus kiegészítést. Ne feledje, hogy a kódkiegészítés csak akkor működik, ha az Anjuta ismeri a szimbólumokat. Ha C/C++ programkönyvtárakat használ, amelyek nem a <cmd>pkg-config</cmd> használatával vannak konfigurálva, vagy nincsenek hozzáadva a projekt konfigurációjához, akkor az Anjuta nem fogja tudni megtalálni ezeket a szimbólumokat, és a kódkiegészítés esetleg nem fog működni.</p>
+<p>Ezen túl egyes szintaxisok túlságosan bonyolultak lehetnek az integrált feldolgozónak, és esetleg az nem lesz képes felismerni, hogy melyik kiegészítés szükséges.</p>
+</note>
+</section>
+
+<section>
+<title>Hatékony kódolás hívástippek használatával</title>
+
+<p>Mivel általában meglehetősen nehéz megjegyezni a projektben használt minden metódus vagy függvény szignatúráját, a szerkesztő automatikusan meg fog jeleníteni egy kis, a függvény szignatúráját tartalmazó buboréksúgót, amikor egy függvénynév után „(” karaktert ír be.</p>
+
+</section>
+
+</page>

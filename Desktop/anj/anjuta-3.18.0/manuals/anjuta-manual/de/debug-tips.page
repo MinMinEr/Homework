@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-tips" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="fifth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Tipps und Tricks zur Fehlerdiagnose.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Tipps zur Fehlerdiagnose</title>
+
+  <section>
+  <title>Korrigieren von kritischen Fehlern in GLib/GTK+</title>
+  
+  <p>Manchmal kann es schwierig sein herauszufinden, wo kritische GLib-Fehler auftreten, weil diese die Programmausführung nicht beenden. Setzen Sie die Umgebungsvariable <sys>G_DEBUG</sys> auf den Wert <sys>fatal_criticals</sys>, um das Programm bei kritischen GLib-Fehlern anhalten zu lassen.</p>
+
+  <steps>
+    <item>
+      <p>Öffnen Sie den <link xref="run-parameters-dialog"/>, indem Sie im Hauptmenü <guiseq><gui>Ausführen</gui><gui>Programmparameter …</gui></guiseq> wählen.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf das Pluszeichen neben <gui>Umgebungsvariablen</gui>, um die Liste der Umgebungsvariablen auszuklappen.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf <gui>Neu</gui>, um einen neuen Eintrag zur Liste hinzuzufügen.</p>
+    </item>
+    <item>
+      <p>Geben Sie in das Feld <gui>Name</gui> <input>G_DEBUG</input> ein und in <gui>Wert</gui> <input>fatal_criticals</input>.</p>
+    </item>
+    <item>
+      <p>Klicken Sie auf <gui>Anwenden</gui>, um die Änderungen zu bestätigen.</p>
+    </item>
+    <item>
+      <p>Führen Sie das Programm zur Fehlerdiagnose aus, indem Sie <guiseq><gui>Ausführen</gui><gui>Programm diagnostizieren</gui></guiseq> im Hauptmenü wählen.</p>
+    </item>
+    <item>
+      <p>Verwenden Sie das Programm, bis der kritische Fehler auftritt.</p>
+    </item>
+    <item>
+      <p>Schauen Sie sich im <link xref="debug-stack"/> an, wo dieser Fehler passiert, sobald die Fehlerdiagnose Ihr Programm anhält.</p>
+    </item>
+  </steps>
+
+  <p>Die oberste Funktion mit Frame-Nummer 0 ist in GLib, d.h. Sie müssen weiter unten im Stack schauen. Oft liegt der Fehler in der obersten Funktion, welche in Ihrem Programm liegt.</p>
+   
+  </section>
+
+</page>

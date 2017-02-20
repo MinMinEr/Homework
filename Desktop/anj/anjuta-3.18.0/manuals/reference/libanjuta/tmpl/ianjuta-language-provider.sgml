@@ -1,0 +1,117 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaLanguageProvider
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_LANGUAGE_PROVIDER_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO IANJUTA_LANGUAGE_PROVIDER_PREF_CALLTIP_ENABLE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO IANJUTA_LANGUAGE_PROVIDER_PREF_AUTOCOMPLETE_ENABLE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO IANJUTA_LANGUAGE_PROVIDER_PREF_AUTOCOMPLETE_SPACE_AFTER_FUNC ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO IANJUTA_LANGUAGE_PROVIDER_PREF_AUTOCOMPLETE_BRACE_AFTER_FUNC ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO IANJUTA_LANGUAGE_PROVIDER_PREF_AUTOCOMPLETE_CLOSEBRACE_AFTER_FUNC ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ianjuta_language_provider_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_language_provider_get_calltip_cache ##### -->
+<para>
+
+</para>
+
+@obj: 
+@call_context: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_language_provider_get_calltip_context ##### -->
+<para>
+
+</para>
+
+@obj: 
+@iter: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_language_provider_new_calltip ##### -->
+<para>
+
+</para>
+
+@obj: 
+@call_context: 
+@iter: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_language_provider_populate_completions ##### -->
+<para>
+
+</para>
+
+@obj: 
+@iter: 
+@err: 
+@Returns: 
+
+

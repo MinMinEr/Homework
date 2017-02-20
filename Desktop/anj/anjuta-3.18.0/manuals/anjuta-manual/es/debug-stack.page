@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-stack" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="fourth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Examinar la pila.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Pila</title>
+
+  <section>
+    <title>Listar los marcos de la pila</title>
+
+    <p>Un marco de la pila es un área de la pila asociado a cada llamada de función. Lista todas las funciones y sus argumentos en la secuencia en la que se llamaron. Cada marco de la pila se numera comenzando por 0 para la función actual. Sólo puede ver los marcos de la pila mientras el depurador se está ejecutando.</p>
+
+    <p>Un programa se puede componer de varios hilos. Todos estos hilos se ejecutan de forma independiente y cada uno tiene sus propios registros, su propia pila y sus propias variables locales, pero comparten las variables globales.</p>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Ver</gui><gui>Pila</gui></guiseq> para abrir la ventana <gui>Pila</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Las pilas se muestran en una vista de árbol con sus hilos correspondientes como padres y mostrando la siguiente información:</p>	
+
+    <terms>
+      <item>
+        <title>Activo</title>
+        <p>Contiene una flecha amarilla para representar el marco activo de la pila. De forma predeterminada es el marco 0, la función actual. Todas las evaluaciones y variables locales son relativas al marco seleccionado. Puede cambiar el marco activo de la pila para examinar las variables locales en otras funciones.</p>
+      </item>
+      <item>
+        <title>Hilo</title>
+        <p>Esto es el número correspondiente a cada hilo.</p>
+      </item>
+      <item>
+        <title>Marco</title>
+        <p>Este es el número de marco, comenzando por 0, de la función actual. La primera función de su programa, <code>main()</code> para un programa en C, tiene el número más alto.</p>
+      </item>
+      <item>
+        <title>Archivo</title>
+        <p>El nombre del archivo que contiene la función correspondiente a este marco.</p>
+      </item>
+      <item>
+        <title>Línea</title>
+        <p>El número de línea de la función correspondiente a este marco.</p>
+      </item>
+      <item>
+        <title>Función</title>
+        <p>El nombre de la función correspondiente a este marco.</p>
+      </item>
+      <item>
+        <title>Dirección</title>
+        <p>La dirección de la función correspondiente a este marco.</p>
+      </item>
+      <item>
+        <title>Argumentos</title>
+        <p>Los argumentos de la función.</p>
+      </item>
+    </terms>
+
+  </section>
+
+
+  <section>
+    <title>Cambiar el marco actual de la pila o hilo</title>
+
+    <steps>
+      <item>
+        <p>En la ventana <gui>Pila</gui> seleccione el marco que quiere.</p>
+      </item>
+      <item>
+        <p>Pulse con el botón derecho del ratón y seleccione <gui>Establecer el marco actual</gui></p>
+      </item>
+    </steps>
+
+    <p>Pulsar sobre el marco de una pila en el mismo hilo solo cambia el marco de la pila, permitiendo ver otras variables locales. Pero hacerlo en otro hilo cambiará tanto el marco de la pila como el hilo. Los valores de los registros serán diferentes y el depurador se reiniciará en el hilo seleccionado.</p>
+  </section>
+
+
+  <section>
+    <title>Ver la función actual</title>
+
+    <steps>
+      <item>
+        <p>En la ventana <gui>Pila</gui> seleccione el marco que quiere.</p>
+      </item>
+      <item>
+        <p>Pulse dos veces o pulse con el botón derecho en <gui>Ver fuente</gui>.</p>
+      </item>
+    </steps>
+  </section>
+
+
+  <section>
+    <title>Obtener un seguimiento de la pila</title>
+ 
+    <steps>
+      <item>
+        <p>Pulse con el botón derecho en la ventana <gui>Pila</gui> y seleccione <gui>Obtener la traza de la pila</gui></p>
+      </item>
+    </steps>
+  </section>
+
+
+</page>

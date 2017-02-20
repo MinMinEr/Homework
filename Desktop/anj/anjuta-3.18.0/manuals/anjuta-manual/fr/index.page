@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="2column" id="index" xml:lang="fr">
+
+  <info>
+    <desc>Manuel de Anjuta DevStudio.</desc>
+    <title type="link">Anjuta</title>
+    <title type="text">Anjuta DevStudio</title>
+
+    <revision pkgversion="0.1" version="0.1" date="2011-03-20" status="incomplete"/>
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+
+<!--  
+   <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude" /> 
+-->
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>  
+  
+  <title><media type="image" mime="image/png" its:translate="no" src="figures/anjuta_logo.png"><span its:translate="yes">Logo d'Anjuta</span></media> Anjuta DevStudio</title>
+
+  <section id="anjuta-project-management" style="2column" groups="first second third fourth fifth">
+    <title>Gestion du projet</title>
+  </section>
+
+  <section id="anjuta-code" style="2column">
+    <title>Codage et parcours du code</title>
+  </section> 
+
+  <section id="anjuta-build" style="2column" groups="first second third fourth fifth sixth">
+    <title>Construction du projet</title>
+  </section>
+
+  <section id="anjuta-debug" style="2column" groups="first second third fourth fifth">
+    <title>Débogage du programme</title>
+  </section>
+
+<!--
+  <section id="anjuta-glade" style="2column" groups="first second">
+    <title>User interface editor</title>
+  </section>
+-->
+
+  <section id="reference">
+    <title>Référence</title>
+  </section>
+
+</page>

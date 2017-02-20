@@ -1,0 +1,43 @@
+<!--*- xml -*-->
+<ui>
+	<menubar name="MenuMain">
+	<menu name="MenuFile" action="ActionMenuFile">
+		<placeholder name="PlaceholderProjectMenus">
+			<menuitem name="CloseProject" action="ActionFileCloseProject" />
+			<separator name="seperator10"/>
+		</placeholder>
+	</menu>
+	<placeholder name="PlaceHolderProjectMenus">
+		<menu name="MenuProject" action="ActionMenuProject">
+				<menuitem name="AddSource" action="ActionProjectAddSource" />
+				<menuitem name="AddLibrary" action="ActionProjectAddLibrary" />
+				<separator name="separator2"/>
+				<menuitem name="NewTarget" action="ActionProjectNewTarget" />
+				<menuitem name="NewFolder" action="ActionProjectNewFolder" />
+				<separator name="separator1"/>
+				<menuitem name="Properties" action="ActionProjectProperties"/>
+		</menu>
+	</placeholder>
+	</menubar>
+	<popup name="PopupProjectManager">
+		<placeholder name="PlaceholderPopupProjectOpen"/>
+		<placeholder name="PlaceholderPopupProjectBuild"/>
+		<separator name="separator0"/>
+		<menuitem name="AddSource" action="ActionPopupProjectAddSource"/>
+		<menuitem name="AddLibrary" action="ActionPopupProjectAddLibrary"/>
+		<separator name="separator1"/>
+		<menuitem name="NewTarget" action="ActionPopupProjectNewTarget"/>
+		<menuitem name="NewFolder" action="ActionPopupProjectNewFolder"/>
+		<separator name="separator2"/>
+		<menuitem name="Remove" action="ActionPopupProjectRemove"/>
+		<separator name="separator3"/>
+		<menuitem name="Properties" action="ActionPopupProjectProperties"/>
+		<separator name="separator4"/>
+		<menuitem name="SortShortcut" action="ActionPopupProjectSortShortcut"/>
+	</popup>
+	<popup name="PopupFileManager">
+		<placeholder name="PlaceholderPopupFileProject">
+			<menuitem name="AddToProject" action="ActionPopupProjectAddToProject"/>
+		</placeholder>
+	</popup>
+</ui>

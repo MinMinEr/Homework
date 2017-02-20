@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-tips" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="fifth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Συμβουλές και κόλπα αποσφαλμάτωσης.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Συμβουλές αποσφαλμάτωσης</title>
+
+  <section>
+  <title>Διόρθωση κρίσιμων σφαλμάτων GLib/GTK+</title>
+  
+  <p>Μερικές φορές μπορεί να είναι δύσκολος ο εντοπισμός πού συμβαίνουν κρίσιμα σφάλματα GLib, αφού δεν σταματούν το πρόγραμμα. Μπορείτε να ορίσετε στάση του προγράμματος μόλις πάρει ένα κρίσιμο σφάλμα GLib, ορίζοντας τη μεταβλητή περιβάλλοντος <sys>G_DEBUG</sys> στην τιμή <sys>fatal_criticals</sys>.</p>
+
+  <steps>
+    <item>
+      <p>Ανοίξτε το <link xref="run-parameters-dialog"/> επιλέγοντας <guiseq><gui>Εκτέλεση</gui><gui>Παράμετροι προγράμματος...</gui></guiseq> από το κύριο μενού.</p>
+    </item>
+    <item>
+      <p>Κλικ στο σύμβολο συν δίπλα στο <gui>Μεταβλητές περιβάλλοντος</gui> για επέκταση της λίστας των μεταβλητών περιβάλλοντος.</p>
+    </item>
+    <item>
+      <p>Κλικ <gui>Νέο</gui> για προσθήκη νέας καταχώρισης στη λίστα.</p>
+    </item>
+    <item>
+      <p>Συμπληρώστε το <gui>Όνομα</gui> με <input>G_DEBUG</input> και <gui>Τιμή</gui> με <input>fatal_criticals</input>.</p>
+    </item>
+    <item>
+      <p>Κλικ στο <gui>Εφαρμογή</gui> για επιβεβαίωση των αλλαγών.</p>
+    </item>
+    <item>
+      <p>Εκτέλεση του προγράμματος με τον αποσφαλματωτή επιλέγοντας <guiseq><gui>Εκτέλεση</gui><gui>Πρόγραμμα αποσφαλμάτωσης</gui></guiseq> από το κύριο μενού.</p>
+    </item>
+    <item>
+      <p>Χρήση του προγράμματος μέχρι να συμβεί κρίσιμο σφάλμα.</p>
+    </item>
+    <item>
+      <p>Όταν ο αποσφαλματωτής σταματήσει το πρόγραμμά σας, κοιτάξτε το <link xref="debug-stack"/> για έλεγχο από πού προέρχεται αυτό το σφάλμα.</p>
+    </item>
+  </steps>
+
+  <p>Η άνω συνάρτηση με αριθμό πλαισίου 0 είναι στο GLib, έτσι πρέπει να κοιτάξετε στη στοίβα. Τυπικά το σφάλμα προέρχεται από την ανώτερη συνάρτηση που ανήκει στο πρόγραμμά σας.</p>
+   
+  </section>
+
+</page>

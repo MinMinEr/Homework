@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-target-add" xml:lang="ca">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-target" group="fifth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Afegiu un objectiu a un projecte.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jaume Planas</mal:name>
+      <mal:email>jplanas@itberga.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gil Forcada</mal:name>
+      <mal:email>gilforcada@guifi.net</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Add a Target</title>
+
+  <p>A target groups files together and defines their use.
+  It is used to represent a program, with all its source files as its children
+  or only group data files those should be installed at the same place.</p>
+
+  <steps>
+    <item>
+      <p>A la <gui>vista de projecte</gui>, trieu el directori on voleu afegir-hi l'objectiu nou, feu clic amb el botó secundari del ratolí perquè es mostri el <gui>menú contextual del projecte</gui> i trieu <gui>Objectiu nou</gui>.</p>
+      <p>O trieu <guiseq><gui>Projecte</gui><gui>Objectiu nou...</gui></guiseq> en el <gui>menú principal</gui>.</p>
+    </item>
+    <item>
+      <p>A la <gui>vista d'arbre de directoris</gui> podeu triar-ne un altre.</p>
+      <p>Enter a target name and select the type of the target in the
+      drop-down list below.
+      Depending on your project backend, various types of target are possible,
+      see at the bottom.</p>
+      <note style="tip">
+        <p>Target names are typically restricted to letters, digits and
+        the underscore, so it's safer to avoid other characters.</p>
+     </note>
+    </item>
+    <item>
+      <p>Quan hàgiu triat el nom, el tipus i el pare de l'objectiu, feu clic al botó <gui>Afegeix</gui> per afegir-lo.</p>
+    </item>
+ </steps>
+
+</page>

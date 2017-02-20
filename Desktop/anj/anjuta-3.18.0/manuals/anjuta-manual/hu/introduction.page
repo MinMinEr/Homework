@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="introduction" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <title>Bevezetés</title>
+    <desc>Az <app>Anjuta</app> integrált fejlesztői környezet bemutatása</desc>
+    <link type="guide" xref="index"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Bevezetés</title>
+
+  <p>Az <app>Anjuta</app> egy sokoldalú integrált fejlesztői környezet (IDE) a GNOME asztali környezethez. Számos fejlett programozási szolgáltatást tartalmaz, beleértve a projektmenedzsmentet, alkalmazásvarázslókat, interaktív hibakeresést, az integrált Glade felülettervezőt, integrált Devhelp API súgót, osztálygenerátort, hatékony forrásszerkesztőt, szimbólumböngészőt, Git támogatást, C/C++, Python és Vala támogatást és sok mást.</p>
+
+  <p>Az <app>Anjuta</app> rugalmas és fejlett dokkolási rendszerrel rendelkezik, amely lehetővé teszi a nézetek tetszőleges elrendezését. A nézeteket fogd és vidd módszerrel és húzósávokkal rendezheti át.</p>
+
+  <p>Az <app>Anjuta</app> egyszerűen kezelhetőnek, mégis az összes programozási igényét kielégítőnek lett tervezve. Sok új szolgáltatást készítettünk az <app>Anjutahoz</app> a fejlesztése során. Célunk a hatékonyság és használhatóság egyidejű biztosítása, és a szoftverfejlesztés élvezhetővé tétele az érzékeinek túlterhelése nélkül. Szándékunkban áll az <app>Anjuta</app> továbbfejlesztése és stabilizálása, a lehető legjobb IDE élmény biztosítása érdekében.</p>
+
+  <p>Reméljük, hogy élvezni fogja az <app>Anjuta</app> használatát. Ha nem, akkor segítsen jobbá tenni a hibák és javaslatok bejelentésével - ezzel segít jobbá tenni a szoftvert, valamint a nyílt forrású közösséget is segíti.</p>
+
+  <p>A következő képernyőkép bemutat néhány, az <app>Anjutaban</app> megtalálható funkciót.</p>
+
+  <figure>
+    <title>Az <app>Anjuta</app> akcióban</title>
+    <desc>Az <app>Anjuta</app> főablaka</desc>
+    <media type="image" mime="image/png" src="figures/anjuta-in-action.png">
+      <p>Az <app>Anjuta</app> főablaka</p>
+    </media>
+  </figure>
+
+</page>

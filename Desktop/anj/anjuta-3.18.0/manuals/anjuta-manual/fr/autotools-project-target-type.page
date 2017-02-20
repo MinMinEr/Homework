@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="autotools-project-target-type" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="project-manager-target-add"/>
+    <desc>Type de cible autotools.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Type de projet autotools</title>
+
+  <p>Il y a plusieurs types différents de cibles disponibles.</p>
+
+  <terms>
+    <item>
+      <title>Bibliothèque partagée (Libtool)</title>
+      <p>Elle représente une bibliothèque partagée par plusieurs programmes qui est connectée au moment de l'exécution. C'est la plus répandue des bibliothèques sous Linux. Sous Windows, elle se nomme « bibliothèque de liaison dynamique ».</p>
+      <p>Elle utilise le paquet « Libtool ». Son nom doit commencer par « lib » et se termine par l'extension « .la ».</p>
+    </item>
+    <item>
+      <title>Module (Libtool)</title>
+      <p>Il représente une bibliothèque, souvent appelée « greffon », qui est connectée au moment de l'exécution explicitement par le programme lui-même. Il sert seulement à charger le code correspondant aux fonctions utilisées.</p>
+      <p>Il utilise le paquet « Libtool ». Son nom ne nécessite pas l'usage du préfixe « lib » mais doit comporter l'extension « .la ».</p>
+    </item>
+    <item>
+      <title>Bibliothèque statique (Libtool)</title>
+      <p>Elle représente une bibliothèque liée au programme au moment de la compilation. Seules les fonctions utilisées sont inclues dans l'exécutable généré.</p>
+      <p>Elle utilise le paquet « Libtool ». Son nom doit commencer par « lib » et comporte l'extension « .la ».</p>
+    </item>
+    <item>
+      <title>Programme</title>
+      <p>Elle représente le programme compilé, par exemple à partir des fichiers sources C. Tous les enfants représentent les fichiers source compilés pour générer le programme.</p>
+    </item>
+    <item>
+      <title>Module Python</title>
+      <p>Il représente un programme écrit en Python.</p>
+    </item>
+    <item>
+      <title>Module Java</title>
+      <p>Il représente un programme écrit en Java.</p>
+    </item>
+    <item>
+      <title>Module LISP</title>
+      <p>Il représente un programme écrit en LISP.</p>
+    </item>
+    <item>
+      <title>Fichiers en-tête</title>
+      <p>Cette cible vous permet de regrouper les fichiers en-tête et définir où ils doivent être installés.</p>
+    </item>
+    <item>
+      <title>Documentation Man</title>
+      <p>Elle regroupe les pages man nécessaires au projet.</p>
+    </item>
+    <item>
+      <title>Documentation informative</title>
+      <p>Elle regroupe les pages d'informations nécessaires au projet.</p>
+    </item>
+    <item>
+      <title>Données diverses</title>
+      <p>Elle regroupe les fichiers de données nécessaires au projet, comme les images, la description de l'interface utilisateur, les fichiers de configuration...</p>
+    </item>
+    <item>
+      <title>Script</title>
+      <p>Elle représente des programmes qui sont des scripts. Ils sont uniquement placés dans le dossier spécifié. Si des scripts doivent être créés, des règles supplémentaires sont nécessaires.</p>
+    </item>
+  </terms>
+
+</page>

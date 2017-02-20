@@ -1,0 +1,71 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaDebugManager
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_DEBUG_MANAGER_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ianjuta_debug_manager_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_debug_manager_quit ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_debug_manager_start ##### -->
+<para>
+
+</para>
+
+@obj: 
+@uri: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_debug_manager_start_remote ##### -->
+<para>
+
+</para>
+
+@obj: 
+@server: 
+@uri: 
+@err: 
+@Returns: 
+
+

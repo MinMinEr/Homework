@@ -1,0 +1,142 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaDock
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION anjuta_dock_new ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_dock_add_pane ##### -->
+<para>
+
+</para>
+
+@self: 
+@pane_name: 
+@pane_label: 
+@stock_icon: 
+@pane: 
+@placement: 
+@entries: 
+@num_entries: 
+@user_data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_dock_add_pane_full ##### -->
+<para>
+
+</para>
+
+@self: 
+@pane_name: 
+@pane_label: 
+@stock_icon: 
+@pane: 
+@placement: 
+@entries: 
+@num_entries: 
+@user_data: 
+@behavior: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_dock_replace_command_pane ##### -->
+<para>
+
+</para>
+
+@self: 
+@pane_name: 
+@pane_label: 
+@stock_icon: 
+@pane: 
+@placement: 
+@entries: 
+@num_entries: 
+@user_data: 
+
+
+<!-- ##### FUNCTION anjuta_dock_remove_pane ##### -->
+<para>
+
+</para>
+
+@self: 
+@pane: 
+
+
+<!-- ##### FUNCTION anjuta_dock_show_pane ##### -->
+<para>
+
+</para>
+
+@self: 
+@pane: 
+
+
+<!-- ##### FUNCTION anjuta_dock_hide_pane ##### -->
+<para>
+
+</para>
+
+@self: 
+@pane: 
+
+
+<!-- ##### FUNCTION anjuta_dock_present_pane ##### -->
+<para>
+
+</para>
+
+@self: 
+@pane: 
+
+
+<!-- ##### FUNCTION anjuta_dock_set_command_bar ##### -->
+<para>
+
+</para>
+
+@self: 
+@command_bar: 
+
+
+<!-- ##### FUNCTION anjuta_dock_get_command_bar ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### STRUCT AnjutaDockPriv ##### -->
+<para>
+
+</para>
+
+

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-watch" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="second"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Kifejezések és változók megfigyelése.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Figyelőkifejezések</title>
+
+  <p>A figyelőkifejezések vagy röviden figyelők olyan kifejezések, amelyeket a hibakereső kiértékel és kiír a program minden megállításakor, például a program minden <link xref="debug-step">léptetése</link> után.</p>
+
+  <section>
+    <title>Megfigyelt kifejezések felsorolása</title>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Nézet</gui><gui>Figyelők</gui></guiseq> menüpontot a <gui>Figyelők</gui> ablak megnyitásához.</p>
+      </item>
+    </steps>
+
+    <p>A helyi változókhoz hasonlóan az összes figyelőkifejezés egy fában jelenik meg, a gyermekek pedig struktúra- vagy tömbtagokat képviselnek.</p>
+  
+    <terms>
+      <item>
+        <title>Változó</title>
+        <p>A változó vagy kifejezés neve.</p>
+      </item>
+      <item>
+        <title>Érték</title>
+        <p>A változó vagy kifejezés értéke.</p>
+      </item>
+      <item>
+        <title>Típus</title>
+        <p>A változó vagy kifejezés eredményének típusa.</p>
+      </item>
+    </terms>
+  </section>
+
+  <section>
+    <title>Figyelők frissítése</title>
+
+    <p>A figyelőkifejezések frissíthetők automatikusan, amint a program megáll, vagy felhasználói kérés esetén is.</p>
+
+    <p>Egy figyelőkifejezés beállításához automatikus frissítéshez:</p>
+
+    <steps>
+      <item>
+        <p>A <gui>Figyelők</gui> ablakban válassza ki az automatikusan frissítendő figyelőt. Kattintson rá a jobb egérgombbal, és ellenőrizze, hogy az <gui>Automatikus frissítés</gui> menüpont ki van-e jelölve. Ha nincs, akkor jelölje ki.</p>
+      </item>
+    </steps>
+
+    <p>Egy figyelőkifejezés saját kezű frissítéséhez:</p>
+
+    <steps>
+      <item>
+        <p>A <gui>Figyelők</gui> ablakban kattintson a jobb egérgombbal, és válassza ki a <gui>Figyelő frissítése</gui> menüpontot a kijelölt figyelő frissítéséhez.</p>
+      </item>
+    </steps>
+
+    <p>Az összes figyelőkifejezés egyidejű frissítéséhez saját kezűleg:</p>
+
+    <steps>
+      <item>
+        <p>A <gui>Figyelők</gui> ablakban kattintson a jobb egérgombbal, és válassza az <gui>Összes frissítése</gui> menüpontot az összes figyelő egyidejű frissítéséhez.</p>
+      </item>
+    </steps>
+
+  </section>
+
+
+  <section>
+    <title>Figyelő hozzáadása egy kifejezéshez</title>
+
+    <p>Egy kifejezés felvételéhez a figyelőlistára:</p>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Hibakeresés</gui><gui>Figyelő hozzáadása</gui></guiseq> menüpontot, vagy a <gui>Figyelők</gui> ablakban kattintson a jobb egérgombbal, és válassza a <gui>Figyelő hozzáadása</gui> menüpontot.</p>
+      </item>
+      <item>
+        <p>Írja be a figyelendő kifejezést. Jelölje be az <gui>Automatikus frissítés</gui> négyzetet, ha azt szeretné, hogy a kifejezés frissüljön a program minden megállításakor.</p>
+      </item>
+    </steps>
+
+    <p>Egy kifejezés a következőképpen értékelhető ki, és vehető fel figyelőként:</p>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Hibakeresés</gui><gui>Vizsgálat/Kiértékelés</gui></guiseq> menüpontot, vagy kattintson a jobb egérgombbal a <gui>Szerkesztő</gui> ablakban, és válassza a <gui>Vizsgálat/Kiértékelés</gui> menüpontot.</p>
+      </item>
+      <item>
+        <p>Kattintson a <gui>Hozzáadás</gui> gombra a kifejezés felvételéhez a figyelők listájára.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section>
+    <title>Figyelő eltávolítása</title>
+
+    <p>A kifejezések eltávolíthatók a figyelők listájáról.</p>
+
+    <steps>
+      <item>
+        <p>A <gui>Figyelők</gui> ablakban válassza ki az eltávolítani kívánt figyelőt, majd kattintson a jobb egérgombbal, és válassza a <gui>Figyelő eltávolítása</gui> menüpontot.</p>
+      </item>
+    </steps>
+
+    <p>Az összes figyelő eltávolítható egyszerre.</p>
+
+    <steps>
+      <item>
+        <p>A <gui>Figyelők</gui> ablakban kattintson a jobb egérgombbal, és válassza az <gui>Összes eltávolítása</gui> menüpontot.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section>
+    <title>Változó értékének módosítása</title>
+
+    <p>Ha egy figyelőkifejezés megfelel egy változónak, akkor megváltoztathatja az értékét.</p>
+
+    <steps>
+      <item>
+        <p>A <gui>Figyelők</gui> ablakban válassza ki a szerkeszteni kívánt változót, és kattintson duplán az <gui>Érték</gui> oszlopra.</p>
+      </item>
+      <item>
+        <p>Adja meg az új értéket.</p>
+      </item>
+    </steps>
+  </section>
+
+
+</page>

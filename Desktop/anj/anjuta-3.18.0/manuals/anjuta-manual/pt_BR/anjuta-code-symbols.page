@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="anjuta-build-indentation" xml:lang="pt-BR">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Maneiras eficientes de navegar pelo código fonte</desc>
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  </info>
+
+  <title>Navegação pelo código usando o navegador de símbolos</title>
+
+<section>
+<title>Usando o navegador de símbolos</title>
+<p>O navegador de símbolos permite que você tenha uma visão geral dos símbolos usados no seu projeto. Símbolos aqui se referem a variáveis, funções/métodos e classes e a definição exata depende da linguagem de programação usada.</p>
+
+<p>O navegador de símbolos tem três abas:</p>
+<list>
+	<item><p><gui>Arquivo</gui> mostra os símbolos do arquivo atual no editor</p></item>
+	<item><p><gui>Projeto</gui> mostra todos os símbolos do projeto</p></item>
+	<item><p><gui>Pesquisar</gui> permite que você pesquise os símbolos no projeto (use <keyseq><key>Ctrl</key><key>L</key></keyseq> para pular diretamente para a caixa de pesquisa)</p></item>
+</list>
+
+<p>Um clique duplo pula para a definição do símbolo no editor.</p>
+</section>
+
+<section>
+<title>Navegando no editor</title>
+<p>In the <gui>Goto</gui> popup-menu of the editor there two items that help you to quickly navigate
+through the source code:</p>
+
+<list>
+	<item><p><gui>Symbol definition</gui></p></item>
+	<item><p><gui>Symbol declaration</gui></p></item>
+</list>
+
+<p>If you want to go back to the position in the editor where you used the 
+shown items in the <gui>Goto</gui> menu you can use the
+<gui>Previous history</gui> (and <gui>Next history</gui>) items in the same menu.</p>
+
+</section>
+
+</page>

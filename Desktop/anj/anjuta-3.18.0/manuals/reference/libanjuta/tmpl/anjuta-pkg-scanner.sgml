@@ -1,0 +1,59 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaPkgScanner
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION anjuta_pkg_scanner_new ##### -->
+<para>
+
+</para>
+
+@package: 
+@version: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_pkg_scanner_get_package ##### -->
+<para>
+
+</para>
+
+@scanner: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_pkg_scanner_get_version ##### -->
+<para>
+
+</para>
+
+@scanner: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_pkg_scanner_get_files ##### -->
+<para>
+
+</para>
+
+@scanner: 
+@Returns: 
+
+

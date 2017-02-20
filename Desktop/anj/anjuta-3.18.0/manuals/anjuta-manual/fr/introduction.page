@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="introduction" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <title>Introduction</title>
+    <desc>Introduction à l'Environnement de développement intégré <app>Anjuta</app>.</desc>
+    <link type="guide" xref="index"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Introduction</title>
+
+  <p><app>Anjuta</app> est un environnement de développement intégré (IDE) polyvalent pour le bureau GNOME. Il intègre de nombreuses facilités de programmation avancée comprenant la gestion de projet, des assistants pour applications, un débogueur interactif, le concepteur d'interface utilisateur intégré Glade, l'aide API intégrée Devhelp, un générateur de classes, un éditeur de source puissant, un outil de navigation parmi les symboles, la prise en charge de Git et des langages C/C++, Python et Vala et plus encore.</p>
+
+  <p><app>Anjuta</app> possède un système de zones d'ancrage flexible et avancé qui vous permet de disposer toutes les vues comme vous le souhaitez. Vous pouvez faire glisser les vues en utilisant les barres de glissement et modifier leur disposition.</p>
+
+  <p><app>Anjuta</app> a été conçu pour être simple d'emploi mais suffisamment puissant pour répondre à tous vos besoins en programmation. Beaucoup de fonctionnalités ont été ajoutées à <app>Anjuta</app> depuis le début de son développement. Notre but est de fournir puissance et fonctionnalités conjointement et de rendre votre développement de logiciels agréable sans trop de fatigue. Nous voulons continuer à améliorer et rendre stable<app>Anjuta</app> pour vous donner la meilleure expérience d'environnement de développement intégré (IDE).</p>
+
+  <p>Nous espérons que vous apprécierez l'usage d'<app>Anjuta</app>. Dans le cas contraire, aidez-nous à l'améliorer en rapportant les bogues et en faisant des suggestions. Cela nous aidera à améliorer le logiciel tout en aidant la communauté des logiciels libres.</p>
+
+  <p>La capture d'écran suivante illustre une partie des éléments que vous trouvez dans <app>Anjuta</app>.</p>
+
+  <figure>
+    <title><app>Anjuta</app> en action</title>
+    <desc>Fenêtre principale d'<app>Anjuta</app></desc>
+    <media type="image" mime="image/png" src="figures/anjuta-in-action.png">
+      <p>Fenêtre principale d'<app>Anjuta</app></p>
+    </media>
+  </figure>
+
+</page>

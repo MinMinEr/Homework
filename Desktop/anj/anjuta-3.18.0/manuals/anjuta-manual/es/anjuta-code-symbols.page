@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="anjuta-build-indentation" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Formas eficientes de navegar por el código fuente</desc>
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Navegación de código usando el símbolo del navegador</title>
+
+<section>
+<title>Uso del examinador de símbolos</title>
+<p>El seguidor de símbolos le permite obtener una visión general de los símbolos usados en el proyecto. Aquí los símbolos se refieren a variables, funciones/métodos y clases, y su definición exacta depende del lenguaje de programación usado.</p>
+
+<p>El examinador de símbolos tiene tres pestañas:</p>
+<list>
+	<item><p><gui>Archivo</gui> muestra los símbolos del archivo actual en el editor</p></item>
+	<item><p><gui>Proyecto</gui> muestra todos los símbolos del proyecto</p></item>
+	<item><p><gui>Buscar</gui> le permite buscar símbolos en el proyecto (use <keyseq><key>Ctrl</key><key>L</key></keyseq> para ir directamente al cuadro de búsqueda)</p></item>
+</list>
+
+<p>Una pulsación doble le lleva directamente a la definición del símbolo en el editor.</p>
+</section>
+
+<section>
+<title>Navegación en el editor</title>
+<p>En el menú emergente <gui>Ir a</gui> del editor hay dos elementos que le ayudarán a navegar rápidamente por el código fuente:</p>
+
+<list>
+	<item><p><gui>Definición del símbolo</gui></p></item>
+	<item><p><gui>Declaración del símbolo</gui></p></item>
+</list>
+
+<p>Si quiere volver a la posición en el editor en la que usó los elementos mostrados en el menú <gui>Ir a</gui>, puede usar los elementos <gui>Histórico anterior</gui> (e <gui>Histórico siguiente</gui>) en el mismo menú.</p>
+
+</section>
+
+</page>

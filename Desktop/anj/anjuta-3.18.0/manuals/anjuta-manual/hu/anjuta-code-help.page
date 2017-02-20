@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="anjuta-code-help" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>A szükséges információk gyors megtalálása az API dokumentációban</desc>
+
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Az API referencia használata</title>
+
+<section>
+<title>Az API referencia tallózása</title>
+
+<p>A programkönyvtárak API referenciájának gyors elérése érdekében az Anjuta integrált API-böngészőt tartalmaz. Ez a <guiseq><gui>Szerkesztés</gui><gui>Beállítások</gui></guiseq> ablakban az <guiseq><gui>Általános</gui><gui>Bővítmények</gui></guiseq> alatt, a <app>DevHelp</app> bővítmény kiválasztásával kapcsolható be.</p>
+
+<p>Az API referencia két ablakot tartalmaz, az egyik adott szimbólumok keresésére szolgál, a másik pedig a súgódokumentumok megjelenítésére.</p>
+
+</section>
+
+<section>
+<title>Ugrás API referenciára a szerkesztő gyorsbillentyűivel</title>
+
+<p>Ha nem biztos benne, hogyan használandó egy adott függvény a meglévő kódban, akkor vigye a kurzort a függvénynévre, és használja a <keyseq><key>Shift</key><key>F1</key></keyseq> billentyűkombinációt (vagy a <guiseq><gui>Súgó</gui><gui>Helyi súgó</gui></guiseq> menüpontot) a dokumentációra ugráshoz.</p>
+
+</section>
+
+</page>

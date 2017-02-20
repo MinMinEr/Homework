@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-custom" xml:lang="ca">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="sixth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>
+      Use custom debugger command.
+    </desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jaume Planas</mal:name>
+      <mal:email>jplanas@itberga.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gil Forcada</mal:name>
+      <mal:email>gilforcada@guifi.net</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Custom command</title>
+
+  <p>You can send a custom command to the debugger like this:</p>
+
+  <steps>
+    <item>
+      <p>Trieu <guiseq><gui>Depura</gui> <gui>Ordre del depurador</gui></guiseq> en el <gui>menú principal</gui>.</p>
+    </item>
+    <item>
+      <p>Enter your command.</p>
+    </item>
+  </steps>
+
+  <p>The output of the command is displayed in the message window used by
+  the debugger.</p>
+
+  <note style="warning">
+    <p>The command is sent directly to the debugger without performing any checks.
+    For example, if you set a breakpoint like this, it will not appear in the
+    <gui>Breakpoint</gui> window. It is better to avoid using this
+    command unless you know exactly what you are doing.</p>
+  </note>
+
+</page>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-breakpoint" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-execute" group="second"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Verwalten von Haltepunkten.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Haltepunkte</title>
+
+  <p>Haltepunkte werden verwendet, um die Ausführung eines Programms an bestimmten Stellen zu unterbrechen, so dass der Zustand des Programms an diesen Stellen genauer untersucht werden kann.</p>
+
+  <section>
+    <title>Haltepunkte auflisten</title>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Ansicht</gui><gui>Haltepunkte</gui></guiseq> im <gui>Hauptmenü</gui>, um das Fenster <gui>Haltepunkte</gui> zu öffnen.</p>
+      </item>
+    </steps>
+
+    <p>Die Ansicht gliedert sich in folgende Spalten:</p>
+  
+    <terms>
+      <item>
+        <title>Ort</title>
+        <p>Die Position des Haltepunkts im der Quelldatei. Wenn der Haltepunkt durch die Fehlerdiagnose festgelegt ist, werden zusätzliche Informationen wie die Funktion angezeigt, welche den Haltepunkt enthält.</p>
+      </item>
+      <item>
+        <title>Adresse</title>
+        <p>Das Feld enthält die Adresse des Haltepunkts, wenn dieser durch die Fehlerdiagnose festgelegt ist.</p>
+      </item>
+      <item>
+        <title>Typ</title>
+        <p>Hier wird stets <gui>Haltepunkt</gui> angezeigt. In zukünftigen Versionen können hier verschiedene Typen von Haltepunkten angezeigt werden.</p>
+      </item>
+      <item>
+        <title>Bedingung</title>
+        <p>Dies ist die Bedingung des Haltepunkts. Falls leer, ist keine Bedingung festgelegt.</p>
+      </item>
+      <item>
+        <title>Durchgang</title>
+        <p>Wenn der Debugger nicht läuft, zeigt diese Spalte die Nummer des Durchgangs des Haltepunkts an, oder 0, falls nichts festgelegt ist.</p>
+        <p>Wenn der Debugger läuft und die Durchgangsnummer 0 ist, dann zeigt diese Spalte die Anzahl an, wie oft dieser Haltepunkt ausgelöst wurde. Falls die Durchgangsnummer von 0 verschieden ist, werden beide Nummern angezeigt. Die Durchgangsnummer ist die zweite Zahl.</p>
+      </item>
+      <item>
+        <title>Status</title>
+        <p>Dies ist der Status des Haltepunkts. Folgende Zustände sind möglich:</p>
+        <terms>
+          <item><title>Ausstehend:</title><p>Der Haltepunkt ist in Ihrem Programm nicht festgelegt.</p></item>
+          <item><title>Permanent:</title><p>Der Haltepunkt ist gesetzt (Kennung ist in Klammern angegeben).</p></item>
+          <item><title>Temporär:</title><p>Der Haltepunkt ist gesetzt, wird aber gelöscht, sobald er erreicht wurde.</p></item>
+        </terms>
+      </item>
+    </terms>
+
+    <note style="tip">
+     <p>Alle Haltepunkte bleiben über Anjuta-Sitzungen erhalten, selbst wenn sie auf nicht vorhandene Orte verweisen, beispielsweise eine Quelldatei in einer Bibliothek, die noch nicht geladen wurde. In diesem Fall wird der Status auf »Ausstehend« gesetzt.</p>
+    </note>
+  </section>
+
+  <section>
+    <title>Haltepunkte setzen</title>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Fehlerdiagnose</gui><gui>Haltepunkt setzen …</gui></guiseq> im <gui>Hauptmenü</gui>, oder drücken Sie die rechte Maustaste im Fenster <gui>Haltepunkte</gui> und wählen Sie <gui>Haltepunkt setzen …</gui>.</p>
+      </item>
+      <item>
+        <p>Geben Sie den <gui>Ort</gui> ein, welcher der Position des Haltepunkts entspricht, und falls gewünscht weitere Felder. Wenn eine Datei im Editor geöffnet ist, so ist in <gui>Ort</gui> bereits die aktuelle Zeile eingetragen. Lesen Sie <link xref="debug-breakpoint-dialog"/> für weitere Informationen.</p>
+      </item>
+    </steps>
+
+    <p>Eine weitere Lösung ist es, Haltepunkte ein- und auszuschalten. Wenn für die aktuelle Zeile kein Haltepunkt gesetzt ist, so wird einer hinzugefügt. Andernfalls wird dieser entfernt.</p>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Fehlerdiagnose</gui><gui>Haltepunkt an/aus</gui></guiseq> im <gui>Hauptmenü</gui>, oder drücken Sie die rechte Maustaste im Fenster <gui>Haltepunkte</gui> und wählen Sie <gui>Haltepunkt an/aus</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+
+  <section>
+    <title>Haltepunkte bearbeiten</title>
+
+    <p>Der Ort eines Haltepunkts kann nicht geändert werden. Erstellen Sie stattdessen einen neuen. Die Haltebedingung oder der Durchgang können jedoch angepasst werden. So bearbeiten Sie einen Haltepunkt:</p>
+
+    <steps>
+      <item>
+        <p>Wählen Sie einen Haltepunkt im <gui>Haltepunkt</gui>-Fenster aus.</p>
+      </item>
+      <item>
+        <p>Klicken Sie mit der rechten Maustaste in das <gui>Haltepunkt</gui>-Fenster und wählen Sie <gui>Haltepunkt bearbeiten</gui>.</p>
+      </item>
+      <item>
+        <p>Ändern Sie das Feld <gui>Bedingung</gui> oder <gui>Durchgang</gui> und klicken Sie auf <gui>OK</gui>, sobald Sie fertig sind. Lesen SIe <link xref="debug-breakpoint-dialog"/> für weitere Informationen.</p>
+      </item>
+    </steps>
+
+  </section>
+
+
+  <section>
+    <title>Haltepunkte entfernen</title>
+
+	<p>Entfernen Sie Haltepunkte über die oben beschriebene Funktion <gui>Haltepunkt an/aus</gui>. Wenn Sie jedoch mehr als einen Haltepunkt entfernen möchten oder der Haltepunkt in einer anderen als der geöffneten Datei ist, verwenden Sie das Fenster Haltepunkt:</p>
+
+    <steps>
+      <item>
+        <p>Wählen Sie einen Haltepunkt im <gui>Haltepunkt</gui>-Fenster aus.</p>
+      </item>
+      <item>
+        <p>Klicken Sie mit der rechten Maustaste in das <gui>Haltepunkt</gui>-Fenster und wählen Sie <gui>Haltepunkt entfernen</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Sie können alle Haltepunkte folgendermaßen entfernen:</p>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Fehlerdiagnose</gui><gui>Alle Haltepunkte entfernen</gui></guiseq> im <gui>Hauptmenü</gui>, oder drücken Sie die rechte Maustaste im Fenster <gui>Haltepunkt</gui> und wählen Sie <gui>Alle Haltepunkte entfernen</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+
+  <section>
+    <title>Aktivieren und Deaktivieren von Haltepunkten</title>
+
+    <p>Gelegentlich bietet es sich an, den Haltepunkt vorübergehend zu deaktivieren, anstatt diesen zu löschen. So deaktivieren oder reaktivieren Sie einen Haltepunkt:</p>
+
+    <steps>
+      <item>
+        <p>Klicken Sie auf <gui>Aktivieren</gui> im Fenster <gui>Haltepunkt</gui>, oder drücken Sie die rechte Maustaste im Fenster <gui>Haltepunkt</gui> und wählen Sie <gui>Haltepunkt aktivieren</gui> oder <gui>Haltepunkt deaktivieren</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Sie können alle Haltepunkte folgendermaßen deaktivieren:</p>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Fehlerdiagnose</gui><gui>Alle Haltepunkte deaktivieren</gui></guiseq> im <gui>Hauptmenü</gui>, oder drücken Sie die rechte Maustaste im Fenster <gui>Haltepunkt</gui> und wählen Sie <gui>Alle Haltepunkte deaktivieren</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+  
+
+</page>

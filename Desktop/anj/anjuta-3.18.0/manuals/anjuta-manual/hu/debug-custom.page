@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-custom" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="sixth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Egyéni hibakereső parancs használata.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Egyéni parancs</title>
+
+  <p>A hibakeresőnek a következőképpen küldhet egyéni parancsot:</p>
+
+  <steps>
+    <item>
+      <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Hibakeresés</gui><gui>Hibakereső parancs</gui></guiseq> menüpontot.</p>
+    </item>
+    <item>
+      <p>Adja meg a parancsot.</p>
+    </item>
+  </steps>
+
+  <p>A parancs kimenete a hibakereső által használt üzenetablakban jelenik meg.</p>
+
+  <note style="warning">
+    <p>A parancs közvetlenül kerül elküldésre a hibakeresőnek, bármilyen ellenőrzés nélkül. Ha például így állít be egy töréspontot, akkor az nem fog megjelenni a <gui>Töréspont</gui> ablakban. Ezen parancs használatát jobb kerülni, hacsak nem tudja pontosan, hogy mit csinál.</p>
+  </note>
+
+</page>

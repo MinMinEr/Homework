@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-configure-dialog" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="autotools-project-backend"/>
+    <link type="seealso" xref="autotools-build-configure"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Konfigurationsdialog für Autotools</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Konfigurationsdialog für Autotools</title>
+
+  <p>Der Dialog <gui>Konfigurieren</gui> ermöglicht es, die folgenden Optionen einzustellen und das Projekt zu konfigurieren.</p>
+
+  <terms>
+    <item>
+      <title><gui>Projekt neu generieren</gui></title>
+      <p>Wenn ausgewählt, wird das Projekt vollständig neu generiert, andernfalls wird nur neu konfiguriert. <app>Anjuta</app> wählt bei Bedarf automatisch dieses Ankreuzfeld an, d.h. Sie können es im derzeitigen Zustand lassen.</p>
+    </item>
+    <item>
+      <title><gui>Konfiguration</gui></title>
+      <p>Mit diesem Eingabefeld benennen Sie verschiedene Konfigurationen, jede mit eigenen Optionen und eigenem Erstellungsordner. Normalerweise gibt es bereits eine Vorgabe-Konfiguration, eine Fehlerdiagnose-Konfiguration für einfache Fehlerdiagnose (zwischenläufige Variablen und Befehlsreihenfolge bleiben unberührt) und eine optimierte Konfiguration, die schnellere Programme bei längerer Erstellungsdauer produziert. Es können zusätzliche eigene Konfigurationen definiert werden.</p>
+    </item>
+    <item>
+      <title><gui>Erstellungsordner</gui></title>
+      <p>Wählen Sie den Erstellungsordner. Dieser darf auch der Projektordner oder ein Unterordner sein. Das ist speziell für den Wechsel zwischen verschiedenen Konfigurationen nützlich, um ein erneutes Erstellen des gesamten Projekts zu vermeiden.</p>
+      <note style="advanced">
+        <p>Mit Autotools ist es nicht möglich, eine Konfiguration für einen anderen Ordner zu verwenden, wenn bereits eine Konfiguration den Projektordner verwendet. Diese muss zuvor entfernt werden.</p>
+      </note>
+      <note style="bug">
+        <p>Einige Autotools-Projekte können nicht außerhalb der Projektordners erstellt werden. Es können zwar dennoch verschiedene Konfigurationen eingesetzt werden, aber alle müssen den Projektordner verwenden und alles muss bei Konfigurationswechsel neu kompiliert werden.</p>
+      </note>
+    </item>
+    <item>
+      <title><gui>Konfigurationsoptionen</gui></title>
+      <p>Dieses Textfeld führt alle vom Konfigurationsvorgang eingesetzten Befehlszeilenargumente auf. Alle Argumente werden durch Leerzeichen getrennt und müssen in Zitatzeichen gesetzt werden, wenn sie Leerzeichen enthalten. Jede Konfiguration schreibt Voreinstelllungen in dieses Feld, welche Sie ändern können.</p>
+      <note style="advanced">
+        <p>Jedes Autotools-Projekt unterstützt bestimmte Argumente, kann aber auch über spezifische Argumente verfügen. Der Befehl <cmd>configure --help</cmd> gibt eine Liste aller möglichen Argumente auf der Befehlszeile aus. Das Projekt muss mindestens einmal konfiguriert worden sein, damit das <cmd>configure</cmd>-Skript vorhanden ist.</p>
+      </note>
+    </item>
+  </terms>
+
+</page>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-plugin" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Complemento de construcción de «autotools»</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Complemento de construcción de «autotools»</title>
+
+  <p>Este complemento está orientado a los proyectos para «autotools» pero como usan «make» es útil para otro tipo de proyectos que también usen «make».</p>
+
+  <section>
+    <title>Comando «make» usado</title>
+    <p>Esta es una lista de objetivos usados por el complemento. Están implementados en todos los proyectos de «autotools», pero necesita implementarlos si está usando un makefile personalizado.</p>
+    <terms>
+      <item>
+        <title><cmd>make <var>object_file_name</var></cmd></title>
+        <p>Úselo para compilar un archivo de fuentes. El nombre de archivo del objeto se obtiene reemplazando la extensión del archivo fuente con la extensión correspondiente del objeto.</p>
+      </item>
+      <item>
+        <title><cmd>make</cmd></title>
+        <p>Úselo para construir todos los objetivos en una carpeta.</p>
+      </item>
+      <item>
+        <title><cmd>make install</cmd></title>
+        <p>Úselo para instalar todos los objetivos en una carpeta.</p>
+      </item>
+      <item>
+        <title><cmd>make clean</cmd></title>
+        <p>Úselo para eliminar todos los archivos construídos en una carpeta.</p>
+      </item>
+      <item>
+        <title><cmd>make dist</cmd></title>
+        <p>Úselo para construir un paquete de distribución, solamente llamado en la carpeta del proyecto.</p>
+      </item>
+    </terms>    
+
+    <note style="tip">
+      <p>«make» viene con las reglas predeterminadas, permitiéndolo compilar y enlazar un programa en C sin necesitar un archivo «makefile». Puede compilar un programa en C desde un único archivo de fuentes, sin «makefile» ni proyecto.</p>
+    </note>
+  </section>
+
+</page>

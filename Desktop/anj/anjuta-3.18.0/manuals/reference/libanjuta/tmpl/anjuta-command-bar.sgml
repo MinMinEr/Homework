@@ -1,0 +1,96 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaCommandBar
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### ENUM AnjutaCommandBarEntryType ##### -->
+<para>
+
+</para>
+
+@ANJUTA_COMMAND_BAR_ENTRY_FRAME: 
+@ANJUTA_COMMAND_BAR_ENTRY_BUTTON: 
+
+<!-- ##### FUNCTION anjuta_command_bar_new ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_command_bar_add_action_group ##### -->
+<para>
+
+</para>
+
+@self: 
+@group_name: 
+@entries: 
+@num_entries: 
+@user_data: 
+
+
+<!-- ##### FUNCTION anjuta_command_bar_remove_action_group ##### -->
+<para>
+
+</para>
+
+@self: 
+@group_name: 
+
+
+<!-- ##### FUNCTION anjuta_command_bar_show_action_group ##### -->
+<para>
+
+</para>
+
+@self: 
+@group_name: 
+
+
+<!-- ##### FUNCTION anjuta_command_bar_get_action_group ##### -->
+<para>
+
+</para>
+
+@self: 
+@group_name: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_command_bar_get_action ##### -->
+<para>
+
+</para>
+
+@self: 
+@group_name: 
+@action_name: 
+@Returns: 
+
+
+<!-- ##### STRUCT AnjutaCommandBarPriv ##### -->
+<para>
+
+</para>
+
+

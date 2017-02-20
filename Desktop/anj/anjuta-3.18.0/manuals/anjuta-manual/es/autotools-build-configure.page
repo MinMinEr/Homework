@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-configure" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="first"/>
+    <link type="seealso" xref="autotools-project-backend"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Configurar un proyecto de autotools y gestionar configuraciones.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Configurar un proyecto</title>
+
+  <p>Antes de compilar y construir archivos, un proyecto de «autotools» se tiene que configurar. Este paso es necesario para configurar las opciones globales, para comprobar que todas las bibliotecas y programas están instalados en su sistema y para generar los scripts de construcción adecuados.</p>
+
+  <section>
+    <title>Configurar el proyecto</title>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Construir</gui><gui>Configurar proyecto...</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Mantenga la configuración predeterminada, seleccione una configuración nueva o cree una nueva. Puede inspeccionar y modificar todas las opciones de configuración. Para obtener más información consulte la <link xref="autotools-build-configure-dialog"/>.</p>
+      </item>
+      <item>
+        <p>Pulse en <gui>Ejecutar</gui> para configurar el proyecto.</p>
+      </item>
+    </steps>
+
+    <p>La configuración puede fallar si alguna biblioteca o programa no está instalado o si no tiene la versión correcta. El mensaje de error le dirá qué es lo que falta.</p>
+  </section>
+
+  <section>
+    <title>Cambiar la configuración</title>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Construir</gui><gui>Seleccionar configuración</gui><gui>Otra configuración</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+    <p>El proyecto se configurará automáticamente antes de construir ningún archivo, si aún no se ha configurado.</p>
+
+  </section>
+
+  <section>
+    <title>Quitar la configuración</title>
+
+    <p>Es como limpiar el proyecto pero quita aún más archivos. Debe reconfigurar su proyecto para construirlo más tarde.</p>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Construir</gui><gui>Quitar configuración</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+</page>

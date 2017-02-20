@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-preferences-dialog" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Ο διάλογος προτιμήσεων δόμησης autotools.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ο διάλογος προτιμήσεων δόμησης Autotools</title>
+
+  <p>Ο διάλογος επιτρέπει τον ορισμό γενικών επιλογών δόμησης αρχείων.</p>
+
+  <terms>
+    <item>
+      <title><gui>Ταυτόχρονη εκτέλεση πολλαπλών εντολών</gui></title>
+      <p>Η εντολή <app>make</app> μπορεί να εκτελέσει πολλές μεταγλωττίσεις ταυτόχρονα. Μειώνει το χρόνο δόμησης όταν έχει έναν πολυπύρηνο επεξεργαστή, αλλά θα μπορούσε να προκαλέσει μερικά θέματα έτσι αυτό μπορεί να γίνει ενεργό ή ανενεργό με αυτό το πλαίσιο ελέγχου.</p>
+    </item>
+    <item>
+      <title><gui>Συνέχεια στα λάθη</gui></title>
+      <p>Από προεπιλογή το <app>make</app> διακόπτει μόλις πάρει σφάλμα, μπορεί να είναι γρηγορότερη η συνέχεια και λήψη σφαλμάτων για όλα τα αρχεία σε ένα βήμα. Πρέπει να σημειώσετε αυτό το πλαίσιο ελέγχου για λήψη αυτής της συμπεριφοράς.</p>
+    </item>
+    <item>
+      <title><gui>Μετάφραση μηνυμάτων</gui></title>
+      <p>Από προεπιλογή τα μηνύματα σφαλμάτων και προειδοποιήσεων μεταφράζονται. Έχει δύο μειονεκτήματα όμως. Για την αναγνώριση σφαλμάτων και προειδοποιήσεων η μετάφραση του <app>Anjuta</app> και του μεταγλωττιστή πρέπει να ταιριάζει τελείως. Επιπλέον, είναι συχνά πιο δύσκολη η εύρεση βοήθειας στο διαδίκτυο όταν αναζητάτε μεταφρασμένα μηνύματα καθώς είναι λιγότερο κοινά. Αποσημειώνοντας αυτό το πλαίσιο ελέγχου επιτρέπει την απενεργοποίηση της μετάφρασης.</p>
+    </item>
+    <item>
+      <title><gui>Επισήμανση προειδοποιήσεων και σφαλμάτων δόμησης επεξεργαστή</gui></title>
+      <p>Σφάλματα και προειδοποιήσεις κατά την δόμηση εμφανίζονται τονισμένα στο παράθυρο μηνυμάτων. Σημειώνοντας αυτήν την επιλογή, τονίζονται επίσης στον επεξεργαστή.</p>
+    </item>
+    <item>
+      <title><gui>Εγκατάσταση ως root</gui></title>
+      <p>Η εγκατάσταση ενός προγράμματος απαιτεί την αντιγραφή αρχείων στους καταλόγους του συστήματος που είναι συχνά μη εγγράψιμοι από τους χρήστες. Εάν σημειωθεί αυτό το πλαίσιο ελέγχου, μπορείτε να επιλέξετε τη χρήση <cmd>sudo</cmd> ή <cmd>su</cmd> πριν την εγκατάσταση των αρχείων για απόκτηση επαρκών δικαιωμάτων εκτέλεσης του.</p>
+    </item>
+  </terms>
+
+</page>

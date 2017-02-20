@@ -1,0 +1,61 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaStreamLoader
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_STREAM_LOADER_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ianjuta_stream_loader_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_stream_loader_load ##### -->
+<para>
+
+</para>
+
+@obj: 
+@stream: 
+@readonly: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_stream_loader_peek_interface ##### -->
+<para>
+
+</para>
+
+@obj: 
+@stream: 
+@err: 
+@Returns: 
+
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-cpu" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="sixth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak zkoumat informace z procesoru.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>CPU</title>
+
+  <section>
+    <title>Zobrazení registrů CPU</title>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Zobrazit</gui> <gui>Registry</gui></guiseq> pro zobrazení okna <gui>Registry</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Registry, jejichž hodnota se změnila od posledního zastavení jsou červeně. Hodnotu kteréhokoliv registru můžete změnit tak, že kliknete ve sloupci hodnota a vložíte novou hodnotu.</p>	
+
+  </section>
+
+  <section>
+    <title>Zobrazení paměti</title>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Zobrazit</gui> <gui>Paměť</gui></guiseq> pro otevření okna <gui>Paměť</gui>.</p>
+      </item>
+    </steps>
+
+    <p>První sloupec zobrazuje paměťové adresy v šestnáctkové soustavě, druhý obsah paměti v šestnáctkové soustavě a poslední obsah paměti v podobě ASCII.</p>
+    <p>Adresní procesor, byť u 32bitové procesoru, je velmi rozsáhlý (4 gigabajty), takže je je velmi obtížné se trefit na konkrétní adresu pomocí posuvníku. Proto můžete kliknout pravým tlačítkem myši a vybrat <gui>Přejít na adresu</gui>, aby se zobrazilo pole, do kterého zadáte požadovanou adresu v šestnáctkové soustavě.</p>
+  </section>
+
+
+  <section>
+    <title>Zobrazení zpětného překladu do assembleru</title>
+
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Zobrazit</gui> <gui>Kód assembleru</gui></guiseq> pro otevření okna <gui>Kód assembleru</gui>.</p>
+      </item>
+    </steps>
+
+    <p>První sloupec zobrazuje adresu v šestnáctkovém tvaru. Ve druhém sloupci můžete mít návěští začínající na začátku řádku a končící dvojtečkou nebo instrukci assembleru odsazenou čtyřmi mezerami.</p>
+
+    <p>Místo v okně s kódem assembleru se změní podle hodnoty počitadla programu ve chvíli, kdy je program zastaven.</p>
+
+    <p>Adresní procesor, byť u 32bitové procesoru, je velmi rozsáhlý (4 gigabajty), takže je je velmi obtížné se trefit na konkrétní adresu pomocí posuvníku. Proto můžete kliknout pravým tlačítkem myši a vybrat <gui>Přejít na adresu</gui>, aby se zobrazilo pole, do kterého zadáte požadovanou adresu v šestnáctkové soustavě.</p>
+  </section>
+
+
+</page>

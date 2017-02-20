@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-run" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="second"/>
+    <link type="seealso" xref="run-parameters-dialog"/>
+    <link type="seealso" xref="autotools-build-configure"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Iniciar un programa con el depurador.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Depurar un programa</title>
+  
+  <section>
+    <title>Iniciar un programa en el depurador.</title>
+
+    <p>El programa actual se define en el diálogo <gui>Parámetros del programa</gui>. Para obtener más información, consulte la <link xref="run-parameters-dialog"/>. Este programa se puede iniciar en el depurador así:</p>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Ejecutar</gui><gui>Depurar programa</gui></guiseq> o pulse <keyseq><key>Mayús</key><key>F12</key></keyseq></p>
+      </item>
+    </steps>
+
+    <note style="tip">
+      <p>Un programa puede ser más difícil de depurar si está muy optimizado o si falta información para su depuración. Si la información de optimización y depuración están activadas se define en el paso de configuración. Generalmente existe una configuración de depuración disponible que desactiva la optimización e incluye toda la información de depuración. Anjuta muestra un aviso si no se está usando esta configuración. Para obtener más información consulte la <link xref="autotools-build-configure"/>.</p>
+    </note>
+   </section>
+
+  <section>
+    <title>Depurar una aplicación en ejecución</title>
+
+    <p>El depurador se puede usar en un programa que ya está en ejecución.</p>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Ejecutar</gui><gui>Depurar proceso...</gui></guiseq> para obtener un diálogo que lista todos los procesos actualmente en ejecución.</p>
+      </item>
+      <item>
+        <p>Seleccione un proceso en el diálogo <gui>Acoplar al proceso</gui> y pulse <gui>Acoplar</gui> para comenzar la depuración de este proceso. Para obtener más detalles consulte la <link xref="debug-process-dialog"/>.</p>
+      </item>
+    </steps>
+  </section>
+ 
+  <section>
+    <title>Depurar una aplicación remota</title>
+
+    <p>El depurador se puede usar para depurar una aplicación que se esté ejecutando en otro equipo conectado mediante una conexión TCP o serie.</p>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Ejecutar</gui><gui>Depurar remoto...</gui></guiseq></p>
+      </item>
+      <item>
+        <p>Seleccione el tipo de conexión con la aplicación remota, <gui>Conexión serie</gui> o <gui>Conexión TCP/IP</gui>.</p>
+      </item>
+      <item>
+        <p>Para una conexión TCP, rellene los campos <gui>Dirección</gui> y <gui>Puerto</gui>.</p>
+        <p>Para una conexión serie, rellene la caja de texto de debajo con el nombre del dispositivo serie, por ejemplo <cmd>/dev/ttyb</cmd>.</p>
+      </item>
+      <item>
+        <p>Pulse <gui>Conectar</gui> para iniciar el depurador y conectar con el objetivo remoto.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section>
+    <title>Detener el depurador</title>
+
+    <p>Se puede parar el depurador y el programa en cualquier momento usando:</p>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Ejecutar</gui><gui>Detener el depurador</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+  </section>
+</page>

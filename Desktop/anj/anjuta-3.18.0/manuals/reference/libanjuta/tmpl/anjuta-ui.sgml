@@ -1,0 +1,225 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaUI
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION anjuta_ui_new ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_ui_add_action_group_entries ##### -->
+<para>
+
+</para>
+
+@ui: 
+@action_group_name: 
+@action_group_label: 
+@entries: 
+@num_entries: 
+@translation_domain: 
+@can_customize: 
+@user_data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_ui_add_toggle_action_group_entries ##### -->
+<para>
+
+</para>
+
+@ui: 
+@action_group_name: 
+@action_group_label: 
+@entries: 
+@num_entries: 
+@translation_domain: 
+@can_customize: 
+@user_data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_ui_add_action_group ##### -->
+<para>
+
+</para>
+
+@ui: 
+@action_group_name: 
+@action_group_label: 
+@action_group: 
+@can_customize: 
+
+
+<!-- ##### FUNCTION anjuta_ui_remove_action_group ##### -->
+<para>
+
+</para>
+
+@ui: 
+@action_group: 
+
+
+<!-- ##### FUNCTION anjuta_ui_get_action ##### -->
+<para>
+
+</para>
+
+@ui: 
+@action_group_name: 
+@action_name: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_ui_activate_action_by_path ##### -->
+<para>
+
+</para>
+
+@ui: 
+@action_path: 
+
+
+<!-- ##### FUNCTION anjuta_ui_activate_action_by_group ##### -->
+<para>
+
+</para>
+
+@ui: 
+@action_group: 
+@action_name: 
+
+
+<!-- ##### FUNCTION anjuta_ui_merge ##### -->
+<para>
+
+</para>
+
+@ui: 
+@ui_filename: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_ui_unmerge ##### -->
+<para>
+
+</para>
+
+@ui: 
+@id: 
+
+
+<!-- ##### FUNCTION anjuta_ui_get_icon_factory ##### -->
+<para>
+
+</para>
+
+@ui: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_ui_get_accel_group ##### -->
+<para>
+
+</para>
+
+@ui: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_ui_get_accel_editor ##### -->
+<para>
+
+</para>
+
+@ui: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_ui_dump_tree ##### -->
+<para>
+
+</para>
+
+@ui: 
+
+
+<!-- ##### FUNCTION anjuta_ui_load_accels ##### -->
+<para>
+
+</para>
+
+@filename: 
+
+
+<!-- ##### FUNCTION anjuta_ui_save_accels ##### -->
+<para>
+
+</para>
+
+@filename: 
+
+
+<!-- ##### FUNCTION anjuta_ui_unload_accels ##### -->
+<para>
+
+</para>
+
+@ui: 
+
+
+<!-- ##### MACRO BEGIN_REGISTER_ICON ##### -->
+<para>
+
+</para>
+
+@plugin: 
+
+
+<!-- ##### MACRO REGISTER_ICON_FULL ##### -->
+<para>
+
+</para>
+
+@icon: 
+@stock_id: 
+
+
+<!-- ##### MACRO REGISTER_ICON ##### -->
+<para>
+
+</para>
+
+@icon: 
+@stock_id: 
+
+
+<!-- ##### MACRO END_REGISTER_ICON ##### -->
+<para>
+
+</para>
+
+
+

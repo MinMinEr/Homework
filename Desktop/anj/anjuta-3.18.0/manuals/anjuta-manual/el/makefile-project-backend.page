@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="makefile-project-backend" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager#backend"/>
+    <desc>Σύστημα υποστήριξης έργου makefile.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Πρόσθετο συστήματος υποστήριξης έργου makefile</title>
+
+  <p>Το makefile είναι προφανώς ο πιο κοινός τρόπος δόμησης λογισμικού σε όλα τα είδη λογισμικού. Ένα makefile περιέχει μια λίστα κανόνων που περιγράφουν ποιες εντολές πρέπει να εκτελεστούν για τη δημιουργία ενός προορισμού από μια λίστα εξαρτήσεων. Όταν δομείται ένα πρόγραμμα, ο προορισμός είναι ένα αρχείο αντικειμένου και οι εξαρτήσεις είναι τα πηγαία αρχεία. Ο προορισμός ενός κανόνα μπορεί να εξαρτάται από έναν άλλο, επιτρέποντας πολλούς κανόνες να συνδυαστούν για τη δημιουργία ενός τελικού προορισμού.</p>
+
+  <p>Είναι χαμηλού επιπέδου, γενικό εργαλείο, που κάνει δύσκολη την εύρεση όλων των πηγαίων αρχείων και προορισμών ενός έργου. Έτσι το <app>Anjuta</app> έχει περιορισμένη υποστήριξη για makefiles, διαβάζοντας μόνο ένα makefile στο κορυφαίο κατάλογο του έργου και εξάγοντας πηγαία αρχεία και προορισμούς.</p>
+
+  <note style="bug">
+    <p>Εάν το σύστημα υποστήριξης του έργου δεν βρίσκει όλα τα πηγαία αρχεία, μπορείτε να προσπαθήσετε να χρησιμοποιήσετε το σύστημα υποστήριξης καταλόγου. Δεν αναγνωρίζει οποιοδήποτε προορισμό αλλά θα πρέπει να πάρει όλα τα πηγαία αρχεία.</p>
+  </note>
+
+  <p>Αλλαγή ιδιοτήτων, ή πρόσθεση ή αφαίρεση προορισμών και πηγαίων αρχείων απενεργοποιείται με αυτό το σύστημα υποστήριξης, καθώς η αυτόματη επεξεργασία του makefile δεν υλοποιείται. Πρέπει να αλλαχθεί χειροκίνητα χρησιμοποιώντας τον επεξεργαστή κειμένου. Όταν το makefile αποθηκεύεται, ξαναφορτώνεται αυτόματα.</p>
+
+</page>

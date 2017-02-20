@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-wizard-create" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-project-management" group="first"/>
+    <link type="seealso" xref="project-manager"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Δημιουργία νέου έργου από την αρχή.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Δημιουργία έργου</title>
+
+  <p>Νέα έργα δημιουργούνται από πρότυπα. Το <app>Anjuta</app> θα σας ρωτήσει ποικίλες πληροφορίες, όπως τον τύπο του έργου, το όνομά του και άλλα.</p>
+
+  <steps>
+    <item>
+      <p>Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Αρχείο</gui> <gui>Νέο</gui><gui>Έργο</gui></guiseq>.</p>
+      <p>Ή από την πτυσσόμενη λίστα του κουμπιού <gui>Νέο</gui> στην <gui> πάνω γραμμή εργαλείων</gui>, επιλέξτε <gui>Έργο</gui> για εκκίνηση του οδηγού έργου.</p>
+    </item>
+    <item>
+      <p>Επιλέξτε το εικονίδιο που αντιπροσωπεύει τον τύπο του επιθυμητού έργου για δημιουργία και κλικ στο <gui>Μπροστά</gui>.</p>
+      <note style="tip">
+        <p>Αφήστε το ποντίκι πάνω από ένα εικονίδιο έργου για ένα δευτερόλεπτο και ένα μικρό αναδυόμενο μήνυμα θα εμφανιστεί εμφανίζοντας περισσότερες πληροφορίες για αυτό τον τύπο του έργου.</p>
+      </note>
+    </item>
+    <item>
+      <p>Ανάλογα με τον επιλεγμένο τύπο έργου, θα πρέπει να εισάγετε διαφορετικές πληροφορίες. Τελειώνοντας, κλικ στο <gui>Μπροστά</gui>.</p>
+      <p>Όλες οι πληροφορίες ομαδοποιούνται σε σελίδες, τυπικά θα πρέπει να γεμίσετε δύο ή τρεις σελίδες. Μπορείτε να επιστρέψετε οποτεδήποτε χρησιμοποιώντας το κουμπί <gui>Πίσω</gui>.</p>
+      <note style="tip">
+        <p>Κρατήστε το ποντίκι πάνω από το κουμπί ή πληκτρολογήστε για ένα δευτερόλεπτο για να πάρετε ένα μικρό αναδυόμενο μήνυμα με περισσότερες λεπτομέρειες σχετικά με την αντίστοιχη ρύθμιση.</p>
+      </note>
+    </item>
+    <item>
+      <p>Μετά τη συμπλήρωση όλων των σελίδων πληροφοριών, θα πάρετε μια σελίδα περίληψης που καταχωρίζει τις κύριες πληροφορίες για το έργο σας. Τίποτα δεν έχει γραφτεί ακόμα στον δίσκο σας μέχρι εδώ. Κλικ στο <gui>Εφαρμογή</gui> για αποθήκευση του έργου και άνοιγμά του στο <app>Anjuta</app>.</p>
+    </item>
+  </steps>
+
+  <note style="advanced">
+    <p>Κάθε τύπος έργου αντιστοιχεί σε ένα πρότυπο. Το <app>Anjuta</app> περιλαμβάνει ήδη πολλά πρότυπα, αλλά μπορείτε να προσθέσετε άλλα προσαρμοσμένα ή ακόμα να γράψετε τα δικά σας.</p>
+  </note>
+
+</page>

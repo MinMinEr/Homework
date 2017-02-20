@@ -1,0 +1,148 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaBuildable
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_BUILDABLE_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### ENUM IAnjutaBuildableCommand ##### -->
+<para>
+
+</para>
+
+@IANJUTA_BUILDABLE_COMMAND_COMPILE: 
+@IANJUTA_BUILDABLE_COMMAND_BUILD: 
+@IANJUTA_BUILDABLE_COMMAND_BUILD_TARBALL: 
+@IANJUTA_BUILDABLE_COMMAND_INSTALL: 
+@IANJUTA_BUILDABLE_COMMAND_CONFIGURE: 
+@IANJUTA_BUILDABLE_COMMAND_GENERATE: 
+@IANJUTA_BUILDABLE_COMMAND_CLEAN: 
+@IANJUTA_BUILDABLE_COMMAND_EXECUTE: 
+@IANJUTA_BUILDABLE_COMMAND_IS_BUILT: 
+@IANJUTA_BUILDABLE_COMMAND_AUTORECONF: 
+@IANJUTA_BUILDABLE_COMMAND_DISTCLEAN: 
+@IANJUTA_BUILDABLE_COMMAND_CHECK: 
+@IANJUTA_BUILDABLE_N_COMMANDS: 
+
+<!-- ##### FUNCTION ianjuta_buildable_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_buildable_build ##### -->
+<para>
+
+</para>
+
+@obj: 
+@uri: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_buildable_clean ##### -->
+<para>
+
+</para>
+
+@obj: 
+@uri: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_buildable_configure ##### -->
+<para>
+
+</para>
+
+@obj: 
+@uri: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_buildable_execute ##### -->
+<para>
+
+</para>
+
+@obj: 
+@uri: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_buildable_generate ##### -->
+<para>
+
+</para>
+
+@obj: 
+@uri: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_buildable_get_command ##### -->
+<para>
+
+</para>
+
+@obj: 
+@command_id: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_buildable_install ##### -->
+<para>
+
+</para>
+
+@obj: 
+@uri: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_buildable_reset_commands ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_buildable_set_command ##### -->
+<para>
+
+</para>
+
+@obj: 
+@command_id: 
+@command: 
+@err: 
+
+

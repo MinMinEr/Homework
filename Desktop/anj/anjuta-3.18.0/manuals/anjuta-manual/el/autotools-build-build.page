@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-build" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="third"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <link type="seealso" xref="autotools-build-preferences-dialog"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Δόμηση προορισμών ή έργου.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Δόμηση προορισμών</title>
+  <p>Προορισμός είναι ένα αρχείο που δημιουργήθηκε από πηγαία αρχεία. Τυπικά, είναι ένα πρόγραμμα ή μια βιβλιοθήκη, αλλά μπορεί να είναι επίσης τεκμηρίωση, εάν η τεκμηρίωση χρειάζεται επεξεργασία, για παράδειγμα.</p>
+  <p>Η δόμηση εντολής μεταγλωττίζει όλα τα απαιτούμενα πηγαία αρχεία και πιθανόν τα συνδέει με κάποια άλλα αρχεία, όπως βιβλιοθήκες, για τη δημιουργία του προορισμού. Εάν κάποια πηγαία αρχεία είναι ήδη μεταγλωττισμένα και δεν έχουν τροποποιηθεί, δεν επαναμεταγλωττίζονται, για εξοικονόμηση χρόνου. Υπάρχουν πολλοί τρόποι για έναρξη δόμησης.</p>
+  <steps>
+    <item>
+      <p>Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Δόμηση</gui> <gui>Δόμηση</gui></guiseq> ή πατήστε <key>F7</key> για δόμηση όλων των προορισμών στον ίδιο κατάλογο όπως το τρέχον ανοιχτό αρχείο.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>Από το <gui>κύριο μενού</gui>, επιλέξτε <guiseq><gui>Δόμηση</gui> <gui>Δόμηση έργου</gui></guiseq> ή πατήστε <keyseq><key>Shift</key><key>F7</key></keyseq> για δόμηση όλου του έργου. Όλοι οι υποκατάλογοι δομούνται αναδρομικά.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>Από το <gui>παράθυρο διαχειριστή αρχείου</gui>, επιλέξτε ένα αρχείο ή κατάλογο.</p>
+    </item>
+    <item>
+      <p>Κλικ με το δεξί κουμπί για να κάνετε το <gui>μενού περιεχομένου διαχειριστή αρχείου</gui> να εμφανιστεί και επιλέξτε <guiseq><gui>Δόμηση</gui><gui>Δόμηση</gui></guiseq> για την δόμηση όλων των προορισμών στον τρέχοντα επιλεγμένο κατάλογο ή το γονικό κατάλογο του τρέχοντος επιλεγμένου αρχείου.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>Από το <gui>παράθυρο διαχειριστή αρχείου</gui>, επιλέξτε ένα πηγαίο αρχείο ή προορισμό.</p>
+    </item>
+    <item>
+      <p>Κλικ με το δεξί κουμπί για να κάνετε το <gui>μενού περιεχομένου διαχειριστή έργου</gui> να εμφανιστεί και επιλέξτε <guiseq><gui>Δόμηση</gui><gui>Δόμηση</gui></guiseq> για τη δόμηση όλων των προορισμών στον κατάλογο που περιέχει το τρέχον επιλεγμένο αρχείο ή προορισμό.</p>
+    </item>
+  </steps>
+
+</page>

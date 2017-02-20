@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-configure" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="first"/>
+    <link type="seealso" xref="autotools-project-backend"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Autotools projekt konfigurálása és beállításainak kezelése.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Projekt konfigurálása</title>
+
+  <p>A fájlok lefordítása és összeállítása előtt az autotools projektet konfigurálni kell. Ez a lépés a globális opciók beállításához, a szükséges programkönyvtárak és programok meglétének ellenőrzéséhez, valamint az összeállítást végző parancsfájlok előállításához szükséges.</p>
+
+  <section>
+    <title>A projekt konfigurálása</title>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza az <guiseq><gui>Összeállítás</gui><gui>Projekt konfigurálása</gui></guiseq> menüpontot.</p>
+      </item>
+      <item>
+        <p>Megtarthatja az alapértelmezett beállításokat, kiválaszthat vagy létrehozhat egy újat. Minden beállítási lehetőséget megvizsgálhat és módosíthat. További információkért lásd: <link xref="autotools-build-configure-dialog"/>.</p>
+      </item>
+      <item>
+        <p>Nyomja meg a <gui>Végrehajtás</gui> gombot a projekt konfigurálásához.</p>
+      </item>
+    </steps>
+
+    <p>A konfigurálás meghiúsulhat, ha egyes programkönyvtárak vagy programok nincsenek telepítve, vagy nem a megfelelő verzió van telepítve. A hibaüzenet megadja, hogy mi hiányzik.</p>
+  </section>
+
+  <section>
+    <title>A konfiguráció módosítása</title>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza az <guiseq><gui>Összeállítás</gui><gui>Konfiguráció kiválasztása</gui><gui>Másik konfiguráció</gui></guiseq> menüpontot.</p>
+      </item>
+    </steps>
+
+    <p>Ha a projekt még nincs konfigurálva, akkor automatikusan konfigurálásra kerül a fájlok összeállítása előtt.</p>
+
+  </section>
+
+  <section>
+    <title>Konfiguráció eltávolítása</title>
+
+    <p>Ez a projekt tisztításához hasonlít, de még több fájlt távolít el. A projektet utána újra kell konfigurálni az újabb összeállításhoz.</p>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza az <guiseq><gui>Összeállítás</gui><gui>Konfiguráció eltávolítása</gui></guiseq> menüpontot.</p>
+      </item>
+    </steps>
+
+  </section>
+
+</page>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-compile" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="second"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <link type="seealso" xref="autotools-build-preferences-dialog"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Fájlok fordítása.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Fájlok fordítása</title>
+
+    <p>A legtöbb programozási nyelv lehetővé teszi egyedi forrásfájlok lefordítását. Ilyenkor beolvassa a fájlt, ellenőrzi a hibákat, és átalakítja köztes objektumfájllá. A legtöbb hiba ebben a lépésben fordul elő, így a hibák megkeresése érdekében érdemes a fájlokat módosításuk után lefordítani. Erre számos lehetőség van.</p>
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza az <guiseq><gui>Összeállítás</gui><gui>Fordítás</gui></guiseq> menüpontot, vagy nyomja meg az <key>F9</key> billentyűt a jelenleg szerkesztett fájl lefordításához.</p>
+      </item>
+    </steps>
+    <steps>
+      <item>
+        <p>A <gui>fájlkezelő ablaktáblán</gui> válasszon egy fájlt.</p>
+      </item>
+      <item>
+        <p>Kattintson a jobb egérgombbal a <gui>fájlkezelő helyi menüjének</gui> megjelenítéséhez, és válassza az <guiseq><gui>Összeállítás</gui><gui>Fordítás</gui></guiseq> menüpontot a <gui>fájlkezelő ablaktáblán</gui> kijelölt fájl lefordításához.</p>
+      </item>
+    </steps>
+    <steps>
+      <item>
+        <p>A <gui>projektkezelő ablaktáblán</gui> válasszon egy forrásfájlt.</p>
+      </item>
+      <item>
+        <p>Kattintson a jobb egérgombbal a <gui>projektkezelő helyi menüjének</gui> megjelenítéséhez, és válassza az <guiseq><gui>Összeállítás</gui><gui>Fordítás</gui></guiseq> menüpontot a <gui>projektkezelő ablaktáblán</gui> kijelölt fájl lefordításához.</p>
+      </item>
+    </steps>
+    <note style="tip">
+      <p>A fájlt a fordítás előtt nem muszáj elmenteni, mert az <app>Anjuta</app> szükség esetén automatikusan megteszi ezt.</p>
+    </note>
+
+</page>

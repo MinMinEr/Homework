@@ -1,0 +1,95 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaSymbolManager
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_SYMBOL_MANAGER_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ianjuta_symbol_manager_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_manager_activate_package ##### -->
+<para>
+
+</para>
+
+@obj: 
+@pkg_name: 
+@pkg_version: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_manager_add_package ##### -->
+<para>
+
+</para>
+
+@obj: 
+@pkg_name: 
+@pkg_version: 
+@files: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_manager_create_query ##### -->
+<para>
+
+</para>
+
+@obj: 
+@name: 
+@db: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_manager_deactivate_all ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_symbol_manager_deactivate_package ##### -->
+<para>
+
+</para>
+
+@obj: 
+@pkg_name: 
+@pkg_version: 
+@err: 
+
+

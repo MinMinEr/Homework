@@ -1,0 +1,36 @@
+<!--*- xml -*-->
+<ui>
+    <popup name="GitStatusNotUpdatedPopup">
+        <menuitem name="Check out" action="GitStatusCheckOut" />  
+    </popup>
+
+    <popup name="GitStatusCommitPopup">
+        <menuitem name="Unstage" action="GitStatusUnstage" />    
+    </popup>
+
+	<popup name="GitLogPopup">
+		<menuitem name="Show commit diff" action="GitLogShowDiff" />
+		<menuitem name="Cherry pick" action="GitLogCherryPick" />
+		<separator />
+		<menuitem name="Revert" action="GitLogRevert" />
+		<menuitem name="Reset..." action="GitLogReset" />
+	</popup>
+
+	<popup name="GitBranchPopup">
+		<menuitem name="Switch" action="GitBranchSwitch" />
+		<menuitem name="Delete..." action="GitBranchDelete" />
+		<menuitem name="Merge..." action="GitBranchMerge" />
+	</popup>
+
+	<popup name="GitRemotePopup">
+		<menuitem name="Push..." action="GitRemotePush" />
+		<menuitem name="Pull..." action="GitRemotePull" />
+		<menuitem name="Fetch" action="GitRemoteFetch" />
+	</popup>
+
+	<popup name="GitStashPopup">
+		<menuitem name="Apply" action="GitStashApply" />
+		<menuitem name="Apply and restore index" action="GitStashApplyIndex" />
+		<menuitem name="Drop" action="GitStashDrop" />
+	</popup>
+</ui>

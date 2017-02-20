@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-tips" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="fifth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Trucos y consejos para el depurado.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Consejos para el depurado</title>
+
+  <section>
+  <title>Corregir errores críticos de Glib/GTK+</title>
+  
+  <p>Algunas veces puede ser difícil seguir dónde suceden los errores críticos de GLib, ya que no detienen el programa. Puede configurar el programa para deternerse tan pronto como obtenga un error crítico de GLib, ajustando la variable de entorno <sys>G_DEBUG</sys> al valor <sys>fatal_criticals</sys>.</p>
+
+  <steps>
+    <item>
+      <p>Abra la <link xref="run-parameters-dialog"/> seleccionando <guiseq><gui>Ejecutar</gui><gui>Parámetros del programa...</gui></guiseq> desde el menú principal.</p>
+    </item>
+    <item>
+      <p>Pulse el signo más junto a <gui>Variables de entorno</gui> para expandir la lista de variables de entorno.</p>
+    </item>
+    <item>
+      <p>Pulse <gui>Nuevo</gui> para a;adir una nueva entrada a la lista.</p>
+    </item>
+    <item>
+      <p>Rellene el <gui>Nombre</gui> con <input>G_DEBUG</input> y el <gui>Valor</gui> con <input>fatal_criticals</input>.</p>
+    </item>
+    <item>
+      <p>Pulse <gui>Aplicar</gui> para confirmar los cambios.</p>
+    </item>
+    <item>
+      <p>Ejecute el programa con el depurador seleccionando <guiseq><gui>Ejecutar</gui><gui>Depurar programa</gui></guiseq> desde el menú principal.</p>
+    </item>
+    <item>
+      <p>Use el programa hasta que suceda el error crítico.</p>
+    </item>
+    <item>
+      <p>Cuando el depurador detenga su programa, mire la <link xref="debug-stack"/> para comprobar de dónde viene el error.</p>
+    </item>
+  </steps>
+
+  <p>La función superior con el número 0 está en GLib, de tal forma que tiene que buscar hacia abajo en la pila. Generalmente el error viene de la primera función en su programa.</p>
+   
+  </section>
+
+</page>

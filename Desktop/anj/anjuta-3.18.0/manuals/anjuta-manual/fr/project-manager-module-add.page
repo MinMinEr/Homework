@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-module-add" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <link type="guide" xref="project-manager-library" group="fourth"/>
+    <link type="seealso" xref="project-manager-module-new"/>
+    <desc>Ajouter un ensemble de bibliothèques à une cible.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ajout de bibliothèques empaquetées</title>
+
+  <p>Sous Linux, la plupart des bibliothèques sont distribuées avec des données additionnelles stockées dans un fichier <app>pkg-config</app>. Ce fichier indique par exemple les autres bibliothèques, le compilateur C et les drapeaux de l'éditeur de lien qui sont nécessaires pour pouvoir utiliser cette bibliothèque. Ce fichier, les fichiers d'en-tête et les fichiers bibliothèques eux-mêmes constituent un paquet.</p>
+
+  <steps>
+    <item>
+      <p>Sélectionnez le programme dans lequel vous voulez ajouter la nouvelle bibliothèque dans la <gui>vue projet</gui>, cliquez sur le bouton droit de la souris pour afficher le <gui>menu contextuel du projet</gui>, puis sélectionnez <gui>Ajouter une bibliothèque</gui>.</p>
+      <p>D'une autre façon dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Projet</gui> <gui>Ajouter la bibliothèque</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Vous devez sélectionner la cible où vous désirez ajouter la bibliothèque, dans le <gui>bouton cible</gui> au-dessus.</p>
+    </item>
+    <item>
+      <p>Une bibliothèque ne peut pas être ajoutée directement à une cible. Vous ne pouvez qu'ajouter un module affiché dans la <gui>vue module</gui> en-dessous. Si vous sélectionnez une bibliothèque à l'intérieur d'un module, le module parent est ajouté.</p>
+    </item>
+    <item>
+      <p>Si la bibliothèque désirée ne s'affiche pas dans la <gui>vue module</gui>, vous devez d'abord l'ajouter comme module. Cliquez sur le bouton <gui>Nouvelle bibliothèque</gui> et suivez les indications <link xref="project-manager-module-new">ici</link>.</p>
+      <note style="tip">
+        <p>Après création d'un nouveau module, vous devez attendre quelques secondes pour que les fichiers du projets soient rechargés et que le nouveau module apparaisse dans la liste.</p>
+      </note>
+    </item>
+    <item>
+      <p>Quand vous avez terminé, cliquez sur le bouton <gui>Ajouter</gui> pour ajouter le module sélectionné à la cible.</p>
+    </item>
+  </steps>
+
+</page>

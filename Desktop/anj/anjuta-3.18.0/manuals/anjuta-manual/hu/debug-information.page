@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-information" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="seventh"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>További programinformációk vizsgálata.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Egyéb információk</title>
+
+  <p>A hibakereső különböző információkat képes közölni a programról annak futása során.</p>
+
+  <section>
+    <title>Osztott programkönyvtárak megjelenítése</title>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Hibakeresés</gui><gui>Info</gui><gui>Osztott programkönyvtárak</gui></guiseq> menüpontot.</p>
+      </item>
+    </steps>
+
+    <p>Ez megnyit egy ablakot, amely felsorolja a program által betöltött összes osztott programkönyvtárat, és azok helyeit a memóriában. Megjeleníti azt is, hogy az egyes programkönyvtárak szimbólumtáblái be vannak-e töltve.</p>
+  </section>
+
+
+  <section>
+    <title>Szignálok megjelenítése</title>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Hibakeresés</gui><gui>Info</gui><gui>Kernel szignálok</gui></guiseq> menüpontot.</p>
+      </item>
+    </steps>
+ 
+    <p>Ez felsorolja az összes elérhető szignált egy rövid leírással, és három oszloppal a teendő megadásához az egyes szignálok megkapásakor:</p>
+
+    <terms>
+      <item>
+        <title>Leállítás</title>
+        <p>A hibakereső leállítja a program végrehajtását, amikor a program megkapja ezt a szignált.</p>
+      </item>
+      <item>
+        <title>Kiírás</title>
+        <p>A hibakereső megjeleníti a kapott szignált.</p>
+      </item>
+      <item>
+        <title>Átadás</title>
+        <p>A hibakereső átadja a szignált a programnak.</p>
+      </item>
+    </terms>
+
+    <note style="bug">
+      <p>A jobb egérgomb megnyomásakor megjelenő helyi menü minden menüpontja le van tiltva, mert a megfelelő funkciók még nincsenek megvalósítva.</p>
+    </note>
+
+  </section>
+
+</page>

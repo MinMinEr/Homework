@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-project-target-edit" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-target" group="second"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak upravit vlastnosti cíle používajícho Autotools.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  </info>
+
+  <title>Úprava cíle Autotools</title>
+
+  <p>Zde je seznam všech vlastností cíle používaných v projektech s autotools. Některé z nich nemusí být dostupné ve všech cílech.</p>
+
+  <terms>
+    <item>
+      <title><gui>Sestavit jen kvůli kontrole</gui></title>
+      <p>Když je zaškrtnuto, nebude se cíl instalovat a bude sestaven jen když se bude spouštět kontrola.</p>
+    </item>
+    <item>
+      <title><gui>Přepínače kompilátoru jazyka C</gui></title>
+      <p>Přepínače, které se předávají kompilátoru jazyka C, když jsou kompilovány soubory se zdrojovým kódem cíle. Tento údaj přepíše případně ten, který je definován v rodičovské složce.</p>
+    </item>
+    <item>
+      <title><gui>Přepínače preprocesoru jazyka C</gui></title>
+      <p>Přepínače, které se předávají každé kompilaci, které vyvolá preprocesor jazyka C. Tento údaj přepíše případně ten, který je definován v rodičovské složce.</p>
+    </item>
+    <item>
+      <title><gui>Přepínače kompilátoru jazyka C++</gui></title>
+      <p>Přepínače, které se předávají kompilátoru jazyka C++, když jsou kompilovány soubory se zdrojovým kódem cíle. Tento údaj přepíše případně ten, který je definován v rodičovské složce.</p>
+    </item>
+    <item>
+      <title><gui>Neinstalovat</gui></title>
+      <p>Když je zaškrtnuto, není cíl instalován. To se používá pro nástroje sloužící k sestavení jiného cíle nebo pro programy sloužící jen vývojářům.</p>
+    </item>
+    <item>
+      <title><gui>Nepoužívat předponu</gui></title>
+      <p>Když je zaškrtnuto, nepřidává se před manuálové stránky a spustitelné soubory předpona. Takováto předpona se používá k poskytnutí alternativy k systémovým nástrojům.</p>
+    </item>
+    <item>
+      <title><gui>Přepínače kompilátoru jazyka Fortran</gui></title>
+      <p>Přepínače, které se předávají kompilátoru jazyka Fortran 9x, když jsou kompilovány soubory se zdrojovým kódem cíle. Tento údaj přepíše případně ten, který je definován v rodičovské složce.</p>
+    </item>
+    <item>
+      <title><gui>Zahrnout do balíčku</gui></title>
+      <p>Když je zaškrtnuto, bude cíl zahrnut v distribučním balíčku.</p>
+    </item>
+    <item>
+      <title><gui>Instalační složka</gui></title>
+      <p>Určuje, kam se má cíl nainstalovat. Není to přímo složka, kam se soubory instalují, ale název jedné ze proměnných představujících standardní složky (bindir, sbindir, libdir, libexecdir, datadir, pkgdatadir, pkglibexecdir, includedir, mandir, infodir, docdir) nebo vlastní proměnná definovaná ve vlastnostech složek.</p>
+    </item>
+    <item>
+      <title><gui>Přepínače kompilátoru jazyka Java</gui></title>
+      <p>Přepínače, které se předávají kompilátoru jazyka Java, když jsou kompilovány soubory se zdrojovým kódem cíle. Tento údaj přepíše případně ten, který je definován v rodičovské složce.</p>
+    </item>
+    <item>
+      <title><gui>Zachovat cestu cíle</gui></title>
+      <p>Když je zaškrtnuto, zachová se při instalaci souborů hierarchie složek projektu.</p>
+    </item>
+    <item>
+      <title><gui>Přepínače generátoru Lex/Flex</gui></title>
+      <p>Přepínače, které se předávají generátoru lexikálních analyzátorů Lex nebo Flex, když jsou generovány soubory se zdrojovým kódem cíle. Tento údaj přepíše případně ten, který je definován v rodičovské složce.</p>
+    </item>
+    <item>
+      <title><gui>Knihovny</gui></title>
+      <p>Určuje dodatečné knihovny použité cílem. Používá se pro přidání knihoven, které nejsou součástí balíčku. Další podrobnosti viz <link xref="project-manager-library">Přidání knihoven mimo balíček</link>.</p>
+    </item>
+    <item>
+      <title><gui>Přepínače linkeru</gui></title>
+      <p>Přepínače, které se předávají linkeru, když je cíl linkován. Tento údaj přepíše případně ten, který je definován v rodičovské složce.</p>
+    </item>
+    <item>
+      <title><gui>Oddíl manuálu</gui></title>
+      <p>Určuje oddíl v manuálu, do kterého se má přidat manuálová stránka. Platnými názvy oddílu jsou číslice „0“ až „9“ a písmena „l“ a „n“</p>
+    </item>
+    <item>
+      <title><gui>Přepínače kompilátoru jazyka Objective C</gui></title>
+      <p>Přepínače, které se předávají kompilátoru jazyka Objective C, když jsou kompilovány soubory se zdrojovým kódem cíle. Tento údaj přepíše případně ten, který je definován v rodičovské složce.</p>
+    </item>
+    <item>
+      <title><gui>Přepínače kompilátoru jazyka Vala</gui></title>
+      <p>Přepínače, které se předávají kompilátoru jazyka Vala, když jsou kompilovány soubory se zdrojovým kódem cíle. Tento údaj přepíše případně ten, který je definován v rodičovské složce.</p>
+    </item>
+    <item>
+      <title><gui>Přepínače generátoru Yacc/Bison</gui></title>
+      <p>Přepínače, které se předávají generátoru syntaktických analyzátorů Bison nebo Yacc, když jsou generovány soubory se zdrojovým kódem cíle. Tento údaj přepíše případně ten, který je definován v rodičovské složce.</p>
+    </item>
+  </terms>
+
+</page>

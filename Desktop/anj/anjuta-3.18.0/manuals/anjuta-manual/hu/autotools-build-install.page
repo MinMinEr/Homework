@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-install" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-build" group="fifth"/>
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <link type="seealso" xref="autotools-build-preferences-dialog"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Célok vagy projekt telepítése.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Célok telepítése</title>
+
+  <p>Hacsak a projektje nem nagyon egyszerű, akkor bizonyos, például felhasználói felületet leíró adatfájlokra van szüksége. Ezek a fájlok általában szabványos könyvtárakba kerülnek átmásolásra, és onnan lesznek beolvasva. Ez azt jelenti, hogy nem futtathatja programját az összeállítási könyvtárból. Az ilyen fájlok megfelelő helyre másolásához telepítenie kell a programot, például a <file>/usr/local</file> egyik alkönyvtárába.</p>
+
+  <p>Célok vagy projekt telepítésére több lehetőség is van.</p>
+
+  <steps>
+    <item>
+      <p>A <gui>főmenüből</gui> válassza az <guiseq><gui>Összeállítás</gui><gui>Telepítés</gui></guiseq> menüpontot az összes fájl telepítéséhez ugyanabba a könyvtárba, mint ahol a jelenleg szerkesztett fájl van.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>A <gui>főmenüből</gui> válassza az <guiseq><gui>Összeállítás</gui><gui>Projekt telepítése</gui></guiseq> menüpontot az összes projektfájl telepítéséhez.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>A <gui>fájlkezelő ablaktáblán</gui> válasszon egy fájlt vagy könyvtárat.</p>
+    </item>
+    <item>
+      <p>Kattintson a jobb egérgombbal a <gui>fájlkezelő helyi menüjének</gui> megjelenítéséhez, és válassza az <guiseq><gui>Összeállítás</gui><gui>Telepítés</gui></guiseq> menüpontot a kijelölt könyvtárban vagy az éppen kijelölt fájl szülőkönyvtárában lévő összes fájl telepítéséhez.</p>
+    </item>
+  </steps>
+  <steps>
+    <item>
+      <p>A <gui>projektkezelő ablaktáblán</gui> válasszon egy forrásfájlt vagy célt.</p>
+    </item>
+    <item>
+      <p>Kattintson a jobb egérgombbal a <gui>projektkezelő helyi menüjének</gui> megjelenítéséhez, és válassza az <guiseq><gui>Összeállítás</gui><gui>Telepítés</gui></guiseq> menüpontot a kijelölt fájlt vagy célt tartalmazó könyvtár összes fájljának telepítéséhez.</p>
+    </item>
+  </steps>
+
+  <note style="tip">
+    <p>Ha a programot egy rendszerkönyvtárba telepíti, akkor használhatja a <cmd>su</cmd> vagy <cmd>sudo</cmd> parancsokat a megfelelő jogosultságok megszerzésére. További információkért lásd: <link xref="autotools-build-preferences-dialog"/>.</p>
+  </note>
+
+</page>

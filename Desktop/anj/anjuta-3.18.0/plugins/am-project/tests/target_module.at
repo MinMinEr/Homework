@@ -1,0 +1,114 @@
+AT_SETUP([Add target module])
+AS_MKDIR_P([simple])
+AT_DATA([simple/configure.ac],
+[[PKG_CHECK_MODULES(MODULE1, module1)
+AC_CONFIG_FILES(Makefile)
+]])
+AT_DATA([simple/Makefile.am],
+[[lib_LTLIBRARIES = library.la
+
+noinst_PROGRAMS = program
+]])
+
+
+
+AT_DATA([expect],
+[[ROOT (): simple1
+    PROPERTY (C preprocessor flags): $(MODULE1_CFLAGS)
+    MODULE (): MODULE1
+        PACKAGE (): module1
+    TARGET (): library.la
+        PROPERTY (Installation directory): libdir
+        PROPERTY (Libraries): $(MODULE1_LIBS)
+        MODULE (): MODULE1
+    TARGET (): program
+        PROPERTY (Do not install): true
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load simple \
+		 move simple1 \
+		 add module 0:3 MODULE1 \
+		 list \
+		 save])
+AT_PARSER_CHECK([load simple1 \
+		 list])
+AT_CHECK([diff output expect])
+
+
+
+AT_DATA([expect],
+[[ROOT (): simple2
+    PROPERTY (C preprocessor flags): $(MODULE1_CFLAGS)
+    MODULE (): MODULE1
+        PACKAGE (): module1
+    TARGET (): library.la
+        PROPERTY (Installation directory): libdir
+        PROPERTY (Libraries): $(MODULE1_LIBS)
+        MODULE (): MODULE1
+    TARGET (): program
+        PROPERTY (Do not install): true
+        PROPERTY (Libraries): $(MODULE1_LIBS)
+        MODULE (): MODULE1
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load simple1 \
+		 move simple2 \
+		 add module 0:4 MODULE1 \
+		 list \
+		 save])
+AT_PARSER_CHECK([load simple2 \
+		 list])
+AT_CHECK([diff output expect])
+
+
+
+AT_DATA([expect],
+[[ROOT (): simple3
+    PROPERTY (C preprocessor flags): $(MODULE1_CFLAGS)
+    MODULE (): MODULE1
+        PACKAGE (): module1
+    TARGET (): library.la
+        PROPERTY (Installation directory): libdir
+    TARGET (): program
+        PROPERTY (Do not install): true
+        PROPERTY (Libraries): $(MODULE1_LIBS)
+        MODULE (): MODULE1
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load simple2 \
+		 move simple3 \
+		 remove 0:3:0 \
+		 list \
+		 save])
+AT_PARSER_CHECK([load simple3 \
+		 list])
+AT_CHECK([diff output expect])
+
+
+
+AT_DATA([expect],
+[[ROOT (): simple4
+    MODULE (): MODULE1
+        PACKAGE (): module1
+    TARGET (): library.la
+        PROPERTY (Installation directory): libdir
+    TARGET (): program
+        PROPERTY (Do not install): true
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load simple3 \
+		 move simple4 \
+		 remove 0:4:0 \
+		 list \
+		 save])
+AT_PARSER_CHECK([load simple4 \
+		 list])
+AT_CHECK([diff output expect])
+
+
+
+AT_CLEANUP

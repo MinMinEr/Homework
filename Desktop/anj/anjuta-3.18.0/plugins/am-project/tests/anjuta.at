@@ -1,0 +1,17 @@
+AT_SETUP([Load anjuta project])
+
+
+
+AT_CHECK([sh $srcdir/anjuta.shar], 0, ignore)
+AT_PARSER_CHECK([load anjuta \
+		 list])
+# Remove node number and top group node as its name is the unknown top project
+# directory name
+AT_CHECK([[sed 's/^\(\s*\w\+\s*(\)[0-9:]\+\()\)/\1\2/' $srcdir/anjuta.lst | sed '1,/^\s*ROOT ():/{/^\s*ROOT ():/d;}' > anjuta.lst]])
+# Remove node number and top group node as its name is the unknown top project
+# directory name
+AT_CHECK([[sed 's/^\(\s*\w\+\s*(\)[0-9:]\+\()\)/\1\2/' output | sed '1,/^\s*ROOT ():/{/^\s*ROOT ():/d;}' | diff - anjuta.lst]])
+
+
+
+AT_CLEANUP

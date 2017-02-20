@@ -1,0 +1,409 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: IAnjutaSymbolManager</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="plugin-interfaces.html" title="Plugin interfaces">
+<link rel="prev" href="IAnjutaSymbolQuery.html" title="IAnjutaSymbolQuery">
+<link rel="next" href="IAnjutaTerminal.html" title="IAnjutaTerminal">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#IAnjutaSymbolManager.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#IAnjutaSymbolManager.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#IAnjutaSymbolManager.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="plugin-interfaces.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="IAnjutaSymbolQuery.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="IAnjutaTerminal.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="IAnjutaSymbolManager"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="IAnjutaSymbolManager.top_of_page"></a>IAnjutaSymbolManager</span></h2>
+<p>IAnjutaSymbolManager — Source code symbols manager inteface</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="IAnjutaSymbolManager.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Unstable"><span class="acronym">Unstable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="IAnjutaSymbolManager.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaSymbolManager.html#ianjuta-symbol-manager-error-quark" title="ianjuta_symbol_manager_error_quark ()">ianjuta_symbol_manager_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaSymbolManager.html#ianjuta-symbol-manager-activate-package" title="ianjuta_symbol_manager_activate_package ()">ianjuta_symbol_manager_activate_package</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaSymbolManager.html#ianjuta-symbol-manager-add-package" title="ianjuta_symbol_manager_add_package ()">ianjuta_symbol_manager_add_package</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="IAnjutaSymbolQuery.html" title="IAnjutaSymbolQuery"><span class="returnvalue">IAnjutaSymbolQuery</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaSymbolManager.html#ianjuta-symbol-manager-create-query" title="ianjuta_symbol_manager_create_query ()">ianjuta_symbol_manager_create_query</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaSymbolManager.html#ianjuta-symbol-manager-deactivate-all" title="ianjuta_symbol_manager_deactivate_all ()">ianjuta_symbol_manager_deactivate_all</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaSymbolManager.html#ianjuta-symbol-manager-deactivate-package" title="ianjuta_symbol_manager_deactivate_package ()">ianjuta_symbol_manager_deactivate_package</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaSymbolManager.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="IAnjutaSymbolManager.html#IAnjutaSymbolManager-prj-scan-end" title="The “prj-scan-end” signal">prj-scan-end</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="IAnjutaSymbolManager.html#IAnjutaSymbolManager-sys-scan-end" title="The “sys-scan-end” signal">sys-scan-end</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaSymbolManager.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="IAnjutaSymbolManager.html#IANJUTA-SYMBOL-MANAGER-ERROR:CAPS" title="IANJUTA_SYMBOL_MANAGER_ERROR">IANJUTA_SYMBOL_MANAGER_ERROR</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaSymbolManager.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/GTypeModule.html">GInterface</a>
+    <span class="lineart">╰──</span> IAnjutaSymbolManager
+</pre>
+</div>
+<div class="refsect1">
+<a name="IAnjutaSymbolManager.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libanjuta/interfaces/ianjuta-symbol-manager.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="IAnjutaSymbolManager.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="IAnjutaSymbolManager.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="ianjuta-symbol-manager-error-quark"></a><h3>ianjuta_symbol_manager_error_quark ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+ianjuta_symbol_manager_error_quark (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.8.61.10.2.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-symbol-manager-activate-package"></a><h3>ianjuta_symbol_manager_activate_package ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ianjuta_symbol_manager_activate_package
+                               (<em class="parameter"><code><a class="link" href="IAnjutaSymbolManager.html" title="IAnjutaSymbolManager"><span class="type">IAnjutaSymbolManager</span></a> *obj</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *pkg_name</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *pkg_version</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Activates the package for searches in the global symbol database.</p>
+<div class="refsect3">
+<a name="id-1.8.61.10.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pkg_name</p></td>
+<td class="parameter_description"><p>Name of the package to activate. The colon char must be avoided.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pkg_version</p></td>
+<td class="parameter_description"><p>Version of the package. The colon char must be avoided.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.61.10.3.6"></a><h4>Returns</h4>
+<p> TRUE if the package was loaded (or will be loaded once scanned).
+FALSE if the version given was newer than the version in the database or the
+package was not found. In this case, <code class="function">add_package()</code> should be called.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-symbol-manager-add-package"></a><h3>ianjuta_symbol_manager_add_package ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ianjuta_symbol_manager_add_package (<em class="parameter"><code><a class="link" href="IAnjutaSymbolManager.html" title="IAnjutaSymbolManager"><span class="type">IAnjutaSymbolManager</span></a> *obj</code></em>,
+                                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *pkg_name</code></em>,
+                                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *pkg_version</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *files</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Reads the package files into the database asynchronously.</p>
+<div class="refsect3">
+<a name="id-1.8.61.10.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pkg_name</p></td>
+<td class="parameter_description"><p>Name of the package to scan. Should be the name given by
+pkg-config. The colon char must be avoided.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pkg_version</p></td>
+<td class="parameter_description"><p>Version of the package. The colon char must be avoided.
+or by the language implementation (Python, Javascript, etc.)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>files</p></td>
+<td class="parameter_description"><p>A list of GFile's to scan for this package</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.61.10.4.6"></a><h4>Returns</h4>
+<p> TRUE if the package will be loaded into the db, FALSE if the package
+already exists</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-symbol-manager-create-query"></a><h3>ianjuta_symbol_manager_create_query ()</h3>
+<pre class="programlisting"><a class="link" href="IAnjutaSymbolQuery.html" title="IAnjutaSymbolQuery"><span class="returnvalue">IAnjutaSymbolQuery</span></a> *
+ianjuta_symbol_manager_create_query (<em class="parameter"><code><a class="link" href="IAnjutaSymbolManager.html" title="IAnjutaSymbolManager"><span class="type">IAnjutaSymbolManager</span></a> *obj</code></em>,
+                                     <em class="parameter"><code><a class="link" href="IAnjutaSymbolQuery.html#IAnjutaSymbolQueryName" title="enum IAnjutaSymbolQueryName"><span class="type">IAnjutaSymbolQueryName</span></a> name</code></em>,
+                                     <em class="parameter"><code><a class="link" href="IAnjutaSymbolQuery.html#IAnjutaSymbolQueryDb" title="enum IAnjutaSymbolQueryDb"><span class="type">IAnjutaSymbolQueryDb</span></a> db</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Create a query object. By default only <a class="link" href="IAnjutaSymbol.html#IANJUTA-SYMBOL-FIELD-ID:CAPS"><span class="type">IANJUTA_SYMBOL_FIELD_ID</span></a> and
+and <a class="link" href="IAnjutaSymbol.html#IANJUTA-SYMBOL-FIELD-NAME:CAPS"><span class="type">IANJUTA_SYMBOL_FIELD_NAME</span></a> are selected, limit is set to infinity,
+offset is set to 0, no filters are set and mode is set to
+<a class="link" href="IAnjutaSymbolQuery.html#IANJUTA-SYMBOL-QUERY-MODE-SYNC:CAPS"><span class="type">IANJUTA_SYMBOL_QUERY_MODE_SYNC</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.8.61.10.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Name of the query. It decides what query type it is.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>db</p></td>
+<td class="parameter_description"><p>The database to use.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.61.10.5.6"></a><h4>Returns</h4>
+<p> A <a class="link" href="IAnjutaSymbolQuery.html" title="IAnjutaSymbolQuery"><span class="type">IAnjutaSymbolQuery</span></a> object</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-symbol-manager-deactivate-all"></a><h3>ianjuta_symbol_manager_deactivate_all ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_symbol_manager_deactivate_all (<em class="parameter"><code><a class="link" href="IAnjutaSymbolManager.html" title="IAnjutaSymbolManager"><span class="type">IAnjutaSymbolManager</span></a> *obj</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Deactivates all activate packages</p>
+<div class="refsect3">
+<a name="id-1.8.61.10.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-symbol-manager-deactivate-package"></a><h3>ianjuta_symbol_manager_deactivate_package ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_symbol_manager_deactivate_package
+                               (<em class="parameter"><code><a class="link" href="IAnjutaSymbolManager.html" title="IAnjutaSymbolManager"><span class="type">IAnjutaSymbolManager</span></a> *obj</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *pkg_name</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *pkg_version</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Deactivates the package if it was found. If package is NULL, deactivate all
+packages.</p>
+<div class="refsect3">
+<a name="id-1.8.61.10.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pkg_name</p></td>
+<td class="parameter_description"><p>name of the package. The colon char must be avoided.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>pkg_version</p></td>
+<td class="parameter_description"><p>Version of the package. The colon char must be avoided.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaSymbolManager.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="IANJUTA-SYMBOL-MANAGER-ERROR:CAPS"></a><h3>IANJUTA_SYMBOL_MANAGER_ERROR</h3>
+<pre class="programlisting">#define IANJUTA_SYMBOL_MANAGER_ERROR ianjuta_symbol_manager_error_quark()
+</pre>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaSymbolManager.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="IAnjutaSymbolManager-prj-scan-end"></a><h3>The <code class="literal">“prj-scan-end”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="IAnjutaSymbolManager.html" title="IAnjutaSymbolManager"><span class="type">IAnjutaSymbolManager</span></a> *ianjutasymbolmanager,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>              user_data)</pre>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IAnjutaSymbolManager-sys-scan-end"></a><h3>The <code class="literal">“sys-scan-end”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="IAnjutaSymbolManager.html" title="IAnjutaSymbolManager"><span class="type">IAnjutaSymbolManager</span></a> *ianjutasymbolmanager,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>              user_data)</pre>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaSymbolManager.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="IAnjutaSymbol.html" title="IAnjutaSymbol"><span class="type">IAnjutaSymbol</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

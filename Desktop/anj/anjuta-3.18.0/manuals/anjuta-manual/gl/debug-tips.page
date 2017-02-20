@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-tips" xml:lang="gl">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="fifth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Trucos e consellos para o depurado.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Consellos para o depurado</title>
+
+  <section>
+  <title>Corrixir erros críticos de Glib/GTK+</title>
+  
+  <p>Sometimes it can be difficult to track down where GLib critical errors are
+  occurring, since they do not stop the program.
+  You can set the program to stop as soon as it gets a GLib critical error, by setting
+  the environment variable <sys>G_DEBUG</sys> to the value
+  <sys>fatal_criticals</sys>.</p>
+
+  <steps>
+    <item>
+      <p>Open the <link xref="run-parameters-dialog"/> by selecting
+      <guiseq><gui>Run</gui><gui>Program Parameters...</gui></guiseq> from the
+      main menu.</p>
+    </item>
+    <item>
+      <p>Click the plus sign next to <gui>Environment Variables</gui> to expand
+      the list of environment variables.</p>
+    </item>
+    <item>
+      <p>Prema <gui>Novo</gui> para engadir unha nova entrada á lista.</p>
+    </item>
+    <item>
+      <p>Fill in <gui>Name</gui> with <input>G_DEBUG</input> and <gui>Value</gui>
+      with <input>fatal_criticals</input>.</p>
+    </item>
+    <item>
+      <p>Prema <gui>Aplicar</gui> para confirmar os cambios.</p>
+    </item>
+    <item>
+      <p>Execute o programa co depurador seleccionando <guiseq><gui>Executar</gui><gui>Depurar programa</gui></guiseq> desde o menú principal.</p>
+    </item>
+    <item>
+      <p>Use o programa até que suceda o erro crítico.</p>
+    </item>
+    <item>
+      <p>When the debugger stops your program, look at the
+      <link xref="debug-stack"/> to check where this error comes from.</p>
+    </item>
+  </steps>
+
+  <p>The top function with frame number 0 is in GLib, so you have to look
+  down in the stack. Typically the error originates from the topmost
+  function that belongs to your program.</p>
+   
+  </section>
+
+</page>

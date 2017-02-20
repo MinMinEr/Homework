@@ -1,0 +1,69 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaIndicable
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_INDICABLE_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### ENUM IAnjutaIndicableIndicator ##### -->
+<para>
+
+</para>
+
+@IANJUTA_INDICABLE_NONE: 
+@IANJUTA_INDICABLE_IMPORTANT: 
+@IANJUTA_INDICABLE_WARNING: 
+@IANJUTA_INDICABLE_CRITICAL: 
+
+<!-- ##### FUNCTION ianjuta_indicable_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_indicable_clear ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+
+
+<!-- ##### FUNCTION ianjuta_indicable_set ##### -->
+<para>
+
+</para>
+
+@obj: 
+@begin_location: 
+@end_location: 
+@indicator: 
+@err: 
+
+

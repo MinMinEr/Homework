@@ -1,0 +1,113 @@
+AT_SETUP([Add package])
+AS_MKDIR_P([empty])
+AT_DATA([empty/configure.ac],
+[[PKG_CHECK_MODULES(MODULE1,)
+AC_CONFIG_FILES(Makefile)
+]])
+AT_DATA([empty/Makefile.am],
+[[]])
+
+
+
+AT_DATA([expect],
+[[ROOT (): empty1
+    MODULE (): MODULE1
+        PACKAGE (): package1
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_DATA([reference.ac],
+[[PKG_CHECK_MODULES(MODULE1,
+package1)
+AC_CONFIG_FILES(Makefile)
+]])
+AT_PARSER_CHECK([load empty \
+		 move empty1 \
+		 add package 0:1 package1 \
+		 list \
+	 save])
+AT_CHECK([diff output expect])
+AT_CHECK([diff -b empty1/configure.ac reference.ac])
+AT_PARSER_CHECK([load empty1 \
+	 list])
+AT_CHECK([diff output expect])
+
+
+
+AT_DATA([expect],
+[[ROOT (): empty2
+    MODULE (): MODULE1
+        PACKAGE (): package1
+        PACKAGE (): package2
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_DATA([reference.ac],
+[[PKG_CHECK_MODULES(MODULE1,
+package1
+package2)
+AC_CONFIG_FILES(Makefile)
+]])
+AT_PARSER_CHECK([load empty1 \
+	 move empty2 \
+	 add package 0:1 package2 after 0:1:0\
+	 list \
+	 save])
+AT_CHECK([diff output expect])
+AT_CHECK([diff -b empty2/configure.ac reference.ac])
+AT_PARSER_CHECK([load empty2 \
+	 list])
+AT_CHECK([diff output expect])
+
+
+
+AT_DATA([expect],
+[[ROOT (): empty3
+    MODULE (): MODULE1
+        PACKAGE (): package2
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_DATA([reference.ac],
+[[PKG_CHECK_MODULES(MODULE1,
+package2)
+AC_CONFIG_FILES(Makefile)
+]])
+AT_PARSER_CHECK([load empty2 \
+	 move empty3 \
+	 remove 0:1:0 \
+	 list \
+	 save])
+AT_CHECK([diff output expect])
+AT_CHECK([diff -b empty3/configure.ac reference.ac])
+AT_PARSER_CHECK([load empty3 \
+	 list])
+AT_CHECK([diff output expect])
+
+
+
+AT_DATA([expect],
+[[ROOT (): empty4
+    MODULE (): MODULE1
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_DATA([reference.ac],
+[[PKG_CHECK_MODULES(MODULE1,
+)
+AC_CONFIG_FILES(Makefile)
+]])
+AT_PARSER_CHECK([load empty3 \
+	 move empty4 \
+	 remove 0:1:0 \
+	 list \
+	 save])
+AT_CHECK([diff output expect])
+AT_CHECK([diff -b empty4/configure.ac reference.ac])
+AT_PARSER_CHECK([load empty4 \
+	 list])
+AT_CHECK([diff output expect])
+
+
+
+AT_CLEANUP

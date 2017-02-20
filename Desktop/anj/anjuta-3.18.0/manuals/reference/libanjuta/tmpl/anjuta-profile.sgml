@@ -1,0 +1,225 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaProfile
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO ANJUTA_PROFILE_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO ANJUTA_SYSTEM_PROFILE_NAME ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### ENUM AnjutaProfileError ##### -->
+<para>
+
+</para>
+
+@ANJUTA_PROFILE_ERROR_URI_READ_FAILED: 
+@ANJUTA_PROFILE_ERROR_URI_WRITE_FAILED: 
+@ANJUTA_PROFILE_ERROR_PLUGIN_MISSING: 
+
+<!-- ##### STRUCT AnjutaProfile ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL AnjutaProfile::changed ##### -->
+<para>
+
+</para>
+
+@anjutaprofile: the object which received the signal.
+
+<!-- ##### SIGNAL AnjutaProfile::descoped ##### -->
+<para>
+
+</para>
+
+@anjutaprofile: the object which received the signal.
+
+<!-- ##### SIGNAL AnjutaProfile::plugin-added ##### -->
+<para>
+
+</para>
+
+@anjutaprofile: the object which received the signal.
+@arg1: 
+
+<!-- ##### SIGNAL AnjutaProfile::plugin-removed ##### -->
+<para>
+
+</para>
+
+@anjutaprofile: the object which received the signal.
+@arg1: 
+
+<!-- ##### SIGNAL AnjutaProfile::scoped ##### -->
+<para>
+
+</para>
+
+@anjutaprofile: the object which received the signal.
+
+<!-- ##### ARG AnjutaProfile:plugin-manager ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AnjutaProfile:profile-name ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG AnjutaProfile:sync-file ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION anjuta_profile_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_profile_new ##### -->
+<para>
+
+</para>
+
+@name: 
+@plugin_manager: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_profile_get_name ##### -->
+<para>
+
+</para>
+
+@profile: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_profile_add_plugin ##### -->
+<para>
+
+</para>
+
+@profile: 
+@plugin: 
+
+
+<!-- ##### FUNCTION anjuta_profile_remove_plugin ##### -->
+<para>
+
+</para>
+
+@profile: 
+@plugin: 
+
+
+<!-- ##### FUNCTION anjuta_profile_add_plugins_from_xml ##### -->
+<para>
+
+</para>
+
+@profile: 
+@profile_xml_file: 
+@exclude_from_sync: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_profile_has_plugin ##### -->
+<para>
+
+</para>
+
+@profile: 
+@plugin: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_profile_get_plugins ##### -->
+<para>
+
+</para>
+
+@profile: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_profile_set_sync_file ##### -->
+<para>
+
+</para>
+
+@profile: 
+@sync_file: 
+
+
+<!-- ##### FUNCTION anjuta_profile_sync ##### -->
+<para>
+
+</para>
+
+@profile: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_profile_load ##### -->
+<para>
+
+</para>
+
+@profile: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_profile_unload ##### -->
+<para>
+
+</para>
+
+@profile: 
+@error: 
+@Returns: 
+
+
+<!-- ##### STRUCT AnjutaProfilePriv ##### -->
+<para>
+
+</para>
+
+

@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: AnjutaAsyncCommand</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="libanjuta-api.html" title="libanjuta API">
+<link rel="prev" href="AnjutaSyncCommand.html" title="AnjutaSyncCommand">
+<link rel="next" href="AnjutaAsyncNotify.html" title="AnjutaAsyncNotify">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#AnjutaAsyncCommand.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#AnjutaAsyncCommand.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libanjuta-api.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="AnjutaSyncCommand.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="AnjutaAsyncNotify.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="AnjutaAsyncCommand"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="AnjutaAsyncCommand.top_of_page"></a>AnjutaAsyncCommand</span></h2>
+<p>AnjutaAsyncCommand — <a class="link" href="AnjutaCommand.html" title="AnjutaCommand"><span class="type">AnjutaCommand</span></a> subclass that serves as the base for 
+				   commands that need to run in another thread.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="AnjutaAsyncCommand.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaAsyncCommand.html#anjuta-async-command-set-error-message" title="anjuta_async_command_set_error_message ()">anjuta_async_command_set_error_message</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaAsyncCommand.html#anjuta-async-command-get-error-message" title="anjuta_async_command_get_error_message ()">anjuta_async_command_get_error_message</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaAsyncCommand.html#anjuta-async-command-lock" title="anjuta_async_command_lock ()">anjuta_async_command_lock</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaAsyncCommand.html#anjuta-async-command-unlock" title="anjuta_async_command_unlock ()">anjuta_async_command_unlock</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaAsyncCommand.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="AnjutaAsyncCommand.html#AnjutaAsyncCommandPriv" title="AnjutaAsyncCommandPriv">AnjutaAsyncCommandPriv</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaAsyncCommand.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> <a class="link" href="AnjutaCommand.html" title="AnjutaCommand">AnjutaCommand</a>
+        <span class="lineart">╰──</span> AnjutaAsyncCommand
+            <span class="lineart">╰──</span> <a class="link" href="AnjutaPkgScanner.html" title="AnjutaPkgScanner">AnjutaPkgScanner</a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="AnjutaAsyncCommand.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libanjuta/anjuta-async-command.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="AnjutaAsyncCommand.description"></a><h2>Description</h2>
+<p><a class="link" href="AnjutaAsyncCommand.html" title="AnjutaAsyncCommand"><span class="type">AnjutaAsyncCommand</span></a> provides a simple way for plugins to run tasks that 
+are synchronous and usually take several seconds or longer to execute in 
+another thread so that such tasks do no block Anjuta's user interface.</p>
+<p><a class="link" href="AnjutaAsyncCommand.html" title="AnjutaAsyncCommand"><span class="type">AnjutaAsyncCommand</span></a> automatically runs and manages the thread when the 
+command starts, and destroys it when the command finishes. Aside from 
+locking protected data with anjuta_async_command_lock/unlock, clients, and
+even commands themselves need not even be concerned that their tasks are 
+rnning on another thread.</p>
+<p>For an example of how <a class="link" href="AnjutaAsyncCommand.html" title="AnjutaAsyncCommand"><span class="type">AnjutaAsyncCommand</span></a> is used, see the Subversion plugin.</p>
+</div>
+<div class="refsect1">
+<a name="AnjutaAsyncCommand.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="anjuta-async-command-set-error-message"></a><h3>anjuta_async_command_set_error_message ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_async_command_set_error_message
+                               (<em class="parameter"><code><a class="link" href="AnjutaCommand.html" title="AnjutaCommand"><span class="type">AnjutaCommand</span></a> *command</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *error_message</code></em>);</pre>
+<p>Set the error message this async command resulted in</p>
+<div class="refsect3">
+<a name="id-1.6.23.8.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>command</p></td>
+<td class="parameter_description"><p>AnjutaAsyncCommand object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error_message</p></td>
+<td class="parameter_description"><p>The error message that should be used</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-async-command-get-error-message"></a><h3>anjuta_async_command_get_error_message ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+anjuta_async_command_get_error_message
+                               (<em class="parameter"><code><a class="link" href="AnjutaCommand.html" title="AnjutaCommand"><span class="type">AnjutaCommand</span></a> *command</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.23.8.3.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>command</p></td>
+<td class="parameter_description"><p>AnjutaAsyncCommand object</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.23.8.3.5"></a><h4>Returns</h4>
+<p> The error message the async command resulted in. The caller
+should free the string</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-async-command-lock"></a><h3>anjuta_async_command_lock ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_async_command_lock (<em class="parameter"><code><a class="link" href="AnjutaAsyncCommand.html" title="AnjutaAsyncCommand"><span class="type">AnjutaAsyncCommand</span></a> *self</code></em>);</pre>
+<p>Locks the command's built-in mutex.</p>
+<div class="refsect3">
+<a name="id-1.6.23.8.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>AnjutaAsyncCommand object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-async-command-unlock"></a><h3>anjuta_async_command_unlock ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_async_command_unlock (<em class="parameter"><code><a class="link" href="AnjutaAsyncCommand.html" title="AnjutaAsyncCommand"><span class="type">AnjutaAsyncCommand</span></a> *self</code></em>);</pre>
+<p>Unlocks the command's built-in mutex.</p>
+<div class="refsect3">
+<a name="id-1.6.23.8.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>AnjutaAsyncCommand object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="AnjutaAsyncCommand.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="AnjutaAsyncCommandPriv"></a><h3>AnjutaAsyncCommandPriv</h3>
+<pre class="programlisting">typedef struct _AnjutaAsyncCommandPriv AnjutaAsyncCommandPriv;</pre>
+<p>
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

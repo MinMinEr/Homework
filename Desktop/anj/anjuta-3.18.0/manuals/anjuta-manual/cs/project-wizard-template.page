@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="project-wizard-template" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="project-wizard-create"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Šablona průvodce projektem.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Šablona průvodce projektem</title>
+
+  <p>Šablona projektu je složena ze skupiny souborů, které umí zpracovat mocný nástroj pro zpracování šablon nazývaný <app>autogen</app>. Soubor se šablonou má příponu <file>.wiz</file> a popisuje vlastnosti projektu a potřebné soubory.</p>
+
+  <p>Takovýto soubor <file>.wiz</file> vypadá podobně jako soubor XML a je zdokumentován <link href="http://library.gnome.org/devel/libanjuta/stable/project-wizard-format.html">zde</link>.</p> 
+
+
+</page>

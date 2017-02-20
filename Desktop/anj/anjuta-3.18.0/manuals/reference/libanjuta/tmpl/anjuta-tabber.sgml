@@ -1,0 +1,55 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaTabber
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION anjuta_tabber_new ##### -->
+<para>
+
+</para>
+
+@notebook: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_tabber_add_tab ##### -->
+<para>
+
+</para>
+
+@tabber: 
+@tab_label: 
+
+
+<!-- ##### FUNCTION anjuta_tabber_prepend_tab ##### -->
+<para>
+
+</para>
+
+@tabber: 
+@tab_label: 
+
+
+<!-- ##### STRUCT AnjutaTabberPriv ##### -->
+<para>
+
+</para>
+
+

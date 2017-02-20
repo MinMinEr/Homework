@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-wizard-create" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-project-management" group="first"/>
+    <link type="seealso" xref="project-manager"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Crear un proyecto nuevo desde el principio.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Crear un proyecto</title>
+
+  <p>Los proyectos nuevos se crean desde las plantillas. <app>Anjuta</app> le pedirá diversa información, como el tipo de proyecto, su nombre y más.</p>
+
+  <steps>
+    <item>
+      <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Archivo</gui><gui>Nuevo</gui><gui>Proyecto</gui></guiseq>.</p>
+      <p>O desde la lista desplegable del botón <gui>Nuevo</gui> en la <gui>barra de herramientas superior</gui>, seleccione <gui>Proyecto</gui> para iniciar el asistente del proyecto.</p>
+    </item>
+    <item>
+      <p>Seleccione el icono que representa el tipo del proyecto que quiere crear y pulse <gui>Siguiente</gui>.</p>
+      <note style="tip">
+        <p>Sitúe el ratón sobre un icono de proyecto un segundo y aparecerá un pequeño mensaje automático mostrando más información acerca de ese tipo del proyecto.</p>
+      </note>
+    </item>
+    <item>
+      <p>Dependiendo del tipo del proyecto seleccionado, tendrá que introducir diferente información. Cuando lo haya hecho, pulse <gui>Siguiente</gui>.</p>
+      <p>Toda la información se agrupan en páginas, generalmente tendrá que rellenar dos o tres páginas. Puede volver atrás en cualquier momento usando el botón <gui>Atrás</gui>.</p>
+      <note style="tip">
+        <p>Mantenga el ratón sobre el botón o el área de escritura durante un segundo para obtener un pequeño mensaje automático con más detalles acerca del correspondiente ajuste.</p>
+      </note>
+    </item>
+    <item>
+      <p>Después de completar todas las páginas de información, obtendrá una página resumen listando la información principal acerca de su proyecto. En este punto, aún no se ha escrito nada en el disco. Pulse <gui>Aplicar</gui> para guardar el proyecto en <app>Anjuta</app>.</p>
+    </item>
+  </steps>
+
+  <note style="advanced">
+    <p>Cada tipo de proyecto corresponde a una plantilla. <app>Anjuta</app> ya incluye varias plantillas y además puede añadir otras plantillas personalizables, e incluso escribir las suyas propias.</p>
+  </note>
+
+</page>

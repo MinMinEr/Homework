@@ -1,0 +1,42 @@
+<!-- ##### SECTION Title ##### -->
+anjuta-c-module
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION anjuta_c_module_new ##### -->
+<para>
+
+</para>
+
+@path: 
+@name: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_c_module_get_last_error ##### -->
+<para>
+
+</para>
+
+@module: 
+@err: 
+@Returns: 
+
+

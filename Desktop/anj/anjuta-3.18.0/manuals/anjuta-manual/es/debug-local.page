@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-local" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="third"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Examinar variables locales.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Variables locales</title>
+
+  <p>Las variables locales del marco actual (la función actual en la uqe el control del programa está presente) se muestran en la ventana <gui>Locales</gui> Durante la ejecución del programa (ej. durante el avance simple) se actualizan las variables locales. Si el valor de una variable cambia en el último paso de depuración, su valor se resaltará en rojo. Las variables se presentan en forma de árbol para su mejor evaluación.</p>
+
+  <section>
+    <title>Listar las variables locales</title>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Ver</gui><gui>Locales</gui></guiseq>para abrir la ventana <gui>Locales</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Todas las variables locales se muestran en una vista de árbol con los hijos representando estructuras o miembros de vectores («arrays»).</p>
+  
+    <terms>
+      <item>
+        <title>Variable</title>
+        <p>El nombre de la variable.</p>
+      </item>
+      <item>
+        <title>Valor</title>
+        <p>El valor de la variable.</p>
+      </item>
+      <item>
+        <title>Tipo</title>
+        <p>El tipo de la variable.</p>
+      </item>
+    </terms>
+  </section>
+
+  <section>
+    <title>Cambiar el valor de una variable</title>
+
+    <steps>
+      <item>
+        <p>En la ventana <gui>Locales</gui> seleccione la variable que quiere editar y pulse dos veces en la columna <gui>Valor</gui>.</p>
+      </item>
+      <item>
+        <p>Escriba el nuevo valor.</p>
+      </item>
+    </steps>
+  </section>
+
+</page>

@@ -1,0 +1,11 @@
+[Anjuta Plugin]
+_Name=Class Generator
+_Description=Anjuta Class Generator Plugin
+Location=anjuta-class-gen:AnjutaClassGenPlugin
+Icon=anjuta-class-gen-plugin-48.png
+Interfaces=IAnjutaWizard
+Dependencies=anjuta-project-manager:ProjectManagerPlugin
+UserActivatable=no
+
+[Wizard]
+_Title=Class

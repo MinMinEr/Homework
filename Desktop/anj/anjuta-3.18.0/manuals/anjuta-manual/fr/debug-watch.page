@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-watch" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="second"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Surveiller les expressions et les variables.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Inspection d'expressions</title>
+
+  <p>Les expressions inspectées sont des expressions que le débogueur évalue et dont il affiche le résultat, chaque fois que le programme est interrompu, par exemple après chaque <link xref="debug-step">avancé d'un pas</link> dans le programme.</p>
+
+  <section>
+    <title>Affichage de la liste des expressions inspectées</title>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Affichage</gui><gui>Variables inspectées</gui></guiseq> pour ouvrir la fenêtre <gui>Variables inspectées</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Tout comme les variables locales, toutes les expressions inspectées s'affichent selon une arborescence avec des enfants représentant les membres de la structure ou du tableau.</p>
+  
+    <terms>
+      <item>
+        <title>Variable</title>
+        <p>Nom de la variable ou de l'expression.</p>
+      </item>
+      <item>
+        <title>Valeur</title>
+        <p>Valeur de la variable ou de l'expression.</p>
+      </item>
+      <item>
+        <title>Type</title>
+        <p>Type du résultat pour la variable ou l'expression.</p>
+      </item>
+    </terms>
+  </section>
+
+  <section>
+    <title>Mise à jour des expressions inspectées</title>
+
+    <p>Les expressions inspectées peuvent être mises à jour automatiquement dès que le programme est interrompu, ou à la demande de l'utilisateur.</p>
+
+    <p>Pour définir une expression inspectée en vue de sa mise à jour automatique :</p>
+
+    <steps>
+      <item>
+        <p>Dans la fenêtre <gui>Variables inspectées</gui>, sélectionnez la variable que vous voulez mettre à jour automatiquement. Faites un clic droit et vérifiez si l'option <gui>Mise à jour automatique</gui> est cochée ou non. Si elle ne l'est pas, cochez-la.</p>
+      </item>
+    </steps>
+
+    <p>Pour mettre à jour manuellement une variable inspectée :</p>
+
+    <steps>
+      <item>
+        <p>Dans la fenêtre <gui>Variables inspectées</gui>, faites un clic droit et sélectionnez <gui>Mise à jour de la variable</gui> pour mettre à jour la variable sélectionnée.</p>
+      </item>
+    </steps>
+
+    <p>Pour mettre à jour manuellement toutes les expressions inspectées en une fois :</p>
+
+    <steps>
+      <item>
+        <p>Dans la fenêtre <gui>Variables inspectées</gui>, faites un clic droit et sélectionnez <gui>Tout mettre à jour</gui> pour mettre à jour toutes les variables inspectées en même temps.</p>
+      </item>
+    </steps>
+
+  </section>
+
+
+  <section>
+    <title>Ajout d'une inspection sur une expression</title>
+
+    <p>Pour ajouter une expression à la liste des inspections :</p>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Déboguer</gui><gui>Ajouter à l'inspecteur...</gui></guiseq> ou dans la fenêtre <gui>Variables inspectées</gui>, faites un clic droit et sélectionnez <gui>Ajouter à l'inspecteur...</gui>.</p>
+      </item>
+      <item>
+        <p>Saisissez l'expression à inspecter. Cochez <gui>Mise à jour automatique</gui> si vous voulez que l'expression soit évaluée chaque fois que le programme est interrompu.</p>
+      </item>
+    </steps>
+
+    <p>Une expression peut être évaluée et ensuite ajoutée en tant que variable inspectée de la façon suivante :</p>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Déboguer</gui><gui>Inspecter/Évaluer</gui></guiseq>, ou faites un clic droit dans la fenêtre de l'<gui>éditeur</gui> et sélectionnez <gui>Inspecter/évaluer</gui>.</p>
+      </item>
+      <item>
+        <p>Cliquez sur le bouton <gui>Ajouter</gui> pour ajouter cette expression à la liste des variables inspectées.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section>
+    <title>Suppression d'une expression à inspecter</title>
+
+    <p>Vous pouvez enlever une expression de la liste des expressions inspectées.</p>
+
+    <steps>
+      <item>
+        <p>Dans la fenêtre <gui>Variables inspectées</gui>, sélectionnez la variable que vous voulez enlever puis faites un clic droit et sélectionnez <gui>Enlever de l'inspecteur</gui>.</p>
+      </item>
+    </steps>
+
+    <p>Les expressions inspectées peuvent être enlevées toutes en même temps.</p>
+
+    <steps>
+      <item>
+        <p>Dans la fenêtre <gui>Variables inspectées</gui>, faites un clic droit et sélectionnez <gui>Tout enlever</gui>.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section>
+    <title>Modification de la valeur d'une variable</title>
+
+    <p>Si une expression inspectée correspond à une variable, vous pouvez modifier sa valeur.</p>
+
+    <steps>
+      <item>
+        <p>Dans la fenêtre <gui>Variables inspectées</gui>, sélectionnez la variable que vous voulez modifier puis faites un double clic dans la colonne <gui>Valeur</gui>.</p>
+      </item>
+      <item>
+        <p>Saisissez la nouvelle valeur.</p>
+      </item>
+    </steps>
+  </section>
+
+
+</page>

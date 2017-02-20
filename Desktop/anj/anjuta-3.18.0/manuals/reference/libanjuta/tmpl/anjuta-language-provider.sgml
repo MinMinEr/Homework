@@ -1,0 +1,128 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaLanguageProvider
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT AnjutaLanguageProposalData ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION anjuta_language_proposal_data_new ##### -->
+<para>
+
+</para>
+
+@name: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_language_proposal_data_free ##### -->
+<para>
+
+</para>
+
+@data: 
+
+
+<!-- ##### FUNCTION anjuta_language_provider_install ##### -->
+<para>
+
+</para>
+
+@lang_prov: 
+@ieditor: 
+@settings: 
+
+
+<!-- ##### FUNCTION anjuta_language_provider_get_pre_word ##### -->
+<para>
+
+</para>
+
+@lang_prov: 
+@editor: 
+@iter: 
+@start_iter: 
+@word_characters: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_language_provider_get_calltip_context ##### -->
+<para>
+
+</para>
+
+@lang_prov: 
+@itip: 
+@iter: 
+@scope_context_ch: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_language_provider_activate ##### -->
+<para>
+
+</para>
+
+@lang_prov: 
+@iprov: 
+@iter: 
+@data: 
+
+
+<!-- ##### FUNCTION anjuta_language_provider_populate ##### -->
+<para>
+
+</para>
+
+@lang_prov: 
+@iprov: 
+@cursor: 
+
+
+<!-- ##### FUNCTION anjuta_language_provider_proposals ##### -->
+<para>
+
+</para>
+
+@lang_prov: 
+@iprov: 
+@proposals: 
+@pre_word: 
+@finished: 
+
+
+<!-- ##### FUNCTION anjuta_language_provider_get_start_iter ##### -->
+<para>
+
+</para>
+
+@lang_prov: 
+@Returns: 
+
+
+<!-- ##### STRUCT AnjutaLanguageProviderPriv ##### -->
+<para>
+
+</para>
+
+

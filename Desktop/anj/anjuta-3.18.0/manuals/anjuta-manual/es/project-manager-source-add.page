@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-source-add" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-source" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Añadir archivos existentes a un proyecto.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Añadir archivos</title>
+
+  <steps>
+    <item>
+      <p>Seleccione el objetivo donde quiere añadir el archivo de código fuente nuevo en la <gui>vista de proyecto</gui>, pulse en el botón derecho del ratón para mostrar el <gui>menú contextual del proyecto</gui> y seleccione <gui>Añadir archivo fuente</gui>.</p>
+
+      <p>O desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Proyecto</gui><gui>Añadir archivo fuente...</gui></guiseq></p>
+    </item>
+    <item>
+      <p>Puede seleccionar otro objetivo en la parte superior del <gui>botón selector de objetivos</gui>.</p>
+    </item>
+    <item>
+      <p>En el selector de archivos de debajo, seleccione los archivos que quiere añadir. Pulse el botón <gui>Añadir</gui> para añadir esos archivos a su proyecto. Puede seleccionar varios archivos a la vez manteniendo la tecla <key>Ctrl</key> pulsada o usando la tecla <key>Mayús</key> para seleccionar un rango de archivos.</p>
+    </item>
+  </steps>
+    
+  <note style="tip">
+    <p>Puede añadir archivos a subcarpetas del proyecto. La mayoría de los formatos de proyectos requieren que los archivos estén bajo la carpeta del proyecto. Los archivos fuente añadidos fuera de la carpeta del proyecto se copian dentro automáticamente para cumplir con este requerimiento.</p>
+  </note>
+ 
+</page>

@@ -1,0 +1,70 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaDockPane
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION anjuta_dock_pane_refresh ##### -->
+<para>
+
+</para>
+
+@self: 
+
+
+<!-- ##### FUNCTION anjuta_dock_pane_get_widget ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_dock_pane_get_plugin ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_dock_pane_notify_single_selection_changed ##### -->
+<para>
+
+</para>
+
+@self: 
+
+
+<!-- ##### FUNCTION anjuta_dock_pane_notify_multiple_selection_changed ##### -->
+<para>
+
+</para>
+
+@self: 
+
+
+<!-- ##### STRUCT AnjutaDockPanePriv ##### -->
+<para>
+
+</para>
+
+

@@ -1,0 +1,502 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: IAnjutaDebuggerInstruction</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="plugin-interfaces.html" title="Plugin interfaces">
+<link rel="prev" href="IAnjutaDebuggerBreakpoint.html" title="IAnjutaDebuggerBreakpoint">
+<link rel="next" href="IAnjutaDebuggerMemory.html" title="IAnjutaDebuggerMemory">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#IAnjutaDebuggerInstruction.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#IAnjutaDebuggerInstruction.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="plugin-interfaces.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="IAnjutaDebuggerBreakpoint.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="IAnjutaDebuggerMemory.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="IAnjutaDebuggerInstruction"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="IAnjutaDebuggerInstruction.top_of_page"></a>IAnjutaDebuggerInstruction</span></h2>
+<p>IAnjutaDebuggerInstruction — Debugger interface for machine instruction</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="IAnjutaDebuggerInstruction.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Unstable"><span class="acronym">Unstable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="IAnjutaDebuggerInstruction.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="IAnjutaDebuggerInstruction.html#IAnjutaDebuggerInstructionCallback" title="IAnjutaDebuggerInstructionCallback ()">*IAnjutaDebuggerInstructionCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaDebuggerInstruction.html#ianjuta-debugger-instruction-error-quark" title="ianjuta_debugger_instruction_error_quark ()">ianjuta_debugger_instruction_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaDebuggerInstruction.html#ianjuta-debugger-instruction-disassemble" title="ianjuta_debugger_instruction_disassemble ()">ianjuta_debugger_instruction_disassemble</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaDebuggerInstruction.html#ianjuta-debugger-instruction-run-from-address" title="ianjuta_debugger_instruction_run_from_address ()">ianjuta_debugger_instruction_run_from_address</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaDebuggerInstruction.html#ianjuta-debugger-instruction-run-to-address" title="ianjuta_debugger_instruction_run_to_address ()">ianjuta_debugger_instruction_run_to_address</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaDebuggerInstruction.html#ianjuta-debugger-instruction-step-in-instruction" title="ianjuta_debugger_instruction_step_in_instruction ()">ianjuta_debugger_instruction_step_in_instruction</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaDebuggerInstruction.html#ianjuta-debugger-instruction-step-over-instruction" title="ianjuta_debugger_instruction_step_over_instruction ()">ianjuta_debugger_instruction_step_over_instruction</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaDebuggerInstruction.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="IAnjutaDebuggerInstruction.html#IANJUTA-DEBUGGER-INSTRUCTION-ERROR:CAPS" title="IANJUTA_DEBUGGER_INSTRUCTION_ERROR">IANJUTA_DEBUGGER_INSTRUCTION_ERROR</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="IAnjutaDebuggerInstruction.html#IAnjutaDebuggerInstructionALine" title="struct IAnjutaDebuggerInstructionALine">IAnjutaDebuggerInstructionALine</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="IAnjutaDebuggerInstruction.html#IAnjutaDebuggerInstructionDisassembly" title="struct IAnjutaDebuggerInstructionDisassembly">IAnjutaDebuggerInstructionDisassembly</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaDebuggerInstruction.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/GTypeModule.html">GInterface</a>
+    <span class="lineart">╰──</span> IAnjutaDebuggerInstruction
+</pre>
+</div>
+<div class="refsect1">
+<a name="IAnjutaDebuggerInstruction.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libanjuta/interfaces/ianjuta-debugger-instruction.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="IAnjutaDebuggerInstruction.description"></a><h2>Description</h2>
+<p>This interface is used to debuger as machine instruction level.</p>
+</div>
+<div class="refsect1">
+<a name="IAnjutaDebuggerInstruction.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="IAnjutaDebuggerInstructionCallback"></a><h3>IAnjutaDebuggerInstructionCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*IAnjutaDebuggerInstructionCallback<span class="c_punctuation">)</span> (<em class="parameter"><code>const <a class="link" href="IAnjutaDebuggerInstruction.html#IAnjutaDebuggerInstructionDisassembly" title="struct IAnjutaDebuggerInstructionDisassembly"><span class="type">IAnjutaDebuggerInstructionDisassembly</span></a> *data</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> *err</code></em>);</pre>
+<p>This callback function is used to return a <a class="link" href="IAnjutaDebuggerInstruction.html#IAnjutaDebuggerInstructionDisassembly" title="struct IAnjutaDebuggerInstructionDisassembly"><span class="type">IAnjutaDebuggerInstructionDisassembly</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.8.6.9.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>a <a class="link" href="IAnjutaDebuggerInstruction.html#IAnjutaDebuggerInstructionDisassembly" title="struct IAnjutaDebuggerInstructionDisassembly"><span class="type">IAnjutaDebuggerInstructionDisassembly</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data passed to the function</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>error</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-debugger-instruction-error-quark"></a><h3>ianjuta_debugger_instruction_error_quark ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+ianjuta_debugger_instruction_error_quark
+                               (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.8.6.9.3.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-debugger-instruction-disassemble"></a><h3>ianjuta_debugger_instruction_disassemble ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ianjuta_debugger_instruction_disassemble
+                               (<em class="parameter"><code><a class="link" href="IAnjutaDebuggerInstruction.html" title="IAnjutaDebuggerInstruction"><span class="type">IAnjutaDebuggerInstruction</span></a> *obj</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gulong"><span class="type">gulong</span></a> address</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> length</code></em>,
+                                <em class="parameter"><code><a class="link" href="IAnjutaDebuggerInstruction.html#IAnjutaDebuggerInstructionCallback" title="IAnjutaDebuggerInstructionCallback ()"><span class="type">IAnjutaDebuggerInstructionCallback</span></a> callback</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Disassemble a part of the memory</p>
+<div class="refsect3">
+<a name="id-1.8.6.9.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>address</p></td>
+<td class="parameter_description"><p>Start address of the memory block</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>length</p></td>
+<td class="parameter_description"><p>Length of memory block</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>Call back with a IAnjutaDebuggerInstructionDisassembly as argument</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data that is passed back to the callback</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.6.9.4.6"></a><h4>Returns</h4>
+<p> TRUE if the request succeed and the callback is
+called. If FALSE, the callback will not be called.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-debugger-instruction-run-from-address"></a><h3>ianjuta_debugger_instruction_run_from_address ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ianjuta_debugger_instruction_run_from_address
+                               (<em class="parameter"><code><a class="link" href="IAnjutaDebuggerInstruction.html" title="IAnjutaDebuggerInstruction"><span class="type">IAnjutaDebuggerInstruction</span></a> *obj</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gulong"><span class="type">gulong</span></a> address</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Restart the program starting from address address</p>
+<div class="refsect3">
+<a name="id-1.8.6.9.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>address</p></td>
+<td class="parameter_description"><p>Run from this addresss</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.6.9.5.6"></a><h4>Returns</h4>
+<p> TRUE if the request succeed and the callback is called. If
+FALSE, the callback will not be called.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-debugger-instruction-run-to-address"></a><h3>ianjuta_debugger_instruction_run_to_address ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ianjuta_debugger_instruction_run_to_address
+                               (<em class="parameter"><code><a class="link" href="IAnjutaDebuggerInstruction.html" title="IAnjutaDebuggerInstruction"><span class="type">IAnjutaDebuggerInstruction</span></a> *obj</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gulong"><span class="type">gulong</span></a> address</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Start the program until it reachs the address address</p>
+<div class="refsect3">
+<a name="id-1.8.6.9.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>address</p></td>
+<td class="parameter_description"><p>Run to this addresss</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.6.9.6.6"></a><h4>Returns</h4>
+<p> TRUE if the request succeed and the callback is called. If
+FALSE, the callback will not be called.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-debugger-instruction-step-in-instruction"></a><h3>ianjuta_debugger_instruction_step_in_instruction ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ianjuta_debugger_instruction_step_in_instruction
+                               (<em class="parameter"><code><a class="link" href="IAnjutaDebuggerInstruction.html" title="IAnjutaDebuggerInstruction"><span class="type">IAnjutaDebuggerInstruction</span></a> *obj</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Execute one assembler instruction in the program.</p>
+<div class="refsect3">
+<a name="id-1.8.6.9.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.6.9.7.6"></a><h4>Returns</h4>
+<p> TRUE if the request succeed and the callback is called. If
+FALSE, the callback will not be called.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-debugger-instruction-step-over-instruction"></a><h3>ianjuta_debugger_instruction_step_over_instruction ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ianjuta_debugger_instruction_step_over_instruction
+                               (<em class="parameter"><code><a class="link" href="IAnjutaDebuggerInstruction.html" title="IAnjutaDebuggerInstruction"><span class="type">IAnjutaDebuggerInstruction</span></a> *obj</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Execute one assembler instruction in the program, if the instruction
+is a function call, continues until the function returns.</p>
+<div class="refsect3">
+<a name="id-1.8.6.9.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.6.9.8.6"></a><h4>Returns</h4>
+<p> TRUE if the request succeed and the callback is called. If
+FALSE, the callback will not be called.</p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaDebuggerInstruction.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="IANJUTA-DEBUGGER-INSTRUCTION-ERROR:CAPS"></a><h3>IANJUTA_DEBUGGER_INSTRUCTION_ERROR</h3>
+<pre class="programlisting">#define IANJUTA_DEBUGGER_INSTRUCTION_ERROR ianjuta_debugger_instruction_error_quark()
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IAnjutaDebuggerInstructionALine"></a><h3>struct IAnjutaDebuggerInstructionALine</h3>
+<pre class="programlisting">struct IAnjutaDebuggerInstructionALine {
+	gulong address;
+	const gchar *label;
+	const gchar *text;
+};
+</pre>
+<p>Defines a disassembled line</p>
+<div class="refsect3">
+<a name="id-1.8.6.10.3.5"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gulong"><span class="type">gulong</span></a> <em class="structfield"><code><a name="IAnjutaDebuggerInstructionALine.address"></a>address</code></em>;</p></td>
+<td class="struct_member_description"><p>Address of the line</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="IAnjutaDebuggerInstructionALine.label"></a>label</code></em>;</p></td>
+<td class="struct_member_description"><p>Optional label</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="IAnjutaDebuggerInstructionALine.text"></a>text</code></em>;</p></td>
+<td class="struct_member_description"><p>Diassembled instruction on the line</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IAnjutaDebuggerInstructionDisassembly"></a><h3>struct IAnjutaDebuggerInstructionDisassembly</h3>
+<pre class="programlisting">struct IAnjutaDebuggerInstructionDisassembly {
+	guint size;
+	IAnjutaDebuggerInstructionALine data[];
+};
+</pre>
+<p>Represents a block of diassembled instructions</p>
+<div class="refsect3">
+<a name="id-1.8.6.10.4.5"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> <em class="structfield"><code><a name="IAnjutaDebuggerInstructionDisassembly.size"></a>size</code></em>;</p></td>
+<td class="struct_member_description"><p>Number of line</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a class="link" href="IAnjutaDebuggerInstruction.html#IAnjutaDebuggerInstructionALine" title="struct IAnjutaDebuggerInstructionALine"><span class="type">IAnjutaDebuggerInstructionALine</span></a> <em class="structfield"><code><a name="IAnjutaDebuggerInstructionDisassembly.data"></a>data</code></em>[];</p></td>
+<td class="struct_member_description"><p>Array of all lines</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

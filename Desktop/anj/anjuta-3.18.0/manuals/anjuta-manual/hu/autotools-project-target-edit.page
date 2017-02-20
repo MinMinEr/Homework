@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-project-target-edit" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-target" group="second"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Autotools cél tulajdonságainak szerkesztése.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Autotools cél szerkesztése</title>
+
+  <p>Ez az Autotools projektben használt összes céltulajdonság listája. Ezek némelyike nem érhető el minden cél esetén.</p>
+
+  <terms>
+    <item>
+      <title><gui>Összeállítás csak az ellenőrzéshez</gui></title>
+      <p>Ha be van jelölve, akkor ez a cél nem kerül telepítésre, és csak az ellenőrzések futtatásakor kerül összeállításra.</p>
+    </item>
+    <item>
+      <title><gui>C fordító jelzői</gui></title>
+      <p>A C fordítónak a cél forrásfájljainak fordításakor átadandó jelzők. Ez az érték felülbírálja a szülőmappában definiáltat.</p>
+    </item>
+    <item>
+      <title><gui>C előfeldolgozó jelzői</gui></title>
+      <p>Ezek a jelzők átadásra kerülnek minden fordításnak, amely érinti a C előfeldolgozót. Ez az érték felülbírálja a szülőmappában definiáltat.</p>
+    </item>
+    <item>
+      <title><gui>C++ fordító jelzői</gui></title>
+      <p>A C++ fordítónak a cél forrásfájljainak fordításakor átadandó jelzők. Ez az érték felülbírálja a szülőmappában definiáltat.</p>
+    </item>
+    <item>
+      <title><gui>Ne telepítse</gui></title>
+      <p>Ha be van jelölve, akkor a cél nem kerül telepítésre. Más célok összeállításához használt segédprogramokhoz, vagy csak a fejlesztők által használt programokhoz használható.</p>
+    </item>
+    <item>
+      <title><gui>Ne használjon előtagot</gui></title>
+      <p>Ha be van jelölve, akkor nem ad előtagot a kézikönyvoldalhoz és a végrehajtható fájlhoz. Az ilyen előtagok a rendszereszközök alternatívái esetén hasznosak.</p>
+    </item>
+    <item>
+      <title><gui>Fortran fordító jelzői</gui></title>
+      <p>A Fortran 9x fordítónak a cél forrásfájljainak fordításakor átadandó jelzők. Ez az érték felülbírálja a szülőmappában definiáltat.</p>
+    </item>
+    <item>
+      <title><gui>Hozzáadás a terjesztéshez</gui></title>
+      <p>Ha be van jelölve, akkor a célt felveszi a disztribúciós csomagba.</p>
+    </item>
+    <item>
+      <title><gui>Telepítési könyvtár</gui></title>
+      <p>Megadja, hogy a cél hová kerül telepítésre. Nem közvetlenül az a könyvtár, ahová a fájlok telepítésre kerülnek, hanem az egyik szabványos könyvtárváltozó (bindir, sbindir, libdir, libexecdir, datadir, pkgdatadir, pkglibexecdir, includedir, mandir, infodir, docdir) vagy a mappatulajdonságok között definiált egyéni változó.</p>
+    </item>
+    <item>
+      <title><gui>Java fordító jelzői</gui></title>
+      <p>A Java fordítónak a cél forrásfájljainak fordításakor átadandó jelzők. Ez az érték felülbírálja a szülőmappában definiáltat.</p>
+    </item>
+    <item>
+      <title><gui>Cél útvonalának megtartása</gui></title>
+      <p>Ha be van jelölve, akkor megtartja a projektkönyvtár hierarchiáját a fájlok telepítésekor.</p>
+    </item>
+    <item>
+      <title><gui>Lex/Flex fordító jelzői</gui></title>
+      <p>A Lex vagy Flex szkennelő generátornak a cél forrásfájljai generálásakor átadandó jelzők. Ez az érték felülbírálja a szülőmappában definiáltat.</p>
+    </item>
+    <item>
+      <title><gui>Programkönyvtárak</gui></title>
+      <p>A cél által használt további programkönyvtárak megadása. Hasznos nem csomagból származó programkönyvtárak hozzáadásakor. További részletekért lásd a <link xref="project-manager-library">Nem csomagolt programkönyvtárak használata</link> oldalt.</p>
+    </item>
+    <item>
+      <title><gui>Szerkesztő paraméterei</gui></title>
+      <p>A szerkesztőnek a cél szerkesztésekor átadandó jelzők. Ez az érték felülbírálja a szülőmappában definiáltat.</p>
+    </item>
+    <item>
+      <title><gui>Kézi kiválasztás</gui></title>
+      <p>Azon kézikönyvszakasz megadása, amelyhez a kézikönyvoldal hozzáadandó. Az érvényes szakasznevek a számok 0-9 között, és az „l” és „n” betűk.</p>
+    </item>
+    <item>
+      <title><gui>Objective C fordító jelzői</gui></title>
+      <p>Az Objective C fordítónak a cél forrásfájljainak fordításakor átadandó jelzők. Ez az érték felülbírálja a szülőmappában definiáltat.</p>
+    </item>
+    <item>
+      <title><gui>Vala fordító jelzői</gui></title>
+      <p>A Vala fordítónak a cél forrásfájljainak fordításakor átadandó jelzők. Ez az érték felülbírálja a szülőmappában definiáltat.</p>
+    </item>
+    <item>
+      <title><gui>Yacc/Bison fordító jelzői</gui></title>
+      <p>A Bison vagy Yacc feldolgozógenerátornak a cél forrásfájljai generálásakor átadandó jelzők. Ez az érték felülbírálja a szülőmappában definiáltat.</p>
+    </item>
+  </terms>
+
+</page>

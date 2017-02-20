@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-run" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="second"/>
+    <link type="seealso" xref="run-parameters-dialog"/>
+    <link type="seealso" xref="autotools-build-configure"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak spustit program s laděním.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Ladění programu</title>
+  
+  <section>
+    <title>Spuštění programu v ladicím programu</title>
+
+    <p>Aktuální program je definován v dialogovém okně <gui>Parametry programu</gui>. Více informací viz <link xref="run-parameters-dialog"/>. Tento program je možné spustit v ladicím programu následovně:</p>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Spustit</gui> <gui>Ladit program</gui></guiseq> nebo zmáčkněte <keyseq><key>Shift</key> <key>F12</key></keyseq>.</p>
+      </item>
+    </steps>
+
+    <note style="tip">
+      <p>Program může být obtížné ladit v situacích, kdy je vysoce optimalizován nebo když schází ladicí informace. Zda je zapnutá optimalizace a ladicí informace se určuje v kroku konfigurace. Normálně bývá k dispozici konfigurace ladění, která vypíná optimalizaci a přikládá veškeré ladicí informace. Pokud není tato konfigurace použita, zobrazí Anjuta varování. Více informací viz <link xref="autotools-build-configure"/>.</p>
+    </note>
+   </section>
+
+  <section>
+    <title>Ladění již běžící aplikace</title>
+
+    <p>Ladicí program můžete použít i na již běžící aplikaci.</p>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Spustit</gui> <gui>Ladit proces…</gui></guiseq> a objeví se vám dialogové okno se seznamem všech běžících procesů.</p>
+      </item>
+      <item>
+        <p>V dialogovém okně <gui>Připojit se k procesu</gui> vyberte proces a kliknutím na <gui>Připojit</gui> spusťte ladicí program vůči tomuto procesu. Více podrobností viz <link xref="debug-process-dialog"/>.</p>
+      </item>
+    </steps>
+  </section>
+ 
+  <section>
+    <title>Ladění vzdálené aplikace</title>
+
+    <p>Ladicí program je možné použít skrz TCP nebo sériový port k ladění aplikací běžících na jiném počítači.</p>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Spustit</gui> <gui>Ladit vzdálený cíl…</gui></guiseq>.</p>
+      </item>
+      <item>
+        <p>Vyberte typ připojení ke vzdálené aplikaci, buď <gui>Spojení po sériové lince</gui> nebo <gui>Spojení TCP/IP</gui>.</p>
+      </item>
+      <item>
+        <p>U spojení TCP vyplňte pole s <gui>Adresou</gui> a <gui>Portem</gui>.</p>
+        <p>U sérového spojení vyplňte textové pole pod názvem sériového zařízení, například <cmd>/dev/ttyb</cmd>.</p>
+      </item>
+      <item>
+        <p>Kliknutím na <gui>Připojit</gui> spusťe ladění a připojení ke vzdálenému cíli.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section>
+    <title>Ukončení ladění</title>
+
+    <p>Ladicí program a program můžete kdykoliv zastavit takto:</p>
+
+    <steps>
+      <item>
+        <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Spustit</gui> <gui>Ukončit ladění</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+  </section>
+</page>

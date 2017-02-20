@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="makefile-project-backend" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager#backend"/>
+    <desc>Makefile projektháttérprogram.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Makefile projektháttérprogram-bővítmény.</title>
+
+  <p>A makefile valószínűleg a leggyakrabban használt módszer a szoftverek több platformra történő lefordítására. Egy makefile szabályok listáját tartalmazza, amelyeket sorrendben lefuttatva előállítható egy cél a függőségek listájából. Egy program összeállításakor a cél egy objektumfájl, és a függőségek a forrásfájlok. Egy szabály célja lehet egy másik függősége, ez lehetővé teszi több szabály összefűzését egy végső cél előállításához.</p>
+
+  <p>Ez egy alacsony szintű, általános eszköz, ami megnehezíti egy projekt összes forrásfájljának és céljának megtalálását. Emiatt az <app>Anjuta</app> korlátozottan támogatja a makefile-okat: csak egy makefile beolvasására képes a felső szintű projektkönyvtárból, valamint a forrásfájlok és célok kinyerésére abból.</p>
+
+  <note style="bug">
+    <p>Ha a projekt háttérprogramja nem képes megtalálni az összes forrásfájlt, akkor megpróbálhatja használni a könyvtár háttérprogramot. Ez nem ismeri fel a célokat, de az összes forrásfájlt megnyitja.</p>
+  </note>
+
+  <p>Tulajdonságok módosítása, vagy célok és forrásfájlok hozzáadása vagy eltávolítása le van tiltva ezzel a háttérprogrammal, mivel a makefile automatikus szerkesztése nincs megvalósítva. A makefile-t saját kezűleg, a szövegszerkesztővel kell módosítania. A makefile mentésekor az automatikusan újra be lesz töltve.</p>
+
+</page>

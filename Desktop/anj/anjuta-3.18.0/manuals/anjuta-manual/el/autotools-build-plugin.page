@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-plugin" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Πρόσθετα δόμησης autotools</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Πρόσθετα δόμησης autotools</title>
+
+  <p>Αυτό το πρόσθετο είναι προοριζόμενο στα έργα autotools, αλλά καθώς χρησιμοποιείται το κάνει χρήσιμο για άλλα είδη έργων χρησιμοποιώντας make.</p>
+
+  <section>
+    <title>Χρήση εντολής Make</title>
+    <p>Εδώ είναι μια λίστα προορισμών που χρησιμοποιούνται από πρόσθετα. Υλοποιούνται σε όλα τα έργα autotools, αλλά χρειάζεται να υλοποιηθούν εάν χρησιμοποιήσετε ένα προσαρμοσμένο makefile.</p>
+    <terms>
+      <item>
+        <title><cmd>make <var>object_file_name</var></cmd></title>
+        <p>Χρησιμεύει στη μεταγλώττιση ενός πηγαίου αρχείου. Το όνομα αρχείου αντικειμένου βρίσκεται αντικαθιστώντας την επέκταση πηγαίου αρχείου με την αντίστοιχη επέκταση αντικειμένου.</p>
+      </item>
+      <item>
+        <title><cmd>make</cmd></title>
+        <p>Χρησιμεύει στη δόμηση όλων των προορισμών σε κατάλογο.</p>
+      </item>
+      <item>
+        <title><cmd>make install</cmd></title>
+        <p>Χρησιμεύει στην εγκατάσταση όλων των προορισμών σε κατάλογο.</p>
+      </item>
+      <item>
+        <title><cmd>make clean</cmd></title>
+        <p>Χρησιμεύει στη διαγραφή όλων των δομημένων αρχείων σε κατάλογο.</p>
+      </item>
+      <item>
+        <title><cmd>make dist</cmd></title>
+        <p>Χρησιμεύει στη δόμηση ενός πακέτου διανομής, καλείται μόνο στον κατάλογο έργου.</p>
+      </item>
+    </terms>    
+
+    <note style="tip">
+      <p>Καθώς το make έρχεται με προεπιλεγμένους κανόνες που επιτρέπουν τη μεταγλώττιση και σύνδεση ενός προγράμματος C χωρίς την ανάγκη ενός makefile. Μπορείτε να μεταγλωττίσετε ένα πρόγραμμα C από ένα μοναδικό πηγαίο αρχείο χωρίς makefile ή έργο.</p>
+    </note>
+  </section>
+
+</page>

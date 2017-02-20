@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="anjuta-code-help" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Rechercher rapidement de l'information dans la documentation API</desc>
+
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Utilisation de la référence des API</title>
+
+<section>
+<title>Consultation de la référence des API</title>
+
+<p>Afin d'accéder rapidement à la références des API des bibliothèques, anjuta comporte un navigateur d'API intégré. Si ce n'est pas déjà fait, vous pouvez l'activer dans les préférences (<guiseq><gui>Édition</gui><gui>Préférences</gui></guiseq>) dans <guiseq><gui>Général</gui><gui>Greffons</gui></guiseq> et en choisissant le greffon <app>DevHelp</app>.</p>
+
+<p>La référence des API possède deux fenêtres, l'une pour rechercher un symbole particulier et l'autre, le navigateur, pour afficher la documentation d'aide.</p>
+
+</section>
+
+<section>
+<title>Accès à la référence des API en utilisant des raccourcis dans l'éditeur</title>
+
+<p>Si vous n'êtes pas certain de la façon dont une fonction particulière du code existant fonctionne, placez simplement le curseur sur le nom de la fonction et saisissez <keyseq><key>Maj</key><key>F1</key></keyseq> (ou cliquez sur <guiseq><gui>Aide</gui><gui>Aide contextuelle</gui></guiseq> pour accéder à la documentation.</p>
+
+</section>
+
+</page>

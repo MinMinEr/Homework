@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-plugin" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Autotools összeállító bővítmény</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Autotools összeállító bővítmény</title>
+
+  <p>Ez a bővítmény autotools projektekhez készült, de mivel ezek a make-et használják, a make parancsot használó más projektekhez is hasznos.</p>
+
+  <section>
+    <title>Használt make parancs</title>
+    <p>Ez a bővítmény által használt célok listája. Minden autotools projektben meg vannak valósítva, de egyéni Makefile használatkor ezeket Önnek is meg kell valósítania.</p>
+    <terms>
+      <item>
+        <title><cmd>make <var>objektumfájl_neve</var></cmd></title>
+        <p>Forrásfájl lefordítására használatos. Az objektumfájl neve a forrásfájl kiterjesztésének a megfelelő objektumkiterjesztésre cserélésével kapható meg.</p>
+      </item>
+      <item>
+        <title><cmd>make</cmd></title>
+        <p>Egy könyvtár összes céljának lefordítása.</p>
+      </item>
+      <item>
+        <title><cmd>make install</cmd></title>
+        <p>Egy könyvtár összes céljának telepítése.</p>
+      </item>
+      <item>
+        <title><cmd>make clean</cmd></title>
+        <p>Egy könyvtárban összeállított összes fájl törlése.</p>
+      </item>
+      <item>
+        <title><cmd>make dist</cmd></title>
+        <p>Disztribúciós csomag építése, csak a projekt könyvtárában hívható.</p>
+      </item>
+    </terms>    
+
+    <note style="tip">
+      <p>A make alapértelmezett szabályokat tartalmaz a C programok lefordításához Makefile nélkül, így egyetlen forrásfájl használatakor nem kell Makefile-t írni.</p>
+    </note>
+  </section>
+
+</page>

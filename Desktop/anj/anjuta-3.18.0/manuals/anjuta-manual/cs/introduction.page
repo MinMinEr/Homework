@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="introduction" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <title>Úvod</title>
+    <desc>Úvod do integrovaného vývojového prostředí <app>Anjuta</app></desc>
+    <link type="guide" xref="index"/>
+  </info>
+
+  <title>Úvod</title>
+
+  <p><app>Anjuta</app> je univerzální integrované vývojářské prostředí (IDE) pro pracovní prostředí GNOME. Má řadu pokročilých funkcí pro programátory, včetně správy projektu, průvodců aplikacemi, interaktivního ladění, integrovaného návrháře uživatelského rozhraní Glade, integrované nápovědy Devhelp k API, generátoru tříd, mocného editoru zdrojových kódů, prohlížeče symbolů, podpory Git, podpory jazyků C/C++, Python a Vala a dalších věcí.</p>
+
+  <p><app>Anjuta</app> má pružný a pokročilý dokovací systém, který umožňuje rozvrhnout si zobrazení tak, jak se vám to hodí. Díky úchytným lištám můžete jednotlivá zobrazení postupem táhni a upusť libovolně přerovnat.</p>
+
+  <p><app>Anjuta</app> byla navyržena tak, aby byla jednoduchá na používání a přitom plně schopná splnit všechny potřeby programátora. V průběhu vývoje byla postupně přidána řada nových funkcí. Zaměřujeme se na poskytnutí výkonu a použitelnosti naráz a snažíme se, aby byl vývoj softwaru zábavou bez nutnosti věnovat se věcem okolo. Máme v úmyslu pokračovat ve zlepšování a stabilizaci IDE <app>Anjuta</app>, aby pro vás byla ještě přívětivější.</p>
+
+  <p>Doufáme, že budete s používáním <app>Anuty</app> spokojeni. Pokud ne, dejte nám pomocí nahlášení chyby nebo návrhu, vědět, abychom na tom mohli zapracovat. Vaše ohlasy pomáhají nejenom nám zdokonalovat software, ale i celé komunitě okolo otevřeného softwaru.</p>
+
+  <p>Následující snímek obrazovky představuje některé věci, které můžete ve <app>Anjutě</app> najít.</p>
+
+  <figure>
+    <title><app>Anjuta</app> v činnosti</title>
+    <desc>Hlavní okno aplikace <app>Anjuta</app></desc>
+    <media type="image" mime="image/png" src="figures/anjuta-in-action.png">
+      <p>Hlavní okno aplikace <app>Anjuta</app></p>
+    </media>
+  </figure>
+
+</page>

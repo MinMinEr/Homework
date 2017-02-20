@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:e="http://projectmallard.org/experimental/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" style="2column" id="index" xml:lang="el">
+
+  <info>
+    <desc>Βοήθεια για το DevStudio του Anjuta.</desc>
+    <title type="link">Anjuta</title>
+    <title type="text">Anjuta DevStudio</title>
+
+    <revision pkgversion="0.1" version="0.1" date="2011-03-20" status="incomplete"/>
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+
+<!--  
+   <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude" /> 
+-->
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>  
+  
+  <title><media type="image" mime="image/png" its:translate="no" src="figures/anjuta_logo.png"><span its:translate="yes">Λογότυπο Anjuta</span></media> DevStudio του Anjuta</title>
+
+  <section id="anjuta-project-management" style="2column" groups="first second third fourth fifth">
+    <title>Διαχείριση έργου</title>
+  </section>
+
+  <section id="anjuta-code" style="2column">
+    <title>Κωδικοποίηση και κώδικας περιήγησης</title>
+  </section> 
+
+  <section id="anjuta-build" style="2column" groups="first second third fourth fifth sixth">
+    <title>Δόμηση έργου</title>
+  </section>
+
+  <section id="anjuta-debug" style="2column" groups="first second third fourth fifth">
+    <title>Αποσφαλμάτωση προγράμματος</title>
+  </section>
+
+<!--
+  <section id="anjuta-glade" style="2column" groups="first second">
+    <title>User interface editor</title>
+  </section>
+-->
+
+  <section id="reference">
+    <title>Αναφορά</title>
+  </section>
+
+</page>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-library-add" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-library" group="sixth"/>
+    <link type="seealso" xref="project-manager-target"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak do cíle přidat vlastní knihovnu.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Přidání vlastní knihovny</title>
+ 
+  <p>Je jednodušší použít knihovnu z balíčku, což je běžná praxe v Linuxu, takže si ověrte, jestli je to <link xref="project-manager-module-new">tento</link> případ. Přesto ale můžete použít knihovnu tak, jak je vysvětleno dále.</p>
+
+  <p>Abyste mohli použít knihovnu v C, musíte říci počítači, kde jsou hlavičkové soubory a říci linkeru, kde najde potřebné knihovny. Problémem je, že se váš program nezkompiluje na jiném počítači, když na něm budou hlavičkové soubory a knihovni umístěny jinde.</p>
+
+  <steps>
+    <item>
+      <p>V <gui>zobrazení projektu</gui> vyberte složku obsahující program, do kterého chcete přidat knihovnu, klikněte pravým tlačítkem myši, aby se objevila <gui>kontextová nabídka projektu</gui> a vyberte <gui>Vlastnosti</gui>.</p>
+
+      <p>Nebo v <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Projekt</gui> <gui>Vlastnosti</gui></guiseq>. Jako výchozí se upravují vlastnosti právě vybrané položky v zobrazení projektu. Jinou položku můžete vybrat v rozbalovacím seznamu.</p>
+    </item>
+    <item>
+      <p>Pokud jsou hlavičkové soubory nainstalovány ve standardním umístění (<file>/usr/include</file>), nemusíte to nastavovat. Pokud nejsou a používáte jako kompilátor <app>gcc</app>, musíte do <gui>přepínačů preprocesoru C</gui> přidat <input>-I<var>cesta_k_hlavičkovým_souborům</var></input>. Můžete přidat i několik cest oddělených mezerami. Tato volba bude použita pro všechny cíle v rámci složky.</p>
+
+      <p>Abyste toto nastavení viděli, budete možná muset rozbalit <gui>Další volby</gui>. Když máte vše hotovo, klikněte na tlačítko <gui>Použít</gui>.</p>
+    </item>
+    <item>
+      <p>Následně musíte přidat knihovnu do cíle. V <gui>zobrazení projektu</gui> vyberte cíl, do kterého ji chcete přidat, klikněte pravým tlačítkem, aby se zobrazila <gui>kontextová nabídka projektu</gui>, a vyberte <gui>Vlastnosti</gui>.</p>
+
+      <p>Nebo v <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Projekt</gui> <gui>Vlastnosti</gui></guiseq>. Jako výchozí se upravují vlastnosti právě vybrané položky v zobrazení projektu. Jinou položku můžete vybrat v rozbalovacím seznamu.</p>
+    </item>
+    <item>
+      <p>Pokud je vaším překladačem <app>gcc</app>, musíte nastavit vlastnost <gui>Přepínače linkeru</gui> přidáním <input>-l<var>název_knihovny</var></input>. <var>název_knihovny</var> je název knihovny bez předpony <file>lib</file> a bez přípony <file>.a</file> nebo <file>.so</file>.</p>
+
+      <p>V případě, že knihovna není ve standardní složce, může se po ní <app>gcc</app> podívat do dalších složek určených přepínačem <input>-L<var>cesta_ke_knihovně</var></input>.</p>  
+    </item>
+  </steps>
+
+</page>

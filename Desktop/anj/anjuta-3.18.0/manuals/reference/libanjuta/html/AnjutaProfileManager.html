@@ -1,0 +1,530 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: AnjutaProfileManager</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="libanjuta-api.html" title="libanjuta API">
+<link rel="prev" href="AnjutaProfile.html" title="AnjutaProfile">
+<link rel="next" href="AnjutaLauncher.html" title="AnjutaLauncher">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#AnjutaProfileManager.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#AnjutaProfileManager.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#AnjutaProfileManager.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#AnjutaProfileManager.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libanjuta-api.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="AnjutaProfile.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="AnjutaLauncher.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="AnjutaProfileManager"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="AnjutaProfileManager.top_of_page"></a>AnjutaProfileManager</span></h2>
+<p>AnjutaProfileManager — Managers a stack of plugins profiles</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="AnjutaProfileManager.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Unstable"><span class="acronym">Unstable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="AnjutaProfileManager.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProfileManager.html" title="AnjutaProfileManager"><span class="returnvalue">AnjutaProfileManager</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProfileManager.html#anjuta-profile-manager-new" title="anjuta_profile_manager_new ()">anjuta_profile_manager_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProfileManager.html#anjuta-profile-manager-push" title="anjuta_profile_manager_push ()">anjuta_profile_manager_push</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProfileManager.html#anjuta-profile-manager-pop" title="anjuta_profile_manager_pop ()">anjuta_profile_manager_pop</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProfileManager.html#anjuta-profile-manager-freeze" title="anjuta_profile_manager_freeze ()">anjuta_profile_manager_freeze</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProfileManager.html#anjuta-profile-manager-thaw" title="anjuta_profile_manager_thaw ()">anjuta_profile_manager_thaw</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProfile.html" title="AnjutaProfile"><span class="returnvalue">AnjutaProfile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProfileManager.html#anjuta-profile-manager-get-current" title="anjuta_profile_manager_get_current ()">anjuta_profile_manager_get_current</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaProfileManager.html#anjuta-profile-manager-close" title="anjuta_profile_manager_close ()">anjuta_profile_manager_close</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaProfileManager.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type">
+<a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *</td>
+<td class="property_name"><a class="link" href="AnjutaProfileManager.html#AnjutaProfileManager--plugin-manager" title="The “plugin-manager” property">plugin-manager</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaProfileManager.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="AnjutaProfileManager.html#AnjutaProfileManager-profile-popped" title="The “profile-popped” signal">profile-popped</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="AnjutaProfileManager.html#AnjutaProfileManager-profile-pushed" title="The “profile-pushed” signal">profile-pushed</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaProfileManager.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="AnjutaProfileManager.html#AnjutaProfileManager-struct" title="struct AnjutaProfileManager">AnjutaProfileManager</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="AnjutaProfileManager.html#AnjutaProfileManagerPriv" title="AnjutaProfileManagerPriv">AnjutaProfileManagerPriv</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaProfileManager.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> AnjutaProfileManager
+</pre>
+</div>
+<div class="refsect1">
+<a name="AnjutaProfileManager.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libanjuta/anjuta-profile-manager.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="AnjutaProfileManager.description"></a><h2>Description</h2>
+<p>Anjuta uses up to three profiles. A system profile which contains mandatory
+plugins which are never unloaded. A user profile is used when no project is
+loaded and a project profile when one is loaded.
+If a second project is loaded, it is loaded in another instance of Anjuta.
+When a project is closed, Anjuta goes back to the user profile.</p>
+<p>The profile manager can be in a frozen state where you can push or 
+pop a profile from the stack without triggering a change of the profile.</p>
+</div>
+<div class="refsect1">
+<a name="AnjutaProfileManager.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="anjuta-profile-manager-new"></a><h3>anjuta_profile_manager_new ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProfileManager.html" title="AnjutaProfileManager"><span class="returnvalue">AnjutaProfileManager</span></a> *
+anjuta_profile_manager_new (<em class="parameter"><code><a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *plugin_manager</code></em>);</pre>
+<p>Create a new profile manager.</p>
+<div class="refsect3">
+<a name="id-1.6.12.11.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>plugin_manager</p></td>
+<td class="parameter_description"><p>the <a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> used by all profiles.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.12.11.2.6"></a><h4>Returns</h4>
+<p> the new <a class="link" href="AnjutaProfileManager.html" title="AnjutaProfileManager"><span class="type">AnjutaProfileManager</span></a> object.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-profile-manager-push"></a><h3>anjuta_profile_manager_push ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_profile_manager_push (<em class="parameter"><code><a class="link" href="AnjutaProfileManager.html" title="AnjutaProfileManager"><span class="type">AnjutaProfileManager</span></a> *profile_manager</code></em>,
+                             <em class="parameter"><code><a class="link" href="AnjutaProfile.html" title="AnjutaProfile"><span class="type">AnjutaProfile</span></a> *profile</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Add a new profile at the top of the profile manager stack. If the profile
+manager is not frozen, this new profile will be loaded immediatly and
+become the current profile.</p>
+<div class="refsect3">
+<a name="id-1.6.12.11.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>profile_manager</p></td>
+<td class="parameter_description"><p>the <a class="link" href="AnjutaProfileManager.html" title="AnjutaProfileManager"><span class="type">AnjutaProfileManager</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>profile</p></td>
+<td class="parameter_description"><p>the new <a class="link" href="AnjutaProfile.html" title="AnjutaProfile"><span class="type">AnjutaProfile</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.12.11.3.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-profile-manager-pop"></a><h3>anjuta_profile_manager_pop ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_profile_manager_pop (<em class="parameter"><code><a class="link" href="AnjutaProfileManager.html" title="AnjutaProfileManager"><span class="type">AnjutaProfileManager</span></a> *profile_manager</code></em>,
+                            <em class="parameter"><code><a class="link" href="AnjutaProfile.html" title="AnjutaProfile"><span class="type">AnjutaProfile</span></a> *profile</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Remove a profile from the profile manager stack. If the manager is not
+frozen, only the current profile can be removed. It will be unloaded and
+the previous profile will be loaded.
+If the manager is frozen, the current profile or the last pushed profile
+can be removed.</p>
+<div class="refsect3">
+<a name="id-1.6.12.11.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>profile_manager</p></td>
+<td class="parameter_description"><p>the <a class="link" href="AnjutaProfileManager.html" title="AnjutaProfileManager"><span class="type">AnjutaProfileManager</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>profile</p></td>
+<td class="parameter_description"><p>the <a class="link" href="AnjutaProfile.html" title="AnjutaProfile"><span class="type">AnjutaProfile</span></a> to remove.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.12.11.4.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-profile-manager-freeze"></a><h3>anjuta_profile_manager_freeze ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_profile_manager_freeze (<em class="parameter"><code><a class="link" href="AnjutaProfileManager.html" title="AnjutaProfileManager"><span class="type">AnjutaProfileManager</span></a> *profile_manager</code></em>);</pre>
+<p>Freeze the plugin manager. In this state, plugins can be added and removed
+from the stack without triggering any change in the current profile. It is
+possible to freeze the manager several times but it will be back in its normal
+state only after as much call of <a class="link" href="AnjutaProfileManager.html#anjuta-profile-manager-thaw" title="anjuta_profile_manager_thaw ()"><code class="function">anjuta_profile_manager_thaw()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.6.12.11.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>profile_manager</p></td>
+<td class="parameter_description"><p>the <a class="link" href="AnjutaProfileManager.html" title="AnjutaProfileManager"><span class="type">AnjutaProfileManager</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-profile-manager-thaw"></a><h3>anjuta_profile_manager_thaw ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_profile_manager_thaw (<em class="parameter"><code><a class="link" href="AnjutaProfileManager.html" title="AnjutaProfileManager"><span class="type">AnjutaProfileManager</span></a> *profile_manager</code></em>,
+                             <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>Put back the plugin manager in its normal mode after calling
+<a class="link" href="AnjutaProfileManager.html#anjuta-profile-manager-freeze" title="anjuta_profile_manager_freeze ()"><code class="function">anjuta_profile_manager_freeze()</code></a>. It will load a new profile if one has been
+added while the manager was frozen.</p>
+<div class="refsect3">
+<a name="id-1.6.12.11.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>profile_manager</p></td>
+<td class="parameter_description"><p>the <a class="link" href="AnjutaProfileManager.html" title="AnjutaProfileManager"><span class="type">AnjutaProfileManager</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.12.11.6.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success, <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-profile-manager-get-current"></a><h3>anjuta_profile_manager_get_current ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProfile.html" title="AnjutaProfile"><span class="returnvalue">AnjutaProfile</span></a> *
+anjuta_profile_manager_get_current (<em class="parameter"><code><a class="link" href="AnjutaProfileManager.html" title="AnjutaProfileManager"><span class="type">AnjutaProfileManager</span></a> *profile_manager</code></em>);</pre>
+<p>Return the current profile.</p>
+<div class="refsect3">
+<a name="id-1.6.12.11.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>profile_manager</p></td>
+<td class="parameter_description"><p>A <a class="link" href="AnjutaProfileManager.html" title="AnjutaProfileManager"><span class="type">AnjutaProfileManager</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.12.11.7.6"></a><h4>Returns</h4>
+<p> a <a class="link" href="AnjutaProfile.html" title="AnjutaProfile"><span class="type">AnjutaProfile</span></a> object or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+if the profile stack is empty. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>][<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-profile-manager-close"></a><h3>anjuta_profile_manager_close ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_profile_manager_close (<em class="parameter"><code><a class="link" href="AnjutaProfileManager.html" title="AnjutaProfileManager"><span class="type">AnjutaProfileManager</span></a> *profile_manager</code></em>);</pre>
+<p>Close the <a class="link" href="AnjutaProfileManager.html" title="AnjutaProfileManager"><span class="type">AnjutaProfileManager</span></a> causing "descoped" to be emitted and
+all queued and previous profiles to be released. This function is to be used
+when destroying an Anjuta instance.</p>
+<div class="refsect3">
+<a name="id-1.6.12.11.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>profile_manager</p></td>
+<td class="parameter_description"><p>A <a class="link" href="AnjutaProfileManager.html" title="AnjutaProfileManager"><span class="type">AnjutaProfileManager</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="AnjutaProfileManager.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="AnjutaProfileManager-struct"></a><h3>struct AnjutaProfileManager</h3>
+<pre class="programlisting">struct AnjutaProfileManager;</pre>
+<p>Stores stack of <a class="link" href="AnjutaProfile.html" title="AnjutaProfile"><span class="type">AnjutaProfile</span></a>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AnjutaProfileManagerPriv"></a><h3>AnjutaProfileManagerPriv</h3>
+<pre class="programlisting">typedef struct _AnjutaProfileManagerPriv AnjutaProfileManagerPriv;</pre>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="AnjutaProfileManager.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="AnjutaProfileManager--plugin-manager"></a><h3>The <code class="literal">“plugin-manager”</code> property</h3>
+<pre class="programlisting">  “plugin-manager”           <a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *</pre>
+<p>The plugin manager to use for profile plugins.</p>
+<p>Flags: Read / Write / Construct</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="AnjutaProfileManager.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="AnjutaProfileManager-profile-popped"></a><h3>The <code class="literal">“profile-popped”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="AnjutaProfileManager.html" title="AnjutaProfileManager"><span class="type">AnjutaProfileManager</span></a> *profile_manager,
+               <a class="link" href="AnjutaProfile.html" title="AnjutaProfile"><span class="type">AnjutaProfile</span></a>        *profile,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>              user_data)</pre>
+<p>Emitted when a profile is removed from the stack. If the profile manager
+is not frozen, the current profile will be unloaded and the previous one
+will be loaded.</p>
+<div class="refsect3">
+<a name="id-1.6.12.14.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>profile_manager</p></td>
+<td class="parameter_description"><p>a <a class="link" href="AnjutaProfileManager.html" title="AnjutaProfileManager"><span class="type">AnjutaProfileManager</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>profile</p></td>
+<td class="parameter_description"><p>the current removed <a class="link" href="AnjutaProfile.html" title="AnjutaProfile"><span class="type">AnjutaProfile</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AnjutaProfileManager-profile-pushed"></a><h3>The <code class="literal">“profile-pushed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="AnjutaProfileManager.html" title="AnjutaProfileManager"><span class="type">AnjutaProfileManager</span></a> *profile_manager,
+               <a class="link" href="AnjutaProfile.html" title="AnjutaProfile"><span class="type">AnjutaProfile</span></a>        *profile,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>              user_data)</pre>
+<p>Emitted when a profile is added in the stack. If the profile manager is
+not frozen, the current profile will be unloaded and the new one
+will be loaded.</p>
+<div class="refsect3">
+<a name="id-1.6.12.14.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>profile_manager</p></td>
+<td class="parameter_description"><p>a <a class="link" href="AnjutaProfileManager.html" title="AnjutaProfileManager"><span class="type">AnjutaProfileManager</span></a> object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>profile</p></td>
+<td class="parameter_description"><p>the new <a class="link" href="AnjutaProfile.html" title="AnjutaProfile"><span class="type">AnjutaProfile</span></a> added.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="AnjutaProfileManager.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a>, <a class="link" href="AnjutaProfile.html" title="AnjutaProfile"><span class="type">AnjutaProfile</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

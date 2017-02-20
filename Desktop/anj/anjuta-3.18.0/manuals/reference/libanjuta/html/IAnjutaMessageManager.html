@@ -1,0 +1,534 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: IAnjutaMessageManager</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="plugin-interfaces.html" title="Plugin interfaces">
+<link rel="prev" href="IAnjutaMarkable.html" title="IAnjutaMarkable">
+<link rel="next" href="IAnjutaMessageView.html" title="IAnjutaMessageView">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#IAnjutaMessageManager.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#IAnjutaMessageManager.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="plugin-interfaces.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="IAnjutaMarkable.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="IAnjutaMessageView.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="IAnjutaMessageManager"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="IAnjutaMessageManager.top_of_page"></a>IAnjutaMessageManager</span></h2>
+<p>IAnjutaMessageManager — The plugin that managers all message views</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="IAnjutaMessageManager.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Unstable"><span class="acronym">Unstable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="IAnjutaMessageManager.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaMessageManager.html#ianjuta-message-manager-error-quark" title="ianjuta_message_manager_error_quark ()">ianjuta_message_manager_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="IAnjutaMessageView.html" title="IAnjutaMessageView"><span class="returnvalue">IAnjutaMessageView</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaMessageManager.html#ianjuta-message-manager-add-view" title="ianjuta_message_manager_add_view ()">ianjuta_message_manager_add_view</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaMessageManager.html#ianjuta-message-manager-get-all-views" title="ianjuta_message_manager_get_all_views ()">ianjuta_message_manager_get_all_views</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="IAnjutaMessageView.html" title="IAnjutaMessageView"><span class="returnvalue">IAnjutaMessageView</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaMessageManager.html#ianjuta-message-manager-get-current-view" title="ianjuta_message_manager_get_current_view ()">ianjuta_message_manager_get_current_view</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="IAnjutaMessageView.html" title="IAnjutaMessageView"><span class="returnvalue">IAnjutaMessageView</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaMessageManager.html#ianjuta-message-manager-get-view-by-name" title="ianjuta_message_manager_get_view_by_name ()">ianjuta_message_manager_get_view_by_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaMessageManager.html#ianjuta-message-manager-remove-view" title="ianjuta_message_manager_remove_view ()">ianjuta_message_manager_remove_view</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaMessageManager.html#ianjuta-message-manager-set-current-view" title="ianjuta_message_manager_set_current_view ()">ianjuta_message_manager_set_current_view</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaMessageManager.html#ianjuta-message-manager-set-view-icon" title="ianjuta_message_manager_set_view_icon ()">ianjuta_message_manager_set_view_icon</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaMessageManager.html#ianjuta-message-manager-set-view-icon-from-stock" title="ianjuta_message_manager_set_view_icon_from_stock ()">ianjuta_message_manager_set_view_icon_from_stock</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaMessageManager.html#ianjuta-message-manager-set-view-title" title="ianjuta_message_manager_set_view_title ()">ianjuta_message_manager_set_view_title</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaMessageManager.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">╰──</span> IAnjutaMessageManagerError
+    <a href="https://developer.gnome.org/gobject/unstable/GTypeModule.html">GInterface</a>
+    <span class="lineart">╰──</span> IAnjutaMessageManager
+</pre>
+</div>
+<div class="refsect1">
+<a name="IAnjutaMessageManager.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libanjuta/interfaces/ianjuta-message-manager.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="IAnjutaMessageManager.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="IAnjutaMessageManager.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="ianjuta-message-manager-error-quark"></a><h3>ianjuta_message_manager_error_quark ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+ianjuta_message_manager_error_quark (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.8.45.8.2.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-message-manager-add-view"></a><h3>ianjuta_message_manager_add_view ()</h3>
+<pre class="programlisting"><a class="link" href="IAnjutaMessageView.html" title="IAnjutaMessageView"><span class="returnvalue">IAnjutaMessageView</span></a> *
+ianjuta_message_manager_add_view (<em class="parameter"><code><a class="link" href="IAnjutaMessageManager.html" title="IAnjutaMessageManager"><span class="type">IAnjutaMessageManager</span></a> *obj</code></em>,
+                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *icon</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Adds a new view to the message-manager</p>
+<div class="refsect3">
+<a name="id-1.8.45.8.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Name/Title of the new view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>icon</p></td>
+<td class="parameter_description"><p>Path to an icon or ""</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.45.8.3.6"></a><h4>Returns</h4>
+<p> The new message-view</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-message-manager-get-all-views"></a><h3>ianjuta_message_manager_get_all_views ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+ianjuta_message_manager_get_all_views (<em class="parameter"><code><a class="link" href="IAnjutaMessageManager.html" title="IAnjutaMessageManager"><span class="type">IAnjutaMessageManager</span></a> *obj</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Get all message-views</p>
+<div class="refsect3">
+<a name="id-1.8.45.8.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.45.8.4.6"></a><h4>Returns</h4>
+<p> A GList* of all views. You must not
+manipulate the list. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> IAnjutaMessageView]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-message-manager-get-current-view"></a><h3>ianjuta_message_manager_get_current_view ()</h3>
+<pre class="programlisting"><a class="link" href="IAnjutaMessageView.html" title="IAnjutaMessageView"><span class="returnvalue">IAnjutaMessageView</span></a> *
+ianjuta_message_manager_get_current_view
+                               (<em class="parameter"><code><a class="link" href="IAnjutaMessageManager.html" title="IAnjutaMessageManager"><span class="type">IAnjutaMessageManager</span></a> *obj</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Get the view with is currently on top of
+the notebook or NULL if the message-manager is empty.</p>
+<div class="refsect3">
+<a name="id-1.8.45.8.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.45.8.5.6"></a><h4>Returns</h4>
+<p> Current view; <a class="link" href="IAnjutaMessageView.html" title="IAnjutaMessageView"><span class="type">IAnjutaMessageView</span></a> object.
+NULL, if there is no views.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-message-manager-get-view-by-name"></a><h3>ianjuta_message_manager_get_view_by_name ()</h3>
+<pre class="programlisting"><a class="link" href="IAnjutaMessageView.html" title="IAnjutaMessageView"><span class="returnvalue">IAnjutaMessageView</span></a> *
+ianjuta_message_manager_get_view_by_name
+                               (<em class="parameter"><code><a class="link" href="IAnjutaMessageManager.html" title="IAnjutaMessageManager"><span class="type">IAnjutaMessageManager</span></a> *obj</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Get the view with the given name or NULL if
+it does not exist.</p>
+<div class="refsect3">
+<a name="id-1.8.45.8.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Name/Title of the view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.45.8.6.6"></a><h4>Returns</h4>
+<p> The message-view or NULL</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-message-manager-remove-view"></a><h3>ianjuta_message_manager_remove_view ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_message_manager_remove_view (<em class="parameter"><code><a class="link" href="IAnjutaMessageManager.html" title="IAnjutaMessageManager"><span class="type">IAnjutaMessageManager</span></a> *obj</code></em>,
+                                     <em class="parameter"><code><a class="link" href="IAnjutaMessageView.html" title="IAnjutaMessageView"><span class="type">IAnjutaMessageView</span></a> *view</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Remove view from the message-manager. The view
+will become invalid.</p>
+<div class="refsect3">
+<a name="id-1.8.45.8.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view</p></td>
+<td class="parameter_description"><p>The view to remove</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-message-manager-set-current-view"></a><h3>ianjuta_message_manager_set_current_view ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_message_manager_set_current_view
+                               (<em class="parameter"><code><a class="link" href="IAnjutaMessageManager.html" title="IAnjutaMessageManager"><span class="type">IAnjutaMessageManager</span></a> *obj</code></em>,
+                                <em class="parameter"><code><a class="link" href="IAnjutaMessageView.html" title="IAnjutaMessageView"><span class="type">IAnjutaMessageView</span></a> *view</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Set view to be on top of the notebook.</p>
+<div class="refsect3">
+<a name="id-1.8.45.8.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view</p></td>
+<td class="parameter_description"><p>A message view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-message-manager-set-view-icon"></a><h3>ianjuta_message_manager_set_view_icon ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_message_manager_set_view_icon (<em class="parameter"><code><a class="link" href="IAnjutaMessageManager.html" title="IAnjutaMessageManager"><span class="type">IAnjutaMessageManager</span></a> *obj</code></em>,
+                                       <em class="parameter"><code><a class="link" href="IAnjutaMessageView.html" title="IAnjutaMessageView"><span class="type">IAnjutaMessageView</span></a> *view</code></em>,
+                                       <em class="parameter"><code><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-Animations.html#GdkPixbufAnimation"><span class="type">GdkPixbufAnimation</span></a> *icon</code></em>,
+                                       <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Sets the icon of view.</p>
+<div class="refsect3">
+<a name="id-1.8.45.8.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view</p></td>
+<td class="parameter_description"><p>A message view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>icon</p></td>
+<td class="parameter_description"><p>Sets the icon of view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-message-manager-set-view-icon-from-stock"></a><h3>ianjuta_message_manager_set_view_icon_from_stock ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_message_manager_set_view_icon_from_stock
+                               (<em class="parameter"><code><a class="link" href="IAnjutaMessageManager.html" title="IAnjutaMessageManager"><span class="type">IAnjutaMessageManager</span></a> *obj</code></em>,
+                                <em class="parameter"><code><a class="link" href="IAnjutaMessageView.html" title="IAnjutaMessageView"><span class="type">IAnjutaMessageView</span></a> *view</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *icon</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Sets the icon of view.</p>
+<div class="refsect3">
+<a name="id-1.8.45.8.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view</p></td>
+<td class="parameter_description"><p>A message view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>icon</p></td>
+<td class="parameter_description"><p>Sets the icon of view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-message-manager-set-view-title"></a><h3>ianjuta_message_manager_set_view_title ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+ianjuta_message_manager_set_view_title
+                               (<em class="parameter"><code><a class="link" href="IAnjutaMessageManager.html" title="IAnjutaMessageManager"><span class="type">IAnjutaMessageManager</span></a> *obj</code></em>,
+                                <em class="parameter"><code><a class="link" href="IAnjutaMessageView.html" title="IAnjutaMessageView"><span class="type">IAnjutaMessageView</span></a> *view</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Sets the title of view.</p>
+<div class="refsect3">
+<a name="id-1.8.45.8.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>view</p></td>
+<td class="parameter_description"><p>A message view</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>title</p></td>
+<td class="parameter_description"><p>Sets the title of view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaMessageManager.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

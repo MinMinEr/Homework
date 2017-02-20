@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: AnjutaCompletion</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="libanjuta-api.html" title="libanjuta API">
+<link rel="prev" href="AnjutaCommandQueue.html" title="AnjutaCommandQueue">
+<link rel="next" href="AnjutaDock.html" title="AnjutaDock">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#AnjutaCompletion.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#AnjutaCompletion.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#AnjutaCompletion.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libanjuta-api.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="AnjutaCommandQueue.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="AnjutaDock.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="AnjutaCompletion"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="AnjutaCompletion.top_of_page"></a>AnjutaCompletion</span></h2>
+<p>AnjutaCompletion</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="AnjutaCompletion.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="AnjutaCompletion.html#AnjutaCompletionNameFunc" title="AnjutaCompletionNameFunc ()">*AnjutaCompletionNameFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="AnjutaCompletion.html#AnjutaCompletionFilterFunc" title="AnjutaCompletionFilterFunc ()">*AnjutaCompletionFilterFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaCompletion.html" title="AnjutaCompletion"><span class="returnvalue">AnjutaCompletion</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaCompletion.html#anjuta-completion-new" title="anjuta_completion_new ()">anjuta_completion_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaCompletion.html#anjuta-completion-get-case-sensitive" title="anjuta_completion_get_case_sensitive ()">anjuta_completion_get_case_sensitive</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaCompletion.html#anjuta-completion-set-case-sensitive" title="anjuta_completion_set_case_sensitive ()">anjuta_completion_set_case_sensitive</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaCompletion.html#anjuta-completion-set-item-destroy-func" title="anjuta_completion_set_item_destroy_func ()">anjuta_completion_set_item_destroy_func</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaCompletion.html#anjuta-completion-set-filter-func" title="anjuta_completion_set_filter_func ()">anjuta_completion_set_filter_func</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaCompletion.html#anjuta-completion-add-item" title="anjuta_completion_add_item ()">anjuta_completion_add_item</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaCompletion.html#anjuta-completion-clear" title="anjuta_completion_clear ()">anjuta_completion_clear</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaCompletion.html#anjuta-completion-complete" title="anjuta_completion_complete ()">anjuta_completion_complete</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaCompletion.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="AnjutaCompletion.html#AnjutaCompletion--case-sensitive" title="The “case-sensitive” property">case-sensitive</a></td>
+<td class="property_flags">Read / Write</td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaCompletion.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> AnjutaCompletion
+</pre>
+</div>
+<div class="refsect1">
+<a name="AnjutaCompletion.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="AnjutaCompletion.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="AnjutaCompletionNameFunc"></a><h3>AnjutaCompletionNameFunc ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+<span class="c_punctuation">(</span>*AnjutaCompletionNameFunc<span class="c_punctuation">)</span> (<em class="parameter"><code>const <span class="type">void</span> *item</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.32.7.2.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AnjutaCompletionFilterFunc"></a><h3>AnjutaCompletionFilterFunc ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+<span class="c_punctuation">(</span>*AnjutaCompletionFilterFunc<span class="c_punctuation">)</span> (<em class="parameter"><code>const <span class="type">void</span> *item</code></em>,
+                               <em class="parameter"><code><span class="type">void</span> *user_data</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.32.7.3.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-completion-new"></a><h3>anjuta_completion_new ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaCompletion.html" title="AnjutaCompletion"><span class="returnvalue">AnjutaCompletion</span></a> *
+anjuta_completion_new (<em class="parameter"><code><a class="link" href="AnjutaCompletion.html#AnjutaCompletionNameFunc" title="AnjutaCompletionNameFunc ()"><span class="type">AnjutaCompletionNameFunc</span></a> name_func</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.32.7.4.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-completion-get-case-sensitive"></a><h3>anjuta_completion_get_case_sensitive ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_completion_get_case_sensitive (<em class="parameter"><code><a class="link" href="AnjutaCompletion.html" title="AnjutaCompletion"><span class="type">AnjutaCompletion</span></a> *self</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.32.7.5.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-completion-set-case-sensitive"></a><h3>anjuta_completion_set_case_sensitive ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_completion_set_case_sensitive (<em class="parameter"><code><a class="link" href="AnjutaCompletion.html" title="AnjutaCompletion"><span class="type">AnjutaCompletion</span></a> *self</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> case_sensitive</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-completion-set-item-destroy-func"></a><h3>anjuta_completion_set_item_destroy_func ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_completion_set_item_destroy_func
+                               (<em class="parameter"><code><a class="link" href="AnjutaCompletion.html" title="AnjutaCompletion"><span class="type">AnjutaCompletion</span></a> *self</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> item_destroy_func</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.32.7.7.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="AnjutaCompletion.html" title="AnjutaCompletion"><span class="type">AnjutaCompletion</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>item_destroy_func</p></td>
+<td class="parameter_description"><p> the function to be called on
+the added items when the <a class="link" href="AnjutaCompletion.html" title="AnjutaCompletion"><span class="type">AnjutaCompletion</span></a> object is destroyed. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-completion-set-filter-func"></a><h3>anjuta_completion_set_filter_func ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_completion_set_filter_func (<em class="parameter"><code><a class="link" href="AnjutaCompletion.html" title="AnjutaCompletion"><span class="type">AnjutaCompletion</span></a> *self</code></em>,
+                                   <em class="parameter"><code><a class="link" href="AnjutaCompletion.html#AnjutaCompletionFilterFunc" title="AnjutaCompletionFilterFunc ()"><span class="type">AnjutaCompletionFilterFunc</span></a> filter_func</code></em>,
+                                   <em class="parameter"><code><span class="type">void</span> *user_data</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-completion-add-item"></a><h3>anjuta_completion_add_item ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_completion_add_item (<em class="parameter"><code><a class="link" href="AnjutaCompletion.html" title="AnjutaCompletion"><span class="type">AnjutaCompletion</span></a> *self</code></em>,
+                            <em class="parameter"><code><span class="type">void</span> *item</code></em>);</pre>
+<p>Add an item to the completion.</p>
+<div class="refsect3">
+<a name="id-1.6.32.7.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="AnjutaCompletion.html" title="AnjutaCompletion"><span class="type">AnjutaCompletion</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>item</p></td>
+<td class="parameter_description"><p>the item to be added.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-completion-clear"></a><h3>anjuta_completion_clear ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_completion_clear (<em class="parameter"><code><a class="link" href="AnjutaCompletion.html" title="AnjutaCompletion"><span class="type">AnjutaCompletion</span></a> *self</code></em>);</pre>
+<p>Clear all items added to the completion.</p>
+<div class="refsect3">
+<a name="id-1.6.32.7.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>a <a class="link" href="AnjutaCompletion.html" title="AnjutaCompletion"><span class="type">AnjutaCompletion</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-completion-complete"></a><h3>anjuta_completion_complete ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+anjuta_completion_complete (<em class="parameter"><code><a class="link" href="AnjutaCompletion.html" title="AnjutaCompletion"><span class="type">AnjutaCompletion</span></a> *self</code></em>,
+                            <em class="parameter"><code>const <span class="type">char</span> *prefix</code></em>,
+                            <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> max_completions</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.6.32.7.11.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>self</p></td>
+<td class="parameter_description"><p>A <a class="link" href="AnjutaCompletion.html" title="AnjutaCompletion"><span class="type">AnjutaCompletion</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>prefix</p></td>
+<td class="parameter_description"><p>The prefix to complete against.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.32.7.11.5"></a><h4>Returns</h4>
+<p> The list of completions that matched
+<em class="parameter"><code>prefix</code></em>
+. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>]</span></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="AnjutaCompletion.other_details"></a><h2>Types and Values</h2>
+</div>
+<div class="refsect1">
+<a name="AnjutaCompletion.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="AnjutaCompletion--case-sensitive"></a><h3>The <code class="literal">“case-sensitive”</code> property</h3>
+<pre class="programlisting">  “case-sensitive”           <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Case sensitive.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

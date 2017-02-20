@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="anjuta-code-indentation" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-10-24" status="draft"/>
+    <desc>Configurer et utiliser l'indentation automatique pour obtenir un style de code cohérent</desc>
+
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Indentation automatique</title>
+
+<section>
+<title>Configuration et utilisation de l'indentation automatique</title>
+
+<section>
+<title>Configuration manuelle</title>
+
+<p>L'indentation automatique est configurée dans les préférences (<guiseq><gui>Édition</gui><gui>Préférences</gui></guiseq>), dans l'onglet correspondant au langage de programmation utilisé. La largeur d'indentation pour différents types d'instructions peut être définie ici.</p>
+
+<p>Le grand inconvénient de configurer l'indentation manuellement est que les différents programmeurs travaillant sur un projet doivent utiliser le même paramétrage, sinon cela aboutira à des styles différents au sein d'un même fichier. Pour une meilleure solution, reportez-vous à la section suivante.</p>
+
+<note>
+<p>À moins que ce ne soit explicitement indiqué dans les préférences, les réglages d'indentation trouvés dans les modificateurs d'un fichier sont utilisés à la place des réglages configurés de façon à conserver la compatibilité du fichier.</p>
+</note>
+</section>
+
+<section id="editor-modelines">
+<title>Modificateurs</title>
+
+<p>Les modificateurs aident les éditeurs de fichiers à détecter automatiquement le mode d'indentation utilisé pour un fichier particulier. Ils sont très utiles quand plusieurs programmeurs travaillent sur un même projet avec des environnements différents.</p>
+
+<p>Anjuta prend en charge les modificateurs des deux formats utilisés par <app>Vim</app> et <app>Emacs</app>.</p>
+
+</section>
+
+</section>
+
+<section>
+<title>Indentation de blocs de code</title>
+
+<p>Normalement, les nouvelles lignes sont indentées correctement de façon automatique, mais vous pouvez indenter les lignes existantes ou le code sélectionné grâce à l'élément de menu <guiseq><gui>Édition</gui><gui>Indentation automatique</gui></guiseq>.</p>
+
+</section>
+
+</page>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="autotools-build-preferences-dialog" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="autotools-build-plugin"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Dialogové okno s předvolbami sestavení pomocí Autotools.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  </info>
+
+  <title>Předvolby sestavení pomocí Autotools</title>
+
+  <p>Dialogové okno umožňuje nastavit globální volby pro sestavení souborů.</p>
+
+  <terms>
+    <item>
+      <title><gui>Spustit najednou několik příkazů</gui></title>
+      <p><app>make</app> umí spustit několik kompilací naráz. Tím se na vícejádrových procesorech zkrátí čas potřebný k sestavení, ale může to vyvolat některé problémy, takže tímto zaškrtávacím políčkem to můžete povolit nebo zakázat.</p>
+    </item>
+    <item>
+      <title><gui>Pokračovat při chybách</gui></title>
+      <p>Standardně se <app>make</app> zastaví ihned, jak narazí na nějakou chybu. Může být ale rychlejší pokračovat a zjistit chyby pro všechny soubory v jednom kroku. Abyste dosáhli tohoto chování, musíte zaškrtnout toto políčko.</p>
+    </item>
+    <item>
+      <title><gui>Překládat zprávy</gui></title>
+      <p>Ve výchozím stavu se chybové a varovné zprávy překládají. To má však dvě nevýhody. Aby byly chyby a varování rozpoznány, musí být jazykové překlady <app>Anjuty</app> a kompilátoru dokonale sladěny. Navíc je často těžší nají rady na Internetu, když hledáte přeložené zprávy, protože ty se vyskytují méně často. Zrušením zaškrtnutí tohoto políčka jazykové překlady zakážete.</p>
+    </item>
+    <item>
+      <title><gui>Vyznačit v editoru varování a chyby sestavení</gui></title>
+      <p>Chyby a varování vzniklé během sestavení se zobrazí a zvýrazní v okně se zprávami. Zaškrtnutím této volby se zvýrazní rovněž v editoru.</p>
+    </item>
+    <item>
+      <title><gui>Instalovat jako uživatel root</gui></title>
+      <p>Instalace programu potřebuje kopírovat soubory do systémových složek, které často nejsou zapisovatelné pro běžného uživatele. Když je zaškrtnuté toto políčko, můžete před instalací souborů zvolit použití <cmd>sudo</cmd> nebo <cmd>su</cmd>, abyste získali dostatečná oprávnění.</p>
+    </item>
+  </terms>
+
+</page>

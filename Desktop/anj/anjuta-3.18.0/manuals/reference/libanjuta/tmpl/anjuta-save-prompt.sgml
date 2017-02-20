@@ -1,0 +1,64 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaSavePrompt
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### USER_FUNCTION AnjutaSavePromptSaveFunc ##### -->
+<para>
+
+</para>
+
+@save_prompt: 
+@item: 
+@user_data: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_save_prompt_new ##### -->
+<para>
+
+</para>
+
+@parent: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_save_prompt_get_items_count ##### -->
+<para>
+
+</para>
+
+@save_prompt: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_save_prompt_add_item ##### -->
+<para>
+
+</para>
+
+@save_prompt: 
+@item_name: 
+@item_detail: 
+@item: 
+@item_save_func: 
+@user_data: 
+
+

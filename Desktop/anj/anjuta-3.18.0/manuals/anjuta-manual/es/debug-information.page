@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-information" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="seventh"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Examinar información adicional del programa.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Información variada</title>
+
+  <p>El depurador le puede proporcionar información variada acerca del programa mientras este se está ejecutando.</p>
+
+  <section>
+    <title>Ver bibliotecas compartidas</title>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Depurar</gui><gui>Info</gui><gui>Bibliotecas compartidas</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+    <p>Esto abrirá una ventana que listará todas las bibliotecas compartidas que el programa ha cargado y sus ubicaciones en memoria. También muestra si cada tabla de símbolos de la biblioteca está cargada o no.</p>
+  </section>
+
+
+  <section>
+    <title>Ver señales</title>
+
+    <steps>
+      <item>
+        <p>Desde el <gui>menú principal</gui>, seleccione <guiseq><gui>Depurar</gui><gui>Info</gui><gui>Señales del núcleo</gui></guiseq>.</p>
+      </item>
+    </steps>
+ 
+    <p>Esto lista todas las señales disponibles con una pequeña descripción y tres columnas para especificar qué hacer al recibir una señal:</p>
+
+    <terms>
+      <item>
+        <title>Detener</title>
+        <p>El depurador detiene el programa en ejecución cuando el programa recibe esta señal.</p>
+      </item>
+      <item>
+        <title>Imprimir</title>
+        <p>El depurador muestra la señal recibida.</p>
+      </item>
+      <item>
+        <title>Pasar</title>
+        <p>El depurador pasa la señal al programa.</p>
+      </item>
+    </terms>
+
+    <note style="bug">
+      <p>El menú contextual que se muestra cuando pulsa con el botón derecho del ratón tiene todos sus elementos desactivados porque las funciones correspondientes no están aún implementadas.</p>
+    </note>
+
+  </section>
+
+</page>

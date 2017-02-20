@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="anjuta-code-help" xml:lang="pt-BR">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Encontre rapidamente a informação que precisa na documentação da API</desc>
+
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  </info>
+
+  <title>Usando a referência à API</title>
+
+<section>
+<title>Navegando pela referência à API</title>
+
+<p>Para acessar rapidamente a referência da API das bibliotecas, o Anjuta oferece um navegador de API integrado. Pode ser ativado no diálogo de preferências (<guiseq><gui>Editar</gui><gui>Preferências</gui></guiseq>) em <guiseq><gui>Geral</gui><gui>Plug-ins</gui></guiseq> escolhendo o plugin <app>DevHelp</app>.</p>
+
+<p>A referência da API possui duas janelas, uma para pesquisar por um símbolo específico e e o navegador para ver os documentos de ajuda.</p>
+
+</section>
+
+<section>
+<title>Pulando para a referência da API usando atalhos no editor</title>
+
+<p>Caso você esteja inseguro sobre como funciona uma função específica usada no código existente, simplesmente posicione o cursor no nome da função e use  <keyseq><key>Shift</key><key>F1</key></keyseq> (ou <guiseq><gui>Ajuda</gui><gui>Ajuda de contexto</gui></guiseq>) para pular para a documentação.</p>
+
+</section>
+
+</page>

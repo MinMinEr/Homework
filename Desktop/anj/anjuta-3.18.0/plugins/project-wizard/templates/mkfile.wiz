@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-template>
+	<project-wizard>
+		<name>Makefile project</name>
+		<name xml:lang="ar">مشروع Makefile</name>
+		<name xml:lang="ast">Proyeutu Makefile</name>
+		<name xml:lang="be@latin">Prajekt z Makefajłam</name>
+		<name xml:lang="bg">Проект с Makefile</name>
+		<name xml:lang="bs">Projekat Stvori-datoteku</name>
+		<name xml:lang="ca">Projecte makefile</name>
+		<name xml:lang="ca@valencia">Projecte makefile</name>
+		<name xml:lang="cs">Projekt Makefile</name>
+		<name xml:lang="da">Makefil-projekt</name>
+		<name xml:lang="de">Makefile-Projekt</name>
+		<name xml:lang="el">Έργο makefile</name>
+		<name xml:lang="en_CA">Makefile project</name>
+		<name xml:lang="en_GB">Makefile project</name>
+		<name xml:lang="es">Proyecto Makefile</name>
+		<name xml:lang="eu">Makefile proiektua</name>
+		<name xml:lang="fi">Makefile-projekti</name>
+		<name xml:lang="fr">Projet Makefile</name>
+		<name xml:lang="gl">Proxecto Makefile</name>
+		<name xml:lang="he">פרויקט Makefile</name>
+		<name xml:lang="hi">मेकफाइल परियोजना</name>
+		<name xml:lang="hu">Makefile projekt</name>
+		<name xml:lang="hy">Makefile նախագիծ</name>
+		<name xml:lang="id">Projek makefile</name>
+		<name xml:lang="it">Progetto makefile</name>
+		<name xml:lang="ja">Makefile のプロジェクト</name>
+		<name xml:lang="km">គម្រោង Makefile</name>
+		<name xml:lang="ko">Makefile 프로젝트</name>
+		<name xml:lang="lt">Makefile projektas</name>
+		<name xml:lang="lv">Makefile projekts</name>
+		<name xml:lang="ml">പദ്ധതിയുടെ Makefile</name>
+		<name xml:lang="mr">Makefile प्रकल्प</name>
+		<name xml:lang="nb">Makefile-prosjekt</name>
+		<name xml:lang="pl">Projekt Makefile</name>
+		<name xml:lang="pt">Projeto com Makefile</name>
+		<name xml:lang="pt_BR">Projeto com Makefile</name>
+		<name xml:lang="ro">Proiect Makefile</name>
+		<name xml:lang="ru">Проект с Makefile</name>
+		<name xml:lang="sk">Projekt typu makefile</name>
+		<name xml:lang="sl">Makefile projekt</name>
+		<name xml:lang="sr">Пројекат Створи-датотеку</name>
+		<name xml:lang="sr@latin">Projekat Stvori-datoteku</name>
+		<name xml:lang="sv">Makefile-projekt</name>
+		<name xml:lang="te">మేక్ ఫైల్ ప్రాజెక్టు</name>
+		<name xml:lang="th">โครงการ Makefile</name>
+		<name xml:lang="tr">Makefile projesi</name>
+		<name xml:lang="ug">Makefile قۇرۇلۇشى</name>
+		<name xml:lang="uk">Проект з Makefile</name>
+		<name xml:lang="vi">Dự án Makefile</name>
+		<name xml:lang="zh_CN">Makefile 项目</name>
+		<name xml:lang="zh_HK">Makefile 專案</name>
+		<name xml:lang="zh_TW">Makefile 專案</name>
+		<description>Makefile-based project</description>
+		<description xml:lang="ar">مشروع يعتمد على Makefile</description>
+		<description xml:lang="ast">Proyeutu basáu en Makefile</description>
+		<description xml:lang="be@latin">Prajekt z Makefajłam</description>
+		<description xml:lang="bg">Проект, базиран на Makefile</description>
+		<description xml:lang="bs">Projekat zasnovan na Stvori-datoteku</description>
+		<description xml:lang="ca">Projecte basat en el makefile</description>
+		<description xml:lang="ca@valencia">Projecte basat en el makefile</description>
+		<description xml:lang="cs">Projekt založený na Makefile</description>
+		<description xml:lang="da">Makefilsbaseret projekt</description>
+		<description xml:lang="de">Makefile-basiertes Projekt</description>
+		<description xml:lang="el">Έργο βασισμένο σε makefile</description>
+		<description xml:lang="en_CA">Makefile-based project</description>
+		<description xml:lang="en_GB">Makefile-based project</description>
+		<description xml:lang="es">Proyecto basado en Makefile</description>
+		<description xml:lang="eu">Makefile-en oinarritutako proiektua</description>
+		<description xml:lang="fi">Makefile-pohjainen projekti</description>
+		<description xml:lang="fr">Projet basé sur Makefile</description>
+		<description xml:lang="gl">Proxecto baseado no Makefile</description>
+		<description xml:lang="he">פרויקט מבוסס Makefile</description>
+		<description xml:lang="hi">मेकफाइल आधारित परियोजना</description>
+		<description xml:lang="hu">Makefile-alapú projekt</description>
+		<description xml:lang="hy">Makefile-ի վրա հիմնված նախագիծ</description>
+		<description xml:lang="id">Projek berbasis makefile</description>
+		<description xml:lang="it">Progetto basato su makefile</description>
+		<description xml:lang="ja">Makefile ベースのプロジェクトです</description>
+		<description xml:lang="km">គម្រោង​មូលដ្ឋាន Makefile</description>
+		<description xml:lang="ko">Makefile 기반 프로젝트</description>
+		<description xml:lang="lt">Makefile pagrindo projektas</description>
+		<description xml:lang="lv">Makefile bāzēts projekts</description>
+		<description xml:lang="ml">Makefile അടിസ്ഥാനമാക്കിയ പദ്ധതി</description>
+		<description xml:lang="mr">Makefile-आधारीत प्रकल्प</description>
+		<description xml:lang="nb">Makefile-basert prosjekt</description>
+		<description xml:lang="pl">Projekt oparty na Makefile</description>
+		<description xml:lang="pt">Projeto baseado num Makefile</description>
+		<description xml:lang="pt_BR">Projeto baseado em Makefile</description>
+		<description xml:lang="ro">Proiect pe bază de Makefile</description>
+		<description xml:lang="ru">Проект, собираемый с помощью Makefile</description>
+		<description xml:lang="sk">Projekt založený na makefile</description>
+		<description xml:lang="sl">Projekt z Makefile osnovo</description>
+		<description xml:lang="sr">Пројекат заснован на Створи-датотеку</description>
+		<description xml:lang="sr@latin">Projekat zasnovan na Stvori-datoteku</description>
+		<description xml:lang="sv">Makefile-baserat projekt</description>
+		<description xml:lang="te">మేక్ ఫైల్-ఆధారిత ప్రాజెక్టు</description>
+		<description xml:lang="th">โครงการที่ใช้ Makefile</description>
+		<description xml:lang="tr">Makefile-tabanlı proje</description>
+		<description xml:lang="ug">Makefile ئاساسىدىكى قۇرۇلۇش</description>
+		<description xml:lang="uk">Проект, що збирається за допомогою Makefile</description>
+		<description xml:lang="vi">Dự án dựa vào Makefile</description>
+		<description xml:lang="zh_CN">基于 Makefile 的项目</description>
+		<description xml:lang="zh_HK">基於 Makefile 的專案</description>
+		<description xml:lang="zh_TW">基於 Makefile 的專案</description>
+		<icon>mkfile-logo.png</icon>
+		<category>C</category>
+		<order>10</order>
+		<required-program>make</required-program>
+	</project-wizard>
+	
+	<page name="options" label="Project options" description="Project directory, output file etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Project name:" description=""></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Project directory:" description=""></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="ar" name="options" label="خيارات المشروع" description="مجلد المشروع، ملف الخرج، إلخ.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="اسم المشروع:" description="" xml:lang="ar"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="مجلد المشروع:" description="" xml:lang="ar"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="ast" name="options" label="Opciones del proyeutu" description="Carpeta del proyeutu, ficheru de salida, etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Nome del proyeutu:" description="" xml:lang="ast"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Carpeta del proyeutu:" description="" xml:lang="ast"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="az" name="options" label="Project options" description="Project directory, output file etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Project name:" description="" xml:lang="az"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Project directory:" description="" xml:lang="az"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="be@latin" name="options" label="Opcyi prajektu" description="Kataloh prajektu, fajł vyjścia ihd.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Nazva prajektu:" description="" xml:lang="be@latin"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Kataloh prajektu:" description="" xml:lang="be@latin"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="bg" name="options" label="Настройки на проекта" description="Папка на проекта, изходен файл и т.н.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Име на проект:" description="" xml:lang="bg"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Папка на проекта:" description="" xml:lang="bg"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="bs" name="options" label="Svojstva projekta" description="Direktorijum projekta, izlazna datoteka itd.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Naziv projekta:" description="" xml:lang="bs"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Direktorijum projekta:" description="" xml:lang="bs"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="ca" name="options" label="Opcions del projecte" description="Directori del projecte, fitxer de sortida, etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Nom del projecte:" description="" xml:lang="ca"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Directori del projecte:" description="" xml:lang="ca"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="ca@valencia" name="options" label="Opcions del projecte" description="Directori del projecte, fitxer d&apos;eixida, etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Nom del projecte:" description="" xml:lang="ca@valencia"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Directori del projecte:" description="" xml:lang="ca@valencia"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="cs" name="options" label="Vlastnosti projektu" description="Složka projektu, výstupní soubor atd.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Název projektu:" description="" xml:lang="cs"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Složka projektu:" description="" xml:lang="cs"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="da" name="options" label="Projektindstillinger" description="Projektmappe, uddatafil osv.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Projektnavn:" description="" xml:lang="da"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Projektmappe:" description="" xml:lang="da"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="de" name="options" label="Projektoptionen" description="Projektordner, Ausgabedatei, etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Projektname:" description="" xml:lang="de"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Projektordner:" description="" xml:lang="de"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="dz" name="options" label="ལས་འགུལ་གདམ་ཁ་ཚུ།" description="Project directory, output file etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Project name:" description="" xml:lang="dz"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Project directory:" description="" xml:lang="dz"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="el" name="options" label="Επιλογές έργου" description="Ο κατάλογος του έργου, το αρχείο εξόδου, κλπ.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Όνομα έργου:" description="" xml:lang="el"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Κατάλογος έργου:" description="" xml:lang="el"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="en@shaw" name="options" label="𐑐𐑮𐑩𐑡𐑧𐑒𐑑 𐑪𐑐𐑖𐑩𐑯𐑟" description="𐑐𐑮𐑩𐑡𐑧𐑒𐑑 𐑛𐑲𐑮𐑧𐑒𐑑𐑼𐑦, 𐑬𐑑𐑐𐑫𐑑 𐑓𐑲𐑤 𐑧𐑑𐑕.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="𐑐𐑮𐑩𐑡𐑧𐑒𐑑 𐑯𐑱𐑥:" description="" xml:lang="en@shaw"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="𐑐𐑮𐑩𐑡𐑧𐑒𐑑 𐑛𐑲𐑮𐑧𐑒𐑑𐑼𐑦:" description="" xml:lang="en@shaw"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="en_CA" name="options" label="Project options" description="Project directory, output file etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Project name:" description="" xml:lang="en_CA"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Project directory:" description="" xml:lang="en_CA"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="en_GB" name="options" label="Project options" description="Project directory, output file, etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Project name:" description="" xml:lang="en_GB"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Project directory:" description="" xml:lang="en_GB"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="eo" name="options" label="Project options" description="Project directory, output file etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Projektnomo:" description="" xml:lang="eo"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Project directory:" description="" xml:lang="eo"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="es" name="options" label="Opciones del proyecto" description="Carpeta del proyecto, archivo de salida, etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Nombre del proyecto:" description="" xml:lang="es"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Carpeta del proyecto:" description="" xml:lang="es"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="eu" name="options" label="Proiektu-aukerak" description="Proiektuaren direktorioa, irteera-fitxategia eta abar.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Proiektuaren izena:" description="" xml:lang="eu"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Proiektu-direktorioa:" description="" xml:lang="eu"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="fi" name="options" label="Projektin valinnat" description="Projektihakemisto, tulostiedosto jne.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Projektin nimi:" description="" xml:lang="fi"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Projektikansio:" description="" xml:lang="fi"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="fr" name="options" label="Options du projet" description="Répertoire du projet, fichier de sortie, etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Nom du projet :" description="" xml:lang="fr"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Répertoire du projet :" description="" xml:lang="fr"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="ga" name="options" label="Roghanna tionscadail" description="Project directory, output file etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Ainm tionscadail:" description="" xml:lang="ga"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Comhadlann tionscadail:" description="" xml:lang="ga"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="gl" name="options" label="Opcións do proxecto" description="Cartafol do proxecto, ficheiro de saída etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Nome do proxecto:" description="" xml:lang="gl"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Cartafol do proxecto:" description="" xml:lang="gl"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="gu" name="options" label="પ્રોજેક્ટ વિકલ્પો" description="Project directory, output file etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="પ્રોજેક્ટ નામ:" description="" xml:lang="gu"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="પ્રોજેક્ટ ડિરેક્ટરી:" description="" xml:lang="gu"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="he" name="options" label="אפשרויות פרויקט" description="Project directory, output file etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="שם פרויקט:" description="" xml:lang="he"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="ספריית פרויקט:" description="" xml:lang="he"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="hi" name="options" label="परियोजना विकल्प " description="Project directory, output file etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="परियोजना नाम:" description="" xml:lang="hi"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="परियोजना निर्देशिका:" description="" xml:lang="hi"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="hr" name="options" label="Project options" description="Project directory, output file etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Project name:" description="" xml:lang="hr"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Project directory:" description="" xml:lang="hr"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="hu" name="options" label="Projektbeállítások" description="Projektkönyvtár, kimeneti fájl, stb.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Projekt neve:" description="" xml:lang="hu"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Projektkönyvtár:" description="" xml:lang="hu"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="hy" name="options" label="Նախագծի ընտրանքները" description="Նախագծի պանակը, արտածման ֆայլը և այլն">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Նախագծի անուն․" description="" xml:lang="hy"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Նախագծի պանակը․" description="" xml:lang="hy"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="id" name="options" label="Opsi projek" description="Direktori projek, berkas keluaran, dsb.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Nama projek:" description="" xml:lang="id"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Direktori projek:" description="" xml:lang="id"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="it" name="options" label="Opzioni progetto" description="Directory progetto, file di output ecc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Nome del progetto:" description="" xml:lang="it"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Directory progetto:" description="" xml:lang="it"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="ja" name="options" label="プロジェクトのオプション" description="プロジェクトのフォルダーや出力するファイルなどです">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="プロジェクト名:" description="" xml:lang="ja"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="プロジェクトのフォルダー:" description="" xml:lang="ja"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="kk" name="options" label="Project options" description="Project directory, output file etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Жоба аты:" description="" xml:lang="kk"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Project directory:" description="" xml:lang="kk"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="km" name="options" label="ជម្រើស​គម្រោង" description="ថត​គម្រោង ឯកសារ​លទ្ធផល ។ល។">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="ឈ្មោះ​គម្រោង ៖" description="" xml:lang="km"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="ថត​គម្រោង ៖" description="" xml:lang="km"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="kn" name="options" label="ಪರಿಯೋಜನೆಯ ಆಯ್ಕೆಗಳು" description="ಪರಿಯೋಜನಾ ಕೋಶ, ಪ್ರದಾನ ಕಡತ ಇತರೆ.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="ಪರಿಯೋಜನೆಯ ಹೆಸರು" description="" xml:lang="kn"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="ಪರಿಯೋಜನಾ ಕೋಶ:" description="" xml:lang="kn"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="ko" name="options" label="프로젝트 옵션" description="프로젝트 디렉터리, 출력 파일 등.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="프로젝트 이름:" description="" xml:lang="ko"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="프로젝트 디렉터리:" description="" xml:lang="ko"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="lt" name="options" label="Projekto parinktys" description="Projekto katalogas, išvesties failas ir t. t.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Projekto pavadinimas:" description="" xml:lang="lt"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Projekto katalogas:" description="" xml:lang="lt"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="lv" name="options" label="Projekta opcijas" description="Projekta direktorija, izvades datne, u.t.t.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Projekta nosaukums:" description="" xml:lang="lv"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Projekta direktorija:" description="" xml:lang="lv"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="mai" name="options" label="Project options" description="Project directory, output file etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Project name:" description="" xml:lang="mai"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Project directory:" description="" xml:lang="mai"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="mk" name="options" label="Опции на проект" description="Project directory, output file etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Име на проект:" description="" xml:lang="mk"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Project directory:" description="" xml:lang="mk"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="ml" name="options" label="പദ്ധതിയുടെ ഐഛികങ്ങള്‍" description="പദ്ധതിയുടെ തട്ട്, ഉല്‍പ്പന്ന ഫയല്‍ തുടങ്ങിയവ.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="പദ്ധതിയുടെ നാമം:" description="" xml:lang="ml"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="പദ്ധതിയുടെ തട്ട്:" description="" xml:lang="ml"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="mr" name="options" label="प्रकल्प पर्याय" description="प्रकल्प संचयीका, आउटपुट फाइल इत्या.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="प्रकल्प नाव:" description="" xml:lang="mr"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="प्रकल्प संचयीका:" description="" xml:lang="mr"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="ms" name="options" label="Project options" description="Project directory, output file etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Project name:" description="" xml:lang="ms"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Project directory:" description="" xml:lang="ms"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="nb" name="options" label="Alternativer for prosjekt" description="Prosjektkatalog, utdatafil, etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Prosjektnavn:" description="" xml:lang="nb"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Katalog for prosjektet:" description="" xml:lang="nb"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="ne" name="options" label="परियोजना विकल्प" description="परियोजना डाइरेक्टरी, निर्गत फाइल इत्यादि ।">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="परियोजना नाम:" description="" xml:lang="ne"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="परियोजना डाइरेक्टरी:" description="" xml:lang="ne"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="nl" name="options" label="Projectopties" description="Project directory, output file etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Projectnaam:" description="" xml:lang="nl"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Projectmap:" description="" xml:lang="nl"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="oc" name="options" label="Opcions del projècte" description="Project directory, output file etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Nom del projècte :" description="" xml:lang="oc"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Project directory:" description="" xml:lang="oc"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="or" name="options" label="Project options" description="Project directory, output file etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Project name:" description="" xml:lang="or"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Project directory:" description="" xml:lang="or"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="pa" name="options" label="Project options" description="Project directory, output file etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Project name:" description="" xml:lang="pa"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Project directory:" description="" xml:lang="pa"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="pl" name="options" label="Opcje projektu" description="Katalog projektu, plik wyjściowy itp.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Nazwa projektu:" description="" xml:lang="pl"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Katalog projektu:" description="" xml:lang="pl"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="pt" name="options" label="Opções do projeto" description="Pasta do projeto, ficheiros de saída, etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Nome do projeto:" description="" xml:lang="pt"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Pasta do projeto:" description="" xml:lang="pt"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="pt_BR" name="options" label="Opções do projeto" description="Diretório do projeto, saída de arquivo, etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Nome do projeto:" description="" xml:lang="pt_BR"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Diretório do projeto:" description="" xml:lang="pt_BR"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="ro" name="options" label="Opțiuni proiect" description="Dosar proiect, fișier de ieșire etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Nume proiect:" description="" xml:lang="ro"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Dosarul proiectului:" description="" xml:lang="ro"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="ru" name="options" label="Свойства проекта" description="Каталог проект, выходной файл и т. д.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Название проекта:" description="" xml:lang="ru"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Корневой каталог проекта:" description="" xml:lang="ru"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="rw" name="options" label="Project options" description="Project directory, output file etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Project name:" description="" xml:lang="rw"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Project directory:" description="" xml:lang="rw"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="si" name="options" label="Project options" description="Project directory, output file etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Project name:" description="" xml:lang="si"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Project directory:" description="" xml:lang="si"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="sk" name="options" label="Voľby projektu" description="Adresár projektu, výstupný súbor, atď.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Názov projektu:" description="" xml:lang="sk"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Adresár projektu:" description="" xml:lang="sk"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="sl" name="options" label="Možnosti projekta" description="Projektna mapa, odvodna datoteka ...">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Ime projekta:" description="" xml:lang="sl"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Mapa projekta:" description="" xml:lang="sl"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="sq" name="options" label="Project options" description="Project directory, output file etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Project name:" description="" xml:lang="sq"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Project directory:" description="" xml:lang="sq"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="sr" name="options" label="Својства пројекта" description="Директоријум пројекта, излазна датотека итд.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Назив пројекта:" description="" xml:lang="sr"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Директоријум пројекта:" description="" xml:lang="sr"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="sr@latin" name="options" label="Svojstva projekta" description="Direktorijum projekta, izlazna datoteka itd.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Naziv projekta:" description="" xml:lang="sr@latin"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Direktorijum projekta:" description="" xml:lang="sr@latin"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="sv" name="options" label="Projektalternativ" description="Projektkatalog, utdatafil etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Projektnamn:" description="" xml:lang="sv"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Projektkatalog:" description="" xml:lang="sv"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="te" name="options" label="ప్రాజెక్టు ఎంపికలు" description="ప్రాజెక్టు డైరెక్టరీ, అవుట్పుట్ ఫైలు మొదలైనవి">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="ప్రాజెక్టు పేరు:" description="" xml:lang="te"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="ప్రాజెక్టు డైరెక్టరీ:" description="" xml:lang="te"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="tg" name="options" label="Project options" description="Project directory, output file etc.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Project name:" description="" xml:lang="tg"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Project directory:" description="" xml:lang="tg"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="th" name="options" label="ตัวเลือกสำหรับโครงการ" description="ไดเรกทอรีโครงการ แฟ้มผลลัพธ์ ฯลฯ">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="ชื่อโครงการ:" description="" xml:lang="th"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="ไดเรกทอรีโครงการ:" description="" xml:lang="th"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="tr" name="options" label="Proje seçenekleri" description="Proje dizini, çıktı dosyası vb.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Proje ismi:" description="" xml:lang="tr"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Proje dizini:" description="" xml:lang="tr"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="ug" name="options" label="قۇرۇلۇش تاللانمىلىرى" description="قۇرۇلۇش مۇندەرىجىسى، چىقىرىلىدىغان ھۆججەت قاتارلىقلار.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="قۇرۇلۇش ئاتى:" description="" xml:lang="ug"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="قۇرۇلۇش مۇندەرىجىسى:" description="" xml:lang="ug"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="uk" name="options" label="Властивості проекту" description="Каталог проекту, файл виводу та т.і..">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Назва проекту:" description="" xml:lang="uk"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Кореневий каталог проекту:" description="" xml:lang="uk"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="vi" name="options" label="Tùy chọn dự án" description="Thư mục dự án, tập tin kết xuất v.v.">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="Tên dự án:" description="" xml:lang="vi"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="Thư mục dự án:" description="" xml:lang="vi"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="zh_CN" name="options" label="项目选项" description="项目目录、输出文件等。">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="项目名称：" description="" xml:lang="zh_CN"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="项目目录：" description="" xml:lang="zh_CN"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="zh_HK" name="options" label="專案選項" description="專案目錄，輸出檔案等。">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="專案名稱：" description="" xml:lang="zh_HK"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="專案目錄：" description="" xml:lang="zh_HK"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+		<page xml:lang="zh_TW" name="options" label="專案選項" description="專案目錄，輸出檔案等。">
+		<property type="string" summary="yes" restriction="filename" name="Name" mandatory="yes" default="foobar" label="專案名稱：" description="" xml:lang="zh_TW"></property>
+		<property type="directory" summary="yes" name="Destination" mandatory="yes" exist="no" default="[+AnjutaProjectDirectory+]/foobar" label="專案目錄：" description="" xml:lang="zh_TW"></property>
+		[+INCLUDE "licenses.tpl"+]
+	</page>
+	
+	<content>
+		<directory source="mkfile" destination="[+Destination+]">
+			<file source="project.anjuta" destination='[+(string-substitute (string->c-name! (string-downcase (get "Name"))) " " "-")+].anjuta'/>
+			<file source="src/main.c" destination='[+(string-substitute (string->c-name! (string-downcase (get "Name"))) " " "-")+].c'/>
+			<file source="src/Makefile.tpl" destination="Makefile"/>
+		</directory>
+	</content>
+	
+	<action>
+		<open file='[+Destination+]/[+(string-substitute (string->c-name! (string-downcase (get "Name"))) " " "-")+].anjuta'/>
+	</action>
+</project-template>

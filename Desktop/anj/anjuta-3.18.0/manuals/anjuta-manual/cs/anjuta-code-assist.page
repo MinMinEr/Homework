@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="anjuta-code-assist" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-10-24" status="draft"/>
+    <desc>Jak nastavit a používat funkce integrovaného editoru.</desc>
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  </info>
+
+  <title>Automatické doplňování a rady k voláním</title>
+
+<section>
+<title>Automatické doplňování</title>
+<p>Automtické doplňování automaticky navrhuje funkce a jiné části kódu po té, co začnete psát jejich název. Snaží se přitom porovnávat napsané znaky s databází symbolů. V případě, že najde nějaké návrhy, objeví se rozbalovací nabídka, ve které si můžete některý vybrat zmáčknutím klávesy <key>Enter</key>. Normálně se tak děje automaticky po napsání tří nebílých znaků, ale můžete si to i vynutit pomocí nabídky <guiseq><gui>Upravit</gui> <gui>Automatické doplnění</gui></guiseq>.</p>
+<note>
+<p>Anjuta podporuje automatické doplňování pro kód psaný v jazycích C/C++, Vala, Javascript a Python. Uvědomte si, že Anujuta může pracovat jen se symboly, o kterých ví. Když používáte knihovny C/C++, které nejsou nakonfigurované pomocí <cmd>pkg-config</cmd> a/nebo nejsou přidány do konfigurace projektu, Anjuta je nebude schopna najít a automatické doplňování pro ně nebude fungovat.</p>
+<p>Navíc, některá syntax může být příliš komplexní pro integrovaný analyzátor a není tak možné zjistit, které doplnění je potřeba.</p>
+</note>
+</section>
+
+<section>
+<title>Efektivní psaní kódu pomocí rad k voláním</title>
+
+<p>Protože obvykle není úplně jednoduché si zapamatovat formu všech metod a funkcí používaných v projektu, zobrazí vám editor malou vysvětlivku kdykoliv napíšete „(“ za názvem funkce.</p>
+
+</section>
+
+</page>

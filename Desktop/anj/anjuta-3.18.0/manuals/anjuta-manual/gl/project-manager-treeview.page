@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="project-manager-treeview" xml:lang="gl">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-project-management" group="third"/>
+    <desc>Mostra o contido do proxecto.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  </info>
+
+  <title>Ver un proxecto</title>
+
+  <p>A project is represented by a tree, the root item corresponds
+  to the project while children represent programs, libraries, directories
+  and source files. Each item can have properties allowing to set more details
+  like project version, compiler flags or installation directories.
+  These item are divided in several categories, depending on the backend
+  not all are available:</p>
+
+  <terms>
+    <item>
+      <title>Raíz</title>
+      <p>Só hai un nodo deste tipo. Representa o proxecto en sí. É o lugar onde pode estabelecer propiedades que afecten a todo o proxecto, como o nome ou a versión.</p>
+    </item>
+    <item>
+      <title>Módulo</title>
+      <p>This is a set of packages used in autotools project. They appear
+      as children of the root node to represent all modules defined and
+      as children of each target using them. For more details, see
+      <link xref="project-manager-module-new"/>.</p>
+    </item>
+    <item>
+      <title>Paquete</title>
+      <p>Isto é unha biblioteca empaquetada usada en proxectos de autotools. Aparece como un fillo en cada módlo. Para obter máis detalles, consulte <link xref="project-manager-library"/>.</p>
+    </item>
+    <item>
+      <title>Cartafol</title>
+      <p>Isto úsase para agrupar obxectivos, permitindo estabelecer propiedades comúns. A miúdo impleméntanse como subcartafoles. Pode obter máis información, consulte a <link xref="project-manager-folder"/>.</p>
+    </item>
+    <item>
+      <title>Obxectivo</title>
+      <p>It groups files and define how they are used.
+      There are several kinds of targets, by example program, library or data,
+      corresponding to different use of the child files.
+      They often represent generated project files like compiled programs or
+      libraries. For more details see <link xref="project-manager-target"/>.</p>
+	
+      <note style="tip">
+        <p>You can drag and drop targets at the beginning of the project tree view
+        to create a shortcut allowing to access them more easily. By default all
+        program targets are already put here.</p>
+      </note>
+
+    </item>
+    <item>
+      <title>Fonte</title>
+      <p>Each source file is represented by a item in the project view. The use
+      of each file depends on its parent target. All children of a program
+      target are compiled to generate it. While children of a data target are
+      only copied to a directory when the project is installed.
+      For more details see <link xref="project-manager-source"/>.</p>
+    </item>
+  </terms>
+  
+</page>

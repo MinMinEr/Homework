@@ -1,0 +1,123 @@
+AT_SETUP([Read and Write AC_INIT macro])
+AS_MKDIR_P([empty])
+AT_DATA([empty/configure.ac],
+[[AC_CONFIG_FILES(Makefile)
+]])
+AT_DATA([empty/Makefile.am],
+[[
+]])
+AT_DATA([expect],
+[[ROOT (): empty
+    PROPERTY (Name): empty
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load empty \
+		 set 0 name empty \
+		 list \
+		 save])
+AT_CHECK([diff -b output expect])
+AT_PARSER_CHECK([load empty \
+		list])
+AT_CHECK([diff -b output expect])
+
+
+
+AT_DATA([expect],
+[[ROOT (): empty
+     PROPERTY (Name): empty2
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load empty \
+		 set 0 name empty2 \
+		 list \
+		 save])
+AT_CHECK([diff -b output expect])
+AT_PARSER_CHECK([load empty \
+		list])
+AT_CHECK([diff -b output expect])
+
+
+
+AT_DATA([expect],
+[[ROOT (): empty
+    PROPERTY (Name): empty2
+    PROPERTY (Version): 0.1
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load empty \
+		 set 0 version 0.1 \
+		 list \
+		 save])
+AT_CHECK([diff -b output expect])
+AT_PARSER_CHECK([load empty \
+		list])
+AT_CHECK([diff -b output expect])
+
+
+
+AT_DATA([expect],
+[[ROOT (): empty
+    PROPERTY (Name): empty2
+    PROPERTY (Version): 0.1
+    PROPERTY (Package name): empty3
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load empty \
+		 set 0 pack empty3 \
+		 list \
+		 save])
+AT_CHECK([diff -b output expect])
+AT_PARSER_CHECK([load empty \
+		list])
+AT_CHECK([diff -b output expect])
+
+
+
+AS_MKDIR_P([simple])
+AT_DATA([simple/configure.ac],
+[[AC_INIT([simple])
+AC_CONFIG_FILES(Makefile)
+]])
+AT_DATA([simple/Makefile.am],
+[[
+]])
+AT_DATA([expect],
+[[ROOT (): simple
+    PROPERTY (Name): simple
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load simple \
+		list])
+AT_CHECK([diff -b output expect])
+
+
+m4_pattern_allow(m4_esyscmd)
+AS_MKDIR_P([rygel])
+AT_DATA([rygel/configure.ac],
+[[AC_INIT([rygel],
+        m4_esyscmd([GNOME_TAG_PATTERN=RYGEL build-aux/git-version-gen .tarball-version]),
+        [http://bugzilla.gnome.org/enter_bug.cgi?product=Rygel])
+AC_CONFIG_FILES(Makefile)
+]])
+AT_DATA([rygel/Makefile.am],
+[[
+]])
+AT_DATA([expect],
+[[ROOT (): rygel
+    PROPERTY (Name): rygel
+    PROPERTY (Version): m4_esyscmd(GNOME_TAG_PATTERN=RYGEL build-aux/git-version-gen .tarball-version)
+    PROPERTY (Bug report URL): http://bugzilla.gnome.org/enter_bug.cgi?product=Rygel
+    SOURCE (): configure.ac
+    SOURCE (): Makefile.am
+]])
+AT_PARSER_CHECK([load rygel \
+		list])
+AT_CHECK([diff -b output expect])
+
+
+AT_CLEANUP

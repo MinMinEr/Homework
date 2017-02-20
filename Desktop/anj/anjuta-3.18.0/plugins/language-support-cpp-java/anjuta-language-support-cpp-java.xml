@@ -1,0 +1,15 @@
+<!--*- xml -*-->
+<ui>
+	<menubar name="MenuMain">
+		<menu name="MenuEdit" action="ActionMenuEdit">
+			<placeholder name="PlaceholderOperationMenus">
+				<menuitem name="ToggleCommentAction" action="ActionEditToggleComment" />
+			</placeholder>
+		</menu>
+	</menubar>
+	<popup name="PopupDocumentManager">
+		<separator name="separator1"/>
+		<menuitem name="Swap" action="ActionFileSwap" />
+		<separator name="separator2"/>
+	</popup>
+</ui>

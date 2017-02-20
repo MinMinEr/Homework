@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-library-add" xml:lang="ca">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-library" group="sixth"/>
+    <link type="seealso" xref="project-manager-target"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Afegir una biblioteca no empaquetada a un objectiu.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jaume Planas</mal:name>
+      <mal:email>jplanas@itberga.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gil Forcada</mal:name>
+      <mal:email>gilforcada@guifi.net</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Add a Custom Library</title>
+ 
+  <p>It is easier to use a packaged library, which is common on Linux, so
+  check if it is the case <link xref="project-manager-module-new">here</link>.
+  But else you can still use the library as explained below.</p>
+
+  <p>Per poder utilitzar una biblioteca a C, el compilador ha de saber on es troben els fitxers de capçalera i l'enllaçador on es troben les biblioteques necessàries. El problema és que el programa no es compilarà en un altre ordinador si les capçaleres i les biblioteques són a un altre lloc.</p>
+
+  <steps>
+    <item>
+      <p>A la <gui>vista de projecte</gui>, trieu el directori (que conté el programa) on voleu afegir la biblioteca, feu clic al botó secundari perquè es mostri el <gui>menú contextual del projecte</gui> i trieu <gui>Propietats</gui>.</p>
+
+      <p>O trieu <guiseq><gui>Projecte</gui><gui>Propietats</gui></guiseq> en el <gui>menú principal</gui>. Per defecte s'editen les propietats de l'element seleccionat actualment a la vista de projecte. Podeu seleccionar un altre element al botó de llista desplegable.</p>
+    </item>
+    <item>
+      <p>Si els fitxers de capçalera són instal·lats a una ubicació estàndard (<file>/usr/include</file>) no cal que ho definiu. En cas contrari i si utilitzeu el <app>gcc</app> com a compilador, heu d'afegir <input>-I<var>camí_inclusió</var></input> a la propietat <gui>Indicadors del preprocessador de C</gui>. Podeu afegir diversos camins separats per espais. S'utilitzaran aquestes opcions en tots els objectius dins d'aquest directori.</p>
+
+      <p>Potser haureu de desplegar el botó <gui>Més opcions</gui> per veure-ho. Feu clic al botó <gui>Aplica</gui> quan acabeu.</p>
+    </item>
+    <item>
+      <p>Tot seguit, heu d'afegir la biblioteca a un objectiu. A la <gui>vista de projecte</gui>, trieu l'objectiu on voleu afegir la biblioteca, feu clic al botó secundari del ratolí perquè es mostri el <gui>menú contextual del projecte</gui> i trieu <gui>Propietats</gui>.</p>
+
+      <p>O trieu <guiseq><gui>Projecte</gui><gui>Propietats</gui></guiseq> en el <gui>menú principal</gui>. Per defecte s'editen les propietats de l'element seleccionat actualment a la vista de projecte. Podeu seleccionar un altre element al botó de llista desplegable.</p>
+    </item>
+    <item>
+      <p>Heu de definir la propietat <gui>Indicadors de l'enllaçador</gui>; si el compilador és el <app>gcc</app>, afegiu <input>-l<var>nom_biblioteca</var></input>. <var>nom_biblioteca</var> és el nom del fitxer de biblioteca sense el prefix <file>lib</file> i sense l'extensió <file>.a</file> o <file>.so</file>.</p>
+
+      <p>Si la biblioteca no és a un directori estàndard, el <app>gcc</app> pot cercar a més directoris si especifiqueu l'opció <input>-L<var>camí_biblioteca</var></input>.</p>  
+    </item>
+  </steps>
+
+</page>

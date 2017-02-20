@@ -1,0 +1,142 @@
+<!-- ##### SECTION Title ##### -->
+anjuta-token-file
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO ANJUTA_TOKEN_FILE_TYPE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION anjuta_token_file_new ##### -->
+<para>
+
+</para>
+
+@file: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_file_free ##### -->
+<para>
+
+</para>
+
+@file: 
+
+
+<!-- ##### FUNCTION anjuta_token_file_load ##### -->
+<para>
+
+</para>
+
+@file: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_file_unload ##### -->
+<para>
+
+</para>
+
+@file: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_file_save ##### -->
+<para>
+
+</para>
+
+@file: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_file_move ##### -->
+<para>
+
+</para>
+
+@file: 
+@new_file: 
+
+
+<!-- ##### FUNCTION anjuta_token_file_update ##### -->
+<para>
+
+</para>
+
+@file: 
+@token: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_file_get_token_location ##### -->
+<para>
+
+</para>
+
+@file: 
+@location: 
+@token: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_file_get_token_position ##### -->
+<para>
+
+</para>
+
+@file: 
+@token: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_file_get_file ##### -->
+<para>
+
+</para>
+
+@file: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_file_get_content ##### -->
+<para>
+
+</para>
+
+@file: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_token_file_is_dirty ##### -->
+<para>
+
+</para>
+
+@file: 
+@Returns: 
+
+

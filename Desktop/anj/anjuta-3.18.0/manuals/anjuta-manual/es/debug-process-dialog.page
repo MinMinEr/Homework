@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-process-dialog" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Diálogo «Acoplar al proceso»</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Diálogo «Acoplar al proceso»</title>
+
+  <p>El diálogo <gui>Acoplar al proceso</gui> le permite seleccionar un proceso actualmente en ejecución.</p>
+
+  <terms>
+    <item>
+      <title><gui>Ocultar rutas</gui></title>
+      <p>Si está marcada, oculta las rutas de los comandos en el proceso.</p>
+    </item>
+    <item>
+      <title><gui>Ocultar parámetros del proceso</gui></title>
+      <p>Si está marcada, oculta los argumentos de línea de comandos del proceso.</p>
+    </item>
+    <item>
+      <title><gui>Mostrar árbol de procesos</gui></title>
+      <p>Si no está marcada, los procesos se muestran en una lista. Si está marcada, los procesos se muestran en árbol.</p>
+    </item>
+  </terms>
+
+</page>

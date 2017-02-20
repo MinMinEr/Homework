@@ -1,0 +1,968 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: AnjutaPluginManager</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="libanjuta-api.html" title="libanjuta API">
+<link rel="prev" href="AnjutaPluginHandle.html" title="AnjutaPluginHandle">
+<link rel="next" href="AnjutaProfile.html" title="AnjutaProfile">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#AnjutaPluginManager.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#AnjutaPluginManager.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#AnjutaPluginManager.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#AnjutaPluginManager.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="libanjuta-api.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="AnjutaPluginHandle.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="AnjutaProfile.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="AnjutaPluginManager"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="AnjutaPluginManager.top_of_page"></a>AnjutaPluginManager</span></h2>
+<p>AnjutaPluginManager — Plugins management and activation</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="AnjutaPluginManager.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Unstable"><span class="acronym">Unstable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="AnjutaPluginManager.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="AnjutaPluginManager.html#ANJUTA-PLUGIN-MANAGER-ERROR:CAPS" title="ANJUTA_PLUGIN_MANAGER_ERROR">ANJUTA_PLUGIN_MANAGER_ERROR</a></td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-error-quark" title="anjuta_plugin_manager_error_quark ()">anjuta_plugin_manager_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="returnvalue">AnjutaPluginManager</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-new" title="anjuta_plugin_manager_new ()">anjuta_plugin_manager_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-is-active-plugin" title="anjuta_plugin_manager_is_active_plugin ()">anjuta_plugin_manager_is_active_plugin</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="returnvalue">GObject</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-get-plugin" title="anjuta_plugin_manager_get_plugin ()">anjuta_plugin_manager_get_plugin</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="returnvalue">GObject</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-get-plugin-by-handle" title="anjuta_plugin_manager_get_plugin_by_handle ()">anjuta_plugin_manager_get_plugin_by_handle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-unload-plugin" title="anjuta_plugin_manager_unload_plugin ()">anjuta_plugin_manager_unload_plugin</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-unload-plugin-by-handle" title="anjuta_plugin_manager_unload_plugin_by_handle ()">anjuta_plugin_manager_unload_plugin_by_handle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-get-active-plugins" title="anjuta_plugin_manager_get_active_plugins ()">anjuta_plugin_manager_get_active_plugins</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-get-active-plugin-objects" title="anjuta_plugin_manager_get_active_plugin_objects ()">anjuta_plugin_manager_get_active_plugin_objects</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-get-plugins-page" title="anjuta_plugin_manager_get_plugins_page ()">anjuta_plugin_manager_get_plugins_page</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-get-remembered-plugins-page" title="anjuta_plugin_manager_get_remembered_plugins_page ()">anjuta_plugin_manager_get_remembered_plugins_page</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-query" title="anjuta_plugin_manager_query ()">anjuta_plugin_manager_query</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-list-query" title="anjuta_plugin_manager_list_query ()">anjuta_plugin_manager_list_query</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaPluginHandle.html" title="AnjutaPluginHandle"><span class="returnvalue">AnjutaPluginHandle</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-select" title="anjuta_plugin_manager_select ()">anjuta_plugin_manager_select</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="returnvalue">GObject</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-select-and-activate" title="anjuta_plugin_manager_select_and_activate ()">anjuta_plugin_manager_select_and_activate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaPluginHandle.html" title="AnjutaPluginHandle"><span class="returnvalue">AnjutaPluginHandle</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-get-plugin-handle" title="anjuta_plugin_manager_get_plugin_handle ()">anjuta_plugin_manager_get_plugin_handle</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-activate-plugins" title="anjuta_plugin_manager_activate_plugins ()">anjuta_plugin_manager_activate_plugins</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-unload-all-plugins" title="anjuta_plugin_manager_unload_all_plugins ()">anjuta_plugin_manager_unload_all_plugins</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-get-remembered-plugins" title="anjuta_plugin_manager_get_remembered_plugins ()">anjuta_plugin_manager_get_remembered_plugins</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-set-remembered-plugins" title="anjuta_plugin_manager_set_remembered_plugins ()">anjuta_plugin_manager_set_remembered_plugins</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-set-disable-plugins" title="anjuta_plugin_manager_set_disable_plugins ()">anjuta_plugin_manager_set_disable_plugins</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-get-interface" title="anjuta_plugin_manager_get_interface()">anjuta_plugin_manager_get_interface</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaPluginManager.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a></td>
+<td class="property_name"><a class="link" href="AnjutaPluginManager.html#AnjutaPluginManager--activated-plugins" title="The “activated-plugins” property">activated-plugins</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a></td>
+<td class="property_name"><a class="link" href="AnjutaPluginManager.html#AnjutaPluginManager--available-plugins" title="The “available-plugins” property">available-plugins</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a></td>
+<td class="property_name"><a class="link" href="AnjutaPluginManager.html#AnjutaPluginManager--profiles" title="The “profiles” property">profiles</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *</td>
+<td class="property_name"><a class="link" href="AnjutaPluginManager.html#AnjutaPluginManager--shell" title="The “shell” property">shell</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<a class="link" href="AnjutaStatus.html" title="AnjutaStatus"><span class="type">AnjutaStatus</span></a> *</td>
+<td class="property_name"><a class="link" href="AnjutaPluginManager.html#AnjutaPluginManager--status" title="The “status” property">status</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaPluginManager.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="AnjutaPluginManager.html#AnjutaPluginManager-plugin-activated" title="The “plugin-activated” signal">plugin-activated</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="AnjutaPluginManager.html#AnjutaPluginManager-plugin-deactivated" title="The “plugin-deactivated” signal">plugin-deactivated</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaPluginManager.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="AnjutaPluginManager.html#AnjutaPluginManagerError" title="enum AnjutaPluginManagerError">AnjutaPluginManagerError</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="AnjutaPluginManager.html#AnjutaPluginManagerPriv" title="AnjutaPluginManagerPriv">AnjutaPluginManagerPriv</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="AnjutaPluginManager.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+    <span class="lineart">╰──</span> AnjutaPluginManager
+</pre>
+</div>
+<div class="refsect1">
+<a name="AnjutaPluginManager.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libanjuta/anjuta-plugin-manager.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="AnjutaPluginManager.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="AnjutaPluginManager.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="ANJUTA-PLUGIN-MANAGER-ERROR:CAPS"></a><h3>ANJUTA_PLUGIN_MANAGER_ERROR</h3>
+<pre class="programlisting">#define ANJUTA_PLUGIN_MANAGER_ERROR            (anjuta_plugin_manager_error_quark())
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-plugin-manager-error-quark"></a><h3>anjuta_plugin_manager_error_quark ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+anjuta_plugin_manager_error_quark (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.10.11.3.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-plugin-manager-new"></a><h3>anjuta_plugin_manager_new ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="returnvalue">AnjutaPluginManager</span></a> *
+anjuta_plugin_manager_new (<em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *shell</code></em>,
+                           <em class="parameter"><code><a class="link" href="AnjutaStatus.html" title="AnjutaStatus"><span class="type">AnjutaStatus</span></a> *status</code></em>,
+                           <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *plugin_search_paths</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.10.11.4.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-plugin-manager-is-active-plugin"></a><h3>anjuta_plugin_manager_is_active_plugin ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_plugin_manager_is_active_plugin
+                               (<em class="parameter"><code><a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *plugin_manager</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *iface_name</code></em>);</pre>
+<p>Searches if a currently loaded plugins implements
+the given interface.</p>
+<div class="refsect3">
+<a name="id-1.6.10.11.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>plugin_manager</p></td>
+<td class="parameter_description"><p>A <a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iface_name</p></td>
+<td class="parameter_description"><p>The interface implemented by the object to be found</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.10.11.5.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> is the plugin is currently loaded.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-plugin-manager-get-plugin"></a><h3>anjuta_plugin_manager_get_plugin ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="returnvalue">GObject</span></a> *
+anjuta_plugin_manager_get_plugin (<em class="parameter"><code><a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *plugin_manager</code></em>,
+                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *iface_name</code></em>);</pre>
+<p>Searches the currently available plugins to find the one which
+implements the given interface as primary interface and returns it. If
+the plugin is not yet loaded, it will be loaded and activated.
+It only searches
+from the pool of plugin objects loaded in this shell and can only search
+by primary interface. If there are more objects implementing this primary
+interface, user might be prompted to select one from them (and might give
+the option to use it as default for future queries). A typical usage of this
+function is:</p>
+<pre class="programlisting">
+GObject *docman =
+    anjuta_plugin_manager_get_plugin (plugin_manager, "IAnjutaDocumentManager", error);
+</pre>
+<p>Notice that this function takes the interface name string as string, unlike
+<code class="function">anjuta_plugins_get_interface()</code> which takes the type directly.
+If no plugin implementing this interface can be found, returns <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.6.10.11.6.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>plugin_manager</p></td>
+<td class="parameter_description"><p>A <a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iface_name</p></td>
+<td class="parameter_description"><p>The interface implemented by the object to be found</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.10.11.6.8"></a><h4>Returns</h4>
+<p> The plugin object (subclass of <a class="link" href="AnjutaPlugin.html" title="AnjutaPlugin"><span class="type">AnjutaPlugin</span></a>) which implements
+the given interface or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>. See <a class="link" href="AnjutaPlugin.html" title="AnjutaPlugin"><span class="type">AnjutaPlugin</span></a> for more detail on interfaces
+implemented by plugins.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-plugin-manager-get-plugin-by-handle"></a><h3>anjuta_plugin_manager_get_plugin_by_handle ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="returnvalue">GObject</span></a> *
+anjuta_plugin_manager_get_plugin_by_handle
+                               (<em class="parameter"><code><a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *plugin_manager</code></em>,
+                                <em class="parameter"><code><a class="link" href="AnjutaPluginHandle.html" title="AnjutaPluginHandle"><span class="type">AnjutaPluginHandle</span></a> *handle</code></em>);</pre>
+<p>Searches the currently available plugins to find the one with the
+specified handle. If the plugin is not yet loaded, it will be loaded
+and activated.</p>
+<div class="refsect3">
+<a name="id-1.6.10.11.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>plugin_manager</p></td>
+<td class="parameter_description"><p>A <a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>A <a class="link" href="AnjutaPluginHandle.html" title="AnjutaPluginHandle"><span class="type">AnjutaPluginHandle</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.10.11.7.6"></a><h4>Returns</h4>
+<p> The plugin object (subclass of <a class="link" href="AnjutaPlugin.html" title="AnjutaPlugin"><span class="type">AnjutaPlugin</span></a>)</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-plugin-manager-unload-plugin"></a><h3>anjuta_plugin_manager_unload_plugin ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_plugin_manager_unload_plugin (<em class="parameter"><code><a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *plugin_manager</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *plugin_object</code></em>);</pre>
+<p>Unload the corresponding plugin. The plugin has to be loaded.</p>
+<div class="refsect3">
+<a name="id-1.6.10.11.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>plugin_manager</p></td>
+<td class="parameter_description"><p>A <a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>plugin_object</p></td>
+<td class="parameter_description"><p>A <a class="link" href="AnjutaPlugin.html" title="AnjutaPlugin"><span class="type">AnjutaPlugin</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.10.11.8.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the plugin has been unloaded. <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if the plugin is
+already or cannot be unloaded. </p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-plugin-manager-unload-plugin-by-handle"></a><h3>anjuta_plugin_manager_unload_plugin_by_handle ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+anjuta_plugin_manager_unload_plugin_by_handle
+                               (<em class="parameter"><code><a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *plugin_manager</code></em>,
+                                <em class="parameter"><code><a class="link" href="AnjutaPluginHandle.html" title="AnjutaPluginHandle"><span class="type">AnjutaPluginHandle</span></a> *handle</code></em>);</pre>
+<p>Unload the plugin corresponding to the given handle. If the plugin is
+already unloaded, nothing will be done.</p>
+<div class="refsect3">
+<a name="id-1.6.10.11.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>plugin_manager</p></td>
+<td class="parameter_description"><p>A <a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>handle</p></td>
+<td class="parameter_description"><p>A <a class="link" href="AnjutaPluginHandle.html" title="AnjutaPluginHandle"><span class="type">AnjutaPluginHandle</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.10.11.9.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> is the plugin is unloaded. <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if a corresponding
+plugin does not exist or if the plugin cannot be unloaded. </p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-plugin-manager-get-active-plugins"></a><h3>anjuta_plugin_manager_get_active_plugins ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+anjuta_plugin_manager_get_active_plugins
+                               (<em class="parameter"><code><a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *plugin_manager</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.10.11.10.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-plugin-manager-get-active-plugin-objects"></a><h3>anjuta_plugin_manager_get_active_plugin_objects ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+anjuta_plugin_manager_get_active_plugin_objects
+                               (<em class="parameter"><code><a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *plugin_manager</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.10.11.11.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-plugin-manager-get-plugins-page"></a><h3>anjuta_plugin_manager_get_plugins_page ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+anjuta_plugin_manager_get_plugins_page
+                               (<em class="parameter"><code><a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *plugin_manager</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.10.11.12.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-plugin-manager-get-remembered-plugins-page"></a><h3>anjuta_plugin_manager_get_remembered_plugins_page ()</h3>
+<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *
+anjuta_plugin_manager_get_remembered_plugins_page
+                               (<em class="parameter"><code><a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *plugin_manager</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.10.11.13.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-plugin-manager-query"></a><h3>anjuta_plugin_manager_query ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+anjuta_plugin_manager_query (<em class="parameter"><code><a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *plugin_manager</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *section_names</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *attribute_names</code></em>,
+                             <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *attribute_values</code></em>,
+                             <em class="parameter"><code>...</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.10.11.14.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-plugin-manager-list-query"></a><h3>anjuta_plugin_manager_list_query ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+anjuta_plugin_manager_list_query (<em class="parameter"><code><a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *plugin_manager</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *section_names</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *attribute_names</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *attribute_values</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.10.11.15.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-plugin-manager-select"></a><h3>anjuta_plugin_manager_select ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaPluginHandle.html" title="AnjutaPluginHandle"><span class="returnvalue">AnjutaPluginHandle</span></a> *
+anjuta_plugin_manager_select (<em class="parameter"><code><a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *plugin_manager</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *description</code></em>,
+                              <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *plugin_handles</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.10.11.16.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-plugin-manager-select-and-activate"></a><h3>anjuta_plugin_manager_select_and_activate ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="returnvalue">GObject</span></a> *
+anjuta_plugin_manager_select_and_activate
+                               (<em class="parameter"><code><a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *plugin_manager</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *title</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *description</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *plugin_handles</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.10.11.17.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-plugin-manager-get-plugin-handle"></a><h3>anjuta_plugin_manager_get_plugin_handle ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaPluginHandle.html" title="AnjutaPluginHandle"><span class="returnvalue">AnjutaPluginHandle</span></a> *
+anjuta_plugin_manager_get_plugin_handle
+                               (<em class="parameter"><code><a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *plugin_manager</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *plugin</code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.6.10.11.18.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-plugin-manager-activate-plugins"></a><h3>anjuta_plugin_manager_activate_plugins ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_plugin_manager_activate_plugins
+                               (<em class="parameter"><code><a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *plugin_manager</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *plugin_handles</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-plugin-manager-unload-all-plugins"></a><h3>anjuta_plugin_manager_unload_all_plugins ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_plugin_manager_unload_all_plugins
+                               (<em class="parameter"><code><a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *plugin_manager</code></em>);</pre>
+<p>Unload all plugins. Do not take care of the dependencies because all plugins
+are unloaded anyway.</p>
+<div class="refsect3">
+<a name="id-1.6.10.11.20.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>plugin_manager</p></td>
+<td class="parameter_description"><p>A <a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-plugin-manager-get-remembered-plugins"></a><h3>anjuta_plugin_manager_get_remembered_plugins ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+anjuta_plugin_manager_get_remembered_plugins
+                               (<em class="parameter"><code><a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *plugin_manager</code></em>);</pre>
+<p>Get the list of plugins loaded when there is a choice between several
+ones without asking the user.</p>
+<p>The list format is returned as a string with the format detailed in 
+<a class="link" href="AnjutaPluginManager.html#anjuta-plugin-manager-set-remembered-plugins" title="anjuta_plugin_manager_set_remembered_plugins ()"><code class="function">anjuta_plugin_manager_set_remembered_plugins()</code></a>.</p>
+<div class="refsect3">
+<a name="id-1.6.10.11.21.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>plugin_manager</p></td>
+<td class="parameter_description"><p>A <a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.6.10.11.21.7"></a><h4>Returns</h4>
+<p> a newly-allocated string that must be freed
+with <a href="https://developer.gnome.org/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-plugin-manager-set-remembered-plugins"></a><h3>anjuta_plugin_manager_set_remembered_plugins ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_plugin_manager_set_remembered_plugins
+                               (<em class="parameter"><code><a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *plugin_manager</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *remembered_plugins</code></em>);</pre>
+<p>Set the list of plugins loaded when there is a choice between several
+ones without asking the user.
+The list is a string composed of elements separated by ';'. Each element
+is defined with "key=value", where key is the list of possible plugins and
+the value is the choosen plugin.</p>
+<p>By the example the following element</p>
+<pre class="programlisting">
+  anjuta-symbol-browser:SymbolBrowserPlugin,anjuta-symbol-db:SymbolDBPlugin,=anjuta-symbol-db:SymbolDBPlugin;
+</pre>
+<p>means if Anjuta has to choose between SymbolBrowserPlugin and
+SymbolDBPlugin, it will choose SymbolDBPlugin.</p>
+<div class="refsect3">
+<a name="id-1.6.10.11.22.8"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>plugin_manager</p></td>
+<td class="parameter_description"><p>A <a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>remembered_plugins</p></td>
+<td class="parameter_description"><p>A list of prefered plugins</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-plugin-manager-set-disable-plugins"></a><h3>anjuta_plugin_manager_set_disable_plugins ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+anjuta_plugin_manager_set_disable_plugins
+                               (<em class="parameter"><code><a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *plugin_manager</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *plugin_handles</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> disable</code></em>);</pre>
+<p>Disable or re-enable plugins. By default, all plugins are enabled but they
+can be disabled and they will not be proposed when a plugin is requested.</p>
+<div class="refsect3">
+<a name="id-1.6.10.11.23.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>plugin_manager</p></td>
+<td class="parameter_description"><p>A <a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="anjuta-plugin-manager-get-interface"></a><h3>anjuta_plugin_manager_get_interface()</h3>
+<pre class="programlisting">#define             anjuta_plugin_manager_get_interface(plugin_manager, iface_type, error)</pre>
+<p>Equivalent to <code class="function">anjuta_plugin_manager_get_object()</code>, but additionally
+typecasts returned object to the interface type. It also takes
+interface type directly. A usage of this function is:</p>
+<pre class="programlisting">
+IAnjutaDocumentManager *docman =
+    anjuta_plugin_manager_get_interface (plugin_manager, IAnjutaDocumentManager, error);
+</pre>
+<div class="refsect3">
+<a name="id-1.6.10.11.24.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>plugin_manager</p></td>
+<td class="parameter_description"><p>A <a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>iface_type</p></td>
+<td class="parameter_description"><p>The interface type implemented by the object to be found</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>error</p></td>
+<td class="parameter_description"><p>Error propagation object.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="AnjutaPluginManager.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="AnjutaPluginManagerError"></a><h3>enum AnjutaPluginManagerError</h3>
+<div class="refsect3">
+<a name="id-1.6.10.12.2.3"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PLUGIN-MANAGER-MISSING-FACTORY:CAPS"></a>ANJUTA_PLUGIN_MANAGER_MISSING_FACTORY</p></td>
+<td class="enum_member_description">
+<p>The factory for the plugin couldn't be found</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ANJUTA-PLUGIN-MANAGER-ERROR-UNKNOWN:CAPS"></a>ANJUTA_PLUGIN_MANAGER_ERROR_UNKNOWN</p></td>
+<td class="enum_member_description">
+<p>Unknown error</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AnjutaPluginManagerPriv"></a><h3>AnjutaPluginManagerPriv</h3>
+<pre class="programlisting">typedef struct _AnjutaPluginManagerPriv AnjutaPluginManagerPriv;</pre>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="AnjutaPluginManager.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="AnjutaPluginManager--activated-plugins"></a><h3>The <code class="literal">“activated-plugins”</code> property</h3>
+<pre class="programlisting">  “activated-plugins”        <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a></pre>
+<p>Currently activated plugins.</p>
+<p>Flags: Read</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AnjutaPluginManager--available-plugins"></a><h3>The <code class="literal">“available-plugins”</code> property</h3>
+<pre class="programlisting">  “available-plugins”        <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a></pre>
+<p>Currently available plugins found in plugin paths.</p>
+<p>Flags: Read</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AnjutaPluginManager--profiles"></a><h3>The <code class="literal">“profiles”</code> property</h3>
+<pre class="programlisting">  “profiles”                 <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a></pre>
+<p>Current stack of profiles.</p>
+<p>Flags: Read</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AnjutaPluginManager--shell"></a><h3>The <code class="literal">“shell”</code> property</h3>
+<pre class="programlisting">  “shell”                    <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> *</pre>
+<p>Anjuta shell for which the plugins are made.</p>
+<p>Flags: Read / Write / Construct</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AnjutaPluginManager--status"></a><h3>The <code class="literal">“status”</code> property</h3>
+<pre class="programlisting">  “status”                   <a class="link" href="AnjutaStatus.html" title="AnjutaStatus"><span class="type">AnjutaStatus</span></a> *</pre>
+<p>Anjuta status to use in loading and unloading of plugins.</p>
+<p>Flags: Read / Write / Construct</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="AnjutaPluginManager.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="AnjutaPluginManager-plugin-activated"></a><h3>The <code class="literal">“plugin-activated”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *anjutapluginmanager,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>             arg1,
+               <a class="link" href="AnjutaPlugin.html" title="AnjutaPlugin"><span class="type">AnjutaPlugin</span></a>        *arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>             user_data)</pre>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="AnjutaPluginManager-plugin-deactivated"></a><h3>The <code class="literal">“plugin-deactivated”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="AnjutaPluginManager.html" title="AnjutaPluginManager"><span class="type">AnjutaPluginManager</span></a> *anjutapluginmanager,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>             arg1,
+               <a class="link" href="AnjutaPlugin.html" title="AnjutaPlugin"><span class="type">AnjutaPlugin</span></a>        *arg2,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>             user_data)</pre>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS">Run First</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="AnjutaPluginManager.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="AnjutaPlugin.html" title="AnjutaPlugin"><span class="type">AnjutaPlugin</span></a>, <a class="link" href="AnjutaProfileManager.html" title="AnjutaProfileManager"><span class="type">AnjutaProfileManager</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="language-support-cpp-modelines-vim" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="anjuta-code-indentation#editor-modelines"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Podpora schopností řádků s režimem ve stylu Vim.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  </info>
+
+  <title>Řádky s režimem Vim</title>
+
+  <p>Rádky s režimem tvoří prvních 5 a posledních 5 řádků souboru obsahujících <code>vim:</code> následováno nejméně jednou mezerou a seznamem názvů proměnných s volitelnými hodnotami za <code>=</code>, přičemž jsou odděleny mezerami nebo <code>:</code>.</p>
+  
+  <p>Typický řádek s režimem <app>Vim</app> vypadá nějak takto:</p>
+  
+  <code>
+/* vim: set noet ts=4 sw=4: */</code>
+
+  <p>Anjuta podporuje jen následující proměnné.</p>
+
+  <terms>
+    <item>
+      <title><code>expandtab</code></title>
+      <title><code>et</code></title>
+      <p>K odsazení se použijí mezery.</p>
+    </item>
+    <item>
+      <title><code>noexpandtab</code></title>
+      <title><code>noet</code></title>
+      <p>K odsazení se použijí tabulátory.</p>
+    </item>
+    <item>
+      <title><code>softtabstop</code></title>
+      <title><code>sts</code></title>
+      <title><code>tabstop</code></title>
+      <title><code>ts</code></title>
+      <p>Počet mezer odpovídajících jednomu tabulátoru.</p>
+    </item>
+    <item>
+      <title><code>shiftwidth</code></title>
+      <title><code>sw</code></title>
+      <p>Počet mezer používaných k odsazení kódu C.</p>
+    </item>
+  </terms>
+ 
+</page>

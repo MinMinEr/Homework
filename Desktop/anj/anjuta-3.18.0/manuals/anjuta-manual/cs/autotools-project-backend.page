@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="autotools-project-backend" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager#backend"/>
+    <desc>Zásuvný modul Zpracující jádro Autotools.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Zpracující jádro GNU Autotools</title>
+
+  <p>Jedná se o nejběžnější formát projektů v Linuxu. Byl navržen k distribuci balíčů se zdrojovými kódy na široké škále unixových systémů. Pokud máte nainstalován nějaký program, který používá <cmd>configure</cmd>, <cmd>make</cmd> a <cmd>make install</cmd>, nejspíše jste jej již použili jako uživatel.</p>
+
+  <p>Je typicky trochu náročnější používat jej jako vývojář. Jedná se však o výchozí zpracující jádro v aplikaci <app>Anjuta</app>, které je navrženo tak, aby vám to co nejvíce zjednodušilo. Když jej používátee, jsou dostupné všechny funkce správce projektu. Měli byste být schopni starat se o projekt používající zpracující jádro Autotools, aniž byste museli napsat jedinou řádku do souboru <file>configure.ac</file> nebo <file>Makefile.am</file>.</p> 
+
+  <note style="bug">
+    <p>Soubory autotools poskytují více informací, než makefile, ale zpracující jádro nepodporuje všechny možné triky. Pokud narazíte na projekt, který nelze správně načíst, uvítáme, když nám <link href="https://bugzilla.gnome.org/browse.cgi?product=anjuta">nahlásíte chybu</link>. Do doby, než to vyřešíme, to můžete obejít použitím zpracujícího jádra Složka. Je sice omezenější, ale mělo by najít všechny zdrojové soubory.</p>
+  </note>
+
+
+</page>

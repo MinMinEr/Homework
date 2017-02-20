@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-information" xml:lang="fr">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="seventh"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Examiner les informations complémentaires du programme.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Bruno Brouard</mal:name>
+      <mal:email>annoa.b@gmail.com</mal:email>
+      <mal:years>2009-2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard.b|@|bbox.fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Julien Hardelin</mal:name>
+      <mal:email>jhardlin@orange.fr</mal:email>
+      <mal:years>2011, 2014</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Alain Lojewski</mal:name>
+      <mal:email>allomervan@gmail.com</mal:email>
+      <mal:years>2011, 2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mickael Albertus</mal:name>
+      <mal:email>mickael.albertus@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Informations diverses</title>
+
+  <p>Le débogueur peut vous donner des informations variées sur le programme pendant son exécution.</p>
+
+  <section>
+    <title>Affichage des bibliothèques partagées</title>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Déboguer</gui> <gui>Informations</gui><gui>Bibliothèques partagées</gui></guiseq>.</p>
+      </item>
+    </steps>
+
+    <p>Cette commande ouvre une fenêtre qui affiche la liste de toutes les bibliothèques partagées que le programme a chargé et leur emplacement en mémoire. Elle montre également si la table de symboles de chaque bibliothèque a été lue ou non.</p>
+  </section>
+
+
+  <section>
+    <title>Affichage des signaux</title>
+
+    <steps>
+      <item>
+        <p>Dans le <gui>menu principal</gui>, sélectionnez <guiseq><gui>Déboguer</gui><gui>Informations</gui><gui>Signaux du noyau</gui></guiseq>.</p>
+      </item>
+    </steps>
+ 
+    <p>Cette commande affiche la liste de tous les signaux disponibles avec une courte description et trois colonnes pour définir ce qui est à faire quand un signal est reçu :</p>
+
+    <terms>
+      <item>
+        <title>Arrêt</title>
+        <p>Le débogueur arrête l'exécution du programme lorsque le programme reçoit ce signal.</p>
+      </item>
+      <item>
+        <title>Affichage</title>
+        <p>Le débogueur affiche le signal reçu.</p>
+      </item>
+      <item>
+        <title>Transmission</title>
+        <p>Le débogueur transmet le signal reçu au programme.</p>
+      </item>
+    </terms>
+
+    <note style="bug">
+      <p>Le menu contextuel affiché lorsque vous cliquez avec le bouton droit de la souris n'a que des éléments inactifs car les fonctions correspondantes ne sont pas encore implémentées.</p>
+    </note>
+
+  </section>
+
+</page>

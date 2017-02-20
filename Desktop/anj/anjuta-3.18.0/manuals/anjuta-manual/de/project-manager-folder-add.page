@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-folder-add" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-folder" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Einen Ordner zu einem Projekt hinzufügen.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Einen Ordner hinzufügen</title>
+
+  <p>Ein Ordner ermöglicht es mehrere Ziele zu gruppieren mit gemeinsamen Eigenschaften für alle. Er entspricht oft einem Verzeichnis.</p>
+
+  <steps>
+    <item>
+      <p>Wählen Sie die Gruppe oder das Projekt in der <gui>Projektansicht</gui>, welche Sie hinzufügen möchten. Drücken Sie die rechte Maustaste, um das <gui>Kontextmenü des Projekts</gui> zu öffnen und wählen Sie <gui>Gruppe hinzufügen</gui>.</p>
+      <p>Oder wählen Sie <guiseq><gui>Projekt</gui><gui>Gruppe hinzufügen</gui></guiseq> im <gui>Hauptmenü</gui>.</p>
+    </item>
+    <item>
+      <p>Geben Sie den neuen Gruppennamen ein.</p>
+      <note style="tip">
+        <p>Gruppennamen sind typischerweise auf Buchstaben, Ziffern und den Unterstrich beschränkt. Es ist ratsam, andere Zeichen zu vermeiden.</p>
+      </note>
+    </item>
+    <item>
+      <p>Sie können in der unteren <gui>Ordnerbaumansicht</gui> einen andere Gruppe wählen.</p>
+    </item>
+    <item>
+      <p>Sobald Sie das übergeordnete Objekt ausgewählt und den Namen eingegeben haben, klicken Sie auf den Knopf <gui>Hinzufügen</gui>, um diese Gruppe zu ihrem Projekt hinzuzufügen.</p>
+    </item>
+  </steps>
+
+</page>

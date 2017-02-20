@@ -1,0 +1,79 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaEditorLanguage
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_EDITOR_LANGUAGE_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ianjuta_editor_language_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_language_get_language ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_language_get_language_name ##### -->
+<para>
+
+</para>
+
+@obj: 
+@language: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_language_get_supported_languages ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_editor_language_set_language ##### -->
+<para>
+
+</para>
+
+@obj: 
+@language: 
+@err: 
+
+

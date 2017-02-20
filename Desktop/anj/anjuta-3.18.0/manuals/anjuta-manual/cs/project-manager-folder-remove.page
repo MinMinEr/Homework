@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-folder-remove" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-folder" group="fourth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak z projektu odstranit složku.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  </info>
+
+  <title>Odebrání složky</title>
+
+  <steps>
+    <item>
+      <p>V <gui>zobrazení projektu</gui> vyberte složku, kterou chcete odebrat, klikněte na ni pravým tlačítkem, aby se zobrazila <gui>kontextová nabídka projektu</gui>, a vyberte <gui>Odstranit</gui>.</p>
+    </item>
+    <item>
+      <p>Odstranění potvrďte. Složka se tím jen odebere z projektového souboru, na disku zůstanou složka a její obsah zachovány.</p>
+    </item>
+  </steps>
+
+</page>

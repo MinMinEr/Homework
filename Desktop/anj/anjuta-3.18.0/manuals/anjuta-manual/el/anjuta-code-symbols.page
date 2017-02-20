@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="anjuta-build-indentation" xml:lang="el">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-code" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Αποτελεσματικοί τρόποι περιήγησης μέσα στον πηγαίο κώδικα</desc>
+    <credit type="author">
+      <name>Johannes Schmid</name>
+      <email>jhs@gnome.org</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ελληνική μεταφραστική ομάδα GNOME</mal:name>
+      <mal:email>team@gnome.gr</mal:email>
+      <mal:years>2009-2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Δημήτρης Σπίγγος</mal:name>
+      <mal:email>dmtrs32@gmail.com</mal:email>
+      <mal:years>2012, 2013, 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Σίμος Ξενιτέλλης</mal:name>
+      <mal:email>simos@gnome.org</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Τζένη Πετούμενου</mal:name>
+      <mal:email>epetoumenou@gmail.com</mal:email>
+      <mal:years>2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Μαρία Μαυρίδου</mal:name>
+      <mal:email>mavridou@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Η περιήγηση κώδικα χρησιμοποιώντας τον περιηγητή συμβόλων</title>
+
+<section>
+<title>Χρήση του περιηγητή συμβόλων</title>
+<p>Ο περιηγητής συμβόλων επιτρέπει να πάρετε μια επισκόπηση των χρησιμοποιούμενων συμβόλων στο έργο σας. Τα σύμβολα αναφέρονται σε μεταβλητές/μεθόδους και κλάσεις εδώ και ο ακριβής ορισμός εξαρτάται από τη χρησιμοποιούμενη προγραμματιστική γλώσσα.</p>
+
+<p>Ο περιηγητής συμβόλων έχει τρεις καρτέλες:</p>
+<list>
+	<item><p>Το <gui>Αρχείο</gui> εμφανίζει τα σύμβολα του τρέχοντος αρχείου στον επεξεργαστή</p></item>
+	<item><p>Το <gui>Έργο</gui> εμφανίζει όλα τα σύμβολα του έργου</p></item>
+	<item><p>Η <gui>Αναζήτηση</gui> επιτρέπει την αναζήτηση των συμβόλων στο έργο (χρησιμοποιήστε <keyseq><key>Ctrl</key><key>L</key></keyseq> για άμεση μετάβαση στο πλαίσιο αναζήτησης)</p></item>
+</list>
+
+<p>Διπλό κλικ σε άλματα στον ορισμό του συμβόλου στον επεξεργαστή.</p>
+</section>
+
+<section>
+<title>Περιήγηση στον επεξεργαστή</title>
+<p>Στο αναδυόμενο μενού <gui>Μετάβαση σε</gui> του επεξεργαστή υπάρχουν δύο στοιχεία που βοηθούν στη γρήγορη περιήγηση μέσα από τον πηγαίο κώδικα:</p>
+
+<list>
+	<item><p><gui>Ορισμός συμβόλου</gui></p></item>
+	<item><p><gui>Δήλωση συμβόλου</gui></p></item>
+</list>
+
+<p>Εάν θέλετε να επιστρέψετε στη θέση στον επεξεργαστή όπου χρησιμοποιούσατε τα εμφανιζόμενα στοιχεία στο μενού <gui>Μετάβαση σε</gui>, μπορείτε να χρησιμοποιήσετε το <gui>Προηγούμενο ιστορικό</gui> (και στοιχεία <gui>επόμενου ιστορικού</gui>) στο ίδιο μενού.</p>
+
+</section>
+
+</page>

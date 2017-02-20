@@ -1,0 +1,606 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: IAnjutaDebuggerVariable</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="plugin-interfaces.html" title="Plugin interfaces">
+<link rel="prev" href="IAnjutaDebuggerRegister.html" title="IAnjutaDebuggerRegister">
+<link rel="next" href="IAnjutaDebugManager.html" title="IAnjutaDebugManager">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#IAnjutaDebuggerVariable.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#IAnjutaDebuggerVariable.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="plugin-interfaces.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="IAnjutaDebuggerRegister.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="IAnjutaDebugManager.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="IAnjutaDebuggerVariable"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="IAnjutaDebuggerVariable.top_of_page"></a>IAnjutaDebuggerVariable</span></h2>
+<p>IAnjutaDebuggerVariable — Variables interface for debuggers</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="IAnjutaDebuggerVariable.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Unstable"><span class="acronym">Unstable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="IAnjutaDebuggerVariable.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="IAnjutaDebuggerVariable.html#IAnjutaDebuggerVariableCallback" title="IAnjutaDebuggerVariableCallback ()">*IAnjutaDebuggerVariableCallback</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaDebuggerVariable.html#ianjuta-debugger-variable-error-quark" title="ianjuta_debugger_variable_error_quark ()">ianjuta_debugger_variable_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaDebuggerVariable.html#ianjuta-debugger-variable-assign" title="ianjuta_debugger_variable_assign ()">ianjuta_debugger_variable_assign</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaDebuggerVariable.html#ianjuta-debugger-variable-create" title="ianjuta_debugger_variable_create ()">ianjuta_debugger_variable_create</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaDebuggerVariable.html#ianjuta-debugger-variable-destroy" title="ianjuta_debugger_variable_destroy ()">ianjuta_debugger_variable_destroy</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaDebuggerVariable.html#ianjuta-debugger-variable-evaluate" title="ianjuta_debugger_variable_evaluate ()">ianjuta_debugger_variable_evaluate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaDebuggerVariable.html#ianjuta-debugger-variable-list-children" title="ianjuta_debugger_variable_list_children ()">ianjuta_debugger_variable_list_children</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaDebuggerVariable.html#ianjuta-debugger-variable-update" title="ianjuta_debugger_variable_update ()">ianjuta_debugger_variable_update</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaDebuggerVariable.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="IAnjutaDebuggerVariable.html#IANJUTA-DEBUGGER-VARIABLE-ERROR:CAPS" title="IANJUTA_DEBUGGER_VARIABLE_ERROR">IANJUTA_DEBUGGER_VARIABLE_ERROR</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="IAnjutaDebuggerVariable.html#IAnjutaDebuggerVariableObject" title="struct IAnjutaDebuggerVariableObject">IAnjutaDebuggerVariableObject</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaDebuggerVariable.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/GTypeModule.html">GInterface</a>
+    <span class="lineart">╰──</span> IAnjutaDebuggerVariable
+</pre>
+</div>
+<div class="refsect1">
+<a name="IAnjutaDebuggerVariable.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libanjuta/interfaces/ianjuta-debugger-variable.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="IAnjutaDebuggerVariable.description"></a><h2>Description</h2>
+<p>This interface is used to examine and change values of expression.
+It is based on the MI2 variable object interface of gdb. A
+variable needs to be created before being able to get or set its
+value and list its children.</p>
+</div>
+<div class="refsect1">
+<a name="IAnjutaDebuggerVariable.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="IAnjutaDebuggerVariableCallback"></a><h3>IAnjutaDebuggerVariableCallback ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*IAnjutaDebuggerVariableCallback<span class="c_punctuation">)</span> (<em class="parameter"><code>const <a class="link" href="IAnjutaDebuggerVariable.html#IAnjutaDebuggerVariableObject" title="struct IAnjutaDebuggerVariableObject"><span class="type">IAnjutaDebuggerVariableObject</span></a> *data</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> *err</code></em>);</pre>
+<p>This callback function is used to return a <a class="link" href="IAnjutaDebuggerVariable.html#IAnjutaDebuggerVariableObject" title="struct IAnjutaDebuggerVariableObject"><span class="type">IAnjutaDebuggerVariableObject</span></a>.</p>
+<div class="refsect3">
+<a name="id-1.8.9.9.2.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>data</p></td>
+<td class="parameter_description"><p>a <a class="link" href="IAnjutaDebuggerVariable.html#IAnjutaDebuggerVariableObject" title="struct IAnjutaDebuggerVariableObject"><span class="type">IAnjutaDebuggerVariableObject</span></a> object</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data passed to the function</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>error</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-debugger-variable-error-quark"></a><h3>ianjuta_debugger_variable_error_quark ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+ianjuta_debugger_variable_error_quark (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.8.9.9.3.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-debugger-variable-assign"></a><h3>ianjuta_debugger_variable_assign ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ianjuta_debugger_variable_assign (<em class="parameter"><code><a class="link" href="IAnjutaDebuggerVariable.html" title="IAnjutaDebuggerVariable"><span class="type">IAnjutaDebuggerVariable</span></a> *obj</code></em>,
+                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *value</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Set the value of one variable or child object.</p>
+<div class="refsect3">
+<a name="id-1.8.9.9.4.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Variable name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>Variable value</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.9.9.4.6"></a><h4>Returns</h4>
+<p> TRUE if the request succeed and the callback is
+called. If FALSE, the callback will not be called.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-debugger-variable-create"></a><h3>ianjuta_debugger_variable_create ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ianjuta_debugger_variable_create (<em class="parameter"><code><a class="link" href="IAnjutaDebuggerVariable.html" title="IAnjutaDebuggerVariable"><span class="type">IAnjutaDebuggerVariable</span></a> *obj</code></em>,
+                                  <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *expression</code></em>,
+                                  <em class="parameter"><code><a class="link" href="IAnjutaDebuggerVariable.html#IAnjutaDebuggerVariableCallback" title="IAnjutaDebuggerVariableCallback ()"><span class="type">IAnjutaDebuggerVariableCallback</span></a> callback</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Create a new variable object in the current thread and frame.</p>
+<div class="refsect3">
+<a name="id-1.8.9.9.5.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>expression</p></td>
+<td class="parameter_description"><p>Variable expression</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>Callback to call when the variable has been created</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data that is passed back to the callback</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.9.9.5.6"></a><h4>Returns</h4>
+<p> TRUE if the request succeed and the callback is
+called. If FALSE, the callback will not be called.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-debugger-variable-destroy"></a><h3>ianjuta_debugger_variable_destroy ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ianjuta_debugger_variable_destroy (<em class="parameter"><code><a class="link" href="IAnjutaDebuggerVariable.html" title="IAnjutaDebuggerVariable"><span class="type">IAnjutaDebuggerVariable</span></a> *obj</code></em>,
+                                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Delete a previously created variable or child object
+including its own children.</p>
+<div class="refsect3">
+<a name="id-1.8.9.9.6.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Variable name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.9.9.6.6"></a><h4>Returns</h4>
+<p> TRUE if the request succeed and the callback is
+called. If FALSE, the callback will not be called.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-debugger-variable-evaluate"></a><h3>ianjuta_debugger_variable_evaluate ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ianjuta_debugger_variable_evaluate (<em class="parameter"><code><a class="link" href="IAnjutaDebuggerVariable.html" title="IAnjutaDebuggerVariable"><span class="type">IAnjutaDebuggerVariable</span></a> *obj</code></em>,
+                                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                    <em class="parameter"><code><a class="link" href="IAnjutaDebugger.html#IAnjutaDebuggerGCharCallback" title="IAnjutaDebuggerGCharCallback ()"><span class="type">IAnjutaDebuggerGCharCallback</span></a> callback</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Get the value of one variable or child object.</p>
+<div class="refsect3">
+<a name="id-1.8.9.9.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Variable name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>Callback to call with the variable value</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data that is passed back to the callback</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.9.9.7.6"></a><h4>Returns</h4>
+<p> TRUE if the request succeed and the callback is
+called. If FALSE, the callback will not be called.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-debugger-variable-list-children"></a><h3>ianjuta_debugger_variable_list_children ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ianjuta_debugger_variable_list_children
+                               (<em class="parameter"><code><a class="link" href="IAnjutaDebuggerVariable.html" title="IAnjutaDebuggerVariable"><span class="type">IAnjutaDebuggerVariable</span></a> *obj</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> from</code></em>,
+                                <em class="parameter"><code><a class="link" href="IAnjutaDebugger.html#IAnjutaDebuggerGListCallback" title="IAnjutaDebuggerGListCallback ()"><span class="type">IAnjutaDebuggerGListCallback</span></a> callback</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>List and create objects for variable object's children.
+The backend can returns only a part of the children, in
+this case a last variable with a NULL name is added to
+the list given to the callback function.
+If the remaining children are wanted, this
+function must be called again with a from argument
+corresponding to the first missing children.</p>
+<div class="refsect3">
+<a name="id-1.8.9.9.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Variable name</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>from</p></td>
+<td class="parameter_description"><p>Starting from this children (zero-based)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>Callback to call when the children have been
+created with a list of variable objects</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data that is passed back to the callback</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.9.9.8.6"></a><h4>Returns</h4>
+<p> TRUE if the request succeed and the callback is
+called. If FALSE, the callback will not be called.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-debugger-variable-update"></a><h3>ianjuta_debugger_variable_update ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ianjuta_debugger_variable_update (<em class="parameter"><code><a class="link" href="IAnjutaDebuggerVariable.html" title="IAnjutaDebuggerVariable"><span class="type">IAnjutaDebuggerVariable</span></a> *obj</code></em>,
+                                  <em class="parameter"><code><a class="link" href="IAnjutaDebugger.html#IAnjutaDebuggerGListCallback" title="IAnjutaDebuggerGListCallback ()"><span class="type">IAnjutaDebuggerGListCallback</span></a> callback</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>,
+                                  <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>List all changed variable objects since the last call.</p>
+<div class="refsect3">
+<a name="id-1.8.9.9.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>callback</p></td>
+<td class="parameter_description"><p>Callback to call with the list of all changed
+variable names</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>User data that is passed back to the callback</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.9.9.9.6"></a><h4>Returns</h4>
+<p> TRUE if the request succeed and the callback is
+called. If FALSE, the callback will not be called.</p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaDebuggerVariable.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="IANJUTA-DEBUGGER-VARIABLE-ERROR:CAPS"></a><h3>IANJUTA_DEBUGGER_VARIABLE_ERROR</h3>
+<pre class="programlisting">#define IANJUTA_DEBUGGER_VARIABLE_ERROR ianjuta_debugger_variable_error_quark()
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IAnjutaDebuggerVariableObject"></a><h3>struct IAnjutaDebuggerVariableObject</h3>
+<pre class="programlisting">struct IAnjutaDebuggerVariableObject {
+	gchar *name;
+	gchar *expression;
+	gchar *type;
+	gchar *value;
+	gboolean changed;
+	gboolean exited;
+	gboolean deleted;
+	gint children;
+	gboolean has_more;
+};
+</pre>
+<p>Defines a variable object.</p>
+<div class="refsect3">
+<a name="id-1.8.9.10.3.5"></a><h4>Members</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="IAnjutaDebuggerVariableObject.name"></a>name</code></em>;</p></td>
+<td class="struct_member_description"><p>unique variable object name created by backend</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="IAnjutaDebuggerVariableObject.expression"></a>expression</code></em>;</p></td>
+<td class="struct_member_description"><p>corresponding variable name or expression</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="IAnjutaDebuggerVariableObject.type"></a>type</code></em>;</p></td>
+<td class="struct_member_description"><p>variable type</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *<em class="structfield"><code><a name="IAnjutaDebuggerVariableObject.value"></a>value</code></em>;</p></td>
+<td class="struct_member_description"><p>variable value</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> <em class="structfield"><code><a name="IAnjutaDebuggerVariableObject.changed"></a>changed</code></em>;</p></td>
+<td class="struct_member_description"><p>TRUE if the variable has changed</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> <em class="structfield"><code><a name="IAnjutaDebuggerVariableObject.exited"></a>exited</code></em>;</p></td>
+<td class="struct_member_description"><p>TRUE if the variable is outside current scope</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> <em class="structfield"><code><a name="IAnjutaDebuggerVariableObject.deleted"></a>deleted</code></em>;</p></td>
+<td class="struct_member_description"><p>TRUE if the variable has been removed</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> <em class="structfield"><code><a name="IAnjutaDebuggerVariableObject.children"></a>children</code></em>;</p></td>
+<td class="struct_member_description"><p>Number of variable children, -1 if unknown</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> <em class="structfield"><code><a name="IAnjutaDebuggerVariableObject.has-more"></a>has_more</code></em>;</p></td>
+<td class="struct_member_description"><p>TRUE if the children value is wrong</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

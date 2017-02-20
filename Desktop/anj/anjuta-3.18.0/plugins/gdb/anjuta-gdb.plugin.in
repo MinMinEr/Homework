@@ -1,0 +1,10 @@
+[Anjuta Plugin]
+_Name=GNU Debugger
+_Description=GNU Debugger Plugin
+Location=anjuta-gdb:GdbPlugin
+Icon=anjuta-gdb.plugin.png
+UserActivatable=yes
+Interfaces=IAnjutaDebugger
+
+[File Loader]
+SupportedMimeTypes=application/x-executable,application/octet-stream,application/x-core,application/x-shellscript

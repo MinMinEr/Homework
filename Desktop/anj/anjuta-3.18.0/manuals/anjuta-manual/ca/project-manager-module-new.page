@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-module-new" xml:lang="ca">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-library" group="first"/>
+    <link type="next" xref="project-manager-module-add"/>
+    <link type="next" xref="project-manager-library-add"/>
+    <link type="seealso" xref="project-manager-library"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>
+      Groups libraries in a module.
+    </desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jaume Planas</mal:name>
+      <mal:email>jplanas@itberga.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gil Forcada</mal:name>
+      <mal:email>gilforcada@guifi.net</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Add a Module</title>
+
+  <p>Packages cannot be added directly to a program but have to be grouped in
+  a module.</p>
+
+  <steps>
+    <item>
+      <p>Select a program in the <gui>project view</gui>, click on the right
+      mouse button to make the <gui>project context menu</gui> appear, and
+      select <gui>Add Library</gui>.</p>
+      <p>O en el <gui>menú principal</gui>, trieu <guiseq><gui>Projecte</gui><gui>Biblioteca nova...</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>On the <gui>Add Library</gui> dialog, click on the
+      <gui>New Library</gui> button.</p>
+    </item>
+    <item>
+      <p>Obtindreu una llista de totes les biblioteques empaquetades del sistema, Podeu marcar les biblioteques que necessiteu.</p>
+      <note style="tip">
+        <p>If the library you want does not appear here:</p>
+	  <list>
+            <item>
+              <p>Perhaps it is not installed on your system.
+              Launch the application you
+              use to install new programs and search for the library name.
+              The package you need often has a "dev" or "devel" suffix and
+              should include header files and a <app>pkg-config</app> file with a
+              <file>.pc</file> extension.</p>
+            </item>
+            <item>
+              <p>It could be that the library is not packaged, it is often the
+              case for libraries not developed on Linux. See the chapter
+              <link xref="project-manager-library-add"/> explaining how to
+              use them.</p>
+            </item>
+          </list>
+      </note>
+    </item>
+    <item>
+      <p>After selecting one library, a module name will be
+      automatically generated but you can change it. You can select an already
+      existing module name to add a new library to it and to all targets
+      already using it.</p>
+    </item>
+    <item>
+      <p> When you are
+      done, click on the <gui>Add</gui> button to create the new module
+      with the selected libraries. You need to add a new module to at least
+      one target to really use it.</p>
+    </item>
+  </steps>
+
+</page>

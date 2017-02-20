@@ -1,0 +1,63 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaEnvironment
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### ENUM IAnjutaEnvironmentError ##### -->
+<para>
+
+</para>
+
+@IANJUTA_ENVIRONMENT_CONFIG: 
+@IANJUTA_ENVIRONMENT_OTHER_ERROR: 
+
+<!-- ##### FUNCTION ianjuta_environment_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_environment_get_real_directory ##### -->
+<para>
+
+</para>
+
+@obj: 
+@dir: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_environment_override ##### -->
+<para>
+
+</para>
+
+@obj: 
+@dirp: 
+@argvp: 
+@envp: 
+@err: 
+@Returns: 
+
+

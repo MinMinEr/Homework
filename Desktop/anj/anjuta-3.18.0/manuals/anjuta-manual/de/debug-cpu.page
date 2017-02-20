@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-cpu" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="debug-data" group="sixth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Informationen des Prozessors untersuchen.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>CPU</title>
+
+  <section>
+    <title>Prozessorregister betrachten</title>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Ansicht</gui><gui>Register</gui></guiseq> im <gui>Hauptmenü</gui>, um das Fenster <gui>Register</gui> zu öffnen.</p>
+      </item>
+    </steps>
+
+    <p>Register, deren Wert seit dem letzten Stopp geändert wurden, werden rot dargestellt. Es ist möglich, den Wert eines beliebigen Registers zu ändern, indem Sie in die Wertspalte klicken und einen neuen Wert eingeben.</p>	
+
+  </section>
+
+  <section>
+    <title>Speicher betrachten</title>
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Ansicht</gui><gui>Speicher</gui></guiseq> im <gui>Hauptmenü</gui>, um das Fenster <gui>Speicher</gui> zu öffnen.</p>
+      </item>
+    </steps>
+
+    <p>Die erste Spalte zeigt die Speicheradressen hexadezimal an, die zweite Spalte den Speicherinhalt wiederum hexadezimal, und die letzte Spalte zeigt den Speicherinhalt im ASCII-Format an.</p>
+    <p>Der Adressierungsraum selbst eine 32-Bit-Mikroprozessors ist sehr groß (4 Gigabyte), daher ist es sehr schwierig mit Hilfe der Bildlaufleiste zu einer bestimmten Adresse zu springen. Drücken Sie die rechte Maustaste und wählen Sie <gui>Zu Adresse springen</gui>, um ein kleines Textfeld für die Adresse im Hexadezimalformat einzublenden.</p>
+  </section>
+
+
+  <section>
+    <title>Disassemblierung ansehen</title>
+
+
+    <steps>
+      <item>
+        <p>Wählen Sie <guiseq><gui>Ansicht</gui><gui>Disassemblierung</gui></guiseq> im <gui>Hauptmenü</gui>, um das Fenster <gui>Disassemblierung</gui> zu öffnen.</p>
+      </item>
+    </steps>
+
+    <p>Die erste Spalte zeigt die Adresse hexadezimal an. In der zweiten Spalte darf eine mit einem Doppelpunkt abgeschlossene Beschriftung zu Zeilenanfang stehen, oder eine Anweisung in Maschinensprache, welche mit 4 Leerzeichen eingerückt ist.</p>
+
+    <p>Die Position des Fensters <gui>Disassemblierung</gui> ändert sich auf den Wert des Programmzählers, wenn das Programm angehalten wird.</p>
+
+    <p>Der Adressierungsraum selbst eine 32-Bit-Mikroprozessors ist sehr groß (4 Gigabyte), daher ist es sehr schwierig mit Hilfe der Bildlaufleiste zu einer bestimmten Adresse zu springen. Drücken Sie die rechte Maustaste und wählen Sie <gui>Zu Adresse springen</gui>, um ein kleines Textfeld für die Adresse im Hexadezimalformat einzublenden.</p>
+  </section>
+
+
+</page>

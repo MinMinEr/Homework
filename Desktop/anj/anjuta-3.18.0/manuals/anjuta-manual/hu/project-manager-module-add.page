@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-module-add" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <link type="guide" xref="project-manager-library" group="fourth"/>
+    <link type="seealso" xref="project-manager-module-new"/>
+    <desc>Programkönyvtárak halmazának hozzáadása egy célhoz.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Csomagolt programkönyvtárak hozzáadása</title>
+
+  <p>Linuxon a legtöbb programkönyvtár egy további adatokat tartalmazó <app>pkg-config</app> fájllal együtt kerül terjesztésre. Ez a fájl olyan információkat tartalmaz, mint a szükséges további programkönyvtárak, a programkönyvtár használatához szükséges C fordító és szerkesztő jelzők. Ezt a fájlt, a fejlécfájlokat és a programkönyvtár fájljait együtt csomagnak nevezzük.</p>
+
+  <steps>
+    <item>
+      <p>Válassza ki a <gui>projektnézetben</gui> a programot, amelybe az új programkönyvtárat fel kívánja venni, kattintson a jobb egérgombbal a <gui>helyi menü</gui> megjelenítéséhez, és válassza ki a <gui>Programkönyvtár hozzáadása</gui> menüpontot.</p>
+      <p>Vagy a <gui>főmenüből</gui> válassza a <guiseq><gui>Projekt</gui><gui>Programkönyvtár hozzáadása</gui></guiseq> menüpontot.</p>
+    </item>
+    <item>
+      <p>A felső <gui>célválasztó gombbal</gui> kiválaszthatja a programkönyvtár hozzáadásához használandó célt.</p>
+    </item>
+    <item>
+      <p>A célhoz nem adható hozzá közvetlenül programkönyvtár. Csak a lenti <gui>modulnézetben</gui> megjelenített modult adhat hozzá. Ha egy modulon belüli programkönyvtárat választ ki, akkor a szülő modul lesz hozzáadva.</p>
+    </item>
+    <item>
+      <p>Ha a kívánt programkönyvtár nem jelenik meg a <gui>modulnézetben</gui>, akkor előbb fel kell vennie modulként. Kattintson az <gui>Új programkönyvtár</gui> gombra, és kövesse a <link xref="project-manager-module-new">következő</link> leírást.</p>
+      <note style="tip">
+        <p>Az új modul létrehozása után várjon pár másodpercet a projektfájlok újratöltéséig az új modul megjelenésére a listában.</p>
+      </note>
+    </item>
+    <item>
+      <p>Ha befejezte, akkor nyomja meg a <gui>Hozzáadás</gui> gombot a kijelölt modul hozzáadásához a célhoz.</p>
+    </item>
+  </steps>
+
+</page>

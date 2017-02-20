@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-custom" xml:lang="cs">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="sixth"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Jak použít vlastní příkaz pro ladění.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  </info>
+
+  <title>Vlastní příkaz</title>
+
+  <p>Do ladicího programu můžete poslat vlastní příkaz takto:</p>
+
+  <steps>
+    <item>
+      <p>V <gui>hlavní nabídce</gui> vyberte <guiseq><gui>Ladit</gui> <gui>Příkaz ladicího programu</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Zadejte svůj příkaz.</p>
+    </item>
+  </steps>
+
+  <p>Výstup příkazu se zobrazí v okně se zprávami používaném ladicím programem.</p>
+
+  <note style="warning">
+    <p>Příkaz je odeslán přímo do ladicího programu, bez jakýchkoliv kontrol. Například, když nastavíte tímto způsobem bod přerušení, neobjeví se v okně <gui>Body přerušení</gui>. Proto je lepší se používání příkazů tímto způsobem vyhnout, leda že víte přesně, co děláte.</p>
+  </note>
+
+</page>

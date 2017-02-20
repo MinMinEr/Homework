@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="project-manager-treeview" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-project-management" group="third"/>
+    <desc>Den Inhalt des Projekts anzeigen.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2009-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jonas Rebmann</mal:name>
+      <mal:email>jonas.rebmann@googlemail.com</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christian Kirbach</mal:name>
+      <mal:email>christian.kirbach@gmail.com</mal:email>
+      <mal:years>2010, 2011, 2012, 2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Ein Projekt betrachten</title>
+
+  <p>Ein Projekt wird als Baum dargestellt. Die Wurzel entspricht dem Projekt und die Unterelemente repräsentieren Programme, Bibliotheken, Ordner und Quelldateien. Jeder Knoten kann Eigenschaften besitzen, mit denen genauere Informationen wie Projektversion, Compiler-Flags und Installationsordner festgelegt werden. Diese Knoten sind in verschiedene Kategorien eingeteilt. Abhängig vom Backend sind nicht alle verfügbar:</p>
+
+  <terms>
+    <item>
+      <title>Root</title>
+      <p>Es gibt nur einen Knoten dieser Art. Er repräsentiert das Projekt selbst. Hier können Sie für das gesamte Projekt geltende Eigenschaften ändern, wie den Namen und die Version.</p>
+    </item>
+    <item>
+      <title>Modul</title>
+      <p>Dies ist eine Menge von Paketen, die in Autotools-Projekten verwendet werden. Sie erscheinen als Unterelemente des Wurzelknotens, um alle Module zu repräsentieren, und als Unterelemente eines jeden Ziels, das sie verwendet. Lesen Sie für weitere Informationen <link xref="project-manager-module-new"/>.</p>
+    </item>
+    <item>
+      <title>Paket</title>
+      <p>Dies ist eine paketierte Bibliothek, die in Autotools-Projekten verwendet wird. Sie erscheinen als Unterelemente eines jeden Moduls. Lesen Sie für weitere Informationen <link xref="project-manager-library"/>.</p>
+    </item>
+    <item>
+      <title>Ordner</title>
+      <p>Dies wird verwendet, um Ziele zu gruppieren, so dass allgemeine Eigenschaften festgelegt werden können. Sie sind oft durch Unterordner implementiert. Lesen Sie für weitere Informationen <link xref="project-manager-folder"/>.</p>
+    </item>
+    <item>
+      <title>Ziel</title>
+      <p>Es gruppiert Dateien und legt fest, wie diese verwendet werden. Es gibt verschiedene Arten von Zielen, zum Beispiel ein Programm, eine Bibliothek oder Daten, entsprechend des unterschiedlichen Verwendungszwecks der Unterelementdateien. Sie stellen oft erstellte Projektdateien dar wie übersetzte Programme oder Bibliotheken. Lesen Sie für weitere Informationen<link xref="project-manager-target"/>.</p>
+	
+      <note style="tip">
+        <p>Sie können Ziele mittels Ziehen-und-Ablegen an den Anfang der Projektbaumansicht ablegen, um eine Verknüpfung zu erstellen, mit der Sie auf diese einfacher zugreifen können. Die Voreinstellung ist, dass alle Programmziele dort bereits abgelegt werden.</p>
+      </note>
+
+    </item>
+    <item>
+      <title>Quelle</title>
+      <p>Jede Quelldatei wird durch ein Objekt in der Projektansicht dargestellt. Der Einsatzzweck einer jeden Datei hängt von dem übergeordneten Ziel ab. Alle Unterelemente eines Programmziels werden zum Erstellen übersetzt. Dabei werden Unterelemente eines Datenziels bei Projektinstallation nur in einen Ordner kopiert. Lesen Sie für weitere Informationen <link xref="project-manager-source"/>.</p>
+    </item>
+  </terms>
+  
+</page>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="project-manager-folder-add" xml:lang="ca">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager-folder" group="first"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Afegir un directori a un projecte.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jaume Planas</mal:name>
+      <mal:email>jplanas@itberga.com</mal:email>
+      <mal:years>2011</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gil Forcada</mal:name>
+      <mal:email>gilforcada@guifi.net</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Add a Folder</title>
+
+  <p>A folder allows you to group several target allowing to set common
+  properties for all of them. It often corresponds to a directory.</p>
+
+  <steps>
+    <item>
+      <p>Trieu el grup o el projecte on voleu afegir-hi el grup nou a la <gui>vista de projecte</gui>, feu clic amb el botó secundari perquè es mostri el <gui>menú contextual del projecte</gui> i trieu <gui>Afegeix un grup</gui>.</p>
+      <p>O trieu <guiseq><gui>Projecte</gui><gui>Afegeix un grup</gui></guiseq> en el <gui>menú principal</gui>.</p>
+    </item>
+    <item>
+      <p>Enter a new group name.</p>
+      <note style="tip">
+        <p>Groups names are typically restricted to letters, digits and
+        the underscore, so it's safer to avoid other characters.</p>
+      </note>
+    </item>
+    <item>
+      <p>Podeu triar un altre grup al final de la <gui>vista d'arbre de grups</gui>.</p>
+    </item>
+    <item>
+      <p>Per afegir el grup al projecte feu clic al botó <gui>Afegeix</gui>, després de seleccionar el pare i introduir-ne el nom.</p>
+    </item>
+  </steps>
+
+</page>

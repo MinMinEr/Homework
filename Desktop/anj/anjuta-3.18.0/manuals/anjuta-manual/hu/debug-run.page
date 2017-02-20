@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-run" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="index#anjuta-debug" group="second"/>
+    <link type="seealso" xref="run-parameters-dialog"/>
+    <link type="seealso" xref="autotools-build-configure"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Program indítása a hibakeresővel.</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Program hibakeresése</title>
+  
+  <section>
+    <title>Program indítása a hibakeresőben</title>
+
+    <p>Az aktuális program a <gui>Program paraméterei</gui> ablakban adható meg. További információkért lásd a <link xref="run-parameters-dialog"/> fejezetet. Ez a program a következőképpen indítható el a hibakeresőben:</p>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Futtatás</gui><gui>Program hibakeresése</gui></guiseq> menüpontot, vagy nyomja meg a <keyseq><key>Shift</key><key>F12</key></keyseq> billentyűkombinációt.</p>
+      </item>
+    </steps>
+
+    <note style="tip">
+      <p>Egy program hibakeresése nehezebb lehet, ha nagyon optimalizálva van, vagy ha hiányoznak a hibakeresési információk. Hogy az optimalizálás és a hibakeresési információk engedélyezettek-e, az a konfigurálás lépésben kerül meghatározásra. Általában elérhető hibakeresési konfiguráció, amely kikapcsolja az optimalizációt és bekapcsolja a hibakeresési információkat. Az Anjuta figyelmeztetést jelenít meg, ha nem ezt a konfigurációt használja. További információkért lásd a <link xref="autotools-build-configure"/> fejezetet.</p>
+    </note>
+   </section>
+
+  <section>
+    <title>Már futó alkalmazás hibakeresése</title>
+
+    <p>A hibakeresés már futó alkalmazáson is végrehajtható.</p>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Futtatás</gui><gui>Folyamat hibakeresése</gui></guiseq> menüpontot az éppen futó összes folyamatot felsoroló ablak megjelenítéséhez.</p>
+      </item>
+      <item>
+        <p>Válasszon egy folyamatot a <gui>Kapcsolódás folyamathoz</gui> ablakban, és nyomja meg a <gui>Kapcsolódás</gui> gombot a hibakereső elindításához ezen a folyamaton. További részleteket a <link xref="debug-process-dialog"/> fejezetben talál.</p>
+      </item>
+    </steps>
+  </section>
+ 
+  <section>
+    <title>Távoli alkalmazás hibakeresése</title>
+
+    <p>A hibakereső használható egy másik, TCP vagy soros kapcsolaton csatlakoztatott számítógépen futó alkalmazások hibakeresésére is.</p>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Futtatás</gui><gui>Távol cél hibakeresése</gui></guiseq> menüpontot.</p>
+      </item>
+      <item>
+        <p>Válassza ki a kapcsolat típusát a távoli alkalmazáshoz, ez a <gui>Soros vonali kapcsolat</gui> vagy a <gui>TCP/IP kapcsolat</gui> egyike lehet.</p>
+      </item>
+      <item>
+        <p>TCP-kapcsolat esetén töltse ki a <gui>Cím</gui> és <gui>Port</gui> mezőket.</p>
+        <p>Soros kapcsolat esetén töltse ki a soros eszköz neve alatti szövegmezőt, például <cmd>/dev/ttyb</cmd>.</p>
+      </item>
+      <item>
+        <p>Nyomja meg a <gui>Csatlakozás</gui> gombot a hibakereső elindításához, és a távoli célhoz való csatlakozáshoz.</p>
+      </item>
+    </steps>
+
+  </section>
+
+  <section>
+    <title>Hibakereső leállítása</title>
+
+    <p>A hibakereső és a program bármikor leállítható a következőképpen:</p>
+
+    <steps>
+      <item>
+        <p>A <gui>főmenüből</gui> válassza a <guiseq><gui>Futtatás</gui><gui>Hibakereső leállítása</gui></guiseq> menüpontot.</p>
+      </item>
+    </steps>
+
+  </section>
+</page>

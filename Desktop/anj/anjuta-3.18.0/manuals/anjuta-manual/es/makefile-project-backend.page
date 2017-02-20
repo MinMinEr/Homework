@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="makefile-project-backend" xml:lang="es">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <link type="guide" xref="project-manager#backend"/>
+    <desc>«Backend» para proyecto Makefile</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Daniel Mustieles</mal:name>
+      <mal:email>daniel.mustieles@gmail.com</mal:email>
+      <mal:years>2011 - 2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>fserrador@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2011</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Complemento de proyecto Makefile para el «backend»</title>
+
+  <p>«makefile» es probablemente el método más común de construir software en todo tipo de plataformas. Un «makefile» contiene una lista de reglas describiendo qué comandos se deben ejecutar para poder generar un objetivo de una lista de dependencias. Al construir un programa, el objetivo es un archivo objeto y las dependencias son los archivos de fuentes. El objetivo de una regla puede ser una dependencia de otra, permitiendo encadenar varias reglas para poder crear un objetivo final.</p>
+
+  <p>Es una herramienta general de bajo nivel, haciendo que sea difícil encontrar todos los archivos de fuentes y objetivos de un proyecto. De tal forma que <app>Anjuta</app> tiene soporte limitado para «makefiles», leyendo sólo un «makefile» en la parte superior del proyecto y extrayendo los archivos de fuentes de los archivos y objetivos.</p>
+
+  <note style="bug">
+    <p>Si el «backend» del proyecto no es capaz de encontrar todos los archivos de fuentes, puede intentar usar la carpeta del «backend» en su lugar. No reconoce ningún objetivo pero debería obtener todos los archivos de fuentes.</p>
+  </note>
+
+  <p>Cambiar las propiedades o añadir o quitar objetivos y archivos de fuentes está desactivado en este «backend», ya que la edición automática del «makefile» no está implementada. Se debe cambiar usando un editor de textos. No obstante al guardar el «makefile» se actualizará automáticamente.</p>
+
+</page>

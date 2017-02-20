@@ -1,0 +1,50 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaSnippetsManager
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO IANJUTA_SNIPPETS_MANAGER_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION ianjuta_snippets_manager_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_snippets_manager_insert ##### -->
+<para>
+
+</para>
+
+@obj: 
+@key: 
+@editing_session: 
+@err: 
+@Returns: 
+
+

@@ -1,0 +1,76 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaPkgConfigChooser
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION anjuta_pkg_config_chooser_new ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_pkg_config_chooser_get_active_packages ##### -->
+<para>
+
+</para>
+
+@chooser: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_pkg_config_chooser_set_active_packages ##### -->
+<para>
+
+</para>
+
+@chooser: 
+@packages: 
+
+
+<!-- ##### FUNCTION anjuta_pkg_config_chooser_show_active_only ##### -->
+<para>
+
+</para>
+
+@chooser: 
+@show_selected: 
+
+
+<!-- ##### FUNCTION anjuta_pkg_config_chooser_show_active_column ##### -->
+<para>
+
+</para>
+
+@chooser: 
+@show_column: 
+
+
+<!-- ##### FUNCTION anjuta_pkg_config_chooser_get_selected_package ##### -->
+<para>
+
+</para>
+
+@chooser: 
+@Returns: 
+
+

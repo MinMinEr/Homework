@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" style="task" id="debug-breakpoint-dialog" xml:lang="hu">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <facet:tag key="all-pages" value="whatever"/> <!--Include page in index-->
+    <facet:tag key="all-widgets" value="whatever"/> <!--Include page in index-->
+    <link type="seealso" xref="debug-breakpoint"/>
+    <revision pkgversion="3.0" version="0.1" date="2011-03-27" status="incomplete"/>
+    <desc>Töréspont létrehozása vagy szerkesztése</desc>
+    <credit type="author">
+      <name>Sébastien Granjoux</name>
+      <email>seb.sfo@free.fr</email>
+    </credit>
+    <credit type="editor">
+      <name>Philip Chimento</name>
+      <email>philip.chimento@gmail.com</email>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kelemen Gábor</mal:name>
+      <mal:email>kelemeng at gnome dot hu</mal:email>
+      <mal:years>2012, 2013, 2015.</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Töréspont párbeszédablak</title>
+
+  <terms>
+    <item>
+      <title><gui>Hely</gui></title>
+      <p>Ez a töréspont pozíciója. Meglévő töréspont esetén nem módosíthatja. Töréspontot adott sorban, vagy egy függvény elejére állíthat be. Használja a következő formátumok egyikét:</p>
+      <list>
+        <item><p><var>fájlnév</var>:<var>sorszám</var></p></item>
+        <item><p><var>függvénynév</var></p></item>
+        <item><p><var>fájlnév</var>:<var>függvénynév</var></p></item>
+      </list>
+    </item>
+    <item>
+      <title><gui>Feltétel</gui></title>
+      <p>A törési feltétel egy logikai <code>IGAZ</code> (1) vagy <code>HAMIS</code> (0) értékre kiértékelődő kifejezés. Amikor a program végrehajtása eljut egy töréspontig, akkor a törési feltétel kiértékelésre kerül. A hibakereső csak akkor szakítja meg a végrehajtást, ha a kiértékelés eredménye <code>IGAZ</code>.</p>
+      <p>Ha ezt a mezőt üresen hagyja, akkor a feltételt mindig <code>IGAZ</code>-nak tekinti a hibakereső.</p>
+    </item>
+    <item>
+      <title><gui>Lépésszám</gui></title>
+       <p>A hibakereső képes a töréspontot bizonyos alkalommal kihagyni a megszakítás előtt. Ha a lépésszám nem nulla, akkor a hibakeresőnek ennyiszer kell elérnie a töréspontot a megszakítás előtt.</p>
+       <p>A lépésszámnak magasabb a prioritása a feltételnél. A hibakereső csak a lépésszám elérése után értékeli ki a feltételt, ha van, és szakítja meg a program végrehajtását.</p>
+    </item>
+  </terms>
+
+</page>

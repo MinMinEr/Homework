@@ -1,0 +1,151 @@
+<!-- ##### SECTION Title ##### -->
+IAnjutaProject
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION ianjuta_project_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_add_node_after ##### -->
+<para>
+
+</para>
+
+@obj: 
+@parent: 
+@sibling: 
+@type: 
+@file: 
+@name: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_add_node_before ##### -->
+<para>
+
+</para>
+
+@obj: 
+@parent: 
+@sibling: 
+@type: 
+@file: 
+@name: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_get_node_info ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_get_root ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_is_loaded ##### -->
+<para>
+
+</para>
+
+@obj: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_load_node ##### -->
+<para>
+
+</para>
+
+@obj: 
+@node: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_remove_node ##### -->
+<para>
+
+</para>
+
+@obj: 
+@node: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_remove_property ##### -->
+<para>
+
+</para>
+
+@obj: 
+@node: 
+@id: 
+@name: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_save_node ##### -->
+<para>
+
+</para>
+
+@obj: 
+@node: 
+@err: 
+@Returns: 
+
+
+<!-- ##### FUNCTION ianjuta_project_set_property ##### -->
+<para>
+
+</para>
+
+@obj: 
+@node: 
+@id: 
+@name: 
+@value: 
+@err: 
+@Returns: 
+
+

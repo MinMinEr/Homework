@@ -1,0 +1,63 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaCommandQueue
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### ENUM AnjutaCommandQueueExecuteMode ##### -->
+<para>
+
+</para>
+
+@ANJUTA_COMMAND_QUEUE_EXECUTE_AUTOMATIC: 
+@ANJUTA_COMMAND_QUEUE_EXECUTE_MANUAL: 
+
+<!-- ##### FUNCTION anjuta_command_queue_new ##### -->
+<para>
+
+</para>
+
+@mode: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_command_queue_push ##### -->
+<para>
+
+</para>
+
+@self: 
+@command: 
+
+
+<!-- ##### FUNCTION anjuta_command_queue_start ##### -->
+<para>
+
+</para>
+
+@self: 
+@Returns: 
+
+
+<!-- ##### STRUCT AnjutaCommandQueuePriv ##### -->
+<para>
+
+</para>
+
+

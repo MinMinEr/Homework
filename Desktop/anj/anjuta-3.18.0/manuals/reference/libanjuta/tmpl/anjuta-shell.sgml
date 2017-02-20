@@ -1,0 +1,392 @@
+<!-- ##### SECTION Title ##### -->
+AnjutaShell
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO ANJUTA_SHELL_ERROR ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### ENUM AnjutaShellError ##### -->
+<para>
+
+</para>
+
+@ANJUTA_SHELL_ERROR_DOESNT_EXIST: 
+
+<!-- ##### ENUM AnjutaShellPlacement ##### -->
+<para>
+
+</para>
+
+@ANJUTA_SHELL_PLACEMENT_NONE: 
+@ANJUTA_SHELL_PLACEMENT_TOP: 
+@ANJUTA_SHELL_PLACEMENT_BOTTOM: 
+@ANJUTA_SHELL_PLACEMENT_RIGHT: 
+@ANJUTA_SHELL_PLACEMENT_LEFT: 
+@ANJUTA_SHELL_PLACEMENT_CENTER: 
+@ANJUTA_SHELL_PLACEMENT_FLOATING: 
+
+<!-- ##### FUNCTION anjuta_shell_error_quark ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_shell_get_status ##### -->
+<para>
+
+</para>
+
+@shell: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_shell_get_ui ##### -->
+<para>
+
+</para>
+
+@shell: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_shell_get_preferences ##### -->
+<para>
+
+</para>
+
+@shell: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_shell_get_plugin_manager ##### -->
+<para>
+
+</para>
+
+@shell: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_shell_get_profile_manager ##### -->
+<para>
+
+</para>
+
+@shell: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_shell_freeze ##### -->
+<para>
+
+</para>
+
+@shell: 
+@error: 
+
+
+<!-- ##### FUNCTION anjuta_shell_thaw ##### -->
+<para>
+
+</para>
+
+@shell: 
+@error: 
+
+
+<!-- ##### FUNCTION anjuta_shell_add_widget ##### -->
+<para>
+
+</para>
+
+@shell: 
+@widget: 
+@name: 
+@title: 
+@stock_id: 
+@placement: 
+@error: 
+
+
+<!-- ##### FUNCTION anjuta_shell_add_widget_custom ##### -->
+<para>
+
+</para>
+
+@shell: 
+@widget: 
+@name: 
+@title: 
+@stock_id: 
+@label: 
+@placement: 
+@error: 
+
+
+<!-- ##### FUNCTION anjuta_shell_add_widget_full ##### -->
+<para>
+
+</para>
+
+@shell: 
+@widget: 
+@name: 
+@title: 
+@stock_id: 
+@placement: 
+@locked: 
+@error: 
+
+
+<!-- ##### FUNCTION anjuta_shell_remove_widget ##### -->
+<para>
+
+</para>
+
+@shell: 
+@widget: 
+@error: 
+
+
+<!-- ##### FUNCTION anjuta_shell_present_widget ##### -->
+<para>
+
+</para>
+
+@shell: 
+@widget: 
+@error: 
+
+
+<!-- ##### FUNCTION anjuta_shell_iconify_dockable_widget ##### -->
+<para>
+
+</para>
+
+@shell: 
+@widget: 
+@error: 
+
+
+<!-- ##### FUNCTION anjuta_shell_hide_dockable_widget ##### -->
+<para>
+
+</para>
+
+@shell: 
+@widget: 
+@error: 
+
+
+<!-- ##### FUNCTION anjuta_shell_show_dockable_widget ##### -->
+<para>
+
+</para>
+
+@shell: 
+@widget: 
+@error: 
+
+
+<!-- ##### FUNCTION anjuta_shell_maximize_widget ##### -->
+<para>
+
+</para>
+
+@shell: 
+@widget_name: 
+@error: 
+
+
+<!-- ##### FUNCTION anjuta_shell_unmaximize ##### -->
+<para>
+
+</para>
+
+@shell: 
+@error: 
+
+
+<!-- ##### FUNCTION anjuta_shell_create_window ##### -->
+<para>
+
+</para>
+
+@shell: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_shell_add_value ##### -->
+<para>
+
+</para>
+
+@shell: 
+@name: 
+@value: 
+@error: 
+
+
+<!-- ##### FUNCTION anjuta_shell_add_valist ##### -->
+<para>
+
+</para>
+
+@shell: 
+@first_name: 
+@first_type: 
+@var_args: 
+
+
+<!-- ##### FUNCTION anjuta_shell_add ##### -->
+<para>
+
+</para>
+
+@shell: 
+@first_name: 
+@first_type: 
+@...: 
+
+
+<!-- ##### FUNCTION anjuta_shell_get_value ##### -->
+<para>
+
+</para>
+
+@shell: 
+@name: 
+@value: 
+@error: 
+
+
+<!-- ##### FUNCTION anjuta_shell_get_valist ##### -->
+<para>
+
+</para>
+
+@shell: 
+@first_name: 
+@first_type: 
+@var_args: 
+
+
+<!-- ##### FUNCTION anjuta_shell_get ##### -->
+<para>
+
+</para>
+
+@shell: 
+@first_name: 
+@first_type: 
+@...: 
+
+
+<!-- ##### FUNCTION anjuta_shell_remove_value ##### -->
+<para>
+
+</para>
+
+@shell: 
+@name: 
+@error: 
+
+
+<!-- ##### FUNCTION anjuta_shell_get_object ##### -->
+<para>
+
+</para>
+
+@shell: 
+@iface_name: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION anjuta_shell_session_save ##### -->
+<para>
+
+</para>
+
+@shell: 
+@session_directory: 
+@error: 
+
+
+<!-- ##### FUNCTION anjuta_shell_session_load ##### -->
+<para>
+
+</para>
+
+@shell: 
+@session_directory: 
+@error: 
+
+
+<!-- ##### FUNCTION anjuta_shell_save_prompt ##### -->
+<para>
+
+</para>
+
+@shell: 
+@prompt: 
+@error: 
+
+
+<!-- ##### FUNCTION anjuta_shell_saving_push ##### -->
+<para>
+
+</para>
+
+@shell: 
+
+
+<!-- ##### FUNCTION anjuta_shell_saving_pop ##### -->
+<para>
+
+</para>
+
+@shell: 
+
+
+<!-- ##### MACRO anjuta_shell_get_interface ##### -->
+<para>
+
+</para>
+
+@shell: 
+@iface_type: 
+@error: 
+
+

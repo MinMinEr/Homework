@@ -1,0 +1,1055 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anjuta Developers Reference Manual: IAnjutaProjectManager</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="Anjuta Developers Reference Manual">
+<link rel="up" href="plugin-interfaces.html" title="Plugin interfaces">
+<link rel="prev" href="IAnjutaProject.html" title="IAnjutaProject">
+<link rel="next" href="IAnjutaProjectChooser.html" title="IAnjutaProjectChooser">
+<meta name="generator" content="GTK-Doc V1.21 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#IAnjutaProjectManager.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#IAnjutaProjectManager.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#IAnjutaProjectManager.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="plugin-interfaces.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="IAnjutaProject.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="IAnjutaProjectChooser.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="IAnjutaProjectManager"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="IAnjutaProjectManager.top_of_page"></a>IAnjutaProjectManager</span></h2>
+<p>IAnjutaProjectManager — Interface for project managers</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="IAnjutaProjectManager.stability-level"></a><h2>Stability Level</h2>
+<a href="http://foldoc.org/Unstable"><span class="acronym">Unstable</span></a>, unless otherwise indicated
+</div>
+<div class="refsect1">
+<a name="IAnjutaProjectManager.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaProjectManager.html#ianjuta-project-manager-error-quark" title="ianjuta_project_manager_error_quark ()">ianjuta_project_manager_error_quark</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaProjectManager.html#ianjuta-project-manager-add-group" title="ianjuta_project_manager_add_group ()">ianjuta_project_manager_add_group</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaProjectManager.html#ianjuta-project-manager-add-source" title="ianjuta_project_manager_add_source ()">ianjuta_project_manager_add_source</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaProjectManager.html#ianjuta-project-manager-add-source-quiet" title="ianjuta_project_manager_add_source_quiet ()">ianjuta_project_manager_add_source_quiet</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaProjectManager.html#ianjuta-project-manager-add-sources" title="ianjuta_project_manager_add_sources ()">ianjuta_project_manager_add_sources</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaProjectManager.html#ianjuta-project-manager-add-target" title="ianjuta_project_manager_add_target ()">ianjuta_project_manager_add_target</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaProjectManager.html#ianjuta-project-manager-get-capabilities" title="ianjuta_project_manager_get_capabilities ()">ianjuta_project_manager_get_capabilities</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaProjectManager.html#ianjuta-project-manager-get-children" title="ianjuta_project_manager_get_children ()">ianjuta_project_manager_get_children</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="IAnjutaProject.html" title="IAnjutaProject"><span class="returnvalue">IAnjutaProject</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaProjectManager.html#ianjuta-project-manager-get-current-project" title="ianjuta_project_manager_get_current_project ()">ianjuta_project_manager_get_current_project</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaProjectManager.html#ianjuta-project-manager-get-elements" title="ianjuta_project_manager_get_elements ()">ianjuta_project_manager_get_elements</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaProjectManager.html#ianjuta-project-manager-get-packages" title="ianjuta_project_manager_get_packages ()">ianjuta_project_manager_get_packages</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaProjectManager.html#ianjuta-project-manager-get-parent" title="ianjuta_project_manager_get_parent ()">ianjuta_project_manager_get_parent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaProjectManager.html#ianjuta-project-manager-get-selected" title="ianjuta_project_manager_get_selected ()">ianjuta_project_manager_get_selected</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeType" title="enum AnjutaProjectNodeType"><span class="returnvalue">AnjutaProjectNodeType</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaProjectManager.html#ianjuta-project-manager-get-target-type" title="ianjuta_project_manager_get_target_type ()">ianjuta_project_manager_get_target_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaProjectManager.html#ianjuta-project-manager-get-targets" title="ianjuta_project_manager_get_targets ()">ianjuta_project_manager_get_targets</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaProjectManager.html#ianjuta-project-manager-is-open" title="ianjuta_project_manager_is_open ()">ianjuta_project_manager_is_open</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="IAnjutaProjectManager.html#ianjuta-project-manager-remove-file" title="ianjuta_project_manager_remove_file ()">ianjuta_project_manager_remove_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaProjectManager.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="IAnjutaProjectManager.html#IAnjutaProjectManager-element-added" title="The “element-added” signal">element-added</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="IAnjutaProjectManager.html#IAnjutaProjectManager-element-removed" title="The “element-removed” signal">element-removed</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="IAnjutaProjectManager.html#IAnjutaProjectManager-element-selected" title="The “element-selected” signal">element-selected</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="IAnjutaProjectManager.html#IAnjutaProjectManager-project-loaded" title="The “project-loaded” signal">project-loaded</a></td>
+<td class="signal_flags"><a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaProjectManager.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="IAnjutaProjectManager.html#IANJUTA-PROJECT-MANAGER-ERROR:CAPS" title="IANJUTA_PROJECT_MANAGER_ERROR">IANJUTA_PROJECT_MANAGER_ERROR</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="IAnjutaProjectManager.html#IANJUTA-PROJECT-MANAGER-PROJECT-ROOT-URI:CAPS" title="IANJUTA_PROJECT_MANAGER_PROJECT_ROOT_URI">IANJUTA_PROJECT_MANAGER_PROJECT_ROOT_URI</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="IAnjutaProjectManager.html#IANJUTA-PROJECT-MANAGER-CURRENT-PROJECT:CAPS" title="IANJUTA_PROJECT_MANAGER_CURRENT_PROJECT">IANJUTA_PROJECT_MANAGER_CURRENT_PROJECT</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="IAnjutaProjectManager.html#IANJUTA-PROJECT-MANAGER-CURRENT-URI:CAPS" title="IANJUTA_PROJECT_MANAGER_CURRENT_URI">IANJUTA_PROJECT_MANAGER_CURRENT_URI</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaProjectManager.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="https://developer.gnome.org/gobject/unstable/GTypeModule.html">GInterface</a>
+    <span class="lineart">╰──</span> IAnjutaProjectManager
+</pre>
+</div>
+<div class="refsect1">
+<a name="IAnjutaProjectManager.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libanjuta/interfaces/ianjuta-project-manager.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="IAnjutaProjectManager.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="IAnjutaProjectManager.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="ianjuta-project-manager-error-quark"></a><h3>ianjuta_project_manager_error_quark ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>
+ianjuta_project_manager_error_quark (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+<div class="refsect3">
+<a name="id-1.8.51.10.2.5"></a><h4>Returns</h4>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-project-manager-add-group"></a><h3>ianjuta_project_manager_add_group ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+ianjuta_project_manager_add_group (<em class="parameter"><code><a class="link" href="IAnjutaProjectManager.html" title="IAnjutaProjectManager"><span class="type">IAnjutaProjectManager</span></a> *obj</code></em>,
+                                   <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *default_group</code></em>,
+                                   <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Prompts the user to add a new group to the project. The user can select
+a parent group different from the one set as default.</p>
+<div class="refsect3">
+<a name="id-1.8.51.10.3.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Group name or URI.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_group</p></td>
+<td class="parameter_description"><p> A <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> corresponding to the default parent group or
+<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if don't care. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.51.10.3.6"></a><h4>Returns</h4>
+<p> A <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> corresponding to the new group added in the project.
+You own the returned file; use <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> to release it. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-project-manager-add-source"></a><h3>ianjuta_project_manager_add_source ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+ianjuta_project_manager_add_source (<em class="parameter"><code><a class="link" href="IAnjutaProjectManager.html" title="IAnjutaProjectManager"><span class="type">IAnjutaProjectManager</span></a> *obj</code></em>,
+                                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *default_target</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Prompts the user to add a file to the project. If the user selects
+multiple files only the first source file is returned.</p>
+<p>You can add non existing file. In this case the element_added
+signal will be emitted with a non existing file. So it is
+up to the caller to reemit this signal later when the file
+is created.</p>
+<div class="refsect3">
+<a name="id-1.8.51.10.4.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Source name or URI.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_target</p></td>
+<td class="parameter_description"><p> A <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> corresponding to the default target or group or
+<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if you don't care. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.51.10.4.7"></a><h4>Returns</h4>
+<p> A <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> corresponding to the new source file in the
+project view. You own the returned file; use <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> to release it. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-project-manager-add-source-quiet"></a><h3>ianjuta_project_manager_add_source_quiet ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+ianjuta_project_manager_add_source_quiet
+                               (<em class="parameter"><code><a class="link" href="IAnjutaProjectManager.html" title="IAnjutaProjectManager"><span class="type">IAnjutaProjectManager</span></a> *obj</code></em>,
+                                <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *target</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Adds a file to the project without prompting the user.</p>
+<p>You can add non existing file. In this case the element_added
+signal will be emitted with a non existing file. So it is
+up to the caller to reemit this signal later when the file
+is created.</p>
+<div class="refsect3">
+<a name="id-1.8.51.10.5.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Source name or URI.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> corresponding to the parent target or group.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.51.10.5.7"></a><h4>Returns</h4>
+<p> A <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> corresponding to the new source file in the project
+view. You own the returned file; use <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> to release it. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-project-manager-add-sources"></a><h3>ianjuta_project_manager_add_sources ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+ianjuta_project_manager_add_sources (<em class="parameter"><code><a class="link" href="IAnjutaProjectManager.html" title="IAnjutaProjectManager"><span class="type">IAnjutaProjectManager</span></a> *obj</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> *names</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *default_target</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Prompts the user to add several files to the project. Depending on the
+project backend, it can be possible that the source files must
+be located in a particular directory.</p>
+<p>You can add non existing file. In this case the element_added
+signal will be emitted with a non existing file. So it is
+up to the caller to reemit this signal later when the file
+is created.</p>
+<div class="refsect3">
+<a name="id-1.8.51.10.6.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>names</p></td>
+<td class="parameter_description"><p> Sources name or URI to add. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> utf8]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_target</p></td>
+<td class="parameter_description"><p> A <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> corresponding to the default target or group or
+<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if don't care. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.51.10.6.7"></a><h4>Returns</h4>
+<p> A list of <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> corresponding to all
+new source files added in the project. You own the list with the the returned files;
+use <a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#g-list-free"><code class="function">g_list_free()</code></a> and <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> on each file to release them. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> GFile][<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-project-manager-add-target"></a><h3>ianjuta_project_manager_add_target ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+ianjuta_project_manager_add_target (<em class="parameter"><code><a class="link" href="IAnjutaProjectManager.html" title="IAnjutaProjectManager"><span class="type">IAnjutaProjectManager</span></a> *obj</code></em>,
+                                    <em class="parameter"><code>const <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *default_group</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Prompts the user to add a new target to the project. The user can select
+a parent group different from the one set as default.</p>
+<div class="refsect3">
+<a name="id-1.8.51.10.7.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>Target name or URI.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>default_group</p></td>
+<td class="parameter_description"><p> A <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> corresponding to the default parent group or
+<a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if don't care. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<a href="http://foldoc.org/allow-none"><span class="acronym">allow-none</span></a>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.51.10.7.6"></a><h4>Returns</h4>
+<p> A <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> corresponding to the new target added in the project.
+You own the returned file; use <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> to release it. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-project-manager-get-capabilities"></a><h3>ianjuta_project_manager_get_capabilities ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+ianjuta_project_manager_get_capabilities
+                               (<em class="parameter"><code><a class="link" href="IAnjutaProjectManager.html" title="IAnjutaProjectManager"><span class="type">IAnjutaProjectManager</span></a> *obj</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Gets the capabilites of project whether it can add group, target
+sources etc.</p>
+<div class="refsect3">
+<a name="id-1.8.51.10.8.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.51.10.8.6"></a><h4>Returns</h4>
+<p> Supported capabilites.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-project-manager-get-children"></a><h3>ianjuta_project_manager_get_children ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+ianjuta_project_manager_get_children (<em class="parameter"><code><a class="link" href="IAnjutaProjectManager.html" title="IAnjutaProjectManager"><span class="type">IAnjutaProjectManager</span></a> *obj</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *parent</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> children_type</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Recursively gets the list of all children below the corresponding
+parent having the specify type.</p>
+<div class="refsect3">
+<a name="id-1.8.51.10.9.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>parent</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> corresponding to the parent.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>children_type</p></td>
+<td class="parameter_description"><p>Select one element type: source, group or target</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.51.10.9.6"></a><h4>Returns</h4>
+<p> The list of <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a>
+corresponding to all children or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the element has no
+children with the corresponding type. Free the returned * list
+with <a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#g-list-free"><code class="function">g_list_free()</code></a> and the files with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> GFile][<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-project-manager-get-current-project"></a><h3>ianjuta_project_manager_get_current_project ()</h3>
+<pre class="programlisting"><a class="link" href="IAnjutaProject.html" title="IAnjutaProject"><span class="returnvalue">IAnjutaProject</span></a> *
+ianjuta_project_manager_get_current_project
+                               (<em class="parameter"><code><a class="link" href="IAnjutaProjectManager.html" title="IAnjutaProjectManager"><span class="type">IAnjutaProjectManager</span></a> *obj</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Gets the current project.</p>
+<div class="refsect3">
+<a name="id-1.8.51.10.10.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.51.10.10.6"></a><h4>Returns</h4>
+<p> the currently active project. NULL if none is there. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20none"><span class="acronym">transfer none</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-project-manager-get-elements"></a><h3>ianjuta_project_manager_get_elements ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+ianjuta_project_manager_get_elements (<em class="parameter"><code><a class="link" href="IAnjutaProjectManager.html" title="IAnjutaProjectManager"><span class="type">IAnjutaProjectManager</span></a> *obj</code></em>,
+                                      <em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeType" title="enum AnjutaProjectNodeType"><span class="type">AnjutaProjectNodeType</span></a> element_type</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Get a list of all elements of this type in the project.</p>
+<div class="refsect3">
+<a name="id-1.8.51.10.11.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>element_type</p></td>
+<td class="parameter_description"><p>Select one element type: source, group or target</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.51.10.11.6"></a><h4>Returns</h4>
+<p> Get list of <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> corresponding to
+all valid elements or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if there are no elements of this type. Free the returned
+list with <a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#g-list-free"><code class="function">g_list_free()</code></a> and the files with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> GFile][<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-project-manager-get-packages"></a><h3>ianjuta_project_manager_get_packages ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+ianjuta_project_manager_get_packages (<em class="parameter"><code><a class="link" href="IAnjutaProjectManager.html" title="IAnjutaProjectManager"><span class="type">IAnjutaProjectManager</span></a> *obj</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.8.51.10.12.4"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.51.10.12.5"></a><h4>Returns</h4>
+<p> the list of pkg-config packages that the current project
+requires in it's configure.ac. Can be NULL if there is no project
+opened currently or no package is required. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> utf8][<a href="http://foldoc.org/transfer%20container"><span class="acronym">transfer container</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-project-manager-get-parent"></a><h3>ianjuta_project_manager_get_parent ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+ianjuta_project_manager_get_parent (<em class="parameter"><code><a class="link" href="IAnjutaProjectManager.html" title="IAnjutaProjectManager"><span class="type">IAnjutaProjectManager</span></a> *obj</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *element</code></em>,
+                                    <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Gets the parent of the corresponding child.</p>
+<div class="refsect3">
+<a name="id-1.8.51.10.13.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>element</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> corresponding to one child.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.51.10.13.6"></a><h4>Returns</h4>
+<p> The parent of the child, or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the element is the root.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-project-manager-get-selected"></a><h3>ianjuta_project_manager_get_selected ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="returnvalue">GFile</span></a> *
+ianjuta_project_manager_get_selected (<em class="parameter"><code><a class="link" href="IAnjutaProjectManager.html" title="IAnjutaProjectManager"><span class="type">IAnjutaProjectManager</span></a> *obj</code></em>,
+                                      <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Gets the currently selected element in the project manager view.</p>
+<div class="refsect3">
+<a name="id-1.8.51.10.14.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.51.10.14.6"></a><h4>Returns</h4>
+<p> A <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> corresponding to the selected element in the project
+view. You own the returned file; use <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> to release it. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-project-manager-get-target-type"></a><h3>ianjuta_project_manager_get_target_type ()</h3>
+<pre class="programlisting"><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeType" title="enum AnjutaProjectNodeType"><span class="returnvalue">AnjutaProjectNodeType</span></a>
+ianjuta_project_manager_get_target_type
+                               (<em class="parameter"><code><a class="link" href="IAnjutaProjectManager.html" title="IAnjutaProjectManager"><span class="type">IAnjutaProjectManager</span></a> *obj</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *target</code></em>,
+                                <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Get the type of the corresponding target: program, library...</p>
+<div class="refsect3">
+<a name="id-1.8.51.10.15.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> corresponding to a target</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.51.10.15.6"></a><h4>Returns</h4>
+<p> Return the type of the target.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-project-manager-get-targets"></a><h3>ianjuta_project_manager_get_targets ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+ianjuta_project_manager_get_targets (<em class="parameter"><code><a class="link" href="IAnjutaProjectManager.html" title="IAnjutaProjectManager"><span class="type">IAnjutaProjectManager</span></a> *obj</code></em>,
+                                     <em class="parameter"><code><a class="link" href="AnjutaProjectNode.html#AnjutaProjectNodeType" title="enum AnjutaProjectNodeType"><span class="type">AnjutaProjectNodeType</span></a> target_type</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Get a list of targets in the project with the corresponding type.</p>
+<div class="refsect3">
+<a name="id-1.8.51.10.16.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>target_type</p></td>
+<td class="parameter_description"><p>type of the target</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.51.10.16.6"></a><h4>Returns</h4>
+<p> A list of <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> corresponding to
+each target of the requested type or <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if none exists. Free the returned list
+with <a href="https://developer.gnome.org/glib/unstable/glib-Doubly-Linked-Lists.html#g-list-free"><code class="function">g_list_free()</code></a> and the files with <a href="https://developer.gnome.org/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a>. </p>
+<p><span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> GFile][<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-project-manager-is-open"></a><h3>ianjuta_project_manager_is_open ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ianjuta_project_manager_is_open (<em class="parameter"><code><a class="link" href="IAnjutaProjectManager.html" title="IAnjutaProjectManager"><span class="type">IAnjutaProjectManager</span></a> *obj</code></em>,
+                                 <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Gets whether a project is currently opened.</p>
+<div class="refsect3">
+<a name="id-1.8.51.10.17.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.51.10.17.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if a project is opened.</p>
+<p></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ianjuta-project-manager-remove-file"></a><h3>ianjuta_project_manager_remove_file ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+ianjuta_project_manager_remove_file (<em class="parameter"><code><a class="link" href="IAnjutaProjectManager.html" title="IAnjutaProjectManager"><span class="type">IAnjutaProjectManager</span></a> *obj</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> *file</code></em>,
+                                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+<p>Remove a source file from the project. If the file is used in several
+targets, it is removed from all targets. The file could be removed from
+the disk.</p>
+<div class="refsect3">
+<a name="id-1.8.51.10.18.5"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>obj</p></td>
+<td class="parameter_description"><p>Self.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>file</p></td>
+<td class="parameter_description"><p>A <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a> that will be removed from the project</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>err</p></td>
+<td class="parameter_description"><p>Error propagation and reporting.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.8.51.10.18.6"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the file has been removed from the project else <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a></p>
+<p></p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaProjectManager.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="IANJUTA-PROJECT-MANAGER-ERROR:CAPS"></a><h3>IANJUTA_PROJECT_MANAGER_ERROR</h3>
+<pre class="programlisting">#define IANJUTA_PROJECT_MANAGER_ERROR ianjuta_project_manager_error_quark()
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IANJUTA-PROJECT-MANAGER-PROJECT-ROOT-URI:CAPS"></a><h3>IANJUTA_PROJECT_MANAGER_PROJECT_ROOT_URI</h3>
+<pre class="programlisting">#define IANJUTA_PROJECT_MANAGER_PROJECT_ROOT_URI "project_root_uri"
+</pre>
+<p>Anjuta shell value set by project manager to the project root uri.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IANJUTA-PROJECT-MANAGER-CURRENT-PROJECT:CAPS"></a><h3>IANJUTA_PROJECT_MANAGER_CURRENT_PROJECT</h3>
+<pre class="programlisting">#define IANJUTA_PROJECT_MANAGER_CURRENT_PROJECT "project_manager_current_project"
+</pre>
+<p>Anjuta shell value set by project manager to the current project object
+which implement <a class="link" href="IAnjutaProject.html" title="IAnjutaProject"><span class="type">IAnjutaProject</span></a> interface.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IANJUTA-PROJECT-MANAGER-CURRENT-URI:CAPS"></a><h3>IANJUTA_PROJECT_MANAGER_CURRENT_URI</h3>
+<pre class="programlisting">#define IANJUTA_PROJECT_MANAGER_CURRENT_URI "project_manager_current_uri"
+</pre>
+<p>Anjuta shell value set by project manager to the current uri.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="IAnjutaProjectManager.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="IAnjutaProjectManager-element-added"></a><h3>The <code class="literal">“element-added”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="IAnjutaProjectManager.html" title="IAnjutaProjectManager"><span class="type">IAnjutaProjectManager</span></a> *ianjutaprojectmanager,
+               <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a>                 *arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>               user_data)</pre>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IAnjutaProjectManager-element-removed"></a><h3>The <code class="literal">“element-removed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="IAnjutaProjectManager.html" title="IAnjutaProjectManager"><span class="type">IAnjutaProjectManager</span></a> *ianjutaprojectmanager,
+               <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a>                 *arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>               user_data)</pre>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IAnjutaProjectManager-element-selected"></a><h3>The <code class="literal">“element-selected”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="IAnjutaProjectManager.html" title="IAnjutaProjectManager"><span class="type">IAnjutaProjectManager</span></a> *ianjutaprojectmanager,
+               <a href="https://developer.gnome.org/gio/unstable/GFile.html"><span class="type">GFile</span></a>                 *arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>               user_data)</pre>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="IAnjutaProjectManager-project-loaded"></a><h3>The <code class="literal">“project-loaded”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="IAnjutaProjectManager.html" title="IAnjutaProjectManager"><span class="type">IAnjutaProjectManager</span></a> *ianjutaprojectmanager,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>                *arg1,
+               <a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>               user_data)</pre>
+<p>Flags: <a href="https://developer.gnome.org/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.21</div>
+</body>
+</html>

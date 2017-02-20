@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" id="editor-maximize" xml:lang="de">
+
+  <info xmlns:facet="http://projectmallard.org/facet/1.0/">
+    <link type="guide" xref="index#faq-editor" group="first"/>
+
+    <desc>Doppelklicken Sie auf den aktuellen Reiter.</desc>
+    
+    <revision pkgversion="0.1" version="0.1" date="2010-12-02" status="stub"/>
+    <credit type="author">
+      <name>GNOME-Dokumentationsprojekt</name>
+      <email>gnome-doc-list@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Andy Piper</name>
+    </credit>
+    <credit type="author">
+      <name>Naba Kumar</name>
+      <email>naba@gnome.org</email>
+    </credit>
+    <credit type="author">
+      <name>Biswapesh Chattopadhyayr</name>
+    </credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mario Blättermann</mal:name>
+      <mal:email>mario.blaettermann@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>Das Editorfenster maximieren</title>
+
+  <p>Doppelklicken Sie auf den aktuellen Reiter, um das Dokumentenfenster zu maximieren. Wiederholen Sie dies, um den vorherigen Zustand aller angedockten Fenster wiederherzustellen.</p>
+
+</page>
